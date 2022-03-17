@@ -9,10 +9,10 @@ This Turborepo includes the following packages and apps:
 ### Apps and Packages
 
 - `docs`: A placeholder documentation site powered by [Next.js](https://nextjs.org)
-- `@acme/core`: core React components
-- `@acme/utils`: shared React utilities
-- `@acme/tsconfig`: shared `tsconfig.json`s used throughout the monorepo
-- `eslint-preset-acme`: ESLint preset
+- `@waystone/core`: core React components
+- `@waystone/utils`: shared React utilities
+- `@waystone/tsconfig`: shared `tsconfig.json`s used throughout the monorepo
+- `eslint-preset-waystone`: ESLint preset
 
 Each package and app is 100% [Typescript](https://www.typescriptlang.org/).
 
@@ -37,10 +37,10 @@ git init . && git add . && git commit -m "Init"
 
 ### Changing the NPM organization scope
 
-The NPM organization scope for this design system starter is `@acme`. To change this, it's a bit manual at the moment, but you'll need to do the following:
+The NPM organization scope for this design system starter is `@waystone`. To change this, it's a bit manual at the moment, but you'll need to do the following:
 
-- Rename folders in `packages/*` to replace `acme` with your desired scope
-- Search and replace `acme` with your desired scope
+- Rename folders in `packages/*` to replace `waystone` with your desired scope
+- Search and replace `waystone` with your desired scope
 - Re-run `yarn install`
 
 ### Publishing packages

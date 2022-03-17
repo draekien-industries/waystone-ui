@@ -1,13 +1,13 @@
-import { Button } from "@acme/core";
-import { useIsomorphicLayoutEffect } from "@acme/utils";
+import { Button } from "@waystone/core";
+import { useIsomorphicLayoutEffect } from "@waystone/utils";
 
 export default function Docs() {
   useIsomorphicLayoutEffect(() => {
-    console.log("Acme docs page");
+    console.log("waystone docs page");
   }, []);
   return (
     <div>
-      <h1>Acme Documentation</h1>
+      <h1>waystone Documentation</h1>
       <Button>Click me</Button>
     </div>
   );
