@@ -1,5 +1,8 @@
 {
   "private": true,
+  "name": "waystone",
+  "version": "0.0.0",
+  "packageManager": "yarn@1.22.15",
   "workspaces": [
     "packages/*",
     "apps/*"

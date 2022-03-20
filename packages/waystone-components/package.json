@@ -1,5 +1,5 @@
 {
-  "name": "@waystone/utils",
+  "name": "@waystone/components",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -16,12 +16,21 @@
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
   },
   "devDependencies": {
-    "@waystone/tsconfig": "*",
-    "@waystone/core": "*",
+    "@babel/core": "^7.17.8",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mdx-js/react": "^2.1.0",
+    "@testing-library/react": "^12.1.4",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
+    "@waystone/core": "*",
+    "@waystone/tsconfig": "*",
+    "@waystone/utils": "*",
     "eslint-preset-waystone": "*",
+    "jest": "^27.5.1",
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "theme-ui": "^0.13.1",
     "tsup": "^5.10.1",
     "typescript": "^4.5.3"
   },
