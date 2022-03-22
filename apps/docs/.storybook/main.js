@@ -13,4 +13,15 @@ module.exports = {
   core: {
     builder: 'webpack5',
   },
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: () => true,
+      compilerOptions: {
+        allowSyntheticDefaultImports: true,
+        esModuleInterop: true,
+      },
+    },
+  },
 };

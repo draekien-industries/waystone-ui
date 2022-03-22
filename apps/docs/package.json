@@ -15,14 +15,14 @@
   "peerDependencies": {
     "@emotion/react": "*",
     "@mdx-js/react": "*",
+    "eslint-config-prettier": "*",
     "prettier": "*",
     "react": "*",
     "react-dom": "*",
     "theme-ui": "*",
     "ts-jest": "*",
     "typescript": "*",
-    "webpack": "*",
-    "eslint-config-prettier": "*"
+    "webpack": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",

@@ -1,5 +1,5 @@
 import { WaystoneTheme } from '..';
-import { colors, layouts, styles } from '../theme';
+import { colors, layouts, styles, WaystoneBaseTheme } from '../theme';
 
 /** A common set of sizes. */
 export type Size = 'sm' | 'md' | 'lg';
@@ -46,4 +46,5 @@ export type TextVariant =
   | 'small'
   | 'monospace';
 
+/** The status variants available in the base theme. */
 export type StatusVariant = 'info' | 'warning' | 'error' | 'success';

@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import React from 'react';
+import React, { FC } from 'react';
 import { Text as ThemeUiText, BoxProps } from 'theme-ui';
 import { TextVariant } from '@waystone/core';
 import { textCss } from './text.styles';
@@ -15,8 +15,8 @@ export interface TextProps
     Omit<BoxProps, 'color'>,
     HasColor {
   /**
-   * Should the text component take up the full width
-   * of it's parent container?
+   * Should the text component place itself on the same line
+   * as the preceeding component (if possible).
    * @default false
    */
   inline?: boolean;
@@ -30,10 +30,9 @@ export interface TextProps
 
 /**
  * Renders a text component.
- * @param props - {@link TextProps}
  * @returns The text component
  */
-export const Text: React.FC<TextProps> = ({
+export const Text: FC<TextProps> = ({
   children,
   inline = false,
   variant = 'body',

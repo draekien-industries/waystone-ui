@@ -71,7 +71,5 @@ export const Waystone: React.FC<WaystoneProps> = ({
     mergeObjects(parsedTheme, theme);
   }
 
-  console.log(parsedTheme, WaystoneBaseTheme);
-
   return <ThemeProvider theme={parsedTheme}>{children}</ThemeProvider>;
 };
