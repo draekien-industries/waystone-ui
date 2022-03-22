@@ -21,7 +21,8 @@
     "theme-ui": "*",
     "ts-jest": "*",
     "typescript": "*",
-    "webpack": "*"
+    "webpack": "*",
+    "eslint-config-prettier": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",

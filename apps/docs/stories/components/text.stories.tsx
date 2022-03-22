@@ -1,4 +1,4 @@
-/** @jsxImportSource theme-ui */
+import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Text as TextComponent, TextProps } from '@waystone/components';
 
