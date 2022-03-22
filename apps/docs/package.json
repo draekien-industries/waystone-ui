@@ -1,0 +1,57 @@
+{
+  "name": "@waystone/docs",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "start-storybook -p 6006",
+    "build": "yarn lint && yarn test && tsc --noEmit false",
+    "build:storybook": "build-storybook -c .storybook -o storybook-static",
+    "build:local": "tsc --noEmit false",
+    "test": "jest --coverage",
+    "lint": "TIMING=1 eslint src --fix",
+    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist && rimraf -rf storybook-static",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "William Pei",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "*",
+    "typescript": "*",
+    "prettier": "*",
+    "ts-jest": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@emotion/react": "^11.8.2",
+    "@mdx-js/react": "^2.1.0",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "@waystone/tsconfig": "*",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.11.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-storybook": "^0.5.7",
+    "eslint-preset-waystone": "*",
+    "react": "^17.0.2",
+    "react-docgen-typescript-plugin": "^1.0.1",
+    "react-dom": "^17.0.2",
+    "theme-ui": "^0.14.0"
+  },
+  "dependencies": {
+    "@waystone/components": "*",
+    "@waystone/core": "*",
+    "@waystone/utils": "*"
+  }
+}
