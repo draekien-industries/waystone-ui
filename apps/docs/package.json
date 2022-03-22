@@ -1,36 +1,28 @@
 {
   "name": "@waystone/docs",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
-    "build": "build-storybook",
-    "dev": "yarn storybook",
-    "lint": "TIMING=1 next lint",
-    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf .next",
-    "storybook": "start-storybook -p 6006"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf .next"
   },
   "dependencies": {
-    "@waystone/components": "*",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "@waystone/core": "*",
-    "@waystone/utils": "*",
-    "next": "^12.0.8",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@waystone/components": "*",
+    "@waystone/utils": "*"
   },
   "devDependencies": {
+    "@types/node": "17.0.22",
+    "@types/react": "17.0.41",
     "@waystone/tsconfig": "*",
-    "@babel/core": "^7.17.7",
-    "@storybook/addon-actions": "^6.4.19",
-    "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/addon-interactions": "^6.4.19",
-    "@storybook/addon-links": "^6.4.19",
-    "@storybook/react": "^6.4.19",
-    "@storybook/testing-library": "^0.0.9",
-    "@types/node": "^17.0.12",
-    "@types/react": "^17.0.37",
-    "@types/react-dom": "^17.0.11",
-    "babel-loader": "^8.2.3",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
     "eslint-preset-waystone": "*",
-    "typescript": "^4.5.4"
+    "typescript": "4.6.2"
   }
 }
