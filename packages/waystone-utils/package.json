@@ -19,7 +19,8 @@
     "typescript": "*",
     "prettier": "*",
     "ts-jest": "*",
-    "jest": "*"
+    "jest": "*",
+    "react": "*"
   },
   "devDependencies": {
     "@waystone/tsconfig": "*",
@@ -27,7 +28,6 @@
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "eslint-preset-waystone": "*",
-    "react": "^17.0.2",
     "tsup": "^5.10.1"
   },
   "publishConfig": {

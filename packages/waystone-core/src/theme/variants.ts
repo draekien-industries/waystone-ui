@@ -72,3 +72,5 @@ export const variants: Record<string, ThemeUIStyleObject> = {
     },
   },
 };
+
+export default variants;

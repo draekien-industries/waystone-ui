@@ -29,3 +29,5 @@ export const typography = {
     uppercase: '0.1em',
   },
 };
+
+export default typography;

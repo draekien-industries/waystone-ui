@@ -1,5 +1,10 @@
 import type { Theme } from 'theme-ui';
-import { colors, layouts, typography, variants, styles, breakpoints } from './';
+import breakpoints from './breakpoints';
+import colors from './colors';
+import layouts from './layouts';
+import styles from './styles';
+import typography from './typography';
+import variants from './variants';
 
 export type WaystoneTheme = Partial<Theme>;
 
@@ -23,8 +28,8 @@ export const WaystoneBaseTheme: WaystoneTheme = {
       },
     },
   },
-  colors,
-  breakpoints,
+  colors: colors,
+  breakpoints: breakpoints,
   ...typography,
   ...layouts,
   ...styles,

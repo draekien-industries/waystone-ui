@@ -17,3 +17,5 @@ export const styles = {
     full: '100%',
   },
 };
+
+export default styles;
