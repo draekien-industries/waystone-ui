@@ -10,12 +10,14 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "build": "tsc --project tsconfig.json --noEmit false",
+    "dev": "tsc --project tsconfig.json --watch --noEmit false",
     "lint": "TIMING=1 eslint src --fix",
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
   },
   "peerDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-react": "*",
     "@emotion/react": "*",
     "@mdx-js/react": "*",
     "jest": "*",
@@ -27,7 +29,6 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.8",
     "@testing-library/react": "^12.1.4",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
@@ -39,10 +40,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@mdx-js/react": "^2.1.0",
-    "theme-ui": "^0.14.0"
   }
 }

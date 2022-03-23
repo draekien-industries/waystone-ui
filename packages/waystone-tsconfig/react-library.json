@@ -3,9 +3,14 @@
   "display": "React Library",
   "extends": "./base.json",
   "compilerOptions": {
-    "lib": ["dom", "ES2015"],
-    "module": "ESNext",
+    "lib": ["dom", "ES2015", "DOM.Iterable", "ESNext"],
+    "module": "commonjs",
     "target": "ES6",
-    "jsx": "react-jsx"
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true
   }
 }

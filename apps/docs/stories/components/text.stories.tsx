@@ -7,6 +7,10 @@ import { getColorType, getTextVariantType, getBooleanType } from '../utils';
 export default {
   title: 'Components/Text',
   component: Text,
+  args: {
+    variant: 'body',
+    inline: false,
+  },
   argTypes: {
     children: {
       description: 'The text to render in the component.',
@@ -15,7 +19,6 @@ export default {
       description: 'Determines the font size, weight and family to render.',
       options: getThemeTextVariants(),
       type: getTextVariantType(),
-      defaultValue: 'body',
       table: {
         defaultValue: { summary: 'body' },
       },
@@ -30,7 +33,6 @@ export default {
     inline: {
       description:
         'Determines whether the component is rendered as an inline-block.',
-      defaultValue: false,
       table: {
         defaultValue: { summary: false },
       },

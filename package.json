@@ -16,6 +16,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-react": "^7.16.7",
     "@emotion/react": "^11.8.2",
     "@mdx-js/react": "^2.1.0",
     "eslint": "^8.11.0",
