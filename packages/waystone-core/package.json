@@ -15,25 +15,11 @@
     "lint": "TIMING=1 eslint src --fix",
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
   },
-  "peerDependencies": {
-    "@babel/core": "*",
-    "@babel/preset-react": "*",
-    "@emotion/react": "*",
-    "@mdx-js/react": "*",
-    "jest": "*",
-    "prettier": "*",
-    "react": "*",
-    "react-dom": "*",
-    "theme-ui": "*",
-    "ts-jest": "*",
-    "typescript": "*"
-  },
   "devDependencies": {
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@waystone/tsconfig": "*",
-    "eslint-preset-waystone": "*",
-    "tsup": "^5.10.1"
+    "eslint-preset-waystone": "*"
   },
   "publishConfig": {
     "access": "public"

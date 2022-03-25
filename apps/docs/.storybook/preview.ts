@@ -4,6 +4,7 @@ import logo from '../stories/assets/waystone-logo.svg';
 import logoDark from '../stories/assets/waystone-logo-dark.svg';
 import { WaystoneBaseTheme } from '@waystone/core';
 import { getThemeColors } from '../utils';
+import { DocsContainer } from './docs.container';
 
 const waystoneDarkTheme = create({
   base: 'dark',
@@ -35,7 +36,7 @@ export const parameters = {
     light: waystoneLightTheme,
   },
   docs: {
-    theme: waystoneLightTheme,
+    container: DocsContainer,
   },
 };
 

@@ -1,10 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Anchor, AnchorProps } from '@waystone/components';
+import { Anchor, AnchorProps, Text } from '@waystone/components';
 import { getBooleanType } from '../utils';
 
 export default {
-  title: 'Components/Anchor',
   component: Anchor,
   args: {
     external: false,
@@ -29,10 +27,50 @@ export default {
   },
 } as Meta;
 
-const Template: Story<AnchorProps> = (args) => <Anchor {...args} />;
+export const Usage: Story<AnchorProps> = () => (
+  <div>
+    <Text>
+      The <Anchor>Anchor</Anchor> component should be used whenever you need to
+      link to another location on the page or to an external url. Usage is the
+      same as the HTML{' '}
+      <Anchor
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+        external>
+        {'<a>'}
+      </Anchor>{' '}
+      element.
+    </Text>
+  </div>
+);
 
-export const Default = Template.bind({});
+export const WithExternal: Story<AnchorProps> = (args) => (
+  <div>
+    <Anchor {...args}>The HTML anchor element</Anchor>
+    <Text variant="small">
+      NOTE: when the external prop is set, rel is automatically set to
+      &apos;noopener noreferrer&apos;
+    </Text>
+  </div>
+);
 
-Default.args = {
-  children: "I'm an anchor component. Use me inside your link wrappers.",
+WithExternal.args = {
+  href: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a',
+  external: true,
+  rel: 'noopener noreferrer',
+  target: '_blank',
+};
+
+WithExternal.argTypes = {
+  rel: {
+    type: 'string',
+    defaultValue: 'noopener noreferrer',
+    description:
+      'This field is automatically set when the external prop is set. Provide a custom value to override the default.',
+  },
+  target: {
+    type: 'string',
+    defaultValue: '_blank',
+    description:
+      'This field is automatically set when the external prop is set. Provide a custom value to override the default.',
+  },
 };

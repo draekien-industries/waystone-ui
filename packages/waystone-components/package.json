@@ -15,19 +15,6 @@
     "lint": "TIMING=1 eslint src --fix",
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
   },
-  "peerDependencies": {
-    "@babel/core": "*",
-    "@babel/preset-react": "*",
-    "@emotion/react": "*",
-    "@mdx-js/react": "*",
-    "jest": "*",
-    "prettier": "*",
-    "react": "*",
-    "react-dom": "*",
-    "theme-ui": "*",
-    "ts-jest": "*",
-    "typescript": "*"
-  },
   "devDependencies": {
     "@testing-library/react": "^12.1.4",
     "@types/react": "^17.0.13",
@@ -35,8 +22,7 @@
     "@waystone/core": "*",
     "@waystone/tsconfig": "*",
     "@waystone/utils": "*",
-    "eslint-preset-waystone": "*",
-    "tsup": "^5.10.1"
+    "eslint-preset-waystone": "*"
   },
   "publishConfig": {
     "access": "public"
