@@ -31,6 +31,22 @@ export interface HasWidth {
     | ThemeSize
     | ThemeSize[]
     | StylePropertyValue<Property.Width<string | number>>;
+  /**
+   * The minimum width of the component.
+   * Use an array to take advantage of ThemeUI breakpoints.
+   */
+  minWidth?:
+    | ThemeSize
+    | ThemeSize[]
+    | StylePropertyValue<Property.MinWidth<string | number>>;
+  /**
+   * The maximum width of the component.
+   * Use an array to take advantage of ThemeUI breakpoints.
+   */
+  maxWidth?:
+    | ThemeSize
+    | ThemeSize[]
+    | StylePropertyValue<Property.MaxWidth<string | number>>;
 }
 
 /** This component supports a specific height. */
@@ -43,6 +59,22 @@ export interface HasHeight {
     | ThemeSize
     | ThemeSize[]
     | StylePropertyValue<Property.Height<string | number>>;
+  /**
+   * The minimum height of the component.
+   * Use an array to take advantage of ThemeUI breakpoints.
+   */
+  minHeight?:
+    | ThemeSize
+    | ThemeSize[]
+    | StylePropertyValue<Property.MinHeight<string | number>>;
+  /**
+   * The maximum height of the component.
+   * Use an array to take advantage of ThemeUI breakpoints.
+   */
+  maxHeight?:
+    | ThemeSize
+    | ThemeSize[]
+    | StylePropertyValue<Property.MaxHeight<string | number>>;
 }
 
 /**

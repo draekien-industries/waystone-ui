@@ -1,17 +1,5 @@
 import { WaystoneTheme } from '..';
-import { colors, layouts, styles, WaystoneBaseTheme } from '../theme';
-
-/** A common set of sizes. */
-export type Size = 'sm' | 'md' | 'lg';
-
-/** An extended set of sizes. */
-export type SizeExtended = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-
-/** The horizontal alignment of content. */
-export type HorizontalAlignment = 'left' | 'center' | 'right';
-
-/** The vertical alignment of content. */
-export type VerticalAlignment = 'top' | 'center' | 'bottom';
+import { colors, layouts, styles } from '../theme';
 
 /** The colors available in the base theme. */
 export type ThemeColor = keyof typeof colors;
@@ -33,18 +21,3 @@ export type ZIndex = keyof typeof layouts.zIndices;
 
 /** The sizes available in the base theme. */
 export type ThemeSize = keyof typeof styles.sizes;
-
-/** The text variants available in the base theme. */
-export type TextVariant =
-  | 'hero'
-  | 'heading'
-  | 'title'
-  | 'subtitle'
-  | 'eyebrow'
-  | 'body'
-  | 'caption'
-  | 'small'
-  | 'monospace';
-
-/** The status variants available in the base theme. */
-export type StatusVariant = 'info' | 'warning' | 'error' | 'success';
