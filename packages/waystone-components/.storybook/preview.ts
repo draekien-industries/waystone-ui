@@ -1,9 +1,10 @@
+import React from 'react';
 import { waystoneDecorator } from './waystone.decorator';
 import { create } from '@storybook/theming';
-import logo from '../stories/assets/waystone-logo.svg';
-import logoDark from '../stories/assets/waystone-logo-dark.svg';
+import logo from './assets/waystone-logo.svg';
+import logoDark from './assets/waystone-logo-dark.svg';
 import { WaystoneBaseTheme } from '@waystone/core';
-import { getThemeColors } from '../utils';
+import { getThemeColors } from '../src/utils';
 import { DocsContainer } from './docs.container';
 
 const waystoneDarkTheme = create({

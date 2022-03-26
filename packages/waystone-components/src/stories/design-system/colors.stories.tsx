@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { WaystoneBaseTheme } from '@waystone/core';
-import { Text } from '@waystone/components';
+import { Text } from '../../';
 
 const Color: FC<{ color: string }> = ({ color, children }) => (
   <div
@@ -49,11 +49,11 @@ export const Colors: Story = () => (
         gap: '2rem',
         marginBottom: '2rem',
       }}>
-      {Object.keys(WaystoneBaseTheme.colors).map((key, index) => {
+      {Object.keys(WaystoneBaseTheme.colors!).map((key, index) => {
         if (key === 'modes') return null;
 
         return (
-          <Color key={index} color={WaystoneBaseTheme.colors[key] as string}>
+          <Color key={index} color={WaystoneBaseTheme.colors![key] as string}>
             {key}
           </Color>
         );
@@ -70,10 +70,10 @@ export const Colors: Story = () => (
         gap: '2rem',
         marginBottom: '2rem',
       }}>
-      {Object.keys(WaystoneBaseTheme.colors.modes.dark).map((key, index) => (
+      {Object.keys(WaystoneBaseTheme.colors!.modes!.dark).map((key, index) => (
         <Color
           key={index}
-          color={WaystoneBaseTheme.colors.modes.dark[key] as string}>
+          color={WaystoneBaseTheme.colors!.modes!.dark[key] as string}>
           {key}
         </Color>
       ))}

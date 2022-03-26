@@ -11,6 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "isolatedModules": true
   }
 }

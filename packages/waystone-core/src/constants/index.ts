@@ -38,22 +38,28 @@ export const VerticalAlignment = {
 export type VerticalAlignment = keyof typeof VerticalAlignment;
 
 /** The text variants available in the base theme. */
-export enum TextVariant {
-  hero = 'hero',
-  heading = 'heading',
-  title = 'title',
-  subtitle = 'subtitle',
-  eyebrow = 'eyebrow',
-  body = 'body',
-  caption = 'caption',
-  small = 'small',
-  monospace = 'monospace',
-}
+export const TextVariant = {
+  hero: 'hero',
+  heading: 'heading',
+  title: 'title',
+  subtitle: 'subtitle',
+  eyebrow: 'eyebrow',
+  body: 'body',
+  caption: 'caption',
+  small: 'small',
+  monospace: 'monospace',
+};
+
+/** The text variants available in the base theme. */
+export type TextVariant = keyof typeof TextVariant;
 
 /** The status variants available in the base theme. */
-export enum StatusVariant {
-  info = 'info',
-  warning = 'warning',
-  error = 'error',
-  success = 'success',
-}
+export const StatusVariant = {
+  info: 'info',
+  warning: 'warning',
+  error: 'error',
+  success: 'success',
+};
+
+/** The status variants available in the base theme. */
+export type StatusVariant = keyof typeof StatusVariant;

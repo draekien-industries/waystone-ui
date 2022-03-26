@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Meta } from '@storybook/react';
-import { Text } from '@waystone/components';
+import { Text } from '../../';
 import { TextVariant, WaystoneBaseTheme } from '@waystone/core';
 
 export const Typography: FC = () => (
@@ -37,7 +37,7 @@ export const Typography: FC = () => (
           gap: '2rem',
           alignItems: 'baseline',
         }}>
-        {Object.keys(WaystoneBaseTheme.text)
+        {Object.keys(WaystoneBaseTheme.text!)
           .filter((x) => x !== 'default')
           .map((key, index) => (
             <Text key={index} variant={key as TextVariant}>

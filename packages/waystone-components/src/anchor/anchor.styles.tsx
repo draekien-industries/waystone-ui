@@ -12,7 +12,7 @@ export const anchorCss: ThemeUIStyleObject = {
   fontSize: 'inherit',
   cursor: 'pointer',
   ':hover, :focus': {
-    backgroundColor: 'b-300',
+    backgroundColor: 'muted',
     borderTopLeftRadius: 'sm',
     borderTopRightRadius: 'sm',
   },

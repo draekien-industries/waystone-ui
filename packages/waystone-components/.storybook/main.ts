@@ -1,14 +1,12 @@
 import type { StorybookConfig } from '@storybook/core-common';
 
 const config: StorybookConfig = {
-  stories: [
-    '../stories/**/*.stories.mdx',
-    '../stories/**/*.stories.@(js|jsx|ts|tsx)',
-  ],
+  stories: ['../src/**/*.stories.@(tsx|mdx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
     'storybook-dark-mode',
   ],
   framework: '@storybook/react',
@@ -20,12 +18,7 @@ const config: StorybookConfig = {
     checkOptions: {},
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
-      include: ['**/**.d.ts', '**/**.tsx'],
-      propFilter: () => true,
-      compilerOptions: {
-        allowSyntheticDefaultImports: false,
-        esModuleInterop: false,
-      },
+      shouldExtractLiteralValuesFromEnum: true,
     },
   },
 };

@@ -11,20 +11,36 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json --noEmit false",
-    "dev": "tsc --project tsconfig.json --watch --noEmit false",
+    "build-storybook": "build-storybook",
+    "dev": "start-storybook -p 6006",
     "lint": "TIMING=1 eslint src --fix",
-    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
+    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist && rimraf -rf storybook-static"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
     "@testing-library/react": "^12.1.4",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@waystone/core": "*",
     "@waystone/tsconfig": "*",
     "@waystone/utils": "*",
-    "eslint-preset-waystone": "*"
+    "babel-loader": "^8.2.4",
+    "eslint-preset-waystone": "*",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "storybook-dark-mode": "^1.0.9"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dependencies": {}
 }

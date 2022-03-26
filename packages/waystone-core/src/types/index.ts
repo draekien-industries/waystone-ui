@@ -1,8 +1,11 @@
 import { WaystoneTheme } from '..';
 import { colors, layouts, styles } from '../theme';
 
+const { modes, ...colorsOnly } = colors;
+
+export { colorsOnly };
 /** The colors available in the base theme. */
-export type ThemeColor = keyof typeof colors;
+export type ThemeColor = keyof typeof colorsOnly;
 
 /** The color that is computed using the theme. */
 export type ComputedColor = (t: WaystoneTheme) => string;
