@@ -10,7 +10,10 @@ import { HasColor, HasVariant } from '../common/interfaces';
  * @extends HasColor
  * @extends HasVariant
  */
-export interface TextProps extends HasColor, HasVariant {
+export interface TextProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
+    HasColor,
+    HasVariant {
   /**
    * The type of element to render onto the DOM.
    * @default 'span'

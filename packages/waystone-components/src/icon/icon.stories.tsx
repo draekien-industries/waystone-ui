@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Icon, IconProps, IconOptions } from '../../';
+import { Icon, IconProps, IconOptions } from './icon';
 
 const iconOptionsDetails = `
 { 
@@ -11,6 +11,7 @@ const iconOptionsDetails = `
 `;
 
 export default {
+  title: 'Components/Icon',
   component: Icon,
   args: {
     options: { variant: 'filled', size: 'md', color: 'inherit' } as IconOptions,

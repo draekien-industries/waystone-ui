@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Meta, Story } from '@storybook/react';
 import { WaystoneBaseTheme } from '@waystone/core';
-import { Text } from '../../';
+import { Text } from '..';
 
 const Color: FC<{ color: string }> = ({ color, children }) => (
   <div

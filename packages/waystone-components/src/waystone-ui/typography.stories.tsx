@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { Meta } from '@storybook/react';
-import { Text } from '../../';
+import { Text } from '..';
 import { TextVariant, WaystoneBaseTheme } from '@waystone/core';
 
 export const Typography: FC = () => (
   <article>
-    <Text as="h1" variant="hero" style={{ marginBottom: '2rem' }}>
+    <Text as="h1" variant="hero">
       Typography
     </Text>
     <div style={{ marginBottom: '2rem' }}>
@@ -15,12 +15,19 @@ export const Typography: FC = () => (
         <br />
         These fonts are:
       </Text>
-      <Text variant="title" style={{ marginRight: '4rem' }} inline>
-        Barlow
-      </Text>
-      <Text variant="title" style={{ fontFamily: 'fira code' }} inline>
-        Fira Code
-      </Text>
+      <div
+        style={{
+          display: 'flex',
+          flexFlow: 'row wrap',
+          gap: '2rem',
+        }}>
+        <Text variant="title" inline>
+          Barlow
+        </Text>
+        <Text variant="title" inline>
+          <span style={{ fontFamily: 'Fira Code' }}>Fira Code</span>
+        </Text>
+      </div>
     </div>
     <hr />
     <div>

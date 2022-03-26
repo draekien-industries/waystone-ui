@@ -1,9 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { Anchor, AnchorProps } from '../../';
+import { Anchor, AnchorProps } from './anchor';
 
 export default {
+  title: 'Components/Anchor',
   component: Anchor,
   args: {
     external: false,
