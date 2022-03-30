@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
 import { Link, LinkProps } from 'theme-ui';
+import { Icon } from '../icon/icon';
 import { anchorCss } from './anchor.styles';
 
 /**
@@ -43,7 +44,7 @@ export const ExternalAnchor = ({
   ...rest
 }: LinkProps) => (
   <Link {...rest} sx={anchorCss} target={target} rel={rel}>
-    {children}
+    {children} <Icon name="open_in_new" size="sm" />
   </Link>
 );
 

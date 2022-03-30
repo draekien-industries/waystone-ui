@@ -29,31 +29,36 @@ export interface IconOptions extends IconStyleProps, HasVariant {
 }
 
 /** Props for the icon component. */
-export interface IconProps extends React.HTMLAttributes<HTMLElement> {
+export interface IconProps
+  extends Omit<React.HTMLAttributes<HTMLElement>, 'children' | 'color'>,
+    HasVariant,
+    HasSize,
+    HasColor {
   /** The name of the material icon to render. */
-  children: string;
-  /** The options to use when styling the icon. */
-  options?: IconOptions;
+  name: string;
+  /** The material icon variant to use when rendering the icon. */
+  variant?: IconVariant;
 }
+
 /**
  * Renders an icon component.
  * This component library relies on the material-icons font for rendering icons.
  * You can view the list of available icons by going to https://fonts.google.com/icons
  */
 export const Icon = ({
-  options = { variant: 'filled' },
   className,
-  children,
+  name,
+  variant = 'filled',
+  size = 'md',
+  color = 'inherit',
   ...rest
 }: IconProps) => {
-  const { variant } = options;
-
   return (
     <i
-      sx={iconCss(options)}
-      className={getIconClassName(variant || 'filled', className)}
+      sx={iconCss({ size, color })}
+      className={getIconClassName(variant, className)}
       {...rest}>
-      {children}
+      {name}
     </i>
   );
 };

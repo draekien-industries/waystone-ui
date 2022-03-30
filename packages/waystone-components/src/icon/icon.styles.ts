@@ -19,7 +19,7 @@ export const iconCss = (props: IconStyleProps): ThemeUIStyleObject => {
   };
 
   if (props.size) {
-    css.fontSize = convert(props.size);
+    css.fontSize = `${convert(props.size)} !important`;
   }
 
   return css;

@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Text as ThemeUiText } from 'theme-ui';
 import { TextVariant } from '@waystone/core';
 import { textCss } from './text.styles';
@@ -34,7 +34,7 @@ export interface TextProps
   /**
    * The components to render as children.
    */
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 /**

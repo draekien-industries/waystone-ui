@@ -1,6 +1,7 @@
 import { ThemeUIStyleObject } from 'theme-ui';
 
 export const anchorCss: ThemeUIStyleObject = {
+  paddingX: 'xs',
   textDecoration: 'none',
   borderBottom: '1px solid',
   borderBottomColor: 'highlight',
