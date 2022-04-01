@@ -1,4 +1,4 @@
-import { ThemeUIStyleObject } from '@theme-ui/css';
+import { ThemeUIStyleObject } from 'theme-ui';
 
 export const variants: Record<string, ThemeUIStyleObject> = {
   text: {

@@ -1,4 +1,5 @@
-export const mergeObjects = (target: any, source: any) => {
+/* eslint-disable no-param-reassign */
+export const mergeObjects = (target: never, source: never) => {
   Object.keys(source).forEach((key) => {
     if (key === '__proto__' || key === 'constructor') return;
 

@@ -1,5 +1,5 @@
-import { StylePropertyValue } from '@theme-ui/css';
 import { Size, SizeExtended, ThemeColor, ThemeSize } from '@waystone/core';
+import { StylePropertyValue } from '@theme-ui/css';
 
 import { Property } from 'csstype';
 
@@ -110,7 +110,7 @@ export interface HasBackgroundImage extends HasBackground {
 /** This component supports extended customisation via an options record. */
 export interface HasExtendedOptions {
   /** The options to apply to the component. */
-  options?: Record<string, any>;
+  options?: Record<string, unknown>;
 }
 
 /** This component has a disabled state. */

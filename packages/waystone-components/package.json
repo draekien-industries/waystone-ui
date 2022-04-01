@@ -13,7 +13,7 @@
     "build": "tsc --project tsconfig.json --noEmit false",
     "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
-    "lint": "TIMING=1 eslint src --fix",
+    "lint": "eslint src --fix",
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist && rimraf -rf storybook-static"
   },
   "devDependencies": {
@@ -32,16 +32,20 @@
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@waystone/core": "*",
+    "@waystone/jestconfig": "*",
     "@waystone/tsconfig": "*",
     "@waystone/utils": "*",
     "babel-loader": "^8.2.4",
     "eslint-preset-waystone": "*",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "storybook-dark-mode": "^1.0.9"
   },
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "theme-ui": "*",
+    "@theme-ui/css": "*"
+  }
 }

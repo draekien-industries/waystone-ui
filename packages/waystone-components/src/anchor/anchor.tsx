@@ -30,23 +30,23 @@ export interface AnchorProps extends LinkProps {
 }
 
 /** The internal anchor component */
-export const InternalAnchor = ({ children, ...rest }: LinkProps) => (
-  <Link {...rest} sx={anchorCss}>
+export function InternalAnchor({ children, ...rest }: LinkProps) {
+  return <Link {...rest} sx={anchorCss}>
     {children}
   </Link>
-);
+}
 
 /** The external anchor component */
-export const ExternalAnchor = ({
+export function ExternalAnchor({
   children,
   target = '_blank',
   rel = 'noopener noreferrer',
   ...rest
-}: LinkProps) => (
-  <Link {...rest} sx={anchorCss} target={target} rel={rel}>
+}: LinkProps) {
+  return <Link {...rest} sx={anchorCss} target={target} rel={rel}>
     {children} <Icon name="open_in_new" size="sm" />
   </Link>
-);
+}
 
 /**
  * A styled HTML `<a>` element which creates a hyperlink to the provided URL.
@@ -54,10 +54,10 @@ export const ExternalAnchor = ({
  * See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a for more details
  * about the HTML `<a>` element.
  */
-export const Anchor = ({ external = false, ...rest }: AnchorProps) => {
+export function Anchor({ external = false, ...rest }: AnchorProps) {
   if (external) {
     return <ExternalAnchor {...rest} />;
   }
 
   return <InternalAnchor {...rest} />;
-};
+}

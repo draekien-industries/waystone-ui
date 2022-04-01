@@ -1,6 +1,6 @@
 import { Size } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
-import { IconStyleProps } from './icon';
+import { IconStyleProps } from './icon.types';
 
 enum IconSize {
   sm = '1em',

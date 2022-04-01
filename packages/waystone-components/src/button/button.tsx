@@ -11,7 +11,8 @@ import {
   HasVariant,
   HasWidth,
 } from '../common/interfaces';
-import { buttonCss, ButtonVariant } from './button.styles';
+import { buttonCss } from './button.styles';
+import { ButtonVariant } from './button.types';
 
 export interface ButtonProps
   extends Omit<ThemeUiButtonProps, 'sx'>,
@@ -43,14 +44,14 @@ export interface ButtonProps
  * @param props - the {@link ButtonProps}
  * @returns the button component
  */
-export const Button = ({
+export function Button({
   children,
   variant = 'primary',
   size = 'sm',
   noShadow = false,
   noPadding = false,
   ...rest
-}: ButtonProps) => {
+}: ButtonProps) {
   const [colorMode] = useColorMode();
   const darkMode = colorMode === 'dark';
 
@@ -68,4 +69,4 @@ export const Button = ({
       {children}
     </ThemeUiButton>
   );
-};
+}

@@ -1,8 +1,8 @@
 /** @jsxImportSource theme-ui */
 import React, { useEffect } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
-import { Waystone } from '../';
-import { useColorMode } from '@theme-ui/color-modes';
+import { useColorMode } from 'theme-ui';
+import { Waystone } from '..';
 
 const TestProvider: React.FC = ({ children }) => (
   <Waystone>{children}</Waystone>

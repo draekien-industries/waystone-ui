@@ -1,4 +1,3 @@
-import { addDarkModeSuffix } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 import { HasSize, HasVariant, HasWidth } from '../common/interfaces';
 import {
@@ -8,14 +7,7 @@ import {
   getPadding,
   getVariant,
 } from './button.fx';
-
-export type ButtonVariant =
-  | 'primary'
-  | 'secondary'
-  | 'accent'
-  | 'highlight'
-  | 'ghost'
-  | 'link';
+import { ButtonVariant } from './button.types';
 
 export interface ButtonCssProps extends HasVariant, HasSize, HasWidth {
   /**
@@ -69,9 +61,6 @@ export const buttonCss = ({
       cursor: 'not-allowed',
     },
   };
-
-  if (size) {
-  }
 
   return css;
 };

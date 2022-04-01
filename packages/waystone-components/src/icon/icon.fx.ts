@@ -1,9 +1,9 @@
-import { IconVariant } from './icon';
+import { IconVariant } from './icon.types';
 
 export const getIconClassName = (variant?: IconVariant, className?: string) => {
-  variant = variant?.trim() as IconVariant;
+  const trimmed = variant?.trim() as IconVariant;
 
-  return variant === 'filled'
+  return trimmed === 'filled'
     ? `material-icons ${className || ''}`.trimEnd()
-    : `material-icons-${variant} ${className || ''}`.trimEnd();
+    : `material-icons-${trimmed} ${className || ''}`.trimEnd();
 };

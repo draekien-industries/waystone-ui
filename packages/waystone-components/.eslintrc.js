@@ -1,16 +1,13 @@
+const preset = require('eslint-preset-waystone');
+
 module.exports = {
+  ...preset,
   env: {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:storybook/recommended',
-    'prettier',
-  ],
-  parser: '@typescript-eslint/parser',
+  extends: [...preset.extends, 'plugin:storybook/recommended'],
+  plugins: [...preset.plugins, 'storybook'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -18,8 +15,8 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint'],
   rules: {
+    ...preset.rules,
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
   },

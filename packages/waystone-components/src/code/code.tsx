@@ -11,6 +11,6 @@ export interface CodeProps {
 /**
  * An inline code snippet.
  */
-export const Code = ({ children }: CodeProps) => {
+export function Code({ children }: CodeProps) {
   return <code sx={codeCss}>{children}</code>;
-};
+}

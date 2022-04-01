@@ -1,5 +1,5 @@
 import { addDarkModeSuffix, Size } from '@waystone/core';
-import { ButtonVariant } from './button.styles';
+import { ButtonVariant } from './button.types';
 
 export const getBackgroundColor = (
   variant: ButtonVariant,
@@ -14,6 +14,7 @@ export const getBackgroundColor = (
     case 'secondary':
     case 'accent':
     case 'highlight':
+    default:
       return `${variant[0]}-200`;
   }
 };

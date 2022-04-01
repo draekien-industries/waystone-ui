@@ -4,16 +4,7 @@ import { getIconClassName } from './icon.fx';
 import { iconCss } from './icon.styles';
 
 import { HasColor, HasSize, HasVariant } from '../common/interfaces';
-
-export type IconVariant =
-  | 'filled'
-  | 'outlined'
-  | 'round'
-  | 'two-tone'
-  | 'sharp';
-
-/** The props required to generate the correct icon styles. */
-export interface IconStyleProps extends HasSize, HasColor {}
+import { IconStyleProps, IconVariant } from './icon.types';
 
 /**
  * The options that can be set when rendering the icon.
@@ -45,14 +36,14 @@ export interface IconProps
  * This component library relies on the material-icons font for rendering icons.
  * You can view the list of available icons by going to https://fonts.google.com/icons
  */
-export const Icon = ({
+export function Icon({
   className,
   name,
   variant = 'filled',
   size = 'md',
   color = 'inherit',
   ...rest
-}: IconProps) => {
+}: IconProps) {
   return (
     <i
       sx={iconCss({ size, color })}
@@ -61,4 +52,4 @@ export const Icon = ({
       {name}
     </i>
   );
-};
+}

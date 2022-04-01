@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Text, TextProps } from './text';
 import { TextVariant } from '@waystone/core';
+import { Text, TextProps } from './text';
 
 export default {
   title: 'Components/Text',
@@ -21,12 +21,13 @@ const Template: Story<TextProps> = (args) => <Text {...args} />;
 export const Default = Template.bind({});
 
 const VariantTemplate: Story<TextProps> = (args) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { variant, children, ...rest } = args;
 
   return (
     <div>
-      {Object.keys(TextVariant).map((variant, index) => (
-        <Text key={index} variant={variant as TextVariant} {...rest}>
+      {Object.keys(TextVariant).map((textVariant, index) => (
+        <Text key={index} variant={textVariant as TextVariant} {...rest}>
           {variant}
         </Text>
       ))}
@@ -63,6 +64,7 @@ WithColor.args = {
 };
 
 const InlineTemplate: Story<TextProps> = (args) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { color, ...rest } = args;
 
   return (

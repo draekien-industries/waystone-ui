@@ -1,6 +1,6 @@
-import { WaystoneTheme } from '..';
-import { colors, layouts, styles } from '../theme';
+import { WaystoneTheme, colors, layouts, styles } from '../theme';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const { modes, ...colorsOnly } = colors;
 
 export { colorsOnly };

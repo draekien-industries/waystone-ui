@@ -12,14 +12,18 @@
   "scripts": {
     "build": "tsc --project tsconfig.json --noEmit false",
     "dev": "tsc --project tsconfig.json --watch --noEmit false",
-    "lint": "TIMING=1 eslint src --fix",
+    "lint": "eslint src --fix",
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
   },
   "devDependencies": {
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@waystone/tsconfig": "*",
+    "@waystone/jestconfig": "*",
     "eslint-preset-waystone": "*"
+  },
+  "dependencies": {
+    "theme-ui": "*"
   },
   "publishConfig": {
     "access": "public"

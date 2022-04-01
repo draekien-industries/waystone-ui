@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Icon, IconProps, IconOptions } from './icon';
+import { Icon, IconProps } from './icon';
 
 
 
