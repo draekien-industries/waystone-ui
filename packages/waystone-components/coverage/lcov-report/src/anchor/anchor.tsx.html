@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">35.29% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/17</span>
+                <span class='fraction'>6/17</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">46.15% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>6/13</span>
             </div>
         
             
@@ -127,9 +127,9 @@
 <a name='L62'></a><a href='#L62'>62</a>
 <a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -157,31 +157,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -189,9 +189,9 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/** @jsxImportSource theme-ui */
 import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
-<span class="cstat-no" title="statement not covered" >import { Link, LinkProps } from 'theme-ui';</span>
-<span class="cstat-no" title="statement not covered" >import { Icon } from '../icon/icon';</span>
-<span class="cstat-no" title="statement not covered" >import { anchorCss } from './anchor.styles';</span>
+import { Link, LinkProps } from 'theme-ui';
+import { Icon } from '../icon/icon';
+import { anchorCss } from './anchor.styles';
 &nbsp;
 /**
  * The props for the anchor component.
@@ -219,14 +219,14 @@ export interface AnchorProps extends LinkProps {
 }
 &nbsp;
 /** The internal anchor component */
-<span class="cstat-no" title="statement not covered" >export function <span class="fstat-no" title="function not covered" >I</span>nternalAnchor(</span>{ children<span class="cstat-no" title="statement not covered" >, ...r</span>est<span class="cstat-no" title="statement not covered" > }: LinkProps)</span> {
+export function <span class="fstat-no" title="function not covered" >InternalAnchor(</span>{ children<span class="cstat-no" title="statement not covered" >, ...r</span>est<span class="cstat-no" title="statement not covered" > }: LinkProps)</span> {
 <span class="cstat-no" title="statement not covered" >  return &lt;Link {...rest} sx={anchorCss}&gt;</span>
     {children}
   &lt;/Link&gt;
 }
 &nbsp;
 /** The external anchor component */
-<span class="cstat-no" title="statement not covered" >export function <span class="fstat-no" title="function not covered" >E</span>xternalAnchor(</span>{
+export function <span class="fstat-no" title="function not covered" >ExternalAnchor(</span>{
   children,
   target = <span class="branch-0 cbranch-no" title="branch not covered" >'_blank',</span>
   rel = <span class="branch-0 cbranch-no" title="branch not covered" >'noopener noreferrer'<span class="cstat-no" title="statement not covered" >,</span></span>
@@ -243,7 +243,7 @@ export interface AnchorProps extends LinkProps {
  * See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a for more details
  * about the HTML `&lt;a&gt;` element.
  */
-<span class="cstat-no" title="statement not covered" >export function <span class="fstat-no" title="function not covered" >A</span>nchor(</span>{ external = <span class="branch-0 cbranch-no" title="branch not covered" >false<span class="cstat-no" title="statement not covered" >,</span> ...r</span>est<span class="cstat-no" title="statement not covered" > }: AnchorProps)</span> {
+export function <span class="fstat-no" title="function not covered" >Anchor(</span>{ external = <span class="branch-0 cbranch-no" title="branch not covered" >false<span class="cstat-no" title="statement not covered" >,</span> ...r</span>est<span class="cstat-no" title="statement not covered" > }: AnchorProps)</span> {
 <span class="cstat-no" title="statement not covered" >  <span class="missing-if-branch" title="if path not taken" >I</span>if (external) {</span>
 <span class="cstat-no" title="statement not covered" >    return &lt;ExternalAnchor {...rest} /&gt;;</span>
   }
@@ -256,7 +256,7 @@ export interface AnchorProps extends LinkProps {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Sat Apr 02 2022 13:10:03 GMT+1100 (Australian Eastern Daylight Time)
+                at Sat Apr 02 2022 15:36:23 GMT+1100 (Australian Eastern Daylight Time)
             </div>
         <script src="../../prettify.js"></script>
         <script>

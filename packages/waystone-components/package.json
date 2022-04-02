@@ -14,7 +14,8 @@
     "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
     "lint": "eslint src --fix",
-    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist && rimraf -rf storybook-static && rimraf -rf coverage"
+    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist && rimraf -rf storybook-static && rimraf -rf coverage",
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^6.4.19",

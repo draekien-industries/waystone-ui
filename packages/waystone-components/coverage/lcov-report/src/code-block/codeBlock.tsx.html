@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>2/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -119,14 +119,12 @@
 <a name='L54'></a><a href='#L54'>54</a>
 <a name='L55'></a><a href='#L55'>55</a>
 <a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -153,13 +151,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -177,9 +179,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/** @jsxImportSource theme-ui */
 import React from 'react';
-<span class="cstat-no" title="statement not covered" >import SyntaxHighlighter from 'react-syntax-highlighter';</span>
-<span class="cstat-no" title="statement not covered" >import { tomorrowNight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';</span>
-<span class="cstat-no" title="statement not covered" >import { codeBlockContainerCss } from './codeBlock.styles';</span>
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { tomorrowNight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import { codeBlockContainerCss } from './codeBlock.styles';
 &nbsp;
 export interface CodeBlockProps {
   /**
@@ -209,13 +211,13 @@ export interface CodeBlockProps {
  * Refer to https://github.com/react-syntax-highlighter/react-syntax-highlighter/blob/HEAD/AVAILABLE_LANGUAGES_HLJS.MD
  * for the list of available languages.
  */
-export const <span class="cstat-no" title="statement not covered" >CodeBlock = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>{</span></span>
+export const CodeBlock = ({
   language = <span class="branch-0 cbranch-no" title="branch not covered" >'text',</span>
-  wordWrap = <span class="branch-0 cbranch-no" title="branch not covered" >false,</span>
-  hideLineNumbers = <span class="branch-0 cbranch-no" title="branch not covered" >false,</span>
+  wordWrap = false,
+  hideLineNumbers = false,
   children,
 }: CodeBlockProps) =&gt; (
-<span class="cstat-no" title="statement not covered" >  &lt;div sx={codeBlockContainerCss}&gt;</span>
+  &lt;div sx={codeBlockContainerCss}&gt;
     &lt;SyntaxHighlighter
       wrapLongLines={wordWrap}
       showLineNumbers={!hideLineNumbers}
@@ -226,7 +228,8 @@ export const <span class="cstat-no" title="statement not covered" >CodeBlock = <
         fontFamily: 'inherit',
         fontWeight: 'inherit',
         lineHeight: 'inherit',
-      }}&gt;
+      }}
+    &gt;
       {children}
     &lt;/SyntaxHighlighter&gt;
   &lt;/div&gt;
@@ -238,7 +241,7 @@ export const <span class="cstat-no" title="statement not covered" >CodeBlock = <
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Sat Apr 02 2022 13:10:03 GMT+1100 (Australian Eastern Daylight Time)
+                at Sat Apr 02 2022 15:36:23 GMT+1100 (Australian Eastern Daylight Time)
             </div>
         <script src="../../prettify.js"></script>
         <script>

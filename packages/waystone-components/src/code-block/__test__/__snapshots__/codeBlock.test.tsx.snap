@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The code block component Should match snapshot 1`] = `
+<div>
+  <div
+    class="css-1c9yept-CodeBlock"
+  >
+    <pre
+      style="display: block; overflow-x: auto; background: rgb(29, 31, 33); color: rgb(197, 200, 198); padding: 0.5em; background-color: inherit; font-family: inherit; font-weight: inherit; line-height: inherit;"
+    >
+      <code
+        class="language-javascript"
+        style="white-space: pre;"
+      >
+        <span
+          class="comment linenumber react-syntax-highlighter-line-number"
+          style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none;"
+        >
+          1
+        </span>
+        <span
+          style="color: rgb(222, 147, 95);"
+        >
+          console
+        </span>
+        <span>
+          .Log(
+        </span>
+        <span
+          style="color: rgb(181, 189, 104);"
+        >
+          "Hello World&quote;)
+        </span>
+      </code>
+    </pre>
+  </div>
+</div>
+`;
