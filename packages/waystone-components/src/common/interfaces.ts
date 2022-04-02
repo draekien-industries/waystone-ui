@@ -1,6 +1,7 @@
 import { Size, SizeExtended, ThemeColor, ThemeSize } from '@waystone/core';
 import { StylePropertyValue } from '@theme-ui/css';
 
+// eslint-disable-next-line import/no-unresolved
 import { Property } from 'csstype';
 
 /** This component supports different variants. */

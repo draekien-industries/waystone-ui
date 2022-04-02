@@ -2,15 +2,11 @@
   "pipeline": {
     "build": {
       "outputs": ["dist/**", ".next/**", "storybook-static/**"],
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     },
     "test": {
-      "outputs": [
-        "coverage/**"
-      ],
-      "dependsOn": []
+      "outputs": ["coverage/**"],
+      "dependsOn": ["^build"]
     },
     "lint": {
       "outputs": []

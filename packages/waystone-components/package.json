@@ -14,10 +14,9 @@
     "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
     "lint": "eslint src --fix",
-    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist && rimraf -rf storybook-static"
+    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist && rimraf -rf storybook-static && rimraf -rf coverage"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.8",
     "@storybook/addon-a11y": "^6.4.19",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
@@ -28,24 +27,25 @@
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
     "@testing-library/react": "^12.1.4",
-    "@theme-ui/color": "^0.14.1",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^17.0.8",
     "@waystone/core": "*",
-    "@waystone/jestconfig": "*",
     "@waystone/tsconfig": "*",
     "@waystone/utils": "*",
-    "babel-loader": "^8.2.4",
     "eslint-preset-waystone": "*",
+    "react-syntax-highlighter": "^15.5.0",
     "storybook-dark-mode": "^1.0.9"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@mdx-js/react": "^2.1.1",
+    "@theme-ui/color": "^0.14.2",
+    "@theme-ui/css": "^0.14.2",
+    "theme-ui": "^0.14.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "theme-ui": "*",
-    "@theme-ui/css": "*"
   }
 }

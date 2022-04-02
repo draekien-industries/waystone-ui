@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign */
-export const mergeObjects = (target: never, source: never) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const mergeObjects = (target: any, source: any) => {
   Object.keys(source).forEach((key) => {
     if (key === '__proto__' || key === 'constructor') return;
 
