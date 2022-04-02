@@ -6,7 +6,7 @@ describe('The code block component', () => {
   it('Should match snapshot', () => {
     const { container } = render(
       <CodeBlock language="javascript">
-        console.Log(&quot;Hello World&quote;)
+        console.Log(&quot;Hello World&quot;)
       </CodeBlock>
     );
 

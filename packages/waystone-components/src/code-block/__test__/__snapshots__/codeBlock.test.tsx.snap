@@ -29,7 +29,10 @@ exports[`The code block component Should match snapshot 1`] = `
         <span
           style="color: rgb(181, 189, 104);"
         >
-          "Hello World&quote;)
+          "Hello World"
+        </span>
+        <span>
+          )
         </span>
       </code>
     </pre>

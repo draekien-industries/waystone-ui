@@ -8,6 +8,14 @@
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
     },
+    "test:update": {
+      "outputs": ["coverage/**"],
+      "dependsOn": ["^build"]
+    },
+    "test:watch": {
+      "outputs": ["coverage/**"],
+      "dependsOn": ["^build"]
+    },
     "lint": {
       "outputs": []
     },
