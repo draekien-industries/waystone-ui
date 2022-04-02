@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Text component Matches snapshot 1`] = `
+<div>
+  <span
+    class="css-4bzqhp-Text"
+  >
+    text
+  </span>
+</div>
+`;

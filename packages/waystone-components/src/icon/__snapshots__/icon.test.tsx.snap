@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Icon component Matches snapshot 1`] = `
+<div>
+  <i
+    class="material-icons css-1h9809z-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;

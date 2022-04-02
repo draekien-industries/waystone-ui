@@ -1,6 +1,6 @@
 import React from 'react';
-import { render } from '../../common';
-import { CodeBlock } from '../codeBlock';
+import { render } from '../common';
+import { CodeBlock } from './codeBlock';
 
 describe('The code block component', () => {
   it('Should match snapshot', () => {
