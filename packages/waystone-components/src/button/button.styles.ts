@@ -4,6 +4,7 @@ import {
   getBackgroundColor,
   getBoxShadow,
   getColor,
+  getHoverBackgroundColor,
   getPadding,
   getVariant,
 } from './button.fx';
@@ -50,7 +51,7 @@ export const buttonCss = ({
     transition: 'all 200ms',
     ':enabled:hover, :enabled:focus': {
       boxShadow: !noShadow && hover,
-      backgroundColor: variant === 'ghost' ? 'primary' : undefined,
+      backgroundColor: getHoverBackgroundColor(variant),
     },
     ':enabled:active': {
       boxShadow: !noShadow && active,

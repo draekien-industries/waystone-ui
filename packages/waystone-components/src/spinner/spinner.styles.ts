@@ -1,0 +1,54 @@
+import { keyframes } from '@emotion/react';
+import { Size } from '@waystone/core';
+import { ThemeUIStyleObject } from 'theme-ui';
+import { CanBeFullWidth, HasColor, HasSize } from '../common/interfaces';
+
+export interface SpinnerProps extends HasSize, HasColor, CanBeFullWidth {}
+
+const changeContent = keyframes`
+10% { content: "⠙"; }
+20% { content: "⠹"; }
+30% { content: "⠸"; }
+40% { content: "⠼"; }
+50% { content: "⠴"; }
+60% { content: "⠦"; }
+70% { content: "⠧"; }
+80% { content: "⠇"; }
+90% { content: "⠏"; }
+`;
+
+const getSpinnerSize = (size: Size) => {
+  switch (size) {
+    case 'sm':
+      return '1em';
+    case 'md':
+      return '1.5em';
+    case 'lg':
+      return '2em';
+    default:
+      return '1.5em';
+  }
+};
+
+export const spinnerCss = ({
+  size,
+  color,
+  fullWidth,
+}: SpinnerProps): ThemeUIStyleObject => {
+  const css: ThemeUIStyleObject = {
+    color,
+    display: fullWidth ? 'flex' : 'inline-flex',
+    height: getSpinnerSize(size || 'md'),
+    alignItems: 'center',
+    justifyContent: 'center',
+    aspectRatio: '1',
+    ':after': {
+      animation: `${changeContent} .8s linear infinite`,
+      display: 'block',
+      content: '"⠋"',
+      fontSize: getSpinnerSize(size || 'md'),
+    },
+  };
+
+  return css;
+};

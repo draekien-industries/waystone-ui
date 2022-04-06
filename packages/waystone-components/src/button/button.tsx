@@ -7,11 +7,13 @@ import {
 } from 'theme-ui';
 import {
   CanDisable,
+  CanLoad,
   HasSize,
   HasVariant,
   HasWidth,
 } from '../common/interfaces';
-import { buttonCss } from './button.styles';
+import { Spinner } from '../spinner/spinner';
+import { buttonCss, ButtonCssProps } from './button.styles';
 import { ButtonVariant } from './button.types';
 
 export interface ButtonProps
@@ -19,7 +21,8 @@ export interface ButtonProps
     HasVariant,
     HasSize,
     HasWidth,
-    CanDisable {
+    CanDisable,
+    CanLoad {
   /** The content to render inside the button */
   children?: ReactNode;
   /**
@@ -37,6 +40,12 @@ export interface ButtonProps
    * @default false
    */
   noPadding?: boolean;
+  /**
+   * A flag indicating whether the button should render it's children while
+   * in the loading state
+   * @default true
+   */
+  showContentWhileLoading?: boolean;
 }
 
 /**
@@ -50,23 +59,27 @@ export function Button({
   size = 'sm',
   noShadow = false,
   noPadding = false,
+  disabled = false,
+  loading = false,
+  showContentWhileLoading = true,
   ...rest
 }: ButtonProps) {
   const [colorMode] = useColorMode();
   const darkMode = colorMode === 'dark';
+  const buttonCssProps: ButtonCssProps = {
+    variant,
+    size,
+    darkMode,
+    noShadow,
+    noPadding,
+    ...rest,
+  };
+  const buttonSx = buttonCss(buttonCssProps);
 
   return (
-    <ThemeUiButton
-      sx={buttonCss({
-        variant,
-        size,
-        darkMode,
-        noShadow,
-        noPadding,
-        ...rest,
-      })}
-      {...rest}>
-      {children}
+    <ThemeUiButton sx={buttonSx} disabled={disabled || loading} {...rest}>
+      {loading && <Spinner size={size !== 'sm' ? 'md' : 'sm'} />}
+      {(!loading || showContentWhileLoading) && children}
     </ThemeUiButton>
   );
 }

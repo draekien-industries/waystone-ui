@@ -19,6 +19,21 @@ export const getBackgroundColor = (
   }
 };
 
+export const getHoverBackgroundColor = (variant: ButtonVariant) => {
+  switch (variant) {
+    case 'ghost':
+      return 'muted';
+    case 'link':
+      return 'transparent';
+    case 'primary':
+    case 'secondary':
+    case 'accent':
+    case 'highlight':
+    default:
+      return `${variant[0]}-100`;
+  }
+};
+
 export const getColor = (variant: ButtonVariant) => {
   switch (variant) {
     case 'primary':
