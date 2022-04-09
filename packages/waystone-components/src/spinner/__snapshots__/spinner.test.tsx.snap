@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Spinner component Matches snapshot 1`] = `
+<div>
+  <span
+    class="css-1cbt1if-Spinner"
+  />
+</div>
+`;

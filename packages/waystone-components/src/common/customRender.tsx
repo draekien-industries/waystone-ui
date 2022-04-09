@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import React, { useEffect } from 'react';
-import { render, RenderOptions } from '@testing-library/react';
+import { render, RenderOptions, RenderResult } from '@testing-library/react';
 import { useColorMode } from 'theme-ui';
 import { Waystone } from '..';
 
@@ -21,7 +21,7 @@ const DarkModeWrapper: React.FC = ({ children }) => {
 const themedRender = (
   ui: React.ReactElement,
   options?: Omit<RenderOptions, 'wrapper'>
-) => render(ui, { wrapper: TestProvider, ...options });
+): RenderResult => render(ui, { wrapper: TestProvider, ...options });
 
 export * from '@testing-library/react';
 export { themedRender as render, DarkModeWrapper };
