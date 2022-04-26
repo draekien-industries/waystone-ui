@@ -86,7 +86,7 @@ export const getPadding = (
     case 'sm': {
       return {
         paddingX: 'md',
-        paddingY: 'xs',
+        paddingY: 'sm',
       };
     }
     case 'lg': {

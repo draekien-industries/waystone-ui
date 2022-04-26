@@ -78,7 +78,7 @@ export function Button({
 
   return (
     <ThemeUiButton sx={buttonSx} disabled={disabled || loading} {...rest}>
-      {loading && <Spinner size={size !== 'sm' ? 'md' : 'sm'} />}
+      {loading && <Spinner size="sm" />}
       {(!loading || showContentWhileLoading) && children}
     </ThemeUiButton>
   );
