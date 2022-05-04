@@ -9,6 +9,8 @@ import { CanBeFullWidth, HasHeight, HasWidth } from '../common';
 export interface CardProps extends HasWidth, HasHeight, CanBeFullWidth {
   /** The children to render in the card. */
   children: React.ReactNode;
+  /** Setting this prop to `true` will disable this component's drop shadow. */
+  noShadow?: boolean;
 }
 
 /**
@@ -20,6 +22,7 @@ export const Card = ({
   width,
   minWidth,
   maxWidth,
+  noShadow,
   ...rest
 }: CardProps) => {
   const [mode] = useColorMode();
@@ -33,7 +36,7 @@ export const Card = ({
     minWidth: !fullWidth && minWidth,
     maxWidth: !fullWidth && maxWidth,
     backgroundColor: darkMode ? 'b-600' : 'b-000',
-    boxShadow: 'md',
+    boxShadow: !noShadow && 'md',
     overflowY: 'scroll',
     ...rest,
   };
