@@ -32,7 +32,7 @@ export const Card = ({
     width: fullWidth ? '100%' : width || 'auto',
     minWidth: !fullWidth && minWidth,
     maxWidth: !fullWidth && maxWidth,
-    backgroundColor: darkMode ? 'b-600' : 'b-100',
+    backgroundColor: darkMode ? 'b-600' : 'b-000',
     boxShadow: 'md',
     overflowY: 'scroll',
     ...rest,

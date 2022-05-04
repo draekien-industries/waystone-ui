@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { ReactNode } from 'react';
+import { useColorMode } from 'theme-ui';
 import { codeCss } from './code.styles';
 
 /** The props required to render the code component. */
@@ -12,5 +13,7 @@ export interface CodeProps {
  * An inline code snippet.
  */
 export function Code({ children }: CodeProps) {
-  return <code sx={codeCss}>{children}</code>;
+  const [mode] = useColorMode();
+
+  return <code sx={codeCss(mode === 'dark')}>{children}</code>;
 }

@@ -1,6 +1,7 @@
 import { ThemeUIStyleObject } from 'theme-ui';
 import { HasSize, HasVariant, HasWidth } from '../common/interfaces';
 import {
+  getActiveBackgroundColor,
   getBackgroundColor,
   getBoxShadow,
   getColor,
@@ -55,6 +56,7 @@ export const buttonCss = ({
     },
     ':enabled:active': {
       boxShadow: !noShadow && active,
+      backgroundColor: getActiveBackgroundColor(variant),
     },
     ':disabled': {
       color: 'b-400',

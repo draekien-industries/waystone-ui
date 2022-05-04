@@ -1,6 +1,13 @@
 import { addDarkModeSuffix, Size } from '@waystone/core';
 import { ButtonVariant } from './button.types';
 
+/**
+ * It returns the background color for a button based on the variant and dark mode
+ * @param {ButtonVariant} variant - The variant of the button.
+ * @param {boolean} darkMode - boolean - This is a boolean value that determines whether the button
+ * should be dark or light.
+ * @returns A string
+ */
 export const getBackgroundColor = (
   variant: ButtonVariant,
   darkMode: boolean
@@ -19,6 +26,12 @@ export const getBackgroundColor = (
   }
 };
 
+/**
+ * If the variant is ghost, return muted, if it's link, return transparent, otherwise return the
+ * variant with a -100 suffix.
+ * @param {ButtonVariant} variant - ButtonVariant
+ * @returns A function that takes a variant and returns a color.
+ */
 export const getHoverBackgroundColor = (variant: ButtonVariant) => {
   switch (variant) {
     case 'ghost':
@@ -30,10 +43,36 @@ export const getHoverBackgroundColor = (variant: ButtonVariant) => {
     case 'accent':
     case 'highlight':
     default:
-      return `${variant[0]}-100`;
+      return `${variant[0]}-300`;
   }
 };
 
+/**
+ * If the variant is ghost, return muted, if it's link, return transparent, otherwise return the
+ * variant with a 600 appended to it.
+ * @param {ButtonVariant} variant - ButtonVariant
+ * @returns A function that takes a variant and returns a color.
+ */
+export const getActiveBackgroundColor = (variant: ButtonVariant) => {
+  switch (variant) {
+    case 'ghost':
+      return 'muted';
+    case 'link':
+      return 'transparent';
+    case 'primary':
+    case 'secondary':
+    case 'accent':
+    case 'highlight':
+    default:
+      return `${variant[0]}-400`;
+  }
+};
+
+/**
+ * It returns a string based on the variant passed in
+ * @param {ButtonVariant} variant - The variant of the button.
+ * @returns A string
+ */
 export const getColor = (variant: ButtonVariant) => {
   switch (variant) {
     case 'primary':
@@ -46,12 +85,26 @@ export const getColor = (variant: ButtonVariant) => {
   }
 };
 
+/**
+ * `ComputedBoxShadowStyles` is an object with three properties: `normal`, `hover`, and `active`. Each
+ * of those properties is a string.
+ * @property {string} normal - The box-shadow style for the normal state.
+ * @property {string} hover - The box-shadow style when the user hovers over the button.
+ * @property {string} active - The box-shadow style when the button is active.
+ */
 type ComputedBoxShadowStyles = {
   normal: string;
   hover: string;
   active: string;
 };
 
+/**
+ * It returns a `ComputedBoxShadowStyles` object, which is a type that has three properties: `normal`,
+ * `hover`, and `active`. Each of these properties is a string that represents a box shadow value
+ * @param {ButtonVariant} variant - ButtonVariant
+ * @param {boolean} darkMode - boolean
+ * @returns An object with 3 keys: normal, hover, and active.
+ */
 export const getBoxShadow = (
   variant: ButtonVariant,
   darkMode: boolean
@@ -71,11 +124,26 @@ export const getBoxShadow = (
   };
 };
 
+/**
+ * `ComputedPaddingStyles` is an object with two properties, `paddingX` and `paddingY`, which are both
+ * strings or numbers.
+ * @property {string | number} paddingX - The padding on the left and right sides of the component.
+ * @property {string | number} paddingY - The padding on the top and bottom of the component.
+ */
 type ComputedPaddingStyles = {
   paddingX: string | number;
   paddingY: string | number;
 };
 
+/**
+ * "If noPadding is true, return 0 padding, otherwise return padding based on the size prop."
+ *
+ * The function is a little more complicated than that, but that's the gist of it
+ * @param {Size} size - Size - The size of the button.
+ * @param {boolean} noPadding - boolean - This is a boolean that determines whether or not the
+ * component should have padding.
+ * @returns An object with two properties, paddingX and paddingY.
+ */
 export const getPadding = (
   size: Size,
   noPadding: boolean
@@ -103,6 +171,11 @@ export const getPadding = (
   }
 };
 
+/**
+ * It takes a size and returns a variant
+ * @param {Size} size - Size - This is the size of the text.
+ * @returns A string
+ */
 export const getVariant = (size: Size) => {
   switch (size) {
     case 'sm':
