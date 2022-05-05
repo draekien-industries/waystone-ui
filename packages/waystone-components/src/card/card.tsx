@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
-import { ThemeUIStyleObject, useColorMode } from 'theme-ui';
+import { useColorMode } from 'theme-ui';
 import { CanBeFullWidth, HasHeight, HasWidth } from '../common/interfaces';
+import * as styles from './card.styles';
 
 /**
  * The props for the Card component.
@@ -10,6 +11,10 @@ export interface CardProps extends HasWidth, HasHeight, CanBeFullWidth {
   children: React.ReactNode;
   /** Setting this prop to `true` will disable this component's drop shadow. */
   noShadow?: boolean;
+  /** Setting this prop to `true` will disable this component's default padding. */
+  noPadding?: boolean;
+  /** An optional cover image to render inside the card. */
+  coverImageUrl?: string;
 }
 
 /**
@@ -17,28 +22,24 @@ export interface CardProps extends HasWidth, HasHeight, CanBeFullWidth {
  */
 export const Card = ({
   children,
-  fullWidth,
-  width,
-  minWidth,
-  maxWidth,
-  noShadow,
+  coverImageUrl,
+  noPadding,
   ...rest
 }: CardProps) => {
   const [mode] = useColorMode();
   const darkMode = mode === 'dark';
 
-  const cardCss: ThemeUIStyleObject = {
-    paddingX: 'md',
-    paddingY: 'md',
-    borderRadius: 'md',
-    width: fullWidth ? '100%' : width || 'auto',
-    minWidth: !fullWidth && minWidth,
-    maxWidth: !fullWidth && maxWidth,
-    backgroundColor: darkMode ? 'b-600' : 'b-000',
-    boxShadow: !noShadow && 'md',
-    overflowY: 'auto',
-    ...rest,
-  };
-
-  return <div sx={cardCss}>{children}</div>;
+  return (
+    <div
+      sx={styles.cardContainerCss({
+        ...rest,
+        darkMode,
+      })}
+    >
+      {coverImageUrl && (
+        <div sx={styles.coverImageCss(coverImageUrl)} role="img" />
+      )}
+      <div sx={styles.cardContentCss(noPadding)}>{children}</div>
+    </div>
+  );
 };

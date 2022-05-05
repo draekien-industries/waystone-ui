@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Card, CardProps } from './card';
+import exampleImage from './assets/example-image.png';
 
 export default {
   title: 'Components/Card',
@@ -21,4 +22,11 @@ export const WithConstraints = Template.bind({});
 WithConstraints.args = {
   maxWidth: 'md',
   maxHeight: 'md',
+};
+
+export const WithCoverImage = Template.bind({});
+
+WithCoverImage.args = {
+  coverImageUrl: exampleImage,
+  maxWidth: 'xl',
 };

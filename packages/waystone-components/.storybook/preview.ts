@@ -2,7 +2,7 @@ import { waystoneDecorator } from './waystone.decorator';
 import { create } from '@storybook/theming';
 import logo from './assets/waystone-logo.svg';
 import logoDark from './assets/waystone-logo-dark.svg';
-import { Size, WaystoneBaseTheme } from '@waystone/core';
+import { WaystoneBaseTheme } from '@waystone/core';
 import { getThemeColors } from './preview.fx';
 import { DocsContainer } from './docs.container';
 
