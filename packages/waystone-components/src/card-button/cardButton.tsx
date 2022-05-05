@@ -8,7 +8,6 @@ import { Spinner } from '../spinner/spinner';
 
 export interface CardButtonProps extends CardProps, CanDisable, CanLoad {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  onKeyDown?: (e: React.KeyboardEvent<HTMLButtonElement>) => void;
 }
 
 export const CardButton = ({
@@ -21,7 +20,6 @@ export const CardButton = ({
   disabled,
   loading,
   onClick,
-  onKeyDown,
   ...rest
 }: CardButtonProps) => {
   const [mode] = useColorMode();
@@ -67,7 +65,6 @@ export const CardButton = ({
     <button
       sx={cardCss}
       onClick={onClick}
-      onKeyDown={onKeyDown}
       type="button"
       disabled={disabled || loading}
     >
