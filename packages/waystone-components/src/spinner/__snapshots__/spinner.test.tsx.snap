@@ -3,7 +3,7 @@
 exports[`The Spinner component Matches snapshot 1`] = `
 <div>
   <span
-    class="css-1cbt1if-Spinner"
+    class="css-1k76ax-Spinner"
   />
 </div>
 `;

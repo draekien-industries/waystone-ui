@@ -1,11 +1,36 @@
 /** @jsxImportSource theme-ui */
-import { spinnerCss, SpinnerProps } from './spinner.styles';
+import { spinnerCss, SpinnerCssProps } from './spinner.styles';
+import { Overlay } from '../overlay/overlay';
+
+export interface SpinnerProps extends SpinnerCssProps {
+  /**
+   * Renders the spinner with an overlay that takes up the full
+   * width and height of the parent container.
+   */
+  overlay?: boolean;
+}
 
 /** A terminal style loading spinner */
 export const Spinner = ({
   size = 'md',
   color = 'accent',
   fullWidth = false,
-}: SpinnerProps) => <span sx={spinnerCss({ size, color, fullWidth })} />;
+  overlay = false,
+}: SpinnerProps) => {
+  if (overlay) {
+    return (
+      <Overlay>
+        <span
+          sx={{
+            ...spinnerCss({ size, color, fullWidth: true }),
+            height: '100%',
+            zIndex: 'highest',
+            position: 'absolute',
+          }}
+        />
+      </Overlay>
+    );
+  }
 
-export type { SpinnerProps };
+  return <span sx={spinnerCss({ size, color, fullWidth })} />;
+};

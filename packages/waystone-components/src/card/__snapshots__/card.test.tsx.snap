@@ -3,7 +3,7 @@
 exports[`The Card component Matches snapshot 1`] = `
 <div>
   <div
-    class="css-142j87o-Card"
+    class="css-1lbj9s1-Card"
   >
     card
   </div>

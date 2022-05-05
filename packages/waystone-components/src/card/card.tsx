@@ -1,7 +1,6 @@
 /** @jsxImportSource theme-ui */
-
 import { ThemeUIStyleObject, useColorMode } from 'theme-ui';
-import { CanBeFullWidth, HasHeight, HasWidth } from '../common';
+import { CanBeFullWidth, HasHeight, HasWidth } from '../common/interfaces';
 
 /**
  * The props for the Card component.
@@ -37,7 +36,7 @@ export const Card = ({
     maxWidth: !fullWidth && maxWidth,
     backgroundColor: darkMode ? 'b-600' : 'b-000',
     boxShadow: !noShadow && 'md',
-    overflowY: 'scroll',
+    overflowY: 'auto',
     ...rest,
   };
 

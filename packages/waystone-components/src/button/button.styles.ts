@@ -1,3 +1,4 @@
+import { alpha } from '@theme-ui/color';
 import { ThemeUIStyleObject } from 'theme-ui';
 import { HasSize, HasVariant, HasWidth } from '../common/interfaces';
 import {
@@ -49,10 +50,16 @@ export const buttonCss = ({
     minWidth,
     boxShadow: !noShadow && normal,
     cursor: 'pointer',
+    outlineColor: alpha('info-000', 0.75),
+    outlineWidth: 0,
+    outlineStyle: 'solid',
     transition: 'all 200ms',
     ':enabled:hover, :enabled:focus': {
       boxShadow: !noShadow && hover,
       backgroundColor: getHoverBackgroundColor(variant),
+      outlineColor: alpha('info-000', 0.75),
+      outlineWidth: 'sm',
+      outlineStyle: 'solid',
     },
     ':enabled:active': {
       boxShadow: !noShadow && active,

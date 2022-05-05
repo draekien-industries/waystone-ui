@@ -3,7 +3,7 @@ import { Size } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 import { CanBeFullWidth, HasColor, HasSize } from '../common/interfaces';
 
-export interface SpinnerProps extends HasSize, HasColor, CanBeFullWidth {}
+export interface SpinnerCssProps extends HasSize, HasColor, CanBeFullWidth {}
 
 const changeContent = keyframes`
 10% { content: "⠙"; }
@@ -34,10 +34,11 @@ export const spinnerCss = ({
   size,
   color,
   fullWidth,
-}: SpinnerProps): ThemeUIStyleObject => {
+}: SpinnerCssProps): ThemeUIStyleObject => {
   const css: ThemeUIStyleObject = {
     color,
     display: fullWidth ? 'flex' : 'inline-flex',
+    width: fullWidth ? '100%' : 'auto',
     height: getSpinnerSize(size || 'md'),
     alignItems: 'center',
     justifyContent: 'center',
