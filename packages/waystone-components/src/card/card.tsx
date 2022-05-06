@@ -2,6 +2,7 @@
 import { useColorMode } from 'theme-ui';
 import { CanBeFullWidth, HasHeight, HasWidth } from '../common/interfaces';
 import * as styles from './card.styles';
+import { CoverImageCssOptions } from './card.styles';
 
 /**
  * The props for the Card component.
@@ -14,7 +15,7 @@ export interface CardProps extends HasWidth, HasHeight, CanBeFullWidth {
   /** Setting this prop to `true` will disable this component's default padding. */
   noPadding?: boolean;
   /** An optional cover image to render inside the card. */
-  coverImageUrl?: string;
+  coverImage?: CoverImageCssOptions;
 }
 
 /**
@@ -22,7 +23,7 @@ export interface CardProps extends HasWidth, HasHeight, CanBeFullWidth {
  */
 export const Card = ({
   children,
-  coverImageUrl,
+  coverImage,
   noPadding,
   ...rest
 }: CardProps) => {
@@ -36,9 +37,7 @@ export const Card = ({
         darkMode,
       })}
     >
-      {coverImageUrl && (
-        <div sx={styles.coverImageCss(coverImageUrl)} role="img" />
-      )}
+      {coverImage && <div sx={styles.coverImageCss(coverImage)} role="img" />}
       <div sx={styles.cardContentCss(noPadding)}>{children}</div>
     </div>
   );
