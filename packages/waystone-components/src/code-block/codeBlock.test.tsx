@@ -12,4 +12,14 @@ describe('The code block component', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('Should render a caption', () => {
+    const { container } = render(
+      <CodeBlock language="javascript" caption="foo definitely is bar">
+        console.Log(&quot;Hello World&quot;)
+      </CodeBlock>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

@@ -2,7 +2,14 @@
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { tomorrowNight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
-import { codeBlockContainerCss } from './codeBlock.styles';
+import { Icon } from '../icon/icon';
+import { copy } from './codeBlock.fx';
+import {
+  codeBlockCaptionCss,
+  codeBlockContainerCss,
+  codeBlockCopyButtonCss,
+  codeBlockLanguageCss,
+} from './codeBlock.styles';
 
 export interface CodeBlockProps {
   /**
@@ -24,7 +31,9 @@ export interface CodeBlockProps {
   /**
    * The text to render as code.
    */
-  children: React.ReactNode;
+  children: string;
+  /** An optional caption to describe the code block. */
+  caption?: string;
 }
 
 /**
@@ -36,22 +45,48 @@ export const CodeBlock = ({
   language = 'text',
   wordWrap = false,
   hideLineNumbers = false,
+  caption,
   children,
-}: CodeBlockProps) => (
-  <div sx={codeBlockContainerCss}>
-    <SyntaxHighlighter
-      wrapLongLines={wordWrap}
-      showLineNumbers={!hideLineNumbers}
-      language={language}
-      style={tomorrowNight}
-      customStyle={{
-        backgroundColor: 'inherit',
-        fontFamily: 'inherit',
-        fontWeight: 'inherit',
-        lineHeight: 'inherit',
-      }}
-    >
-      {children}
-    </SyntaxHighlighter>
-  </div>
-);
+}: CodeBlockProps) => {
+  const [iconName, setIconName] = React.useState('content_copy');
+
+  const handleCopy = () => {
+    copy(children);
+    setIconName('done');
+  };
+
+  const handleBlur = () => {
+    setIconName('content_copy');
+  };
+
+  return (
+    <div sx={codeBlockContainerCss}>
+      <div sx={codeBlockLanguageCss}>{language}</div>
+      <button
+        sx={codeBlockCopyButtonCss}
+        type="button"
+        onClick={handleCopy}
+        onBlur={handleBlur}
+      >
+        <Icon name={iconName} />
+      </button>
+      <SyntaxHighlighter
+        wrapLongLines={wordWrap}
+        showLineNumbers={!hideLineNumbers}
+        language={language}
+        style={tomorrowNight}
+        customStyle={{
+          backgroundColor: 'inherit',
+          fontFamily: 'inherit',
+          fontWeight: 'inherit',
+          lineHeight: 'inherit',
+          paddingTop: '2rem',
+          paddingBottom: caption ? '2.25rem' : '1.5rem',
+        }}
+      >
+        {children}
+      </SyntaxHighlighter>
+      {caption && <caption sx={codeBlockCaptionCss}>{caption}</caption>}
+    </div>
+  );
+};

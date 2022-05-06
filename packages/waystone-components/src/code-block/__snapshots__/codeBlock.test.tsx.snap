@@ -3,10 +3,25 @@
 exports[`The code block component Should match snapshot 1`] = `
 <div>
   <div
-    class="css-1c9yept-CodeBlock"
+    class="css-hbp852-CodeBlock"
   >
+    <div
+      class="css-19r3ome-CodeBlock"
+    >
+      javascript
+    </div>
+    <button
+      class="css-59l86v-CodeBlock"
+      type="button"
+    >
+      <i
+        class="material-icons css-1h9809z-Icon"
+      >
+        content_copy
+      </i>
+    </button>
     <pre
-      style="display: block; overflow-x: auto; background: rgb(29, 31, 33); color: rgb(197, 200, 198); padding: 0.5em; background-color: inherit; font-family: inherit; font-weight: inherit; line-height: inherit;"
+      style="display: block; overflow-x: auto; background: rgb(29, 31, 33); color: rgb(197, 200, 198); padding: 2rem 0.5em 1.5rem 0.5em; background-color: inherit; font-family: inherit; font-weight: inherit; line-height: inherit;"
     >
       <code
         class="language-javascript"
@@ -36,6 +51,66 @@ exports[`The code block component Should match snapshot 1`] = `
         </span>
       </code>
     </pre>
+  </div>
+</div>
+`;
+
+exports[`The code block component Should render a caption 1`] = `
+<div>
+  <div
+    class="css-hbp852-CodeBlock"
+  >
+    <div
+      class="css-19r3ome-CodeBlock"
+    >
+      javascript
+    </div>
+    <button
+      class="css-59l86v-CodeBlock"
+      type="button"
+    >
+      <i
+        class="material-icons css-1h9809z-Icon"
+      >
+        content_copy
+      </i>
+    </button>
+    <pre
+      style="display: block; overflow-x: auto; background: rgb(29, 31, 33); color: rgb(197, 200, 198); padding: 2rem 0.5em 2.25rem 0.5em; background-color: inherit; font-family: inherit; font-weight: inherit; line-height: inherit;"
+    >
+      <code
+        class="language-javascript"
+        style="white-space: pre;"
+      >
+        <span
+          class="comment linenumber react-syntax-highlighter-line-number"
+          style="display: inline-block; min-width: 1.25em; padding-right: 1em; text-align: right; user-select: none;"
+        >
+          1
+        </span>
+        <span
+          style="color: rgb(222, 147, 95);"
+        >
+          console
+        </span>
+        <span>
+          .Log(
+        </span>
+        <span
+          style="color: rgb(181, 189, 104);"
+        >
+          "Hello World"
+        </span>
+        <span>
+          )
+        </span>
+      </code>
+    </pre>
+    <caption
+      class="css-vxgyny-CodeBlock"
+    >
+      foo definitely is bar
+    </caption>
   </div>
 </div>
 `;

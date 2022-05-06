@@ -15,3 +15,13 @@ Default.args = {
   language: 'javascript',
   children: `console.log('Hello World!')`,
 };
+
+export const WithCaption = Template.bind({});
+
+WithCaption.args = {
+  language: 'typescript',
+  children: `// my insightful comment
+const foo: string = 'bar';
+console.log(foo);`,
+  caption: 'foo definitely is bar',
+};
