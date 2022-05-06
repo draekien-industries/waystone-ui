@@ -2,12 +2,24 @@
 import { alpha } from '@theme-ui/color';
 import React from 'react';
 import { ThemeUIStyleObject, useColorMode } from 'theme-ui';
-import { CardProps } from '../card/card';
-import { CanDisable, CanLoad } from '../common';
+import {
+  CanBeFullWidth,
+  CanDisable,
+  CanLoad,
+  HasHeight,
+  HasWidth,
+} from '../common';
 import { Spinner } from '../spinner/spinner';
 
-export interface CardButtonProps extends CardProps, CanDisable, CanLoad {
+export interface CardButtonProps
+  extends HasWidth,
+    HasHeight,
+    CanDisable,
+    CanLoad,
+    CanBeFullWidth {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  noShadow?: boolean;
+  children: React.ReactNode;
 }
 
 export const CardButton = ({
@@ -41,7 +53,7 @@ export const CardButton = ({
     outlineColor: alpha('info-000', 0.75),
     outlineWidth: 0,
     outlineStyle: 'solid',
-    overflowY: 'auto',
+    overflow: 'hidden',
     textAlign: 'left',
     transition: 'all 200ms',
     ...rest,

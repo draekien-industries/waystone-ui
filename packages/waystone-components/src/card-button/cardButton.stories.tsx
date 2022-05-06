@@ -21,3 +21,9 @@ export default {
 const Template: Story<CardButtonProps> = (args) => <CardButton {...args} />;
 
 export const Default = Template.bind({});
+
+export const WithConstraints = Template.bind({});
+
+WithConstraints.args = {
+  width: 'xl',
+};

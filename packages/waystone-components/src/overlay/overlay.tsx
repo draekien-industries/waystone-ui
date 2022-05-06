@@ -16,7 +16,7 @@ export const Overlay = ({ children, fullScreen = false }: OverlayProps) => (
       width: '100%',
       height: '100%',
       zIndex: 'highest',
-      bg: alpha('muted', 0.2),
+      bg: alpha('muted', 0.75),
       backdropFilter: 'blur(2px)',
       pointerEvents: 'none',
     }}
