@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Card, CardProps } from './card';
-import exampleImage from './assets/example-image.png';
+import exampleImage from '../__assets__/example-image.png';
 import { CoverImageCssOptions } from './card.styles';
 
 const options: CoverImageCssOptions = {
