@@ -7,6 +7,9 @@ import {
   getBoxShadow,
   getColor,
   getHoverBackgroundColor,
+  getLinkVariantActiveColor,
+  getLinkVariantColor,
+  getLinkVariantHoverColor,
   getPadding,
   getVariant,
 } from './button.fx';
@@ -55,6 +58,7 @@ export const buttonCss = ({
     outlineStyle: 'solid',
     transition: 'all 200ms',
     ':enabled:hover, :enabled:focus': {
+      color: isLink && getLinkVariantHoverColor(darkMode),
       boxShadow: !noShadow && hover,
       backgroundColor: getHoverBackgroundColor(variant),
       outlineColor: alpha('info-000', 0.75),
@@ -62,6 +66,7 @@ export const buttonCss = ({
       outlineStyle: 'solid',
     },
     ':enabled:active': {
+      color: isLink && getLinkVariantActiveColor(darkMode),
       boxShadow: !noShadow && active,
       backgroundColor: getActiveBackgroundColor(variant),
     },

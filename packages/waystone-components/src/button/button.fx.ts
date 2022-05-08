@@ -85,6 +85,12 @@ export const getColor = (variant: ButtonVariant) => {
   }
 };
 
+export const getLinkVariantActiveColor = (darkMode: boolean) =>
+  darkMode ? 'h-400' : 'h-700';
+
+export const getLinkVariantHoverColor = (darkMode: boolean) =>
+  darkMode ? 'h-300' : 'h-600';
+
 /**
  * `ComputedBoxShadowStyles` is an object with three properties: `normal`, `hover`, and `active`. Each
  * of those properties is a string.
