@@ -8,7 +8,6 @@ import {
   getColor,
   getHoverBackgroundColor,
   getLinkVariantActiveColor,
-  getLinkVariantColor,
   getLinkVariantHoverColor,
   getPadding,
   getVariant,

@@ -106,11 +106,11 @@ exports[`The code block component Should render a caption 1`] = `
         </span>
       </code>
     </pre>
-    <caption
-      class="css-vxgyny-CodeBlock"
+    <div
+      class="css-1wcax0c-CodeBlock"
     >
       foo definitely is bar
-    </caption>
+    </div>
   </div>
 </div>
 `;

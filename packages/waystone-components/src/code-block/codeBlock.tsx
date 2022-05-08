@@ -86,7 +86,7 @@ export const CodeBlock = ({
       >
         {children}
       </SyntaxHighlighter>
-      {caption && <caption sx={codeBlockCaptionCss}>{caption}</caption>}
+      {caption && <div sx={codeBlockCaptionCss}>{caption}</div>}
     </div>
   );
 };

@@ -64,6 +64,7 @@ export const codeBlockCopyButtonCss: ThemeUIStyleObject = {
 export const codeBlockCaptionCss: ThemeUIStyleObject = {
   position: 'absolute',
   variant: 'text.caption',
+  textAlign: 'center',
   bottom: 0,
   left: 0,
   right: 0,

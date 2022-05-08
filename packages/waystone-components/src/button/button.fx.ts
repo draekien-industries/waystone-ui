@@ -85,9 +85,19 @@ export const getColor = (variant: ButtonVariant) => {
   }
 };
 
+/**
+ * Gets the active color for a link button based on the dark mode
+ * @param darkMode - Is the app using dark mode?
+ * @returns
+ */
 export const getLinkVariantActiveColor = (darkMode: boolean) =>
   darkMode ? 'h-400' : 'h-700';
 
+/**
+ * Gets the hover color for a link button based on the dark mode
+ * @param darkMode - Is the app using dark mode?
+ * @returns
+ */
 export const getLinkVariantHoverColor = (darkMode: boolean) =>
   darkMode ? 'h-300' : 'h-600';
 
