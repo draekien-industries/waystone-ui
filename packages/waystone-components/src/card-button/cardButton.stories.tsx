@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { CardButton, CardButtonProps } from './cardButton';
 import { Text } from '../text/text';
 
@@ -16,9 +16,11 @@ export default {
     ),
     fullWidth: false,
   },
-} as Meta;
+} as ComponentMeta<typeof CardButton>;
 
-const Template: Story<CardButtonProps> = (args) => <CardButton {...args} />;
+const Template: ComponentStory<typeof CardButton> = (args) => (
+  <CardButton {...args} />
+);
 
 export const Default = Template.bind({});
 

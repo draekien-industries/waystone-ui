@@ -1,6 +1,6 @@
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
-import { IconButton, IconButtonProps } from './iconButton';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { IconButton } from './iconButton';
 import { Icon } from '../icon/icon';
 import { Button } from '../button/button';
 
@@ -16,8 +16,10 @@ export default {
     iconPosition: 'left',
     children: 'Add',
   },
-} as Meta;
+} as ComponentMeta<typeof IconButton>;
 
-const Template: Story<IconButtonProps> = (args) => <IconButton {...args} />;
+const Template: ComponentStory<typeof IconButton> = (args) => (
+  <IconButton {...args} />
+);
 
 export const Default = Template.bind({});

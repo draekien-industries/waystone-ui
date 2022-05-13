@@ -1,6 +1,6 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { useSpinner, UseSpinnerProps } from './spinner.hooks';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { useSpinner } from './spinner.hooks';
 import { UseSpinnerDemo } from './spinner.internal';
 import { Button } from '../button/button';
 
@@ -21,9 +21,11 @@ export default {
         'Whether the spinner should cover the full screen. Defaults to `true`. Use `position:relative` on the parent container to restrict the spinner to the parent container.',
     },
   },
-} as Meta;
+} as ComponentMeta<typeof UseSpinnerDemo>;
 
-const Template: Story<UseSpinnerProps> = (args) => <UseSpinnerDemo {...args} />;
+const Template: ComponentStory<typeof UseSpinnerDemo> = (args) => (
+  <UseSpinnerDemo {...args} />
+);
 
 export const Default = Template.bind({});
 

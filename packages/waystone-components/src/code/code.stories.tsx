@@ -1,14 +1,14 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Code, CodeProps } from './code';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Code } from './code';
 import { Text } from '../text/text';
 
 export default {
   title: 'Components/Code',
   component: Code,
-} as Meta;
+} as ComponentMeta<typeof Code>;
 
-const Template: Story<CodeProps> = (args) => <Code {...args} />;
+const Template: ComponentStory<typeof Code> = (args) => <Code {...args} />;
 
 export const Default = Template.bind({});
 
@@ -17,8 +17,10 @@ Default.args = {
 };
 
 export function WithExample() {
-  return <Text>
-    This is an example of the <Code>Code</Code> component being used inside a{' '}
-    <Code>Text</Code> component.
-  </Text>
+  return (
+    <Text>
+      This is an example of the <Code>Code</Code> component being used inside a{' '}
+      <Code>Text</Code> component.
+    </Text>
+  );
 }

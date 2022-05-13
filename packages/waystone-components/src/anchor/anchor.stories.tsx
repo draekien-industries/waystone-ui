@@ -1,7 +1,7 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { Anchor, AnchorProps } from './anchor';
+import { Anchor } from './anchor';
 
 export default {
   title: 'Components/Anchor',
@@ -9,9 +9,9 @@ export default {
   args: {
     external: false,
   },
-} as Meta;
+} as ComponentMeta<typeof Anchor>;
 
-const Template: Story<AnchorProps> = (args) => (
+const Template: ComponentStory<typeof Anchor> = (args) => (
   <Anchor {...args} onClick={action('clicked')} />
 );
 

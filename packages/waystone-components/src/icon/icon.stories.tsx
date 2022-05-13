@@ -1,8 +1,6 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Icon, IconProps } from './icon';
-
-
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Icon } from './icon';
 
 export default {
   title: 'Components/Icon',
@@ -12,9 +10,9 @@ export default {
     size: 'md',
     color: 'inherit',
   },
-} as Meta;
+} as ComponentMeta<typeof Icon>;
 
-const Template: Story<IconProps> = (args) => <Icon {...args} />;
+const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
 export const Default = Template.bind({});
 

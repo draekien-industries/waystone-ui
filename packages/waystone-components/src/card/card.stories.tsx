@@ -1,6 +1,6 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Card, CardProps } from './card';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Card } from './card';
 import exampleImage from '../__assets__/example-image.png';
 import { CoverImageCssOptions } from './card.styles';
 
@@ -39,9 +39,9 @@ export default {
       },
     },
   },
-} as Meta;
+} as ComponentMeta<typeof Card>;
 
-const Template: Story<CardProps> = (args) => <Card {...args} />;
+const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
 
 export const Default = Template.bind({});
 

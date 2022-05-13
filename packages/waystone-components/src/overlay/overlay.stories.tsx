@@ -1,6 +1,6 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Overlay, OverlayProps } from './overlay';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Overlay } from './overlay';
 import { Text } from '../text/text';
 
 export default {
@@ -9,9 +9,9 @@ export default {
   args: {
     fullScreen: false,
   },
-} as Meta;
+} as ComponentMeta<typeof Overlay>;
 
-const Template: Story<OverlayProps> = (args) => (
+const Template: ComponentStory<typeof Overlay> = (args) => (
   <div
     style={{
       position: 'relative',

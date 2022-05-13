@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { TextVariant } from '@waystone/core';
 import { Text, TextProps } from './text';
 
@@ -14,13 +14,13 @@ export default {
       'Non dolorum facilis similique commodi, officiis error quis molestiae in repellat, ' +
       'minus delectus nesciunt, voluptas quos autem? Nostrum quidem mollitia nemo quas!',
   },
-} as Meta;
+} as ComponentMeta<typeof Text>;
 
-const Template: Story<TextProps> = (args) => <Text {...args} />;
+const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
 export const Default = Template.bind({});
 
-const VariantTemplate: Story<TextProps> = (args) => {
+const VariantTemplate: ComponentStory<typeof Text> = (args) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { variant, children, ...rest } = args;
 
@@ -63,7 +63,7 @@ WithColor.args = {
   color: 's-400',
 };
 
-const InlineTemplate: Story<TextProps> = (args) => {
+const InlineTemplate: ComponentStory<typeof Text> = (args) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { color, ...rest } = args;
 

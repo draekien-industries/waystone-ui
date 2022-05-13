@@ -1,13 +1,15 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { CodeBlock, CodeBlockProps } from './codeBlock';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { CodeBlock } from './codeBlock';
 
 export default {
   title: 'Components/CodeBlock',
   component: CodeBlock,
-} as Meta;
+} as ComponentMeta<typeof CodeBlock>;
 
-const Template: Story<CodeBlockProps> = (args) => <CodeBlock {...args} />;
+const Template: ComponentStory<typeof CodeBlock> = (args) => (
+  <CodeBlock {...args} />
+);
 
 export const Default = Template.bind({});
 

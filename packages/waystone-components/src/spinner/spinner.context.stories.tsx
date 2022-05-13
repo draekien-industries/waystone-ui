@@ -1,8 +1,8 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { within, waitFor, userEvent } from '@storybook/testing-library';
 import { UseSpinnerContextDemo } from './spinner.internal';
-import { SpinnerProvider, SpinnerProviderProps } from './spinner.context';
+import { SpinnerProvider } from './spinner.context';
 
 export default {
   title: 'Hooks/useSpinnerContext',
@@ -10,9 +10,9 @@ export default {
   args: {
     initialVisible: true,
   },
-} as Meta;
+} as ComponentMeta<typeof UseSpinnerContextDemo>;
 
-const Template: Story<SpinnerProviderProps> = (args) => (
+const Template: ComponentStory<typeof UseSpinnerContextDemo> = (args) => (
   <SpinnerProvider {...args}>
     <UseSpinnerContextDemo />
   </SpinnerProvider>

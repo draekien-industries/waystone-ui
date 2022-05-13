@@ -1,7 +1,7 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { Button, ButtonProps } from './button';
+import { Button } from './button';
 
 export default {
   title: 'Components/Button',
@@ -12,9 +12,9 @@ export default {
     noPadding: false,
     noShadow: false,
   },
-} as Meta;
+} as ComponentMeta<typeof Button>;
 
-const Template: Story<ButtonProps> = (args) => (
+const Template: ComponentStory<typeof Button> = (args) => (
   <Button {...args} onClick={action('clicked')} />
 );
 
