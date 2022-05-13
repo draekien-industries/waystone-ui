@@ -18,7 +18,6 @@ export const Overlay = ({ children, fullScreen = false }: OverlayProps) => (
       zIndex: 'highest',
       bg: alpha('muted', 0.75),
       backdropFilter: 'blur(2px)',
-      pointerEvents: 'none',
     }}
   >
     <div sx={{ opacity: 1 }}>{children}</div>

@@ -1,8 +1,18 @@
 {
   "extends": "@waystone/tsconfig/react-library.json",
-  "include": [".",],
-  "exclude": ["dist", "build", "node_modules", "storybook-static"],  
+  "include": ["."],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules",
+    "storybook-static",
+    ".storybook",
+    "__snapshots__",
+    "__assets__",
+    "**/*.stories.tsx",
+    "**/*.{spec|test|internal}.tsx"
+  ],
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "dist"
   }
 }

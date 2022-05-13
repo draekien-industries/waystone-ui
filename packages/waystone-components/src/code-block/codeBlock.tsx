@@ -40,6 +40,12 @@ export interface CodeBlockProps {
  * Renders a code block that supports syntax highlighting using HLJS.
  * Refer to https://github.com/react-syntax-highlighter/react-syntax-highlighter/blob/HEAD/AVAILABLE_LANGUAGES_HLJS.MD
  * for the list of available languages.
+ * @param props.language - the language of the code inside the codeblock. Used for syntax highlighting.
+ * @param props.wordWrap - a flag indicating whether the code block should wrap long lines.
+ * @param props.hideLineNumbers - a flag indicating whether the code block should hide line numbers.
+ * @param props.caption - an optional caption to describe the code block.
+ * @param props.children - the code to render.
+ * @returns a code block component.
  */
 export const CodeBlock = ({
   language = 'text',
