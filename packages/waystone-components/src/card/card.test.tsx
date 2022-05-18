@@ -13,7 +13,7 @@ describe('The Card component', () => {
 
   it('Renders the cover image', () => {
     const coverImage: CoverImageCssOptions = {
-      url: path.basename('./assets/example-image.png'),
+      url: path.basename('./public/example-image.png'),
     };
     const { container } = render(<Card coverImage={coverImage}>card</Card>);
 
