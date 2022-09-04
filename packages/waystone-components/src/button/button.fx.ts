@@ -1,5 +1,4 @@
-import { addDarkModeSuffix, Size } from '@waystone/core';
-import { ButtonVariant } from './button.types';
+import { addDarkModeSuffix, ButtonVariant, Size } from '@waystone/core';
 
 /**
  * It returns the background color for a button based on the variant and dark mode

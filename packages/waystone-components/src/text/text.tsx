@@ -13,7 +13,7 @@ import { HasColor, HasVariant } from '../common/interfaces';
 export interface TextProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
     HasColor,
-    HasVariant {
+    HasVariant<TextVariant> {
   /**
    * The type of element to render onto the DOM.
    * @default 'span'
@@ -25,12 +25,6 @@ export interface TextProps
    * @default false
    */
   inline?: boolean;
-  /**
-   * The text variant to render.
-   * @override
-   * @default 'body'
-   */
-  variant?: TextVariant;
   /**
    * The components to render as children.
    */
@@ -49,7 +43,9 @@ export function Text({
   color,
   ...rest
 }: TextProps) {
-  return <ThemeUiText sx={textCss({ inline, variant, color })} as={as} {...rest}>
-    {children}
-  </ThemeUiText>
+  return (
+    <ThemeUiText sx={textCss({ inline, variant, color })} as={as} {...rest}>
+      {children}
+    </ThemeUiText>
+  );
 }

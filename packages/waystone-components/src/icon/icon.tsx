@@ -11,24 +11,16 @@ import { IconStyleProps, IconVariant } from './icon.types';
  * @extends IconStyleProps
  * @extends HasVariant
  */
-export interface IconOptions extends IconStyleProps, HasVariant {
-  /**
-   * The variant of icon to render.
-   * @override
-   */
-  variant?: IconVariant;
-}
+export interface IconOptions extends IconStyleProps, HasVariant<IconVariant> {}
 
 /** Props for the icon component. */
 export interface IconProps
   extends Omit<React.HTMLAttributes<HTMLElement>, 'children' | 'color'>,
-    HasVariant,
+    HasVariant<IconVariant>,
     HasSize,
     HasColor {
   /** The name of the material icon to render. */
   name: string;
-  /** The material icon variant to use when rendering the icon. */
-  variant?: IconVariant;
 }
 
 /**
@@ -48,7 +40,8 @@ export function Icon({
     <i
       sx={iconCss({ size, color })}
       className={getIconClassName(variant, className)}
-      {...rest}>
+      {...rest}
+    >
       {name}
     </i>
   );

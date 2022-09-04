@@ -1,4 +1,5 @@
 import { alpha } from '@theme-ui/color';
+import { ButtonVariant } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 import { HasSize, HasVariant, HasWidth } from '../common/interfaces';
 import {
@@ -12,9 +13,11 @@ import {
   getPadding,
   getVariant,
 } from './button.fx';
-import { ButtonVariant } from './button.types';
 
-export interface ButtonCssProps extends HasVariant, HasSize, HasWidth {
+export interface ButtonCssProps
+  extends HasVariant<ButtonVariant>,
+    HasSize,
+    HasWidth {
   /**
    * The style of button to render.
    * @default 'primary'

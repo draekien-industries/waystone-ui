@@ -1,8 +1,9 @@
+import { TextVariant } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 import { HasColor, HasVariant } from '../common/interfaces';
 
 /** @internal */
-export interface TextCssOptions extends HasVariant, HasColor {
+export interface TextCssOptions extends HasVariant<TextVariant>, HasColor {
   inline: boolean;
 }
 

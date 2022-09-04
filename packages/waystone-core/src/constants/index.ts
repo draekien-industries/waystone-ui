@@ -63,3 +63,14 @@ export const StatusVariant = {
 
 /** The status variants available in the base theme. */
 export type StatusVariant = keyof typeof StatusVariant;
+
+export const ButtonVariant = {
+  primary: 'primary',
+  secondary: 'secondary',
+  highlight: 'highlight',
+  accent: 'accent',
+  ghost: 'ghost',
+  link: 'link',
+};
+
+export type ButtonVariant = keyof typeof ButtonVariant;

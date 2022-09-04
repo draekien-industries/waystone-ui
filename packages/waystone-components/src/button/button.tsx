@@ -1,4 +1,5 @@
 /** @jsxImportSource theme-ui */
+import { ButtonVariant } from '@waystone/core';
 import { ReactNode } from 'react';
 import {
   useColorMode,
@@ -14,11 +15,10 @@ import {
 } from '../common/interfaces';
 import { Spinner } from '../spinner/spinner';
 import { buttonCss, ButtonCssProps } from './button.styles';
-import { ButtonVariant } from './button.types';
 
 export interface ButtonProps
   extends Omit<ThemeUiButtonProps, 'sx'>,
-    HasVariant,
+    HasVariant<ButtonVariant>,
     HasSize,
     HasWidth,
     CanDisable,

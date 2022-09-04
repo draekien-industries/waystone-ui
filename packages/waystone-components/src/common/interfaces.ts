@@ -5,9 +5,8 @@ import { StylePropertyValue } from '@theme-ui/css';
 import { Property } from 'csstype';
 
 /** This component supports different variants. */
-export interface HasVariant {
-  /** The variant to render. */
-  variant?: string;
+export interface HasVariant<T> {
+  variant?: T;
 }
 
 /** This component supports different sizes. */
