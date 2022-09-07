@@ -44,7 +44,7 @@ export const spinnerCss = ({
     justifyContent: 'center',
     aspectRatio: '1',
     ':after': {
-      animation: `${changeContent} .8s linear infinite`,
+      animation: `${changeContent} 600ms linear infinite`,
       display: 'block',
       content: '"⠋"',
       fontSize: getSpinnerSize(size || 'md'),
