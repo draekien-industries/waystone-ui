@@ -5,6 +5,7 @@ export * from './card';
 export * from './card-button';
 export * from './code';
 export * from './icon';
+export * from './input-container';
 export * from './label';
 export * from './overlay';
 export * from './spinner';
