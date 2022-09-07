@@ -7,11 +7,10 @@ type getBackgroundColorProps = {
 
 export const getBackgroundColor = ({
   variant = 'primary',
-  darkMode,
 }: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return darkMode ? 'b-700' : 'b-100';
+      return 'ghost';
     case 'link':
       return 'transparent';
     case 'primary':
@@ -19,7 +18,7 @@ export const getBackgroundColor = ({
     case 'accent':
     case 'highlight':
     default:
-      return `${variant[0]}-200`;
+      return `${variant[0]}-400`;
   }
 };
 
@@ -29,10 +28,13 @@ export const getBackgroundColor = ({
  * @param {ButtonVariant} variant - ButtonVariant
  * @returns A function that takes a variant and returns a color.
  */
-export const getHoverBackgroundColor = (variant?: ButtonVariant) => {
+export const getHoverBackgroundColor = ({
+  variant = 'primary',
+  darkMode,
+}: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return 'muted';
+      return darkMode ? 'b-500' : 'b-000';
     case 'link':
       return 'transparent';
     case 'primary':
@@ -40,7 +42,7 @@ export const getHoverBackgroundColor = (variant?: ButtonVariant) => {
     case 'accent':
     case 'highlight':
     default:
-      return `${(variant || 'primary')[0]}-300`;
+      return `${variant[0]}-300`;
   }
 };
 
@@ -50,10 +52,13 @@ export const getHoverBackgroundColor = (variant?: ButtonVariant) => {
  * @param {ButtonVariant} variant - ButtonVariant
  * @returns A function that takes a variant and returns a color.
  */
-export const getActiveBackgroundColor = (variant?: ButtonVariant) => {
+export const getActiveBackgroundColor = ({
+  variant = 'primary',
+  darkMode,
+}: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return 'muted';
+      return darkMode ? 'b-500' : 'white';
     case 'link':
       return 'transparent';
     case 'primary':
@@ -61,7 +66,7 @@ export const getActiveBackgroundColor = (variant?: ButtonVariant) => {
     case 'accent':
     case 'highlight':
     default:
-      return `${(variant || 'primary')[0]}-400`;
+      return `${variant[0]}-200`;
   }
 };
 

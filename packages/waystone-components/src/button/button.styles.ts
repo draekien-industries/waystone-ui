@@ -49,22 +49,31 @@ export const buttonCss = ({
 
   const isLink = variant === 'link';
 
-  const hover: ThemeUIStyleObject = {
+  const hoverCss: ThemeUIStyleObject = {
     color: isLink ? getLinkVariantHoverColor(darkMode) : color,
     boxShadow: hoverBoxShadow,
-    backgroundColor: getHoverBackgroundColor(variant),
+    backgroundColor: getHoverBackgroundColor({ variant, darkMode }),
   };
 
-  const focus: ThemeUIStyleObject = {
+  const focusCss: ThemeUIStyleObject = {
     color: isLink ? getLinkVariantActiveColor(darkMode) : color,
     boxShadow: activeBoxShadow,
-    backgroundColor: getActiveBackgroundColor(variant),
+    backgroundColor: getActiveBackgroundColor({ variant, darkMode }),
     outlineColor: alpha(outlineColor, 1),
     outlineWidth: 'sm',
     outlineStyle: 'solid',
   };
 
-  const final: ThemeUIStyleObject = {
+  const activeCss: ThemeUIStyleObject = {
+    color: isLink ? getLinkVariantActiveColor(darkMode) : color,
+    boxShadow: activeBoxShadow,
+    backgroundColor: getActiveBackgroundColor({ variant, darkMode }),
+    outlineColor: alpha(outlineColor, 1),
+    outlineWidth: 0,
+    outlineStyle: 'solid',
+  };
+
+  const baseCss: ThemeUIStyleObject = {
     display: 'flex',
     flexWrap: 'nowrap',
     alignItems: 'center',
@@ -84,10 +93,13 @@ export const buttonCss = ({
     outlineWidth: 'sm',
     outlineStyle: 'solid',
     ':enabled:hover': {
-      ...hover,
+      ...hoverCss,
     },
-    ':enabled:active, :enabled:focus': {
-      ...focus,
+    ':not(active):focus': {
+      ...focusCss,
+    },
+    ':enabled:active': {
+      ...activeCss,
     },
     ':disabled': {
       color: 'b-400',
@@ -97,10 +109,10 @@ export const buttonCss = ({
   };
 
   if (active) {
-    return { ...final, ...focus };
+    return { ...baseCss, ...activeCss };
   }
 
-  return final;
+  return baseCss;
 };
 
 export const buttonAddonCss: ThemeUIStyleObject = {

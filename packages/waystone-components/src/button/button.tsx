@@ -4,6 +4,7 @@ import { ButtonVariant } from '@waystone/core';
 import {
   Button as ThemeUiButton,
   ButtonProps as ThemeUiButtonProps,
+  Flex,
 } from 'theme-ui';
 import {
   CanActivate,
@@ -74,14 +75,14 @@ export const Button = ({
   return (
     <ThemeUiButton sx={sx} disabled={shouldBeDisabled} {...rest}>
       {loading && (
-        <span sx={buttonAddonCss}>
+        <Flex sx={buttonAddonCss}>
           <Spinner size="sm" />
-        </span>
+        </Flex>
       )}
       {shouldRenderIcon && (
-        <span sx={buttonAddonCss}>
+        <Flex sx={buttonAddonCss}>
           <Icon size="sm" {...icon} />
-        </span>
+        </Flex>
       )}
       {shouldRenderChildren && (
         <Text variant={getTextVariant(size)} inline>

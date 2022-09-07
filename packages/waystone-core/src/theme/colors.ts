@@ -6,6 +6,7 @@ export const colors = {
   accent: '#00a9ed',
   highlight: '#F5B382',
   muted: '#D8D8D8',
+  ghost: '#EFEFEF',
 
   'p-100': '#e6f4f1',
   'p-200': '#cfe5ec',
@@ -97,6 +98,7 @@ export const colors = {
       accent: '#00a9ed',
       highlight: '#F5B382',
       muted: '#626262',
+      ghost: '#292929',
     },
   },
 };
