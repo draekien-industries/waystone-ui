@@ -1,7 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { alpha } from '@theme-ui/color';
 import React from 'react';
-import { ThemeUIStyleObject, useColorMode } from 'theme-ui';
+import { ThemeUIStyleObject } from 'theme-ui';
 import {
   CanBeFullWidth,
   CanDisable,
@@ -9,7 +9,8 @@ import {
   HasHeight,
   HasWidth,
 } from '../common';
-import { Spinner } from '../spinner/spinner';
+import { useIsDarkMode } from '../hooks/useIsDarkMode';
+import { Spinner } from '../spinner';
 
 /**
  * The props that can be passed to the CardButton component.
@@ -57,8 +58,7 @@ export const CardButton = ({
   onClick,
   ...rest
 }: CardButtonProps) => {
-  const [mode] = useColorMode();
-  const darkMode = mode === 'dark';
+  const darkMode = useIsDarkMode();
 
   const cardCss: ThemeUIStyleObject = {
     position: 'relative',

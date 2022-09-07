@@ -1,7 +1,13 @@
 import { alpha } from '@theme-ui/color';
 import { ButtonVariant } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
-import { HasSize, HasVariant, HasWidth } from '../common/interfaces';
+import {
+  CanActivate,
+  CanBeFullWidth,
+  HasSize,
+  HasVariant,
+  HasWidth,
+} from '../common';
 import {
   getActiveBackgroundColor,
   getBackgroundColor,
@@ -11,66 +17,77 @@ import {
   getLinkVariantActiveColor,
   getLinkVariantHoverColor,
   getPadding,
-  getVariant,
-} from './button.fx';
+} from './button.styles.fx';
 
 export interface ButtonCssProps
   extends HasVariant<ButtonVariant>,
     HasSize,
-    HasWidth {
-  /**
-   * The style of button to render.
-   * @default 'primary'
-   * @override
-   */
-  variant: ButtonVariant;
+    HasWidth,
+    CanBeFullWidth,
+    CanActivate {
   darkMode: boolean;
-  noShadow: boolean;
-  noPadding: boolean;
 }
 
 export const buttonCss = ({
   variant,
-  size = 'md',
+  size,
   darkMode,
-  noShadow,
-  noPadding,
   width,
-  maxWidth,
   minWidth,
+  maxWidth,
+  fullWidth,
+  active,
 }: ButtonCssProps): ThemeUIStyleObject => {
-  const { normal, hover, active } = getBoxShadow(variant, darkMode);
-  const isLink = variant === 'link';
-  const { paddingX, paddingY } = getPadding(size, isLink || noPadding);
+  const { normalBoxShadow, hoverBoxShadow, activeBoxShadow } = getBoxShadow({
+    variant,
+    darkMode,
+  });
 
-  const css: ThemeUIStyleObject = {
-    color: getColor(variant),
-    backgroundColor: getBackgroundColor(variant, darkMode),
-    variant: getVariant(size),
+  const { paddingX, paddingY } = getPadding({ variant, size });
+  const color = getColor(variant);
+  const outlineColor = darkMode ? 'b-600' : 'info-000';
+
+  const isLink = variant === 'link';
+
+  const hover: ThemeUIStyleObject = {
+    color: isLink ? getLinkVariantHoverColor(darkMode) : color,
+    boxShadow: hoverBoxShadow,
+    backgroundColor: getHoverBackgroundColor(variant),
+  };
+
+  const focus: ThemeUIStyleObject = {
+    color: isLink ? getLinkVariantActiveColor(darkMode) : color,
+    boxShadow: activeBoxShadow,
+    backgroundColor: getActiveBackgroundColor(variant),
+    outlineColor: alpha(outlineColor, 1),
+    outlineWidth: 'sm',
+    outlineStyle: 'solid',
+  };
+
+  const final: ThemeUIStyleObject = {
+    display: 'flex',
+    flexWrap: 'nowrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color,
+    backgroundColor: getBackgroundColor({ variant, darkMode }),
     paddingX,
     paddingY,
+    width: fullWidth ? '100%' : width,
+    maxWidth: !fullWidth && maxWidth,
+    minWidth: !fullWidth && minWidth,
+    boxShadow: normalBoxShadow,
     margin: 0,
-    width,
-    maxWidth,
-    minWidth,
-    boxShadow: !noShadow && normal,
     cursor: 'pointer',
-    outlineColor: alpha('info-000', 0.75),
-    outlineWidth: 0,
+    transition: 'all 200ms ease',
+    outlineColor: alpha(outlineColor, 0),
+    outlineWidth: 'sm',
     outlineStyle: 'solid',
-    transition: 'all 200ms',
-    ':enabled:hover, :enabled:focus': {
-      color: isLink && getLinkVariantHoverColor(darkMode),
-      boxShadow: !noShadow && hover,
-      backgroundColor: getHoverBackgroundColor(variant),
-      outlineColor: alpha('info-000', 0.75),
-      outlineWidth: 'sm',
-      outlineStyle: 'solid',
+    ':enabled:hover': {
+      ...hover,
     },
-    ':enabled:active': {
-      color: isLink && getLinkVariantActiveColor(darkMode),
-      boxShadow: !noShadow && active,
-      backgroundColor: getActiveBackgroundColor(variant),
+    ':enabled:active, :enabled:focus': {
+      ...focus,
     },
     ':disabled': {
       color: 'b-400',
@@ -79,5 +96,13 @@ export const buttonCss = ({
     },
   };
 
-  return css;
+  if (active) {
+    return { ...final, ...focus };
+  }
+
+  return final;
+};
+
+export const buttonAddonCss: ThemeUIStyleObject = {
+  marginRight: 'sm',
 };

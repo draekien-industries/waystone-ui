@@ -3,9 +3,17 @@ import { StylePropertyValue } from '@theme-ui/css';
 
 // eslint-disable-next-line import/no-unresolved
 import { Property } from 'csstype';
+import React from 'react';
+
+/** This component supports child components. */
+export interface HasChildren {
+  /** The child components to render. */
+  children?: React.ReactNode;
+}
 
 /** This component supports different variants. */
 export interface HasVariant<T> {
+  /** The supported variants. */
   variant?: T;
 }
 

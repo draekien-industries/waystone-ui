@@ -1,85 +1,93 @@
 /** @jsxImportSource theme-ui */
+import React from 'react';
 import { ButtonVariant } from '@waystone/core';
-import { ReactNode } from 'react';
 import {
-  useColorMode,
   Button as ThemeUiButton,
   ButtonProps as ThemeUiButtonProps,
 } from 'theme-ui';
 import {
+  CanActivate,
+  CanBeFullWidth,
   CanDisable,
   CanLoad,
   HasSize,
   HasVariant,
   HasWidth,
-} from '../common/interfaces';
-import { Spinner } from '../spinner/spinner';
-import { buttonCss, ButtonCssProps } from './button.styles';
+} from '../common';
+import { Spinner } from '../spinner';
+import { Icon, IconProps } from '../icon';
+import { Text } from '../text';
+import { useIsDarkMode } from '../hooks/useIsDarkMode';
+import { buttonAddonCss, buttonCss, ButtonCssProps } from './button.styles';
+import { getTextVariant } from './button.fx';
 
 export interface ButtonProps
-  extends Omit<ThemeUiButtonProps, 'sx'>,
+  extends Omit<ThemeUiButtonProps, 'sx' | 'variant' | 'children'>,
     HasVariant<ButtonVariant>,
     HasSize,
     HasWidth,
     CanDisable,
-    CanLoad {
-  /** The content to render inside the button */
-  children?: ReactNode;
+    CanLoad,
+    CanActivate,
+    CanBeFullWidth {
+  /** The text to render inside a button. */
+  children?: string;
+  /** The icon and it's variant to render. */
+  icon?: Pick<IconProps, 'variant' | 'name'>;
   /**
-   * The style of button to render.
-   * @default 'primary'
-   */
-  variant?: ButtonVariant;
-  /**
-   * A flag indicating whether the button should render with no shadows.
+   * Should the button hide it's contents while it is in the loading state.
    * @default false
    */
-  noShadow?: boolean;
-  /**
-   * A flag indicating whether the button should render with no padding.
-   * @default false
-   */
-  noPadding?: boolean;
-  /**
-   * A flag indicating whether the button should render it's children while
-   * in the loading state
-   * @default true
-   */
-  showContentWhileLoading?: boolean;
+  hideContentWhileLoading?: boolean;
 }
 
 /**
- * Renders a styled HTML `<button>` element.
- * @param props - the {@link ButtonProps}
- * @returns the button component
+ * A pre-styled button with multiple sizes and variants. Supports loading, disabled, and active states.
  */
-export function Button({
+export const Button = ({
   children,
+  icon,
   variant = 'primary',
   size = 'sm',
-  noShadow = false,
-  noPadding = false,
-  disabled = false,
+  hideContentWhileLoading = false,
   loading = false,
-  showContentWhileLoading = true,
+  disabled = false,
+  active = false,
   ...rest
-}: ButtonProps) {
-  const [colorMode] = useColorMode();
-  const darkMode = colorMode === 'dark';
+}: ButtonProps) => {
+  const isDarkMode = useIsDarkMode();
+
+  const shouldBeDisabled = disabled || loading;
+  const shouldRenderChildren = !loading || !hideContentWhileLoading;
+  const shouldRenderIcon = !loading && icon;
+
   const buttonCssProps: ButtonCssProps = {
     variant,
     size,
-    darkMode,
-    noShadow,
-    noPadding,
+    darkMode: isDarkMode,
+    active,
     ...rest,
   };
-  const buttonSx = buttonCss(buttonCssProps);
+
+  const sx = buttonCss(buttonCssProps);
 
   return (
-    <ThemeUiButton sx={buttonSx} disabled={disabled || loading} {...rest}>
-      {loading && <Spinner size="sm" />}
-      {(!loading || showContentWhileLoading) && children}
+    <ThemeUiButton sx={sx} disabled={shouldBeDisabled} {...rest}>
+      {loading && (
+        <span sx={buttonAddonCss}>
+          <Spinner size="sm" />
+        </span>
+      )}
+      {shouldRenderIcon && (
+        <span sx={buttonAddonCss}>
+          <Icon size="sm" {...icon} />
+        </span>
+      )}
+      {shouldRenderChildren && (
+        <Text variant={getTextVariant(size)} inline>
+          {children}
+        </Text>
+      )}
     </ThemeUiButton>
   );
-}
+};

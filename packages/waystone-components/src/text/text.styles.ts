@@ -21,6 +21,8 @@ export const textCss: (options: TextCssOptions) => ThemeUIStyleObject = ({
 
   if (inline) {
     css.display = 'inline-block';
+    css.marginY = 0;
+    css.marginX = 0;
   }
 
   return css;
