@@ -68,8 +68,8 @@ export const buttonCss = ({
     color: isLink ? getLinkVariantActiveColor(darkMode) : color,
     boxShadow: activeBoxShadow,
     backgroundColor: getActiveBackgroundColor({ variant, darkMode }),
-    outlineColor: alpha(outlineColor, 1),
-    outlineWidth: 0,
+    outlineColor: alpha(outlineColor, 0),
+    outlineWidth: 'sm',
     outlineStyle: 'solid',
   };
 

@@ -73,15 +73,17 @@ export const CardButton = ({
     backgroundColor: darkMode ? 'b-600' : 'b-000',
     boxShadow: !noShadow && 'md',
     cursor: 'pointer',
-    outlineColor: alpha('info-000', 0.75),
-    outlineWidth: 0,
+    outlineColor: alpha('info-000', 0),
+    outlineWidth: 'sm',
     outlineStyle: 'solid',
     overflow: 'hidden',
     textAlign: 'left',
     transition: 'all 200ms',
     ...rest,
-    ':enabled:hover, :enabled:focus': {
+    ':enabled:hover': {
       backgroundColor: darkMode ? 'b-500' : 'b-100',
+    },
+    ':enabled:focus': {
       outlineColor: alpha('info-000', 0.75),
       outlineWidth: 'sm',
       outlineStyle: 'solid',

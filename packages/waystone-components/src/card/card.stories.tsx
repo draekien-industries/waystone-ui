@@ -1,11 +1,10 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Card } from './card';
-import exampleImage from '../../public/example-image.png';
 import { CoverImageCssOptions } from './card.styles';
 
 const options: CoverImageCssOptions = {
-  url: exampleImage,
+  url: '/example-image.png',
   size: 'cover',
   position: 'center',
   repeat: 'no-repeat',

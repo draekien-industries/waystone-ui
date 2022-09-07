@@ -2,7 +2,6 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Overlay, OverlayProps } from './overlay';
 import { Text } from '../text';
-import exampleImage from '../../public/example-image.png';
 
 export default {
   title: 'Components/Overlay',
@@ -20,7 +19,7 @@ const Template: ComponentStory<typeof Overlay> = (args) => (
     }}
   >
     <Overlay {...args} />
-    <img src={exampleImage} alt="example" />
+    <img src="/example-image.png" alt="example" />
     <Text>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores enim
       incidunt culpa consequatur dolorum voluptatibus nulla nihil at odit! Porro

@@ -47,11 +47,13 @@ export const codeBlockCopyButtonCss: ThemeUIStyleObject = {
   textTransform: 'uppercase',
   cursor: 'pointer',
   transition: 'all 200ms',
-  outlineColor: alpha('info-000', 0.75),
-  outlineWidth: 0,
+  outlineColor: alpha('info-000', 0),
+  outlineWidth: 'xs',
   outlineStyle: 'solid',
-  ':hover, :focus': {
+  ':hover': {
     background: 'b-400',
+  },
+  ':focus': {
     outlineColor: alpha('info-000', 0.75),
     outlineWidth: 'xs',
     outlineStyle: 'solid',

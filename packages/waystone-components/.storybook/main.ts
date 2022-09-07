@@ -21,6 +21,7 @@ const config: StorybookConfig = {
       shouldExtractLiteralValuesFromEnum: true,
     },
   },
+  staticDirs: ['../public'],
 };
 
 module.exports = config;
