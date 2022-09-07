@@ -18,3 +18,8 @@ export const labelContainerCss: ThemeUIStyleObject = {
   alignItems: 'baseline',
   marginBottom: 'xs',
 };
+
+export const labelCss: ThemeUIStyleObject = {
+  alignItems: 'center',
+  gap: 'xs',
+};
