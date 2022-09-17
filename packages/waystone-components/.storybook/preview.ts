@@ -1,7 +1,5 @@
 import { waystoneDecorator } from './waystone.decorator';
 import { create } from '@storybook/theming';
-import logo from './assets/waystone-logo.svg';
-import logoDark from './assets/waystone-logo-dark.svg';
 import { WaystoneBaseTheme } from '@waystone/core';
 import { getThemeColors } from './preview.fx';
 import { DocsContainer } from './docs.container';
@@ -9,13 +7,13 @@ import { DocsContainer } from './docs.container';
 const waystoneDarkTheme = create({
   base: 'dark',
   brandTitle: 'Waystone',
-  brandImage: logo,
+  brandImage: './assets/waystone-logo.svg',
 });
 
 const waystoneLightTheme = create({
   base: 'light',
   brandTitle: 'Waystone',
-  brandImage: logoDark,
+  brandImage: './assets/waystone-logo-dark.svg',
 });
 
 export const parameters = {

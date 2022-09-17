@@ -3,7 +3,7 @@ import { StylePropertyValue } from '@theme-ui/css';
 
 // eslint-disable-next-line import/no-unresolved
 import { Property } from 'csstype';
-import React from 'react';
+import * as React from 'react';
 
 /** This component supports child components. */
 export interface HasChildren {

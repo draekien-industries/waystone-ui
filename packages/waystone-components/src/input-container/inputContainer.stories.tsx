@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { InputContainer, InputContainerProps } from './inputContainer';
 

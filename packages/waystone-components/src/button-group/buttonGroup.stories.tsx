@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ButtonGroup, ButtonGroupProps } from './buttonGroup';
 import { Text } from '../text';
