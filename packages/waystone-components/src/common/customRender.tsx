@@ -1,14 +1,14 @@
 /** @jsxImportSource theme-ui */
-import React, { useEffect } from 'react';
+import React, { PropsWithChildren, useEffect } from 'react';
 import { render, RenderOptions, RenderResult } from '@testing-library/react';
 import { useColorMode } from 'theme-ui';
 import { Waystone } from '../waystone-ui/waystoneUi';
 
-const TestProvider: React.FC = ({ children }) => (
+const TestProvider: React.FC<PropsWithChildren> = ({ children }) => (
   <Waystone>{children}</Waystone>
 );
 
-const DarkModeWrapper: React.FC = ({ children }) => {
+const DarkModeWrapper: React.FC<PropsWithChildren> = ({ children }) => {
   const [, setColorMode] = useColorMode();
 
   useEffect(() => {

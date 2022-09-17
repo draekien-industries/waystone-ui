@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { useSpinner } from './spinner.hooks';
 
 /** The value provided by the {@link SpinnerContext} */
@@ -22,10 +22,9 @@ export const SpinnerContext = React.createContext<SpinnerContextValue>({});
  * @param props.children - the children of the component
  * @returns the spinner context provider
  */
-export const SpinnerProvider: React.FC<SpinnerProviderProps> = ({
-  initialVisible = true,
-  children,
-}) => {
+export const SpinnerProvider: React.FC<
+  PropsWithChildren<SpinnerProviderProps>
+> = ({ initialVisible = true, children }) => {
   const { show, hide, spinner } = useSpinner({ initialVisible });
   const value = React.useMemo(() => ({ show, hide }), [show, hide]);
 

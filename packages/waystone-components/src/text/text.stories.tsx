@@ -61,7 +61,7 @@ WithColor.parameters = {
 
 WithColor.args = {
   color: 's-400',
-};
+} as TextProps;
 
 const InlineTemplate: ComponentStory<typeof Text> = (args) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -90,4 +90,4 @@ WithInline.parameters = {
 WithInline.args = {
   inline: true,
   children: 'Lorem ipsum.',
-};
+} as TextProps;

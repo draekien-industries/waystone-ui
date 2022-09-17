@@ -3,7 +3,7 @@
   "display": "React Library",
   "extends": "./base.json",
   "compilerOptions": {
-    "lib": ["dom", "ES2015", "DOM.Iterable", "ESNext"],
+    "lib": ["DOM", "ESNext"],
     "module": "ESNext",
     "target": "ES6",
     "jsx": "react",
@@ -12,6 +12,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "downlevelIteration": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "esModuleInterop": true
   }
 }

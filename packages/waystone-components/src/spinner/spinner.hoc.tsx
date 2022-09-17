@@ -1,11 +1,22 @@
 import React from 'react';
 import { CanLoad } from '../common';
-import { Spinner } from './spinner';
+import { Spinner, SpinnerProps } from './spinner';
 
-export const withSpinner =
-  <P extends object>(
-    Component: React.ComponentType<P & CanLoad>
-  ): React.FC<P & CanLoad> =>
-  // eslint-disable-next-line react/display-name
-  ({ loading, ...props }: CanLoad) =>
-    loading ? <Spinner /> : <Component {...(props as P)} />;
+export interface WithSpinnerProps extends SpinnerProps, CanLoad {}
+
+export function withSpinner<T extends WithSpinnerProps>(
+  WrappedComponent: React.ComponentType<T>
+) {
+  const displayName =
+    WrappedComponent.displayName || WrappedComponent.name || 'Component';
+
+  const ComponentWithSpinner = (props: T) => {
+    const { loading } = props;
+
+    return loading ? <Spinner {...props} /> : <WrappedComponent {...props} />;
+  };
+
+  ComponentWithSpinner.displayName = `withSpinner(${displayName})`;
+
+  return ComponentWithSpinner;
+}

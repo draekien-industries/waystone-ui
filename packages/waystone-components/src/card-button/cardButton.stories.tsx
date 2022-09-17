@@ -28,4 +28,4 @@ export const WithConstraints = Template.bind({});
 
 WithConstraints.args = {
   width: 'xl',
-};
+} as CardButtonProps;

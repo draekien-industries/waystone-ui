@@ -34,13 +34,16 @@
     "@testing-library/react": "^13.0.0",
     "@types/react": "*",
     "@types/react-dom": "*",
+    "@types/react-syntax-highlighter": "^15.5.5",
     "@waystone/core": "*",
     "@waystone/tsconfig": "*",
     "@waystone/utils": "*",
     "eslint-preset-waystone": "*",
     "identity-obj-proxy": "^3.0.0",
-    "react-syntax-highlighter": "^15.5.0",
     "storybook-dark-mode": "^1.1.0"
+  },
+  "dependencies": {
+    "react-syntax-highlighter": "^15.5.0"
   },
   "peerDependencies": {
     "@emotion/react": "*",
