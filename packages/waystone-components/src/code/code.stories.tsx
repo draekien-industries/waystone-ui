@@ -16,11 +16,9 @@ Default.args = {
   children: 'code',
 };
 
-export function WithExample() {
-  return (
-    <Text>
-      This is an example of the <Code>Code</Code> component being used inside a{' '}
-      <Code>Text</Code> component.
-    </Text>
-  );
-}
+export const WithExample = () => (
+  <Text>
+    This is an example of the <Code>Code</Code> component being used inside a{' '}
+    <Code>Text</Code> component.
+  </Text>
+);

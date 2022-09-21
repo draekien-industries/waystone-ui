@@ -33,11 +33,15 @@ module.exports = {
     },
   },
   rules: {
-    'react/function-component-definition': 'off',
-    'react/jsx-key': 'off',
+    'react/function-component-definition': [
+      'warn',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
     'react/jsx-props-no-spreading': 'off',
-    'react/no-array-index-key': 'off',
     'react/no-unknown-property': ['error', { ignore: ['sx'] }],
     'react/require-default-props': 'off',
     'import/extensions': [

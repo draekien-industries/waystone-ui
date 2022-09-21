@@ -32,7 +32,7 @@ export const ButtonGroup = ({ buttons, onChange }: ButtonGroupProps) => {
     <Flex sx={buttonGroupCss}>
       {buttons.map((button, index) => (
         <Button
-          key={index}
+          key={button.children}
           {...button}
           variant="ghost"
           active={index === activeButton}

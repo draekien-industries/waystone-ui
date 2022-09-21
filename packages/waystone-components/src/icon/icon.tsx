@@ -28,21 +28,19 @@ export interface IconProps
  * This component library relies on the material-icons font for rendering icons.
  * You can view the list of available icons by going to https://fonts.google.com/icons
  */
-export function Icon({
+export const Icon = ({
   className,
   name,
   variant = 'filled',
   size = 'md',
   color = 'inherit',
   ...rest
-}: IconProps) {
-  return (
-    <i
-      sx={iconCss({ size, color })}
-      className={getIconClassName(variant, className)}
-      {...rest}
-    >
-      {name}
-    </i>
-  );
-}
+}: IconProps) => (
+  <i
+    sx={iconCss({ size, color })}
+    className={getIconClassName(variant, className)}
+    {...rest}
+  >
+    {name}
+  </i>
+);

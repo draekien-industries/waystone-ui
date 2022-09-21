@@ -12,8 +12,8 @@ export interface CodeProps {
 /**
  * An inline code snippet.
  */
-export function Code({ children }: CodeProps) {
+export const Code = ({ children }: CodeProps) => {
   const [mode] = useColorMode();
 
   return <code sx={codeCss(mode === 'dark')}>{children}</code>;
-}
+};

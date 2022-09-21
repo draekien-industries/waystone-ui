@@ -26,8 +26,8 @@ const VariantTemplate: ComponentStory<typeof Text> = (args) => {
 
   return (
     <div>
-      {Object.keys(TextVariant).map((textVariant, index) => (
-        <Text key={index} variant={textVariant as TextVariant} {...rest}>
+      {Object.keys(TextVariant).map((textVariant) => (
+        <Text key={textVariant} variant={textVariant as TextVariant} {...rest}>
           {variant}
         </Text>
       ))}

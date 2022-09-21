@@ -21,7 +21,8 @@ export const Typography: FC = () => (
           display: 'flex',
           flexFlow: 'row wrap',
           gap: '2rem',
-        }}>
+        }}
+      >
         <Text variant="title" inline>
           Barlow
         </Text>
@@ -44,13 +45,14 @@ export const Typography: FC = () => (
           flexFlow: 'row wrap',
           gap: '2rem',
           alignItems: 'baseline',
-        }}>
+        }}
+      >
         {Object.keys(
           WaystoneBaseTheme.text || ({} as Record<string, ThemeUIStyleObject>)
         )
           .filter((x) => x !== 'default')
-          .map((key, index) => (
-            <Text key={index} variant={key as TextVariant}>
+          .map((key) => (
+            <Text key={key} variant={key as TextVariant}>
               {key}
             </Text>
           ))}

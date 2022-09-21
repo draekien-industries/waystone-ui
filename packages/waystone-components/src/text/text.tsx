@@ -35,17 +35,15 @@ export interface TextProps
  * A component for rendering text onto the DOM with props for setting the text variant, color,
  * HTML element type.
  */
-export function Text({
+export const Text = ({
   children,
   as = 'span',
   inline = false,
   variant = 'body',
   color,
   ...rest
-}: TextProps) {
-  return (
-    <ThemeUiText sx={textCss({ inline, variant, color })} as={as} {...rest}>
-      {children}
-    </ThemeUiText>
-  );
-}
+}: TextProps) => (
+  <ThemeUiText sx={textCss({ inline, variant, color })} as={as} {...rest}>
+    {children}
+  </ThemeUiText>
+);
