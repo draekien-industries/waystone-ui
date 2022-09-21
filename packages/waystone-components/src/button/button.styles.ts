@@ -1,5 +1,5 @@
 import { alpha } from '@theme-ui/color';
-import { ButtonVariant } from '@waystone/core';
+import { ButtonVariant, Size } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 import {
   CanActivate,
@@ -19,7 +19,7 @@ import {
   getPadding,
 } from './button.styles.fx';
 
-export interface ButtonCssProps
+export interface ButtonCssParams
   extends HasVariant<ButtonVariant>,
     HasSize,
     HasWidth,
@@ -37,7 +37,7 @@ export const buttonCss = ({
   maxWidth,
   fullWidth,
   active,
-}: ButtonCssProps): ThemeUIStyleObject => {
+}: ButtonCssParams): ThemeUIStyleObject => {
   const { normalBoxShadow, hoverBoxShadow, activeBoxShadow } = getBoxShadow({
     variant,
     darkMode,
@@ -115,6 +115,17 @@ export const buttonCss = ({
   return baseCss;
 };
 
-export const buttonAddonCss: ThemeUIStyleObject = {
-  marginRight: 'sm',
-};
+export interface ButtonAddonCssParams {
+  hasChildren: boolean;
+  variant: ButtonVariant;
+  size: Size;
+}
+
+export const buttonAddonCss = ({
+  hasChildren,
+  variant,
+  size,
+}: ButtonAddonCssParams): ThemeUIStyleObject => ({
+  marginRight: hasChildren && 'sm',
+  marginY: getPadding({ variant, size }),
+});

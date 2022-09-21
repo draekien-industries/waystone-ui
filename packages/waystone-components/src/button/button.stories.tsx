@@ -21,3 +21,9 @@ WithIcon.args = {
   children: 'Button',
   icon: { variant: 'filled', name: 'check' },
 } as ButtonProps;
+
+export const IconOnly = Template.bind({});
+
+IconOnly.args = {
+  icon: { variant: 'filled', name: 'check' },
+} as ButtonProps;

@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import React from 'react';
-import { ButtonVariant } from '@waystone/core';
+import { ButtonVariant, Size } from '@waystone/core';
 import {
   Button as ThemeUiButton,
   ButtonProps as ThemeUiButtonProps,
@@ -19,7 +19,12 @@ import { Spinner } from '../spinner';
 import { Icon, IconProps } from '../icon';
 import { Text } from '../text';
 import { useIsDarkMode } from '../hooks/useIsDarkMode';
-import { buttonAddonCss, buttonCss, ButtonCssProps } from './button.styles';
+import {
+  buttonAddonCss,
+  ButtonAddonCssParams,
+  buttonCss,
+  ButtonCssParams,
+} from './button.styles';
 import { getTextVariant } from './button.fx';
 
 export interface ButtonProps
@@ -48,6 +53,10 @@ export interface ButtonProps
 export const Button = ({
   children,
   icon,
+  width,
+  minWidth,
+  maxWidth,
+  fullWidth,
   variant = 'primary',
   size = 'sm',
   hideContentWhileLoading = false,
@@ -59,28 +68,46 @@ export const Button = ({
   const isDarkMode = useIsDarkMode();
 
   const shouldBeDisabled = disabled || loading;
-  const shouldRenderChildren = !loading || !hideContentWhileLoading;
+  const shouldRenderChildren =
+    !!children && (!loading || !hideContentWhileLoading);
   const shouldRenderIcon = !loading && icon;
 
-  const buttonCssProps: ButtonCssProps = {
-    variant,
-    size,
-    darkMode: isDarkMode,
-    active,
-    ...rest,
-  };
+  const buttonSx = React.useMemo(() => {
+    const buttonCssParams: ButtonCssParams = {
+      variant,
+      size,
+      darkMode: isDarkMode,
+      active,
+      width,
+      minWidth,
+      maxWidth,
+      fullWidth,
+    };
 
-  const sx = buttonCss(buttonCssProps);
+    return buttonCss(buttonCssParams);
+  }, [variant, size, isDarkMode, active, width, minWidth, maxWidth, fullWidth]);
+
+  const buttonAddonSx = React.useMemo(() => {
+    const buttonAddonCssParams: ButtonAddonCssParams = {
+      variant,
+      size,
+      hasChildren: shouldRenderChildren,
+    };
+
+    return buttonAddonCss(buttonAddonCssParams);
+  }, [variant, size, shouldRenderChildren]);
+
+  const spinnerSize: Size = size === 'sm' ? 'sm' : 'md';
 
   return (
-    <ThemeUiButton sx={sx} disabled={shouldBeDisabled} {...rest}>
+    <ThemeUiButton sx={buttonSx} disabled={shouldBeDisabled} {...rest}>
       {loading && (
-        <Flex sx={buttonAddonCss}>
-          <Spinner size="sm" />
+        <Flex sx={buttonAddonSx}>
+          <Spinner size={spinnerSize} />
         </Flex>
       )}
       {shouldRenderIcon && (
-        <Flex sx={buttonAddonCss}>
+        <Flex sx={buttonAddonSx}>
           <Icon size="sm" {...icon} />
         </Flex>
       )}
