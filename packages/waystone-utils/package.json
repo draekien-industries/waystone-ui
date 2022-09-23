@@ -28,7 +28,7 @@
     "@types/react": "*",
     "@types/react-dom": "*",
     "eslint-preset-waystone": "*",
-    "tsup": "^5.10.1"
+    "tsup": "*"
   },
   "publishConfig": {
     "access": "public"

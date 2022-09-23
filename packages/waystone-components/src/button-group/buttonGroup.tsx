@@ -8,14 +8,16 @@ import { buttonGroupCss } from './buttonGroup.styles';
 export type onClickProps = {
   /** The raw react mouse event. */
   e: React.MouseEvent<HTMLButtonElement, MouseEvent>;
-  /** The index of the button that was clicked. */
-  index: number;
+  /** The button that was clicked. */
+  clicked: string;
 };
 
 /** The props for the button group component. */
 export interface ButtonGroupProps {
+  /** The button that is currently active. */
+  activeButton?: string;
   /** The buttons to be rendered. */
-  buttons: Pick<ButtonProps, 'children' | 'icon'>[];
+  buttons: Pick<ButtonProps, 'id' | 'children' | 'icon'>[];
   /** The callback function that will be called when the active button changes. */
   onChange?: (props: onClickProps) => void;
 }
@@ -25,24 +27,30 @@ export interface ButtonGroupProps {
  * @param props - the {@link ButtonGroupProps}
  * @returns the button group component
  */
-export const ButtonGroup = ({ buttons, onChange }: ButtonGroupProps) => {
-  const [activeButton, setActiveButton] = React.useState<number>();
+export const ButtonGroup = ({
+  activeButton,
+  buttons,
+  onChange,
+}: ButtonGroupProps) => (
+  <Flex sx={buttonGroupCss}>
+    {buttons.map((button) => {
+      if (!button.id) {
+        throw new Error('You must provide an `id` for each button');
+      }
 
-  return (
-    <Flex sx={buttonGroupCss}>
-      {buttons.map((button, index) => (
+      const key = button.id;
+
+      return (
         <Button
-          key={button.children}
           {...button}
+          key={key}
           variant="ghost"
-          active={index === activeButton}
+          active={key === activeButton}
           onClick={(e) => {
-            if (activeButton === index) return;
-            setActiveButton(() => index);
-            if (onChange) onChange({ e, index });
+            if (onChange) onChange({ e, clicked: key });
           }}
         />
-      ))}
-    </Flex>
-  );
-};
+      );
+    })}
+  </Flex>
+);

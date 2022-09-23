@@ -44,7 +44,7 @@ export const ExternalAnchor = ({
   ...rest
 }: LinkProps) => (
   <Link {...rest} sx={anchorCss} target={target} rel={rel}>
-    {children} <Icon name="open_in_new" size="sm" />
+    {children} <Icon name="open_in_new" size="sm" sx={{ pb: 'xs' }} />
   </Link>
 );
 

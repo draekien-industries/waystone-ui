@@ -15,27 +15,34 @@ const Template: ComponentStory<typeof ButtonGroup> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  buttons: [{ children: 'One' }, { children: 'Two' }],
+  buttons: [
+    { id: 'one', children: 'One' },
+    { id: 'two', children: 'Two' },
+  ],
 } as ButtonGroupProps;
 
 export const WithIcons = Template.bind({});
 
 WithIcons.args = {
   buttons: [
-    { children: 'Yes', icon: { name: 'check' } },
-    { children: 'No', icon: { name: 'close' } },
+    { id: 'yes', children: 'Yes', icon: { name: 'check' } },
+    { id: 'no', children: 'No', icon: { name: 'close' } },
   ],
 } as ButtonGroupProps;
 
 export const WithOnChangeCallback = () => {
-  const [active, setActive] = React.useState<number>();
+  const [active, setActive] = React.useState<string>();
 
   return (
     <>
       <Text>{active ?? 'none'}</Text>
       <ButtonGroup
-        buttons={[{ children: 'One' }, { children: 'Two' }]}
-        onChange={(e) => setActive(e.index)}
+        buttons={[
+          { id: 'buttonOne', children: 'One' },
+          { id: 'buttonTwo', children: 'Two' },
+        ]}
+        activeButton={active}
+        onChange={(e) => setActive(e.clicked)}
       />
     </>
   );

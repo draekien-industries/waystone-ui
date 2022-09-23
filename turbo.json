@@ -4,6 +4,10 @@
       "outputs": ["dist/**", ".next/**", "storybook-static/**"],
       "dependsOn": ["^build"]
     },
+    "build:storybook": {
+      "outputs": ["dist/**", ".next/**", "storybook-static/**"],
+      "dependsOn": ["^build"]
+    },
     "test": {
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
@@ -20,8 +24,10 @@
       "outputs": []
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "dependsOn": ["^dev"]
     },
+    "dev:storybook": {},
     "clean": {
       "cache": false
     },
