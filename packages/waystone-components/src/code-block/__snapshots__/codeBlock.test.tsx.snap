@@ -6,12 +6,12 @@ exports[`The code block component Should match snapshot 1`] = `
     class="css-hbp852-CodeBlock"
   >
     <div
-      class="css-19r3ome-CodeBlock"
+      class="css-4eseco-CodeBlock"
     >
       javascript
     </div>
     <button
-      class="css-59l86v-CodeBlock"
+      class="css-7jbhsf-CodeBlock"
       type="button"
     >
       <i
@@ -61,12 +61,12 @@ exports[`The code block component Should render a caption 1`] = `
     class="css-hbp852-CodeBlock"
   >
     <div
-      class="css-19r3ome-CodeBlock"
+      class="css-4eseco-CodeBlock"
     >
       javascript
     </div>
     <button
-      class="css-59l86v-CodeBlock"
+      class="css-7jbhsf-CodeBlock"
       type="button"
     >
       <i
