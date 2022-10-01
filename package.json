@@ -16,7 +16,8 @@
     "test:watch": "turbo run test:watch",
     "clean": "turbo run clean && rimraf -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "is-ci || husky install"
+    "prepare": "is-ci || husky install",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -60,6 +61,7 @@
     "webpack": "^5.70.0"
   },
   "dependencies": {
+    "@changesets/cli": "^2.25.0",
     "@emotion/react": "^11.8.2",
     "@theme-ui/color": "^0.14.2",
     "@theme-ui/css": "^0.14.2",
