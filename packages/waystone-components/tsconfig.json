@@ -10,7 +10,7 @@
     "__snapshots__",
     "__assets__",
     "**/*.stories.tsx",
-    "**/*.{spec|test|internal}.tsx"
+    "**/*.{spec,test,internal}.tsx"
   ],
   "compilerOptions": {
     "outDir": "dist"
