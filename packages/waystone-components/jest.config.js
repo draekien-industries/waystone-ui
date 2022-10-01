@@ -4,6 +4,8 @@ module.exports = {
   testEnvironment: 'jsdom',
   verbose: true,
   resetMocks: true,
+  rootDir: '.',
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
   moduleDirectories: ['node_modules'],
   setupFilesAfterEnv: [
     '@testing-library/jest-dom',
