@@ -1,18 +1,16 @@
 import React from 'react';
-import { PageLayout } from '../layouts';
+import { PageLayout } from '../../layouts';
 
-const HomePage = () => (
+const BlogPage = () => (
   <PageLayout
     headProps={{
-      title: '.NET Developer | William Pei',
+      title: 'Code With Me | Blog | William Pei',
       description: `William Pei's portfolio and blog where he showcases some of his work and shares his technical knowledge.`,
     }}
-    topBarProps={{
-      title: 'William Pei',
-    }}
+    topBarProps={{ title: 'Code With Me' }}
   >
-    Content
+    Blog Content
   </PageLayout>
 );
 
-export default HomePage;
+export default BlogPage;

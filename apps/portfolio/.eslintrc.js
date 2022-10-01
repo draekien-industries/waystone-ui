@@ -6,7 +6,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['next/core-web-vitals', ...preset.extends],
+  extends: [...preset.extends, 'next/core-web-vitals'],
   plugins: [...preset.plugins],
   parserOptions: {
     ecmaFeatures: {

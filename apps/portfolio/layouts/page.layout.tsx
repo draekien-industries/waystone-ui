@@ -10,7 +10,7 @@ export interface HeadProps {
 
 export interface PageLayoutProps {
   headProps: HeadProps;
-  topBarProps: TopBarProps;
+  topBarProps?: TopBarProps;
 }
 
 export const PageLayout = ({

@@ -1,53 +1,66 @@
 /** @jsxImportSource theme-ui */
-import { Anchor, ButtonGroup, onClickProps, Text } from '@waystone/components';
-import { Flex, useColorMode } from 'theme-ui';
+import { Anchor, ButtonGroup, Text } from '@waystone/components';
+import Link from 'next/link';
+import { Flex } from 'theme-ui';
 import { Logo } from '../logo';
+import { useColorModeSwitcher } from './topbar.hooks';
+import * as styles from './topbar.styles';
 
 export interface TopBarProps {
-  title: string;
+  title?: string;
 }
 
+const HomeLink = () => (
+  <Link href="/" passHref>
+    <Anchor noDecoration>
+      <Logo size="2.8125rem" color="highlight" />
+    </Anchor>
+  </Link>
+);
+
+const BlogLink = () => (
+  <Link href="/blog" passHref>
+    <Anchor>
+      <Text inline>Blog</Text>
+    </Anchor>
+  </Link>
+);
+
+const EmailLink = () => (
+  <Anchor
+    href="mailto:hello@wpei.me"
+    target="_blank"
+    rel="nofollow noreferrer"
+    arial-label="Email William Pei"
+    external
+  >
+    <Text inline>Say Hello</Text>
+  </Anchor>
+);
+
+const Title = ({ title }: TopBarProps) => (
+  <Text sx={styles.titleTextCss} variant="hero">
+    {title}
+  </Text>
+);
+
 export const TopBar = ({ title }: TopBarProps) => {
-  const [colorMode, setColorMode] = useColorMode();
+  const { colorMode, changeColorMode, colorModeButtons } =
+    useColorModeSwitcher();
 
   return (
-    <Flex
-      sx={{
-        px: ['lg', 'lg', 'xl'],
-        py: 'md',
-        gap: 'lg',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}
-    >
-      <Logo size="2.8125rem" color="highlight" />
-      <Text sx={{ flexGrow: 1, fontWeight: 'medium' }} variant="hero">
-        {title}
-      </Text>
-      <Flex as="nav" sx={{ gap: 'xl' }}>
-        <Anchor href="/blog">
-          <Text inline>Blog</Text>
-        </Anchor>
-        <Anchor
-          href="mailto:hello@wpei.me"
-          target="_blank"
-          rel="nofollow noreferrer"
-          arial-label="Email William Pei"
-          external
-        >
-          <Text inline>Say Hello</Text>
-        </Anchor>
+    <Flex as="nav" sx={styles.topBarContainerCss}>
+      <HomeLink />
+      <Title title={title} />
+      <Flex sx={styles.linksContainerCss}>
+        <BlogLink />
+        <EmailLink />
+        <ButtonGroup
+          buttons={colorModeButtons}
+          activeButton={colorMode}
+          onChange={changeColorMode}
+        />
       </Flex>
-      <ButtonGroup
-        buttons={[
-          { id: 'light', icon: { name: 'light_mode', variant: 'filled' } },
-          { id: 'dark', icon: { name: 'dark_mode', variant: 'filled' } },
-        ]}
-        activeButton={colorMode}
-        onChange={({ clicked }: onClickProps) => {
-          setColorMode(clicked as string);
-        }}
-      />
     </Flex>
   );
 };

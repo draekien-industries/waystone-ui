@@ -18,3 +18,10 @@ export const anchorCss: ThemeUIStyleObject = {
     borderTopRightRadius: 'sm',
   },
 };
+
+export const undecoratedAnchorCss: ThemeUIStyleObject = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  cursor: 'pointer',
+};

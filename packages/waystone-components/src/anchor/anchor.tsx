@@ -2,7 +2,7 @@
 import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
 import { Link, LinkProps } from 'theme-ui';
 import { Icon } from '../icon/icon';
-import { anchorCss } from './anchor.styles';
+import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
 
 /**
  * The props for the anchor component.
@@ -27,23 +27,35 @@ export interface AnchorProps extends LinkProps {
    * The react component to display inside the anchor.
    */
   children: ReactNode;
+  /** Should the anchor render without css styles */
+  noDecoration?: boolean;
 }
 
 /** The internal anchor component */
-export const InternalAnchor = ({ children, ...rest }: LinkProps) => (
-  <Link {...rest} sx={anchorCss}>
+const InternalAnchor = ({
+  children,
+  noDecoration,
+  ...rest
+}: LinkProps & Pick<AnchorProps, 'noDecoration'>) => (
+  <Link {...rest} sx={noDecoration ? undecoratedAnchorCss : anchorCss}>
     {children}
   </Link>
 );
 
 /** The external anchor component */
-export const ExternalAnchor = ({
+const ExternalAnchor = ({
   children,
+  noDecoration,
   target = '_blank',
   rel = 'noopener noreferrer',
   ...rest
-}: LinkProps) => (
-  <Link {...rest} sx={anchorCss} target={target} rel={rel}>
+}: LinkProps & Pick<AnchorProps, 'noDecoration'>) => (
+  <Link
+    {...rest}
+    sx={!noDecoration ? anchorCss : undecoratedAnchorCss}
+    target={target}
+    rel={rel}
+  >
     {children} <Icon name="open_in_new" size="sm" sx={{ pb: 'xs' }} />
   </Link>
 );

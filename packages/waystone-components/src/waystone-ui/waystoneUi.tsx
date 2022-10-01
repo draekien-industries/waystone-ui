@@ -22,10 +22,13 @@ const addFonts = (options?: FontOptions) => {
     icons: options?.iconFont || baseIconFont,
   };
 
-  const preconnectLink = document.createElement('link');
-  preconnectLink.rel = 'preconnect';
-  preconnectLink.href = 'https://fonts.gstatic.com';
-  document.head.appendChild(preconnectLink);
+  if (!document.getElementById('fontsPreconnect')) {
+    const preconnectLink = document.createElement('link');
+    preconnectLink.id = 'fontsPreconnect';
+    preconnectLink.rel = 'preconnect';
+    preconnectLink.href = 'https://fonts.gstatic.com';
+    document.head.appendChild(preconnectLink);
+  }
 
   Object.keys(fonts).forEach((key) => {
     const linkExists = document.getElementById(key);
