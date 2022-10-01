@@ -13,6 +13,7 @@
     "build": "tsc --project tsconfig.json --noEmit false",
     "dev": "tsc --project tsconfig.json --watch --noEmit false",
     "lint": "eslint src --fix",
+    "lint:release": "eslint src",
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
   },
   "devDependencies": {
