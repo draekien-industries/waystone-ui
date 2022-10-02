@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'apps/**'
+      - 'packages/**'
+      - '.github/workflows/release.yml'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 

@@ -3,9 +3,10 @@ name: 'Publish Storybook'
 on:
   push:
     paths:
-      - 'packages/waystone-components'
-      - 'packages/waystone-core'
-      - 'packages/waystone-utils'
+      - 'packages/waystone-components/**'
+      - 'packages/waystone-core/**'
+      - 'packages/waystone-utils/**'
+      - '.github/workflows/storybook.yml'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
