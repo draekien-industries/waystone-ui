@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:storybook": "turbo run build:storybook",
     "dev": "turbo run dev --no-cache --parallel --continue",
     "lint": "turbo run lint",
     "lint:release": "turbo run lint:release",
@@ -37,6 +38,7 @@
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
+    "chromatic": "^6.10.1",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.11.0",

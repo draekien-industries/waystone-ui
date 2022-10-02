@@ -1,0 +1,37 @@
+name: 'Publish Storybook'
+
+on:
+  push:
+    paths:
+      - 'packages/waystone-components'
+      - 'packages/waystone-core'
+      - 'packages/waystone-utils'
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  publish:
+    name: Publish Storybook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Publish waystone-components to Chromatic  
+        uses: chromaui/action@v1
+        with:
+          buildScriptName: build:storybook
+          workingDir: packages/waystone-components
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
