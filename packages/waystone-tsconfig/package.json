@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "description": "The tsconfig settings used by draekien-industries",
+  "author": "draekien-industries",
   "files": [
     "base.json",
     "node14.json",

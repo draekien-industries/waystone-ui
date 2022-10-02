@@ -1,6 +1,12 @@
 {
   "name": "eslint-preset-waystone",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "description": "The eslint presets used by draekien-industries",
+  "author": "draekien-industries",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {

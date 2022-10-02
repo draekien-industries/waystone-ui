@@ -4,6 +4,12 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "description": "The react component library used by draekien-industries",
+  "author": "draekien-industries",
   "sideEffects": false,
   "license": "MIT",
   "files": [
