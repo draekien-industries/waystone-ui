@@ -1,10 +1,24 @@
 # @waystone/components
 
-This is the package that contains the design system of draekien-industries.
+## Docs
 
-## Consuming this package
+Click the badge below to view the components in storybook.
 
-Install this package in your project with `yarn add @waystone/components`
+[![Storybook Enabled](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://main--63394994ddec8475ab8b00af.chromatic.com)
+
+## Getting Started
+
+### Installation
+
+```bash
+# yarn
+yarn add @waystone/components
+
+# npm
+npm install @waystone/components
+```
+
+### Usage
 
 In your app, consume the theme provider by declaring the below:
 
@@ -19,6 +33,8 @@ export const App = () => {
   );
 };
 ```
+
+### Customisation
 
 You can optionally provide your own `theme` and `fontOptions` by instantiating
 your own:
@@ -42,5 +58,3 @@ export const App = () => {
   );
 };
 ```
-
-> You may need to install `@waystone/core` to use the custom theme
