@@ -50,14 +50,14 @@
     "storybook-dark-mode": "^1.1.0"
   },
   "dependencies": {
+    "@waystone/core": "*",
+    "@waystone/utils": "*",
     "react-syntax-highlighter": "^15.5.0"
   },
   "peerDependencies": {
     "@emotion/react": "*",
     "@theme-ui/color": "*",
     "@theme-ui/css": "*",
-    "@waystone/core": "*",
-    "@waystone/utils": "*",
     "react": "*",
     "react-dom": "*",
     "theme-ui": "*",

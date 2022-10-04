@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "@waystone/tsconfig": "*",
-    "@waystone/core": "*",
     "@types/react": "*",
     "@types/react-dom": "*",
     "eslint-preset-waystone": "*",

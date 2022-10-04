@@ -16,9 +16,9 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json --noEmit false",
-    "build:storybook": "tsc --project tsconfig.json --noEmit false",
-    "dev": "tsc --project tsconfig.json --watch --noEmit false",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build:storybook": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
@@ -27,7 +27,8 @@
     "@types/react": "*",
     "@types/react-dom": "*",
     "@waystone/tsconfig": "*",
-    "eslint-preset-waystone": "*"
+    "eslint-preset-waystone": "*",
+    "tsup": "*"
   },
   "peerDependencies": {
     "@emotion/react": "*",
