@@ -10,5 +10,4 @@ export * from './label';
 export * from './overlay';
 export * from './spinner';
 export * from './text';
-export * from './utils';
 export * from './waystone-ui';

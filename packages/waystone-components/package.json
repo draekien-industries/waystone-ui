@@ -44,9 +44,7 @@
     "@types/react": "*",
     "@types/react-dom": "*",
     "@types/react-syntax-highlighter": "^15.5.5",
-    "@waystone/core": "*",
     "@waystone/tsconfig": "*",
-    "@waystone/utils": "*",
     "eslint-preset-waystone": "*",
     "identity-obj-proxy": "^3.0.0",
     "storybook-dark-mode": "^1.1.0"
@@ -58,6 +56,8 @@
     "@emotion/react": "*",
     "@theme-ui/color": "*",
     "@theme-ui/css": "*",
+    "@waystone/core": "*",
+    "@waystone/utils": "*",
     "react": "*",
     "react-dom": "*",
     "theme-ui": "*",
