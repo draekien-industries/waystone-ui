@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Icon } from './icon';
+import { Icon, IconProps } from './icon';
 
 export default {
   title: 'Components/Icon',
@@ -18,4 +18,4 @@ export const Default = Template.bind({});
 
 Default.args = {
   name: 'accessibility',
-};
+} as IconProps;

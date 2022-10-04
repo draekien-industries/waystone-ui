@@ -34,7 +34,8 @@
     "@theme-ui/css": "*",
     "react": "*",
     "react-dom": "*",
-    "theme-ui": "*"
+    "theme-ui": "*",
+    "type-fest": "*"
   },
   "publishConfig": {
     "access": "public"

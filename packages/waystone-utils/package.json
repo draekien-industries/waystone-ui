@@ -35,7 +35,8 @@
     "@types/react": "*",
     "@types/react-dom": "*",
     "eslint-preset-waystone": "*",
-    "tsup": "*"
+    "tsup": "*",
+    "type-fest": "*"
   },
   "publishConfig": {
     "access": "public"

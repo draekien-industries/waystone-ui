@@ -1,10 +1,10 @@
 /** @jsxImportSource theme-ui */
 import React from 'react';
+import type { LiteralUnion } from 'type-fest';
 import { getIconClassName } from './icon.fx';
 import { iconCss } from './icon.styles';
-
 import { HasColor, HasSize, HasVariant } from '../common/interfaces';
-import { IconStyleProps, IconVariant } from './icon.types';
+import { IconStyleProps, IconVariant, MaterialIconName } from './icon.types';
 
 /**
  * The options that can be set when rendering the icon.
@@ -20,7 +20,7 @@ export interface IconProps
     HasSize,
     HasColor {
   /** The name of the material icon to render. */
-  name: string;
+  name: LiteralUnion<MaterialIconName, string>;
 }
 
 /**

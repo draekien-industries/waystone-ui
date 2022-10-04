@@ -10,7 +10,8 @@
   "scripts": {
     "build": "turbo run build",
     "build:storybook": "turbo run build:storybook",
-    "dev": "turbo run dev --no-cache --parallel --continue",
+    "dev": "turbo run dev --parallel --continue",
+    "dev:storybook": "turbo run dev:storybook --parallel --continue",
     "lint": "turbo run lint",
     "lint:release": "turbo run lint:release",
     "test": "turbo run test",
@@ -72,7 +73,8 @@
     "@theme-ui/css": "^0.14.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "theme-ui": "^0.14.2"
+    "theme-ui": "^0.14.2",
+    "type-fest": "^3.0.0"
   },
   "config": {
     "commitizen": {
