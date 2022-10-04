@@ -1,6 +1,15 @@
-name: 'Publish Storybook'
+name: Coverage Reporting
 
-on:
+on:  
+  workflow_dispatch:
+  pull_request:
+    branches: 
+      - main
+    paths:
+      - 'packages/waystone-components/**'
+      - 'packages/waystone-core/**'
+      - 'packages/waystone-utils/**'
+      - '.github/workflows/coverage.yml'
   push:
     branches:
       - main
@@ -8,13 +17,13 @@ on:
       - 'packages/waystone-components/**'
       - 'packages/waystone-core/**'
       - 'packages/waystone-utils/**'
-      - '.github/workflows/storybook.yml'
+      - '.github/workflows/coverage.yml'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  publish:
-    name: Publish Storybook
+  coverage:
+    name: Upload coverage to Codecov
     runs-on: ubuntu-latest
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -23,23 +32,20 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 2
 
       - name: Setup Node.js 16.x
         uses: actions/setup-node@v2
         with:
           node-version: 16.x
           cache: 'yarn'
-
+      
       - name: Install Dependencies
         run: yarn
 
-      - name: Build Storybook
-        run: yarn build:storybook
+      - name: Run tests and collect coverage
+        run: yarn test:release
 
-      - name: Publish waystone-components to Chromatic  
-        uses: chromaui/action@v1
-        with:
-          storybookBuildDir: 'packages/waystone-components/storybook-static'
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload results to codecov
+        uses: codecov/codecov-action@v3
+          
