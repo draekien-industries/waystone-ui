@@ -6,7 +6,7 @@
     },
     "build:storybook": {
       "outputs": ["dist/**", ".next/**", "storybook-static/**"],
-      "dependsOn": ["build"]
+      "dependsOn": ["^build:storybook"]
     },
     "test": {
       "outputs": ["coverage/**"],
@@ -22,7 +22,7 @@
     },
     "test:release": {
       "outputs": ["coverage/**"],
-      "dependsOn": ["build"]
+      "dependsOn": ["^build"]
     },
     "lint": {
       "outputs": [],
@@ -30,7 +30,7 @@
     },
     "lint:release": {
       "outputs": [],
-      "dependsOn": ["build"]
+      "dependsOn": ["^build"]
     },
     "dev": {
       "cache": false,

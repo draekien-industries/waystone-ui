@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json --noEmit false",
+    "build:storybook": "tsc --project tsconfig.json --noEmit false",
     "dev": "tsc --project tsconfig.json --watch --noEmit false",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
