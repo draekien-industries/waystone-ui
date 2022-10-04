@@ -1,6 +1,10 @@
 # Waystone-UI
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Publish Packages](https://github.com/draekien-industries/waystone-ui/actions/workflows/release.yml/badge.svg)](https://github.com/draekien-industries/waystone-ui/actions/workflows/release.yml)
+[![Publish Storybook](https://github.com/draekien-industries/waystone-ui/actions/workflows/storybook.yml/badge.svg)](https://github.com/draekien-industries/waystone-ui/actions/workflows/storybook.yml)
+[![Publish Codecov](https://github.com/draekien-industries/waystone-ui/actions/workflows/coverage.yml/badge.svg)](https://github.com/draekien-industries/waystone-ui/actions/workflows/coverage.yml)
+[![codecov](https://codecov.io/gh/draekien-industries/waystone-ui/branch/main/graph/badge.svg?token=FOEQJUVOY0)](https://codecov.io/gh/draekien-industries/waystone-ui)
 
 Waystone-UI is the design system of Draekien-Industries.
 

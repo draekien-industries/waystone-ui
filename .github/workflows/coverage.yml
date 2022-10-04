@@ -1,4 +1,4 @@
-name: Coverage Reporting
+name: Publish Codecov
 
 on:  
   workflow_dispatch:
