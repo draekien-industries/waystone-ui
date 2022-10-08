@@ -7,7 +7,7 @@
     },
     "build:storybook": {
       "outputs": ["dist/**", ".next/**", "storybook-static/**"],
-      "dependsOn": ["^build:storybook"]
+      "dependsOn": ["build"]
     },
     "test": {
       "outputs": ["coverage/**"],

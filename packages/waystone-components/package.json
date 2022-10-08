@@ -16,9 +16,9 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json --noEmit false",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "build:storybook": "build-storybook",
-    "dev": "tsc --project tsconfig.json --watch --noEmit false",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "dev:storybook": "start-storybook -p 6006",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
