@@ -1,4 +1,5 @@
 {
+  "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
     "build": {
       "outputs": ["dist/**", ".next/**", "storybook-static/**"],
@@ -33,10 +34,12 @@
       "dependsOn": ["^build"]
     },
     "dev": {
-      "cache": false,
-      "dependsOn": ["^dev"]
+      "dependsOn": ["^dev"],
+      "cache": false
     },
-    "dev:storybook": {},
+    "dev:storybook": {
+      "cache": false
+    },
     "clean": {
       "cache": false
     },

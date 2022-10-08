@@ -9,9 +9,7 @@ interface ExampleComponentProps {
 }
 const ExampleComponent = ({ text }: ExampleComponentProps) => <div>{text}</div>;
 
-const ExampleComponentWithSpinner = (
-  props: ExampleComponentProps & CanLoad & SpinnerProps
-) => withSpinner(ExampleComponent)(props);
+const ExampleComponentWithSpinner = withSpinner(ExampleComponent);
 
 export default {
   title: 'HOC/withSpinner',
@@ -26,7 +24,7 @@ const Template: ComponentStory<typeof ExampleComponentWithSpinner> = (args) => (
       height: '10rem',
       width: '15rem',
       position: 'relative',
-      backgroundColor: 'lavender',
+      border: '1px solid',
     }}
   >
     <ExampleComponentWithSpinner {...args} />

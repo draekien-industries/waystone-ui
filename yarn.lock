@@ -6904,6 +6904,13 @@ eslint-config-prettier@^8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
+eslint-config-turbo@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-turbo/-/eslint-config-turbo-0.0.4.tgz#4850255f8c858131843aa38854d4aed0ff09bb6e"
+  integrity sha512-HErPS/wfWkSdV9Yd2dDkhZt3W2B78Ih/aWPFfaHmCMjzPalh+5KxRRGTf8MOBQLCebcWJX0lP1Zvc1rZIHlXGg==
+  dependencies:
+    eslint-plugin-turbo "0.0.4"
+
 eslint-import-resolver-node@^0.3.4, eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.6.tgz#4048b958395da89668252001dbd9eca6b83bacbd"
@@ -7015,6 +7022,11 @@ eslint-plugin-testing-library@^5.2.0:
   integrity sha512-0oW3tC5NNT2WexmJ3848a/utawOymw4ibl3/NkwywndVAz2hT9+ab70imA7ccg3RaScQgMvJT60OL00hpmJvrg==
   dependencies:
     "@typescript-eslint/utils" "^5.13.0"
+
+eslint-plugin-turbo@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-turbo/-/eslint-plugin-turbo-0.0.4.tgz#966f3dd6202143d0c28dc9cdbb48b0f779d06172"
+  integrity sha512-dfmYE/iPvoJInQq+5E/0mj140y/rYwKtzZkn3uVK8+nvwC5zmWKQ6ehMWrL4bYBkGzSgpOndZM+jOXhPQ2m8Cg==
 
 eslint-scope@5.1.1, eslint-scope@^5.1.1:
   version "5.1.1"
@@ -13630,7 +13642,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
-typescript@^4.6.2, typescript@^4.6.4, typescript@^4.8.3:
+typescript@^4.6.4, typescript@^4.8.3:
   version "4.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.3.tgz#d59344522c4bc464a65a730ac695007fdb66dd88"
   integrity sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==
