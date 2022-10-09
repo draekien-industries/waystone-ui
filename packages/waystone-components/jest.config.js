@@ -20,5 +20,6 @@ module.exports = {
     '!<rootDir>/src/*.{ts,tsx}',
     '!<rootDir>/**/{models,router,constants,apis}/**',
     '!<rootDir>/**/{__tests__,__fixtures__}/**',
+    '!<rootDir>/**/index.ts',
   ],
 };
