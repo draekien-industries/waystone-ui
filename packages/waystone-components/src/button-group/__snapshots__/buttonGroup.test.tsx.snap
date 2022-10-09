@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ButtonGroup component should match snapshot 1`] = `
+<div>
+  <div
+    class="css-1k79gwl-ButtonGroup"
+  >
+    <button
+      class="css-tcaffe-Button"
+      id="button1"
+    >
+      <span
+        class="css-qn9bt-Text"
+      >
+        button1
+      </span>
+    </button>
+    <button
+      class="css-tcaffe-Button"
+      id="button2"
+    >
+      <span
+        class="css-qn9bt-Text"
+      >
+        button2
+      </span>
+    </button>
+  </div>
+</div>
+`;
