@@ -30,9 +30,14 @@
     "tsup": "*"
   },
   "peerDependencies": {
+    "@emotion/react": ">=11.8.2",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "theme-ui": ">=0.14.2",
+    "type-fest": ">=3.0.0"
+  },
+  "dependencies": {
     "@emotion/react": "*",
-    "@theme-ui/color": "*",
-    "@theme-ui/css": "*",
     "react": "*",
     "react-dom": "*",
     "theme-ui": "*",

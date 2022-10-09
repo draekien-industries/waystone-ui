@@ -22,12 +22,11 @@
     "lint:release": "eslint src",
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
   },
-  "peerDependencies": {
-    "typescript": "*",
-    "prettier": "*",
-    "ts-jest": "*",
-    "jest": "*",
+  "dependencies": {
     "react": "*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
   },
   "devDependencies": {
     "@waystone/tsconfig": "*",

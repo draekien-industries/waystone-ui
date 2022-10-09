@@ -50,18 +50,27 @@
     "storybook-dark-mode": "^1.1.0"
   },
   "dependencies": {
-    "@waystone/core": "*",
-    "@waystone/utils": "*",
-    "react-syntax-highlighter": "^15.5.0"
-  },
-  "peerDependencies": {
     "@emotion/react": "*",
     "@theme-ui/color": "*",
     "@theme-ui/css": "*",
+    "@waystone/core": "*",
+    "@waystone/utils": "*",
     "react": "*",
     "react-dom": "*",
     "theme-ui": "*",
-    "type-fest": "*"
+    "type-fest": "*",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11.8.2",
+    "@theme-ui/color": ">=0.15.1",
+    "@theme-ui/css": ">=0.15.1",
+    "@waystone/core": "*",
+    "@waystone/utils": "*",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "theme-ui": ">=0.14.2",
+    "type-fest": ">=3.0.0"
   },
   "publishConfig": {
     "access": "public"

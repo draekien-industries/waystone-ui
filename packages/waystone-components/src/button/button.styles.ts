@@ -1,6 +1,5 @@
-import { alpha } from '@theme-ui/color';
+import { alpha , ThemeUIStyleObject } from 'theme-ui';
 import { ButtonVariant, Size } from '@waystone/core';
-import { ThemeUIStyleObject } from 'theme-ui';
 import {
   CanActivate,
   CanBeFullWidth,
