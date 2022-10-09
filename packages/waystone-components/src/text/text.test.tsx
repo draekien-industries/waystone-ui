@@ -1,5 +1,4 @@
-import React from 'react';
-import { render } from '../common';
+import { render } from '../__fixtures__';
 import { Text } from './text';
 
 describe('The Text component', () => {

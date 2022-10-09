@@ -1,5 +1,4 @@
-import React from 'react';
-import { render } from '../common';
+import { render } from '../__fixtures__';
 import { Spinner } from './spinner';
 
 describe('The Spinner component', () => {

@@ -1,6 +1,5 @@
-import React from 'react';
 import path from 'path';
-import { render } from '../common';
+import { render } from '../__fixtures__';
 import { Card } from './card';
 import { CoverImageCssOptions } from './card.styles';
 

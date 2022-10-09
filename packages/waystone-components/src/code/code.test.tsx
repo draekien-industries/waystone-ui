@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../common';
+import { render } from '../__fixtures__';
 import { Code } from './code';
 
 describe('The Code component', () => {

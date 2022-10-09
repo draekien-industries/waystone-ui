@@ -9,6 +9,8 @@
     ".storybook",
     "__snapshots__",
     "__assets__",
+    "__tests__",
+    "__fixtures__",
     "**/*.stories.tsx",
     "**/*.{spec,test,internal}.tsx"
   ],

@@ -1,5 +1,4 @@
-import React from 'react';
-import { screen, render } from '../common';
+import { screen, render } from '../__fixtures__';
 import { Anchor } from './anchor';
 
 describe('The Anchor component', () => {
