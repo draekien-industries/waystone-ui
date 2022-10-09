@@ -47,4 +47,19 @@ describe('The ButtonGroup component', () => {
 
     expect(handleChange).toBeCalled();
   });
+
+  it('renders the correct active button', () => {
+    render(
+      <ButtonGroup
+        buttons={[{ id: 'button1', children: 'button1' }]}
+        activeButton="button1"
+      />
+    );
+
+    const button1 = screen.getByRole('button');
+
+    expect(button1).toHaveStyle({
+      outlineStyle: 'solid',
+    });
+  });
 });
