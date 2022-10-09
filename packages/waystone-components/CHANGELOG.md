@@ -1,5 +1,11 @@
 # @waystone/components
 
+## 2.0.1
+
+### Patch Changes
+
+- 02f2c0e: use tsup for build instead of tsc
+
 ## 2.0.0
 
 ### Minor Changes
