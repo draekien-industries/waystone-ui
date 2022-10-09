@@ -1,5 +1,11 @@
 # @waystone/components
 
+## 3.1.0
+
+### Minor Changes
+
+- c357c52: build: export code-block, hooks, and common
+
 ## 3.0.0
 
 ### Minor Changes
