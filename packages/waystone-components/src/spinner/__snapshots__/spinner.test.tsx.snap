@@ -3,7 +3,10 @@
 exports[`The Spinner component Matches snapshot 1`] = `
 <div>
   <span
+    aria-busy="true"
+    aria-valuetext="Loading..."
     class="css-s9ilsi-Spinner"
+    role="progressbar"
   />
 </div>
 `;

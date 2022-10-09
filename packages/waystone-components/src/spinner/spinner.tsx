@@ -32,5 +32,12 @@ export const Spinner = ({
     );
   }
 
-  return <span sx={spinnerCss({ size, color, fullWidth })} />;
+  return (
+    <span
+      role="progressbar"
+      sx={spinnerCss({ size, color, fullWidth })}
+      aria-valuetext="Loading..."
+      aria-busy
+    />
+  );
 };

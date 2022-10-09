@@ -19,5 +19,6 @@ module.exports = {
     '!<rootDir>/src/**/*.generated.{ts,js}',
     '!<rootDir>/src/*.{ts,tsx}',
     '!<rootDir>/**/{models,router,constants,apis}/**',
+    '!<rootDir>/**/{__tests__,__fixtures__}/**',
   ],
 };
