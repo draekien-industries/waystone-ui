@@ -1,14 +1,14 @@
 name: Publish Storybook
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
     paths:
-      - 'packages/waystone-components/**'
-      - 'packages/waystone-core/**'
-      - 'packages/waystone-utils/**'
+      - 'packages/waystone-*/**'
       - '.github/workflows/storybook.yml'
+      - '!**/*.md'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -41,5 +41,6 @@ jobs:
         uses: chromaui/action@v1
         with:
           storybookBuildDir: 'packages/waystone-components/storybook-static'
+          exitZeroOnChanges: true
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}

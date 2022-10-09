@@ -6,18 +6,16 @@ on:
     branches: 
       - main
     paths:
-      - 'packages/waystone-components/**'
-      - 'packages/waystone-core/**'
-      - 'packages/waystone-utils/**'
+      - 'packages/waystone-*/**'
       - '.github/workflows/coverage.yml'
+      - '!**/*.md'
   push:
     branches:
       - main
     paths:
-      - 'packages/waystone-components/**'
-      - 'packages/waystone-core/**'
-      - 'packages/waystone-utils/**'
+      - 'packages/waystone-*/**'
       - '.github/workflows/coverage.yml'
+      - '!**/*.md'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 

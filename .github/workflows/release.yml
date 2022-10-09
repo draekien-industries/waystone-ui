@@ -1,6 +1,7 @@
 name: Publish Packages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -8,6 +9,7 @@ on:
       - 'apps/**'
       - 'packages/**'
       - '.github/workflows/release.yml'
+      - '!**/*.md'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
