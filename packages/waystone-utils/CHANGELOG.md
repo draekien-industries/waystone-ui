@@ -1,5 +1,11 @@
 # @waystone/utils
 
+## 3.0.0
+
+### Minor Changes
+
+- 209fd69: fix: update package dependencies list
+
 ## 2.0.0
 
 ### Minor Changes
