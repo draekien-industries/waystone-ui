@@ -1,5 +1,11 @@
 # @waystone/core
 
+## 4.0.0
+
+### Minor Changes
+
+- e021e14: fix: set initial color mode to dark
+
 ## 3.0.0
 
 ### Minor Changes
