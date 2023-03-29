@@ -40,9 +40,6 @@
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
-    "@testing-library/react": "^13.0.0",
-    "@types/react": "*",
-    "@types/react-dom": "*",
     "@types/react-syntax-highlighter": "^15.5.5",
     "@waystone/tsconfig": "*",
     "eslint-preset-waystone": "*",
@@ -50,15 +47,15 @@
     "storybook-dark-mode": "^1.1.0"
   },
   "dependencies": {
-    "@emotion/react": "*",
-    "@theme-ui/color": "*",
-    "@theme-ui/css": "*",
+    "@emotion/react": "^11.10.4",
+    "@theme-ui/color": "^0.15.1",
+    "@theme-ui/css": "^0.15.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "theme-ui": "^0.15.1",
+    "type-fest": "^3.0.0",
     "@waystone/core": "*",
     "@waystone/utils": "*",
-    "react": "*",
-    "react-dom": "*",
-    "theme-ui": "*",
-    "type-fest": "*",
     "react-syntax-highlighter": "^15.5.0"
   },
   "peerDependencies": {

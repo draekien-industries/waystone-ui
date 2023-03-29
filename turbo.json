@@ -38,6 +38,7 @@
       "cache": false
     },
     "dev:storybook": {
+      "dependsOn": ["^dev"],
       "cache": false
     },
     "clean": {

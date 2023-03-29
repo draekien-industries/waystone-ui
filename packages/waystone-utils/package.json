@@ -23,18 +23,14 @@
     "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
   },
   "dependencies": {
-    "react": "*"
+    "react": "^18.0.0"
   },
   "peerDependencies": {
     "react": ">=18.0.0"
   },
   "devDependencies": {
     "@waystone/tsconfig": "*",
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "eslint-preset-waystone": "*",
-    "tsup": "*",
-    "type-fest": "*"
+    "eslint-preset-waystone": "*"
   },
   "publishConfig": {
     "access": "public"
