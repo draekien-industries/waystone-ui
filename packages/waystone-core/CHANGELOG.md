@@ -1,5 +1,11 @@
 # @waystone/core
 
+## 5.0.0
+
+### Patch Changes
+
+- 43bc664: move stories into @waystone/stories package
+
 ## 4.0.0
 
 ### Minor Changes

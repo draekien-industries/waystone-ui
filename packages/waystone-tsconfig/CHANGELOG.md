@@ -1,5 +1,11 @@
 # @waystone/tsconfig
 
+## 1.1.1
+
+### Patch Changes
+
+- 43bc664: move stories into @waystone/stories package
+
 ## 1.1.0
 
 ### Minor Changes
