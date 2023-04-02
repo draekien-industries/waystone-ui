@@ -56,7 +56,11 @@ module.exports = {
   overrides: [
     {
       env: { jest: true },
-      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      files: [
+        '**/__tests__/**/*.[jt]s?(x)',
+        '**/__fixtures__/**/*.[jt]s?(x)',
+        '**/?(*.)+(spec|test).[jt]s?(x)',
+      ],
       extends: ['plugin:testing-library/react', 'plugin:jest/recommended'],
       rules: {
         'import/no-extraneous-dependencies': [
