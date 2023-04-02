@@ -43,3 +43,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish storybook if a publish happens
+        if: steps.changesets.outputs.published == 'true'
+        uses: chromatic/action@v1
+        with:
+          storybookBuildDir: 'apps/stories/storybook-static'
+          exitZeroOnChanges: true
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
