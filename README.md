@@ -2,7 +2,6 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Publish Packages](https://github.com/draekien-industries/waystone-ui/actions/workflows/release.yml/badge.svg)](https://github.com/draekien-industries/waystone-ui/actions/workflows/release.yml)
-[![Publish Storybook](https://github.com/draekien-industries/waystone-ui/actions/workflows/storybook.yml/badge.svg)](https://github.com/draekien-industries/waystone-ui/actions/workflows/storybook.yml)
 [![Publish Codecov](https://github.com/draekien-industries/waystone-ui/actions/workflows/coverage.yml/badge.svg)](https://github.com/draekien-industries/waystone-ui/actions/workflows/coverage.yml)
 [![codecov](https://codecov.io/gh/draekien-industries/waystone-ui/branch/main/graph/badge.svg?token=FOEQJUVOY0)](https://codecov.io/gh/draekien-industries/waystone-ui)
 
@@ -14,6 +13,7 @@ This Turborepo includes the following packages and apps:
 
 ### Apps and Packages
 
+- `@waystone/stories` - The storybook for the design system
 - `@waystone/components` - The React components for the design system
 - `@waystone/core` - The design system theme and types
 - `@waystone/utils` - Some utils that can be used by consumers of the design system
