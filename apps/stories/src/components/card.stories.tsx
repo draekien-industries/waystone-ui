@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Card } from './card';
-import { CoverImageCssOptions } from './card.styles';
+import { Card } from '@waystone/components/src';
+import { CoverImageCssOptions } from '@waystone/components/src/card/card.styles';
 
 const options: CoverImageCssOptions = {
   url: '/example-image.png',

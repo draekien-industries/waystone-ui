@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { CardButton, CardButtonProps } from './cardButton';
-import { Text } from '../text/text';
+import { CardButton, CardButtonProps, Text } from '@waystone/components/src';
 
 export default {
   title: 'Components/CardButton',

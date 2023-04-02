@@ -1,7 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Overlay, OverlayProps } from './overlay';
-import { Text } from '../text';
+import { Overlay, OverlayProps, Text } from '@waystone/components/src';
 
 export default {
   title: 'Components/Overlay',

@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { Meta } from '@storybook/react';
-import { TextVariant, WaystoneBaseTheme } from '@waystone/core';
+import { TextVariant, WaystoneBaseTheme } from '@waystone/core/src';
 import { ThemeUIStyleObject } from 'theme-ui';
-import { Text } from '..';
+import { Text } from '@waystone/components/src';
 
 export const Typography: FC = () => (
   <article>

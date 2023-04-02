@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Spinner } from './spinner';
+import { Spinner } from '@waystone/components/src';
 
 export default {
   title: 'Components/Spinner',

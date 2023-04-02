@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Button, ButtonProps } from './button';
+import { Button, ButtonProps } from '@waystone/components/src';
 
 export default {
   title: 'Components/Button',

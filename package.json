@@ -18,7 +18,7 @@
     "test:update": "turbo run test:update",
     "test:watch": "turbo run test:watch",
     "test:release": "turbo run test:release",
-    "clean": "turbo run clean && rimraf -rf node_modules",
+    "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "is-ci || husky install",
     "release": "turbo run build lint:release test:release && changeset version && changeset publish"
@@ -46,7 +46,6 @@
     "jest-environment-jsdom": "^29.1.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "rimraf": "^3.0.2",
     "ts-jest": "^29.0.1",
     "tsup": "^5.10.1",
     "turbo": "^1.4.7",

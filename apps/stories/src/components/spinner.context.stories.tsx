@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { within, waitFor, userEvent } from '@storybook/testing-library';
-import { UseSpinnerContextDemo } from './spinner.internal';
-import { SpinnerProvider } from './spinner.context';
+import { UseSpinnerContextDemo } from '@waystone/components/src/spinner/spinner.internal';
+import { SpinnerProvider } from '@waystone/components/src/spinner/spinner.context';
 
 export default {
   title: 'Hooks/useSpinnerContext',

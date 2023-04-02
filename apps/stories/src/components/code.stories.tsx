@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Code } from './code';
-import { Text } from '../text/text';
+import { Code, Text } from '@waystone/components/src';
 
 export default {
   title: 'Components/Code',
