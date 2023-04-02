@@ -5,9 +5,10 @@ import {
   SpinnerProps,
   withSpinner,
   CanLoad,
+  WithSpinnerProps,
 } from '@waystone/components/src';
 
-interface ExampleComponentProps {
+interface ExampleComponentProps extends WithSpinnerProps {
   text: string;
 }
 const ExampleComponent = ({ text }: ExampleComponentProps) => <div>{text}</div>;

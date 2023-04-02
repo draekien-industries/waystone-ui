@@ -73,6 +73,7 @@ module.exports = {
   ignorePatterns: [
     '**/*.js',
     '**/*.json',
+    '**/*.d.ts',
     'node_modules',
     'public',
     'styles',
