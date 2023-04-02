@@ -6,6 +6,7 @@ on:
     branches:
       - main
     paths:
+      - 'apps/stories/**'
       - 'packages/waystone-*/**'
       - '.github/workflows/storybook.yml'
       - '!**/*.md'
@@ -35,12 +36,12 @@ jobs:
         run: yarn
 
       - name: Build Storybook
-        run: yarn build:storybook
+        run: yarn build
 
       - name: Publish waystone-components to Chromatic  
         uses: chromaui/action@v1
         with:
-          storybookBuildDir: 'packages/waystone-components/storybook-static'
+          storybookBuildDir: 'apps/stories/storybook-static'
           exitZeroOnChanges: true
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
