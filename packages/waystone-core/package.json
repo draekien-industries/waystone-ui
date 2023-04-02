@@ -17,17 +17,16 @@
   ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build:storybook": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "dev:storybook": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
-    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
-    "@types/react": "*",
-    "@types/react-dom": "*",
     "@waystone/tsconfig": "*",
-    "eslint-preset-waystone": "*",
-    "tsup": "*"
+    "eslint-preset-waystone": "*"
   },
   "peerDependencies": {
     "@emotion/react": ">=11.8.2",
@@ -37,11 +36,11 @@
     "type-fest": ">=3.0.0"
   },
   "dependencies": {
-    "@emotion/react": "*",
-    "react": "*",
-    "react-dom": "*",
-    "theme-ui": "*",
-    "type-fest": "*"
+    "@emotion/react": "^11.10.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "theme-ui": "^0.15.1",
+    "type-fest": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"

@@ -17,24 +17,23 @@
   ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build:storybook": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "dev:storybook": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
-    "clean": "rimraf -rf .turbo && rimraf -rf node_modules && rimraf -rf dist"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
-    "react": "*"
+    "react": "^18.0.0",
+    "type-fest": "^3.7.2"
   },
   "peerDependencies": {
     "react": ">=18.0.0"
   },
   "devDependencies": {
     "@waystone/tsconfig": "*",
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "eslint-preset-waystone": "*",
-    "tsup": "*",
-    "type-fest": "*"
+    "eslint-preset-waystone": "*"
   },
   "publishConfig": {
     "access": "public"

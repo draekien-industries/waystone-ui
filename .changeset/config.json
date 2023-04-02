@@ -2,8 +2,15 @@
   "$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [],
-  "linked": [["@waystone/core", "@waystone/components", "@waystone/utils"]],
+  "fixed": [
+    [
+      "@waystone/core",
+      "@waystone/components",
+      "@waystone/utils",
+      "@waystone/stories"
+    ]
+  ],
+  "linked": [],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",

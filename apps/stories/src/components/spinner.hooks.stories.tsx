@@ -1,8 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { useSpinner } from './spinner.hooks';
-import { UseSpinnerDemo } from './spinner.internal';
-import { Button } from '../button/button';
+import { UseSpinnerDemo } from '@waystone/components/src/spinner/spinner.internal';
+import { Button, useSpinner } from '@waystone/components/src';
 
 export default {
   title: 'Hooks/useSpinner',

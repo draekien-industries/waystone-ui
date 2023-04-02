@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { TextVariant } from '@waystone/core';
-import { Text, TextProps } from './text';
+import { TextVariant } from '@waystone/core/src';
+import { Text, TextProps } from '@waystone/components/src';
 
 export default {
   title: 'Components/Text',

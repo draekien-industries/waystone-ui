@@ -1,8 +1,11 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { withSpinner } from './spinner.hoc';
-import { CanLoad } from '../common';
-import { Spinner, SpinnerProps } from './spinner';
+import {
+  Spinner,
+  SpinnerProps,
+  withSpinner,
+  CanLoad,
+} from '@waystone/components/src';
 
 interface ExampleComponentProps {
   text: string;

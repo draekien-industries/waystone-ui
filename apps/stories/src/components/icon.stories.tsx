@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Icon, IconProps } from './icon';
+import { Icon, IconProps } from '@waystone/components/src';
 
 export default {
   title: 'Components/Icon',

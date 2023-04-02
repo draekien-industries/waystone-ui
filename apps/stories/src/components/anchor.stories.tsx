@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { Anchor } from './anchor';
+import { Anchor } from '@waystone/components/src';
 
 export default {
   title: 'Components/Anchor',

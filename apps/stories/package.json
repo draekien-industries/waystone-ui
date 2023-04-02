@@ -1,0 +1,44 @@
+{
+  "name": "@waystone/stories",
+  "version": "0.0.0",
+  "description": "The storybook for waystone-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "author": "draekien-industries",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "dev": "start-storybook -p 6006",
+    "build": "build-storybook",
+    "clean": "rm -rf node_modules && rm -rf storybook-static",
+    "sb:upgrade": "npx sb@latest upgrade -s"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^6.5.16",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@waystone/tsconfig": "*",
+    "eslint-preset-waystone": "*",
+    "storybook-dark-mode": "^2.1.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@theme-ui/color": "^0.15.1",
+    "@theme-ui/css": "^0.15.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "theme-ui": "^0.15.1",
+    "@waystone/components": "*",
+    "@waystone/core": "*",
+    "@waystone/utils": "*"
+  }
+}

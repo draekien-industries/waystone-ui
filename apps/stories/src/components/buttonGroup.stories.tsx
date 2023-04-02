@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ButtonGroup, ButtonGroupProps } from './buttonGroup';
-import { Text } from '../text';
+import { ButtonGroup, ButtonGroupProps, Text } from '@waystone/components/src';
 
 export default {
   title: 'Components/ButtonGroup',

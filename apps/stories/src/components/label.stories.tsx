@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Label } from './label';
+import { Label } from '@waystone/components/src';
 
 export default {
   title: 'Components/Label',

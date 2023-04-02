@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { CodeBlock } from './codeBlock';
+import { CodeBlock } from '@waystone/components/src';
 
 export default {
   title: 'Components/CodeBlock',
