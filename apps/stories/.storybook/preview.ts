@@ -30,6 +30,7 @@ export const parameters = {
     })),
   },
   darkMode: {
+    current: 'dark',
     dark: waystoneDarkTheme,
     light: waystoneLightTheme,
   },

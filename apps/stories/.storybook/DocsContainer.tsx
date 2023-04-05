@@ -1,12 +1,11 @@
 /** @jsxImportSource theme-ui */
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, useMemo, useState } from 'react';
 import {
   DocsContainer as BaseContainer,
   DocsContainerProps,
 } from '@storybook/blocks';
 import { useDarkMode } from 'storybook-dark-mode';
 import { themes } from '@storybook/theming';
-import { parameters } from './preview';
 
 export const DocsContainer = ({
   children,
@@ -14,8 +13,12 @@ export const DocsContainer = ({
 }: PropsWithChildren<DocsContainerProps>) => {
   const dark = useDarkMode();
 
+  const theme = useMemo(() => {
+    return dark ? themes.dark : themes.light;
+  }, [dark]);
+
   return (
-    <BaseContainer {...rest} theme={dark ? themes.dark : themes.light}>
+    <BaseContainer {...rest} theme={theme}>
       {children}
     </BaseContainer>
   );
