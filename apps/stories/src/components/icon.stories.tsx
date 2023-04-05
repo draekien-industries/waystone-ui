@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Icon, IconProps } from '@waystone/components/src';
 
 export default {
@@ -10,12 +10,10 @@ export default {
     size: 'md',
     color: 'inherit',
   },
-} as ComponentMeta<typeof Icon>;
+} as Meta<typeof Icon>;
 
-const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
-
-export const Default = Template.bind({});
-
-Default.args = {
-  name: 'accessibility',
-} as IconProps;
+export const Default = {
+  args: {
+    name: 'accessibility',
+  } as IconProps,
+};

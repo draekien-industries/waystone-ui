@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import {
   Spinner,
   SpinnerProps,
@@ -19,9 +19,9 @@ export default {
   title: 'HOC/withSpinner',
   component: ExampleComponentWithSpinner,
   subcomponents: { Spinner },
-} as ComponentMeta<typeof ExampleComponentWithSpinner>;
+} as Meta<typeof ExampleComponentWithSpinner>;
 
-const Template: ComponentStory<typeof ExampleComponentWithSpinner> = (args) => (
+const Template: StoryFn<typeof ExampleComponentWithSpinner> = (args) => (
   <div
     id="content-container"
     style={{
@@ -35,10 +35,12 @@ const Template: ComponentStory<typeof ExampleComponentWithSpinner> = (args) => (
   </div>
 );
 
-export const Basic = Template.bind({});
+export const Basic = {
+  render: Template,
 
-Basic.args = {
-  text: 'lorem ipsum',
-  loading: false,
-  overlay: true,
-} as ExampleComponentProps & CanLoad & SpinnerProps;
+  args: {
+    text: 'lorem ipsum',
+    loading: false,
+    overlay: true,
+  } as ExampleComponentProps & CanLoad & SpinnerProps,
+};

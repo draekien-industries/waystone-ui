@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { UseSpinnerDemo } from '@waystone/components/src/spinner/spinner.internal';
 import { Button, useSpinner } from '@waystone/components/src';
 
@@ -20,19 +20,15 @@ export default {
         'Whether the spinner should cover the full screen. Defaults to `true`. Use `position:relative` on the parent container to restrict the spinner to the parent container.',
     },
   },
-} as ComponentMeta<typeof UseSpinnerDemo>;
+} as Meta<typeof UseSpinnerDemo>;
 
-const Template: ComponentStory<typeof UseSpinnerDemo> = (args) => (
-  <UseSpinnerDemo {...args} />
-);
+export const Default = {};
 
-export const Default = Template.bind({});
-
-export const InitialVisible = Template.bind({});
-
-InitialVisible.args = {
-  initialVisible: true,
-  overlay: true,
+export const InitialVisible = {
+  args: {
+    initialVisible: true,
+    overlay: true,
+  },
 };
 
 export const Relative = () => {
@@ -65,9 +61,9 @@ export const Relative = () => {
   );
 };
 
-export const NoOverlay = Template.bind({});
-
-NoOverlay.args = {
-  initialVisible: true,
-  overlay: false,
+export const NoOverlay = {
+  args: {
+    initialVisible: true,
+    overlay: false,
+  },
 };

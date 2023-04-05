@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { CardButton, CardButtonProps, Text } from '@waystone/components/src';
 
 export default {
@@ -15,16 +15,12 @@ export default {
     ),
     fullWidth: false,
   },
-} as ComponentMeta<typeof CardButton>;
+} as Meta<typeof CardButton>;
 
-const Template: ComponentStory<typeof CardButton> = (args) => (
-  <CardButton {...args} />
-);
+export const Default = {};
 
-export const Default = Template.bind({});
-
-export const WithConstraints = Template.bind({});
-
-WithConstraints.args = {
-  width: 'xl',
-} as CardButtonProps;
+export const WithConstraints = {
+  args: {
+    width: 'xl',
+  } as CardButtonProps,
+};

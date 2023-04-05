@@ -1,29 +1,27 @@
 import * as React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Button, ButtonProps } from '@waystone/components/src';
 
 export default {
   title: 'Components/Button',
   component: Button,
-} as ComponentMeta<typeof Button>;
+} as Meta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+export const Primary = {
+  args: {
+    children: 'Button',
+  } as ButtonProps,
+};
 
-export const Primary = Template.bind({});
+export const WithIcon = {
+  args: {
+    children: 'Button',
+    icon: { variant: 'filled', name: 'check' },
+  } as ButtonProps,
+};
 
-Primary.args = {
-  children: 'Button',
-} as ButtonProps;
-
-export const WithIcon = Template.bind({});
-
-WithIcon.args = {
-  children: 'Button',
-  icon: { variant: 'filled', name: 'check' },
-} as ButtonProps;
-
-export const IconOnly = Template.bind({});
-
-IconOnly.args = {
-  icon: { variant: 'filled', name: 'check' },
-} as ButtonProps;
+export const IconOnly = {
+  args: {
+    icon: { variant: 'filled', name: 'check' },
+  } as ButtonProps,
+};

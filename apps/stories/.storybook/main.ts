@@ -1,7 +1,9 @@
-import type { StorybookConfig } from '@storybook/react-webpack5';
+import type { StorybookConfig } from '@storybook/react-vite';
+import path from 'path';
+import { mergeConfig } from 'vite';
 
 const config: StorybookConfig = {
-  stories: ['../src/**/*.stories.@(tsx|mdx)'],
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.tsx'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -10,21 +12,42 @@ const config: StorybookConfig = {
     'storybook-dark-mode',
   ],
   framework: {
-    name: '@storybook/react-webpack5',
+    name: '@storybook/react-vite',
     options: {},
   },
-  core: {},
+  core: {
+    disableTelemetry: true,
+  },
   typescript: {
     check: false,
-    checkOptions: {},
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,
+      propFilter: (prop) =>
+        prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
     },
   },
   staticDirs: ['../public'],
   docs: {
     autodocs: true,
+  },
+  viteFinal: async (config, { configType }) => {
+    return mergeConfig(config, {
+      define: {
+        'process.env.NODE_DEBUG': false,
+      },
+      resolve: {
+        alias: [
+          {
+            find: '@waystone/*',
+            replacement: path.resolve(
+              __dirname,
+              '../../../packages/waystone-*'
+            ),
+          },
+        ],
+      },
+    });
   },
 };
 

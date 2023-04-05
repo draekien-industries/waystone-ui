@@ -2,6 +2,7 @@ import { waystoneDecorator } from './waystone.decorator';
 import { create } from '@storybook/theming';
 import { WaystoneBaseTheme } from '@waystone/core';
 import { getThemeColors } from './preview.fx';
+import { DocsContainer } from './DocsContainer';
 
 const waystoneDarkTheme = create({
   base: 'dark',
@@ -31,6 +32,9 @@ export const parameters = {
   darkMode: {
     dark: waystoneDarkTheme,
     light: waystoneLightTheme,
+  },
+  docs: {
+    container: DocsContainer,
   },
 };
 

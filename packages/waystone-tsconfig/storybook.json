@@ -16,7 +16,8 @@
     "skipLibCheck": true,
     "downlevelIteration": true,
     "isolatedModules": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "composite": true
   },
   "exclude": ["node_modules"]
 }

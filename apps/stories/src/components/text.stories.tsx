@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { TextVariant } from '@waystone/core/src';
 import { Text, TextProps } from '@waystone/components/src';
 
@@ -14,13 +14,11 @@ export default {
       'Non dolorum facilis similique commodi, officiis error quis molestiae in repellat, ' +
       'minus delectus nesciunt, voluptas quos autem? Nostrum quidem mollitia nemo quas!',
   },
-} as ComponentMeta<typeof Text>;
+} as Meta<typeof Text>;
 
-const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
+export const Default = {};
 
-export const Default = Template.bind({});
-
-const VariantTemplate: ComponentStory<typeof Text> = (args) => {
+const VariantTemplate: StoryFn<typeof Text> = (args) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { variant, children, ...rest } = args;
 
@@ -35,35 +33,37 @@ const VariantTemplate: ComponentStory<typeof Text> = (args) => {
   );
 };
 
-export const WithVariant = VariantTemplate.bind({});
+export const WithVariant = {
+  render: VariantTemplate,
 
-WithVariant.parameters = {
-  docs: {
-    description: {
-      story:
-        'These are the text variants that have been pre-defined in the theme.',
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'These are the text variants that have been pre-defined in the theme.',
+      },
     },
   },
 };
 
-export const WithColor = Template.bind({});
-
-WithColor.parameters = {
-  docs: {
-    description: {
-      story:
-        'The `colors` prop determines the color of the text that is rendered. ' +
-        'You can use any of the colors included in the theme ' +
-        'or your own color.',
+export const WithColor = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'The `colors` prop determines the color of the text that is rendered. ' +
+          'You can use any of the colors included in the theme ' +
+          'or your own color.',
+      },
     },
   },
+
+  args: {
+    color: 's-400',
+  } as TextProps,
 };
 
-WithColor.args = {
-  color: 's-400',
-} as TextProps;
-
-const InlineTemplate: ComponentStory<typeof Text> = (args) => {
+const InlineTemplate: StoryFn<typeof Text> = (args) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { color, ...rest } = args;
 
@@ -75,19 +75,21 @@ const InlineTemplate: ComponentStory<typeof Text> = (args) => {
   );
 };
 
-export const WithInline = InlineTemplate.bind({});
+export const WithInline = {
+  render: InlineTemplate,
 
-WithInline.parameters = {
-  docs: {
-    description: {
-      story:
-        'When the `inline` prop is set to `true`, ' +
-        'the component will render with `inline-block` as the CSS display value.',
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'When the `inline` prop is set to `true`, ' +
+          'the component will render with `inline-block` as the CSS display value.',
+      },
     },
   },
-};
 
-WithInline.args = {
-  inline: true,
-  children: 'Lorem ipsum.',
-} as TextProps;
+  args: {
+    inline: true,
+    children: 'Lorem ipsum.',
+  } as TextProps,
+};

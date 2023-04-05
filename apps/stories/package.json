@@ -11,26 +11,29 @@
   "license": "MIT",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build": "storybook build --docs",
+    "preview-storybook": "serve storybook-static",
     "clean": "rm -rf node_modules && rm -rf storybook-static"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.21.4",
-    "@babel/preset-react": "^7.18.6",
-    "@babel/preset-typescript": "^7.21.4",
     "@storybook/addon-a11y": "^7.0.2",
     "@storybook/addon-actions": "^7.0.2",
+    "@storybook/addon-docs": "^7.0.2",
     "@storybook/addon-essentials": "^7.0.2",
     "@storybook/addon-interactions": "^7.0.2",
     "@storybook/addon-links": "^7.0.2",
     "@storybook/jest": "^0.1.0",
+    "@storybook/react-vite": "7.0.2",
     "@storybook/react": "^7.0.2",
-    "@storybook/react-webpack5": "7.0.2",
     "@storybook/testing-library": "^0.1.0",
+    "@vitejs/plugin-react": "^3.1.0",
     "@waystone/tsconfig": "*",
     "eslint-preset-waystone": "*",
+    "serve": "^13.0.4",
+    "storybook-dark-mode": "^3.0.0",
     "storybook": "7.0.2",
-    "storybook-dark-mode": "^3.0.0"
+    "typescript": "^4.9.3",
+    "vite": "^4.2.1"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
