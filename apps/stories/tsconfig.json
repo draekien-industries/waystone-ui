@@ -6,10 +6,13 @@
     "build",
     "node_modules",
     "storybook-static",
+    ".storybook",
     "__snapshots__",
     "__assets__",
     "__tests__",
-    "__fixtures__"
+    "__fixtures__",
+    "**/*.stories.tsx",
+    "**/*.{spec,test,internal}.tsx"
   ],
   "compilerOptions": {
     "outDir": "dist"

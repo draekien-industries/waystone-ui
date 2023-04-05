@@ -23,6 +23,8 @@ export const Default = Template.bind({});
 Default.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
 
+  await userEvent.click(canvas.getByText('Show'));
+
   await waitFor(() =>
     setTimeout(async () => {
       await userEvent.click(canvas.getByText('Hide'));

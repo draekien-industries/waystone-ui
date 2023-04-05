@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/core-common';
+import type { StorybookConfig } from '@storybook/react-webpack5';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(tsx|mdx)'],
@@ -9,10 +9,11 @@ const config: StorybookConfig = {
     '@storybook/addon-a11y',
     'storybook-dark-mode',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: 'webpack5',
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
   },
+  core: {},
   typescript: {
     check: false,
     checkOptions: {},
@@ -22,6 +23,9 @@ const config: StorybookConfig = {
     },
   },
   staticDirs: ['../public'],
+  docs: {
+    autodocs: true,
+  },
 };
 
-module.exports = config;
+export default config;

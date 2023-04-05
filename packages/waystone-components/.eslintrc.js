@@ -6,8 +6,6 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [...preset.extends, 'plugin:storybook/recommended'],
-  plugins: [...preset.plugins, 'storybook'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

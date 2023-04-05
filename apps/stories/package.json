@@ -10,35 +10,37 @@
   "sideEffects": false,
   "license": "MIT",
   "scripts": {
-    "dev": "start-storybook -p 6006",
-    "build": "build-storybook",
-    "clean": "rm -rf node_modules && rm -rf storybook-static",
-    "sb:upgrade": "npx sb@latest upgrade -s"
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "clean": "rm -rf node_modules && rm -rf storybook-static"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.5.16",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-interactions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-webpack5": "^6.5.16",
-    "@storybook/jest": "^0.0.10",
-    "@storybook/manager-webpack5": "^6.5.16",
-    "@storybook/react": "^6.5.16",
-    "@storybook/testing-library": "^0.0.13",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@storybook/addon-a11y": "^7.0.2",
+    "@storybook/addon-actions": "^7.0.2",
+    "@storybook/addon-essentials": "^7.0.2",
+    "@storybook/addon-interactions": "^7.0.2",
+    "@storybook/addon-links": "^7.0.2",
+    "@storybook/jest": "^0.1.0",
+    "@storybook/react": "^7.0.2",
+    "@storybook/react-webpack5": "7.0.2",
+    "@storybook/testing-library": "^0.1.0",
     "@waystone/tsconfig": "*",
     "eslint-preset-waystone": "*",
-    "storybook-dark-mode": "^2.1.1"
+    "storybook": "7.0.2",
+    "storybook-dark-mode": "^3.0.0"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@theme-ui/color": "^0.15.1",
     "@theme-ui/css": "^0.15.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "theme-ui": "^0.15.1",
     "@waystone/components": "*",
     "@waystone/core": "*",
-    "@waystone/utils": "*"
+    "@waystone/utils": "*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "theme-ui": "^0.15.1"
   }
 }

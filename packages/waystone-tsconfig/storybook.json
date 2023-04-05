@@ -3,17 +3,20 @@
   "display": "Storybook.js",
   "extends": "./base.json",
   "compilerOptions": {
-    "target": "es6",
-    "lib": ["dom", "esnext"],
-    "esModuleInterop": true,
+    "noEmit": true,
+    "incremental": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ES6",
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "jsxImportSource": "theme-ui",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "noEmit": true,
-    "module": "esnext",
-    "resolveJsonModule": true,
+    "downlevelIteration": true,
     "isolatedModules": true,
-    "incremental": true,
-    "jsx": "react-jsx"
+    "esModuleInterop": true
   },
   "exclude": ["node_modules"]
 }
