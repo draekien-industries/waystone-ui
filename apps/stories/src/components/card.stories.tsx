@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Card } from '@waystone/components/src';
 import { CoverImageCssOptions } from '@waystone/components/src/card/card.styles';
 
@@ -38,22 +38,20 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Card>;
+} as Meta<typeof Card>;
 
-const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
+export const Default = {};
 
-export const Default = Template.bind({});
-
-export const WithConstraints = Template.bind({});
-
-WithConstraints.args = {
-  maxWidth: 'md',
-  maxHeight: 'md',
+export const WithConstraints = {
+  args: {
+    maxWidth: 'md',
+    maxHeight: 'md',
+  },
 };
 
-export const WithCoverImage = Template.bind({});
-
-WithCoverImage.args = {
-  coverImage: options,
-  maxWidth: 'xl',
+export const WithCoverImage = {
+  args: {
+    coverImage: options,
+    maxWidth: 'xl',
+  },
 };

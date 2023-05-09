@@ -21,17 +21,14 @@
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
     },
-    "lint": {
-      "outputs": [],
-      "cache": false
-    },
+    "lint": {},
     "lint:release": {
-      "outputs": [],
       "dependsOn": ["^build"]
     },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "outputs": ["dist/**", "build/**"]
     },
     "clean": {
       "cache": false

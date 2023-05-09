@@ -12,7 +12,7 @@ const ThemeChanger = () => {
     setColorMode(isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
 
-  return <div />;
+  return <></>;
 };
 
 export const waystoneDecorator = (storyFn: any) => (

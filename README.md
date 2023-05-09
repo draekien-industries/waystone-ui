@@ -37,3 +37,13 @@ npm install @waystone/components @waystone/core @waystone/utils
 # Yarn
 yarn add @waystone/components @waystone/core @waystone/utils
 ```
+
+## Contributing
+
+1. Clone or fork this repository
+2. Checkout a feature branch for your change
+3. Make your changes locally
+4. Create a changeset by running `yarn changeset` and answer the provided questions
+5. Commit your changes locally
+6. Push your changes to remote
+7. Create a pull request

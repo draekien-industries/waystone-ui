@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Overlay, OverlayProps, Text } from '@waystone/components/src';
 
 export default {
@@ -8,9 +8,9 @@ export default {
   args: {
     fullScreen: false,
   },
-} as ComponentMeta<typeof Overlay>;
+} as Meta<typeof Overlay>;
 
-const Template: ComponentStory<typeof Overlay> = (args) => (
+const Template: StoryFn<typeof Overlay> = (args) => (
   <div
     style={{
       position: 'relative',
@@ -28,8 +28,11 @@ const Template: ComponentStory<typeof Overlay> = (args) => (
   </div>
 );
 
-export const Default = Template.bind({});
+export const Default = {
+  render: Template,
+};
 
-export const FullScreen = Template.bind({});
-
-FullScreen.args = { fullScreen: true } as OverlayProps;
+export const FullScreen = {
+  render: Template,
+  args: { fullScreen: true } as OverlayProps,
+};

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Spinner } from '@waystone/components/src';
 
 export default {
@@ -10,10 +10,6 @@ export default {
     color: 'accent',
     fullWidth: false,
   },
-} as ComponentMeta<typeof Spinner>;
+} as Meta<typeof Spinner>;
 
-const Template: ComponentStory<typeof Spinner> = (args) => (
-  <Spinner {...args} />
-);
-
-export const Default = Template.bind({});
+export const Default = {};
