@@ -3,7 +3,7 @@ export const Size = {
   sm: 'sm',
   md: 'md',
   lg: 'lg',
-};
+} as const;
 
 export type Size = keyof typeof Size;
 
@@ -12,7 +12,7 @@ export const SizeExtended = {
   xs: 'xs',
   ...Size,
   xl: 'xl',
-};
+} as const;
 
 /** A superset of sizes that contains 'xs' and 'xl'. */
 export type SizeExtended = keyof typeof SizeExtended;
@@ -22,7 +22,7 @@ export const HorizontalAlignment = {
   left: 'left',
   center: 'center',
   right: 'right',
-};
+} as const;
 
 /** The horizontal alignment of content. */
 export type HorizontalAlignment = keyof typeof HorizontalAlignment;
@@ -32,7 +32,7 @@ export const VerticalAlignment = {
   top: 'top',
   center: 'center',
   bottom: 'bottom',
-};
+} as const;
 
 /** The vertical alignment of content. */
 export type VerticalAlignment = keyof typeof VerticalAlignment;
@@ -48,7 +48,7 @@ export const TextVariant = {
   caption: 'caption',
   small: 'small',
   monospace: 'monospace',
-};
+} as const;
 
 /** The text variants available in the base theme. */
 export type TextVariant = keyof typeof TextVariant;
@@ -59,7 +59,7 @@ export const StatusVariant = {
   warning: 'warning',
   error: 'error',
   success: 'success',
-};
+} as const;
 
 /** The status variants available in the base theme. */
 export type StatusVariant = keyof typeof StatusVariant;
@@ -71,6 +71,6 @@ export const ButtonVariant = {
   accent: 'accent',
   ghost: 'ghost',
   link: 'link',
-};
+} as const;
 
 export type ButtonVariant = keyof typeof ButtonVariant;
