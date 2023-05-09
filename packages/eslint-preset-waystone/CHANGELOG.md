@@ -1,5 +1,16 @@
 # eslint-preset-waystone
 
+## 1.1.0
+
+### Minor Changes
+
+- 8e39d65: Migrate storybook to Vite
+
+  Storybook now uses Vite for compilation rather than webpack. This change was
+  made to improve storybook performance.
+
+  No need to update anything from the consumer end.
+
 ## 1.0.1
 
 ### Patch Changes
