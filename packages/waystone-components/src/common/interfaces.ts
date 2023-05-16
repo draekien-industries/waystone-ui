@@ -4,6 +4,7 @@ import { StylePropertyValue } from '@theme-ui/css';
 // eslint-disable-next-line import/no-unresolved
 import { Property } from 'csstype';
 import * as React from 'react';
+import { ExtractLiteralsForAutocomplete, OneOrMore } from './types';
 
 /** This component supports child components. */
 export interface HasChildren {
@@ -35,26 +36,32 @@ export interface HasWidth {
    * The width of the component.
    * Use an array to take advantage of ThemeUI breakpoints.
    */
-  width?:
-    | ThemeSize
-    | ThemeSize[]
-    | StylePropertyValue<Property.Width<string | number>>;
+  width?: OneOrMore<
+    ExtractLiteralsForAutocomplete<
+      StylePropertyValue<Property.Width<string | number>>,
+      ThemeSize
+    >
+  >;
   /**
    * The minimum width of the component.
    * Use an array to take advantage of ThemeUI breakpoints.
    */
-  minWidth?:
-    | ThemeSize
-    | ThemeSize[]
-    | StylePropertyValue<Property.MinWidth<string | number>>;
+  minWidth?: OneOrMore<
+    ExtractLiteralsForAutocomplete<
+      StylePropertyValue<Property.MinWidth<string | number>>,
+      ThemeSize
+    >
+  >;
   /**
    * The maximum width of the component.
    * Use an array to take advantage of ThemeUI breakpoints.
    */
-  maxWidth?:
-    | ThemeSize
-    | ThemeSize[]
-    | StylePropertyValue<Property.MaxWidth<string | number>>;
+  maxWidth?: OneOrMore<
+    ExtractLiteralsForAutocomplete<
+      StylePropertyValue<Property.MaxWidth<string | number>>,
+      ThemeSize
+    >
+  >;
 }
 
 /** This component supports a specific height. */
@@ -63,26 +70,32 @@ export interface HasHeight {
    * The height of the component.
    * Use an array to take advantage of ThemeUI breakpoints.
    */
-  height?:
-    | ThemeSize
-    | ThemeSize[]
-    | StylePropertyValue<Property.Height<string | number>>;
+  height?: OneOrMore<
+    ExtractLiteralsForAutocomplete<
+      StylePropertyValue<Property.Height<string | number>>,
+      ThemeSize
+    >
+  >;
   /**
    * The minimum height of the component.
    * Use an array to take advantage of ThemeUI breakpoints.
    */
-  minHeight?:
-    | ThemeSize
-    | ThemeSize[]
-    | StylePropertyValue<Property.MinHeight<string | number>>;
+  minHeight?: OneOrMore<
+    ExtractLiteralsForAutocomplete<
+      StylePropertyValue<Property.MinHeight<string | number>>,
+      ThemeSize
+    >
+  >;
   /**
    * The maximum height of the component.
    * Use an array to take advantage of ThemeUI breakpoints.
    */
-  maxHeight?:
-    | ThemeSize
-    | ThemeSize[]
-    | StylePropertyValue<Property.MaxHeight<string | number>>;
+  maxHeight?: OneOrMore<
+    ExtractLiteralsForAutocomplete<
+      StylePropertyValue<Property.MaxHeight<string | number>>,
+      ThemeSize
+    >
+  >;
 }
 
 /**
@@ -95,13 +108,19 @@ export interface HasDimensions extends HasWidth, HasHeight {}
 /** This component supports different content colors. */
 export interface HasColor {
   /** The color to render the content with. */
-  color?: ThemeColor | StylePropertyValue<Property.Color>;
+  color?: ExtractLiteralsForAutocomplete<
+    StylePropertyValue<Property.Color>,
+    ThemeColor
+  >;
 }
 
 /** This component supports different backgrounds. */
 export interface HasBackground {
   /** The color to render as the component's background. */
-  backgroundColor?: ThemeColor | StylePropertyValue<Property.BackgroundColor>;
+  backgroundColor?: ExtractLiteralsForAutocomplete<
+    StylePropertyValue<Property.BackgroundColor>,
+    ThemeColor
+  >;
 }
 
 /**
