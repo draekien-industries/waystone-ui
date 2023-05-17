@@ -18,6 +18,7 @@ export const Label = ({ htmlFor, children }: LabelProps) => {
     color: darkMode ? 'b-300' : 'b-500',
     fontWeight: 'medium',
     fontSize: 'caption',
+    letterSpacing: '0.1em',
   };
 
   return (

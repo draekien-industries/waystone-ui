@@ -12,7 +12,7 @@ exports[`The InputContainer component should match snapshot 1`] = `
         class="css-qqe0lv-InputContainer"
       >
         <label
-          class="css-up0i1f-Label"
+          class="css-18jwjqc-Label"
           for="testInput"
         >
           Test Input
