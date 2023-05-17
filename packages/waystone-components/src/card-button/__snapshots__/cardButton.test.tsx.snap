@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TThe CardButton component Matches snapshot 1`] = `
+<div>
+  <button
+    class="css-1p2ze40-CardButton"
+    type="button"
+  >
+    card
+  </button>
+</div>
+`;
