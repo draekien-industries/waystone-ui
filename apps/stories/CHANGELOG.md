@@ -1,5 +1,16 @@
 # @waystone/stories
 
+## 7.0.0
+
+### Patch Changes
+
+- Updated dependencies [66f4a36]
+- Updated dependencies [907c970]
+- Updated dependencies [a491b37]
+  - @waystone/components@7.0.0
+  - @waystone/utils@7.0.0
+  - @waystone/core@7.0.0
+
 ## 6.0.0
 
 ### Major Changes

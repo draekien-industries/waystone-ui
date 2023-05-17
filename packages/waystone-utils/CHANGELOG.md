@@ -1,5 +1,11 @@
 # @waystone/utils
 
+## 7.0.0
+
+### Minor Changes
+
+- 907c970: Create the `useKeyValueStore` hook
+
 ## 6.0.0
 
 ## 5.0.0
