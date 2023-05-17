@@ -1,5 +1,18 @@
 # @waystone/components
 
+## 7.0.0
+
+### Minor Changes
+
+- 66f4a36: Enable autocomplete for props that accepted predefined theme values
+- a491b37: Update letter spacing of label
+
+### Patch Changes
+
+- Updated dependencies [907c970]
+  - @waystone/utils@7.0.0
+  - @waystone/core@7.0.0
+
 ## 6.0.0
 
 ### Minor Changes
