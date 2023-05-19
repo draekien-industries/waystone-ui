@@ -15,7 +15,7 @@ export const WaystoneBaseTheme: WaystoneTheme = {
     useCustomProperties: true,
     useRootStyles: true,
     useBorderBox: true,
-    initialColorModeName: 'dark',
+    useColorSchemeMediaQuery: true,
   },
   styles: {
     root: {
