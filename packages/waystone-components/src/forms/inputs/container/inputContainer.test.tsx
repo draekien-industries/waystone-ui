@@ -1,6 +1,6 @@
 import { StatusVariant } from '@waystone/core';
 import { InputContainer } from './inputContainer';
-import { render, screen } from '../__fixtures__';
+import { render, screen } from '../../../__fixtures__';
 import { getIconName } from './inputContainer.fx';
 
 describe('The InputContainer component', () => {
