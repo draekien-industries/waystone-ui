@@ -34,6 +34,7 @@ module.exports = {
     },
   },
   rules: {
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'react/function-component-definition': [
       'warn',
       {
