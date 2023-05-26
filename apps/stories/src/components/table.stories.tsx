@@ -189,4 +189,12 @@ export const ConditionalSubRowComponent: StoryObj<typeof meta> = {
   },
 };
 
+export const Virtualized: StoryObj<typeof meta> = {
+  args: {
+    data: makeData(1000),
+    columns,
+  },
+  render: (args) => <Table.Virtualized {...args} height="500px" />,
+};
+
 export default meta;

@@ -6,7 +6,13 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
   const darkMode = useIsDarkMode();
 
   return (
-    <thead sx={{ backgroundColor: darkMode ? 's-700' : 'primary' }}>
+    <thead
+      sx={{
+        backgroundColor: darkMode ? 'b-600' : 'b-200',
+        position: 'sticky',
+        top: 0,
+      }}
+    >
       {getHeaderGroups().map((headerGroup) => (
         <tr key={headerGroup.id}>
           {headerGroup.headers.map((header) => (
