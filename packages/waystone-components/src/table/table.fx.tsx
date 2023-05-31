@@ -1,4 +1,4 @@
-import { ColumnDef } from '@tanstack/react-table';
+import { ColumnDef, TableState } from '@tanstack/react-table';
 import { Checkbox } from '../forms';
 import { Button } from '../button';
 
@@ -124,3 +124,20 @@ export const withExpandColumn = <TData, TValue>({
 
   return [expand, ...columns];
 };
+
+export const getDifference = <
+  TPrevious extends TableState,
+  TCurrent extends TableState
+>(
+  previous: TPrevious,
+  current: TCurrent
+): Partial<TableState> =>
+  Object.keys(current).reduce((diff, key) => {
+    if (previous[key as keyof TableState] === current[key as keyof TableState])
+      return diff;
+
+    return {
+      ...diff,
+      [key]: current[key as keyof TableState],
+    };
+  }, {});

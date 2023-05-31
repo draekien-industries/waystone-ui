@@ -1,12 +1,13 @@
 import { Table } from '@tanstack/react-table';
 import { Box, Flex } from 'theme-ui';
 import { Button } from '../button';
-import { TableRow } from './table.types';
+import { TableRowData } from './table.types';
 import { Text } from '../text';
 
-export type TablePaginationProps<TData extends TableRow<TData>> = Table<TData>;
+export type TablePaginationProps<TData extends TableRowData<TData>> =
+  Table<TData>;
 
-export const TablePagination = <TData extends TableRow<TData>>(
+export const TablePagination = <TData extends TableRowData<TData>>(
   props: TablePaginationProps<TData>
 ) => {
   const {

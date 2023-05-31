@@ -1,11 +1,14 @@
 /** @jsxImportSource theme-ui */
-import { flexRender, Row, Table } from '@tanstack/react-table';
+import { Row } from '@tanstack/react-table';
 import { Fragment, ReactElement } from 'react';
-import { useVirtual, VirtualItem } from 'react-virtual';
+import { useVirtual } from 'react-virtual';
 import { useIsDarkMode } from '../hooks';
-import { RenderSubComponentProps, TableRow } from './table.types';
+import { TableCell } from './table.cell';
+import { TableRow } from './table.row';
+import { TableRowSubComponent } from './table.row.subComponent';
+import { RenderSubComponentProps, TableRowData } from './table.types';
 
-export type TableBodyProps<TData extends TableRow<TData>> = {
+export type TableBodyProps<TData extends TableRowData<TData>> = {
   renderSubComponent?: (props: RenderSubComponentProps<TData>) => ReactElement;
   rows: Row<TData>[];
   virtualizer?: ReturnType<typeof useVirtual>;
@@ -19,7 +22,7 @@ const getBackgroundColor = (darkMode: boolean, disabled: boolean) => {
   return disabled ? 'b-200' : 'b-100';
 };
 
-export const TableBody = <TData extends TableRow<TData>>({
+export const TableBody = <TData extends TableRowData<TData>>({
   renderSubComponent,
   rows,
   virtualizer,
@@ -49,40 +52,18 @@ export const TableBody = <TData extends TableRow<TData>>({
 
           return (
             <Fragment key={row.id}>
-              <tr
-                sx={{
-                  backgroundColor: getBackgroundColor(darkMode, disabled),
-                  color: disabled ? 'b-400' : 'text',
-                }}
-              >
-                {row.getVisibleCells().map((cell) => (
-                  <td
-                    key={cell.id}
-                    sx={{
-                      minWidth: cell.column.getSize(),
-                      maxWidth: cell.column.getSize(),
-                      paddingY: 'xs',
-                      paddingX: 'md',
-                    }}
-                  >
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </td>
+              <TableRow
+                disabled={disabled}
+                cells={row.getVisibleCells().map((cell) => (
+                  <TableCell key={cell.id} cell={cell} />
                 ))}
-              </tr>
-              {renderSubComponent && row.getIsExpanded() && row.getCanExpand() && (
-                <tr>
-                  <td
-                    sx={{
-                      padding: 'xs',
-                      backgroundColor: getBackgroundColor(darkMode, disabled),
-                      color: disabled ? 'b-400' : 'text',
-                    }}
-                    colSpan={row.getVisibleCells().length}
-                  >
-                    {renderSubComponent({ row })}
-                  </td>
-                </tr>
-              )}
+              />
+              <TableRowSubComponent
+                visible={row.getIsExpanded()}
+                colSpan={row.getVisibleCells().length}
+              >
+                {renderSubComponent && renderSubComponent({ row })}
+              </TableRowSubComponent>
             </Fragment>
           );
         })}
@@ -102,40 +83,18 @@ export const TableBody = <TData extends TableRow<TData>>({
 
         return (
           <Fragment key={row.id}>
-            <tr
-              sx={{
-                backgroundColor: getBackgroundColor(darkMode, disabled),
-                color: disabled ? 'b-400' : 'text',
-              }}
-            >
-              {row.getVisibleCells().map((cell) => (
-                <td
-                  key={cell.id}
-                  sx={{
-                    minWidth: cell.column.getSize(),
-                    maxWidth: cell.column.getSize(),
-                    paddingY: 'xs',
-                    paddingX: 'md',
-                  }}
-                >
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
+            <TableRow
+              disabled={disabled}
+              cells={row.getVisibleCells().map((cell) => (
+                <TableCell key={cell.id} cell={cell} />
               ))}
-            </tr>
-            {renderSubComponent && row.getIsExpanded() && row.getCanExpand() && (
-              <tr>
-                <td
-                  sx={{
-                    padding: 'xs',
-                    backgroundColor: getBackgroundColor(darkMode, disabled),
-                    color: disabled ? 'b-400' : 'text',
-                  }}
-                  colSpan={row.getVisibleCells().length}
-                >
-                  {renderSubComponent({ row })}
-                </td>
-              </tr>
-            )}
+            />
+            <TableRowSubComponent
+              visible={row.getIsExpanded()}
+              colSpan={row.getVisibleCells().length}
+            >
+              {renderSubComponent && renderSubComponent({ row })}
+            </TableRowSubComponent>
           </Fragment>
         );
       })}

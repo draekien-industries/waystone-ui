@@ -9,17 +9,19 @@ import {
   getFilteredRowModel,
   getSortedRowModel,
   getPaginationRowModel,
+  TableState,
 } from '@tanstack/react-table';
 import { useVirtual } from 'react-virtual';
+import { usePrevious, isDeepEqual } from '@waystone/utils';
 import { withExpandColumn, withSelectColumn } from './table.fx';
 import { TableHeader } from './table.header';
-import { TableRow, RenderSubComponentProps } from './table.types';
+import { TableRowData, RenderSubComponentProps } from './table.types';
 import { TableBody } from './table.body';
 import { TablePagination } from './table.pagination';
 import { HasHeight } from '../common';
 
 export type TableProps<
-  TData extends TableRow<TData>,
+  TData extends TableRowData<TData>,
   TValue,
   TColumns extends ColumnDef<TData, TValue>[],
   TSingleSelect extends boolean = boolean
@@ -31,13 +33,14 @@ export type TableProps<
   singleSelectGroupName: TSingleSelect extends true ? string : undefined;
   expandOnSelect?: boolean;
   renderSubComponent?: (props: RenderSubComponentProps<TData>) => ReactElement;
+  onChange?: (newState: TableState) => void;
 } & Pick<
   TableOptions<TData>,
   'enableExpanding' | 'enableSorting' | 'enableFilters' | 'enableRowSelection'
 >;
 
 export const Table = <
-  TData extends TableRow<TData>,
+  TData extends TableRowData<TData>,
   TValue,
   TColumns extends ColumnDef<TData, TValue>[]
 >({
@@ -52,6 +55,7 @@ export const Table = <
   enableRowSelection,
   expandOnSelect,
   renderSubComponent,
+  onChange,
 }: TableProps<TData, TValue, TColumns>) => {
   if (pageSize && pageSize < 1) {
     throw new Error('Page size must be greater than or equal to 1');
@@ -112,6 +116,15 @@ export const Table = <
 
   const { setPageSize } = table;
   const { rows } = table.getRowModel();
+  const state = table.getState();
+  const previousState = usePrevious(state);
+
+  useEffect(() => {
+    if (!onChange) return;
+    if (isDeepEqual(state, previousState)) return;
+
+    onChange(state);
+  }, [state, previousState, onChange]);
 
   useEffect(() => {
     if (pageSize) {
@@ -131,13 +144,13 @@ export const Table = <
 };
 
 export type VirtualizedTableProps<
-  TData extends TableRow<TData>,
+  TData extends TableRowData<TData>,
   TValue,
   TColumns extends ColumnDef<TData, TValue>[]
 > = HasHeight & TableProps<TData, TValue, TColumns>;
 
 export const VirtualizedTable = <
-  TData extends TableRow<TData>,
+  TData extends TableRowData<TData>,
   TValue,
   TColumns extends ColumnDef<TData, TValue>[]
 >({
@@ -152,6 +165,7 @@ export const VirtualizedTable = <
   enableRowSelection,
   expandOnSelect,
   renderSubComponent,
+  onChange,
   ...rest
 }: VirtualizedTableProps<TData, TValue, TColumns>) => {
   if (pageSize && pageSize < 1) {
@@ -214,6 +228,8 @@ export const VirtualizedTable = <
   const { setPageSize } = table;
   const tableContainerRef = useRef<HTMLDivElement>(null);
   const { rows } = table.getRowModel();
+  const state = table.getState();
+  const previousState = usePrevious(state);
 
   const virtualizer = useVirtual({
     parentRef: tableContainerRef,
@@ -226,6 +242,13 @@ export const VirtualizedTable = <
       setPageSize(pageSize);
     }
   }, [setPageSize, pageSize]);
+
+  useEffect(() => {
+    if (!onChange) return;
+    if (isDeepEqual(state, previousState)) return;
+
+    onChange(state);
+  }, [state, previousState, onChange]);
 
   return (
     <div ref={tableContainerRef} sx={{ ...rest, overflow: 'auto' }}>
