@@ -34,7 +34,7 @@ export const getHoverBackgroundColor = ({
 }: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return darkMode ? 'b-500' : 'b-000';
+      return darkMode ? 'b-600' : 'b-200';
     case 'link':
       return 'transparent';
     case 'primary':
@@ -58,7 +58,7 @@ export const getActiveBackgroundColor = ({
 }: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return darkMode ? 'b-500' : 'white';
+      return darkMode ? 'b-500' : 'b-50';
     case 'link':
       return 'transparent';
     case 'primary':
@@ -81,7 +81,7 @@ export const getColor = (variant?: ButtonVariant) => {
     case 'secondary':
     case 'accent':
     case 'highlight':
-      return 'b-600';
+      return 'b-800';
     default:
       return 'text';
   }

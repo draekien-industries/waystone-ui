@@ -70,7 +70,7 @@ export const CardButton = ({
     width: fullWidth ? '100%' : width || 'auto',
     minWidth: !fullWidth && minWidth,
     maxWidth: !fullWidth && maxWidth,
-    backgroundColor: darkMode ? 'b-600' : 'b-000',
+    backgroundColor: darkMode ? 'b-600' : 'b-50',
     boxShadow: !noShadow && 'md',
     cursor: 'pointer',
     outlineColor: alpha('info-000', 0),
