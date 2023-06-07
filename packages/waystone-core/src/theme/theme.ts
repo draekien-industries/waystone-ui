@@ -17,6 +17,12 @@ export const WaystoneBaseTheme: WaystoneTheme = {
     useBorderBox: true,
     useColorSchemeMediaQuery: true,
   },
+  colors,
+  breakpoints,
+  ...typography,
+  ...layouts,
+  ...styles,
+  ...variants,
   styles: {
     root: {
       fontFamily: 'body',
@@ -24,15 +30,6 @@ export const WaystoneBaseTheme: WaystoneTheme = {
       fontSize: '16px',
       lineHeight: 'body',
       transition: 'all 100ms ease',
-      '*:focus, *:active': {
-        outline: 'none',
-      },
     },
   },
-  colors,
-  breakpoints,
-  ...typography,
-  ...layouts,
-  ...styles,
-  ...variants,
 };

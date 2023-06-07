@@ -1,106 +1,77 @@
-export const colors = {
-  text: '#212121',
-  background: '#F7F7F7',
-  primary: '#AFD3E0',
+import { createColorScale } from '@waystone/color';
+
+export const STARTING_COLORS = {
+  primary: '#4995ae',
   secondary: '#ba90c7',
   accent: '#00a9ed',
-  highlight: '#F5B382',
-  muted: '#D8D8D8',
-  ghost: '#EFEFEF',
+  highlight: '#ed6f22',
+} as const;
 
-  'p-100': '#e6f4f1',
-  'p-200': '#cfe5ec',
-  'p-300': '#bfdce6',
-  'p-400': '#afd3e0',
-  'p-500': '#83a6b2',
-  'p-600': '#597b87',
-  'p-700': '#30525d',
-  'p-800': '#062d37',
+export const primaryScale = createColorScale({
+  name: 'p',
+  midPoint: '#4995ae',
+});
 
-  'a-100': '#99ddf8',
-  'a-200': '#66cbf4',
-  'a-300': '#33baf1',
-  'a-400': '#00a9ed',
-  'a-500': '#0087c8',
-  'a-600': '#0066a4',
-  'a-700': '#004781',
-  'a-800': '#002a60',
+export const secondaryScale = createColorScale({
+  name: 's',
+  midPoint: '#ba90c7',
+});
 
-  's-100': '#e3d3e9',
-  's-200': '#d6bcdd',
-  's-300': '#c8a6d2',
-  's-400': '#ba90c7',
-  's-500': '#966ea3',
-  's-600': '#744e81',
-  's-700': '#533060',
-  's-800': '#341341',
+export const accentScale = createColorScale({ name: 'a', midPoint: '#00a9ed' });
 
-  'h-100': '#fad9c1',
-  'h-200': '#f9ccac',
-  'h-300': '#f7c097',
-  'h-400': '#F5B382',
-  'h-500': '#F29959',
-  'h-600': '#EF802F',
-  'h-700': '#d7732a',
-  'h-800': '#bf6626',
+export const highlightScale = createColorScale({
+  name: 'h',
+  midPoint: '#ed6f22',
+});
 
-  'b-000': '#F7F7F7',
-  'b-100': '#EFEFEF',
-  'b-200': '#D8D8D8',
-  'b-300': '#B1B1B1',
-  'b-400': '#898989',
-  'b-500': '#626262',
-  'b-600': '#3B3B3B',
-  'b-700': '#292929',
+export const greyScale = createColorScale({
+  name: 'b',
+  midPoint: '#666666',
+});
 
-  'info-000': '#CDE1EB',
-  'info-100': '#9bc3d6',
-  'info-200': '#6aa4c2',
-  'info-300': '#3886ad',
-  'info-400': '#066899',
-  'info-500': '#05537a',
-  'info-600': '#043e5c',
-  'info-700': '#022a3d',
+export const infoScale = createColorScale({
+  name: 'info',
+  midPoint: '#066899',
+});
 
-  'success-000': '#D5EADC',
-  'success-100': '#abd6ba',
-  'success-200': '#82c197',
-  'success-300': '#58ad75',
-  'success-400': '#2E9852',
-  'success-500': '#257a42',
-  'success-600': '#1c5b31',
-  'success-700': '#123d21',
+export const successScale = createColorScale({
+  name: 'success',
+  midPoint: '#2B8D4B',
+});
 
-  'warning-000': '#FBDBD1',
-  'warning-100': '#f7b4a3',
-  'warning-200': '#f28e74',
-  'warning-300': '#ee6946',
-  'warning-400': '#EA4318',
-  'warning-500': '#bb3613',
-  'warning-600': '#8c280e',
-  'warning-700': '#5e1b0a',
+export const warningScale = createColorScale({
+  name: 'warning',
+  midPoint: '#EA4318',
+});
 
-  'error-000': '#F9CCD4',
-  'error-100': '#f399a9',
-  'error-200': '#ec667d',
-  'error-300': '#e63352',
-  'error-400': '#E00027',
-  'error-500': '#b3001f',
-  'error-600': '#860017',
-  'error-700': '#5a0010',
+export const errorScale = createColorScale({
+  name: 'error',
+  midPoint: '#E00027',
+});
 
+export const colors = {
+  ...STARTING_COLORS,
+  text: '#1A1A1A',
+  background: '#F4F9FA',
+  muted: '#B8B8B8',
+  ghost: '#EBEBEB',
   modes: {
     dark: {
-      text: '#C7E9F4',
-      background: '#212121',
-      primary: '#AFD3E0',
-      secondary: '#ba90c7',
-      accent: '#00a9ed',
-      highlight: '#F5B382',
-      muted: '#626262',
-      ghost: '#292929',
+      text: '#F4F9FA',
+      background: '#1A1A1A',
+      muted: '#5E5E5E',
+      ghost: '#404040',
     },
   },
-};
+  ...primaryScale,
+  ...secondaryScale,
+  ...accentScale,
+  ...highlightScale,
+  ...greyScale,
+  ...infoScale,
+  ...warningScale,
+  ...errorScale,
+  ...successScale,
+} as const;
 
 export default colors;

@@ -11,7 +11,7 @@
   "author": "draekien-industries",
   "files": [
     "base.json",
-    "node14.json",
+    "node.json",
     "nextjs.json",
     "react-library.json"
   ],

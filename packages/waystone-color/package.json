@@ -1,0 +1,42 @@
+{
+  "name": "@waystone/color",
+  "version": "7.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "description": "A set of color utilites used by draekien-industries",
+  "author": "draekien-industries",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "build:storybook": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "dev:storybook": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "eslint src --fix",
+    "lint:release": "eslint src",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "jest --coverage",
+    "test:release": "jest --coverage",
+    "test:update": "jest --coverage -u",
+    "test:watch": "jest --coverage --watch -u"
+  },
+  "devDependencies": {
+    "@waystone/tsconfig": "*",
+    "eslint-preset-waystone": "*",
+    "jest": "^29.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "zod": "^3.21.4"
+  }
+}

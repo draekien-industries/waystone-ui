@@ -16,6 +16,8 @@ describe('The ButtonGroup component', () => {
   });
 
   it('should throw an error when no ids are provided for buttons', () => {
+    jest.spyOn(console, 'error').mockImplementation(jest.fn());
+
     expect(() =>
       render(
         <ButtonGroup

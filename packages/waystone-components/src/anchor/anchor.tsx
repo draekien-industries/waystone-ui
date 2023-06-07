@@ -37,9 +37,9 @@ const InternalAnchor = ({
   noDecoration,
   ...rest
 }: LinkProps & Pick<AnchorProps, 'noDecoration'>) => (
-  <Link {...rest} sx={noDecoration ? undecoratedAnchorCss : anchorCss}>
+  <a {...rest} sx={noDecoration ? undecoratedAnchorCss : anchorCss}>
     {children}
-  </Link>
+  </a>
 );
 
 /** The external anchor component */
@@ -50,14 +50,14 @@ const ExternalAnchor = ({
   rel = 'noopener noreferrer',
   ...rest
 }: LinkProps & Pick<AnchorProps, 'noDecoration'>) => (
-  <Link
+  <a
     {...rest}
     sx={!noDecoration ? anchorCss : undecoratedAnchorCss}
     target={target}
     rel={rel}
   >
     {children} <Icon name="open_in_new" size="sm" sx={{ pb: 'xs' }} />
-  </Link>
+  </a>
 );
 
 /**

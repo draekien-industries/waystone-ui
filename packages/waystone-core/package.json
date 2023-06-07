@@ -36,6 +36,8 @@
     "type-fest": ">=3.0.0"
   },
   "dependencies": {
+    "@theme-ui/color": "^0.15.1",
+    "@waystone/color": "*",
     "@emotion/react": "^11.10.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
