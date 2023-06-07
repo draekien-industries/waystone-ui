@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createColorScale should match snapshot 1`] = `
+{
+  "grey-100": "#ebebeb",
+  "grey-200": "#d4d4d4",
+  "grey-300": "#b8b8b8",
+  "grey-400": "#969696",
+  "grey-50": "#f5f5f5",
+  "grey-500": "#666666",
+  "grey-600": "#5e5e5e",
+  "grey-700": "#4f4f4f",
+  "grey-800": "#404040",
+  "grey-900": "#303030",
+  "grey-950": "#1a1a1a",
+}
+`;
+
+exports[`createColorScale should match snapshot with hue offset 1`] = `
+{
+  "blue-100": "#ebebeb",
+  "blue-200": "#d1d1d1",
+  "blue-300": "#ff8fb4",
+  "blue-400": "#df3dff",
+  "blue-50": "#f5f5f5",
+  "blue-500": "#0000ff",
+  "blue-600": "#77008f",
+  "blue-700": "#750027",
+  "blue-800": "#2e2e2e",
+  "blue-900": "#1a1a1a",
+  "blue-950": "#1a1a1a",
+}
+`;
+
+exports[`createColorScale should match snapshot with luminance bounds 1`] = `
+{
+  "blue-100": "#dbdbff",
+  "blue-200": "#c2c2ff",
+  "blue-300": "#9e9eff",
+  "blue-400": "#7575ff",
+  "blue-50": "#e5e5ff",
+  "blue-500": "#0000ff",
+  "blue-600": "#1414ff",
+  "blue-700": "#1414ff",
+  "blue-800": "#2424ff",
+  "blue-900": "#2424ff",
+  "blue-950": "#2e2eff",
+}
+`;
+
+exports[`createColorScale should match snapshot with saturation offset 1`] = `
+{
+  "blue-100": "#e5e5ff",
+  "blue-200": "#ccccff",
+  "blue-300": "#a8a8ff",
+  "blue-400": "#7a7aff",
+  "blue-50": "#f5f5ff",
+  "blue-500": "#0000ff",
+  "blue-600": "#0000eb",
+  "blue-700": "#0000c2",
+  "blue-800": "#0000ad",
+  "blue-900": "#000066",
+  "blue-950": "#000066",
+}
+`;

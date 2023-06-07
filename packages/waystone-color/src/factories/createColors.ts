@@ -1,6 +1,7 @@
 import { ThemeColorStop } from '../constants';
 import { HexColor, Percentage } from '../schemas';
 import {
+  constrainToRange,
   getLightnessFromHSLuminance,
   getLuminanceFromHex,
   hexToHsl,
@@ -56,8 +57,8 @@ export const createColorScale = <TName extends string>({
   const colorScaleArray = hueScale.map(({ stop }, index) => {
     if (stop === 0 || stop === 1000) return {};
 
-    const H = h + hueScale[index].offset;
-    const S = s + saturationScale[index].offset;
+    const H = constrainToRange(h + hueScale[index].offset, 0, 360);
+    const S = constrainToRange(s + saturationScale[index].offset, 0, 100);
     const L = getLightnessFromHSLuminance({
       h: H,
       s: S,

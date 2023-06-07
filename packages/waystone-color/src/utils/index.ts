@@ -6,3 +6,4 @@ export * from './precisionRound';
 export * from './hslToRgb';
 export * from './getLightnessFromHSLuminance';
 export * from './hslToHex';
+export * from './constrainToRange';

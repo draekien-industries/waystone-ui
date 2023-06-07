@@ -6,12 +6,12 @@ exports[`The code block component Should match snapshot 1`] = `
     class="css-hbp852-CodeBlock"
   >
     <div
-      class="css-4eseco-CodeBlock"
+      class="css-1ff8p5s-CodeBlock"
     >
       javascript
     </div>
     <button
-      class="css-7jbhsf-CodeBlock"
+      class="css-oscljg-CodeBlock"
       type="button"
     >
       <i
@@ -61,12 +61,12 @@ exports[`The code block component Should render a caption 1`] = `
     class="css-hbp852-CodeBlock"
   >
     <div
-      class="css-4eseco-CodeBlock"
+      class="css-1ff8p5s-CodeBlock"
     >
       javascript
     </div>
     <button
-      class="css-7jbhsf-CodeBlock"
+      class="css-oscljg-CodeBlock"
       type="button"
     >
       <i
@@ -107,7 +107,7 @@ exports[`The code block component Should render a caption 1`] = `
       </code>
     </pre>
     <div
-      class="css-1wcax0c-CodeBlock"
+      class="css-1bo47ml-CodeBlock"
     >
       foo definitely is bar
     </div>
