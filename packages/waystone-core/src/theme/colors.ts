@@ -1,31 +1,77 @@
 import { createColorScale } from '@waystone/color';
 
-export const colors = {
-  text: '#212121',
-  background: '#f7f7f7',
+export const STARTING_COLORS = {
   primary: '#4995ae',
   secondary: '#ba90c7',
   accent: '#00a9ed',
   highlight: '#ed6f22',
-  muted: '#a4a4a4',
-  ghost: '#e3e3e3',
+} as const;
+
+export const primaryScale = createColorScale({
+  name: 'p',
+  midPoint: '#4995ae',
+});
+
+export const secondaryScale = createColorScale({
+  name: 's',
+  midPoint: '#ba90c7',
+});
+
+export const accentScale = createColorScale({ name: 'a', midPoint: '#00a9ed' });
+
+export const highlightScale = createColorScale({
+  name: 'h',
+  midPoint: '#ed6f22',
+});
+
+export const greyScale = createColorScale({
+  name: 'b',
+  midPoint: '#666666',
+});
+
+export const infoScale = createColorScale({
+  name: 'info',
+  midPoint: '#066899',
+});
+
+export const successScale = createColorScale({
+  name: 'success',
+  midPoint: '#2B8D4B',
+});
+
+export const warningScale = createColorScale({
+  name: 'warning',
+  midPoint: '#EA4318',
+});
+
+export const errorScale = createColorScale({
+  name: 'error',
+  midPoint: '#E00027',
+});
+
+export const colors = {
+  ...STARTING_COLORS,
+  text: '#1A1A1A',
+  background: '#F4F9FA',
+  muted: '#B8B8B8',
+  ghost: '#EBEBEB',
   modes: {
     dark: {
-      text: '#b6e9ff',
-      background: '#212121',
-      muted: '#434343',
-      ghost: '#383838',
+      text: '#F4F9FA',
+      background: '#1A1A1A',
+      muted: '#5E5E5E',
+      ghost: '#404040',
     },
   },
-  ...createColorScale({ name: 'p', value: '#4995ae' }),
-  ...createColorScale({ name: 'a', value: '#00a9ed' }),
-  ...createColorScale({ name: 's', value: '#ba90c7' }),
-  ...createColorScale({ name: 'h', value: '#ed6f22' }),
-  ...createColorScale({ name: 'b', value: '#666666' }),
-  ...createColorScale({ name: 'info', value: '#066899' }),
-  ...createColorScale({ name: 'success', value: '#2B8D4B' }),
-  ...createColorScale({ name: 'warning', value: '#EA4318' }),
-  ...createColorScale({ name: 'error', value: '#E00027' }),
+  ...primaryScale,
+  ...secondaryScale,
+  ...accentScale,
+  ...highlightScale,
+  ...greyScale,
+  ...infoScale,
+  ...warningScale,
+  ...errorScale,
+  ...successScale,
 } as const;
 
 export default colors;

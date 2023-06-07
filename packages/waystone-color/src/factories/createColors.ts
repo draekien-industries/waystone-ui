@@ -1,4 +1,4 @@
-import { ColorStop, ThemeColorStop } from '../constants';
+import { ThemeColorStop } from '../constants';
 import { HexColor, Percentage } from '../schemas';
 import {
   getLightnessFromHSLuminance,
@@ -12,7 +12,7 @@ import { createSaturationScale } from './createSaturationScale';
 
 export type ColorScaleOptions<TName extends string> = {
   name: TName;
-  value: HexColor;
+  midPoint: HexColor;
   hueOffset?: number;
   saturationOffset?: number;
   luminanceMin?: Percentage;
@@ -34,7 +34,7 @@ export type ColorScale<TName extends string> = {
  */
 export const createColorScale = <TName extends string>({
   name,
-  value,
+  midPoint,
   hueOffset = 0,
   saturationOffset = 0,
   luminanceMin = 0,
@@ -43,9 +43,9 @@ export const createColorScale = <TName extends string>({
   const hueScale = createHueScale(hueOffset);
   const saturationScale = createSaturationScale(saturationOffset);
 
-  const luminance = getLuminanceFromHex(value);
+  const luminance = getLuminanceFromHex(midPoint);
 
-  const { h, s } = hexToHsl(value);
+  const { h, s } = hexToHsl(midPoint);
 
   const distributionScale = createDistributionScale(
     luminance,

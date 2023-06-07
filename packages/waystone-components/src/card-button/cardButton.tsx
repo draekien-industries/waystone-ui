@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { alpha } from '@theme-ui/color';
+import { getOutlineCss } from '@waystone/core';
 import React from 'react';
 import { ThemeUIStyleObject } from 'theme-ui';
 import {
@@ -59,6 +60,7 @@ export const CardButton = ({
   ...rest
 }: CardButtonProps) => {
   const darkMode = useIsDarkMode();
+  const outline = getOutlineCss();
 
   const cardCss: ThemeUIStyleObject = {
     position: 'relative',
@@ -73,23 +75,18 @@ export const CardButton = ({
     backgroundColor: darkMode ? 'b-600' : 'b-50',
     boxShadow: !noShadow && 'md',
     cursor: 'pointer',
-    outlineColor: alpha('info-50', 0),
-    outlineWidth: 'sm',
-    outlineStyle: 'solid',
     overflow: 'hidden',
     textAlign: 'left',
     transition: 'all 200ms',
+    ...outline.base,
+    ...outline.focused,
     ...rest,
     ':enabled:hover': {
       backgroundColor: darkMode ? 'b-500' : 'b-100',
     },
-    ':enabled:focus': {
-      outlineColor: alpha('info-50', 0.75),
-      outlineWidth: 'sm',
-      outlineStyle: 'solid',
-    },
     ':enabled:active': {
       backgroundColor: darkMode ? 'b-400' : 'b-200',
+      ...outline.active[':enabled:active'],
     },
     ':disabled': {
       color: 'b-400',

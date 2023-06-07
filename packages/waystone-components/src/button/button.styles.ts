@@ -1,6 +1,5 @@
-import { alpha } from '@theme-ui/color';
 import { ThemeUIStyleObject } from 'theme-ui';
-import { ButtonVariant, Size } from '@waystone/core';
+import { ButtonVariant, getOutlineCss, Size } from '@waystone/core';
 import {
   CanActivate,
   CanBeFullWidth,
@@ -45,7 +44,7 @@ export const buttonCss = ({
 
   const { paddingX, paddingY } = getPadding({ variant, size });
   const color = getColor(variant);
-  const outlineColor = darkMode ? 'b-600' : 'info-50';
+  const outline = getOutlineCss();
 
   const isLink = variant === 'link';
 
@@ -59,18 +58,12 @@ export const buttonCss = ({
     color: isLink ? getLinkVariantActiveColor(darkMode) : color,
     boxShadow: activeBoxShadow,
     backgroundColor: getActiveBackgroundColor({ variant, darkMode }),
-    outlineColor: alpha(outlineColor, 1),
-    outlineWidth: 'sm',
-    outlineStyle: 'solid',
   };
 
   const activeCss: ThemeUIStyleObject = {
     color: isLink ? getLinkVariantActiveColor(darkMode) : color,
     boxShadow: activeBoxShadow,
     backgroundColor: getActiveBackgroundColor({ variant, darkMode }),
-    outlineColor: alpha(outlineColor, 0),
-    outlineWidth: 'sm',
-    outlineStyle: 'solid',
   };
 
   const baseCss: ThemeUIStyleObject = {
@@ -89,17 +82,17 @@ export const buttonCss = ({
     margin: 0,
     cursor: 'pointer',
     transition: 'all 200ms ease',
-    outlineColor: alpha(outlineColor, 0),
-    outlineWidth: 'sm',
-    outlineStyle: 'solid',
+    ...outline.base,
     ':enabled:hover': {
       ...hoverCss,
     },
     ':not(active):focus': {
       ...focusCss,
+      ...outline.focused[':enabled:not(active):focus'],
     },
     ':enabled:active': {
       ...activeCss,
+      ...outline.active[':enabled:active'],
     },
     ':disabled': {
       color: 'b-400',

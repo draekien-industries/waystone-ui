@@ -1,4 +1,5 @@
 import { alpha } from '@theme-ui/color';
+import { getOutlineCss } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 
 export const codeBlockContainerCss: ThemeUIStyleObject = {
@@ -30,6 +31,8 @@ export const codeBlockLanguageCss: ThemeUIStyleObject = {
   pointerEvents: 'none',
 };
 
+const outline = getOutlineCss();
+
 export const codeBlockCopyButtonCss: ThemeUIStyleObject = {
   variant: 'text.small',
   letterSpacing: 1.25,
@@ -47,19 +50,14 @@ export const codeBlockCopyButtonCss: ThemeUIStyleObject = {
   textTransform: 'uppercase',
   cursor: 'pointer',
   transition: 'all 200ms',
-  outlineColor: alpha('info-50', 0),
-  outlineWidth: 'xs',
-  outlineStyle: 'solid',
+  ...outline.base,
+  ...outline.focused,
   ':hover': {
     background: 'b-400',
   },
-  ':focus': {
-    outlineColor: alpha('info-50', 0.75),
-    outlineWidth: 'xs',
-    outlineStyle: 'solid',
-  },
   ':active': {
     background: 'b-300',
+    ...outline.active[':enabled:active'],
   },
 };
 

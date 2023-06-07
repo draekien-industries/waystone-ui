@@ -18,7 +18,7 @@ export const getBackgroundColor = ({
     case 'accent':
     case 'highlight':
     default:
-      return `${variant[0]}-400`;
+      return `${variant[0]}-500`;
   }
 };
 
@@ -34,7 +34,7 @@ export const getHoverBackgroundColor = ({
 }: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return darkMode ? 'b-600' : 'b-200';
+      return darkMode ? 'b-700' : 'b-200';
     case 'link':
       return 'transparent';
     case 'primary':
@@ -42,7 +42,7 @@ export const getHoverBackgroundColor = ({
     case 'accent':
     case 'highlight':
     default:
-      return `${variant[0]}-300`;
+      return `${variant[0]}-400`;
   }
 };
 
@@ -58,7 +58,7 @@ export const getActiveBackgroundColor = ({
 }: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return darkMode ? 'b-500' : 'b-50';
+      return darkMode ? 'b-700' : 'b-200';
     case 'link':
       return 'transparent';
     case 'primary':
@@ -66,7 +66,7 @@ export const getActiveBackgroundColor = ({
     case 'accent':
     case 'highlight':
     default:
-      return `${variant[0]}-200`;
+      return `${variant[0]}-400`;
   }
 };
 
@@ -101,7 +101,7 @@ export const getLinkVariantActiveColor = (darkMode: boolean) =>
  * @returns
  */
 export const getLinkVariantHoverColor = (darkMode: boolean) =>
-  darkMode ? 'h-300' : 'h-600';
+  darkMode ? 'h-400' : 'h-700';
 
 /**
  * `ComputedBoxShadowStyles` is an object with three properties: `normal`, `hover`, and `active`. Each
