@@ -29,8 +29,8 @@ export type ColorScale<TName extends string> = {
  * Creates a tailwindcss style color scale based on the hex value provided.
  * The hex color you provide will be used as the midpoint of your color scale.
  * @see https://github.com/SimeonGriggs/tints.dev/tree/main/app/lib
- * @param param0
- * @returns
+ * @param colorScaleOptions the options used the generate the scale
+ * @returns the color scale
  */
 export const createColorScale = <TName extends string>({
   name,
