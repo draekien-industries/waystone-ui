@@ -1,4 +1,7 @@
+import { getOutlineCss } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
+
+const outline = getOutlineCss();
 
 export const anchorCss: ThemeUIStyleObject = {
   paddingX: 'xs',
@@ -7,15 +10,21 @@ export const anchorCss: ThemeUIStyleObject = {
   borderBottomColor: 'highlight',
   color: 'inherit',
   transition: 'all 100ms',
-  outline: 'none',
   fontFamily: 'inherit',
   fontWeight: 'inherit',
   fontSize: 'inherit',
   cursor: 'pointer',
-  ':hover, :focus': {
-    backgroundColor: 'muted',
+  ...outline.base,
+  ':hover': {
+    backgroundColor: 'ghost',
     borderTopLeftRadius: 'sm',
     borderTopRightRadius: 'sm',
+  },
+  ':focus': {
+    backgroundColor: 'ghost',
+    borderTopLeftRadius: 'sm',
+    borderTopRightRadius: 'sm',
+    ...outline.focused[':enabled:not(active):focus'],
   },
 };
 

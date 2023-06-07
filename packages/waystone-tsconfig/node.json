@@ -1,11 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Node 14",
+  "display": "Node",
   "extends": "./base.json",
   "compilerOptions": {
     "lib": ["es2020"],
-    "module": "commonjs",
-    "target": "es2020",
+    "module": "ESNext",
+    "target": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

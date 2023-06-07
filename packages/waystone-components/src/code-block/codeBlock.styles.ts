@@ -1,4 +1,5 @@
 import { alpha } from '@theme-ui/color';
+import { getOutlineCss } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 
 export const codeBlockContainerCss: ThemeUIStyleObject = {
@@ -22,13 +23,15 @@ export const codeBlockLanguageCss: ThemeUIStyleObject = {
   left: '1.5rem',
   backgroundColor: 'a-600',
   padding: 'xs',
-  color: 'b-000',
+  color: 'b-50',
   textTransform: 'uppercase',
   boxShadow: 'sm-dark',
   borderBottomLeftRadius: 'sm',
   borderBottomRightRadius: 'sm',
   pointerEvents: 'none',
 };
+
+const outline = getOutlineCss();
 
 export const codeBlockCopyButtonCss: ThemeUIStyleObject = {
   variant: 'text.small',
@@ -43,23 +46,18 @@ export const codeBlockCopyButtonCss: ThemeUIStyleObject = {
   border: 'none',
   borderBottomLeftRadius: 'sm',
   borderBottomRightRadius: 'sm',
-  color: 'b-000',
+  color: 'b-50',
   textTransform: 'uppercase',
   cursor: 'pointer',
   transition: 'all 200ms',
-  outlineColor: alpha('info-000', 0),
-  outlineWidth: 'xs',
-  outlineStyle: 'solid',
+  ...outline.base,
+  ...outline.focused,
   ':hover': {
     background: 'b-400',
   },
-  ':focus': {
-    outlineColor: alpha('info-000', 0.75),
-    outlineWidth: 'xs',
-    outlineStyle: 'solid',
-  },
   ':active': {
     background: 'b-300',
+    ...outline.active[':enabled:active'],
   },
 };
 
@@ -72,5 +70,5 @@ export const codeBlockCaptionCss: ThemeUIStyleObject = {
   right: 0,
   padding: 'xs',
   backgroundColor: 'b-700',
-  color: 'b-000',
+  color: 'b-50',
 };
