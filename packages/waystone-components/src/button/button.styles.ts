@@ -45,7 +45,7 @@ export const buttonCss = ({
 
   const { paddingX, paddingY } = getPadding({ variant, size });
   const color = getColor(variant);
-  const outlineColor = darkMode ? 'b-600' : 'info-000';
+  const outlineColor = darkMode ? 'b-600' : 'info-50';
 
   const isLink = variant === 'link';
 
