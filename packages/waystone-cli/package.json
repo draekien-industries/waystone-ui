@@ -1,6 +1,13 @@
 {
   "name": "@waystone/cli",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "description": "A set of cli tools that help with using the waystone design system",
+  "author": "draekien-industries",
+  "license": "MIT",
   "main": "index.js",
   "type": "module",
   "bin": {
