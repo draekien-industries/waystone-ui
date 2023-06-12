@@ -1,4 +1,3 @@
-import { alpha } from '@theme-ui/color';
 import { getOutlineCss } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 

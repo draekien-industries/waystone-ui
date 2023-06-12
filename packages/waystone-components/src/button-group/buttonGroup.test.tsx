@@ -28,7 +28,7 @@ describe('The ButtonGroup component', () => {
           ]}
         />
       )
-    ).toThrowError('You must provide an `id` for each button');
+    ).toThrow('You must provide an `id` for each button');
   });
 
   it('invokes `onChange` when a button is clicked', () => {
@@ -47,7 +47,7 @@ describe('The ButtonGroup component', () => {
 
     fireEvent.click(button1);
 
-    expect(handleChange).toBeCalled();
+    expect(handleChange).toHaveBeenCalled();
   });
 
   it('renders the correct active button', () => {

@@ -1,5 +1,4 @@
 /** @jsxImportSource theme-ui */
-import { alpha } from '@theme-ui/color';
 import { getOutlineCss } from '@waystone/core';
 import React from 'react';
 import { ThemeUIStyleObject } from 'theme-ui';

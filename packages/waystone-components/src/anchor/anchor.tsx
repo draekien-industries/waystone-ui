@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
-import { Link, LinkProps } from 'theme-ui';
+import { LinkProps } from 'theme-ui';
 import { Icon } from '../icon/icon';
 import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
 
