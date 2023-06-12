@@ -1,5 +1,14 @@
 # @waystone/stories
 
+## 8.0.1
+
+### Patch Changes
+
+- Updated dependencies [4902c93]
+  - @waystone/components@8.0.1
+  - @waystone/core@8.0.1
+  - @waystone/utils@8.0.1
+
 ## 8.0.0
 
 ### Minor Changes
