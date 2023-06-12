@@ -1,4 +1,4 @@
-import { ReactNode, useMemo } from 'react';
+import { memo, ReactNode, useMemo } from 'react';
 import { useIsDarkMode } from '../hooks';
 
 export type TableRowProps = {
@@ -14,7 +14,7 @@ const getBackgroundColor = (darkMode: boolean, disabled: boolean) => {
   return disabled ? 'b-200' : 'b-100';
 };
 
-export const TableRow = ({ disabled = false, cells }: TableRowProps) => {
+const TableRowContent = ({ disabled = false, cells }: TableRowProps) => {
   const darkMode = useIsDarkMode();
 
   const backgroundColor = useMemo(
@@ -33,3 +33,5 @@ export const TableRow = ({ disabled = false, cells }: TableRowProps) => {
     </tr>
   );
 };
+
+export const TableRow = memo(TableRowContent);

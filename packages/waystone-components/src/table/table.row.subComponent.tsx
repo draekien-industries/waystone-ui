@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { memo, ReactNode } from 'react';
 
 export type TableRowSubComponentProps = {
   colSpan: number;
@@ -6,7 +6,7 @@ export type TableRowSubComponentProps = {
   children?: ReactNode;
 };
 
-export const TableRowSubComponent = ({
+const TableRowSubComponentContent = ({
   colSpan,
   visible,
   children,
@@ -23,3 +23,5 @@ export const TableRowSubComponent = ({
     </tr>
   );
 };
+
+export const TableRowSubComponent = memo(TableRowSubComponentContent);

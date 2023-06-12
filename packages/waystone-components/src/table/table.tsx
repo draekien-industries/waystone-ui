@@ -12,7 +12,7 @@ import {
   TableState,
 } from '@tanstack/react-table';
 import { useVirtual } from 'react-virtual';
-import { usePrevious, isDeepEqual } from '@waystone/utils';
+import { isDeepEqual, usePrevious } from '@waystone/utils';
 import { withExpandColumn, withSelectColumn } from './table.fx';
 import { TableHeader } from './table.header';
 import { TableRowData, RenderSubComponentProps } from './table.types';
@@ -116,7 +116,7 @@ export const Table = <
 
   const { setPageSize } = table;
   const { rows } = table.getRowModel();
-  const state = table.getState();
+  const state: TableState = table.getState();
   const previousState = usePrevious(state);
 
   useEffect(() => {
@@ -251,7 +251,10 @@ export const VirtualizedTable = <
   }, [state, previousState, onChange]);
 
   return (
-    <div ref={tableContainerRef} sx={{ ...rest, overflow: 'auto' }}>
+    <div
+      ref={tableContainerRef}
+      sx={{ ...rest, borderRadius: 'xl', overflow: 'auto' }}
+    >
       <table sx={{ width: '100%', borderRadius: 'xl', overflow: 'clip' }}>
         <TableHeader {...table} />
         <TableBody
