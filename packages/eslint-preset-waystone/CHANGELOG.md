@@ -1,5 +1,16 @@
 # eslint-preset-waystone
 
+## 1.2.0
+
+### Minor Changes
+
+- 9a4fb80: Refactor of table component
+
+### Patch Changes
+
+- 9a4fb80: Update dependencies
+- 9a4fb80: Add react table based table component
+
 ## 1.1.0
 
 ### Minor Changes
