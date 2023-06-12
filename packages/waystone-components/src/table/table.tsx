@@ -23,15 +23,14 @@ import { HasHeight } from '../common';
 export type TableProps<
   TData extends TableRowData<TData>,
   TValue,
-  TColumns extends ColumnDef<TData, TValue>[],
-  TSingleSelect extends boolean = boolean
+  TColumns extends ColumnDef<TData, TValue>[]
 > = {
   data: TData[];
   columns: TColumns;
   pageSize?: number;
-  singleSelect?: TSingleSelect;
-  singleSelectGroupName: TSingleSelect extends true ? string : undefined;
   expandOnSelect?: boolean;
+  singleSelect?: boolean;
+  singleSelectGroupName?: string;
   renderSubComponent?: (props: RenderSubComponentProps<TData>) => ReactElement;
   onChange?: (newState: TableState) => void;
 } & Pick<
@@ -48,7 +47,7 @@ export const Table = <
   columns,
   pageSize,
   singleSelect,
-  singleSelectGroupName,
+  singleSelectGroupName = 'table-radio',
   enableExpanding,
   enableSorting,
   enableFilters,

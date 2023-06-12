@@ -27,6 +27,7 @@
     "test:watch": "jest --coverage --watch -u"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.0.1",
     "@types/react-syntax-highlighter": "^15.5.5",
     "@waystone/tsconfig": "*",
     "eslint-preset-waystone": "*",

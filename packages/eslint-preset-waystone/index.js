@@ -28,11 +28,6 @@ module.exports = {
     'testing-library',
     'jest',
   ],
-  settings: {
-    next: {
-      rootDir: ['apps/*/', 'packages/*/'],
-    },
-  },
   rules: {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'react/function-component-definition': [
