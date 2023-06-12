@@ -1,0 +1,21 @@
+{
+  "name": "@waystone/cli",
+  "version": "0.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "waystone": "./index.js"
+  },
+  "scripts": {
+    "plop": "plop"
+  },
+  "dependencies": {
+    "@waystone/color": "*"
+  },
+  "peerDependencies": {
+    "@waystone/color": "*"
+  },
+  "devDependencies": {
+    "plop": "^3.1.2"
+  }
+}

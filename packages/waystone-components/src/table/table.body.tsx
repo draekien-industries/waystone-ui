@@ -2,7 +2,6 @@
 import { Row } from '@tanstack/react-table';
 import { Fragment, ReactElement } from 'react';
 import { useVirtual } from 'react-virtual';
-import { useIsDarkMode } from '../hooks';
 import { TableCell } from './table.cell';
 import { TableRow } from './table.row';
 import { TableRowSubComponent } from './table.row.subComponent';
@@ -14,21 +13,11 @@ export type TableBodyProps<TData extends TableRowData<TData>> = {
   virtualizer?: ReturnType<typeof useVirtual>;
 };
 
-const getBackgroundColor = (darkMode: boolean, disabled: boolean) => {
-  if (darkMode) {
-    return disabled ? 'b-600' : 'b-700';
-  }
-
-  return disabled ? 'b-200' : 'b-100';
-};
-
 export const TableBody = <TData extends TableRowData<TData>>({
   renderSubComponent,
   rows,
   virtualizer,
 }: TableBodyProps<TData>) => {
-  const darkMode = useIsDarkMode();
-
   if (virtualizer) {
     const { virtualItems: virtualRows, totalSize } = virtualizer;
 
