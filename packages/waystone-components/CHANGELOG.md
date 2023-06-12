@@ -1,5 +1,13 @@
 # @waystone/components
 
+## 8.0.1
+
+### Patch Changes
+
+- 4902c93: Obey the linter
+  - @waystone/core@8.0.1
+  - @waystone/utils@8.0.1
+
 ## 8.0.0
 
 ### Major Changes
