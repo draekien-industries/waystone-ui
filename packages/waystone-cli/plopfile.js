@@ -34,4 +34,23 @@ export default function (plop) {
       },
     ],
   });
+
+  plop.setGenerator('component', {
+    description: 'Generates a basic component with props',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'Please provide the name of your component',
+      },
+    ],
+    actions: [
+      {
+        type: 'addMany',
+        destination: `${process.cwd()}/{{ kebabCase name }}`,
+        templateFiles: 'plop-templates/component',
+        base: 'plop-templates/component',
+      },
+    ],
+  });
 }
