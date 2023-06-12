@@ -1,5 +1,35 @@
 # @waystone/components
 
+## 8.0.0
+
+### Major Changes
+
+- 4dcbaa8: Rework of color system
+
+  The new colorscale unifies the way colors are used to a scale starting from `50`
+  and ending at `950`.
+
+  To migrate to the new color system, replace any usages of the `*-000` colors
+  with a reference to `*-50`.
+
+### Minor Changes
+
+- 9a4fb80: Add react table based table component
+- 9a4fb80: Refactor of table component
+
+### Patch Changes
+
+- 4dcbaa8: Constrain range of offsets for color generation
+- 9a4fb80: Update dependencies
+- Updated dependencies [4dcbaa8]
+- Updated dependencies [9a4fb80]
+- Updated dependencies [9a4fb80]
+- Updated dependencies [9a4fb80]
+- Updated dependencies [9e5effc]
+- Updated dependencies [4dcbaa8]
+  - @waystone/core@8.0.0
+  - @waystone/utils@8.0.0
+
 ## 7.0.0
 
 ### Minor Changes

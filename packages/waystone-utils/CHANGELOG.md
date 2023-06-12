@@ -1,5 +1,15 @@
 # @waystone/utils
 
+## 8.0.0
+
+### Minor Changes
+
+- 9a4fb80: Refactor of table component
+
+### Patch Changes
+
+- 9a4fb80: Update dependencies
+
 ## 7.0.0
 
 ### Minor Changes
