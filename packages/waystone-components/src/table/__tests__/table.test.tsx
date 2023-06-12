@@ -74,4 +74,47 @@ describe('Components: Table', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with enableRowSelection prop', () => {
+    const { container } = render(
+      <Table data={makeData(100)} columns={columns} enableRowSelection />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with enableExpanding prop', () => {
+    const { container } = render(
+      <Table data={makeData(100)} columns={columns} enableExpanding />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with expandOnSelect prop', () => {
+    const { container } = render(
+      <Table
+        data={makeData(100)}
+        columns={columns}
+        enableRowSelection
+        expandOnSelect
+      />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with singleSelect prop', () => {
+    const { container } = render(
+      <Table
+        data={makeData(100)}
+        columns={columns}
+        enableRowSelection
+        singleSelect
+        singleSelectGroupName="table-radio"
+      />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
