@@ -1,5 +1,11 @@
 # @waystone/cli
 
+## 1.0.1
+
+### Patch Changes
+
+- 1898587: Move plop into dependencies
+
 ## 1.0.0
 
 ### Minor Changes
