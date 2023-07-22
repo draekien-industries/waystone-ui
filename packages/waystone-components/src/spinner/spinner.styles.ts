@@ -1,6 +1,11 @@
 import { keyframes } from '@emotion/react';
 import { Size } from '@waystone/core';
-import { ThemeUIStyleObject } from 'theme-ui';
+import {
+  ThemeUIStyleObject,
+  StylePropertyValue,
+  ThemeUICSSObject,
+} from 'theme-ui';
+
 import { CanBeFullWidth, HasColor, HasSize } from '../common/interfaces';
 
 export interface SpinnerCssProps extends HasSize, HasColor, CanBeFullWidth {}
@@ -36,7 +41,7 @@ export const spinnerCss = ({
   fullWidth,
 }: SpinnerCssProps): ThemeUIStyleObject => {
   const css: ThemeUIStyleObject = {
-    color,
+    color: color as ThemeUICSSObject['color'],
     display: fullWidth ? 'flex' : 'inline-flex',
     width: fullWidth ? '100%' : 'auto',
     height: getSpinnerSize(size || 'md'),
