@@ -1,11 +1,11 @@
 import type { StorybookConfig } from '@storybook/react-vite';
-import path, { dirname, join } from 'path';
+import { dirname, join, resolve } from 'path';
 import { mergeConfig } from 'vite';
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.tsx'],
   addons: [
-    getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-essentials'),
+    getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-interactions'),
     getAbsolutePath('@storybook/addon-a11y'),
     getAbsolutePath('storybook-dark-mode'),
@@ -39,10 +39,7 @@ const config: StorybookConfig = {
         alias: [
           {
             find: '@waystone/*',
-            replacement: path.resolve(
-              __dirname,
-              '../../../packages/waystone-*'
-            ),
+            replacement: resolve(__dirname, '../../../packages/waystone-*'),
           },
         ],
       },
