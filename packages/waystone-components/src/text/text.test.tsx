@@ -1,4 +1,4 @@
-import { render } from '../__fixtures__';
+import { render } from '@waystone/testing-library';
 import { Text } from './text';
 
 describe('The Text component', () => {

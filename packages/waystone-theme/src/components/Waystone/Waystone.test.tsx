@@ -1,6 +1,5 @@
-import React from 'react';
 import { render } from '@testing-library/react';
-import { Waystone } from './waystoneUi';
+import { Waystone } from './Waystone';
 
 describe('The Waystone component', () => {
   it('Matches snapshot', () => {

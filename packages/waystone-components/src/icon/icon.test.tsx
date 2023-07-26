@@ -1,4 +1,4 @@
-import { render } from '../__fixtures__';
+import { render } from '@waystone/testing-library';
 import { Icon } from './icon';
 
 describe('The Icon component', () => {

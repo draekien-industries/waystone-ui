@@ -1,6 +1,5 @@
 /** @jsxImportSource theme-ui */
 import { getOutlineCss } from '@waystone/core';
-import React from 'react';
 import { ThemeUIStyleObject } from 'theme-ui';
 import {
   CanBeFullWidth,

@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '../__fixtures__';
+import { fireEvent, render, screen } from '@waystone/testing-library';
 import { CardButton } from './cardButton';
 
 describe('TThe CardButton component', () => {

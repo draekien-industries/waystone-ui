@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker';
 import { ColumnDef } from '@tanstack/react-table';
-import { render } from '../../__fixtures__';
+import { render } from '@waystone/testing-library';
 import { Table } from '../table';
 
 describe('Components: Table', () => {

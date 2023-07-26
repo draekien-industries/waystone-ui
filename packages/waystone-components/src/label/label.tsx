@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import React from 'react';
+import { ReactNode } from 'react';
 import { ThemeUIStyleObject } from 'theme-ui';
 import { useIsDarkMode } from '../hooks/useIsDarkMode';
 
@@ -7,7 +7,7 @@ export interface LabelProps {
   /** The ID of the HTML Element this label is associated with. */
   htmlFor?: string;
   /** The contents of the label */
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export const Label = ({ htmlFor, children }: LabelProps) => {

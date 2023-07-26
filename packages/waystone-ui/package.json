@@ -1,5 +1,5 @@
 {
-  "name": "@waystone/components",
+  "name": "@waystone/ui",
   "version": "8.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -27,38 +27,28 @@
     "test:watch": "jest --coverage --watch -u"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.0.1",
-    "@types/react-syntax-highlighter": "^15.5.5",
     "@waystone/tsconfig": "*",
-    "@waystone/core": "*",
-    "@waystone/utils": "*",
-    "@waystone/theme": "*",
-    "eslint-preset-waystone": "*",
-    "identity-obj-proxy": "^3.0.0"
+    "eslint-preset-waystone": "*"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
-    "@tanstack/react-table": "^8.9.1",
     "@theme-ui/color": "^0.15.1",
     "@theme-ui/css": "^0.15.1",
+    "@waystone/core": "*",
+    "@waystone/components": "*",
+    "@waystone/theme": "*",
+    "@waystone/utils": "*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-syntax-highlighter": "^15.5.0",
-    "react-virtual": "^2.10.4",
-    "theme-ui": "^0.15.1",
-    "type-fest": "^3.7.2"
+    "theme-ui": "^0.15.1"
   },
   "peerDependencies": {
     "@emotion/react": ">=11.8.2",
-    "@tanstack/react-table": ">=8.9.1",
     "@theme-ui/color": ">=0.15.1",
     "@theme-ui/css": ">=0.15.1",
-    "@waystone/core": "*",
-    "@waystone/utils": "*",
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0",
-    "theme-ui": ">=0.14.2",
-    "type-fest": ">=3.0.0"
+    "theme-ui": ">=0.14.2"
   },
   "publishConfig": {
     "access": "public"

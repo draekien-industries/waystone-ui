@@ -1,4 +1,4 @@
-import { render } from '../__fixtures__';
+import { render } from '@waystone/testing-library';
 import { Spinner } from './spinner';
 
 describe('The Spinner component', () => {

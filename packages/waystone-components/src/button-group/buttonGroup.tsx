@@ -1,5 +1,4 @@
 /** @jsxImportSource theme-ui */
-import React from 'react';
 import { Flex } from 'theme-ui';
 import { Button, ButtonProps } from '../button';
 import { buttonGroupCss } from './buttonGroup.styles';

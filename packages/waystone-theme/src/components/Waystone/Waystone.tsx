@@ -1,5 +1,5 @@
 /** @jsxImportSource theme-ui */
-import React, { PropsWithChildren, useEffect } from 'react';
+import { PropsWithChildren, useEffect } from 'react';
 import { ThemeProvider } from 'theme-ui';
 import { WaystoneBaseTheme, WaystoneTheme, mergeObjects } from '@waystone/core';
 
@@ -59,11 +59,11 @@ export interface WaystoneProps {
  * @param props - the props for configuring the theme provider.
  * @returns the Waystone theme provider
  */
-export const Waystone: React.FC<PropsWithChildren<WaystoneProps>> = ({
+export const Waystone = ({
   theme,
   fontOptions,
   children,
-}) => {
+}: PropsWithChildren<WaystoneProps>) => {
   const parsedTheme = JSON.parse(JSON.stringify(WaystoneBaseTheme));
 
   useEffect(() => {

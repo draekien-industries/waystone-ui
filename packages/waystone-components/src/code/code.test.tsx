@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../__fixtures__';
+import { render } from '@waystone/testing-library';
 import { Code } from './code';
 
 describe('The Code component', () => {

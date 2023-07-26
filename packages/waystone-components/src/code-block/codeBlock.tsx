@@ -1,7 +1,7 @@
 /** @jsxImportSource theme-ui */
-import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { tomorrowNight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import { useState } from 'react';
 import { Icon } from '../icon/icon';
 import { copy } from './codeBlock.fx';
 import {
@@ -54,7 +54,7 @@ export const CodeBlock = ({
   caption,
   children,
 }: CodeBlockProps) => {
-  const [iconName, setIconName] = React.useState('content_copy');
+  const [iconName, setIconName] = useState('content_copy');
 
   const handleCopy = () => {
     copy(children);

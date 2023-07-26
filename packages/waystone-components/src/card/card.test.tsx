@@ -1,5 +1,5 @@
 import path from 'path';
-import { render } from '../__fixtures__';
+import { render } from '@waystone/testing-library';
 import { Card } from './card';
 import { CoverImageCssOptions } from './card.styles';
 

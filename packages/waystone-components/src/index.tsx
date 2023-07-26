@@ -12,7 +12,6 @@ export * from './overlay';
 export * from './spinner';
 export * from './text';
 export * from './table';
-export * from './waystone-ui';
 
 export * from './common';
 export * from './hooks';

@@ -1,10 +1,6 @@
 import { keyframes } from '@emotion/react';
 import { Size } from '@waystone/core';
-import {
-  ThemeUIStyleObject,
-  StylePropertyValue,
-  ThemeUICSSObject,
-} from 'theme-ui';
+import { ThemeUIStyleObject, ThemeUICSSObject } from 'theme-ui';
 
 import { CanBeFullWidth, HasColor, HasSize } from '../common/interfaces';
 

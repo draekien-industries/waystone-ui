@@ -44,6 +44,7 @@
     "@waystone/components": "*",
     "@waystone/core": "*",
     "@waystone/utils": "*",
+    "@waystone/theme": "*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "theme-ui": "^0.15.1"

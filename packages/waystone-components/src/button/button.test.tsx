@@ -1,4 +1,4 @@
-import { render, screen } from '../__fixtures__';
+import { render, screen } from '@waystone/testing-library';
 import { Button } from './button';
 
 describe('The Button component', () => {

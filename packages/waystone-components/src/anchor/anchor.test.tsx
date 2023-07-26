@@ -1,4 +1,4 @@
-import { screen, render } from '../__fixtures__';
+import { screen, render } from '@waystone/testing-library';
 import { Anchor } from './anchor';
 
 describe('The Anchor component', () => {

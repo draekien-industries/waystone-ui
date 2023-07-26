@@ -2,13 +2,13 @@
 import React, { PropsWithChildren, useEffect } from 'react';
 import { render, RenderOptions, RenderResult } from '@testing-library/react';
 import { useColorMode } from 'theme-ui';
-import { Waystone } from '../waystone-ui/waystoneUi';
+import { Waystone } from '@waystone/theme';
 
-const TestProvider: React.FC<PropsWithChildren> = ({ children }) => (
+const TestProvider = ({ children }: PropsWithChildren) => (
   <Waystone>{children}</Waystone>
 );
 
-const DarkModeWrapper: React.FC<PropsWithChildren> = ({ children }) => {
+const DarkModeWrapper = ({ children }: PropsWithChildren) => {
   const [, setColorMode] = useColorMode();
 
   useEffect(() => {
@@ -20,9 +20,9 @@ const DarkModeWrapper: React.FC<PropsWithChildren> = ({ children }) => {
 
 const themedRender: (
   ui: React.ReactElement,
-  options?: Omit<RenderOptions, 'wrapper'>
+  options?: RenderOptions
 ) => RenderResult = (ui, options?) =>
-  render(ui, { wrapper: TestProvider, ...options });
+  render(ui, { wrapper: options?.wrapper || TestProvider, ...options });
 
 export * from '@testing-library/react';
 export { themedRender as render, DarkModeWrapper };
