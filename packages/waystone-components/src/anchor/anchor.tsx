@@ -1,5 +1,10 @@
 /** @jsxImportSource theme-ui */
-import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
+import {
+  ForwardedRef,
+  HTMLAttributeAnchorTarget,
+  ReactNode,
+  forwardRef,
+} from 'react';
 import { LinkProps } from 'theme-ui';
 import { Icon } from '../icon/icon';
 import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
@@ -8,7 +13,7 @@ import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
  * The props for the anchor component.
  * @extends LinkProps
  */
-export interface AnchorProps extends LinkProps {
+export interface AnchorProps extends Omit<LinkProps, 'ref'> {
   /**
    * A flag indicating whether the href is an external link.
    * @default false
@@ -32,25 +37,34 @@ export interface AnchorProps extends LinkProps {
 }
 
 /** The internal anchor component */
-const InternalAnchor = ({
-  children,
-  noDecoration,
-  ...rest
-}: LinkProps & Pick<AnchorProps, 'noDecoration'>) => (
-  <a {...rest} sx={noDecoration ? undecoratedAnchorCss : anchorCss}>
+const renderInternalAnchor = (
+  {
+    children,
+    noDecoration,
+    ...rest
+  }: LinkProps & Pick<AnchorProps, 'noDecoration'>,
+  ref: ForwardedRef<HTMLAnchorElement>
+) => (
+  <a ref={ref} {...rest} sx={noDecoration ? undecoratedAnchorCss : anchorCss}>
     {children}
   </a>
 );
 
+const InternalAnchor = forwardRef(renderInternalAnchor);
+
 /** The external anchor component */
-const ExternalAnchor = ({
-  children,
-  noDecoration,
-  target = '_blank',
-  rel = 'noopener noreferrer',
-  ...rest
-}: LinkProps & Pick<AnchorProps, 'noDecoration'>) => (
+const renderExternalAnchor = (
+  {
+    children,
+    noDecoration,
+    target = '_blank',
+    rel = 'noopener noreferrer',
+    ...rest
+  }: LinkProps & Pick<AnchorProps, 'noDecoration'>,
+  ref: ForwardedRef<HTMLAnchorElement>
+) => (
   <a
+    ref={ref}
     {...rest}
     sx={!noDecoration ? anchorCss : undecoratedAnchorCss}
     target={target}
@@ -60,16 +74,23 @@ const ExternalAnchor = ({
   </a>
 );
 
+const ExternalAnchor = forwardRef(renderExternalAnchor);
+
+const renderAnchor = (
+  { external = false, ...rest }: AnchorProps,
+  ref: ForwardedRef<HTMLAnchorElement>
+) => {
+  if (external) {
+    return <ExternalAnchor ref={ref} {...rest} />;
+  }
+
+  return <InternalAnchor ref={ref} {...rest} />;
+};
+
 /**
  * A styled HTML `<a>` element which creates a hyperlink to the provided URL.
  * Content passed in via the `children` prop should indicate the link's destination.
  * See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a for more details
  * about the HTML `<a>` element.
  */
-export const Anchor = ({ external = false, ...rest }: AnchorProps) => {
-  if (external) {
-    return <ExternalAnchor {...rest} />;
-  }
-
-  return <InternalAnchor {...rest} />;
-};
+export const Anchor = forwardRef(renderAnchor);
