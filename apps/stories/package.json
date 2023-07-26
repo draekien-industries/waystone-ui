@@ -1,6 +1,6 @@
 {
   "name": "@waystone/stories",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "The storybook for waystone-ui",
   "repository": {
     "type": "git",

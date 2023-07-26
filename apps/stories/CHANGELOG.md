@@ -1,5 +1,14 @@
 # @waystone/stories
 
+## 9.0.1
+
+### Patch Changes
+
+- Updated dependencies [f6fd6f0]
+  - @waystone/components@9.0.1
+  - @waystone/core@9.0.1
+  - @waystone/utils@9.0.1
+
 ## 9.0.0
 
 ### Major Changes

@@ -1,5 +1,13 @@
 # @waystone/components
 
+## 9.0.1
+
+### Patch Changes
+
+- f6fd6f0: Forward ref to anchor component
+  - @waystone/core@9.0.1
+  - @waystone/utils@9.0.1
+
 ## 9.0.0
 
 ### Major Changes
