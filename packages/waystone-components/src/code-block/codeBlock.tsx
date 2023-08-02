@@ -1,7 +1,9 @@
 /** @jsxImportSource theme-ui */
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { tomorrowNight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import { useState } from 'react';
+import {
+  SyntaxHighlighter,
+  SupportedLanguage,
+} from '@waystone/syntax-highlighter';
 import { Icon } from '../icon/icon';
 import { copy } from './codeBlock.fx';
 import {
@@ -17,17 +19,12 @@ export interface CodeBlockProps {
    * @default 'text'
    * @see https://github.com/react-syntax-highlighter/react-syntax-highlighter/blob/HEAD/AVAILABLE_LANGUAGES_HLJS.MD
    */
-  language?: string;
+  language?: SupportedLanguage;
   /**
    * A flag indicating whether the code block should wrap long lines.
    * @default false
    */
   wordWrap?: boolean;
-  /**
-   * A flag indicating whether the code block should hide line numbers.
-   * @default false
-   */
-  hideLineNumbers?: boolean;
   /**
    * The text to render as code.
    */
@@ -42,15 +39,13 @@ export interface CodeBlockProps {
  * for the list of available languages.
  * @param props.language - the language of the code inside the codeblock. Used for syntax highlighting.
  * @param props.wordWrap - a flag indicating whether the code block should wrap long lines.
- * @param props.hideLineNumbers - a flag indicating whether the code block should hide line numbers.
  * @param props.caption - an optional caption to describe the code block.
  * @param props.children - the code to render.
  * @returns a code block component.
  */
 export const CodeBlock = ({
-  language = 'text',
+  language,
   wordWrap = false,
-  hideLineNumbers = false,
   caption,
   children,
 }: CodeBlockProps) => {
@@ -77,18 +72,9 @@ export const CodeBlock = ({
         <Icon name={iconName} />
       </button>
       <SyntaxHighlighter
-        wrapLongLines={wordWrap}
-        showLineNumbers={!hideLineNumbers}
+        wrapLines={wordWrap}
         language={language}
-        style={tomorrowNight}
-        customStyle={{
-          backgroundColor: 'inherit',
-          fontFamily: 'inherit',
-          fontWeight: 'inherit',
-          lineHeight: 'inherit',
-          paddingTop: '2rem',
-          paddingBottom: caption ? '2.25rem' : '1.5rem',
-        }}
+        styleName="tomorrowNightBlue"
       >
         {children}
       </SyntaxHighlighter>
