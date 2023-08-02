@@ -26,10 +26,17 @@
     "test:update": "jest --coverage --passWithNoTests -u",
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.0.4",
+    "@waystone/tsconfig": "workspace:*",
+    "eslint-preset-waystone": "workspace:*"
+  },
   "dependencies": {
     "@theme-ui/color": "^0.15.1",
     "@emotion/react": "^11.10.4",
-    "@waystone/core": "*",
+    "@waystone/core": "workspace:*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "theme-ui": "^0.15.1"

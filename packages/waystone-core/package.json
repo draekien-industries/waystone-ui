@@ -25,8 +25,11 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
-    "@waystone/tsconfig": "*",
-    "eslint-preset-waystone": "*"
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.0.4",
+    "@waystone/tsconfig": "workspace:*",
+    "eslint-preset-waystone": "workspace:*"
   },
   "peerDependencies": {
     "@emotion/react": ">=11.8.2",
@@ -37,7 +40,7 @@
   },
   "dependencies": {
     "@theme-ui/color": "^0.15.1",
-    "@waystone/color": "*",
+    "@waystone/color": "workspace:*",
     "@emotion/react": "^11.10.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

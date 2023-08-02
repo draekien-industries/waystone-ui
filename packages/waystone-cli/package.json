@@ -17,10 +17,10 @@
     "plop": "plop"
   },
   "dependencies": {
-    "@waystone/color": "*",
+    "@waystone/color": "workspace:*",
     "plop": "^3.1.2"
   },
   "peerDependencies": {
-    "@waystone/color": "*"
+    "@waystone/color": "workspace:*"
   }
 }

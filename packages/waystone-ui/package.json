@@ -27,17 +27,20 @@
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
   "devDependencies": {
-    "@waystone/tsconfig": "*",
-    "eslint-preset-waystone": "*"
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.0.4",
+    "@waystone/tsconfig": "workspace:*",
+    "eslint-preset-waystone": "workspace:*"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@theme-ui/color": "^0.15.1",
     "@theme-ui/css": "^0.15.1",
-    "@waystone/core": "*",
-    "@waystone/components": "*",
-    "@waystone/theme": "*",
-    "@waystone/utils": "*",
+    "@waystone/core": "workspace:*",
+    "@waystone/components": "workspace:*",
+    "@waystone/theme": "workspace:*",
+    "@waystone/utils": "workspace:*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "theme-ui": "^0.15.1"

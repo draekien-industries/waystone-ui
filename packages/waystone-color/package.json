@@ -29,8 +29,8 @@
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
   "devDependencies": {
-    "@waystone/tsconfig": "*",
-    "eslint-preset-waystone": "*",
+    "@waystone/tsconfig": "workspace:*",
+    "eslint-preset-waystone": "workspace:*",
     "jest": "^29.0.3"
   },
   "publishConfig": {
