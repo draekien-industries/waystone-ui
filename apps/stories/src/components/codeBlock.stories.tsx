@@ -8,8 +8,8 @@ export default {
 
 export const Default = {
   args: {
-    language: 'javascript',
     children: `console.log('Hello World!')`,
+    styleName: 'tomorrowNightBlue',
   },
 };
 

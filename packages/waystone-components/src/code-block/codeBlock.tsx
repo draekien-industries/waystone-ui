@@ -1,8 +1,9 @@
 /** @jsxImportSource theme-ui */
 import { useState } from 'react';
 import {
-  SyntaxHighlighter,
   SupportedLanguage,
+  SyntaxHighlighter,
+  StyleName,
 } from '@waystone/syntax-highlighter';
 import { Icon } from '../icon/icon';
 import { copy } from './codeBlock.fx';
@@ -13,13 +14,7 @@ import {
   codeBlockLanguageCss,
 } from './codeBlock.styles';
 
-export interface CodeBlockProps {
-  /**
-   * The code language to use for syntax highlighting.
-   * @default 'text'
-   * @see https://github.com/react-syntax-highlighter/react-syntax-highlighter/blob/HEAD/AVAILABLE_LANGUAGES_HLJS.MD
-   */
-  language?: SupportedLanguage;
+export type CodeBlockProps = {
   /**
    * A flag indicating whether the code block should wrap long lines.
    * @default false
@@ -31,7 +26,13 @@ export interface CodeBlockProps {
   children: string;
   /** An optional caption to describe the code block. */
   caption?: string;
-}
+
+  /** The code language to use for syntax highlighting. */
+  language?: SupportedLanguage;
+
+  /** The name of the syntax highlighting style to use */
+  styleName?: StyleName;
+};
 
 /**
  * Renders a code block that supports syntax highlighting using HLJS.
@@ -48,6 +49,7 @@ export const CodeBlock = ({
   wordWrap = false,
   caption,
   children,
+  styleName = 'tomorrowNightBlue',
 }: CodeBlockProps) => {
   const [iconName, setIconName] = useState('content_copy');
 
@@ -62,7 +64,7 @@ export const CodeBlock = ({
 
   return (
     <div sx={codeBlockContainerCss}>
-      <div sx={codeBlockLanguageCss}>{language}</div>
+      {language && <div sx={codeBlockLanguageCss}>{language}</div>}
       <button
         sx={codeBlockCopyButtonCss}
         type="button"
@@ -74,7 +76,7 @@ export const CodeBlock = ({
       <SyntaxHighlighter
         wrapLines={wordWrap}
         language={language}
-        styleName="tomorrowNightBlue"
+        styleName={styleName}
       >
         {children}
       </SyntaxHighlighter>
