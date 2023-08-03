@@ -1949,10 +1949,10 @@ exports[`Components: Table should match snapshot with enableExpanding prop 1`] =
           colspan="1"
         >
           <button
-            class="css-1pnkuh9-Button"
+            class="css-4eztqb-Button"
           >
             <div
-              class="css-178pbao-Button"
+              class="css-1rtjzo1-Button"
             >
               <i
                 class="material-icons css-1ye7pjf-Icon"

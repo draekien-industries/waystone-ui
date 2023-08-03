@@ -3,10 +3,10 @@
 exports[`The Button component matches snapshot 1`] = `
 <div>
   <button
-    class="css-1p39rg6-Button"
+    class="css-1glnxws-Button"
   >
     <span
-      class="css-qn9bt-Text"
+      class="css-3irkks-Text"
     >
       button
     </span>

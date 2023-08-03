@@ -3,13 +3,13 @@
 exports[`The InputContainer component should match snapshot 1`] = `
 <div>
   <div
-    class="css-g9mazr-InputContainer"
+    class="css-1r4naue-InputContainer"
   >
     <div
-      class="css-1bq1wmq-InputContainer"
+      class="css-q4mtp7-InputContainer"
     >
       <div
-        class="css-qqe0lv-InputContainer"
+        class="css-e6089-InputContainer"
       >
         <label
           class="css-12bpygf-Label"
