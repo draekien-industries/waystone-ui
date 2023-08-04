@@ -44,7 +44,7 @@ jobs:
           cache: 'pnpm'
       
       - name: Install Dependencies
-        run: pnpm
+        run: pnpm install
 
       - name: Run tests and collect coverage
         run: pnpm test:release
