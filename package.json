@@ -19,6 +19,7 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "is-ci || husky install",
+    "version": "turbo run build lint:release test:release && changeset version",
     "release": "turbo run build lint:release test:release && changeset version && changeset publish"
   },
   "devDependencies": {

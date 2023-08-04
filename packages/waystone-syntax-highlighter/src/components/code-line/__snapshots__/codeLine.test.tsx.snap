@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components: CodeLine matches snapshot 1`] = `
+<div>
+  <span
+    class="css-g89m8z-Box"
+  >
+    <span>
+      text value
+    </span>
+  </span>
+</div>
+`;
