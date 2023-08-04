@@ -36,7 +36,7 @@ jobs:
         id: setup
         uses: actions/setup-node@v3
         with:
-          node-version: lts
+          node-version: 16
           cache: 'pnpm'
 
       - name: Install Dependencies
