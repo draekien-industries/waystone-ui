@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { PropsWithChildren, useEffect } from 'react';
-import { ThemeProvider } from 'theme-ui';
+import { ThemeUIProvider } from 'theme-ui';
 import { WaystoneBaseTheme, WaystoneTheme, mergeObjects } from '@waystone/core';
 
 /** The options for configuring your own font. */
@@ -74,5 +74,5 @@ export const Waystone = ({
     mergeObjects(parsedTheme, theme);
   }
 
-  return <ThemeProvider theme={parsedTheme}>{children}</ThemeProvider>;
+  return <ThemeUIProvider theme={parsedTheme}>{children}</ThemeUIProvider>;
 };

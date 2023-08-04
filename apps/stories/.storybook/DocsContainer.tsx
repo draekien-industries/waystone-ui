@@ -3,7 +3,7 @@ import { PropsWithChildren, useMemo, useState } from 'react';
 import {
   DocsContainer as BaseContainer,
   DocsContainerProps,
-} from '@storybook/blocks';
+} from '@storybook/addon-docs';
 import { useDarkMode } from 'storybook-dark-mode';
 import { themes } from '@storybook/theming';
 

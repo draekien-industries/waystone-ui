@@ -1,8 +1,7 @@
 import { Size, SizeExtended, ThemeColor, ThemeSize } from '@waystone/core';
 import { StylePropertyValue } from '@theme-ui/css';
 
-// eslint-disable-next-line import/no-unresolved
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 import * as React from 'react';
 import { ExtractLiteralsForAutocomplete, OneOrMore } from './types';
 

@@ -3,24 +3,24 @@
 exports[`The ButtonGroup component should match snapshot 1`] = `
 <div>
   <div
-    class="css-1k79gwl-ButtonGroup"
+    class="css-ofnuv4-ButtonGroup"
   >
     <button
-      class="css-1pnkuh9-Button"
+      class="css-4eztqb-Button"
       id="button1"
     >
       <span
-        class="css-qn9bt-Text"
+        class="css-3irkks-Text"
       >
         button1
       </span>
     </button>
     <button
-      class="css-1pnkuh9-Button"
+      class="css-4eztqb-Button"
       id="button2"
     >
       <span
-        class="css-qn9bt-Text"
+        class="css-3irkks-Text"
       >
         button2
       </span>

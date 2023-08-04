@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta } from '@storybook/react';
 import { CodeBlock } from '@waystone/components/src';
 
 export default {
@@ -9,8 +8,8 @@ export default {
 
 export const Default = {
   args: {
-    language: 'javascript',
     children: `console.log('Hello World!')`,
+    styleName: 'tomorrowNightBlue',
   },
 };
 

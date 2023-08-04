@@ -19,22 +19,21 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "devDependencies": {
-    "@waystone/tsconfig": "*",
-    "eslint-preset-waystone": "*"
+    "@waystone/tsconfig": "workspace:*",
+    "eslint-preset-waystone": "workspace:*"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.4",
-    "@theme-ui/color": "^0.15.1",
-    "@theme-ui/css": "^0.15.1",
-    "@waystone/theme": "*",
-    "jest": "^29.5.0",
-    "jest-environment-jsdom": "^29.5.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "theme-ui": "^0.15.1"
+    "@theme-ui/color": "^0.16.0",
+    "@theme-ui/css": "^0.16.0",
+    "@waystone/theme": "workspace:*",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.16.0"
   },
   "publishConfig": {
     "access": "public"

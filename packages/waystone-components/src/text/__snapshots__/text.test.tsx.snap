@@ -3,7 +3,7 @@
 exports[`The Text component Matches snapshot 1`] = `
 <div>
   <span
-    class="css-4bzqhp-Text"
+    class="css-1k3tifs-Text"
   >
     text
   </span>
