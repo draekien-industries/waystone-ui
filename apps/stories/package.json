@@ -16,7 +16,7 @@
     "clean": "rm -rf node_modules && rm -rf storybook-static"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.0.1",
+    "@faker-js/faker": "^8.0.2",
     "@storybook/addon-a11y": "^7.1.1",
     "@storybook/addon-actions": "^7.1.1",
     "@storybook/addon-docs": "^7.1.1",
