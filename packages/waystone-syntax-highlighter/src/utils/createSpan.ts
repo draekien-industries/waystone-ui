@@ -1,5 +1,4 @@
-import { Span } from 'lowlight/lib/core';
-import { Tree } from '../lib';
+import { Tree, Span } from '../lib';
 
 export type CreateSpanOptions = {
   children: Tree;

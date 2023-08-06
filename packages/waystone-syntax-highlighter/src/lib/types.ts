@@ -1,4 +1,4 @@
-import { Span, Text } from 'lowlight/lib/core';
+import { Span, Text } from './lowlight';
 import * as styles from './styles';
 
 export type StyleName = keyof typeof styles;
