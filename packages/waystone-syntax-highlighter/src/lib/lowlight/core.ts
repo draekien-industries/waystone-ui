@@ -51,6 +51,11 @@ class HastEmitter implements Emitter {
     this.closeNode();
   }
 
+  // eslint-disable-next-line no-underscore-dangle
+  __addSublanguage(emitter: HastEmitter, subLanguageName: string) {
+    this.addSublanguage(emitter, subLanguageName);
+  }
+
   addSublanguage(emitter: HastEmitter, subLanguageName: string) {
     const current = this.stack[this.stack.length - 1];
     const results = emitter.root.children;
