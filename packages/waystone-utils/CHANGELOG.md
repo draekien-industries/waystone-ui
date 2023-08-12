@@ -1,5 +1,11 @@
 # @waystone/utils
 
+## 9.1.0
+
+### Minor Changes
+
+- 5c43357: Switch to pnpm and implement minimal syntax highlighter
+
 ## 9.0.1
 
 ## 9.0.0
