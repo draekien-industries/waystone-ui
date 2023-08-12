@@ -1,6 +1,6 @@
 {
   "name": "@waystone/testing-library",
-  "version": "9.0.0",
+  "version": "9.1.0",
   "main": "./src/index.ts",
   "repository": {
     "type": "git",

@@ -1,5 +1,16 @@
 # @waystone/core
 
+## 9.1.0
+
+### Minor Changes
+
+- 5c43357: Switch to pnpm and implement minimal syntax highlighter
+
+### Patch Changes
+
+- Updated dependencies [5c43357]
+  - @waystone/color@8.1.0
+
 ## 9.0.1
 
 ## 9.0.0

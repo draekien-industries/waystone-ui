@@ -1,5 +1,11 @@
 # @waystone/color
 
+## 8.1.0
+
+### Minor Changes
+
+- 5c43357: Switch to pnpm and implement minimal syntax highlighter
+
 ## 8.0.0
 
 ### Major Changes
