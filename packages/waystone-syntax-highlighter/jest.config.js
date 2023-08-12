@@ -13,7 +13,6 @@ module.exports = {
   transform: {
     '\\.[jt]sx?$': 'ts-jest',
   },
-  transformIgnorePatterns: ['<rootDir>/node_modules/(?!(lowlight)/)'],
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',
     '!<rootDir>/src/**/*.{style,styles}.ts',

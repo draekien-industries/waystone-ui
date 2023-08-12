@@ -138,7 +138,7 @@ function createJavascriptStyleSheet(file) {
           javacriptStylesheet,
           null,
           2
-        )}`,
+        ).replaceAll('"', "'")}\n`,
         (err) => {
           if (err) {
             throw err;
