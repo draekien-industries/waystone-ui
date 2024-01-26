@@ -27,7 +27,7 @@
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/jest-dom": "^6.3.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.4",
     "@waystone/tsconfig": "workspace:*",
