@@ -1,13 +1,11 @@
-name: Publish Packages
+name: Chromatic
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
     paths:
-      - '.changeset/**'
-      - '.github/workflows/release.yml'
+      - 'packages/waystone-*/**'
+      - '.github/workflows/coverage.yml'
+      - '!**/*.md'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -16,8 +14,7 @@ env:
   PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
-  release:
-    name: Release
+  chromatic:
     runs-on: ubuntu-latest
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -32,11 +29,11 @@ jobs:
       - name: Setup PNPM
         uses: pnpm/action-setup@v2
 
-      - name: Setup Node.js 16.x
+      - name: Setup Node.js
         id: setup
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 'lts'
           cache: 'pnpm'
 
       - name: Install Dependencies
@@ -44,15 +41,13 @@ jobs:
       
       - name: Build Packages
         run: pnpm run build
-
-      - name: Create Release Pull Request or Publish to npm
-        id: changesets
-        uses: changesets/action@v1
+      
+      - name: Publish storybook if a publish happens
+        id: chromatic
+        uses: chromaui/action@latest
         with:
-          version: pnpm run version
-          commit: 'chore: version packages'
-          title: 'chore: version packages'
-          publish: 'pnpm exec changeset publish'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          storybookBuildDir: 'apps/stories/storybook-static'
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          autoAcceptChanges: 'main'
+          skip: 'dependabot/**'
