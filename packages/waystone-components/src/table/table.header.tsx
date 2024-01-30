@@ -1,4 +1,5 @@
-/** @jsxImportSource theme-ui */
+'use client';
+
 import { flexRender, Table } from '@tanstack/react-table';
 import { useIsDarkMode } from '../hooks';
 

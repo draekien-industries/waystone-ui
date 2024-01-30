@@ -159,6 +159,9 @@ importers:
       '@waystone/tsconfig':
         specifier: workspace:*
         version: link:../../packages/waystone-tsconfig
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../../packages/eslint-plugin-waystone
       eslint-preset-waystone:
         specifier: workspace:*
         version: link:../../packages/eslint-preset-waystone

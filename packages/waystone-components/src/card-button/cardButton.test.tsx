@@ -1,3 +1,5 @@
+'use client';
+
 import { fireEvent, render, screen } from '@waystone/testing-library';
 import { CardButton } from './cardButton';
 

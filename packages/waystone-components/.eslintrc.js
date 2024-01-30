@@ -2,7 +2,7 @@ const preset = require('eslint-preset-waystone');
 
 module.exports = {
   ...preset,
-  extends: ['plugin:waystone/recommended', ...preset.extends],
+  extends: [...preset.extends, 'plugin:waystone/recommended'],
   env: {
     browser: true,
     es2021: true,

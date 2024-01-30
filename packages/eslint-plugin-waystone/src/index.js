@@ -5,9 +5,9 @@ const useClientRule = require('./useClient');
 const configs = {
   recommended: {
     plugins: ['waystone'],
-  },
-  rules: {
-    'waystone/enforce-use-client': 'warn',
+    rules: {
+      'waystone/enforce-use-client': 'error',
+    },
   },
 };
 

@@ -1,4 +1,5 @@
-/** @jsxImportSource theme-ui */
+'use client';
+
 import { HTMLProps, useEffect, useRef } from 'react';
 
 export type CheckboxProps = {

@@ -1,6 +1,5 @@
-/** @jsxImportSource theme-ui */
-import { spinnerCss, SpinnerCssProps } from './spinner.styles';
 import { Overlay } from '../overlay/overlay';
+import { spinnerCss, SpinnerCssProps } from './spinner.styles';
 
 export interface SpinnerProps extends SpinnerCssProps {
   /**

@@ -1,11 +1,10 @@
-/** @jsxImportSource theme-ui */
-import { PropsWithChildren, useMemo, useState } from 'react';
 import {
   DocsContainer as BaseContainer,
   DocsContainerProps,
 } from '@storybook/addon-docs';
-import { useDarkMode } from 'storybook-dark-mode';
 import { themes } from '@storybook/theming';
+import { PropsWithChildren, useMemo } from 'react';
+import { useDarkMode } from 'storybook-dark-mode';
 
 export const DocsContainer = ({
   children,

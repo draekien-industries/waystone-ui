@@ -1,3 +1,5 @@
+'use client';
+
 import { Table } from '@tanstack/react-table';
 import { Box, Flex } from 'theme-ui';
 import { Button } from '../button';

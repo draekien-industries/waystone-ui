@@ -1,8 +1,7 @@
-/** @jsxImportSource theme-ui */
-import React, { PropsWithChildren, useEffect } from 'react';
-import { render, RenderOptions, RenderResult } from '@testing-library/react';
-import { useColorMode } from 'theme-ui';
+import { RenderOptions, RenderResult, render } from '@testing-library/react';
 import { Waystone } from '@waystone/theme';
+import React, { PropsWithChildren, useEffect } from 'react';
+import { useColorMode } from 'theme-ui';
 
 const TestProvider = ({ children }: PropsWithChildren) => (
   <Waystone>{children}</Waystone>
@@ -25,4 +24,4 @@ const themedRender: (
   render(ui, { wrapper: options?.wrapper || TestProvider, ...options });
 
 export * from '@testing-library/react';
-export { themedRender as render, DarkModeWrapper };
+export { DarkModeWrapper, themedRender as render };

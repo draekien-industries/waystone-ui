@@ -1,9 +1,8 @@
-/** @jsxImportSource theme-ui */
+import { TextVariant } from '@waystone/core';
 import React, { ReactNode } from 'react';
 import { Text as ThemeUiText } from 'theme-ui';
-import { TextVariant } from '@waystone/core';
-import { textCss } from './text.styles';
 import { HasColor, HasVariant } from '../common/interfaces';
+import { textCss } from './text.styles';
 
 /**
  * Props for rendering the {@link Text} component.

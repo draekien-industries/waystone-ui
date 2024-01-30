@@ -1,9 +1,8 @@
-/** @jsxImportSource theme-ui */
 import React from 'react';
 import type { LiteralUnion } from 'type-fest';
+import { HasColor, HasSize, HasVariant } from '../common/interfaces';
 import { getIconClassName } from './icon.fx';
 import { iconCss } from './icon.styles';
-import { HasColor, HasSize, HasVariant } from '../common/interfaces';
 import { IconStyleProps, IconVariant, MaterialIconName } from './icon.types';
 
 /**

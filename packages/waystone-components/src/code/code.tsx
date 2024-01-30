@@ -1,4 +1,5 @@
-/** @jsxImportSource theme-ui */
+'use client';
+
 import { ReactNode } from 'react';
 import { useColorMode } from 'theme-ui';
 import { codeCss } from './code.styles';
