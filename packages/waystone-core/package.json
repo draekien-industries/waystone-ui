@@ -25,7 +25,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/jest-dom": "^6.4.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.4",
     "@waystone/tsconfig": "workspace:*",
