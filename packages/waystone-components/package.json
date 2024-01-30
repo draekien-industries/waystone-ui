@@ -23,6 +23,7 @@
     "@testing-library/user-event": "^14.0.4",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
     "eslint-preset-waystone": "workspace:*",
     "identity-obj-proxy": "^3.0.0"
   },

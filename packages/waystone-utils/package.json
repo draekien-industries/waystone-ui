@@ -1,50 +1,51 @@
 {
-  "name": "@waystone/utils",
-  "version": "9.1.0",
+  "author": "draekien-industries",
+  "dependencies": {
+    "react": "^18.2.0",
+    "type-fest": "^3.7.2"
+  },
+  "description": "The utils used by draekien-industries",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.0.4",
+    "@waystone/tsconfig": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
+    "eslint-preset-waystone": "workspace:*",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "name": "@waystone/utils",
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
   },
-  "description": "The utils used by draekien-industries",
-  "author": "draekien-industries",
-  "sideEffects": false,
-  "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "build:storybook": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "dev:storybook": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "test": "jest --coverage --passWithNoTests",
     "test:release": "jest --coverage --passWithNoTests",
     "test:update": "jest --coverage --passWithNoTests -u",
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "type-fest": "^3.7.2"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0"
-  },
-  "devDependencies": {
-    "@waystone/tsconfig": "workspace:*",
-    "eslint-preset-waystone": "workspace:*",
-    "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.0.4",
-    "jest": "^29.6.2",
-    "jest-environment-jsdom": "^29.6.2"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "version": "9.1.0"
 }

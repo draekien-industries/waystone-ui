@@ -2,7 +2,7 @@
 
 const useClientRule = require('./useClient');
 
-export const configs = {
+const configs = {
   recommended: {
     plugins: ['waystone'],
   },
@@ -11,6 +11,11 @@ export const configs = {
   },
 };
 
-export const rules = {
+const rules = {
   'enforce-use-client': useClientRule,
+};
+
+module.exports = {
+  configs,
+  rules,
 };

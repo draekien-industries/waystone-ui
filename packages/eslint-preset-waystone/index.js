@@ -21,7 +21,6 @@ module.exports = {
     },
   },
   rules: {
-    'waystone/enforce-use-client': 'warn',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     '@typescript-eslint/no-unused-vars': [
       'error',
