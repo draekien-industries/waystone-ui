@@ -1,124 +1,124 @@
 export const qtcreatorLight = {
   're code.hljs': {
-    display: 'block',
-    overflowX: 'auto',
-    padding: '1em',
+    'display': 'block',
+    'overflowX': 'auto',
+    'padding': '1em'
   },
   'ode.hljs': {
-    padding: '3px 5px',
+    'padding': '3px 5px'
   },
-  hljs: {
-    color: '#000',
-    background: '#fff',
+  'hljs': {
+    'color': '#000',
+    'background': '#fff'
   },
   'hljs-emphasis': {
-    color: '#000',
-    fontStyle: 'italic',
+    'color': '#000',
+    'fontStyle': 'italic'
   },
   'hljs-strong': {
-    color: '#000',
+    'color': '#000'
   },
   'hljs-bullet': {
-    color: 'navy',
+    'color': 'navy'
   },
   'hljs-literal': {
-    color: 'navy',
+    'color': 'navy'
   },
   'hljs-number': {
-    color: 'navy',
+    'color': 'navy'
   },
   'hljs-quote': {
-    color: 'navy',
+    'color': 'navy'
   },
   'hljs-regexp': {
-    color: 'navy',
+    'color': 'navy'
   },
   'hljs-code .hljs-selector-class': {
-    color: 'purple',
+    'color': 'purple'
   },
   'hljs-stronge': {
-    fontStyle: 'italic',
+    'fontStyle': 'italic'
   },
   'hljs-type': {
-    fontStyle: 'italic',
-    color: 'green',
+    'fontStyle': 'italic',
+    'color': 'green'
   },
   'hljs-function': {
-    color: 'olive',
+    'color': 'olive'
   },
   'hljs-keyword': {
-    color: 'olive',
+    'color': 'olive'
   },
   'hljs-name': {
-    color: 'olive',
+    'color': 'olive'
   },
   'hljs-section': {
-    color: 'olive',
+    'color': 'olive'
   },
   'hljs-selector-tag': {
-    color: 'olive',
+    'color': 'olive'
   },
   'hljs-symbol': {
-    color: 'olive',
+    'color': 'olive'
   },
   'hljs-subst': {
-    color: '#000',
+    'color': '#000'
   },
   'hljs-tag': {
-    color: '#000',
+    'color': '#000'
   },
   'hljs-title': {
-    color: '#000',
+    'color': '#000'
   },
   'hljs-attribute': {
-    color: 'maroon',
+    'color': 'maroon'
   },
   'hljs-class .hljs-title': {
-    color: '#0055af',
+    'color': '#0055af'
   },
   'hljs-params': {
-    color: '#0055af',
+    'color': '#0055af'
   },
   'hljs-title.class_': {
-    color: '#0055af',
+    'color': '#0055af'
   },
   'hljs-variable': {
-    color: '#0055af',
+    'color': '#0055af'
   },
   'hljs-addition': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-built_in': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-comment': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-deletion': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-link': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-meta': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-selector-attr': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-selector-id': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-selector-pseudo': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-string': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-template-tag': {
-    color: 'green',
+    'color': 'green'
   },
   'hljs-template-variable': {
-    color: 'green',
-  },
-};
+    'color': 'green'
+  }
+}

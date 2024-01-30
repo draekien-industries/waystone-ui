@@ -9,3 +9,28 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    groups:
+      linter:
+        patterns:
+          - 'eslint*'
+          - '@typescript-eslint*'
+      testing:
+        patterns:
+          - 'jest*'
+          - '@testing-library*'
+          - '@types/jest*'
+          - '@types/testing-library*'
+      stories:
+        patterns:
+          - 'storybook*'
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
+          - '@types/react'
+          - '@types/react-dom'
+      theming:
+        patterns:
+          - '@emotion/react'
+          - 'theme-ui'
+          - '@theme-ui*'

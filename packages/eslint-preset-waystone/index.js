@@ -70,6 +70,8 @@ module.exports = {
     '**/*.js',
     '**/*.json',
     '**/*.d.ts',
+    '**/*.g.*',
+    '**/*.generated.*',
     'node_modules',
     'public',
     'styles',
