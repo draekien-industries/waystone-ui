@@ -1,8 +1,8 @@
-import React, { FC, PropsWithChildren } from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import { WaystoneBaseTheme } from '@waystone/core/src';
-import { ColorMode, ColorModesScale } from 'theme-ui';
+import { Meta, StoryFn } from '@storybook/react';
 import { Text } from '@waystone/components/src';
+import { WaystoneBaseTheme } from '@waystone/core/src';
+import { FC, PropsWithChildren } from 'react';
+import { ColorMode, ColorModesScale } from 'theme-ui';
 
 const Color: FC<PropsWithChildren<{ color: string }>> = ({
   color,

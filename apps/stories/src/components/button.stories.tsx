@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta } from '@storybook/react';
 import { Button, ButtonProps } from '@waystone/components/src';
 
 export default {
