@@ -1,5 +1,17 @@
 # @waystone/ui
 
+## 9.1.1
+
+### Patch Changes
+
+- Updated dependencies [8f75dd6]
+- Updated dependencies [8f75dd6]
+  - @waystone/components@9.2.0
+  - @waystone/theme@9.2.0
+  - @waystone/syntax-highlighter@11.0.0
+  - @waystone/utils@9.2.0
+  - @waystone/core@9.2.0
+
 ## 9.1.0
 
 ### Minor Changes

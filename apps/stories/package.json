@@ -51,5 +51,5 @@
     "preview-storybook": "serve storybook-static"
   },
   "sideEffects": false,
-  "version": "9.1.0"
+  "version": "9.2.0"
 }

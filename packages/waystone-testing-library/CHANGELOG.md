@@ -1,5 +1,12 @@
 # @waystone/testing-library
 
+## 9.1.1
+
+### Patch Changes
+
+- Updated dependencies [8f75dd6]
+  - @waystone/theme@9.2.0
+
 ## 9.1.0
 
 ### Minor Changes
