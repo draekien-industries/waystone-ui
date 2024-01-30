@@ -1,5 +1,15 @@
 # @waystone/theme
 
+## 9.2.0
+
+### Minor Changes
+
+- 8f75dd6: Added 'use client' directives to relevant components
+
+### Patch Changes
+
+- @waystone/core@9.2.0
+
 ## 9.1.0
 
 ### Minor Changes

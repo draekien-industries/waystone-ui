@@ -1,5 +1,18 @@
 # @waystone/stories
 
+## 9.2.0
+
+### Patch Changes
+
+- 04575c8: build(deps-dev): bump vite from 4.5.2 to 5.0.12
+- bc1df8b: build(deps-dev): bump vite from 4.4.9 to 4.5.2
+- Updated dependencies [8f75dd6]
+- Updated dependencies [8f75dd6]
+  - @waystone/components@9.2.0
+  - @waystone/theme@9.2.0
+  - @waystone/utils@9.2.0
+  - @waystone/core@9.2.0
+
 ## 9.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @waystone/core
 
+## 9.2.0
+
+### Patch Changes
+
+- @waystone/color@8.1.0
+
 ## 9.1.0
 
 ### Minor Changes

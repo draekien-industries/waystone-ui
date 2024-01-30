@@ -1,5 +1,18 @@
 # @waystone/components
 
+## 9.2.0
+
+### Minor Changes
+
+- 8f75dd6: Added 'use client' directives to relevant components
+- 8f75dd6: Updated table to use tanstack react virtual
+
+### Patch Changes
+
+- @waystone/syntax-highlighter@11.0.0
+- @waystone/utils@9.2.0
+- @waystone/core@9.2.0
+
 ## 9.1.0
 
 ### Minor Changes

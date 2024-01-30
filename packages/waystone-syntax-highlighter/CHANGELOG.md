@@ -1,5 +1,12 @@
 # @waystone/syntax-highlighter
 
+## 11.0.0
+
+### Patch Changes
+
+- @waystone/utils@9.2.0
+- @waystone/core@9.2.0
+
 ## 10.0.0
 
 ### Minor Changes
