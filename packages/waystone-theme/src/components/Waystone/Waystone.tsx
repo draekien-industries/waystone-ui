@@ -1,7 +1,8 @@
-/** @jsxImportSource theme-ui */
+'use client';
+
+import { WaystoneBaseTheme, WaystoneTheme, mergeObjects } from '@waystone/core';
 import { PropsWithChildren, useEffect } from 'react';
 import { ThemeUIProvider } from 'theme-ui';
-import { WaystoneBaseTheme, WaystoneTheme, mergeObjects } from '@waystone/core';
 
 /** The options for configuring your own font. */
 interface FontOptions {

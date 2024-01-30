@@ -1,4 +1,5 @@
-/** @jsxImportSource theme-ui */
+'use client';
+
 import { getOutlineCss } from '@waystone/core';
 import { ThemeUIStyleObject } from 'theme-ui';
 import {

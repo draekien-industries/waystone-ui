@@ -1,4 +1,5 @@
-/** @jsxImportSource theme-ui */
+'use client';
+
 import { ReactNode } from 'react';
 import { ThemeUIStyleObject } from 'theme-ui';
 import { useIsDarkMode } from '../hooks/useIsDarkMode';

@@ -1,3 +1,5 @@
+'use client';
+
 import { Cell, flexRender } from '@tanstack/react-table';
 import { useMemo } from 'react';
 

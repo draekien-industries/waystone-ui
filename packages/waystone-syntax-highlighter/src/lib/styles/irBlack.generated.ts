@@ -1,101 +1,101 @@
 export const irBlack = {
   're code.hljs': {
-    display: 'block',
-    overflowX: 'auto',
-    padding: '1em',
+    'display': 'block',
+    'overflowX': 'auto',
+    'padding': '1em'
   },
   'ode.hljs': {
-    padding: '3px 5px',
+    'padding': '3px 5px'
   },
-  hljs: {
-    background: '#000',
-    color: '#f8f8f8',
+  'hljs': {
+    'background': '#000',
+    'color': '#f8f8f8'
   },
   'hljs-comment': {
-    color: '#7c7c7c',
+    'color': '#7c7c7c'
   },
   'hljs-meta': {
-    color: '#7c7c7c',
+    'color': '#7c7c7c'
   },
   'hljs-quote': {
-    color: '#7c7c7c',
+    'color': '#7c7c7c'
   },
   'hljs-keyword': {
-    color: '#96cbfe',
+    'color': '#96cbfe'
   },
   'hljs-name': {
-    color: '#96cbfe',
+    'color': '#96cbfe'
   },
   'hljs-selector-tag': {
-    color: '#96cbfe',
+    'color': '#96cbfe'
   },
   'hljs-tag': {
-    color: '#96cbfe',
+    'color': '#96cbfe'
   },
   'hljs-attribute': {
-    color: '#ffffb6',
+    'color': '#ffffb6'
   },
   'hljs-selector-id': {
-    color: '#ffffb6',
+    'color': '#ffffb6'
   },
   'hljs-addition': {
-    color: '#a8ff60',
+    'color': '#a8ff60'
   },
   'hljs-selector-attr': {
-    color: '#a8ff60',
+    'color': '#a8ff60'
   },
   'hljs-selector-pseudo': {
-    color: '#a8ff60',
+    'color': '#a8ff60'
   },
   'hljs-string': {
-    color: '#a8ff60',
+    'color': '#a8ff60'
   },
   'hljs-subst': {
-    color: '#daefa3',
+    'color': '#daefa3'
   },
   'hljs-link': {
-    color: '#e9c062',
+    'color': '#e9c062'
   },
   'hljs-regexp': {
-    color: '#e9c062',
+    'color': '#e9c062'
   },
   'hljs-doctag': {
-    color: '#ffffb6',
+    'color': '#ffffb6'
   },
   'hljs-section': {
-    color: '#ffffb6',
+    'color': '#ffffb6'
   },
   'hljs-title': {
-    color: '#ffffb6',
+    'color': '#ffffb6'
   },
   'hljs-type': {
-    color: '#ffffb6',
+    'color': '#ffffb6'
   },
   'hljs-bullet': {
-    color: '#c6c5fe',
+    'color': '#c6c5fe'
   },
   'hljs-literal': {
-    color: '#c6c5fe',
+    'color': '#c6c5fe'
   },
   'hljs-symbol': {
-    color: '#c6c5fe',
+    'color': '#c6c5fe'
   },
   'hljs-template-variable': {
-    color: '#c6c5fe',
+    'color': '#c6c5fe'
   },
   'hljs-variable': {
-    color: '#c6c5fe',
+    'color': '#c6c5fe'
   },
   'hljs-deletion': {
-    color: '#ff73fd',
+    'color': '#ff73fd'
   },
   'hljs-number': {
-    color: '#ff73fd',
+    'color': '#ff73fd'
   },
   'hljs-emphasis': {
-    fontStyle: 'italic',
+    'fontStyle': 'italic'
   },
   'hljs-strong': {
-    fontWeight: '700',
-  },
-};
+    'fontWeight': '700'
+  }
+}

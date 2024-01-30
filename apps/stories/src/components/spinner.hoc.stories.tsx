@@ -1,12 +1,12 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import {
+  CanLoad,
   Spinner,
   SpinnerProps,
-  withSpinner,
-  CanLoad,
   WithSpinnerProps,
+  withSpinner,
 } from '@waystone/components/src';
+import * as React from 'react';
 
 interface ExampleComponentProps extends WithSpinnerProps {
   text: string;

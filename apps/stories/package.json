@@ -1,20 +1,19 @@
 {
-  "name": "@waystone/stories",
-  "version": "9.1.0",
-  "description": "The storybook for waystone-ui",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/draekien-industries/waystone-ui"
-  },
   "author": "draekien-industries",
-  "sideEffects": false,
-  "license": "MIT",
-  "scripts": {
-    "dev": "storybook dev -p 6006",
-    "build": "storybook build --docs",
-    "preview-storybook": "serve storybook-static",
-    "clean": "rm -rf node_modules && rm -rf storybook-static"
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@tanstack/react-table": "^8.9.1",
+    "@theme-ui/color": "^0.16.0",
+    "@theme-ui/css": "^0.16.0",
+    "@waystone/components": "workspace:*",
+    "@waystone/core": "workspace:*",
+    "@waystone/theme": "workspace:*",
+    "@waystone/utils": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.16.0"
   },
+  "description": "The storybook for waystone-ui",
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
     "@storybook/addon-a11y": "^7.1.1",
@@ -25,12 +24,13 @@
     "@storybook/addon-links": "^7.1.1",
     "@storybook/jest": "^0.1.0",
     "@storybook/manager-api": "^7.1.1",
-    "@storybook/theming": "^7.1.1",
     "@storybook/react": "^7.1.1",
     "@storybook/react-vite": "7.1.1",
     "@storybook/testing-library": "^0.2.0",
+    "@storybook/theming": "^7.1.1",
     "@vitejs/plugin-react": "^3.1.0",
     "@waystone/tsconfig": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
     "eslint-preset-waystone": "workspace:*",
     "serve": "^13.0.4",
     "storybook": "7.1.1",
@@ -38,17 +38,18 @@
     "typescript": "^5.3.3",
     "vite": "^5.0.12"
   },
-  "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@tanstack/react-table": "^8.9.1",
-    "@theme-ui/color": "^0.16.0",
-    "@theme-ui/css": "^0.16.0",
-    "@waystone/components": "workspace:*",
-    "@waystone/core": "workspace:*",
-    "@waystone/utils": "workspace:*",
-    "@waystone/theme": "workspace:*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.0"
-  }
+  "license": "MIT",
+  "name": "@waystone/stories",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "scripts": {
+    "build": "storybook build --docs",
+    "clean": "rm -rf node_modules && rm -rf storybook-static",
+    "dev": "storybook dev -p 6006",
+    "preview-storybook": "serve storybook-static"
+  },
+  "sideEffects": false,
+  "version": "9.1.0"
 }

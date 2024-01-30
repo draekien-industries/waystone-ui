@@ -1,6 +1,8 @@
-import * as React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+'use client';
+
+import { Meta } from '@storybook/react';
 import { ButtonGroup, ButtonGroupProps, Text } from '@waystone/components/src';
+import * as React from 'react';
 
 export default {
   title: 'Components/ButtonGroup',

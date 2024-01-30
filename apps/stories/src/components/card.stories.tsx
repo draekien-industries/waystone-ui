@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta } from '@storybook/react';
 import { Card } from '@waystone/components/src';
 import { CoverImageCssOptions } from '@waystone/components/src/card/card.styles';
 

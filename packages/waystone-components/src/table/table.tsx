@@ -1,53 +1,29 @@
-/** @jsxImportSource theme-ui */
-import { ReactElement, useEffect, useMemo, useRef } from 'react';
+'use client';
+
 import {
   ColumnDef,
-  TableOptions,
-  useReactTable,
+  TableState,
   getCoreRowModel,
   getExpandedRowModel,
   getFilteredRowModel,
-  getSortedRowModel,
   getPaginationRowModel,
-  TableState,
+  getSortedRowModel,
+  useReactTable,
 } from '@tanstack/react-table';
-import { useVirtual } from 'react-virtual';
+import { useVirtualizer } from '@tanstack/react-virtual';
 import { isDeepEqual, usePrevious } from '@waystone/utils';
+import { useEffect, useMemo, useRef } from 'react';
+import { HasHeight } from '../common';
+import { TableBody } from './table.body';
 import { withExpandColumn, withSelectColumn } from './table.fx';
 import { TableHeader } from './table.header';
-import { TableRowData, RenderSubComponentProps } from './table.types';
-import { TableBody } from './table.body';
 import { TablePagination } from './table.pagination';
-import { HasHeight } from '../common';
+import { TableProps, TableRowData } from './table.types';
 
-export type TableProps<
-  TData extends TableRowData<TData>,
-  TValue,
-  TColumns extends ColumnDef<TData, TValue>[]
-> = {
-  data: TData[];
-  columns: TColumns;
-  pageSize?: number;
-  expandOnSelect?: boolean;
-  singleSelect?: boolean;
-  singleSelectGroupName?: string;
-  renderSubComponent?: (props: RenderSubComponentProps<TData>) => ReactElement;
-  onChange?: (newState: TableState) => void;
-} & Pick<
-  TableOptions<TData>,
-  'enableExpanding' | 'enableSorting' | 'enableFilters' | 'enableRowSelection'
->;
-
-export const Table = <
-  TData extends TableRowData<TData>,
-  TValue,
-  TColumns extends ColumnDef<TData, TValue>[]
->({
+export const Table = <TData extends TableRowData<TData>, TValue = unknown>({
   data,
   columns,
   pageSize,
-  singleSelect,
-  singleSelectGroupName = 'table-radio',
   enableExpanding,
   enableSorting,
   enableFilters,
@@ -55,7 +31,8 @@ export const Table = <
   expandOnSelect,
   renderSubComponent,
   onChange,
-}: TableProps<TData, TValue, TColumns>) => {
+  ...rest
+}: TableProps<TData, TValue>) => {
   if (pageSize && pageSize < 1) {
     throw new Error('Page size must be greater than or equal to 1');
   }
@@ -68,9 +45,8 @@ export const Table = <
     if (enableRowSelection) {
       modifiedColumns = withSelectColumn({
         columns: modifiedColumns,
-        singleSelect,
-        singleSelectGroupName,
         expandOnSelect,
+        ...rest,
       });
     }
 
@@ -82,20 +58,13 @@ export const Table = <
     }
 
     return modifiedColumns;
-  }, [
-    columns,
-    expandOnSelect,
-    enableExpanding,
-    enableRowSelection,
-    singleSelect,
-    singleSelectGroupName,
-  ]);
+  }, [columns, expandOnSelect, enableExpanding, enableRowSelection, rest]);
 
   const table = useReactTable({
     data: memoizedData,
     columns: memoizedColumns,
     enableRowSelection,
-    enableMultiRowSelection: !singleSelect,
+    enableMultiRowSelection: !rest.singleSelect,
     enableSorting,
     enableFilters,
     enableExpanding,
@@ -144,20 +113,13 @@ export const Table = <
 
 export type VirtualizedTableProps<
   TData extends TableRowData<TData>,
-  TValue,
-  TColumns extends ColumnDef<TData, TValue>[]
-> = HasHeight & TableProps<TData, TValue, TColumns>;
+  TValue
+> = HasHeight & TableProps<TData, TValue>;
 
-export const VirtualizedTable = <
-  TData extends TableRowData<TData>,
-  TValue,
-  TColumns extends ColumnDef<TData, TValue>[]
->({
+export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
   data,
   columns,
   pageSize,
-  singleSelect,
-  singleSelectGroupName,
   enableExpanding,
   enableSorting,
   enableFilters,
@@ -166,7 +128,7 @@ export const VirtualizedTable = <
   renderSubComponent,
   onChange,
   ...rest
-}: VirtualizedTableProps<TData, TValue, TColumns>) => {
+}: VirtualizedTableProps<TData, TValue>) => {
   if (pageSize && pageSize < 1) {
     throw new Error('Page size must be greater than or equal to 1');
   }
@@ -179,9 +141,8 @@ export const VirtualizedTable = <
     if (enableRowSelection) {
       modifiedColumns = withSelectColumn({
         columns: modifiedColumns,
-        singleSelect,
-        singleSelectGroupName,
         expandOnSelect,
+        ...rest,
       });
     }
 
@@ -193,20 +154,13 @@ export const VirtualizedTable = <
     }
 
     return modifiedColumns;
-  }, [
-    columns,
-    expandOnSelect,
-    enableExpanding,
-    enableRowSelection,
-    singleSelect,
-    singleSelectGroupName,
-  ]);
+  }, [columns, expandOnSelect, enableExpanding, enableRowSelection, rest]);
 
   const table = useReactTable({
     data: memoizedData,
     columns: memoizedColumns,
     enableRowSelection,
-    enableMultiRowSelection: !singleSelect,
+    enableMultiRowSelection: !rest.singleSelect,
     enableSorting,
     enableFilters,
     enableExpanding,
@@ -230,9 +184,10 @@ export const VirtualizedTable = <
   const state = table.getState();
   const previousState = usePrevious(state);
 
-  const virtualizer = useVirtual({
-    parentRef: tableContainerRef,
-    size: rows.length,
+  const virtualizer = useVirtualizer({
+    count: rows.length,
+    getScrollElement: () => tableContainerRef.current,
+    estimateSize: () => 34,
     overscan: 10,
   });
 
@@ -249,10 +204,12 @@ export const VirtualizedTable = <
     onChange(state);
   }, [state, previousState, onChange]);
 
+  const { singleSelect: _, ...styles } = rest;
+
   return (
     <div
       ref={tableContainerRef}
-      sx={{ ...rest, borderRadius: 'xl', overflow: 'auto' }}
+      sx={{ ...styles, borderRadius: 'xl', overflow: 'auto' }}
     >
       <table sx={{ width: '100%', borderRadius: 'xl', overflow: 'clip' }}>
         <TableHeader {...table} />

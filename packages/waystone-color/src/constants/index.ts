@@ -4,5 +4,5 @@ export const THEME_COLOR_STOPS = [
 
 export const COLOR_STOPS = [0, ...THEME_COLOR_STOPS, 1000] as const;
 
-export type ColorStop = typeof COLOR_STOPS[number];
-export type ThemeColorStop = typeof THEME_COLOR_STOPS[number];
+export type ColorStop = (typeof COLOR_STOPS)[number];
+export type ThemeColorStop = (typeof THEME_COLOR_STOPS)[number];

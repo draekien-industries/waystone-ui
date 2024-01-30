@@ -6,3 +6,5 @@
 **/*.ico
 **/*.png
 .!(storybook)
+**/*.generated.*
+**/*.g.*

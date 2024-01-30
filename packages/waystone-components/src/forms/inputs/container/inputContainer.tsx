@@ -1,12 +1,11 @@
-/** @jsxImportSource theme-ui */
 import { StatusVariant } from '@waystone/core';
 import { Flex } from 'theme-ui';
 import { HasChildren, HasVariant, HasWidth } from '../../../common';
 import { Icon } from '../../../icon';
 import { Label } from '../../../label';
 import { Text } from '../../../text';
-import * as styles from './inputContainer.styles';
 import * as FX from './inputContainer.fx';
+import * as styles from './inputContainer.styles';
 
 export interface InputContainerProps
   extends HasVariant<StatusVariant>,

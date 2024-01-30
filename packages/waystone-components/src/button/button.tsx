@@ -1,10 +1,11 @@
-/** @jsxImportSource theme-ui */
-import React from 'react';
+'use client';
+
 import { ButtonVariant, Size } from '@waystone/core';
+import { useMemo } from 'react';
 import {
+  Flex,
   Button as ThemeUiButton,
   ButtonProps as ThemeUiButtonProps,
-  Flex,
 } from 'theme-ui';
 import {
   CanActivate,
@@ -15,17 +16,17 @@ import {
   HasVariant,
   HasWidth,
 } from '../common';
-import { Spinner } from '../spinner';
-import { Icon, IconProps } from '../icon';
-import { Text } from '../text';
 import { useIsDarkMode } from '../hooks/useIsDarkMode';
-import {
-  buttonAddonCss,
-  ButtonAddonCssParams,
-  buttonCss,
-  ButtonCssParams,
-} from './button.styles';
+import { Icon, IconProps } from '../icon';
+import { Spinner } from '../spinner';
+import { Text } from '../text';
 import { getTextVariant } from './button.fx';
+import {
+  ButtonAddonCssParams,
+  ButtonCssParams,
+  buttonAddonCss,
+  buttonCss,
+} from './button.styles';
 
 export interface ButtonProps
   extends Omit<ThemeUiButtonProps, 'sx' | 'variant' | 'children'>,
@@ -72,7 +73,7 @@ export const Button = ({
     !!children && (!loading || !hideContentWhileLoading);
   const shouldRenderIcon = !loading && icon;
 
-  const buttonSx = React.useMemo(() => {
+  const buttonSx = useMemo(() => {
     const buttonCssParams: ButtonCssParams = {
       variant,
       size,
@@ -87,7 +88,7 @@ export const Button = ({
     return buttonCss(buttonCssParams);
   }, [variant, size, isDarkMode, active, width, minWidth, maxWidth, fullWidth]);
 
-  const buttonAddonSx = React.useMemo(() => {
+  const buttonAddonSx = useMemo(() => {
     const buttonAddonCssParams: ButtonAddonCssParams = {
       variant,
       size,

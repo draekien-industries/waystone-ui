@@ -1,4 +1,6 @@
-import { screen, render, fireEvent } from '@waystone/testing-library';
+'use client';
+
+import { fireEvent, render, screen } from '@waystone/testing-library';
 import { ButtonGroup } from './buttonGroup';
 
 describe('The ButtonGroup component', () => {

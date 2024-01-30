@@ -1,10 +1,11 @@
-/** @jsxImportSource theme-ui */
-import { useState } from 'react';
+'use client';
+
 import {
+  StyleName,
   SupportedLanguage,
   SyntaxHighlighter,
-  StyleName,
 } from '@waystone/syntax-highlighter';
+import { useState } from 'react';
 import { Icon } from '../icon/icon';
 import { copy } from './codeBlock.fx';
 import {

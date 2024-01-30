@@ -1,5 +1,3 @@
-/** @jsxImportSource theme-ui */
-
 import { alpha } from '@theme-ui/color';
 
 export interface OverlayProps {

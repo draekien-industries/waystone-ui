@@ -1,44 +1,45 @@
 {
-  "name": "@waystone/theme",
-  "version": "9.1.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/draekien-industries/waystone-ui"
+  "author": "draekien-industries",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@theme-ui/color": "^0.16.0",
+    "@waystone/core": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.16.0"
   },
   "description": "The react component library used by draekien-industries",
-  "author": "draekien-industries",
-  "sideEffects": false,
-  "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
-  "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
-    "lint": "eslint src --fix",
-    "lint:release": "eslint src",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf storybook-static && rm -rf coverage",
-    "test": "jest --coverage --passWithNoTests",
-    "test:release": "jest --coverage --passWithNoTests",
-    "test:update": "jest --coverage --passWithNoTests -u",
-    "test:watch": "jest --coverage --passWithNoTests --watch -u"
-  },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.0.4",
     "@waystone/tsconfig": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
     "eslint-preset-waystone": "workspace:*"
   },
-  "dependencies": {
-    "@theme-ui/color": "^0.16.0",
-    "@emotion/react": "^11.11.1",
-    "@waystone/core": "workspace:*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.0"
-  }
+  "files": [
+    "dist/**"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "name": "@waystone/theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf storybook-static && rm -rf coverage",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "eslint src --fix",
+    "lint:release": "eslint src",
+    "test": "jest --coverage --passWithNoTests",
+    "test:release": "jest --coverage --passWithNoTests",
+    "test:update": "jest --coverage --passWithNoTests -u",
+    "test:watch": "jest --coverage --passWithNoTests --watch -u"
+  },
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "version": "9.1.0"
 }

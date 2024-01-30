@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 import { InputContainer, InputContainerProps } from '@waystone/components/src';
+import * as React from 'react';
 
 export default {
   title: 'Components/InputContainer',

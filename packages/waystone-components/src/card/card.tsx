@@ -1,4 +1,5 @@
-/** @jsxImportSource theme-ui */
+'use client';
+
 import { useColorMode } from 'theme-ui';
 import { CanBeFullWidth, HasHeight, HasWidth } from '../common/interfaces';
 import * as styles from './card.styles';

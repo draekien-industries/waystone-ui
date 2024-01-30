@@ -1,7 +1,6 @@
-/** @jsxImportSource theme-ui */
 import { Row } from '@tanstack/react-table';
+import { useVirtualizer } from '@tanstack/react-virtual';
 import { Fragment, ReactElement } from 'react';
-import { useVirtual } from 'react-virtual';
 import { TableCell } from './table.cell';
 import { TableRow } from './table.row';
 import { TableRowSubComponent } from './table.row.subComponent';
@@ -10,7 +9,7 @@ import { RenderSubComponentProps, TableRowData } from './table.types';
 export type TableBodyProps<TData extends TableRowData<TData>> = {
   renderSubComponent?: (props: RenderSubComponentProps<TData>) => ReactElement;
   rows: Row<TData>[];
-  virtualizer?: ReturnType<typeof useVirtual>;
+  virtualizer?: ReturnType<typeof useVirtualizer<HTMLDivElement, Element>>;
 };
 
 export const TableBody = <TData extends TableRowData<TData>>({
@@ -19,7 +18,10 @@ export const TableBody = <TData extends TableRowData<TData>>({
   virtualizer,
 }: TableBodyProps<TData>) => {
   if (virtualizer) {
-    const { virtualItems: virtualRows, totalSize } = virtualizer;
+    const { getTotalSize, getVirtualItems } = virtualizer;
+
+    const virtualRows = getVirtualItems();
+    const totalSize = getTotalSize();
 
     const paddingTop =
       virtualRows.length > 0 ? virtualRows?.[0]?.start || 0 : 0;

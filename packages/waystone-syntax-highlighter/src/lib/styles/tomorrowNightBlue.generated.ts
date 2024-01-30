@@ -1,98 +1,98 @@
 export const tomorrowNightBlue = {
   're code.hljs': {
-    display: 'block',
-    overflowX: 'auto',
-    padding: '1em',
+    'display': 'block',
+    'overflowX': 'auto',
+    'padding': '1em'
   },
   'ode.hljs': {
-    padding: '3px 5px',
+    'padding': '3px 5px'
   },
   'hljs-comment': {
-    color: '#7285b7',
+    'color': '#7285b7'
   },
   'hljs-quote': {
-    color: '#7285b7',
+    'color': '#7285b7'
   },
   'hljs-deletion': {
-    color: '#ff9da4',
+    'color': '#ff9da4'
   },
   'hljs-name': {
-    color: '#ff9da4',
+    'color': '#ff9da4'
   },
   'hljs-regexp': {
-    color: '#ff9da4',
+    'color': '#ff9da4'
   },
   'hljs-selector-class': {
-    color: '#ff9da4',
+    'color': '#ff9da4'
   },
   'hljs-selector-id': {
-    color: '#ff9da4',
+    'color': '#ff9da4'
   },
   'hljs-tag': {
-    color: '#ff9da4',
+    'color': '#ff9da4'
   },
   'hljs-template-variable': {
-    color: '#ff9da4',
+    'color': '#ff9da4'
   },
   'hljs-variable': {
-    color: '#ff9da4',
+    'color': '#ff9da4'
   },
   'hljs-built_in': {
-    color: '#ffc58f',
+    'color': '#ffc58f'
   },
   'hljs-link': {
-    color: '#ffc58f',
+    'color': '#ffc58f'
   },
   'hljs-literal': {
-    color: '#ffc58f',
+    'color': '#ffc58f'
   },
   'hljs-meta': {
-    color: '#ffc58f',
+    'color': '#ffc58f'
   },
   'hljs-number': {
-    color: '#ffc58f',
+    'color': '#ffc58f'
   },
   'hljs-params': {
-    color: '#ffc58f',
+    'color': '#ffc58f'
   },
   'hljs-type': {
-    color: '#ffc58f',
+    'color': '#ffc58f'
   },
   'hljs-attribute': {
-    color: '#ffeead',
+    'color': '#ffeead'
   },
   'hljs-addition': {
-    color: '#d1f1a9',
+    'color': '#d1f1a9'
   },
   'hljs-bullet': {
-    color: '#d1f1a9',
+    'color': '#d1f1a9'
   },
   'hljs-string': {
-    color: '#d1f1a9',
+    'color': '#d1f1a9'
   },
   'hljs-symbol': {
-    color: '#d1f1a9',
+    'color': '#d1f1a9'
   },
   'hljs-section': {
-    color: '#bbdaff',
+    'color': '#bbdaff'
   },
   'hljs-title': {
-    color: '#bbdaff',
+    'color': '#bbdaff'
   },
   'hljs-keyword': {
-    color: '#ebbbff',
+    'color': '#ebbbff'
   },
   'hljs-selector-tag': {
-    color: '#ebbbff',
+    'color': '#ebbbff'
   },
-  hljs: {
-    background: '#002451',
-    color: '#fff',
+  'hljs': {
+    'background': '#002451',
+    'color': '#fff'
   },
   'hljs-emphasis': {
-    fontStyle: 'italic',
+    'fontStyle': 'italic'
   },
   'hljs-strong': {
-    fontWeight: '700',
-  },
-};
+    'fontWeight': '700'
+  }
+}

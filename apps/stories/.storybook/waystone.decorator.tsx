@@ -1,8 +1,9 @@
-/** @jsxImportSource theme-ui */
-import { useEffect } from 'react';
-import { useColorMode } from 'theme-ui';
+'use client';
+
 import { Waystone } from '@waystone/theme/src';
+import { useEffect } from 'react';
 import { useDarkMode } from 'storybook-dark-mode';
+import { useColorMode } from 'theme-ui';
 
 const ThemeChanger = () => {
   const isDarkMode = useDarkMode();

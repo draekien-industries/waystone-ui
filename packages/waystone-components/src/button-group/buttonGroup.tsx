@@ -1,4 +1,5 @@
-/** @jsxImportSource theme-ui */
+'use client';
+
 import { Flex } from 'theme-ui';
 import { Button, ButtonProps } from '../button';
 import { buttonGroupCss } from './buttonGroup.styles';

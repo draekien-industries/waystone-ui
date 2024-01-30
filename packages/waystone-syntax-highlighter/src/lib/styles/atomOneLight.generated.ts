@@ -1,122 +1,122 @@
 export const atomOneLight = {
   're code.hljs': {
-    display: 'block',
-    overflowX: 'auto',
-    padding: '1em',
+    'display': 'block',
+    'overflowX': 'auto',
+    'padding': '1em'
   },
   'ode.hljs': {
-    padding: '3px 5px',
+    'padding': '3px 5px'
   },
-  hljs: {
-    color: '#383a42',
-    background: '#fafafa',
+  'hljs': {
+    'color': '#383a42',
+    'background': '#fafafa'
   },
   'hljs-comment': {
-    color: '#a0a1a7',
-    fontStyle: 'italic',
+    'color': '#a0a1a7',
+    'fontStyle': 'italic'
   },
   'hljs-quote': {
-    color: '#a0a1a7',
-    fontStyle: 'italic',
+    'color': '#a0a1a7',
+    'fontStyle': 'italic'
   },
   'hljs-doctag': {
-    color: '#a626a4',
+    'color': '#a626a4'
   },
   'hljs-formula': {
-    color: '#a626a4',
+    'color': '#a626a4'
   },
   'hljs-keyword': {
-    color: '#a626a4',
+    'color': '#a626a4'
   },
   'hljs-deletion': {
-    color: '#e45649',
+    'color': '#e45649'
   },
   'hljs-name': {
-    color: '#e45649',
+    'color': '#e45649'
   },
   'hljs-section': {
-    color: '#e45649',
+    'color': '#e45649'
   },
   'hljs-selector-tag': {
-    color: '#e45649',
+    'color': '#e45649'
   },
   'hljs-subst': {
-    color: '#e45649',
+    'color': '#e45649'
   },
   'hljs-literal': {
-    color: '#0184bb',
+    'color': '#0184bb'
   },
   'hljs-addition': {
-    color: '#50a14f',
+    'color': '#50a14f'
   },
   'hljs-attribute': {
-    color: '#50a14f',
+    'color': '#50a14f'
   },
   'hljs-meta .hljs-string': {
-    color: '#50a14f',
+    'color': '#50a14f'
   },
   'hljs-regexp': {
-    color: '#50a14f',
+    'color': '#50a14f'
   },
   'hljs-string': {
-    color: '#50a14f',
+    'color': '#50a14f'
   },
   'hljs-attr': {
-    color: '#986801',
+    'color': '#986801'
   },
   'hljs-number': {
-    color: '#986801',
+    'color': '#986801'
   },
   'hljs-selector-attr': {
-    color: '#986801',
+    'color': '#986801'
   },
   'hljs-selector-class': {
-    color: '#986801',
+    'color': '#986801'
   },
   'hljs-selector-pseudo': {
-    color: '#986801',
+    'color': '#986801'
   },
   'hljs-template-variable': {
-    color: '#986801',
+    'color': '#986801'
   },
   'hljs-type': {
-    color: '#986801',
+    'color': '#986801'
   },
   'hljs-variable': {
-    color: '#986801',
+    'color': '#986801'
   },
   'hljs-bullet': {
-    color: '#4078f2',
+    'color': '#4078f2'
   },
   'hljs-link': {
-    color: '#4078f2',
-    textDecoration: 'underline',
+    'color': '#4078f2',
+    'textDecoration': 'underline'
   },
   'hljs-meta': {
-    color: '#4078f2',
+    'color': '#4078f2'
   },
   'hljs-selector-id': {
-    color: '#4078f2',
+    'color': '#4078f2'
   },
   'hljs-symbol': {
-    color: '#4078f2',
+    'color': '#4078f2'
   },
   'hljs-title': {
-    color: '#4078f2',
+    'color': '#4078f2'
   },
   'hljs-built_in': {
-    color: '#c18401',
+    'color': '#c18401'
   },
   'hljs-class .hljs-title': {
-    color: '#c18401',
+    'color': '#c18401'
   },
   'hljs-title.class_': {
-    color: '#c18401',
+    'color': '#c18401'
   },
   'hljs-emphasis': {
-    fontStyle: 'italic',
+    'fontStyle': 'italic'
   },
   'hljs-strong': {
-    fontWeight: '700',
-  },
-};
+    'fontWeight': '700'
+  }
+}

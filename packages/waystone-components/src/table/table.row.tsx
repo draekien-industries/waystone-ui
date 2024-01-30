@@ -1,3 +1,5 @@
+'use client';
+
 import { memo, ReactNode, useMemo } from 'react';
 import { useIsDarkMode } from '../hooks';
 
