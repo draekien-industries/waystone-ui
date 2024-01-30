@@ -194,7 +194,7 @@ export const ConditionalSubRowComponent = {
 
 export const Virtualized = {
   args: {
-    data: makeData(1000),
+    data: makeData(100),
     columns,
   },
   render: (args) => <Table.Virtualized {...args} height="500px" />,
