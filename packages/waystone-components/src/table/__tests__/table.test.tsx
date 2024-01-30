@@ -117,4 +117,26 @@ describe('Components: Table', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot when virtualized', () => {
+    const { container } = render(
+      <Table.Virtualized data={makeData(100)} columns={columns} />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot when empty', () => {
+    const { container } = render(<Table columns={columns} data={[]} />);
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot when virtualized and empty', () => {
+    const { container } = render(
+      <Table.Virtualized data={[]} columns={columns} />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

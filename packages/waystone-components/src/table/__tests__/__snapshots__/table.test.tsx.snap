@@ -1,5 +1,115 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Components: Table should match snapshot when empty 1`] = `
+<div>
+  <table
+    class="css-1hq85fi-Table"
+  >
+    <thead
+      class="css-6jca8n-TableHeader"
+    >
+      <tr>
+        <th
+          class="css-12x0h47"
+          colspan="1"
+        >
+          Surname
+        </th>
+        <th
+          class="css-12x0h47"
+          colspan="1"
+        >
+          Given name(s)
+        </th>
+        <th
+          class="css-12x0h47"
+          colspan="1"
+        >
+          Status
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`Components: Table should match snapshot when virtualized 1`] = `
+<div>
+  <div
+    class="css-mdk0v1-VirtualizedTable"
+  >
+    <table
+      class="css-8mj0tz-VirtualizedTable"
+    >
+      <thead
+        class="css-6jca8n-TableHeader"
+      >
+        <tr>
+          <th
+            class="css-12x0h47"
+            colspan="1"
+          >
+            Surname
+          </th>
+          <th
+            class="css-12x0h47"
+            colspan="1"
+          >
+            Given name(s)
+          </th>
+          <th
+            class="css-12x0h47"
+            colspan="1"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Components: Table should match snapshot when virtualized and empty 1`] = `
+<div>
+  <div
+    class="css-mdk0v1-VirtualizedTable"
+  >
+    <table
+      class="css-8mj0tz-VirtualizedTable"
+    >
+      <thead
+        class="css-6jca8n-TableHeader"
+      >
+        <tr>
+          <th
+            class="css-12x0h47"
+            colspan="1"
+          >
+            Surname
+          </th>
+          <th
+            class="css-12x0h47"
+            colspan="1"
+          >
+            Given name(s)
+          </th>
+          <th
+            class="css-12x0h47"
+            colspan="1"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
+
 exports[`Components: Table should match snapshot with default props 1`] = `
 <div>
   <table

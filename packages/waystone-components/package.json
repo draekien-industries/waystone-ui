@@ -25,7 +25,8 @@
     "@waystone/tsconfig": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "eslint-preset-waystone": "workspace:*",
-    "identity-obj-proxy": "^3.0.0"
+    "identity-obj-proxy": "^3.0.0",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "files": [
     "dist/**"
