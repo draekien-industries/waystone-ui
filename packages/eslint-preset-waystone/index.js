@@ -1,9 +1,12 @@
+const eslintPluginWaystone = require('./plugins/eslint-plugin-waystone');
+
 module.exports = {
   extends: [
     'airbnb',
     'turbo',
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
@@ -19,16 +22,11 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [
-    'import',
-    '@typescript-eslint',
-    'jsx-a11y',
-    'react',
-    'react-hooks',
-    'testing-library',
-    'jest',
-  ],
+  plugins: {
+    waystone: eslintPluginWaystone,
+  },
   rules: {
+    'waystone/enforce-use-client': 'warn',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     '@typescript-eslint/no-unused-vars': [
       'error',

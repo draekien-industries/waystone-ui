@@ -1,17 +1,5 @@
 {
-  "name": "eslint-preset-waystone",
-  "version": "1.2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/draekien-industries/waystone-ui"
-  },
-  "description": "The eslint presets used by draekien-industries",
   "author": "draekien-industries",
-  "main": "index.js",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
@@ -26,6 +14,22 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.15",
-    "eslint-plugin-testing-library": "^5.11.0"
-  }
+    "eslint-plugin-testing-library": "^5.11.0",
+    "globals": "^13.24.0"
+  },
+  "description": "The eslint presets used by draekien-industries",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "eslint-preset-waystone",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "version": "1.2.0"
 }
