@@ -1,27 +1,20 @@
-name: Publish Codecov
+name: Chromatic
 
-on:  
-  workflow_dispatch:
-  pull_request:
-    branches: 
-      - main
-    paths:
-      - 'packages/waystone-*/**'
-      - '.github/workflows/coverage.yml'
-      - '!**/*.md'
+on:
   push:
-    branches:
-      - main
     paths:
       - 'packages/waystone-*/**'
-      - '.github/workflows/coverage.yml'
+      - '.github/workflows/chromatic.yml'
       - '!**/*.md'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
+env:
+  CI: true
+  PNPM_CACHE_FOLDER: .pnpm-store
+
 jobs:
-  coverage:
-    name: Upload coverage to Codecov
+  chromatic:
     runs-on: ubuntu-latest
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -41,13 +34,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: 'pnpm'
-      
+
       - name: Install Dependencies
         run: pnpm install
-
-      - name: Run tests and collect coverage
-        run: pnpm test:release
-
-      - name: Upload results to codecov
-        uses: codecov/codecov-action@v3
-          
+      
+      - name: Build Packages
+        run: pnpm run build
+      
+      - name: Publish storybook if a publish happens
+        id: chromatic
+        uses: chromaui/action@latest
+        with:
+          storybookBuildDir: 'apps/stories/storybook-static'
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          autoAcceptChanges: 'main'
+          skip: 'dependabot/**'

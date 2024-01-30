@@ -32,10 +32,10 @@ Click the badge below to view the components in storybook.
 
 ```bash
 # NPM
-npm install @waystone/components @waystone/core @waystone/utils
+npm install @waystone/ui
 
 # Yarn
-yarn add @waystone/components @waystone/core @waystone/utils
+yarn add @waystone/ui
 ```
 
 ## Contributing
