@@ -1,6 +1,6 @@
 'use strict';
 
-const { reactEvents } = require('../constants/reactEvents');
+const { reactEvents } = require('./reactEvents');
 const globals = require('globals');
 const Components = require('eslint-plugin-react/lib/util/Components');
 const componentUtil = require('eslint-plugin-react/lib/util/componentUtil');

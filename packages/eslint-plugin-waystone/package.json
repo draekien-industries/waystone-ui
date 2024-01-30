@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.32.2",
+    "globals": "^13.24.0"
+  },
+  "description": "Custom eslint rules for the Waystone project",
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "name": "eslint-plugin-waystone",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "version": "1.0.0"
+}

@@ -1,5 +1,3 @@
-const eslintPluginWaystone = require('./plugins/eslint-plugin-waystone');
-
 module.exports = {
   extends: [
     'airbnb',
@@ -21,9 +19,6 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-  },
-  plugins: {
-    waystone: eslintPluginWaystone,
   },
   rules: {
     'waystone/enforce-use-client': 'warn',

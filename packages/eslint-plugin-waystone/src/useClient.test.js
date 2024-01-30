@@ -1,7 +1,7 @@
 'use strict';
 
 const { RuleTester } = require('eslint');
-const useClientRule = require('../useClient');
+const useClientRule = require('./useClient');
 
 const ruleTester = new RuleTester({
   parserOptions: {
