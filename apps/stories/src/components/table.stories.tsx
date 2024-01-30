@@ -1,8 +1,8 @@
-import { Table } from '@waystone/components/src/table/table';
-import { Meta, StoryObj } from '@storybook/react';
 import { faker } from '@faker-js/faker';
+import { Meta } from '@storybook/react';
 import { ColumnDef } from '@tanstack/react-table';
 import { Card, Label, Text } from '@waystone/components';
+import { Table } from '@waystone/components/src/table/table';
 import { Flex } from 'theme-ui';
 
 export type Person = {
@@ -66,19 +66,23 @@ const columns: ColumnDef<Person>[] = [
   },
 ];
 
-const meta: Meta<typeof Table<Person, unknown, ColumnDef<Person>[]>> = {
+const meta = {
   title: 'Components/Table',
   component: Table,
-};
+  args: {
+    data: makeData(100),
+    columns,
+  },
+} satisfies Meta<typeof Table<Person>>;
 
-export const Basic: StoryObj<typeof meta> = {
+export const Basic = {
   args: {
     data: makeData(100),
     columns,
   },
 };
 
-export const SingleSelect: StoryObj<typeof meta> = {
+export const SingleSelect = {
   args: {
     data: makeData(100),
     columns,
@@ -87,16 +91,15 @@ export const SingleSelect: StoryObj<typeof meta> = {
   },
 };
 
-export const CustomSelectLogic: StoryObj<typeof meta> = {
+export const CustomSelectLogic = {
   args: {
     data: makeData(100),
     columns,
-    enableRowSelection: (row) =>
-      row.getValue<string>('surname').startsWith('D'),
+    enableRowSelection: (row) => row.getValue('surname').startsWith('D'),
   },
 };
 
-export const MultiSelect: StoryObj<typeof meta> = {
+export const MultiSelect = {
   args: {
     data: makeData(100),
     columns,
@@ -104,7 +107,7 @@ export const MultiSelect: StoryObj<typeof meta> = {
   },
 };
 
-export const Paginated: StoryObj<typeof meta> = {
+export const Paginated = {
   args: {
     data: makeData(1000),
     columns,
@@ -112,7 +115,7 @@ export const Paginated: StoryObj<typeof meta> = {
   },
 };
 
-export const ManualExpand: StoryObj<typeof meta> = {
+export const ManualExpand = {
   args: {
     data: makeData(50, 5, 3),
     columns,
@@ -120,7 +123,7 @@ export const ManualExpand: StoryObj<typeof meta> = {
   },
 };
 
-export const ExpandOnSelect: StoryObj<typeof meta> = {
+export const ExpandOnSelect = {
   args: {
     data: makeData(50, 5, 3),
     columns,
@@ -130,7 +133,7 @@ export const ExpandOnSelect: StoryObj<typeof meta> = {
   },
 };
 
-export const SubRowComponent: StoryObj<typeof meta> = {
+export const SubRowComponent = {
   args: {
     data: makeData(20),
     columns,
@@ -159,7 +162,7 @@ export const SubRowComponent: StoryObj<typeof meta> = {
   },
 };
 
-export const ConditionalSubRowComponent: StoryObj<typeof meta> = {
+export const ConditionalSubRowComponent = {
   args: {
     data: makeData(20),
     columns,
@@ -189,7 +192,7 @@ export const ConditionalSubRowComponent: StoryObj<typeof meta> = {
   },
 };
 
-export const Virtualized: StoryObj<typeof meta> = {
+export const Virtualized = {
   args: {
     data: makeData(1000),
     columns,

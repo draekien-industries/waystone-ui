@@ -30,6 +30,10 @@ module.exports = {
   ],
   rules: {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { varsIgnorePattern: '^_*' },
+    ],
     'react/function-component-definition': [
       'warn',
       {

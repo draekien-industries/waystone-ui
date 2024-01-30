@@ -19,7 +19,12 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
             <th
               key={header.id}
               colSpan={header.colSpan}
-              sx={{ width: header.getSize(), paddingY: 'xs', paddingX: 'md' }}
+              sx={{
+                width: header.getSize(),
+                paddingY: 'xs',
+                paddingX: 'md',
+                textAlign: 'left',
+              }}
             >
               {!header.isPlaceholder &&
                 flexRender(header.column.columnDef.header, header.getContext())}

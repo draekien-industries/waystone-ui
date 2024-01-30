@@ -1,29 +1,18 @@
 import { ColumnDef, TableState } from '@tanstack/react-table';
-import { Checkbox } from '../forms';
 import { Button } from '../button';
-
-export type WithSelectColumnParams<
-  TData,
-  TValue,
-  TSingleSelect extends boolean = boolean
-> = {
-  columns: ColumnDef<TData, TValue>[];
-  singleSelect?: TSingleSelect;
-  singleSelectGroupName: TSingleSelect extends true ? string : undefined;
-  expandOnSelect?: boolean;
-};
+import { Checkbox, Radio } from '../forms';
+import { WithSelectColumnParams } from './table.types';
 
 export const withSelectColumn = <TData, TValue>({
   columns,
-  singleSelect,
-  singleSelectGroupName,
   expandOnSelect,
+  ...rest
 }: WithSelectColumnParams<TData, TValue>) => {
   const select: ColumnDef<TData, TValue> = {
     id: 'select',
-    size: 42,
+    size: 12,
     header: ({ table }) =>
-      !singleSelect && (
+      !rest.singleSelect && (
         <Checkbox
           {...{
             checked: table.getIsAllRowsSelected(),
@@ -39,10 +28,9 @@ export const withSelectColumn = <TData, TValue>({
         />
       ),
     cell: ({ row }) =>
-      singleSelect ? (
-        <input
-          type="radio"
-          name={singleSelectGroupName}
+      rest.singleSelect ? (
+        <Radio
+          name={rest.singleSelectGroupName}
           {...{
             sx: {
               marginLeft: `${row.depth * 2}rem`,
@@ -96,7 +84,7 @@ export const withExpandColumn = <TData, TValue>({
 
   const expand: ColumnDef<TData, TValue> = {
     id: 'expand',
-    size: 42,
+    size: 12,
     maxSize: 42,
     header: ({ table }) => (
       <Button
