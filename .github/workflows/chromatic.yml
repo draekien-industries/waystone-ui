@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'packages/waystone-*/**'
-      - '.github/workflows/coverage.yml'
+      - '.github/workflows/chromatic.yml'
       - '!**/*.md'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
