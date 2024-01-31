@@ -1,5 +1,14 @@
 # @waystone/stories
 
+## 9.2.1
+
+### Patch Changes
+
+- @waystone/components@9.2.1
+- @waystone/core@9.2.1
+- @waystone/utils@9.2.1
+- @waystone/theme@9.2.1
+
 ## 9.2.0
 
 ### Patch Changes

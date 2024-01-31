@@ -1,5 +1,11 @@
 # @waystone/testing-library
 
+## 9.1.2
+
+### Patch Changes
+
+- @waystone/theme@9.2.1
+
 ## 9.1.1
 
 ### Patch Changes

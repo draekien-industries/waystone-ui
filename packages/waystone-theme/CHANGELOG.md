@@ -1,5 +1,11 @@
 # @waystone/theme
 
+## 9.2.1
+
+### Patch Changes
+
+- @waystone/core@9.2.1
+
 ## 9.2.0
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @waystone/syntax-highlighter
 
+## 11.0.1
+
+### Patch Changes
+
+- 24a8468: Use os.EOL instead of \n when generating files
+  - @waystone/core@9.2.1
+  - @waystone/utils@9.2.1
+
 ## 11.0.0
 
 ### Patch Changes
