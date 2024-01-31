@@ -5,6 +5,8 @@ import { Card, Label, Text } from '@waystone/components';
 import { Table } from '@waystone/components/src/table/table';
 import { Flex } from 'theme-ui';
 
+faker.seed(24601);
+
 export type Person = {
   firstName: string;
   lastName: string;
