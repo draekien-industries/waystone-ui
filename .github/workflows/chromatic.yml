@@ -3,6 +3,7 @@ name: Chromatic
 on:
   push:
     paths:
+      - 'apps/stories/**'
       - 'packages/waystone-*/**'
       - '.github/workflows/chromatic.yml'
       - '!**/*.md'
