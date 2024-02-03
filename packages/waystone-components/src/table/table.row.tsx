@@ -1,11 +1,14 @@
 'use client';
 
-import { memo, ReactNode, useMemo } from 'react';
+import { memo, ReactElement, useMemo } from 'react';
 import { useIsDarkMode } from '../hooks';
+import { TableCellProps } from './table.cell';
 
-export type TableRowProps = {
+export type TableRowProps<TData, TValue> = {
   disabled?: boolean;
-  cells: ReactNode;
+  children:
+    | ReactElement<TableCellProps<TData, TValue>>
+    | ReactElement<TableCellProps<TData, TValue>>[];
 };
 
 const getBackgroundColor = (darkMode: boolean, disabled: boolean) => {
@@ -16,7 +19,10 @@ const getBackgroundColor = (darkMode: boolean, disabled: boolean) => {
   return disabled ? 'b-200' : 'b-100';
 };
 
-const TableRowContent = ({ disabled = false, cells }: TableRowProps) => {
+const TableRowContent = <TData, TValue>({
+  disabled = false,
+  children,
+}: TableRowProps<TData, TValue>) => {
   const darkMode = useIsDarkMode();
 
   const backgroundColor = useMemo(
@@ -31,7 +37,7 @@ const TableRowContent = ({ disabled = false, cells }: TableRowProps) => {
         color: disabled ? 'b-400' : 'text',
       }}
     >
-      {cells}
+      {children}
     </tr>
   );
 };

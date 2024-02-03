@@ -104,7 +104,7 @@ export const Table = <TData extends TableRowData<TData>, TValue = unknown>({
     <>
       <table sx={{ width: '100%', borderRadius: 'xl', overflow: 'clip' }}>
         <TableHeader {...table} />
-        <TableBody rows={rows} renderSubComponent={renderSubComponent} />
+        <TableBody renderSubComponent={renderSubComponent}>{rows}</TableBody>
       </table>
       {pageSize && <TablePagination {...table} />}
     </>
@@ -214,10 +214,11 @@ export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
       <table sx={{ width: '100%', borderRadius: 'xl', overflow: 'clip' }}>
         <TableHeader {...table} />
         <TableBody
-          rows={rows}
           virtualizer={virtualizer}
           renderSubComponent={renderSubComponent}
-        />
+        >
+          {rows}
+        </TableBody>
       </table>
     </div>
   );
