@@ -6,10 +6,7 @@ module.exports = {
   resetMocks: true,
   rootDir: '.',
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
-  setupFilesAfterEnv: [
-    '@testing-library/jest-dom',
-    '@testing-library/jest-dom/extend-expect',
-  ],
+  setupFilesAfterEnv: ['@testing-library/jest-dom'],
   transform: {
     '^.+\\.m?[tj]sx?$': [
       'ts-jest',

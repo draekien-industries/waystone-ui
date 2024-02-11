@@ -7,10 +7,7 @@ module.exports = {
   rootDir: '.',
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
   moduleDirectories: ['node_modules'],
-  setupFilesAfterEnv: [
-    '@testing-library/jest-dom',
-    '@testing-library/jest-dom/extend-expect',
-  ],
+  setupFilesAfterEnv: ['@testing-library/jest-dom'],
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',
     '!<rootDir>/src/**/*.{style,styles}.ts',
