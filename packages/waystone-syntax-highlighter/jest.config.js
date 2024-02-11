@@ -11,7 +11,12 @@ module.exports = {
     '@testing-library/jest-dom/extend-expect',
   ],
   transform: {
-    '\\.[jt]sx?$': 'ts-jest',
+    '^.+\\.m?[tj]sx?$': [
+      'ts-jest',
+      {
+        isolatedModules: true,
+      },
+    ],
   },
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',

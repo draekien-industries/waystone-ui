@@ -1,4 +1,4 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+/** @type {import('ts-jest/dist/types').JestConfigWithTsJest} */
 module.exports = {
   preset: 'ts-jest/presets/js-with-ts',
   verbose: true,
@@ -21,4 +21,12 @@ module.exports = {
     '!<rootDir>/**/{__tests__,__fixtures__}/**',
     '!<rootDir>/**/index.ts',
   ],
+  transform: {
+    '^.+\\.m?[tj]sx?$': [
+      'ts-jest',
+      {
+        isolatedModules: true,
+      },
+    ],
+  },
 };

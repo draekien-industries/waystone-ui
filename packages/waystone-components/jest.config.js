@@ -19,4 +19,12 @@ module.exports = {
     '!<rootDir>/**/{__tests__,__fixtures__}/**',
     '!<rootDir>/**/index.ts',
   ],
+  transform: {
+    '^.+\\.m?[tj]sx?$': [
+      'ts-jest',
+      {
+        isolatedModules: true,
+      },
+    ],
+  },
 };
