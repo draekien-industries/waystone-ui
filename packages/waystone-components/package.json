@@ -1,20 +1,5 @@
 {
   "author": "draekien-industries",
-  "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@tanstack/react-table": "^8.9.1",
-    "@tanstack/react-virtual": "^3.0.2",
-    "@theme-ui/color": "^0.16.1",
-    "@theme-ui/css": "^0.16.1",
-    "@waystone/core": "workspace:*",
-    "@waystone/syntax-highlighter": "workspace:*",
-    "@waystone/utils": "workspace:*",
-    "csstype": "^3.1.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.1",
-    "type-fest": "^3.7.2"
-  },
   "description": "The syntax highlighter library used by draekien-industries",
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
@@ -26,7 +11,8 @@
     "eslint-plugin-waystone": "workspace:*",
     "eslint-preset-waystone": "workspace:*",
     "identity-obj-proxy": "^3.0.0",
-    "resize-observer-polyfill": "^1.5.1"
+    "resize-observer-polyfill": "^1.5.1",
+    "tsup": "^8.0.2"
   },
   "files": [
     "dist/**"
@@ -37,12 +23,18 @@
   "name": "@waystone/components",
   "peerDependencies": {
     "@emotion/react": "^11.11.3",
-    "@theme-ui/color": ">=0.16.0",
+    "@tanstack/react-table": "^8.9.1",
+    "@tanstack/react-virtual": "^3.0.2",
+    "@theme-ui/color": "^0.16.1",
     "@theme-ui/css": "^0.16.1",
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0",
+    "@waystone/core": "workspace:^",
+    "@waystone/syntax-highlighter": "workspace:^",
+    "@waystone/utils": "workspace:^",
+    "csstype": "^3.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "theme-ui": "^0.16.1",
-    "type-fest": ">=3.0.0"
+    "type-fest": "^3.7.2"
   },
   "publishConfig": {
     "access": "public"

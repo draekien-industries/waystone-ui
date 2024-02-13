@@ -58,10 +58,7 @@ importers:
         version: 3.2.5
       ts-jest:
         specifier: ^29.1.2
-        version: 29.1.2(@babel/core@7.23.9)(esbuild@0.19.12)(jest@29.7.0)(typescript@5.3.3)
-      tsup:
-        specifier: ^8.0.2
-        version: 8.0.2(typescript@5.3.3)
+        version: 29.1.2(@babel/core@7.23.9)(jest@29.7.0)(typescript@5.3.3)
       turbo:
         specifier: ^1.12.3
         version: 1.12.3
@@ -70,7 +67,7 @@ importers:
         version: 5.3.3
       webpack:
         specifier: ^5.90.1
-        version: 5.90.1(esbuild@0.19.12)
+        version: 5.90.1
 
   apps/stories:
     dependencies:
@@ -238,7 +235,7 @@ importers:
   packages/waystone-cli:
     dependencies:
       '@waystone/color':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-color
       plop:
         specifier: ^3.1.2
@@ -259,6 +256,9 @@ importers:
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@20.11.17)
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
 
   packages/waystone-components:
     dependencies:
@@ -278,13 +278,13 @@ importers:
         specifier: ^0.16.1
         version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/core':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-core
       '@waystone/syntax-highlighter':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-syntax-highlighter
       '@waystone/utils':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-utils
       csstype:
         specifier: ^3.1.2
@@ -332,6 +332,9 @@ importers:
       resize-observer-polyfill:
         specifier: ^1.5.1
         version: 1.5.1
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
 
   packages/waystone-core:
     dependencies:
@@ -342,7 +345,7 @@ importers:
         specifier: ^0.16.1
         version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/color':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-color
       react:
         specifier: ^18.2.0
@@ -372,6 +375,9 @@ importers:
       eslint-preset-waystone:
         specifier: workspace:*
         version: link:../eslint-preset-waystone
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
 
   packages/waystone-syntax-highlighter:
     dependencies:
@@ -384,9 +390,6 @@ importers:
       '@theme-ui/css':
         specifier: ^0.16.1
         version: 0.16.1(@emotion/react@11.11.3)
-      '@types/hast':
-        specifier: ^3.0.0
-        version: 3.0.0
       css:
         specifier: ^3.0.0
         version: 3.0.0
@@ -418,6 +421,9 @@ importers:
       '@testing-library/user-event':
         specifier: ^14.5.2
         version: 14.5.2(@testing-library/dom@9.3.4)
+      '@types/hast':
+        specifier: ^3.0.0
+        version: 3.0.0
       '@waystone/core':
         specifier: workspace:*
         version: link:../waystone-core
@@ -439,6 +445,9 @@ importers:
       identity-obj-proxy:
         specifier: ^3.0.0
         version: 3.0.0
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
 
   packages/waystone-testing-library:
     dependencies:
@@ -492,7 +501,7 @@ importers:
         specifier: ^0.16.1
         version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/core':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-core
       react:
         specifier: ^18.2.0
@@ -522,6 +531,9 @@ importers:
       eslint-preset-waystone:
         specifier: workspace:*
         version: link:../eslint-preset-waystone
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
 
   packages/waystone-tsconfig: {}
 
@@ -537,19 +549,19 @@ importers:
         specifier: ^0.16.1
         version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/components':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-components
       '@waystone/core':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-core
       '@waystone/syntax-highlighter':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-syntax-highlighter
       '@waystone/theme':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-theme
       '@waystone/utils':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../waystone-utils
       react:
         specifier: ^18.2.0
@@ -576,6 +588,9 @@ importers:
       eslint-preset-waystone:
         specifier: workspace:*
         version: link:../eslint-preset-waystone
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
 
   packages/waystone-utils:
     dependencies:
@@ -610,6 +625,9 @@ importers:
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(typescript@5.3.3)
 
 packages:
 
@@ -5214,7 +5232,7 @@ packages:
     resolution: {integrity: sha512-SoytUJRuf68HXYqcXicQIhCrLQjqeYU2anikr4G3p3Iz+OZO5QDQpDj++gv+RenHsnUBwNZ2dumBArF8VLSk2Q==}
     dependencies:
       '@types/unist': 2.0.7
-    dev: false
+    dev: true
 
   /@types/http-errors@2.0.1:
     resolution: {integrity: sha512-/K3ds8TRAfBvi5vfjuz8y6+GiAYBZ0x4tXv1Av6CWBWn0IlADc+ZX9pMq7oU0fNQPnBwIZl3rmeLp6SBApbxSQ==}
@@ -5404,6 +5422,7 @@ packages:
 
   /@types/unist@2.0.7:
     resolution: {integrity: sha512-cputDpIbFgLUaGQn6Vqg3/YsJwxUwHLO13v3i5ouxT4lat0khip9AEWxtERujXV9wxIB1EyF97BSJFt6vpdI8g==}
+    dev: true
 
   /@types/yargs-parser@21.0.3:
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
@@ -12785,7 +12804,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /terser-webpack-plugin@5.3.10(esbuild@0.19.12)(webpack@5.90.1):
+  /terser-webpack-plugin@5.3.10(webpack@5.90.1):
     resolution: {integrity: sha512-BKFPWlPDndPs+NGGCr1U59t0XScL5317Y0UReNrHaw9/FwhPENlq6bfgs+4yPfyP51vqC1bQ4rp1EfXW5ZSH9w==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -12802,12 +12821,11 @@ packages:
         optional: true
     dependencies:
       '@jridgewell/trace-mapping': 0.3.22
-      esbuild: 0.19.12
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.27.0
-      webpack: 5.90.1(esbuild@0.19.12)
+      webpack: 5.90.1
     dev: true
 
   /terser@5.27.0:
@@ -12978,7 +12996,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-jest@29.1.2(@babel/core@7.23.9)(esbuild@0.19.12)(jest@29.7.0)(typescript@5.3.3):
+  /ts-jest@29.1.2(@babel/core@7.23.9)(jest@29.7.0)(typescript@5.3.3):
     resolution: {integrity: sha512-br6GJoH/WUX4pu7FbZXuWGKGNDuU7b8Uj77g/Sp7puZV6EXzuByl6JrECvm0MzVzSTkSHWTihsXt+5XYER5b+g==}
     engines: {node: ^16.10.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -13001,7 +13019,6 @@ packages:
     dependencies:
       '@babel/core': 7.23.9
       bs-logger: 0.2.6
-      esbuild: 0.19.12
       fast-json-stable-stringify: 2.1.0
       jest: 29.7.0(@types/node@20.11.17)
       jest-util: 29.7.0
@@ -13542,7 +13559,7 @@ packages:
     resolution: {integrity: sha512-kyDivFZ7ZM0BVOUteVbDFhlRt7Ah/CSPwJdi8hBpkK7QLumUqdLtVfm/PX/hkcnrvr0i77fO5+TjZ94Pe+C9iw==}
     dev: true
 
-  /webpack@5.90.1(esbuild@0.19.12):
+  /webpack@5.90.1:
     resolution: {integrity: sha512-SstPdlAC5IvgFnhiRok8hqJo/+ArAbNv7rhU4fnWGHNVfN59HSQFaxZDSAL3IFG2YmqxuRs+IU33milSxbPlog==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -13573,7 +13590,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.19.12)(webpack@5.90.1)
+      terser-webpack-plugin: 5.3.10(webpack@5.90.1)
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:

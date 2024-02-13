@@ -1,6 +1,7 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 import { dirname, join, resolve } from 'path';
 import { mergeConfig } from 'vite';
+
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.tsx'],
   addons: [
@@ -19,12 +20,13 @@ const config: StorybookConfig = {
   },
   typescript: {
     check: false,
-    reactDocgen: 'react-docgen-typescript',
-    reactDocgenTypescriptOptions: {
-      shouldExtractLiteralValuesFromEnum: true,
-      propFilter: (prop) =>
-        prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
-    },
+    reactDocgen: 'react-docgen',
+    // reactDocgen: 'react-docgen-typescript',
+    // reactDocgenTypescriptOptions: {
+    //   shouldExtractLiteralValuesFromEnum: true,
+    //   propFilter: (prop) =>
+    //     prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
+    // },
   },
   staticDirs: ['../public'],
   docs: {
@@ -43,10 +45,16 @@ const config: StorybookConfig = {
           },
         ],
       },
+      build: {
+        rollupOptions: {
+          external: ['@emotion/react'],
+        },
+      },
     });
   },
 };
 export default config;
+
 /**
  * This function is used to resolve the absolute path of a package.
  * It is needed in projects that use Yarn PnP or are set up within a monorepo.
