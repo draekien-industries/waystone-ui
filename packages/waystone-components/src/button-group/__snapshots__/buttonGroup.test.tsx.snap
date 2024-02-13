@@ -6,7 +6,7 @@ exports[`The ButtonGroup component should match snapshot 1`] = `
     class="css-ofnuv4-ButtonGroup"
   >
     <button
-      class="css-4eztqb-Button"
+      class="css-1g5a96t-Button"
       id="button1"
     >
       <span
@@ -16,7 +16,7 @@ exports[`The ButtonGroup component should match snapshot 1`] = `
       </span>
     </button>
     <button
-      class="css-4eztqb-Button"
+      class="css-1g5a96t-Button"
       id="button2"
     >
       <span
