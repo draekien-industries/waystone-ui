@@ -1,4 +1,4 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+/** @type {import('ts-jest/dist/types').JestConfigWithTsJest} */
 module.exports = {
   preset: 'ts-jest/presets/js-with-ts',
   verbose: true,
@@ -6,10 +6,7 @@ module.exports = {
   rootDir: '.',
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
   moduleDirectories: ['node_modules'],
-  setupFilesAfterEnv: [
-    '@testing-library/jest-dom',
-    '@testing-library/jest-dom/extend-expect',
-  ],
+  setupFilesAfterEnv: ['@testing-library/jest-dom'],
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx}',
     '!<rootDir>/src/**/*.{style,styles}.ts',
@@ -21,4 +18,12 @@ module.exports = {
     '!<rootDir>/**/{__tests__,__fixtures__}/**',
     '!<rootDir>/**/index.ts',
   ],
+  transform: {
+    '^.+\\.m?[tj]sx?$': [
+      'ts-jest',
+      {
+        isolatedModules: true,
+      },
+    ],
+  },
 };

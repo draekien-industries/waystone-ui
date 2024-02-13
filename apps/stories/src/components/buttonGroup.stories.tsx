@@ -1,30 +1,40 @@
 'use client';
 
-import { Meta } from '@storybook/react';
-import { ButtonGroup, ButtonGroupProps, Text } from '@waystone/components/src';
+import { Meta, StoryObj } from '@storybook/react';
+import {
+  ButtonGroup,
+  ButtonGroupProps,
+} from '@waystone/components/src/button-group';
+import { Button } from '@waystone/components/src/button';
+import { Text } from '@waystone/components';
 import * as React from 'react';
 
-export default {
+const meta = {
   title: 'Components/ButtonGroup',
   component: ButtonGroup,
-} as Meta<typeof ButtonGroup>;
+  subcomponents: {
+    Button,
+  },
+} satisfies Meta<typeof ButtonGroup>;
 
-export const Default = {
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
   args: {
     buttons: [
       { id: 'one', children: 'One' },
       { id: 'two', children: 'Two' },
     ],
-  } as ButtonGroupProps,
+  },
 };
 
-export const WithIcons = {
+export const WithIcons: StoryObj<typeof meta> = {
   args: {
     buttons: [
       { id: 'yes', children: 'Yes', icon: { name: 'check' } },
       { id: 'no', children: 'No', icon: { name: 'close' } },
     ],
-  } as ButtonGroupProps,
+  },
 };
 
 export const WithOnChangeCallback = () => {

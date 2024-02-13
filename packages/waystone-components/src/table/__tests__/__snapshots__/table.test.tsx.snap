@@ -2059,7 +2059,7 @@ exports[`Components: Table should match snapshot with enableExpanding prop 1`] =
           colspan="1"
         >
           <button
-            class="css-4eztqb-Button"
+            class="css-1g5a96t-Button"
           >
             <div
               class="css-1rtjzo1-Button"

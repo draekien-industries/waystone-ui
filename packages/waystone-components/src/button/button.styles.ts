@@ -86,9 +86,9 @@ export const buttonCss = ({
     ':enabled:hover': {
       ...hoverCss,
     },
-    ':not(active):focus': {
+    ':not(active):focus-visible': {
       ...focusCss,
-      ...outline.focused[':enabled:not(active):focus'],
+      ...outline.focused[':enabled:not(active):focus-visible'],
     },
     ':enabled:active': {
       ...activeCss,
