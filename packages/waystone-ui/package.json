@@ -27,11 +27,6 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "@waystone/tsconfig": "workspace:*",
-    "@waystone/core": "workspace:^",
-    "@waystone/components": "workspace:^",
-    "@waystone/syntax-highlighter": "workspace:^",
-    "@waystone/theme": "workspace:^",
-    "@waystone/utils": "workspace:^",
     "eslint-preset-waystone": "workspace:*",
     "tsup": "^8.0.2"
   },
