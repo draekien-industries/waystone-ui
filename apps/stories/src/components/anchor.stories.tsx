@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
