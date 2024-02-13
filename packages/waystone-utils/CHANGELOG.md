@@ -1,5 +1,11 @@
 # @waystone/utils
 
+## 9.3.0
+
+### Patch Changes
+
+- 7086019: Update dependencies
+
 ## 9.2.1
 
 ## 9.2.0

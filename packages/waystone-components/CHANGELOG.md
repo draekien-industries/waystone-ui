@@ -1,5 +1,20 @@
 # @waystone/components
 
+## 9.3.0
+
+### Minor Changes
+
+- 7086019: Update focus to focus within and button padding
+
+### Patch Changes
+
+- 7086019: Update dependencies
+- Updated dependencies [7086019]
+- Updated dependencies [7086019]
+  - @waystone/core@9.3.0
+  - @waystone/syntax-highlighter@12.0.0
+  - @waystone/utils@9.3.0
+
 ## 9.2.1
 
 ### Patch Changes

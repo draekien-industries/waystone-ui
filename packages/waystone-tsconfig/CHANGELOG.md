@@ -1,5 +1,11 @@
 # @waystone/tsconfig
 
+## 2.0.1
+
+### Patch Changes
+
+- 7086019: Update dependencies
+
 ## 2.0.0
 
 ### Major Changes
