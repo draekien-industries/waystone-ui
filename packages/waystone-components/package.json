@@ -1,18 +1,18 @@
 {
   "author": "draekien-industries",
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.11.3",
     "@tanstack/react-table": "^8.9.1",
     "@tanstack/react-virtual": "^3.0.2",
-    "@theme-ui/color": "^0.16.0",
-    "@theme-ui/css": "^0.16.0",
+    "@theme-ui/color": "^0.16.1",
+    "@theme-ui/css": "^0.16.1",
     "@waystone/core": "workspace:*",
     "@waystone/syntax-highlighter": "workspace:*",
     "@waystone/utils": "workspace:*",
     "csstype": "^3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.0",
+    "theme-ui": "^0.16.1",
     "type-fest": "^3.7.2"
   },
   "description": "The syntax highlighter library used by draekien-industries",
@@ -36,12 +36,12 @@
   "module": "./dist/index.mjs",
   "name": "@waystone/components",
   "peerDependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.11.3",
     "@theme-ui/color": ">=0.16.0",
-    "@theme-ui/css": "^0.16.0",
+    "@theme-ui/css": "^0.16.1",
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0",
-    "theme-ui": "^0.16.0",
+    "theme-ui": "^0.16.1",
     "type-fest": ">=3.0.0"
   },
   "publishConfig": {

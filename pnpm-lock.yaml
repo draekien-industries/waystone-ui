@@ -75,17 +75,17 @@ importers:
   apps/stories:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.1
-        version: 11.11.1(@types/react@18.2.55)(react@18.2.0)
+        specifier: ^11.11.3
+        version: 11.11.3(@types/react@18.2.55)(react@18.2.0)
       '@tanstack/react-table':
         specifier: ^8.9.1
         version: 8.9.1(react-dom@18.2.0)(react@18.2.0)
       '@theme-ui/color':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@theme-ui/css':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/components':
         specifier: workspace:*
         version: link:../../packages/waystone-components
@@ -105,8 +105,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       theme-ui:
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
     devDependencies:
       '@faker-js/faker':
         specifier: ^8.0.2
@@ -263,8 +263,8 @@ importers:
   packages/waystone-components:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.1
-        version: 11.11.1(@types/react@18.2.55)(react@18.2.0)
+        specifier: ^11.11.3
+        version: 11.11.3(@types/react@18.2.55)(react@18.2.0)
       '@tanstack/react-table':
         specifier: ^8.9.1
         version: 8.9.1(react-dom@18.2.0)(react@18.2.0)
@@ -272,11 +272,11 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2(react-dom@18.2.0)(react@18.2.0)
       '@theme-ui/color':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@theme-ui/css':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/core':
         specifier: workspace:*
         version: link:../waystone-core
@@ -296,8 +296,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       theme-ui:
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
       type-fest:
         specifier: ^3.7.2
         version: 3.7.2
@@ -336,11 +336,11 @@ importers:
   packages/waystone-core:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.1
-        version: 11.11.1(@types/react@18.2.55)(react@18.2.0)
+        specifier: ^11.11.3
+        version: 11.11.3(@types/react@18.2.55)(react@18.2.0)
       '@theme-ui/color':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/color':
         specifier: workspace:*
         version: link:../waystone-color
@@ -351,8 +351,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       theme-ui:
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
       type-fest:
         specifier: ^3.0.0
         version: 3.7.2
@@ -376,14 +376,14 @@ importers:
   packages/waystone-syntax-highlighter:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.1
-        version: 11.11.1(@types/react@18.2.55)(react@18.2.0)
+        specifier: ^11.11.3
+        version: 11.11.3(@types/react@18.2.55)(react@18.2.0)
       '@theme-ui/color':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@theme-ui/css':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@types/hast':
         specifier: ^3.0.0
         version: 3.0.0
@@ -403,8 +403,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       theme-ui:
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
       to-camel-case:
         specifier: ^1.0.0
         version: 1.0.0
@@ -452,11 +452,11 @@ importers:
         specifier: ^14.5.2
         version: 14.5.2(@testing-library/dom@9.3.4)
       '@theme-ui/color':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.3)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@theme-ui/css':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.3)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/theme':
         specifier: workspace:*
         version: link:../waystone-theme
@@ -473,8 +473,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       theme-ui:
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
     devDependencies:
       '@waystone/tsconfig':
         specifier: workspace:*
@@ -486,11 +486,11 @@ importers:
   packages/waystone-theme:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.1
-        version: 11.11.1(@types/react@18.2.55)(react@18.2.0)
+        specifier: ^11.11.3
+        version: 11.11.3(@types/react@18.2.55)(react@18.2.0)
       '@theme-ui/color':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/core':
         specifier: workspace:*
         version: link:../waystone-core
@@ -501,8 +501,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       theme-ui:
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
@@ -528,14 +528,14 @@ importers:
   packages/waystone-ui:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.1
-        version: 11.11.1(@types/react@18.2.55)(react@18.2.0)
+        specifier: ^11.11.3
+        version: 11.11.3(@types/react@18.2.55)(react@18.2.0)
       '@theme-ui/color':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@theme-ui/css':
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)
       '@waystone/components':
         specifier: workspace:*
         version: link:../waystone-components
@@ -558,8 +558,8 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       theme-ui:
-        specifier: ^0.16.0
-        version: 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
+        specifier: ^0.16.1
+        version: 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
@@ -1920,13 +1920,6 @@ packages:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
     dev: true
 
-  /@babel/runtime@7.22.6:
-    resolution: {integrity: sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.11
-    dev: false
-
   /@babel/runtime@7.23.9:
     resolution: {integrity: sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==}
     engines: {node: '>=6.9.0'}
@@ -2237,7 +2230,7 @@ packages:
       '@babel/runtime': 7.23.9
       '@emotion/hash': 0.9.1
       '@emotion/memoize': 0.8.1
-      '@emotion/serialize': 1.1.2
+      '@emotion/serialize': 1.1.3
       babel-plugin-macros: 3.1.0
       convert-source-map: 1.9.0
       escape-string-regexp: 4.0.0
@@ -2278,27 +2271,6 @@ packages:
     resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
     dev: false
 
-  /@emotion/react@11.11.1(@types/react@18.2.55)(react@18.2.0):
-    resolution: {integrity: sha512-5mlW1DquU5HaxjLkfkGN1GA/fvVGdyHURRiX/0FHl2cfIfRxSOfmxEH5YS43edp0OldZrZ+dkBKbngxcNCdZvA==}
-    peerDependencies:
-      '@types/react': '*'
-      react: '>=16.8.0'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.22.6
-      '@emotion/babel-plugin': 11.11.0
-      '@emotion/cache': 11.11.0
-      '@emotion/serialize': 1.1.2
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
-      '@emotion/utils': 1.2.1
-      '@emotion/weak-memoize': 0.3.1
-      '@types/react': 18.2.55
-      hoist-non-react-statics: 3.3.2
-      react: 18.2.0
-    dev: false
-
   /@emotion/react@11.11.3(@types/react@18.2.55)(react@18.2.0):
     resolution: {integrity: sha512-Cnn0kuq4DoONOMcnoVsTOR8E+AdnKFf//6kUWc4LCdnxj31pZWn7rIULd6Y7/Js1PiPHzn7SKCM9vB/jBni8eA==}
     peerDependencies:
@@ -2318,16 +2290,6 @@ packages:
       '@types/react': 18.2.55
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
-    dev: false
-
-  /@emotion/serialize@1.1.2:
-    resolution: {integrity: sha512-zR6a/fkFP4EAcCMQtLOhIgpprZOwNmCldtpaISpvz348+DP4Mz8ZoKaGGCQpbzepNIUWbq4w6hNZkwDyKoS+HA==}
-    dependencies:
-      '@emotion/hash': 0.9.1
-      '@emotion/memoize': 0.8.1
-      '@emotion/unitless': 0.8.1
-      '@emotion/utils': 1.2.1
-      csstype: 3.1.2
     dev: false
 
   /@emotion/serialize@1.1.3:
@@ -5017,175 +4979,89 @@ packages:
     dependencies:
       '@testing-library/dom': 9.3.4
 
-  /@theme-ui/color-modes@0.16.0(@emotion/react@11.11.1)(react@18.2.0):
-    resolution: {integrity: sha512-yMfFzQz2uvbVPk4EyZD5/3AzXEQxgfUtTtnDMppqczVXgVk5RQXsUwz6VCMoVe+EwftLuaKgJZH3rgosLVRmvg==}
-    peerDependencies:
-      '@emotion/react': ^11.11.1
-      react: '>=18'
-    dependencies:
-      '@emotion/react': 11.11.1(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.1)
-      deepmerge: 4.3.1
-      react: 18.2.0
-    dev: false
-
-  /@theme-ui/color-modes@0.16.0(@emotion/react@11.11.3)(react@18.2.0):
-    resolution: {integrity: sha512-yMfFzQz2uvbVPk4EyZD5/3AzXEQxgfUtTtnDMppqczVXgVk5RQXsUwz6VCMoVe+EwftLuaKgJZH3rgosLVRmvg==}
+  /@theme-ui/color-modes@0.16.1(@emotion/react@11.11.3)(react@18.2.0):
+    resolution: {integrity: sha512-G2YoNEMwZroRS0DcftUG+E/8WM5/Osf8TRrQLLK+L43HJ4BmaWuBmVeyoNOaPBDlAuqMBx2203VRgoPmUaMqOg==}
     peerDependencies:
       '@emotion/react': ^11.11.1
       react: '>=18'
     dependencies:
       '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.3)
+      '@theme-ui/core': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/css': 0.16.1(@emotion/react@11.11.3)
       deepmerge: 4.3.1
       react: 18.2.0
     dev: false
 
-  /@theme-ui/color@0.16.0(@emotion/react@11.11.1):
-    resolution: {integrity: sha512-0V9g5Zh27mTsCEXhB697j/jEigdENlsN12TooY/upT9l7YXfMl3Zeupu2X3bifmdz2Q2OaMGD+r8EAJWdqX87A==}
+  /@theme-ui/color@0.16.1(@emotion/react@11.11.3):
+    resolution: {integrity: sha512-oWNd1ZDCRgiqQLjE0f1YHFzWDcL+Vm3/QqyvkAU/NyD+fDsS+xcHHejqwii7yBbwbETVr2s5TzNWP8vZ5crcIw==}
     dependencies:
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.1)
+      '@theme-ui/css': 0.16.1(@emotion/react@11.11.3)
       polished: 4.2.2
     transitivePeerDependencies:
       - '@emotion/react'
     dev: false
 
-  /@theme-ui/color@0.16.0(@emotion/react@11.11.3):
-    resolution: {integrity: sha512-0V9g5Zh27mTsCEXhB697j/jEigdENlsN12TooY/upT9l7YXfMl3Zeupu2X3bifmdz2Q2OaMGD+r8EAJWdqX87A==}
-    dependencies:
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.3)
-      polished: 4.2.2
-    transitivePeerDependencies:
-      - '@emotion/react'
-    dev: false
-
-  /@theme-ui/components@0.16.0(@emotion/react@11.11.1)(@theme-ui/theme-provider@0.16.0)(react@18.2.0):
-    resolution: {integrity: sha512-bhg8qh6iCDnBm58OLtqhg6UTyfv2mlbCNFNiqpEJjw7zuRv6T67ndZHHJH6zQXTAuLFLvXe+aLi3si8VF5gmBg==}
+  /@theme-ui/components@0.16.1(@emotion/react@11.11.3)(@theme-ui/theme-provider@0.16.1)(react@18.2.0):
+    resolution: {integrity: sha512-3v56xR8Rn9LgLzknt4TXLSvnxmAZ//lN8lW87J5yKqp+reJUPDWqItLCOv899sMRcOMpihyMfHUpBRhSG/Aeng==}
     peerDependencies:
       '@emotion/react': ^11.11.1
-      '@theme-ui/theme-provider': ^0.16.0
-      react: '>=18'
-    dependencies:
-      '@emotion/react': 11.11.1(@types/react@18.2.55)(react@18.2.0)
-      '@styled-system/color': 5.1.2
-      '@styled-system/should-forward-prop': 5.1.5
-      '@styled-system/space': 5.1.2
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.1)
-      '@theme-ui/theme-provider': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@types/styled-system': 5.1.16
-      react: 18.2.0
-    dev: false
-
-  /@theme-ui/components@0.16.0(@emotion/react@11.11.3)(@theme-ui/theme-provider@0.16.0)(react@18.2.0):
-    resolution: {integrity: sha512-bhg8qh6iCDnBm58OLtqhg6UTyfv2mlbCNFNiqpEJjw7zuRv6T67ndZHHJH6zQXTAuLFLvXe+aLi3si8VF5gmBg==}
-    peerDependencies:
-      '@emotion/react': ^11.11.1
-      '@theme-ui/theme-provider': ^0.16.0
+      '@theme-ui/theme-provider': ^0.16.1
       react: '>=18'
     dependencies:
       '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
       '@styled-system/color': 5.1.2
       '@styled-system/should-forward-prop': 5.1.5
       '@styled-system/space': 5.1.2
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.3)
-      '@theme-ui/theme-provider': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/core': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/css': 0.16.1(@emotion/react@11.11.3)
+      '@theme-ui/theme-provider': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
       '@types/styled-system': 5.1.16
       react: 18.2.0
     dev: false
 
-  /@theme-ui/core@0.16.0(@emotion/react@11.11.1)(react@18.2.0):
-    resolution: {integrity: sha512-M2qkb3LsRXAjILjR4nFr7SpuVTM842WPEPnjTBg59obx5vPDFvormwL0ZaqvPjolu4qsJOjV1P7gMx9KgPE2qw==}
+  /@theme-ui/core@0.16.1(@emotion/react@11.11.3)(react@18.2.0):
+    resolution: {integrity: sha512-9Z0Fn50zdIWre0Apz3ObwfHXZ/zjw7NUhgRrSLYn/gdkJSPZZ8fcaY7Q2rnjfcrMt9DRCg5CPfQGLJqL1NY8xw==}
     peerDependencies:
       '@emotion/react': ^11.11.1
       react: '>=18'
     dependencies:
-      '@emotion/react': 11.11.1(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.1)
+      '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
+      '@theme-ui/css': 0.16.1(@emotion/react@11.11.3)
       deepmerge: 4.3.1
       react: 18.2.0
     dev: false
 
-  /@theme-ui/core@0.16.0(@emotion/react@11.11.3)(react@18.2.0):
-    resolution: {integrity: sha512-M2qkb3LsRXAjILjR4nFr7SpuVTM842WPEPnjTBg59obx5vPDFvormwL0ZaqvPjolu4qsJOjV1P7gMx9KgPE2qw==}
+  /@theme-ui/css@0.16.1(@emotion/react@11.11.3):
+    resolution: {integrity: sha512-8TO2DbiqPrRyTlGRIElDak/p0M4ykyd8LkeavyOF/sTE9s93AwyFcle6KYYMEULrJP49SyYiEvTif7J7Z50DhA==}
+    peerDependencies:
+      '@emotion/react': ^11.11.1
+    dependencies:
+      '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
+      csstype: 3.1.3
+    dev: false
+
+  /@theme-ui/global@0.16.1(@emotion/react@11.11.3)(react@18.2.0):
+    resolution: {integrity: sha512-2GHRYAz4meF5sn3XxwdFSJMENICSJNj6ZEfQyHaioIXt3t46wXdPpZNjCStxdElQ3QVQgYxY6jR+ILUFORaR0w==}
     peerDependencies:
       '@emotion/react': ^11.11.1
       react: '>=18'
     dependencies:
       '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.3)
-      deepmerge: 4.3.1
+      '@theme-ui/core': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/css': 0.16.1(@emotion/react@11.11.3)
       react: 18.2.0
     dev: false
 
-  /@theme-ui/css@0.16.0(@emotion/react@11.11.1):
-    resolution: {integrity: sha512-4kGFw80XTDguziltO8RW7KBhW8ju3aCmbcbLG7ASor2CXmS91jSGr0ILcd973TfJpp/5f8pLfOXxdIiu9PeaVA==}
-    peerDependencies:
-      '@emotion/react': ^11.11.1
-    dependencies:
-      '@emotion/react': 11.11.1(@types/react@18.2.55)(react@18.2.0)
-      csstype: 3.1.2
-    dev: false
-
-  /@theme-ui/css@0.16.0(@emotion/react@11.11.3):
-    resolution: {integrity: sha512-4kGFw80XTDguziltO8RW7KBhW8ju3aCmbcbLG7ASor2CXmS91jSGr0ILcd973TfJpp/5f8pLfOXxdIiu9PeaVA==}
-    peerDependencies:
-      '@emotion/react': ^11.11.1
-    dependencies:
-      '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
-      csstype: 3.1.2
-    dev: false
-
-  /@theme-ui/global@0.16.0(@emotion/react@11.11.1)(react@18.2.0):
-    resolution: {integrity: sha512-kI0DJ0WQ5Pp+rQIEECYbi5kDBxRrDsywlH1U9dLBtWuy7YcE0Mi6QHMEhHJToqaGKSVzl/9yAbcc26r4zUNZAg==}
-    peerDependencies:
-      '@emotion/react': ^11.11.1
-      react: '>=18'
-    dependencies:
-      '@emotion/react': 11.11.1(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.1)
-      react: 18.2.0
-    dev: false
-
-  /@theme-ui/global@0.16.0(@emotion/react@11.11.3)(react@18.2.0):
-    resolution: {integrity: sha512-kI0DJ0WQ5Pp+rQIEECYbi5kDBxRrDsywlH1U9dLBtWuy7YcE0Mi6QHMEhHJToqaGKSVzl/9yAbcc26r4zUNZAg==}
+  /@theme-ui/theme-provider@0.16.1(@emotion/react@11.11.3)(react@18.2.0):
+    resolution: {integrity: sha512-+/3BJYLIOC2DwTS76cqNhigRQJJ+qOT845DYF7t3TaG2fXDfgh16/DGZSnVjGOGc9dYE3C/ZFAYcVDVwO94Guw==}
     peerDependencies:
       '@emotion/react': ^11.11.1
       react: '>=18'
     dependencies:
       '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.3)
-      react: 18.2.0
-    dev: false
-
-  /@theme-ui/theme-provider@0.16.0(@emotion/react@11.11.1)(react@18.2.0):
-    resolution: {integrity: sha512-3PESCdcsERm/RfYFJE5Dysm4AgzmA+zv13DV0BIu/v9SFtfbvcoLGkMu5TghxOXcZiVDaps1EyGynovKvrdRYA==}
-    peerDependencies:
-      '@emotion/react': ^11.11.1
-      react: '>=18'
-    dependencies:
-      '@emotion/react': 11.11.1(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/color-modes': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.1)
-      react: 18.2.0
-    dev: false
-
-  /@theme-ui/theme-provider@0.16.0(@emotion/react@11.11.3)(react@18.2.0):
-    resolution: {integrity: sha512-3PESCdcsERm/RfYFJE5Dysm4AgzmA+zv13DV0BIu/v9SFtfbvcoLGkMu5TghxOXcZiVDaps1EyGynovKvrdRYA==}
-    peerDependencies:
-      '@emotion/react': ^11.11.1
-      react: '>=18'
-    dependencies:
-      '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/color-modes': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.3)
+      '@theme-ui/color-modes': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/core': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/css': 0.16.1(@emotion/react@11.11.3)
       react: 18.2.0
     dev: false
 
@@ -5508,7 +5384,7 @@ packages:
   /@types/styled-system@5.1.16:
     resolution: {integrity: sha512-+dyGs2n2o6QStsexh87NeaRmXYnKOnEe7iOEkcYOwKwI5a1gFL0+Mt/hZKi+4KD1qDMkLkGb0lpDrffb/vSkDQ==}
     dependencies:
-      csstype: 3.1.2
+      csstype: 3.1.3
     dev: false
 
   /@types/testing-library__jest-dom@5.14.9:
@@ -11937,10 +11813,6 @@ packages:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
     dev: true
 
-  /regenerator-runtime@0.13.11:
-    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
-    dev: false
-
   /regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
@@ -12961,35 +12833,19 @@ packages:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: false
 
-  /theme-ui@0.16.0(@emotion/react@11.11.1)(react@18.2.0):
-    resolution: {integrity: sha512-XWMKYxWptYn3wbgyJeINf1PfVk45ZxoeukDtVsxqQ0FblWhbby2eHR36fFv8+YCIs03yhgCZkNzC68uHePWvgg==}
-    peerDependencies:
-      '@emotion/react': '>=11.1.1'
-      react: '>=18'
-    dependencies:
-      '@emotion/react': 11.11.1(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/color-modes': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@theme-ui/components': 0.16.0(@emotion/react@11.11.1)(@theme-ui/theme-provider@0.16.0)(react@18.2.0)
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.1)
-      '@theme-ui/global': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      '@theme-ui/theme-provider': 0.16.0(@emotion/react@11.11.1)(react@18.2.0)
-      react: 18.2.0
-    dev: false
-
-  /theme-ui@0.16.0(@emotion/react@11.11.3)(react@18.2.0):
-    resolution: {integrity: sha512-XWMKYxWptYn3wbgyJeINf1PfVk45ZxoeukDtVsxqQ0FblWhbby2eHR36fFv8+YCIs03yhgCZkNzC68uHePWvgg==}
+  /theme-ui@0.16.1(@emotion/react@11.11.3)(react@18.2.0):
+    resolution: {integrity: sha512-QozvNUorEbrFBZUwO5RaaHA+YU/aJLIpeB9vplJERW+vcauldilxhnAjr8KeTv8LY2QMU4iyWWreamJ8/5KzEQ==}
     peerDependencies:
       '@emotion/react': '>=11.1.1'
       react: '>=18'
     dependencies:
       '@emotion/react': 11.11.3(@types/react@18.2.55)(react@18.2.0)
-      '@theme-ui/color-modes': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
-      '@theme-ui/components': 0.16.0(@emotion/react@11.11.3)(@theme-ui/theme-provider@0.16.0)(react@18.2.0)
-      '@theme-ui/core': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
-      '@theme-ui/css': 0.16.0(@emotion/react@11.11.3)
-      '@theme-ui/global': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
-      '@theme-ui/theme-provider': 0.16.0(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/color-modes': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/components': 0.16.1(@emotion/react@11.11.3)(@theme-ui/theme-provider@0.16.1)(react@18.2.0)
+      '@theme-ui/core': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/css': 0.16.1(@emotion/react@11.11.3)
+      '@theme-ui/global': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
+      '@theme-ui/theme-provider': 0.16.1(@emotion/react@11.11.3)(react@18.2.0)
       react: 18.2.0
     dev: false
 

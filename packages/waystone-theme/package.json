@@ -1,12 +1,12 @@
 {
   "author": "draekien-industries",
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@theme-ui/color": "^0.16.0",
+    "@emotion/react": "^11.11.3",
+    "@theme-ui/color": "^0.16.1",
     "@waystone/core": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.0"
+    "theme-ui": "^0.16.1"
   },
   "description": "The react component library used by draekien-industries",
   "devDependencies": {
