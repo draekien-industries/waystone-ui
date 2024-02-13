@@ -45,11 +45,6 @@ const config: StorybookConfig = {
           },
         ],
       },
-      build: {
-        rollupOptions: {
-          external: ['@emotion/react'],
-        },
-      },
     });
   },
 };
