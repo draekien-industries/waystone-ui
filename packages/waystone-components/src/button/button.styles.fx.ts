@@ -18,7 +18,7 @@ export const getBackgroundColor = ({
     case 'accent':
     case 'highlight':
     default:
-      return `${variant[0]}-500`;
+      return `${variant[0]}-400`;
   }
 };
 
@@ -42,7 +42,7 @@ export const getHoverBackgroundColor = ({
     case 'accent':
     case 'highlight':
     default:
-      return `${variant[0]}-400`;
+      return `${variant[0]}-300`;
   }
 };
 
@@ -66,7 +66,7 @@ export const getActiveBackgroundColor = ({
     case 'accent':
     case 'highlight':
     default:
-      return `${variant[0]}-400`;
+      return `${variant[0]}-300`;
   }
 };
 
@@ -81,7 +81,7 @@ export const getColor = (variant?: ButtonVariant) => {
     case 'secondary':
     case 'accent':
     case 'highlight':
-      return 'b-800';
+      return 'b-900';
     default:
       return 'text';
   }
@@ -177,7 +177,7 @@ export const getPadding = ({
     }
     default:
       return {
-        paddingX: 'lg',
+        paddingX: 'md',
         paddingY: 'sm',
       };
   }

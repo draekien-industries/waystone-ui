@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "target": "ES6",
-    "types": ["jest", "@testing-library/react"]
+    "types": ["jest", "@testing-library/react", "node"]
   },
   "display": "React Library",
   "extends": "./base.json"

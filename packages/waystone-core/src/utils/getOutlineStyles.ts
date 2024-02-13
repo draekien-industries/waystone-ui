@@ -15,7 +15,7 @@ const focusedOutline: ThemeUIStyleObject = {
 };
 
 const focused = {
-  ':enabled:not(active):focus': focusedOutline,
+  ':enabled:not(active):focus-visible': focusedOutline,
 };
 
 const activeOutline: ThemeUIStyleObject = {

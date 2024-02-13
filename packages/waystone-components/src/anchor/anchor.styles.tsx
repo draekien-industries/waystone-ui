@@ -20,11 +20,11 @@ export const anchorCss: ThemeUIStyleObject = {
     borderTopLeftRadius: 'sm',
     borderTopRightRadius: 'sm',
   },
-  ':focus': {
+  ':focus-visible': {
     backgroundColor: 'ghost',
     borderTopLeftRadius: 'sm',
     borderTopRightRadius: 'sm',
-    ...outline.focused[':enabled:not(active):focus'],
+    ...outline.focused[':enabled:not(active):focus-visible'],
   },
 };
 
