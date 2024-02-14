@@ -3,7 +3,7 @@ import { dirname, join, resolve } from 'path';
 import { mergeConfig } from 'vite';
 
 const config: StorybookConfig = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.tsx'],
+  stories: ['../src/**/*.mdx', '../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-links'),
@@ -16,17 +16,12 @@ const config: StorybookConfig = {
     options: {},
   },
   core: {
+    builder: '@storybook/builder-vite',
     disableTelemetry: true,
   },
   typescript: {
     check: false,
     reactDocgen: 'react-docgen',
-    // reactDocgen: 'react-docgen-typescript',
-    // reactDocgenTypescriptOptions: {
-    //   shouldExtractLiteralValuesFromEnum: true,
-    //   propFilter: (prop) =>
-    //     prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
-    // },
   },
   staticDirs: ['../public'],
   docs: {
@@ -44,6 +39,9 @@ const config: StorybookConfig = {
             replacement: resolve(__dirname, '../../../packages/waystone-*'),
           },
         ],
+      },
+      optimizeDeps: {
+        include: ['storybook-dark-mode'],
       },
     });
   },
