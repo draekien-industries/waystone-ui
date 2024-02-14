@@ -1,4 +1,5 @@
 import { addDarkModeSuffix, ButtonVariant, Size } from '@waystone/core';
+import { alpha } from '@theme-ui/color';
 
 type getBackgroundColorProps = {
   variant?: ButtonVariant;
@@ -7,10 +8,11 @@ type getBackgroundColorProps = {
 
 export const getBackgroundColor = ({
   variant = 'primary',
+  darkMode,
 }: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return 'ghost';
+      return alpha(darkMode ? 'b-800' : 'b-100', 0.25);
     case 'link':
       return 'transparent';
     case 'primary':
@@ -26,6 +28,7 @@ export const getBackgroundColor = ({
  * If the variant is ghost, return muted, if it's link, return transparent, otherwise return the
  * variant with a -100 suffix.
  * @param {ButtonVariant} variant - ButtonVariant
+ * @param darkMode
  * @returns A function that takes a variant and returns a color.
  */
 export const getHoverBackgroundColor = ({
@@ -34,7 +37,7 @@ export const getHoverBackgroundColor = ({
 }: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return darkMode ? 'b-700' : 'b-200';
+      return alpha(darkMode ? 'b-800' : 'b-400', 0.4);
     case 'link':
       return 'transparent';
     case 'primary':
@@ -50,6 +53,7 @@ export const getHoverBackgroundColor = ({
  * If the variant is ghost, return muted, if it's link, return transparent, otherwise return the
  * variant with a 600 appended to it.
  * @param {ButtonVariant} variant - ButtonVariant
+ * @param darkMode
  * @returns A function that takes a variant and returns a color.
  */
 export const getActiveBackgroundColor = ({
@@ -58,7 +62,7 @@ export const getActiveBackgroundColor = ({
 }: getBackgroundColorProps) => {
   switch (variant) {
     case 'ghost':
-      return darkMode ? 'b-700' : 'b-200';
+      return alpha(darkMode ? 'b-800' : 'b-400', 0.5);
     case 'link':
       return 'transparent';
     case 'primary':

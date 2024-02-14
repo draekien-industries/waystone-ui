@@ -1,39 +1,20 @@
-import * as React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import { Meta, StoryObj } from '@storybook/react';
 import { Anchor } from '@waystone/components/src';
 
-export default {
+const meta: Meta<typeof Anchor> = {
+  title: 'Components/Anchor',
   component: Anchor,
-  args: {
-    external: false,
-  },
-} as Meta<typeof Anchor>;
+};
 
-const Template: StoryFn<typeof Anchor> = (args) => (
-  <Anchor {...args} onClick={action('clicked')} />
-);
+export default meta;
 
-export const Default = {
-  render: Template,
-
+export const Internal: StoryObj<typeof meta> = {
   args: {
     children: 'Anchor',
   },
 };
 
-export const WithExternal = {
-  render: Template,
-
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'Indicates the provided `href` is a link to an external resource. Automatically adds `_blank` to the `target` prop and `"noopener noreferrer"` to the `rel` prop.',
-      },
-    },
-  },
-
+export const External: StoryObj<typeof meta> = {
   args: {
     href: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a',
     external: true,

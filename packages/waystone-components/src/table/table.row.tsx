@@ -1,7 +1,8 @@
 'use client';
 
-import { memo, ReactElement, useMemo } from 'react';
-import { useIsDarkMode } from '../hooks';
+import { memo, ReactElement } from 'react';
+import { ThemeUIStyleObject } from 'theme-ui';
+import { alpha } from '@theme-ui/color';
 import { TableCellProps } from './table.cell';
 
 export type TableRowProps<TData, TValue> = {
@@ -11,35 +12,15 @@ export type TableRowProps<TData, TValue> = {
     | ReactElement<TableCellProps<TData, TValue>>[];
 };
 
-const getBackgroundColor = (darkMode: boolean, disabled: boolean) => {
-  if (darkMode) {
-    return disabled ? 'b-600' : 'b-700';
-  }
-
-  return disabled ? 'b-200' : 'b-100';
-};
+const getTableRowCss = (disabled: boolean): ThemeUIStyleObject => ({
+  color: disabled ? 'muted' : 'text',
+  borderBottom: '1px solid',
+  borderBottomColor: alpha('muted', 0.25),
+});
 
 const TableRowContent = <TData, TValue>({
   disabled = false,
   children,
-}: TableRowProps<TData, TValue>) => {
-  const darkMode = useIsDarkMode();
-
-  const backgroundColor = useMemo(
-    () => getBackgroundColor(darkMode, disabled),
-    [darkMode, disabled]
-  );
-
-  return (
-    <tr
-      sx={{
-        backgroundColor,
-        color: disabled ? 'b-400' : 'text',
-      }}
-    >
-      {children}
-    </tr>
-  );
-};
+}: TableRowProps<TData, TValue>) => <tr sx={getTableRowCss(disabled)}>{children}</tr>;
 
 export const TableRow = memo(TableRowContent);

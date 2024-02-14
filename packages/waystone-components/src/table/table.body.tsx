@@ -1,6 +1,10 @@
+'use client';
+
 import { Row } from '@tanstack/react-table';
-import { VirtualItem, useVirtualizer } from '@tanstack/react-virtual';
+import { useVirtualizer, VirtualItem } from '@tanstack/react-virtual';
 import { Fragment, ReactElement } from 'react';
+import { ThemeUIStyleObject } from 'theme-ui';
+import { alpha } from '@theme-ui/color';
 import { TableCell } from './table.cell';
 import { TableRow } from './table.row';
 import { TableRowSubComponent } from './table.row.subComponent';
@@ -64,8 +68,7 @@ const VirtualizedContentRows = <TData extends TableRowData<TData>>({
           </TableRow>
           <TableRowSubComponent
             visible={row.getIsExpanded()}
-            colSpan={row.getVisibleCells().length}
-          >
+            colSpan={row.getVisibleCells().length}>
             {renderSubComponent && renderSubComponent({ row })}
           </TableRowSubComponent>
         </Fragment>
@@ -73,6 +76,16 @@ const VirtualizedContentRows = <TData extends TableRowData<TData>>({
     })}
   </>
 );
+
+const tableBodyCss: ThemeUIStyleObject = {
+  'tr:last-of-type': {
+    borderBottom: '2px solid',
+    borderBottomColor: 'p-400',
+  },
+  'tr:nth-of-type(even)': {
+    backgroundColor: alpha('b-400', 0.1),
+  },
+};
 
 const VirtualizedTableBody = <TData extends TableRowData<TData>>({
   renderSubComponent,
@@ -86,7 +99,7 @@ const VirtualizedTableBody = <TData extends TableRowData<TData>>({
   const totalSize = getTotalSize();
 
   return (
-    <tbody>
+    <tbody sx={tableBodyCss}>
       <VirtualizedTopRow {...virtualRows} />
       <VirtualizedContentRows {...{ virtualRows, renderSubComponent }}>
         {children}
@@ -100,7 +113,7 @@ const ConcreteTableBody = <TData extends TableRowData<TData>>({
   renderSubComponent,
   children,
 }: Omit<TableBodyProps<TData>, 'virtualizer'>) => (
-  <tbody>
+  <tbody sx={tableBodyCss}>
     {children.map((row) => {
       const disabled = !row.getCanSelect();
 
@@ -113,8 +126,7 @@ const ConcreteTableBody = <TData extends TableRowData<TData>>({
           </TableRow>
           <TableRowSubComponent
             visible={row.getIsExpanded()}
-            colSpan={row.getVisibleCells().length}
-          >
+            colSpan={row.getVisibleCells().length}>
             {renderSubComponent && renderSubComponent({ row })}
           </TableRowSubComponent>
         </Fragment>
@@ -132,8 +144,7 @@ export const TableBody = <TData extends TableRowData<TData>>({
     return (
       <VirtualizedTableBody
         renderSubComponent={renderSubComponent}
-        virtualizer={virtualizer}
-      >
+        virtualizer={virtualizer}>
         {children}
       </VirtualizedTableBody>
     );

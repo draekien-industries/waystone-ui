@@ -1,4 +1,7 @@
+'use client';
+
 import { memo, ReactNode } from 'react';
+import { useIsDarkMode } from '../hooks';
 
 export type TableRowSubComponentProps = {
   colSpan: number;
@@ -11,6 +14,8 @@ const TableRowSubComponentContent = ({
   visible,
   children,
 }: TableRowSubComponentProps) => {
+  const darkMode = useIsDarkMode();
+
   if (!visible || !children) {
     return null;
   }

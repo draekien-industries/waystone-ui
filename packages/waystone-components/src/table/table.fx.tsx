@@ -24,6 +24,7 @@ export const withSelectColumn = <TData, TValue>({
                 table.getToggleAllRowsExpandedHandler()(e);
               }
             },
+            'aria-label': 'select all',
           }}
         />
       ),
@@ -33,7 +34,7 @@ export const withSelectColumn = <TData, TValue>({
           name={rest.singleSelectGroupName}
           {...{
             sx: {
-              marginLeft: `${row.depth * 2}rem`,
+              marginLeft: `${row.depth}rem`,
               cursor: row.getCanSelect() ? 'pointer' : 'not-allowed',
             },
             checked: row.getIsSelected(),
@@ -45,12 +46,13 @@ export const withSelectColumn = <TData, TValue>({
                 row.getToggleExpandedHandler()();
               }
             },
+            'aria-label': 'select row',
           }}
         />
       ) : (
         <Checkbox
           {...{
-            sx: { marginLeft: `${row.depth * 2}rem` },
+            sx: { marginLeft: `${row.depth + 0.25}rem` },
             checked: row.getIsSelected(),
             indeterminate: row.getIsSomeSelected(),
             disabled: !row.getCanSelect(),
@@ -61,6 +63,7 @@ export const withSelectColumn = <TData, TValue>({
                 row.getToggleExpandedHandler()();
               }
             },
+            'aria-label': 'select row',
           }}
         />
       ),
@@ -115,7 +118,7 @@ export const withExpandColumn = <TData, TValue>({
 
 export const getDifference = <
   TPrevious extends TableState,
-  TCurrent extends TableState
+  TCurrent extends TableState,
 >(
   previous: TPrevious,
   current: TCurrent

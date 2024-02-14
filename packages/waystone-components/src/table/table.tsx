@@ -2,23 +2,31 @@
 
 import {
   ColumnDef,
-  TableState,
   getCoreRowModel,
   getExpandedRowModel,
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
+  TableState,
   useReactTable,
 } from '@tanstack/react-table';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { isDeepEqual, usePrevious } from '@waystone/utils';
 import { useEffect, useMemo, useRef } from 'react';
+import { ThemeUIStyleObject } from 'theme-ui';
 import { HasHeight } from '../common';
 import { TableBody } from './table.body';
 import { withExpandColumn, withSelectColumn } from './table.fx';
 import { TableHeader } from './table.header';
 import { TablePagination } from './table.pagination';
 import { TableProps, TableRowData } from './table.types';
+
+const tableCss: ThemeUIStyleObject = {
+  borderCollapse: 'collapse',
+  minWidth: '400px',
+  width: '100%',
+  boxShadow: 'md',
+};
 
 export const Table = <TData extends TableRowData<TData>, TValue = unknown>({
   data,
@@ -102,7 +110,7 @@ export const Table = <TData extends TableRowData<TData>, TValue = unknown>({
 
   return (
     <>
-      <table sx={{ width: '100%', borderRadius: 'xl', overflow: 'clip' }}>
+      <table sx={tableCss}>
         <TableHeader {...table} />
         <TableBody renderSubComponent={renderSubComponent}>{rows}</TableBody>
       </table>
@@ -113,7 +121,7 @@ export const Table = <TData extends TableRowData<TData>, TValue = unknown>({
 
 export type VirtualizedTableProps<
   TData extends TableRowData<TData>,
-  TValue
+  TValue,
 > = HasHeight & TableProps<TData, TValue>;
 
 export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
@@ -207,16 +215,12 @@ export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
   const { singleSelect: _, ...styles } = rest;
 
   return (
-    <div
-      ref={tableContainerRef}
-      sx={{ ...styles, borderRadius: 'xl', overflow: 'auto' }}
-    >
-      <table sx={{ width: '100%', borderRadius: 'xl', overflow: 'clip' }}>
+    <div ref={tableContainerRef} sx={{ ...styles, overflow: 'auto' }}>
+      <table sx={tableCss}>
         <TableHeader {...table} />
         <TableBody
           virtualizer={virtualizer}
-          renderSubComponent={renderSubComponent}
-        >
+          renderSubComponent={renderSubComponent}>
           {rows}
         </TableBody>
       </table>

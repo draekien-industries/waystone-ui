@@ -1,9 +1,4 @@
-import {
-  ForwardedRef,
-  HTMLAttributeAnchorTarget,
-  ReactNode,
-  forwardRef,
-} from 'react';
+import { ForwardedRef, forwardRef, HTMLAttributeAnchorTarget, ReactNode } from 'react';
 import { LinkProps } from 'theme-ui';
 import { Icon } from '../icon';
 import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
