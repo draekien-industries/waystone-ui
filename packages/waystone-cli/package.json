@@ -17,9 +17,7 @@
     "plop": "plop"
   },
   "dependencies": {
-    "plop": "^3.1.2"
-  },
-  "peerDependencies": {
+    "plop": "^3.1.2",
     "@waystone/color": "workspace:^"
   }
 }

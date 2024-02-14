@@ -1,13 +1,12 @@
 import { useMemo } from 'react';
-import { CreateCodeTreeOptions, createCodeTree } from './utils/createCodeTree';
-import { flattenCodeTree } from './utils/flattenCodeTree';
+import {
+  createCodeTree,
+  CreateCodeTreeOptions,
+  flattenCodeTree,
+} from './utils';
 
-export const useCodeTree = (options: CreateCodeTreeOptions) => {
-  const codeTree = useMemo(() => {
+export const useCodeTree = (options: CreateCodeTreeOptions) => useMemo(() => {
     const { children: tree } = createCodeTree(options);
 
     return flattenCodeTree({ tree });
   }, [options]);
-
-  return codeTree;
-};

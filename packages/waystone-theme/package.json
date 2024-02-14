@@ -1,30 +1,16 @@
 {
+  "name": "@waystone/theme",
+  "version": "9.2.2",
   "author": "draekien-industries",
   "description": "The react component library used by draekien-industries",
-  "devDependencies": {
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.1",
-    "@testing-library/user-event": "^14.5.2",
-    "@waystone/tsconfig": "workspace:*",
-    "eslint-plugin-waystone": "workspace:*",
-    "eslint-preset-waystone": "workspace:*",
-    "tsup": "^8.0.2"
-  },
-  "peerDependencies": {
-    "@emotion/react": "^11.11.3",
-    "@theme-ui/color": "^0.16.1",
-    "@waystone/core": "workspace:^",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.1"
-  },
-  "files": [
-    "dist/**"
-  ],
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "name": "@waystone/theme",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist/**"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
@@ -40,7 +26,23 @@
     "test:update": "jest --coverage --passWithNoTests -u",
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
-  "sideEffects": false,
-  "types": "./dist/index.d.ts",
-  "version": "9.2.2"
+  "dependencies": {
+    "@waystone/core": "workspace:^"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.11.3",
+    "@theme-ui/color": "^0.16.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.16.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@waystone/tsconfig": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
+    "eslint-preset-waystone": "workspace:*",
+    "tsup": "^8.0.2"
+  }
 }

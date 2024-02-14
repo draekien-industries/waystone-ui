@@ -427,21 +427,12 @@ importers:
       '@types/hast':
         specifier: ^3.0.0
         version: 3.0.0
-      '@waystone/core':
-        specifier: workspace:*
-        version: link:../waystone-core
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../waystone-testing-library
-      '@waystone/theme':
-        specifier: workspace:*
-        version: link:../waystone-theme
       '@waystone/tsconfig':
         specifier: workspace:*
         version: link:../waystone-tsconfig
-      '@waystone/utils':
-        specifier: workspace:*
-        version: link:../waystone-utils
       eslint-preset-waystone:
         specifier: workspace:*
         version: link:../eslint-preset-waystone

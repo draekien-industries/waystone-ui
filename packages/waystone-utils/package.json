@@ -1,8 +1,10 @@
 {
   "author": "draekien-industries",
   "dependencies": {
-    "react": "^18.2.0",
     "type-fest": "^3.7.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   },
   "description": "The utils used by draekien-industries",
   "devDependencies": {
@@ -23,9 +25,6 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "name": "@waystone/utils",
-  "peerDependencies": {
-    "react": "^18.2.0"
-  },
   "publishConfig": {
     "access": "public"
   },
