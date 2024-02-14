@@ -1,5 +1,15 @@
 # @waystone/components
 
+## 9.3.1
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+- Updated dependencies [5b726aa]
+  - @waystone/syntax-highlighter@12.0.1
+  - @waystone/utils@9.3.1
+  - @waystone/core@9.3.1
+
 ## 9.3.0
 
 ### Minor Changes

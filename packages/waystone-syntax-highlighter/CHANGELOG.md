@@ -1,5 +1,11 @@
 # @waystone/syntax-highlighter
 
+## 12.0.1
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+
 ## 12.0.0
 
 ### Patch Changes

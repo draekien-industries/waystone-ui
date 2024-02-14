@@ -1,5 +1,17 @@
 # @waystone/stories
 
+## 9.3.1
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+- 90f63d8: Update stories location
+- Updated dependencies [5b726aa]
+  - @waystone/components@9.3.1
+  - @waystone/theme@9.2.3
+  - @waystone/utils@9.3.1
+  - @waystone/core@9.3.1
+
 ## 9.3.0
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @waystone/core
 
+## 9.3.1
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+- Updated dependencies [5b726aa]
+  - @waystone/color@8.1.2
+
 ## 9.3.0
 
 ### Minor Changes
