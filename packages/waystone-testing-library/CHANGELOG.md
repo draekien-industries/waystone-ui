@@ -1,5 +1,13 @@
 # @waystone/testing-library
 
+## 9.1.4
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+- Updated dependencies [5b726aa]
+  - @waystone/theme@9.2.3
+
 ## 9.1.3
 
 ### Patch Changes
