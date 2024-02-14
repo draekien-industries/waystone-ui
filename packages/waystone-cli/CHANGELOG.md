@@ -1,5 +1,20 @@
 # @waystone/cli
 
+## 2.0.2
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+- Updated dependencies [5b726aa]
+  - @waystone/color@8.1.2
+
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [7086019]
+  - @waystone/color@8.1.1
+
 ## 2.0.0
 
 ### Minor Changes

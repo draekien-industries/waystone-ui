@@ -1,5 +1,17 @@
 # @waystone/utils
 
+## 9.3.1
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+
+## 9.3.0
+
+### Patch Changes
+
+- 7086019: Update dependencies
+
 ## 9.2.1
 
 ## 9.2.0

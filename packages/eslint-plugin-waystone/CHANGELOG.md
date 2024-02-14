@@ -1,5 +1,11 @@
 # eslint-plugin-waystone
 
+## 1.1.1
+
+### Patch Changes
+
+- 7086019: Update dependencies
+
 ## 1.1.0
 
 ### Minor Changes

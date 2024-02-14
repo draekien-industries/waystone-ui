@@ -1,5 +1,17 @@
 # @waystone/color
 
+## 8.1.2
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+
+## 8.1.1
+
+### Patch Changes
+
+- 7086019: Update dependencies
+
 ## 8.1.0
 
 ### Minor Changes

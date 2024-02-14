@@ -42,7 +42,7 @@ export interface ButtonProps
   /** The icon and it's variant to render. */
   icon?: Pick<IconProps, 'variant' | 'name'>;
   /**
-   * Should the button hide it's contents while it is in the loading state.
+   * Should the button hide its contents while it is in the loading state.
    * @default false
    */
   hideContentWhileLoading?: boolean;

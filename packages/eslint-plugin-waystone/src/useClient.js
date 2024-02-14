@@ -95,7 +95,9 @@ module.exports = {
         }
 
         parentNode = node;
-        const scope = context.getScope();
+        const scope = sourceCode.getScope
+          ? sourceCode.getScope(node)
+          : context.getScope();
         // Collect undeclared variables (ie, used global variables)
         scope.through.forEach((reference) => {
           undeclaredReferences.add(reference.identifier.name);
@@ -147,7 +149,10 @@ module.exports = {
         if (
           HOOK_REGEX.test(name) &&
           // Is in a function...
-          context.getScope().type === 'function' &&
+          (sourceCode.getScope
+            ? sourceCode.getScope(expression)
+            : context.getScope()
+          ).type === 'function' &&
           // But only if that function is a component
           Boolean(util.getParentComponent(expression))
         ) {
@@ -169,7 +174,9 @@ module.exports = {
         // }
         // @ts-expect-error
         const name = node.object.name;
-        const scopeType = context.getScope().type;
+        const scopeType = (
+          sourceCode.getScope ? sourceCode.getScope(node) : context.getScope()
+        ).type;
         if (
           undeclaredReferences.has(name) &&
           browserOnlyGlobals.has(name) &&
@@ -198,7 +205,9 @@ module.exports = {
       },
       // @ts-expect-error
       JSXOpeningElement(node) {
-        const scope = context.getScope();
+        const scope = sourceCode.getScope
+          ? sourceCode.getScope(node)
+          : context.getScope();
         const fnsInScope = [];
         scope.variables.forEach((variable) => {
           variable.defs.forEach((def) => {

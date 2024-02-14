@@ -1,5 +1,22 @@
 # @waystone/theme
 
+## 9.2.3
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+- Updated dependencies [5b726aa]
+  - @waystone/core@9.3.1
+
+## 9.2.2
+
+### Patch Changes
+
+- 7086019: Update dependencies
+- Updated dependencies [7086019]
+- Updated dependencies [7086019]
+  - @waystone/core@9.3.0
+
 ## 9.2.1
 
 ### Patch Changes

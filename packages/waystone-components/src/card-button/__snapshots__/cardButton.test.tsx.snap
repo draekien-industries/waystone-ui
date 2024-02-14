@@ -3,7 +3,7 @@
 exports[`TThe CardButton component Matches snapshot 1`] = `
 <div>
   <button
-    class="css-5143ny-CardButton"
+    class="css-1budesj-CardButton"
     type="button"
   >
     card

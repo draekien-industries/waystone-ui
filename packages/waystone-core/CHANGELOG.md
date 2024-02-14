@@ -1,5 +1,25 @@
 # @waystone/core
 
+## 9.3.1
+
+### Patch Changes
+
+- 5b726aa: fix build and dependencies
+- Updated dependencies [5b726aa]
+  - @waystone/color@8.1.2
+
+## 9.3.0
+
+### Minor Changes
+
+- 7086019: Update theme layout presets
+
+### Patch Changes
+
+- 7086019: Update dependencies
+- Updated dependencies [7086019]
+  - @waystone/color@8.1.1
+
 ## 9.2.1
 
 ## 9.2.0

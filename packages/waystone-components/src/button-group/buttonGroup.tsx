@@ -1,15 +1,16 @@
 'use client';
 
 import { Flex } from 'theme-ui';
+import { MouseEventHandler } from 'react';
 import { Button, ButtonProps } from '../button';
 import { buttonGroupCss } from './buttonGroup.styles';
 
 /** The props provided to the onClick callback */
 export type onClickProps = {
-  /** The raw react mouse event. */
-  e: React.MouseEvent<HTMLButtonElement, MouseEvent>;
   /** The button that was clicked. */
   clicked: string;
+  /** The raw click event */
+  e: Parameters<MouseEventHandler<HTMLButtonElement>>[0];
 };
 
 /** The props for the button group component. */
@@ -20,6 +21,11 @@ export interface ButtonGroupProps {
   buttons: Pick<ButtonProps, 'id' | 'children' | 'icon'>[];
   /** The callback function that will be called when the active button changes. */
   onChange?: (props: onClickProps) => void;
+  /**
+   * The size of the buttons
+   * @default sm
+   */
+  size?: ButtonProps['size'];
 }
 
 /**
@@ -31,6 +37,7 @@ export const ButtonGroup = ({
   activeButton,
   buttons,
   onChange,
+  size,
 }: ButtonGroupProps) => (
   <Flex sx={buttonGroupCss}>
     {buttons.map((button) => {
@@ -44,6 +51,7 @@ export const ButtonGroup = ({
         <Button
           {...button}
           key={key}
+          size={size}
           variant="ghost"
           active={key === activeButton}
           onClick={(e) => {

@@ -5,7 +5,7 @@ import {
   forwardRef,
 } from 'react';
 import { LinkProps } from 'theme-ui';
-import { Icon } from '../icon/icon';
+import { Icon } from '../icon';
 import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
 
 /**
@@ -67,8 +67,7 @@ const renderExternalAnchor = (
     {...rest}
     sx={!noDecoration ? anchorCss : undecoratedAnchorCss}
     target={target}
-    rel={rel}
-  >
+    rel={rel}>
     {children} <Icon name="open_in_new" size="sm" sx={{ pb: 'xs' }} />
   </a>
 );

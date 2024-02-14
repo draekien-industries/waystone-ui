@@ -1,6 +1,6 @@
 {
   "name": "@waystone/cli",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
@@ -17,10 +17,7 @@
     "plop": "plop"
   },
   "dependencies": {
-    "@waystone/color": "workspace:*",
-    "plop": "^3.1.2"
-  },
-  "peerDependencies": {
-    "@waystone/color": "workspace:*"
+    "plop": "^3.1.2",
+    "@waystone/color": "workspace:^"
   }
 }
