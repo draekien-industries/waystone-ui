@@ -16,10 +16,10 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
-    "build:storybook": "tsup src/index.ts --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
-    "dev:storybook": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "build": "tsup",
+    "build:storybook": "tsup",
+    "dev": "tsup --watch",
+    "dev:storybook": "tsup --watch",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
@@ -31,12 +31,13 @@
   "devDependencies": {
     "@waystone/tsconfig": "workspace:*",
     "eslint-preset-waystone": "workspace:*",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "tsup": "^8.0.2"
   },
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
+  "peerDependencies": {
     "zod": "^3.22.4"
   }
 }

@@ -1,8 +1,9 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 import { dirname, join, resolve } from 'path';
 import { mergeConfig } from 'vite';
+
 const config: StorybookConfig = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.tsx'],
+  stories: ['../src/**/*.mdx', '../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-links'),
@@ -15,16 +16,12 @@ const config: StorybookConfig = {
     options: {},
   },
   core: {
+    builder: '@storybook/builder-vite',
     disableTelemetry: true,
   },
   typescript: {
     check: false,
-    reactDocgen: 'react-docgen-typescript',
-    reactDocgenTypescriptOptions: {
-      shouldExtractLiteralValuesFromEnum: true,
-      propFilter: (prop) =>
-        prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
-    },
+    reactDocgen: 'react-docgen',
   },
   staticDirs: ['../public'],
   docs: {
@@ -43,10 +40,14 @@ const config: StorybookConfig = {
           },
         ],
       },
+      optimizeDeps: {
+        include: ['storybook-dark-mode'],
+      },
     });
   },
 };
 export default config;
+
 /**
  * This function is used to resolve the absolute path of a package.
  * It is needed in projects that use Yarn PnP or are set up within a monorepo.

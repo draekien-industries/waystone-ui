@@ -1,8 +1,10 @@
 {
   "author": "draekien-industries",
   "dependencies": {
-    "react": "^18.2.0",
     "type-fest": "^3.7.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   },
   "description": "The utils used by draekien-industries",
   "devDependencies": {
@@ -13,7 +15,8 @@
     "eslint-plugin-waystone": "workspace:*",
     "eslint-preset-waystone": "workspace:*",
     "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0"
+    "jest-environment-jsdom": "^29.7.0",
+    "tsup": "^8.0.2"
   },
   "files": [
     "dist/**"
@@ -22,9 +25,6 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "name": "@waystone/utils",
-  "peerDependencies": {
-    "react": "^18.2.0"
-  },
   "publishConfig": {
     "access": "public"
   },
@@ -33,11 +33,9 @@
     "url": "https://github.com/draekien-industries/waystone-ui"
   },
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "build:storybook": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build": "tsup",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
-    "dev:storybook": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "dev": "tsup --watch",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
     "test": "jest --coverage --passWithNoTests",

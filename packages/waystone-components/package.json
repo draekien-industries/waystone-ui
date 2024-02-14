@@ -1,21 +1,36 @@
 {
+  "name": "@waystone/components",
+  "version": "9.3.0",
   "author": "draekien-industries",
-  "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@tanstack/react-table": "^8.9.1",
-    "@tanstack/react-virtual": "^3.0.2",
-    "@theme-ui/color": "^0.16.0",
-    "@theme-ui/css": "^0.16.0",
-    "@waystone/core": "workspace:*",
-    "@waystone/syntax-highlighter": "workspace:*",
-    "@waystone/utils": "workspace:*",
-    "csstype": "^3.1.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.0",
-    "type-fest": "^3.7.2"
-  },
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "description": "The syntax highlighter library used by draekien-industries",
+  "files": [
+    "dist/**"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf storybook-static && rm -rf coverage",
+    "dev": "tsup --watch",
+    "lint": "eslint src --fix",
+    "lint:release": "eslint src",
+    "test": "jest --coverage --passWithNoTests",
+    "test:release": "jest --coverage --passWithNoTests",
+    "test:update": "jest --coverage --passWithNoTests -u",
+    "test:watch": "jest --coverage --passWithNoTests --watch -u"
+  },
+  "dependencies": {
+    "@waystone/core": "workspace:^",
+    "@waystone/syntax-highlighter": "workspace:^",
+    "@waystone/utils": "workspace:^"
+  },
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
     "@testing-library/jest-dom": "^6.4.2",
@@ -26,43 +41,22 @@
     "eslint-plugin-waystone": "workspace:*",
     "eslint-preset-waystone": "workspace:*",
     "identity-obj-proxy": "^3.0.0",
-    "resize-observer-polyfill": "^1.5.1"
+    "resize-observer-polyfill": "^1.5.1",
+    "tsup": "^8.0.2"
   },
-  "files": [
-    "dist/**"
-  ],
-  "license": "MIT",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "name": "@waystone/components",
   "peerDependencies": {
-    "@emotion/react": "^11.11.1",
-    "@theme-ui/color": ">=0.16.0",
-    "@theme-ui/css": "^0.16.0",
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0",
-    "theme-ui": "^0.16.0",
-    "type-fest": ">=3.0.0"
+    "@emotion/react": "^11.11.3",
+    "@tanstack/react-table": "^8.9.1",
+    "@tanstack/react-virtual": "^3.0.2",
+    "@theme-ui/color": "^0.16.1",
+    "@theme-ui/css": "^0.16.1",
+    "csstype": "^3.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.16.1",
+    "type-fest": "^3.7.2"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/draekien-industries/waystone-ui"
-  },
-  "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf storybook-static && rm -rf coverage",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
-    "lint": "eslint src --fix",
-    "lint:release": "eslint src",
-    "test": "jest --coverage --passWithNoTests",
-    "test:release": "jest --coverage --passWithNoTests",
-    "test:update": "jest --coverage --passWithNoTests -u",
-    "test:watch": "jest --coverage --passWithNoTests --watch -u"
-  },
-  "sideEffects": false,
-  "types": "./dist/index.d.ts",
-  "version": "9.3.0"
+  }
 }

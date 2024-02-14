@@ -16,9 +16,9 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build": "tsup",
     "build:storybook": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "dev": "tsup --watch",
     "dev:storybook": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint src --fix",
     "lint:release": "eslint src",
@@ -29,22 +29,16 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "@waystone/tsconfig": "workspace:*",
-    "eslint-preset-waystone": "workspace:*"
+    "eslint-preset-waystone": "workspace:*",
+    "tsup": "^8.0.2"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.11.1",
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0",
-    "theme-ui": "^0.16.0",
-    "type-fest": ">=3.0.0"
-  },
-  "dependencies": {
-    "@theme-ui/color": "^0.16.0",
-    "@waystone/color": "workspace:*",
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.11.3",
+    "@theme-ui/color": "^0.16.1",
+    "@waystone/color": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.0",
+    "theme-ui": "^0.16.1",
     "type-fest": "^3.0.0"
   },
   "publishConfig": {
