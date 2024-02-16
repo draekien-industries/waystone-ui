@@ -1,39 +1,75 @@
 'use client';
 
-import { memo, ReactNode, useMemo } from 'react';
-import { useIsDarkMode } from '../hooks';
+import { VirtualItem } from '@tanstack/react-virtual';
+import { alpha } from '@theme-ui/color';
+import { ReactElement, memo } from 'react';
+import { ThemeUIStyleObject } from 'theme-ui';
+import { TableCellProps } from './table.cell';
 
-export type TableRowProps = {
+export type TableRowProps<TData, TValue> = {
   disabled?: boolean;
-  cells: ReactNode;
+  children:
+    | ReactElement<TableCellProps<TData, TValue>>
+    | ReactElement<TableCellProps<TData, TValue>>[];
 };
 
-const getBackgroundColor = (darkMode: boolean, disabled: boolean) => {
-  if (darkMode) {
-    return disabled ? 'b-600' : 'b-700';
+export type VirtualTableRowProps<TData, TValue> = TableRowProps<
+  TData,
+  TValue
+> & {
+  virtualRow: VirtualItem;
+  index: number;
+};
+
+const getTableRowCss = (
+  disabled: boolean,
+  virtualRow?: VirtualItem,
+  index?: number
+): ThemeUIStyleObject => {
+  const base = {
+    color: disabled ? 'muted' : 'text',
+    borderBottom: '1px solid',
+    borderBottomColor: alpha('muted', 0.25),
+  };
+
+  if (virtualRow && index) {
+    return {
+      ...base,
+      height: `${virtualRow.size}px`,
+      transform: `translateY(${virtualRow.start - index * virtualRow.size}px)`,
+    };
   }
 
-  return disabled ? 'b-200' : 'b-100';
+  return base;
 };
 
-const TableRowContent = ({ disabled = false, cells }: TableRowProps) => {
-  const darkMode = useIsDarkMode();
+const TableRowContent = <TData, TValue>({
+  disabled = false,
+  children,
+}: TableRowProps<TData, TValue>) => (
+  <tr sx={getTableRowCss(disabled)}>{children}</tr>
+);
 
-  const backgroundColor = useMemo(
-    () => getBackgroundColor(darkMode, disabled),
-    [darkMode, disabled]
-  );
-
-  return (
-    <tr
-      sx={{
-        backgroundColor,
-        color: disabled ? 'b-400' : 'text',
-      }}
-    >
-      {cells}
-    </tr>
-  );
-};
+const VirtualTableRowContent = <TData, TValue>({
+  disabled = false,
+  virtualRow,
+  index,
+  children,
+}: VirtualTableRowProps<TData, TValue>) => (
+  <tr
+    sx={getTableRowCss(disabled, virtualRow, index)}
+    data-index={virtualRow.index}>
+    {children}
+  </tr>
+);
 
 export const TableRow = memo(TableRowContent);
+
+export const VirtualTableRow = memo(VirtualTableRowContent);
+
+
+
+
+
+
+

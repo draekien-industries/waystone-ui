@@ -9,11 +9,11 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
   return (
     <thead
       sx={{
-        backgroundColor: darkMode ? 'b-600' : 'b-200',
+        backgroundColor: 'p-400',
         position: 'sticky',
         top: 0,
-      }}
-    >
+        zIndex: 1,
+      }}>
       {getHeaderGroups().map((headerGroup) => (
         <tr key={headerGroup.id}>
           {headerGroup.headers.map((header) => (
@@ -22,11 +22,12 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
               colSpan={header.colSpan}
               sx={{
                 width: header.getSize(),
-                paddingY: 'xs',
+                color: 'b-900',
+                paddingY: 'sm',
                 paddingX: 'md',
                 textAlign: 'left',
-              }}
-            >
+                fontWeight: 'semibold',
+              }}>
               {!header.isPlaceholder &&
                 flexRender(header.column.columnDef.header, header.getContext())}
             </th>

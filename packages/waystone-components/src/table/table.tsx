@@ -2,23 +2,31 @@
 
 import {
   ColumnDef,
-  TableState,
   getCoreRowModel,
   getExpandedRowModel,
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
+  TableState,
   useReactTable,
 } from '@tanstack/react-table';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { isDeepEqual, usePrevious } from '@waystone/utils';
 import { useEffect, useMemo, useRef } from 'react';
+import { ThemeUIStyleObject } from 'theme-ui';
 import { HasHeight } from '../common';
 import { TableBody } from './table.body';
 import { withExpandColumn, withSelectColumn } from './table.fx';
 import { TableHeader } from './table.header';
 import { TablePagination } from './table.pagination';
 import { TableProps, TableRowData } from './table.types';
+
+const tableCss: ThemeUIStyleObject = {
+  borderCollapse: 'collapse',
+  minWidth: '400px',
+  width: '100%',
+  boxShadow: 'md',
+};
 
 export const Table = <TData extends TableRowData<TData>, TValue = unknown>({
   data,
@@ -102,9 +110,9 @@ export const Table = <TData extends TableRowData<TData>, TValue = unknown>({
 
   return (
     <>
-      <table sx={{ width: '100%', borderRadius: 'xl', overflow: 'clip' }}>
+      <table sx={tableCss}>
         <TableHeader {...table} />
-        <TableBody rows={rows} renderSubComponent={renderSubComponent} />
+        <TableBody renderSubComponent={renderSubComponent}>{rows}</TableBody>
       </table>
       {pageSize && <TablePagination {...table} />}
     </>
@@ -113,7 +121,7 @@ export const Table = <TData extends TableRowData<TData>, TValue = unknown>({
 
 export type VirtualizedTableProps<
   TData extends TableRowData<TData>,
-  TValue
+  TValue,
 > = HasHeight & TableProps<TData, TValue>;
 
 export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
@@ -187,8 +195,8 @@ export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
   const virtualizer = useVirtualizer({
     count: rows.length,
     getScrollElement: () => tableContainerRef.current,
-    estimateSize: () => 34,
-    overscan: 10,
+    estimateSize: () => 41,
+    overscan: 5,
   });
 
   useEffect(() => {
@@ -209,16 +217,29 @@ export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
   return (
     <div
       ref={tableContainerRef}
-      sx={{ ...styles, borderRadius: 'xl', overflow: 'auto' }}
-    >
-      <table sx={{ width: '100%', borderRadius: 'xl', overflow: 'clip' }}>
-        <TableHeader {...table} />
-        <TableBody
-          rows={rows}
-          virtualizer={virtualizer}
-          renderSubComponent={renderSubComponent}
-        />
-      </table>
+      sx={{
+        ...styles,
+        height: styles.height ?? 600,
+        overflow: 'auto',
+        borderBottom: '2px solid',
+        borderBottomColor: 'p-400',
+      }}>
+      <div
+        sx={{
+          height: `${virtualizer.getTotalSize()}px`,
+        }}>
+        <table
+          sx={{
+            ...tableCss,
+          }}>
+          <TableHeader {...table} />
+          <TableBody
+            virtualizer={virtualizer}
+            renderSubComponent={renderSubComponent}>
+            {rows}
+          </TableBody>
+        </table>
+      </div>
     </div>
   );
 };
