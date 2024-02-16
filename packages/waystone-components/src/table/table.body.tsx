@@ -2,11 +2,11 @@
 
 import { Row } from '@tanstack/react-table';
 import { useVirtualizer, VirtualItem } from '@tanstack/react-virtual';
+import { alpha } from '@theme-ui/color';
 import { Fragment, ReactElement } from 'react';
 import { ThemeUIStyleObject } from 'theme-ui';
-import { alpha } from '@theme-ui/color';
 import { TableCell } from './table.cell';
-import { TableRow } from './table.row';
+import { TableRow, VirtualTableRow } from './table.row';
 import { TableRowSubComponent } from './table.row.subComponent';
 import { RenderSubComponentProps, TableRowData } from './table.types';
 import { getPaddingBottom, getPaddingTop } from './table.utils';
@@ -55,17 +55,20 @@ const VirtualizedContentRows = <TData extends TableRowData<TData>>({
   virtualRows: VirtualItem[];
 } & Pick<TableBodyProps<TData>, 'children' | 'renderSubComponent'>) => (
   <>
-    {virtualRows.map((virtualRow) => {
+    {virtualRows.map((virtualRow, index) => {
       const row = children[virtualRow.index];
       const disabled = !row.getCanSelect();
 
       return (
         <Fragment key={row.id}>
-          <TableRow disabled={disabled}>
+          <VirtualTableRow
+            disabled={disabled}
+            virtualRow={virtualRow}
+            index={index}>
             {row.getVisibleCells().map((cell) => (
               <TableCell key={cell.id}>{cell}</TableCell>
             ))}
-          </TableRow>
+          </VirtualTableRow>
           <TableRowSubComponent
             visible={row.getIsExpanded()}
             colSpan={row.getVisibleCells().length}>
@@ -78,10 +81,6 @@ const VirtualizedContentRows = <TData extends TableRowData<TData>>({
 );
 
 const tableBodyCss: ThemeUIStyleObject = {
-  'tr:last-of-type': {
-    borderBottom: '2px solid',
-    borderBottomColor: 'p-400',
-  },
   'tr:nth-of-type(even)': {
     backgroundColor: alpha('b-400', 0.1),
   },
@@ -93,18 +92,18 @@ const VirtualizedTableBody = <TData extends TableRowData<TData>>({
   virtualizer,
 }: TableBodyProps<TData> &
   Required<Pick<TableBodyProps<TData>, 'virtualizer'>>) => {
-  const { getTotalSize, getVirtualItems } = virtualizer;
+  const { getVirtualItems } = virtualizer;
 
   const virtualRows = getVirtualItems();
-  const totalSize = getTotalSize();
 
   return (
-    <tbody sx={tableBodyCss}>
-      <VirtualizedTopRow {...virtualRows} />
+    <tbody
+      sx={{
+        ...tableBodyCss,
+      }}>
       <VirtualizedContentRows {...{ virtualRows, renderSubComponent }}>
         {children}
       </VirtualizedContentRows>
-      <VirtualizedBottomRow {...{ virtualRows, totalSize }} />
     </tbody>
   );
 };

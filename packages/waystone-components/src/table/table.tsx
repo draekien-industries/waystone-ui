@@ -195,8 +195,8 @@ export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
   const virtualizer = useVirtualizer({
     count: rows.length,
     getScrollElement: () => tableContainerRef.current,
-    estimateSize: () => 34,
-    overscan: 10,
+    estimateSize: () => 41,
+    overscan: 5,
   });
 
   useEffect(() => {
@@ -215,15 +215,31 @@ export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
   const { singleSelect: _, ...styles } = rest;
 
   return (
-    <div ref={tableContainerRef} sx={{ ...styles, overflow: 'auto' }}>
-      <table sx={tableCss}>
-        <TableHeader {...table} />
-        <TableBody
-          virtualizer={virtualizer}
-          renderSubComponent={renderSubComponent}>
-          {rows}
-        </TableBody>
-      </table>
+    <div
+      ref={tableContainerRef}
+      sx={{
+        ...styles,
+        height: styles.height ?? 600,
+        overflow: 'auto',
+        borderBottom: '2px solid',
+        borderBottomColor: 'p-400',
+      }}>
+      <div
+        sx={{
+          height: `${virtualizer.getTotalSize()}px`,
+        }}>
+        <table
+          sx={{
+            ...tableCss,
+          }}>
+          <TableHeader {...table} />
+          <TableBody
+            virtualizer={virtualizer}
+            renderSubComponent={renderSubComponent}>
+            {rows}
+          </TableBody>
+        </table>
+      </div>
     </div>
   );
 };

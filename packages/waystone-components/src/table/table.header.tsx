@@ -12,10 +12,11 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
         backgroundColor: 'p-400',
         position: 'sticky',
         top: 0,
+        zIndex: 1,
       }}>
       {getHeaderGroups().map((headerGroup) => (
         <tr key={headerGroup.id}>
-          {headerGroup.headers.map((header, idx) => (
+          {headerGroup.headers.map((header) => (
             <th
               key={header.id}
               colSpan={header.colSpan}
