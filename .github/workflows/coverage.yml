@@ -31,16 +31,16 @@ jobs:
     steps:
       - name: Checkout Repo
         id: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
       - name: Setup PNPM
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
 
       - name: Setup Node.js
         id: setup
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           cache: 'pnpm'
       
@@ -54,5 +54,5 @@ jobs:
         run: pnpm test:release
 
       - name: Upload results to codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
           
