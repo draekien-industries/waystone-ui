@@ -14,8 +14,8 @@
     "src/**"
   ],
   "scripts": {
-    "lint": "eslint src --fix",
-    "lint:release": "eslint src",
+    "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "devDependencies": {
