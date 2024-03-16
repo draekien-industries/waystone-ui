@@ -1,5 +1,18 @@
 # @waystone/components
 
+## 9.4.0
+
+### Minor Changes
+
+- 86f5b91: Update style of table component
+
+### Patch Changes
+
+- 856ba2b: fix: missing dependencies when installing package
+- Updated dependencies [856ba2b]
+  - @waystone/syntax-highlighter@12.0.2
+  - @waystone/core@9.3.2
+
 ## 9.3.1
 
 ### Patch Changes

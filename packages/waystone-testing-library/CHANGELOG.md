@@ -1,5 +1,13 @@
 # @waystone/testing-library
 
+## 9.1.5
+
+### Patch Changes
+
+- 856ba2b: fix: missing dependencies when installing package
+- Updated dependencies [856ba2b]
+  - @waystone/theme@9.2.4
+
 ## 9.1.4
 
 ### Patch Changes

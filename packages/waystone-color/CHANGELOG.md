@@ -1,5 +1,11 @@
 # @waystone/color
 
+## 8.1.3
+
+### Patch Changes
+
+- 856ba2b: fix: missing dependencies when installing package
+
 ## 8.1.2
 
 ### Patch Changes
