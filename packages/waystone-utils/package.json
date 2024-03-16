@@ -1,7 +1,7 @@
 {
   "author": "draekien-industries",
   "dependencies": {
-    "type-fest": "^3.7.2"
+    "type-fest": "^4.12.0"
   },
   "peerDependencies": {
     "react": "^18.2.0"

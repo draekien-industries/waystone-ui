@@ -27,7 +27,7 @@
   "dependencies": {
     "@theme-ui/color": "^0.16.1",
     "@waystone/color": "workspace:^",
-    "type-fest": "^3.0.0",
+    "type-fest": "^4.12.0",
     "theme-ui": "^0.16.1"
   },
   "devDependencies": {
