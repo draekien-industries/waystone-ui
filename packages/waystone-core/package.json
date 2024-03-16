@@ -27,7 +27,8 @@
   "dependencies": {
     "@theme-ui/color": "^0.16.1",
     "@waystone/color": "workspace:^",
-    "type-fest": "^3.0.0"
+    "type-fest": "^3.0.0",
+    "theme-ui": "^0.16.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
@@ -41,8 +42,10 @@
   },
   "peerDependencies": {
     "@emotion/react": "^11.11.3",
+    "@theme-ui/color": "^0.16.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.16.1"
   },
   "publishConfig": {
     "access": "public"
