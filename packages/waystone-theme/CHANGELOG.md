@@ -1,5 +1,13 @@
 # @waystone/theme
 
+## 9.2.4
+
+### Patch Changes
+
+- 856ba2b: fix: missing dependencies when installing package
+- Updated dependencies [856ba2b]
+  - @waystone/core@9.3.2
+
 ## 9.2.3
 
 ### Patch Changes

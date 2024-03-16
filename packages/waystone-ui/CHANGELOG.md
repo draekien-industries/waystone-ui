@@ -1,5 +1,18 @@
 # @waystone/ui
 
+## 10.0.0
+
+### Patch Changes
+
+- 856ba2b: fix: missing dependencies when installing package
+- Updated dependencies [86f5b91]
+- Updated dependencies [856ba2b]
+  - @waystone/components@9.4.0
+  - @waystone/syntax-highlighter@12.0.2
+  - @waystone/color@8.1.3
+  - @waystone/theme@9.2.4
+  - @waystone/core@9.3.2
+
 ## 9.1.4
 
 ### Patch Changes

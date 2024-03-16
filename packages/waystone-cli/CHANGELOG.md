@@ -1,5 +1,12 @@
 # @waystone/cli
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [856ba2b]
+  - @waystone/color@8.1.3
+
 ## 2.0.2
 
 ### Patch Changes

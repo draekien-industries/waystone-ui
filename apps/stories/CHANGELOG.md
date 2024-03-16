@@ -1,5 +1,19 @@
 # @waystone/stories
 
+## 9.4.0
+
+### Minor Changes
+
+- 86f5b91: Update style of table component
+
+### Patch Changes
+
+- Updated dependencies [86f5b91]
+- Updated dependencies [856ba2b]
+  - @waystone/components@9.4.0
+  - @waystone/theme@9.2.4
+  - @waystone/core@9.3.2
+
 ## 9.3.1
 
 ### Patch Changes

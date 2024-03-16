@@ -1,5 +1,11 @@
 # @waystone/syntax-highlighter
 
+## 12.0.2
+
+### Patch Changes
+
+- 856ba2b: fix: missing dependencies when installing package
+
 ## 12.0.1
 
 ### Patch Changes

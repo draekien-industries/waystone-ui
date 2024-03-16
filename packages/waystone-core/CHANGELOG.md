@@ -1,5 +1,13 @@
 # @waystone/core
 
+## 9.3.2
+
+### Patch Changes
+
+- 856ba2b: fix: missing dependencies when installing package
+- Updated dependencies [856ba2b]
+  - @waystone/color@8.1.3
+
 ## 9.3.1
 
 ### Patch Changes
