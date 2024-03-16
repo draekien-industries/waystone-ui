@@ -37,7 +37,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "peerDependencies": {
+  "dependencies": {
     "zod": "^3.22.4"
   }
 }
