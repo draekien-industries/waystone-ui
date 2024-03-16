@@ -24,22 +24,25 @@
     "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
+  "dependencies": {
+    "@theme-ui/color": "^0.16.1",
+    "@waystone/color": "workspace:^",
+    "type-fest": "^3.0.0"
+  },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "@waystone/tsconfig": "workspace:*",
     "eslint-preset-waystone": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tsup": "^8.0.2"
   },
   "peerDependencies": {
     "@emotion/react": "^11.11.3",
-    "@theme-ui/color": "^0.16.1",
-    "@waystone/color": "workspace:^",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.1",
-    "type-fest": "^3.0.0"
+    "react-dom": "^18.2.0"
   },
   "publishConfig": {
     "access": "public"
