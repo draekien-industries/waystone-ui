@@ -28,8 +28,8 @@
   },
   "dependencies": {
     "@waystone/core": "workspace:^",
-    "@theme-ui/color": "^0.16.1",
-    "theme-ui": "^0.16.1"
+    "@theme-ui/color": "^0.16.2",
+    "theme-ui": "^0.16.2"
   },
   "peerDependencies": {
     "@emotion/react": "^11.11.3",
