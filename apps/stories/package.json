@@ -1,17 +1,17 @@
 {
   "author": "draekien-industries",
   "dependencies": {
-    "@emotion/react": "^11.11.3",
+    "@emotion/react": "^11.11.4",
     "@tanstack/react-table": "^8.9.1",
-    "@theme-ui/color": "^0.16.1",
-    "@theme-ui/css": "^0.16.1",
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
     "@waystone/components": "workspace:*",
     "@waystone/core": "workspace:*",
     "@waystone/theme": "workspace:*",
     "@waystone/utils": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.1"
+    "theme-ui": "^0.16.2"
   },
   "description": "The storybook for waystone-ui",
   "devDependencies": {
