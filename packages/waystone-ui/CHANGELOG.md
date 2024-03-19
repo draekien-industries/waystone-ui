@@ -1,5 +1,17 @@
 # @waystone/ui
 
+## 10.0.1
+
+### Patch Changes
+
+- Updated dependencies [41664e2]
+  - @waystone/syntax-highlighter@12.0.3
+  - @waystone/components@9.4.1
+  - @waystone/color@8.1.4
+  - @waystone/theme@9.2.5
+  - @waystone/utils@9.3.2
+  - @waystone/core@9.3.3
+
 ## 10.0.0
 
 ### Patch Changes

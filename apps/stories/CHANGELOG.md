@@ -1,5 +1,16 @@
 # @waystone/stories
 
+## 9.4.1
+
+### Patch Changes
+
+- 41664e2: fix: use type imports to improve bundling
+- Updated dependencies [41664e2]
+  - @waystone/components@9.4.1
+  - @waystone/theme@9.2.5
+  - @waystone/utils@9.3.2
+  - @waystone/core@9.3.3
+
 ## 9.4.0
 
 ### Minor Changes

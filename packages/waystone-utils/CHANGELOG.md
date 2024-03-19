@@ -1,5 +1,11 @@
 # @waystone/utils
 
+## 9.3.2
+
+### Patch Changes
+
+- 41664e2: fix: use type imports to improve bundling
+
 ## 9.3.1
 
 ### Patch Changes

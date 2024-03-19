@@ -1,5 +1,11 @@
 # @waystone/syntax-highlighter
 
+## 12.0.3
+
+### Patch Changes
+
+- 41664e2: fix: use type imports to improve bundling
+
 ## 12.0.2
 
 ### Patch Changes
