@@ -1,16 +1,18 @@
-import type { Meta, StoryFn } from '@storybook/react';
+import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { userEvent, waitFor, within } from '@storybook/test';
 import { SpinnerProvider } from '@waystone/components/src/spinner/spinner.context';
 import { UseSpinnerContextDemo } from '@waystone/components/src/spinner/spinner.internal';
 import * as React from 'react';
 
-export default {
+const meta: Meta<typeof UseSpinnerContextDemo> = {
   title: 'Hooks/useSpinnerContext',
   component: UseSpinnerContextDemo,
   args: {
     initialVisible: true,
   },
-} as Meta<typeof UseSpinnerContextDemo>;
+};
+
+export default meta;
 
 const Template: StoryFn<typeof UseSpinnerContextDemo> = (args) => (
   <SpinnerProvider {...args}>
@@ -18,7 +20,7 @@ const Template: StoryFn<typeof UseSpinnerContextDemo> = (args) => (
   </SpinnerProvider>
 );
 
-export const Default = {
+export const Default: StoryObj<typeof meta> = {
   render: Template,
 
   play: async ({ canvasElement }) => {

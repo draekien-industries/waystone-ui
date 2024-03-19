@@ -1,12 +1,14 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Label } from '@waystone/components/src';
 
-export default {
+const meta: Meta<typeof Label> = {
   title: 'Components/Label',
   component: Label,
-} as Meta<typeof Label>;
+};
 
-export const Default = {
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
   args: {
     children: 'Example Label',
     htmlFor: 'example-label',

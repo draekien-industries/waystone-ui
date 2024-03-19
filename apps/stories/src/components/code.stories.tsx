@@ -1,13 +1,15 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Code, Text } from '@waystone/components/src';
 import * as React from 'react';
 
-export default {
+const meta: Meta<typeof Code> = {
   title: 'Components/Code',
   component: Code,
-} as Meta<typeof Code>;
+};
 
-export const Default = {
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
   args: {
     children: 'code',
   },

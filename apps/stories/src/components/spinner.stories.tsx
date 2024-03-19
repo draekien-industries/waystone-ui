@@ -1,7 +1,7 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Spinner } from '@waystone/components/src';
 
-export default {
+const meta: Meta<typeof Spinner> = {
   title: 'Components/Spinner',
   component: Spinner,
   args: {
@@ -9,6 +9,8 @@ export default {
     color: 'accent',
     fullWidth: false,
   },
-} as Meta<typeof Spinner>;
+};
 
-export const Default = {};
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {};

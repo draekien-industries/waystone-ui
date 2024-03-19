@@ -1,15 +1,17 @@
-import type { Meta, StoryFn } from '@storybook/react';
+import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import type { OverlayProps } from '@waystone/components/src';
 import { Overlay, Text } from '@waystone/components/src';
 import * as React from 'react';
 
-export default {
+const meta: Meta<typeof Overlay> = {
   title: 'Components/Overlay',
   component: Overlay,
   args: {
     fullScreen: false,
   },
-} as Meta<typeof Overlay>;
+};
+
+export default meta;
 
 const Template: StoryFn<typeof Overlay> = (args) => (
   <div
@@ -29,11 +31,11 @@ const Template: StoryFn<typeof Overlay> = (args) => (
   </div>
 );
 
-export const Default = {
+export const Default: StoryObj<typeof meta> = {
   render: Template,
 };
 
-export const FullScreen = {
+export const FullScreen: StoryObj<typeof meta> = {
   render: Template,
   args: { fullScreen: true } as OverlayProps,
 };

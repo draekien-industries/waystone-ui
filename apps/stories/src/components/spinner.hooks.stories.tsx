@@ -1,11 +1,11 @@
 'use client';
 
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { Button, useSpinner } from '@waystone/components/src';
 import { UseSpinnerDemo } from '@waystone/components/src/spinner/spinner.internal';
 import * as React from 'react';
 
-export default {
+const meta: Meta<typeof UseSpinnerDemo> = {
   title: 'Hooks/useSpinner',
   component: UseSpinnerDemo,
   args: {
@@ -22,18 +22,20 @@ export default {
         'Whether the spinner should cover the full screen. Defaults to `true`. Use `position:relative` on the parent container to restrict the spinner to the parent container.',
     },
   },
-} as Meta<typeof UseSpinnerDemo>;
+};
 
-export const Default = {};
+export default meta;
 
-export const InitialVisible = {
+export const Default: StoryObj<typeof meta> = {};
+
+export const InitialVisible: StoryObj<typeof meta> = {
   args: {
     initialVisible: true,
     overlay: true,
   },
 };
 
-export const Relative = () => {
+export const Relative: StoryFn<typeof meta> = () => {
   const { show, hide, spinner } = useSpinner({ initialVisible: true });
 
   return (
@@ -63,7 +65,7 @@ export const Relative = () => {
   );
 };
 
-export const NoOverlay = {
+export const NoOverlay: StoryObj<typeof meta> = {
   args: {
     initialVisible: true,
     overlay: false,

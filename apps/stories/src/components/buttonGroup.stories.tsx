@@ -1,21 +1,16 @@
 'use client';
 
 import type { Meta, StoryObj } from '@storybook/react';
-import {
-  ButtonGroup,
-  ButtonGroupProps,
-} from '@waystone/components/src/button-group';
-import { Button } from '@waystone/components/src/button';
-import { Text } from '@waystone/components';
+import { Button, ButtonGroup, Text } from '@waystone/components/src';
 import * as React from 'react';
 
-const meta = {
+const meta: Meta<typeof ButtonGroup> = {
   title: 'Components/ButtonGroup',
   component: ButtonGroup,
   subcomponents: {
-    Button,
+    Button: Button as React.FunctionComponent<unknown>,
   },
-} satisfies Meta<typeof ButtonGroup>;
+};
 
 export default meta;
 

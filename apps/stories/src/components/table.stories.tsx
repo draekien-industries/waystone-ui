@@ -1,7 +1,12 @@
 import { faker } from '@faker-js/faker';
-import type { Meta } from '@storybook/react';
-import type { ColumnDef } from '@tanstack/react-table';
-import { Card, Label, Text } from '@waystone/components';
+import type { Meta, StoryObj } from '@storybook/react';
+import type { ColumnDef, Row } from '@tanstack/react-table';
+import {
+  Card,
+  Label,
+  Text,
+  type VirtualizedTableProps,
+} from '@waystone/components';
 import { Table } from '@waystone/components/src/table/table';
 import { Flex } from 'theme-ui';
 
@@ -68,14 +73,14 @@ const columns: ColumnDef<Person>[] = [
   },
 ];
 
-const meta = {
+const meta: Meta<typeof Table<Person>> = {
   title: 'Components/Table',
   component: Table,
   args: {
     data: makeData(100),
     columns,
   },
-} satisfies Meta<typeof Table<Person>>;
+};
 
 export const Basic = {
   args: {
@@ -97,7 +102,8 @@ export const CustomSelectLogic = {
   args: {
     data: makeData(100),
     columns,
-    enableRowSelection: (row) => row.getValue('surname').startsWith('D'),
+    enableRowSelection: (row: Row<Person>) =>
+      row.getValue<string>('surname').startsWith('D'),
   },
 };
 
@@ -140,7 +146,7 @@ export const SubRowComponent = {
     data: makeData(20),
     columns,
     enableExpanding: true,
-    renderSubComponent: ({ row }) => (
+    renderSubComponent: ({ row }: { row: Row<Person> }) => (
       <Card noShadow>
         <Flex sx={{ justifyContent: 'space-around' }}>
           <Text inline>
@@ -169,7 +175,7 @@ export const ConditionalSubRowComponent = {
     data: makeData(20),
     columns,
     enableExpanding: true,
-    renderSubComponent: ({ row }) =>
+    renderSubComponent: ({ row }: { row: Row<Person> }) =>
       [1, 2, 3].includes(parseInt(row.id, 10)) && (
         <Card noShadow>
           <Flex sx={{ justifyContent: 'space-around' }}>
@@ -199,7 +205,9 @@ export const Virtualized = {
     data: makeData(100),
     columns,
   },
-  render: (args) => <Table.Virtualized {...args} height="500px" />,
+  render: (args: VirtualizedTableProps<Person, unknown>) => (
+    <Table.Virtualized {...args} height="500px" />
+  ),
 };
 
 export default meta;

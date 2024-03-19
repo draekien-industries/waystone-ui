@@ -1,19 +1,21 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { CodeBlock } from '@waystone/components/src';
 
-export default {
+const meta: Meta<typeof CodeBlock> = {
   title: 'Components/CodeBlock',
   component: CodeBlock,
-} as Meta<typeof CodeBlock>;
+};
 
-export const Default = {
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
   args: {
     children: `console.log('Hello World!')`,
     styleName: 'tomorrowNightBlue',
   },
 };
 
-export const WithCaption = {
+export const WithCaption: StoryObj<typeof meta> = {
   args: {
     language: 'typescript',
     children: `// my insightful comment

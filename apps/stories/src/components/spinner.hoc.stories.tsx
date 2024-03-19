@@ -1,11 +1,11 @@
-import type { Meta, StoryFn } from '@storybook/react';
+import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import type {
   CanLoad,
   SpinnerProps,
   WithSpinnerProps,
 } from '@waystone/components/src';
 import { Spinner, withSpinner } from '@waystone/components/src';
-import * as React from 'react';
+import type { FunctionComponent } from 'react';
 
 type ExampleComponentProps = {
   text: string;
@@ -14,11 +14,13 @@ const ExampleComponent = ({ text }: ExampleComponentProps) => <div>{text}</div>;
 
 const ExampleComponentWithSpinner = withSpinner(ExampleComponent);
 
-export default {
+const meta: Meta<typeof ExampleComponentWithSpinner> = {
   title: 'HOC/withSpinner',
   component: ExampleComponentWithSpinner,
-  subcomponents: { Spinner },
-} as Meta<typeof ExampleComponentWithSpinner>;
+  subcomponents: { Spinner: Spinner as FunctionComponent<unknown> },
+};
+
+export default meta;
 
 const Template: StoryFn<typeof ExampleComponentWithSpinner> = (args) => (
   <div
@@ -34,12 +36,12 @@ const Template: StoryFn<typeof ExampleComponentWithSpinner> = (args) => (
   </div>
 );
 
-export const Basic = {
+export const Basic: StoryObj<typeof meta> = {
   render: Template,
 
   args: {
     text: 'lorem ipsum',
     loading: false,
     overlay: true,
-  } as ExampleComponentProps & CanLoad & SpinnerProps,
+  },
 };

@@ -1,4 +1,4 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Card } from '@waystone/components/src';
 import type { CoverImageCssOptions } from '@waystone/components/src/card/card.styles';
 
@@ -20,7 +20,7 @@ repeat: 'Should the image be repeated. Corresponds to the 'background-repeat' CS
 fallbackColor: 'The color to use if the image fails to load. Corresponds to the 'background-color' CSS property.'
 `;
 
-export default {
+const meta: Meta<typeof Card> = {
   title: 'Components/Card',
   component: Card,
   args: {
@@ -37,18 +37,20 @@ export default {
       },
     },
   },
-} as Meta<typeof Card>;
+};
 
-export const Default = {};
+export default meta;
 
-export const WithConstraints = {
+export const Default: StoryObj<typeof meta> = {};
+
+export const WithConstraints: StoryObj<typeof meta> = {
   args: {
     maxWidth: 'md',
     maxHeight: 'md',
   },
 };
 
-export const WithCoverImage = {
+export const WithCoverImage: StoryObj<typeof meta> = {
   args: {
     coverImage: options,
     maxWidth: 'xl',

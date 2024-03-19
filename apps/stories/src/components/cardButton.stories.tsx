@@ -1,9 +1,7 @@
-import type { Meta } from '@storybook/react';
-import type { CardButtonProps } from '@waystone/components/src';
+import type { Meta, StoryObj } from '@storybook/react';
 import { CardButton, Text } from '@waystone/components/src';
-import * as React from 'react';
 
-export default {
+const meta: Meta<typeof CardButton> = {
   title: 'Components/CardButton',
   component: CardButton,
   args: {
@@ -16,12 +14,14 @@ export default {
     ),
     fullWidth: false,
   },
-} as Meta<typeof CardButton>;
+};
 
-export const Default = {};
+export default meta;
 
-export const WithConstraints = {
+export const Default: StoryObj<typeof meta> = {};
+
+export const WithConstraints: StoryObj<typeof meta> = {
   args: {
     width: 'xl',
-  } as CardButtonProps,
+  },
 };

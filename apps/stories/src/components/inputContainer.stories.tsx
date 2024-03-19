@@ -1,38 +1,40 @@
-import type { Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import type { InputContainerProps } from '@waystone/components/src';
 import { InputContainer } from '@waystone/components/src';
 import * as React from 'react';
 
-export default {
+const meta: Meta<typeof InputContainer> = {
   title: 'Components/InputContainer',
   component: InputContainer,
-} as Meta<typeof InputContainer>;
+};
 
-export const Default = {
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
   args: {
     id: 'example-input',
     label: 'Example input',
     children: <input id="example-input" />,
     helpText: 'Some very helpful text explaining what the input is for',
-  } as InputContainerProps,
+  },
 };
 
-export const Required = {
+export const Required: StoryObj<typeof meta> = {
   args: {
     id: 'example-input',
     label: 'Example input',
     children: <input id="example-input" />,
     helpText: 'Some very helpful text explaining what the input is for',
     required: true,
-  } as InputContainerProps,
+  },
 };
 
-export const WithWidthConstraint = {
+export const WithWidthConstraint: StoryObj<typeof meta> = {
   args: {
     id: 'example-input',
     label: 'Example input',
     children: <input id="example-input" />,
     helpText: 'Some very helpful text explaining what the input is for',
     width: 'xl',
-  } as InputContainerProps,
+  },
 };

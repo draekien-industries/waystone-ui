@@ -94,7 +94,9 @@ export const Colors: StoryFn = () => {
   );
 };
 
-export default {
+const meta: Meta<typeof Colors> = {
   title: 'Design System/Colors',
   component: Colors,
-} as Meta;
+};
+
+export default meta;

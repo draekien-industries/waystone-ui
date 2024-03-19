@@ -62,7 +62,9 @@ export const Typography: FC = () => (
   </article>
 );
 
-export default {
+const meta: Meta<typeof Typography> = {
   title: 'Design System/Typography',
   component: Typography,
-} as Meta;
+};
+
+export default meta;
