@@ -1,5 +1,11 @@
 # @waystone/color
 
+## 8.1.4
+
+### Patch Changes
+
+- 41664e2: fix: use type imports to improve bundling
+
 ## 8.1.3
 
 ### Patch Changes

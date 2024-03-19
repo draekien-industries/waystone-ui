@@ -1,5 +1,13 @@
 # @waystone/testing-library
 
+## 9.1.6
+
+### Patch Changes
+
+- 41664e2: fix: use type imports to improve bundling
+- Updated dependencies [41664e2]
+  - @waystone/theme@9.2.5
+
 ## 9.1.5
 
 ### Patch Changes

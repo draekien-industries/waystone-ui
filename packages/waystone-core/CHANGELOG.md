@@ -1,5 +1,13 @@
 # @waystone/core
 
+## 9.3.3
+
+### Patch Changes
+
+- 41664e2: fix: use type imports to improve bundling
+- Updated dependencies [41664e2]
+  - @waystone/color@8.1.4
+
 ## 9.3.2
 
 ### Patch Changes

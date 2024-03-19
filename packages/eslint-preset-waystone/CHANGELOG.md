@@ -1,5 +1,11 @@
 # eslint-preset-waystone
 
+## 1.3.1
+
+### Patch Changes
+
+- 41664e2: fix: use type imports to improve bundling
+
 ## 1.3.0
 
 ### Minor Changes

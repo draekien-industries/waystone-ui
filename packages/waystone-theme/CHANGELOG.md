@@ -1,5 +1,13 @@
 # @waystone/theme
 
+## 9.2.5
+
+### Patch Changes
+
+- 41664e2: fix: use type imports to improve bundling
+- Updated dependencies [41664e2]
+  - @waystone/core@9.3.3
+
 ## 9.2.4
 
 ### Patch Changes
