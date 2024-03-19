@@ -16,7 +16,6 @@ const config: StorybookConfig = {
     options: {},
   },
   core: {
-    builder: '@storybook/builder-vite',
     disableTelemetry: true,
   },
   typescript: {
