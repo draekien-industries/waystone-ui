@@ -1,5 +1,21 @@
 {
+  "name": "@waystone/stories",
+  "version": "9.4.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "license": "MIT",
+  "sideEffects": false,
   "author": "draekien-industries",
+  "private": true,
+  "scripts": {
+    "build": "storybook build --docs",
+    "clean": "rm -rf node_modules && rm -rf storybook-static",
+    "dev": "storybook dev -p 6006",
+    "preview-storybook": "serve storybook-static",
+    "lint": "eslint ./src/** --fix"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@tanstack/react-table": "^8.9.1",
@@ -39,20 +55,5 @@
     "storybook-dark-mode": "^3.0.3",
     "typescript": "^5.3.3",
     "vite": "^5.0.12"
-  },
-  "license": "MIT",
-  "name": "@waystone/stories",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/draekien-industries/waystone-ui"
-  },
-  "scripts": {
-    "build": "storybook build --docs",
-    "clean": "rm -rf node_modules && rm -rf storybook-static",
-    "dev": "storybook dev -p 6006",
-    "preview-storybook": "serve storybook-static",
-    "lint": "eslint ./src/** --fix"
-  },
-  "sideEffects": false,
-  "version": "9.4.1"
+  }
 }

@@ -2,6 +2,7 @@
   "name": "@waystone/testing-library",
   "version": "9.1.6",
   "main": "./src/index.ts",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
