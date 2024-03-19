@@ -1,8 +1,8 @@
 'use client';
 
 import { getOutlineCss } from '@waystone/core';
-import { ThemeUIStyleObject } from 'theme-ui';
-import {
+import type { ThemeUIStyleObject } from 'theme-ui';
+import type {
   CanBeFullWidth,
   CanDisable,
   CanLoad,
@@ -15,19 +15,18 @@ import { Spinner } from '../spinner';
 /**
  * The props that can be passed to the CardButton component.
  */
-export interface CardButtonProps
-  extends HasWidth,
-    HasHeight,
-    CanDisable,
-    CanLoad,
-    CanBeFullWidth {
+export type CardButtonProps = {
   /** A custom onClick handler that will be executed when the button is clicked. */
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   /** Should the card button render without any dropshadow. */
   noShadow?: boolean;
   /** The content to render inside the card button. */
   children: React.ReactNode;
-}
+} & HasWidth &
+  HasHeight &
+  CanDisable &
+  CanLoad &
+  CanBeFullWidth;
 
 /**
  * A button that shares the same styling as a card.

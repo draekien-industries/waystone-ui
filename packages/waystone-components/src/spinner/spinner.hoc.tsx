@@ -1,8 +1,9 @@
-import React from 'react';
-import { CanLoad } from '../common';
-import { Spinner, SpinnerProps } from './spinner';
+import type React from 'react';
+import type { CanLoad } from '../common';
+import type { SpinnerProps } from './spinner';
+import { Spinner } from './spinner';
 
-export interface WithSpinnerProps extends SpinnerProps, CanLoad {}
+export type WithSpinnerProps = SpinnerProps & CanLoad;
 
 export function withSpinner<T extends WithSpinnerProps>(
   WrappedComponent: React.ComponentType<T>

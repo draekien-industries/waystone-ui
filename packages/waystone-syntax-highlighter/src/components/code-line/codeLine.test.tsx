@@ -1,7 +1,7 @@
 import { render } from '@waystone/testing-library';
 import { CodeLine } from './codeLine';
 import { githubDark } from '../../lib/styles';
-import { Node } from '../../lib';
+import type { Node } from '../../lib';
 
 describe('Components: CodeLine', () => {
   it('matches snapshot', () => {

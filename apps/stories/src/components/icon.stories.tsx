@@ -1,5 +1,6 @@
-import { Meta } from '@storybook/react';
-import { Icon, IconProps } from '@waystone/components/src';
+import type { Meta } from '@storybook/react';
+import type { IconProps } from '@waystone/components/src';
+import { Icon } from '@waystone/components/src';
 
 export default {
   title: 'Components/Icon',

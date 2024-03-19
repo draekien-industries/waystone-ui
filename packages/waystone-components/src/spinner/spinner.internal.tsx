@@ -1,9 +1,10 @@
 'use client';
 
-import React from 'react';
+import type React from 'react';
 import { Button } from '../button/button';
 import { useSpinnerContext } from './spinner.context';
-import { useSpinner, UseSpinnerProps } from './spinner.hooks';
+import type { UseSpinnerProps } from './spinner.hooks';
+import { useSpinner } from './spinner.hooks';
 
 /**
  * A hook that manages the visibility of a spinner. Allows for the

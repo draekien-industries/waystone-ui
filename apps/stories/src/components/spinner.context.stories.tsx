@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import { userEvent, waitFor, within } from '@storybook/testing-library';
 import { SpinnerProvider } from '@waystone/components/src/spinner/spinner.context';
 import { UseSpinnerContextDemo } from '@waystone/components/src/spinner/spinner.internal';

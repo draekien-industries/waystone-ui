@@ -1,6 +1,6 @@
-import { Meta } from '@storybook/react';
+import type { Meta } from '@storybook/react';
 import { Card } from '@waystone/components/src';
-import { CoverImageCssOptions } from '@waystone/components/src/card/card.styles';
+import type { CoverImageCssOptions } from '@waystone/components/src/card/card.styles';
 
 const options: CoverImageCssOptions = {
   url: '/example-image.png',

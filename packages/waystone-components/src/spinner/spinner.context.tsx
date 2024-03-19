@@ -1,19 +1,20 @@
 'use client';
 
-import React, { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
+import React from 'react';
 import { useSpinner } from './spinner.hooks';
 
 /** The value provided by the {@link SpinnerContext} */
-export interface SpinnerContextValue {
+export type SpinnerContextValue = {
   /** A function that shows the spinner. */
   show?: () => void;
   /** A function that hides the spinner. */
   hide?: () => void;
-}
+};
 
-export interface SpinnerProviderProps {
+export type SpinnerProviderProps = {
   initialVisible?: boolean;
-}
+};
 
 /** The context for the {@link SpinnerContextValue} */
 export const SpinnerContext = React.createContext<SpinnerContextValue>({});

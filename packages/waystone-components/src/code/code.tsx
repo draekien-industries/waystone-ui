@@ -1,14 +1,14 @@
 'use client';
 
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { useColorMode } from 'theme-ui';
 import { codeCss } from './code.styles';
 
 /** The props required to render the code component. */
-export interface CodeProps {
+export type CodeProps = {
   /** The code to render. */
   children: ReactNode;
-}
+};
 
 /**
  * An inline code snippet.

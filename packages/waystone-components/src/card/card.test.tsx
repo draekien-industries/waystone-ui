@@ -1,7 +1,7 @@
 import path from 'path';
 import { render } from '@waystone/testing-library';
 import { Card } from './card';
-import { CoverImageCssOptions } from './card.styles';
+import type { CoverImageCssOptions } from './card.styles';
 
 describe('The Card component', () => {
   it('Matches snapshot', () => {

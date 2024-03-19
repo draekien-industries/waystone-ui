@@ -1,10 +1,11 @@
 'use client';
 
-import { VirtualItem } from '@tanstack/react-virtual';
+import type { VirtualItem } from '@tanstack/react-virtual';
 import { alpha } from '@theme-ui/color';
-import { ReactElement, memo } from 'react';
-import { ThemeUIStyleObject } from 'theme-ui';
-import { TableCellProps } from './table.cell';
+import type { ReactElement } from 'react';
+import { memo } from 'react';
+import type { ThemeUIStyleObject } from 'theme-ui';
+import type { TableCellProps } from './table.cell';
 
 export type TableRowProps<TData, TValue> = {
   disabled?: boolean;
@@ -58,7 +59,8 @@ const VirtualTableRowContent = <TData, TValue>({
 }: VirtualTableRowProps<TData, TValue>) => (
   <tr
     sx={getTableRowCss(disabled, virtualRow, index)}
-    data-index={virtualRow.index}>
+    data-index={virtualRow.index}
+  >
     {children}
   </tr>
 );
@@ -66,10 +68,3 @@ const VirtualTableRowContent = <TData, TValue>({
 export const TableRow = memo(TableRowContent);
 
 export const VirtualTableRow = memo(VirtualTableRowContent);
-
-
-
-
-
-
-

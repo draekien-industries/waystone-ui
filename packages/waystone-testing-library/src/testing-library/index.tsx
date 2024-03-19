@@ -1,6 +1,9 @@
-import { RenderOptions, RenderResult, render } from '@testing-library/react';
+import type { RenderOptions, RenderResult } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { Waystone } from '@waystone/theme';
-import React, { PropsWithChildren, useEffect } from 'react';
+import type { PropsWithChildren } from 'react';
+import type React from 'react';
+import { useEffect } from 'react';
 import { useColorMode } from 'theme-ui';
 
 const TestProvider = ({ children }: PropsWithChildren) => (

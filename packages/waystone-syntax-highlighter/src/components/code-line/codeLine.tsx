@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Box } from 'theme-ui';
-import { Node, StyleSheet } from '../../lib';
+import type { Node, StyleSheet } from '../../lib';
 import { createStyleObject } from '../../utils';
 
 export type CodeLineProps = {

@@ -1,6 +1,7 @@
 'use client';
 
-import { Cell, flexRender } from '@tanstack/react-table';
+import type { Cell } from '@tanstack/react-table';
+import { flexRender } from '@tanstack/react-table';
 import { useMemo } from 'react';
 
 export type TableCellProps<TData, TValue> = {

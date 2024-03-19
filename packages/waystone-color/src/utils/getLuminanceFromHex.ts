@@ -1,4 +1,4 @@
-import { HexColor } from '../schemas';
+import type { HexColor } from '../schemas';
 import { getLuminanceFromRbg } from './getLuminanceFromRgb';
 import { hexToRgb } from './hexToRgb';
 import { precisionRound } from './precisionRound';

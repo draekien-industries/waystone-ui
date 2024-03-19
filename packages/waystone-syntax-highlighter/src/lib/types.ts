@@ -1,5 +1,5 @@
-import { Span, Text } from './lowlight';
-import * as styles from './styles';
+import type { Span, Text } from './lowlight';
+import type * as styles from './styles';
 
 export type StyleName = keyof typeof styles;
 

@@ -1,16 +1,18 @@
 'use client';
 
-import { WaystoneBaseTheme, WaystoneTheme, mergeObjects } from '@waystone/core';
-import { PropsWithChildren, useEffect } from 'react';
+import type { WaystoneTheme } from '@waystone/core';
+import { WaystoneBaseTheme, mergeObjects } from '@waystone/core';
+import type { PropsWithChildren } from 'react';
+import { useEffect } from 'react';
 import { ThemeUIProvider } from 'theme-ui';
 
 /** The options for configuring your own font. */
-interface FontOptions {
+type FontOptions = {
   /** The url to the text fonts you want to use. */
   textFont?: string;
   /** The url to the icon font you want to use. */
   iconFont?: string;
-}
+};
 
 const baseTextFont =
   'https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&family=Fira+Code&display=swap';
@@ -48,12 +50,12 @@ const addFonts = (options?: FontOptions) => {
 /**
  * The props required to configure the theme provider.
  */
-export interface WaystoneProps {
+export type WaystoneProps = {
   /** The theme to merge with the base theme. */
   theme?: WaystoneTheme;
   /** The custom fonts to use instead of the included fonts. */
   fontOptions?: FontOptions;
-}
+};
 
 /**
  * Creates the theme provider for Waystone.

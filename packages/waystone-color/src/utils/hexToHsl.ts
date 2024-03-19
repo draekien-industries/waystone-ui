@@ -1,4 +1,4 @@
-import { HexColor, HslColor } from '../schemas';
+import type { HexColor, HslColor } from '../schemas';
 import { hexToRgb } from './hexToRgb';
 
 export const hexToHsl = (hex: HexColor): HslColor => {

@@ -1,7 +1,7 @@
-import { ColumnDef, TableState } from '@tanstack/react-table';
+import type { ColumnDef, TableState } from '@tanstack/react-table';
 import { Button } from '../button';
 import { Checkbox, Radio } from '../forms';
-import { WithSelectColumnParams } from './table.types';
+import type { WithSelectColumnParams } from './table.types';
 
 export const withSelectColumn = <TData, TValue>({
   columns,

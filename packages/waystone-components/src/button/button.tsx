@@ -1,13 +1,10 @@
 'use client';
 
-import { ButtonVariant, Size } from '@waystone/core';
+import type { ButtonVariant, Size } from '@waystone/core';
 import { useMemo } from 'react';
-import {
-  Flex,
-  Button as ThemeUiButton,
-  ButtonProps as ThemeUiButtonProps,
-} from 'theme-ui';
-import {
+import type { ButtonProps as ThemeUiButtonProps } from 'theme-ui';
+import { Flex, Button as ThemeUiButton } from 'theme-ui';
+import type {
   CanActivate,
   CanBeFullWidth,
   CanDisable,
@@ -17,26 +14,15 @@ import {
   HasWidth,
 } from '../common';
 import { useIsDarkMode } from '../hooks/useIsDarkMode';
-import { Icon, IconProps } from '../icon';
+import type { IconProps } from '../icon';
+import { Icon } from '../icon';
 import { Spinner } from '../spinner';
 import { Text } from '../text';
 import { getTextVariant } from './button.fx';
-import {
-  ButtonAddonCssParams,
-  ButtonCssParams,
-  buttonAddonCss,
-  buttonCss,
-} from './button.styles';
+import type { ButtonAddonCssParams, ButtonCssParams } from './button.styles';
+import { buttonAddonCss, buttonCss } from './button.styles';
 
-export interface ButtonProps
-  extends Omit<ThemeUiButtonProps, 'sx' | 'variant' | 'children'>,
-    HasVariant<ButtonVariant>,
-    HasSize,
-    HasWidth,
-    CanDisable,
-    CanLoad,
-    CanActivate,
-    CanBeFullWidth {
+export type ButtonProps = {
   /** The text to render inside a button. */
   children?: string;
   /** The icon and it's variant to render. */
@@ -46,7 +32,14 @@ export interface ButtonProps
    * @default false
    */
   hideContentWhileLoading?: boolean;
-}
+} & Omit<ThemeUiButtonProps, 'sx' | 'variant' | 'children'> &
+  HasVariant<ButtonVariant> &
+  HasSize &
+  HasWidth &
+  CanDisable &
+  CanLoad &
+  CanActivate &
+  CanBeFullWidth;
 
 /**
  * A pre-styled button with multiple sizes and variants. Supports loading, disabled, and active states.

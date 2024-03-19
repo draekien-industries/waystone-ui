@@ -1,4 +1,4 @@
-import { StatusVariant } from '@waystone/core';
+import type { StatusVariant } from '@waystone/core';
 
 export const getIconName = (variant?: StatusVariant) => {
   switch (variant) {

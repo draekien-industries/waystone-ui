@@ -1,25 +1,24 @@
 'use client';
 
+import type { ColumnDef, TableState } from '@tanstack/react-table';
 import {
-  ColumnDef,
   getCoreRowModel,
   getExpandedRowModel,
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  TableState,
   useReactTable,
 } from '@tanstack/react-table';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { isDeepEqual, usePrevious } from '@waystone/utils';
 import { useEffect, useMemo, useRef } from 'react';
-import { ThemeUIStyleObject } from 'theme-ui';
-import { HasHeight } from '../common';
+import type { ThemeUIStyleObject } from 'theme-ui';
+import type { HasHeight } from '../common';
 import { TableBody } from './table.body';
 import { withExpandColumn, withSelectColumn } from './table.fx';
 import { TableHeader } from './table.header';
 import { TablePagination } from './table.pagination';
-import { TableProps, TableRowData } from './table.types';
+import type { TableProps, TableRowData } from './table.types';
 
 const tableCss: ThemeUIStyleObject = {
   borderCollapse: 'collapse',
@@ -223,19 +222,23 @@ export const VirtualizedTable = <TData extends TableRowData<TData>, TValue>({
         overflow: 'auto',
         borderBottom: '2px solid',
         borderBottomColor: 'p-400',
-      }}>
+      }}
+    >
       <div
         sx={{
           height: `${virtualizer.getTotalSize()}px`,
-        }}>
+        }}
+      >
         <table
           sx={{
             ...tableCss,
-          }}>
+          }}
+        >
           <TableHeader {...table} />
           <TableBody
             virtualizer={virtualizer}
-            renderSubComponent={renderSubComponent}>
+            renderSubComponent={renderSubComponent}
+          >
             {rows}
           </TableBody>
         </table>

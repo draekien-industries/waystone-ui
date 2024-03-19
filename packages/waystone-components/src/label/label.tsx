@@ -1,15 +1,15 @@
 'use client';
 
-import { ReactNode } from 'react';
-import { ThemeUIStyleObject } from 'theme-ui';
+import type { ReactNode } from 'react';
+import type { ThemeUIStyleObject } from 'theme-ui';
 import { useIsDarkMode } from '../hooks/useIsDarkMode';
 
-export interface LabelProps {
+export type LabelProps = {
   /** The ID of the HTML Element this label is associated with. */
   htmlFor?: string;
   /** The contents of the label */
   children: ReactNode;
-}
+};
 
 export const Label = ({ htmlFor, children }: LabelProps) => {
   const darkMode = useIsDarkMode();

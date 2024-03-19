@@ -1,5 +1,5 @@
-import { ThemeColorStop } from '../constants';
-import { HexColor, Percentage } from '../schemas';
+import type { ThemeColorStop } from '../constants';
+import type { HexColor, Percentage } from '../schemas';
 import {
   constrainToRange,
   getLightnessFromHSLuminance,

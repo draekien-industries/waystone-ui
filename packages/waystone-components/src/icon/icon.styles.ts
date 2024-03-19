@@ -1,6 +1,6 @@
 import { Size } from '@waystone/core';
-import { ThemeUIStyleObject } from 'theme-ui';
-import { IconStyleProps } from './icon.types';
+import type { ThemeUIStyleObject } from 'theme-ui';
+import type { IconStyleProps } from './icon.types';
 
 // eslint-disable-next-line no-shadow
 enum IconSize {

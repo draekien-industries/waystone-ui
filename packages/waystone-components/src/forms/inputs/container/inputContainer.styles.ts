@@ -1,5 +1,5 @@
-import { ThemeUIStyleObject } from 'theme-ui';
-import { HasWidth } from '../../../common';
+import type { ThemeUIStyleObject } from 'theme-ui';
+import type { HasWidth } from '../../../common';
 
 export const inputContainerCss = ({
   width,

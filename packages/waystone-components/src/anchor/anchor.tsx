@@ -1,5 +1,6 @@
-import { ForwardedRef, forwardRef, HTMLAttributeAnchorTarget, ReactNode } from 'react';
-import { LinkProps } from 'theme-ui';
+import type { ForwardedRef, HTMLAttributeAnchorTarget, ReactNode } from 'react';
+import { forwardRef } from 'react';
+import type { LinkProps } from 'theme-ui';
 import { Icon } from '../icon';
 import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
 
@@ -7,7 +8,7 @@ import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
  * The props for the anchor component.
  * @extends LinkProps
  */
-export interface AnchorProps extends Omit<LinkProps, 'ref'> {
+export type AnchorProps = {
   /**
    * A flag indicating whether the href is an external link.
    * @default false
@@ -28,7 +29,7 @@ export interface AnchorProps extends Omit<LinkProps, 'ref'> {
   children: ReactNode;
   /** Should the anchor render without css styles */
   noDecoration?: boolean;
-}
+} & Omit<LinkProps, 'ref'>;
 
 /** The internal anchor component */
 const renderInternalAnchor = (
@@ -62,7 +63,8 @@ const renderExternalAnchor = (
     {...rest}
     sx={!noDecoration ? anchorCss : undecoratedAnchorCss}
     target={target}
-    rel={rel}>
+    rel={rel}
+  >
     {children} <Icon name="open_in_new" size="sm" sx={{ pb: 'xs' }} />
   </a>
 );

@@ -1,5 +1,6 @@
-import { Meta } from '@storybook/react';
-import { Button, ButtonProps } from '@waystone/components/src';
+import type { Meta } from '@storybook/react';
+import type { ButtonProps } from '@waystone/components/src';
+import { Button } from '@waystone/components/src';
 
 export default {
   title: 'Components/Button',

@@ -1,14 +1,14 @@
 'use client';
 
 import { useColorMode } from 'theme-ui';
-import { CanBeFullWidth, HasHeight, HasWidth } from '../common/interfaces';
+import type { CanBeFullWidth, HasHeight, HasWidth } from '../common/interfaces';
 import * as styles from './card.styles';
-import { CoverImageCssOptions } from './card.styles';
+import type { CoverImageCssOptions } from './card.styles';
 
 /**
  * The props for the Card component.
  */
-export interface CardProps extends HasWidth, HasHeight, CanBeFullWidth {
+export type CardProps = {
   /** The children to render in the card. */
   children: React.ReactNode;
   /** Setting this prop to `true` will disable this component's drop shadow. */
@@ -17,7 +17,9 @@ export interface CardProps extends HasWidth, HasHeight, CanBeFullWidth {
   noPadding?: boolean;
   /** An optional cover image to render inside the card. */
   coverImage?: CoverImageCssOptions;
-}
+} & HasWidth &
+  HasHeight &
+  CanBeFullWidth;
 
 /**
  * A card is a container for content that is grouped together.

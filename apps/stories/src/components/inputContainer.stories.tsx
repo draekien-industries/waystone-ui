@@ -1,5 +1,6 @@
-import { Meta } from '@storybook/react';
-import { InputContainer, InputContainerProps } from '@waystone/components/src';
+import type { Meta } from '@storybook/react';
+import type { InputContainerProps } from '@waystone/components/src';
+import { InputContainer } from '@waystone/components/src';
 import * as React from 'react';
 
 export default {

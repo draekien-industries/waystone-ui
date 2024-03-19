@@ -1,6 +1,7 @@
 'use client';
 
-import { flexRender, Table } from '@tanstack/react-table';
+import type { Table } from '@tanstack/react-table';
+import { flexRender } from '@tanstack/react-table';
 import { useIsDarkMode } from '../hooks';
 
 export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
@@ -13,7 +14,8 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
         position: 'sticky',
         top: 0,
         zIndex: 1,
-      }}>
+      }}
+    >
       {getHeaderGroups().map((headerGroup) => (
         <tr key={headerGroup.id}>
           {headerGroup.headers.map((header) => (
@@ -27,7 +29,8 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
                 paddingX: 'md',
                 textAlign: 'left',
                 fontWeight: 'semibold',
-              }}>
+              }}
+            >
               {!header.isPlaceholder &&
                 flexRender(header.column.columnDef.header, header.getContext())}
             </th>

@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { ColumnDef } from '@tanstack/react-table';
+import type { ColumnDef } from '@tanstack/react-table';
 import { render } from '@waystone/testing-library';
 import { Table } from '../table';
 

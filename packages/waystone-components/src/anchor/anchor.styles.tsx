@@ -1,5 +1,5 @@
 import { getOutlineCss } from '@waystone/core';
-import { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUIStyleObject } from 'theme-ui';
 
 const outline = getOutlineCss();
 

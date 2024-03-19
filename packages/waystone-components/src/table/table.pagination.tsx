@@ -1,9 +1,9 @@
 'use client';
 
-import { Table } from '@tanstack/react-table';
+import type { Table } from '@tanstack/react-table';
 import { Box, Flex } from 'theme-ui';
 import { Button } from '../button';
-import { TableRowData } from './table.types';
+import type { TableRowData } from './table.types';
 import { Text } from '../text';
 
 export type TablePaginationProps<TData extends TableRowData<TData>> =
