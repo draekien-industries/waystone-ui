@@ -1,7 +1,8 @@
-import { TextVariant } from '@waystone/core';
-import React, { ReactNode } from 'react';
+import type { TextVariant } from '@waystone/core';
+import type { ReactNode } from 'react';
+import type React from 'react';
 import { Text as ThemeUiText } from 'theme-ui';
-import { HasColor, HasVariant } from '../common/interfaces';
+import type { HasColor, HasVariant } from '../common/interfaces';
 import { textCss } from './text.styles';
 
 /**
@@ -9,10 +10,7 @@ import { textCss } from './text.styles';
  * @extends HasColor
  * @extends HasVariant
  */
-export interface TextProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
-    HasColor,
-    HasVariant<TextVariant> {
+export type TextProps = {
   /**
    * The type of element to render onto the DOM.
    * @default 'span'
@@ -28,7 +26,9 @@ export interface TextProps
    * The components to render as children.
    */
   children: ReactNode;
-}
+} & Omit<React.HTMLAttributes<HTMLDivElement>, 'color'> &
+  HasColor &
+  HasVariant<TextVariant>;
 
 /**
  * A component for rendering text onto the DOM with props for setting the text variant, color,

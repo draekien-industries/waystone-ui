@@ -1,4 +1,5 @@
-import { HslColor, hslSchema, RgbColor } from '../schemas';
+import type { HslColor, RgbColor } from '../schemas';
+import { hslSchema } from '../schemas';
 
 export const hslToRgb = (hsl: HslColor): RgbColor => {
   const parsedHsl = hslSchema.parse(hsl);

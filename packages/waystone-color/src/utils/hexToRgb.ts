@@ -1,4 +1,5 @@
-import { HexColor, hexSchema, RgbColor } from '../schemas';
+import type { HexColor, RgbColor } from '../schemas';
+import { hexSchema } from '../schemas';
 
 /* eslint-disable no-bitwise */
 export const hexToRgb = (hex: HexColor): RgbColor => {

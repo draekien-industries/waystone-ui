@@ -1,5 +1,5 @@
 import { createSpan } from './createSpan';
-import { Tree } from '../lib';
+import type { Tree } from '../lib';
 
 export type FlattenCodeTreeOptions = {
   tree: Tree;

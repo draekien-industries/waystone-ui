@@ -22,6 +22,14 @@ module.exports = {
   },
   rules: {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {
+        prefer: 'type-imports',
+        fixStyle: 'separate-type-imports',
+      },
+    ],
     '@typescript-eslint/no-unused-vars': [
       'error',
       { varsIgnorePattern: '^_*' },

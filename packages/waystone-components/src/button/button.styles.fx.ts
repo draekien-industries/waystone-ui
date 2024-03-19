@@ -1,4 +1,5 @@
-import { addDarkModeSuffix, ButtonVariant, Size } from '@waystone/core';
+import type { ButtonVariant, Size } from '@waystone/core';
+import { addDarkModeSuffix } from '@waystone/core';
 import { alpha } from '@theme-ui/color';
 
 type getBackgroundColorProps = {

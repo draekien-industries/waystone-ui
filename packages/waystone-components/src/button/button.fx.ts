@@ -1,4 +1,4 @@
-import { Size, TextVariant } from '@waystone/core';
+import type { Size, TextVariant } from '@waystone/core';
 
 /**
  * It takes a size and returns a variant

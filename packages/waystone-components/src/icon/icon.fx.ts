@@ -1,4 +1,4 @@
-import { IconVariant } from './icon.types';
+import type { IconVariant } from './icon.types';
 
 export const getIconClassName = (variant?: IconVariant, className?: string) => {
   const trimmed = variant?.trim() as IconVariant;

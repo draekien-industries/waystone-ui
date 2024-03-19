@@ -1,4 +1,5 @@
-import { HTMLProps, forwardRef } from 'react';
+import type { HTMLProps } from 'react';
+import { forwardRef } from 'react';
 
 export type RadioProps = {
   name: string;

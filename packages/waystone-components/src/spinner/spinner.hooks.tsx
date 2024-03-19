@@ -2,7 +2,7 @@ import React from 'react';
 import { Spinner } from './spinner';
 
 /** The props for the {@link useSpinner} hook */
-export interface UseSpinnerProps {
+export type UseSpinnerProps = {
   /**
    * Whether the spinner should be visible initially.
    * @default false
@@ -15,7 +15,7 @@ export interface UseSpinnerProps {
    * @default true
    */
   overlay?: boolean;
-}
+};
 
 /**
  * A hook that manages the visibility of a spinner. Allows for the

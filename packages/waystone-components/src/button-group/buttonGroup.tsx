@@ -1,8 +1,9 @@
 'use client';
 
 import { Flex } from 'theme-ui';
-import { MouseEventHandler } from 'react';
-import { Button, ButtonProps } from '../button';
+import type { MouseEventHandler } from 'react';
+import type { ButtonProps } from '../button';
+import { Button } from '../button';
 import { buttonGroupCss } from './buttonGroup.styles';
 
 /** The props provided to the onClick callback */
@@ -14,7 +15,7 @@ export type onClickProps = {
 };
 
 /** The props for the button group component. */
-export interface ButtonGroupProps {
+export type ButtonGroupProps = {
   /** The button that is currently active. */
   activeButton?: string;
   /** The buttons to be rendered. */
@@ -26,7 +27,7 @@ export interface ButtonGroupProps {
    * @default sm
    */
   size?: ButtonProps['size'];
-}
+};
 
 /**
  * Renders a button group component which allows one button to be selected at a time.

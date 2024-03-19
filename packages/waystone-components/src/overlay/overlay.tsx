@@ -1,9 +1,9 @@
 import { alpha } from '@theme-ui/color';
 
-export interface OverlayProps {
+export type OverlayProps = {
   children: React.ReactNode;
   fullScreen?: boolean;
-}
+};
 
 export const Overlay = ({ children, fullScreen = false }: OverlayProps) => (
   <div

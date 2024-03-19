@@ -1,5 +1,6 @@
-import { Meta } from '@storybook/react';
-import { CardButton, CardButtonProps, Text } from '@waystone/components/src';
+import type { Meta } from '@storybook/react';
+import type { CardButtonProps } from '@waystone/components/src';
+import { CardButton, Text } from '@waystone/components/src';
 import * as React from 'react';
 
 export default {

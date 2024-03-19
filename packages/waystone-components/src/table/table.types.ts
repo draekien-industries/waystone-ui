@@ -1,10 +1,10 @@
-import {
+import type {
   ColumnDef,
   Row,
   TableOptions,
   TableState,
 } from '@tanstack/react-table';
-import { ReactElement } from 'react';
+import type { ReactElement } from 'react';
 
 export type TableRowData<TData> = {
   subRows?: TData[];

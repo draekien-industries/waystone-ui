@@ -1,7 +1,7 @@
-import { HasColor, HasSize } from '../common/interfaces';
+import type { HasColor, HasSize } from '../common/interfaces';
 
 /** The props required to generate the correct icon styles. */
-export interface IconStyleProps extends HasSize, HasColor {}
+export type IconStyleProps = HasSize & HasColor;
 
 export type IconVariant =
   | 'filled'

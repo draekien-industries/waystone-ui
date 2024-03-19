@@ -1,6 +1,7 @@
 'use client';
 
-import { memo, ReactNode } from 'react';
+import type { ReactNode } from 'react';
+import { memo } from 'react';
 import { useIsDarkMode } from '../hooks';
 
 export type TableRowSubComponentProps = {

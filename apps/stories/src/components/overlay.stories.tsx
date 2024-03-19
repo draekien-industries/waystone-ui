@@ -1,5 +1,6 @@
-import { Meta, StoryFn } from '@storybook/react';
-import { Overlay, OverlayProps, Text } from '@waystone/components/src';
+import type { Meta, StoryFn } from '@storybook/react';
+import type { OverlayProps } from '@waystone/components/src';
+import { Overlay, Text } from '@waystone/components/src';
 import * as React from 'react';
 
 export default {

@@ -1,10 +1,10 @@
 import { keyframes } from '@emotion/react';
-import { Size } from '@waystone/core';
-import { ThemeUIStyleObject, ThemeUICSSObject } from 'theme-ui';
+import type { Size } from '@waystone/core';
+import type { ThemeUIStyleObject, ThemeUICSSObject } from 'theme-ui';
 
-import { CanBeFullWidth, HasColor, HasSize } from '../common/interfaces';
+import type { CanBeFullWidth, HasColor, HasSize } from '../common/interfaces';
 
-export interface SpinnerCssProps extends HasSize, HasColor, CanBeFullWidth {}
+export type SpinnerCssProps = HasSize & HasColor & CanBeFullWidth;
 
 const changeContent = keyframes`
 10% { content: "⠙"; }

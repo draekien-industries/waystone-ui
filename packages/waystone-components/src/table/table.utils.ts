@@ -1,4 +1,4 @@
-import { VirtualItem } from '@tanstack/react-virtual';
+import type { VirtualItem } from '@tanstack/react-virtual';
 
 export const getPaddingTop = (virtualRows: VirtualItem[]) =>
   virtualRows.length > 0 ? virtualRows?.[0]?.start || 0 : 0;

@@ -1,10 +1,10 @@
 'use client';
 
-import {
+import type {
   StyleName,
   SupportedLanguage,
-  SyntaxHighlighter,
 } from '@waystone/syntax-highlighter';
+import { SyntaxHighlighter } from '@waystone/syntax-highlighter';
 import { useState } from 'react';
 import { Icon } from '../icon/icon';
 import { copy } from './codeBlock.fx';

@@ -1,4 +1,5 @@
-import { SupportedLanguage, lowlight } from '../lib';
+import type { SupportedLanguage } from '../lib';
+import { lowlight } from '../lib';
 
 export type CreateCodeTreeOptions = {
   code: string;

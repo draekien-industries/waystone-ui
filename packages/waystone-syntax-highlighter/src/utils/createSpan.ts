@@ -1,4 +1,4 @@
-import { Tree, Span } from '../lib';
+import type { Tree, Span } from '../lib';
 
 export type CreateSpanOptions = {
   children: Tree;

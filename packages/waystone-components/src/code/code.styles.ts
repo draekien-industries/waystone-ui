@@ -1,4 +1,4 @@
-import { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUIStyleObject } from 'theme-ui';
 
 export const codeCss = (darkMode: boolean): ThemeUIStyleObject => ({
   variant: 'text.mono',

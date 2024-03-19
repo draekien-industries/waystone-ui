@@ -1,16 +1,13 @@
-import { StatusVariant } from '@waystone/core';
+import type { StatusVariant } from '@waystone/core';
 import { Flex } from 'theme-ui';
-import { HasChildren, HasVariant, HasWidth } from '../../../common';
+import type { HasChildren, HasVariant, HasWidth } from '../../../common';
 import { Icon } from '../../../icon';
 import { Label } from '../../../label';
 import { Text } from '../../../text';
 import * as FX from './inputContainer.fx';
 import * as styles from './inputContainer.styles';
 
-export interface InputContainerProps
-  extends HasVariant<StatusVariant>,
-    HasChildren,
-    HasWidth {
+export type InputContainerProps = {
   /** The ID of the input. Will be used in the label's `htmlFor` attribute. */
   id: string;
   /** The text to render as the label. */
@@ -19,7 +16,9 @@ export interface InputContainerProps
   helpText?: string;
   /** Is the input a required input. */
   required?: boolean;
-}
+} & HasVariant<StatusVariant> &
+  HasChildren &
+  HasWidth;
 
 /**
  * The container that wraps all inputs provided in this library. It is exposed in case you need to implement your own inputs.

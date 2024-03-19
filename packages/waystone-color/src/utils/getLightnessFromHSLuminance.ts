@@ -1,4 +1,4 @@
-import { HslColor } from '../schemas';
+import type { HslColor } from '../schemas';
 import { getLuminanceFromRbg } from './getLuminanceFromRgb';
 import { hslToRgb } from './hslToRgb';
 

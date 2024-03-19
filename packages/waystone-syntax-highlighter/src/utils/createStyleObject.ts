@@ -1,4 +1,4 @@
-import { StyleSheet } from '../lib';
+import type { StyleSheet } from '../lib';
 import { getClassNameCombinations } from './getClassNameCombinations';
 
 export type CreateStyleObjectOptions = {

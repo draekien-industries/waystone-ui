@@ -1,13 +1,14 @@
 import { Overlay } from '../overlay/overlay';
-import { spinnerCss, SpinnerCssProps } from './spinner.styles';
+import type { SpinnerCssProps } from './spinner.styles';
+import { spinnerCss } from './spinner.styles';
 
-export interface SpinnerProps extends SpinnerCssProps {
+export type SpinnerProps = {
   /**
    * Renders the spinner with an overlay that takes up the full
    * width and height of the parent container.
    */
   overlay?: boolean;
-}
+} & SpinnerCssProps;
 
 /** A terminal style loading spinner */
 export const Spinner = ({

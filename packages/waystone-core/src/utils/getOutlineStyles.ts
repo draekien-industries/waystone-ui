@@ -1,5 +1,5 @@
 import { alpha } from '@theme-ui/color';
-import { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUIStyleObject } from 'theme-ui';
 
 const outlineColor = 'info-300';
 

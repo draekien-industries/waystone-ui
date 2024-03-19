@@ -1,6 +1,6 @@
-import { Emitter } from 'highlight.js';
+import type { Emitter } from 'highlight.js';
 import high from 'highlight.js/lib/core';
-import {
+import type {
   Root,
   Span,
   HighlightOptions,

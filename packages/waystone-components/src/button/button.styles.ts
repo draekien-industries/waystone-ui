@@ -1,6 +1,7 @@
-import { ThemeUIStyleObject } from 'theme-ui';
-import { ButtonVariant, getOutlineCss, Size } from '@waystone/core';
-import {
+import type { ThemeUIStyleObject } from 'theme-ui';
+import type { ButtonVariant, Size } from '@waystone/core';
+import { getOutlineCss } from '@waystone/core';
+import type {
   CanActivate,
   CanBeFullWidth,
   HasSize,
@@ -18,14 +19,13 @@ import {
   getPadding,
 } from './button.styles.fx';
 
-export interface ButtonCssParams
-  extends HasVariant<ButtonVariant>,
-    HasSize,
-    HasWidth,
-    CanBeFullWidth,
-    CanActivate {
+export type ButtonCssParams = {
   darkMode: boolean;
-}
+} & HasVariant<ButtonVariant> &
+  HasSize &
+  HasWidth &
+  CanBeFullWidth &
+  CanActivate;
 
 export const buttonCss = ({
   variant,
@@ -108,11 +108,11 @@ export const buttonCss = ({
   return baseCss;
 };
 
-export interface ButtonAddonCssParams {
+export type ButtonAddonCssParams = {
   hasChildren: boolean;
   variant: ButtonVariant;
   size: Size;
-}
+};
 
 export const buttonAddonCss = ({
   hasChildren,

@@ -1,4 +1,5 @@
-import { RgbColor, rgbSchema } from '../schemas';
+import type { RgbColor } from '../schemas';
+import { rgbSchema } from '../schemas';
 
 export const getLuminanceFromRbg = (rgb: RgbColor) => {
   const { r, g, b } = rgbSchema.parse(rgb);

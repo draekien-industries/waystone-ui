@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Anchor } from '@waystone/components/src';
 
 const meta: Meta<typeof Anchor> = {

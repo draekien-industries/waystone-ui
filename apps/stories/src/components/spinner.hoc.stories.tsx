@@ -1,16 +1,15 @@
-import { Meta, StoryFn } from '@storybook/react';
-import {
+import type { Meta, StoryFn } from '@storybook/react';
+import type {
   CanLoad,
-  Spinner,
   SpinnerProps,
   WithSpinnerProps,
-  withSpinner,
 } from '@waystone/components/src';
+import { Spinner, withSpinner } from '@waystone/components/src';
 import * as React from 'react';
 
-interface ExampleComponentProps extends WithSpinnerProps {
+type ExampleComponentProps = {
   text: string;
-}
+} & WithSpinnerProps;
 const ExampleComponent = ({ text }: ExampleComponentProps) => <div>{text}</div>;
 
 const ExampleComponentWithSpinner = withSpinner(ExampleComponent);

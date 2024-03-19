@@ -1,8 +1,16 @@
-export type Text = import('hast').Text;
-export type HighlightResult = import('highlight.js').HighlightResult;
-export type HighlightOptions = import('highlight.js').HLJSOptions;
-export type HighlightSyntax = import('highlight.js').LanguageFn;
-export type HighlightEmitter = import('highlight.js').Emitter;
+import type { Text as HastText } from 'hast';
+import type {
+  HighlightResult as HlResult,
+  HLJSOptions,
+  LanguageFn,
+  Emitter,
+} from 'highlight.js';
+
+export type Text = HastText;
+export type HighlightResult = HlResult;
+export type HighlightOptions = HLJSOptions;
+export type HighlightSyntax = LanguageFn;
+export type HighlightEmitter = Emitter;
 export type Span = {
   type: 'element';
   tagName: 'span';

@@ -1,16 +1,18 @@
-import { ThemeSize } from '@waystone/core';
-import { StylePropertyValue, ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeSize } from '@waystone/core';
+import type { StylePropertyValue, ThemeUIStyleObject } from 'theme-ui';
 // eslint-disable-next-line import/no-unresolved
-import { Property } from 'csstype';
-import { CanBeFullWidth, HasHeight, HasWidth } from '../common/interfaces';
+import type { Property } from 'csstype';
+import type { CanBeFullWidth, HasHeight, HasWidth } from '../common/interfaces';
 
 /** THe props for styling the card container */
-interface CardContainerCssProps extends HasWidth, HasHeight, CanBeFullWidth {
+type CardContainerCssProps = {
   /** Should the card not have a shadow */
   noShadow?: boolean;
   /** Is the app in dark mode. */
   darkMode?: boolean;
-}
+} & HasWidth &
+  HasHeight &
+  CanBeFullWidth;
 
 export const cardContainerCss = ({
   fullWidth,
@@ -35,7 +37,7 @@ export const cardContainerCss = ({
  * The props for styling the card's cover image.
  * The cover image is considered a background-image.
  */
-export interface CoverImageCssOptions {
+export type CoverImageCssOptions = {
   /** The url of the background image. */
   url: string;
   /** The cover image size. */
@@ -51,7 +53,7 @@ export interface CoverImageCssOptions {
     | StylePropertyValue<Property.Height<string | number>>;
   /** The fallback color if the cover image cannot be rendered. */
   fallbackColor?: string;
-}
+};
 
 export const coverImageCss = ({
   url,

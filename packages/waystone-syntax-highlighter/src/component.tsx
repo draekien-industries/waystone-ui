@@ -1,6 +1,7 @@
 import { CodeLine } from './components';
 import { useCodeTree } from './hooks';
-import { StyleName, SupportedLanguage, styles } from './lib';
+import type { StyleName, SupportedLanguage } from './lib';
+import { styles } from './lib';
 
 export type SyntaxHighlighterProps = {
   language?: SupportedLanguage;
