@@ -37,3 +37,26 @@ export const App = () => {
   );
 };
 ```
+
+## Customizing the theme
+
+Provide your custom theme into the `theme` prop of the `Waystone` component. The default theme
+will be merged with the one you provide.
+
+```tsx
+export const App = () => {
+  return (
+    <StrictMode>
+      <Waystone
+        theme={{
+          colors: {
+            primary: 'blue',
+          },
+        }}
+      >
+        <YourApp />
+      </Waystone>
+    </StrictMode>
+  );
+};
+```
