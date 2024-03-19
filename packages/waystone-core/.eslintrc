@@ -1,0 +1,3 @@
+{
+  "extends": ["waystone", "plugin:waystone/recommended"],
+}

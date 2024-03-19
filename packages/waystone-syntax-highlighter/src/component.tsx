@@ -1,3 +1,5 @@
+'use client';
+
 import { CodeLine } from './components';
 import { useCodeTree } from './hooks';
 import type { StyleName, SupportedLanguage } from './lib';

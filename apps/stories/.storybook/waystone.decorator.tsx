@@ -1,4 +1,4 @@
-import { Waystone } from '@waystone/theme/src';
+import { Waystone } from '@waystone/theme';
 import { useEffect } from 'react';
 import { useDarkMode } from 'storybook-dark-mode';
 import { useColorMode } from 'theme-ui';

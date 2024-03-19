@@ -1,8 +1,9 @@
 {
   "name": "@waystone/color",
   "version": "8.1.4",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -13,7 +14,8 @@
   "sideEffects": false,
   "license": "MIT",
   "files": [
-    "dist/**"
+    "dist",
+    "src"
   ],
   "scripts": {
     "build": "tsup",
@@ -31,7 +33,7 @@
   },
   "devDependencies": {
     "@waystone/tsconfig": "workspace:*",
-    "eslint-preset-waystone": "workspace:*",
+    "eslint-config-waystone": "workspace:*",
     "jest": "^29.7.0",
     "tsup": "^8.0.2"
   },

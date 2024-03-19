@@ -26,15 +26,12 @@
       "dependsOn": ["^build"]
     },
     "lint": {
-      "cache": false,
       "dependsOn": ["^build"]
     },
     "lint:types": {
-      "cache": false,
       "dependsOn": ["^build"]
     },
     "lint:release": {
-      "cache": false,
       "dependsOn": ["^build"]
     },
     "dev": {

@@ -1,5 +1,5 @@
 /** @type {import('ts-jest/dist/types').JestConfigWithTsJest} */
-module.exports = {
+export default {
   preset: 'ts-jest/presets/js-with-ts',
   testEnvironment: 'jsdom',
   verbose: true,

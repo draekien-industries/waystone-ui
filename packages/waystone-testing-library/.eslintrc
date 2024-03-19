@@ -1,0 +1,15 @@
+{
+  "extends": ["waystone"],
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true,
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+  },
+}

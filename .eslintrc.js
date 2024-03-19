@@ -1,1 +1,1 @@
-module.exports = require("./packages/eslint-preset-waystone");
+module.exports = require('./packages/eslint-config-waystone');
