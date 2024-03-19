@@ -1,8 +1,5 @@
 {
   "author": "draekien-industries",
-  "dependencies": {
-    "type-fest": "^3.7.2"
-  },
   "peerDependencies": {
     "react": "^18.2.0"
   },
@@ -37,6 +34,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "dev": "tsup --watch",
     "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:types": "tsc --noEmit",
     "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
     "test": "jest --coverage --passWithNoTests",
     "test:release": "jest --coverage --passWithNoTests",

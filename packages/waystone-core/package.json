@@ -21,13 +21,13 @@
     "dev": "tsup --watch",
     "dev:storybook": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:types": "tsc --noEmit",
     "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
     "@theme-ui/color": "^0.16.2",
     "@waystone/color": "workspace:^",
-    "type-fest": "^3.0.0",
     "theme-ui": "^0.16.2"
   },
   "devDependencies": {

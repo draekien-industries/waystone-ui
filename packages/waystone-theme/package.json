@@ -20,6 +20,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf storybook-static && rm -rf coverage",
     "dev": "tsup --watch",
     "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:types": "tsc --noEmit",
     "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
     "test": "jest --coverage --passWithNoTests",
     "test:release": "jest --coverage --passWithNoTests",

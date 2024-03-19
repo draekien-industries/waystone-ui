@@ -14,7 +14,8 @@
     "clean": "rm -rf node_modules && rm -rf storybook-static",
     "dev": "storybook dev -p 6006",
     "preview-storybook": "serve storybook-static",
-    "lint": "eslint ./src/** --fix"
+    "lint": "eslint ./src/** --fix",
+    "lint:types": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",

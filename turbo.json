@@ -6,23 +6,35 @@
       "dependsOn": ["^build"]
     },
     "test": {
+      "cache": false,
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
     },
     "test:update": {
+      "cache": false,
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
     },
     "test:watch": {
+      "cache": false,
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
     },
     "test:release": {
+      "cache": false,
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
     },
-    "lint": {},
+    "lint": {
+      "cache": false,
+      "dependsOn": ["^build"]
+    },
+    "lint:types": {
+      "cache": false,
+      "dependsOn": ["^build"]
+    },
     "lint:release": {
+      "cache": false,
       "dependsOn": ["^build"]
     },
     "dev": {

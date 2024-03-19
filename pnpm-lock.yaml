@@ -289,9 +289,6 @@ importers:
       theme-ui:
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.3)(react@18.2.0)
-      type-fest:
-        specifier: ^3.7.2
-        version: 3.13.1
     devDependencies:
       '@faker-js/faker':
         specifier: ^8.0.2
@@ -350,9 +347,6 @@ importers:
       theme-ui:
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.3)(react@18.2.0)
-      type-fest:
-        specifier: ^3.0.0
-        version: 3.13.1
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
@@ -591,9 +585,6 @@ importers:
       react:
         specifier: ^18.2.0
         version: 18.2.0
-      type-fest:
-        specifier: ^3.7.2
-        version: 3.13.1
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
@@ -12499,6 +12490,7 @@ packages:
   /type-fest@3.13.1:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
+    dev: true
 
   /type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
