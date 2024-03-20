@@ -1,60 +1,58 @@
 # @waystone/components
 
+This is an internal dependency of @waystone/ui
+
 ## Docs
 
 Click the badge below to view the components in storybook.
 
 [![Storybook Enabled](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://main--63394994ddec8475ab8b00af.chromatic.com)
 
-## Getting Started
+## Installation
 
-### Installation
+Run the relevant script for your package manager
 
-```bash
-# yarn
-yarn add @waystone/components
+| Package manager | Script                                                 |
+| --------------- | ------------------------------------------------------ |
+| npm             | `npm i @waystone/ui@latest @emotion/react theme-ui`    |
+| yarn            | `yarn add @waystone/ui@latest @emotion/react theme-ui` |
+| pnpm            | `pnpm i @waystone/ui@latest @emotion/react theme-ui`   |
 
-# npm
-npm install @waystone/components
-```
+## Usage
 
-### Usage
-
-In your app, consume the theme provider by declaring the below:
+Import the `Waystone` component and use it inside your `App.tsx`
 
 ```tsx
-import { Waystone } from '@waystone/components';
-
 export const App = () => {
   return (
-    <Waystone>
-      <MyContents />
-    </Waystone>
+    <StrictMode>
+      <Waystone>
+        <YourAppHere />
+      </Waystone>
+    </StrictMode>
   );
 };
 ```
 
-### Customisation
+## Customizing the theme
 
-You can optionally provide your own `theme` and `fontOptions` by instantiating
-your own:
+Provide your custom theme into the `theme` prop of the `Waystone` component. The default theme
+will be merged with the one you provide.
 
 ```tsx
-import { Waystone } from '@waystone/components';
-import { WaystoneTheme } from '@waystone/core';
-
 export const App = () => {
-  const customTheme: WaystoneTheme = {
-    // my custom theme
-  };
-
   return (
-    <Waystone
-      theme={customTheme}
-      fontOptions={{ textFont: 'my font url', iconFont: 'my font url' }}
-    >
-      <MyContents />
-    </Waystone>
+    <StrictMode>
+      <Waystone
+        theme={{
+          colors: {
+            primary: 'blue',
+          },
+        }}
+      >
+        <YourApp />
+      </Waystone>
+    </StrictMode>
   );
 };
 ```

@@ -2,6 +2,12 @@
 
 @waystone/ui is the recommended way of installing the design system of Draekien-Industries.
 
+## Docs
+
+Click the badge below to view the components in storybook.
+
+[![Storybook Enabled](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://main--63394994ddec8475ab8b00af.chromatic.com)
+
 ## What's included
 
 | Package                        | Description                                     |
@@ -16,11 +22,11 @@
 
 Run the relevant script for your package manager
 
-| Package manager | Script                         |
-| --------------- | ------------------------------ |
-| npm             | `npm i @waystone/ui@latest`    |
-| yarn            | `yarn add @waystone/ui@latest` |
-| pnpm            | `pnpm i @waystone/ui@latest`   |
+| Package manager | Script                                                 |
+| --------------- | ------------------------------------------------------ |
+| npm             | `npm i @waystone/ui@latest @emotion/react theme-ui`    |
+| yarn            | `yarn add @waystone/ui@latest @emotion/react theme-ui` |
+| pnpm            | `pnpm i @waystone/ui@latest @emotion/react theme-ui`   |
 
 ## Usage
 

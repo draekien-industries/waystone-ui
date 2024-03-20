@@ -35,22 +35,22 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "@waystone/tsconfig": "workspace:*",
-    "eslint-preset-waystone": "workspace:*",
+    "eslint-config-waystone": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
     "tsup": "^8.0.2"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.11.3",
-    "@theme-ui/color": "^0.16.1",
-    "@theme-ui/css": "^0.16.1",
+    "@emotion/react": ">=11.1.1",
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
     "@waystone/core": "workspace:^",
     "@waystone/color": "workspace:^",
     "@waystone/components": "workspace:^",
     "@waystone/syntax-highlighter": "workspace:^",
     "@waystone/theme": "workspace:^",
     "@waystone/utils": "workspace:^",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.1"
+    "react": ">=18",
+    "theme-ui": "^0.16.2"
   },
   "publishConfig": {
     "access": "public"

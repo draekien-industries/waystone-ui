@@ -1,9 +1,7 @@
-'use strict';
-
-const { reactEvents } = require('./reactEvents');
 const globals = require('globals');
 const Components = require('eslint-plugin-react/lib/util/Components');
 const componentUtil = require('eslint-plugin-react/lib/util/componentUtil');
+const { reactEvents } = require('./reactEvents');
 
 const resolvedByMessage =
   'Add the "use client" directive at the top of the file.';
@@ -84,7 +82,7 @@ module.exports = {
 
     return {
       Program(node) {
-        for (const block of node.body) {
+        node.body.forEach((block) => {
           if (
             block.type === 'ExpressionStatement' &&
             block.expression.type === 'Literal' &&
@@ -92,7 +90,7 @@ module.exports = {
           ) {
             isClientComponent = true;
           }
-        }
+        });
 
         parentNode = node;
         const scope = sourceCode.getScope
@@ -126,7 +124,7 @@ module.exports = {
       },
       NewExpression(node) {
         // @ts-expect-error
-        const name = node.callee.name;
+        const { name } = node.callee;
         if (undeclaredReferences.has(name) && browserOnlyGlobals.has(name)) {
           instances.push(name);
           reportMissingDirective('addUseClientBrowserApi', node);
@@ -173,7 +171,7 @@ module.exports = {
         //   return <div />;
         // }
         // @ts-expect-error
-        const name = node.object.name;
+        const { name } = node.object;
         const scopeType = (
           sourceCode.getScope ? sourceCode.getScope(node) : context.getScope()
         ).type;
@@ -187,7 +185,7 @@ module.exports = {
         }
       },
       ExpressionStatement(node) {
-        const expression = node.expression;
+        const { expression } = node;
         if (!expression.callee) {
           return;
         }
@@ -216,20 +214,24 @@ module.exports = {
             }
           });
         });
-        scope.upper?.set.forEach((variable) => {
-          variable.defs.forEach((def) => {
-            if (isFunction(def)) {
-              fnsInScope.push(variable.name);
-            }
-          });
-        });
 
-        for (const attribute of node.attributes) {
+        if (scope.upper) {
+          scope.upper.set.forEach((variable) => {
+            variable.defs.forEach((def) => {
+              if (isFunction(def)) {
+                fnsInScope.push(variable.name);
+              }
+            });
+          });
+        }
+
+        node.attributes.forEach((attribute) => {
           if (
             attribute.type === 'JSXSpreadAttribute' ||
-            attribute.value?.type !== 'JSXExpressionContainer'
+            (attribute.value &&
+              attribute.value.type !== 'JSXExpressionContainer')
           ) {
-            continue;
+            return;
           }
 
           if (reactEvents.includes(attribute.name.name)) {
@@ -237,23 +239,25 @@ module.exports = {
           }
 
           if (
-            attribute.value?.expression.type === 'ArrowFunctionExpression' ||
-            attribute.value?.expression.type === 'FunctionExpression' ||
-            (attribute.value.expression.type === 'Identifier' &&
-              fnsInScope.includes(attribute.value.expression.name))
+            attribute.value &&
+            (attribute.value.expression.type === 'ArrowFunctionExpression' ||
+              attribute.value.expression.type === 'FunctionExpression' ||
+              (attribute.value.expression.type === 'Identifier' &&
+                fnsInScope.includes(attribute.value.expression.name)))
           ) {
             reportMissingDirective('addUseClientCallbacks', attribute);
           }
-        }
+        });
       },
       ClassDeclaration(node) {
         if (componentUtil.isES6Component(node, context)) {
-          instances.push(node.id?.name);
+          instances.push(node.id.name);
           reportMissingDirective('addUseClientClassComponent', node);
         }
       },
 
-      'ExpressionStatement:exit'(node) {
+      // eslint-disable-next-line func-names
+      'ExpressionStatement:exit': function (node) {
         const value = 'value' in node.expression ? node.expression.value : '';
         if (typeof value !== 'string' || !useClientRegex.test(value)) {
           return;

@@ -1,1 +1,3 @@
-module.exports = require("./packages/eslint-preset-waystone");
+module.exports = {
+  extends: ['waystone'],
+};

@@ -1,6 +1,7 @@
 {
   "name": "@waystone/testing-library",
   "version": "9.1.6",
+  "private": true,
   "main": "./src/index.ts",
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   },
   "devDependencies": {
     "@waystone/tsconfig": "workspace:*",
-    "eslint-preset-waystone": "workspace:*",
+    "eslint-config-waystone": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -28,12 +30,12 @@
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
-    "@theme-ui/color": "^0.16.1",
-    "@theme-ui/css": "^0.16.1",
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
     "@waystone/theme": "workspace:*",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "theme-ui": "^0.16.1"
+    "theme-ui": "^0.16.2"
   },
   "publishConfig": {
     "access": "public"

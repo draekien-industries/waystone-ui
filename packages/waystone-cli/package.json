@@ -19,5 +19,8 @@
   "dependencies": {
     "plop": "^4.0.1",
     "@waystone/color": "workspace:^"
+  },
+  "devDependencies": {
+    "eslint-config-waystone": "workspace:*"
   }
 }

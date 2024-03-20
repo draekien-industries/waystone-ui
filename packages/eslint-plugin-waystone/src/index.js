@@ -1,5 +1,3 @@
-'use strict';
-
 const useClientRule = require('./useClient');
 
 const configs = {

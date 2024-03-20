@@ -1,3 +1,5 @@
+'use client';
+
 import { useMemo } from 'react';
 import { Box } from 'theme-ui';
 import type { Node, StyleSheet } from '../../lib';

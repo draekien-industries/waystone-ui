@@ -1,5 +1,5 @@
 import type React from 'react';
-import type { LiteralUnion } from 'type-fest';
+import type { FuzzyStringLiteral } from '@waystone/utils';
 import type { HasColor, HasSize, HasVariant } from '../common/interfaces';
 import { getIconClassName } from './icon.fx';
 import { iconCss } from './icon.styles';
@@ -19,7 +19,7 @@ export type IconOptions = IconStyleProps & HasVariant<IconVariant>;
 /** Props for the icon component. */
 export type IconProps = {
   /** The name of the material icon to render. */
-  name: LiteralUnion<MaterialIconName, string>;
+  name: FuzzyStringLiteral<MaterialIconName>;
 } & Omit<React.HTMLAttributes<HTMLElement>, 'children' | 'color'> &
   HasVariant<IconVariant> &
   HasSize &

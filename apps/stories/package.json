@@ -1,17 +1,18 @@
 {
   "author": "draekien-industries",
+  "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.3",
+    "@emotion/react": "^11.11.4",
     "@tanstack/react-table": "^8.9.1",
-    "@theme-ui/color": "^0.16.1",
-    "@theme-ui/css": "^0.16.1",
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
     "@waystone/components": "workspace:*",
     "@waystone/core": "workspace:*",
     "@waystone/theme": "workspace:*",
     "@waystone/utils": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.1"
+    "theme-ui": "^0.16.2"
   },
   "description": "The storybook for waystone-ui",
   "devDependencies": {
@@ -32,8 +33,8 @@
     "@waystone/tsconfig": "workspace:*",
     "chromatic": "^10.6.1",
     "eslint-plugin-storybook": "^0.8.0",
+    "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
-    "eslint-preset-waystone": "workspace:*",
     "serve": "^13.0.4",
     "storybook": "^7.6.15",
     "storybook-dark-mode": "^3.0.3",
@@ -50,7 +51,7 @@
     "build": "storybook build --docs",
     "clean": "rm -rf node_modules && rm -rf storybook-static",
     "dev": "storybook dev -p 6006",
-    "preview-storybook": "serve storybook-static",
+    "preview": "serve storybook-static",
     "lint": "eslint ./src/** --fix"
   },
   "sideEffects": false,
