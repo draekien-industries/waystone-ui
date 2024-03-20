@@ -1,5 +1,16 @@
 # @waystone/core
 
+## 9.4.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
+### Patch Changes
+
+- Updated dependencies [21db598]
+  - @waystone/color@8.2.0
+
 ## 9.3.3
 
 ### Patch Changes

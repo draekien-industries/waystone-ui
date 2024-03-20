@@ -1,5 +1,11 @@
 # @waystone/syntax-highlighter
 
+## 12.1.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
 ## 12.0.3
 
 ### Patch Changes

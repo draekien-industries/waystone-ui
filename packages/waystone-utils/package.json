@@ -3,7 +3,7 @@
   "author": "draekien-industries",
   "description": "The utils used by draekien-industries",
   "sideEffects": false,
-  "version": "9.3.2",
+  "version": "9.4.0",
   "files": [
     "dist/**"
   ],

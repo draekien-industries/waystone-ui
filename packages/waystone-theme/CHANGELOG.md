@@ -1,5 +1,16 @@
 # @waystone/theme
 
+## 9.3.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
+### Patch Changes
+
+- Updated dependencies [21db598]
+  - @waystone/core@9.4.0
+
 ## 9.2.5
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # eslint-preset-waystone
 
+## 1.4.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
+### Patch Changes
+
+- Updated dependencies [21db598]
+  - eslint-plugin-waystone@1.2.0
+
 ## 1.3.1
 
 ### Patch Changes
