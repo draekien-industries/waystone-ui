@@ -295,7 +295,7 @@ importers:
   packages/waystone-components:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.4
+        specifier: '>=11.1.1'
         version: 11.11.4(@types/react@18.2.67)(react@18.2.0)
       '@tanstack/react-table':
         specifier: ^8.9.1
@@ -321,9 +321,6 @@ importers:
       theme-ui:
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
-      type-fest:
-        specifier: ^3.7.2
-        version: 3.13.1
     devDependencies:
       '@faker-js/faker':
         specifier: ^8.0.2
@@ -371,7 +368,7 @@ importers:
   packages/waystone-core:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.4
+        specifier: '>=11.1.1'
         version: 11.11.4(@types/react@18.2.67)(react@18.2.0)
       '@theme-ui/color':
         specifier: ^0.16.2
@@ -382,9 +379,6 @@ importers:
       theme-ui:
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
-      type-fest:
-        specifier: ^3.0.0
-        version: 3.13.1
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
@@ -417,7 +411,7 @@ importers:
   packages/waystone-syntax-highlighter:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.4
+        specifier: '>=11.1.1'
         version: 11.11.4(@types/react@18.2.67)(react@18.2.0)
       '@theme-ui/color':
         specifier: ^0.16.2
@@ -527,7 +521,7 @@ importers:
   packages/waystone-theme:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.4
+        specifier: '>=11.1.1'
         version: 11.11.4(@types/react@18.2.67)(react@18.2.0)
       '@theme-ui/color':
         specifier: ^0.16.2
@@ -572,7 +566,7 @@ importers:
   packages/waystone-ui:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.4
+        specifier: '>=11.1.1'
         version: 11.11.4(@types/react@18.2.67)(react@18.2.0)
       '@theme-ui/color':
         specifier: ^0.16.2
@@ -599,11 +593,8 @@ importers:
         specifier: workspace:^
         version: link:../waystone-utils
       react:
-        specifier: ^18.2.0
+        specifier: '>=18'
         version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
       theme-ui:
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
@@ -631,13 +622,6 @@ importers:
         version: 8.0.2(typescript@5.3.3)
 
   packages/waystone-utils:
-    dependencies:
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      type-fest:
-        specifier: ^3.7.2
-        version: 3.13.1
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
@@ -663,6 +647,9 @@ importers:
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
       tsup:
         specifier: ^8.0.2
         version: 8.0.2(typescript@5.3.3)
@@ -13613,6 +13600,7 @@ packages:
   /type-fest@3.13.1:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
+    dev: true
 
   /type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}

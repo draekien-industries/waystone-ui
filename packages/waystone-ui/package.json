@@ -40,7 +40,7 @@
     "tsup": "^8.0.2"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.11.4",
+    "@emotion/react": ">=11.1.1",
     "@theme-ui/color": "^0.16.2",
     "@theme-ui/css": "^0.16.2",
     "@waystone/core": "workspace:^",
@@ -49,8 +49,7 @@
     "@waystone/syntax-highlighter": "workspace:^",
     "@waystone/theme": "workspace:^",
     "@waystone/utils": "workspace:^",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": ">=18",
     "theme-ui": "^0.16.2"
   },
   "publishConfig": {
