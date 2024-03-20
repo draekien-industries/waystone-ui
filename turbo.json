@@ -5,6 +5,10 @@
       "outputs": ["dist/**", ".next/**", "storybook-static/**"],
       "dependsOn": ["^build"]
     },
+    "preview": {
+      "outputs": ["dist/**", ".next/**", "storybook-static/**"],
+      "dependsOn": ["^build"]
+    },
     "test": {
       "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
