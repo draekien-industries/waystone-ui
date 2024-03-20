@@ -1,3 +1,5 @@
+'use client';
+
 import type { RenderOptions, RenderResult } from '@testing-library/react';
 import { render } from '@testing-library/react';
 import { Waystone } from '@waystone/theme';

@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "@waystone/tsconfig": "workspace:*",
-    "eslint-preset-waystone": "workspace:*",
+    "eslint-config-waystone": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
     "jest": "^29.7.0",
     "tsup": "^8.0.2"
   },

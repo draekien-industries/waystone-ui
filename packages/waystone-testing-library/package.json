@@ -21,7 +21,8 @@
   },
   "devDependencies": {
     "@waystone/tsconfig": "workspace:*",
-    "eslint-preset-waystone": "workspace:*",
+    "eslint-config-waystone": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
