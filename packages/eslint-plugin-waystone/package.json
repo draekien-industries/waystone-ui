@@ -22,7 +22,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .js ./src/** --fix",
-    "build": "eslint-doc-generator"
+    "build": "eslint-doc-generator && prettier --write ."
   },
   "dependencies": {
     "eslint-plugin-react": "^7.33.2",
