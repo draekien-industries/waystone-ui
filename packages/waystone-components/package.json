@@ -29,12 +29,12 @@
   "dependencies": {
     "@tanstack/react-virtual": "^3.0.2",
     "@tanstack/react-table": "^8.9.1",
-    "@theme-ui/color": "^0.16.1",
-    "@theme-ui/css": "^0.16.1",
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
     "@waystone/core": "workspace:^",
     "@waystone/syntax-highlighter": "workspace:^",
     "@waystone/utils": "workspace:^",
-    "theme-ui": "^0.16.1",
+    "theme-ui": "^0.16.2",
     "type-fest": "^3.7.2"
   },
   "devDependencies": {

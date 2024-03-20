@@ -41,8 +41,8 @@
   },
   "peerDependencies": {
     "@emotion/react": "^11.11.3",
-    "@theme-ui/color": "^0.16.1",
-    "@theme-ui/css": "^0.16.1",
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
     "@waystone/core": "workspace:^",
     "@waystone/color": "workspace:^",
     "@waystone/components": "workspace:^",
@@ -51,7 +51,7 @@
     "@waystone/utils": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "theme-ui": "^0.16.1"
+    "theme-ui": "^0.16.2"
   },
   "publishConfig": {
     "access": "public"
