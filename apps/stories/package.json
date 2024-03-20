@@ -2,7 +2,7 @@
   "author": "draekien-industries",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.11.3",
+    "@emotion/react": "^11.11.4",
     "@tanstack/react-table": "^8.9.1",
     "@theme-ui/color": "^0.16.2",
     "@theme-ui/css": "^0.16.2",
