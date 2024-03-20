@@ -11,6 +11,14 @@
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
   },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "waystone"
+  ],
+  "scripts": {
+    "build": "eslint-doc-generator"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
@@ -29,6 +37,9 @@
     "eslint-plugin-waystone": "workspace:*"
   },
   "peerDependencies": {
-    "eslint": ">= 3"
+    "eslint": ">=3"
+  },
+  "devDependencies": {
+    "eslint-doc-generator": "^1.7.0"
   }
 }
