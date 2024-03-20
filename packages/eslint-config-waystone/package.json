@@ -16,9 +16,6 @@
     "eslintconfig",
     "waystone"
   ],
-  "scripts": {
-    "build": "eslint-doc-generator"
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
@@ -38,8 +35,5 @@
   },
   "peerDependencies": {
     "eslint": ">=3"
-  },
-  "devDependencies": {
-    "eslint-doc-generator": "^1.7.0"
   }
 }
