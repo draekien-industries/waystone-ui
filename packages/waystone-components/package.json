@@ -1,6 +1,6 @@
 {
   "name": "@waystone/components",
-  "version": "9.4.1",
+  "version": "9.5.0",
   "author": "draekien-industries",
   "license": "MIT",
   "main": "./dist/index.js",

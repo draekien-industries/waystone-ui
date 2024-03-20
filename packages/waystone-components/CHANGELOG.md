@@ -1,5 +1,18 @@
 # @waystone/components
 
+## 9.5.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
+### Patch Changes
+
+- Updated dependencies [21db598]
+  - @waystone/syntax-highlighter@12.1.0
+  - @waystone/utils@9.4.0
+  - @waystone/core@9.4.0
+
 ## 9.4.1
 
 ### Patch Changes

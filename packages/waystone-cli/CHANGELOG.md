@@ -1,5 +1,16 @@
 # @waystone/cli
 
+## 2.1.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
+### Patch Changes
+
+- Updated dependencies [21db598]
+  - @waystone/color@8.2.0
+
 ## 2.0.4
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # eslint-plugin-waystone
 
+## 1.2.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
 ## 1.1.1
 
 ### Patch Changes

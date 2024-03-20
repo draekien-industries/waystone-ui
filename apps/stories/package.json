@@ -55,5 +55,5 @@
     "lint": "eslint ./src/** --fix"
   },
   "sideEffects": false,
-  "version": "9.4.1"
+  "version": "9.5.0"
 }

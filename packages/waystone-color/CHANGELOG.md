@@ -1,5 +1,11 @@
 # @waystone/color
 
+## 8.2.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
 ## 8.1.4
 
 ### Patch Changes

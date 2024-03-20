@@ -1,5 +1,11 @@
 # @waystone/utils
 
+## 9.4.0
+
+### Minor Changes
+
+- 21db598: chore: bump deps and add documentation
+
 ## 9.3.2
 
 ### Patch Changes
