@@ -42,11 +42,9 @@ export const SyntaxHighlighter = ({
         sx={{ whiteSpace: wrapLines ? 'pre-wrap' : 'pre' }}
       >
         {codeTree.map((node, index) => (
-          <CodeLine
-            node={node}
-            stylesheet={style}
-            key={`code-segment-${index.toString()}`}
-          />
+          <CodeLine stylesheet={style} key={`code-segment-${index.toString()}`}>
+            {node}
+          </CodeLine>
         ))}
       </code>
     </pre>

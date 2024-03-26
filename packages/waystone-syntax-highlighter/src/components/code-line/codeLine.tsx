@@ -6,11 +6,11 @@ import type { Node, StyleSheet } from '../../lib';
 import { createStyleObject } from '../../utils';
 
 export type CodeLineProps = {
-  node: Node;
+  children: Node;
   stylesheet: StyleSheet;
 };
 
-export const CodeLine = ({ node, stylesheet }: CodeLineProps) => {
+export const CodeLine = ({ children, stylesheet }: CodeLineProps) => {
   const allStylesheetSelectors = useMemo(
     () =>
       Object.keys(stylesheet).reduce((classes, selector) => {
@@ -25,11 +25,11 @@ export const CodeLine = ({ node, stylesheet }: CodeLineProps) => {
     [stylesheet]
   );
 
-  if (node.type === 'text') {
-    return <span>{node.value}</span>;
+  if (children.type === 'text') {
+    return <span>{children.value}</span>;
   }
 
-  const { properties } = node;
+  const { properties } = children;
 
   const startingClassName =
     properties.className && properties.className.includes('token')
@@ -54,13 +54,11 @@ export const CodeLine = ({ node, stylesheet }: CodeLineProps) => {
   };
 
   return (
-    <Box as={node.tagName || 'span'} {...props}>
-      {node.children.map((child, index) => (
-        <CodeLine
-          node={child}
-          stylesheet={stylesheet}
-          key={`code-line-${index.toString()}`}
-        />
+    <Box as={children.tagName || 'span'} {...props}>
+      {children.children.map((child, index) => (
+        <CodeLine stylesheet={stylesheet} key={`code-line-${index.toString()}`}>
+          {child}
+        </CodeLine>
       ))}
     </Box>
   );

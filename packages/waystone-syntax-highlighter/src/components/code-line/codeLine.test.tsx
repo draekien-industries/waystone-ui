@@ -20,7 +20,7 @@ describe('Components: CodeLine', () => {
     };
 
     const { container } = render(
-      <CodeLine node={node} stylesheet={githubDark} />
+      <CodeLine stylesheet={githubDark}>{node}</CodeLine>
     );
 
     expect(container).toMatchSnapshot();
