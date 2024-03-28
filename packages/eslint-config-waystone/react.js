@@ -65,6 +65,15 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: true,
+        variables: true,
+        allowNamedExports: false,
+      },
+    ],
   },
   overrides: [
     {

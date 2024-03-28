@@ -1,8 +1,10 @@
 'use client';
 
+/* eslint-disable react/function-component-definition */
+
 import { useMemo } from 'react';
 import { Box } from 'theme-ui';
-import type { Node, StyleSheet } from '../../lib';
+import type { Node, Span, StyleSheet } from '../../lib';
 import { createStyleObject } from '../../utils';
 
 export type CodeLineProps = {
@@ -10,7 +12,52 @@ export type CodeLineProps = {
   stylesheet: StyleSheet;
 };
 
-export const CodeLine = ({ children, stylesheet }: CodeLineProps) => {
+type CodeLineContentProps = {
+  children: Span;
+  stylesheet: StyleSheet;
+  allStylesheetSelectors: string;
+};
+
+function CodeLineContent({
+  children,
+  stylesheet,
+  allStylesheetSelectors,
+}: CodeLineContentProps) {
+  const {
+    properties: { className: classNames },
+  } = children;
+
+  const props = useMemo(() => {
+    const startingClassName =
+      classNames && classNames.includes('token') ? ['token'] : [];
+
+    const className =
+      classNames &&
+      startingClassName.concat(
+        classNames.filter((cname) => !allStylesheetSelectors.includes(cname))
+      );
+
+    return {
+      className: className.join(' ') || undefined,
+      style: createStyleObject({
+        classNames,
+        stylesheet,
+      }),
+    };
+  }, [classNames, stylesheet, allStylesheetSelectors]);
+
+  return (
+    <Box as={children.tagName || 'span'} {...props}>
+      {children.children.map((child, index) => (
+        <CodeLine stylesheet={stylesheet} key={`code-line-${index.toString()}`}>
+          {child}
+        </CodeLine>
+      ))}
+    </Box>
+  );
+}
+
+export function CodeLine({ children, stylesheet }: CodeLineProps) {
   const allStylesheetSelectors = useMemo(
     () =>
       Object.keys(stylesheet).reduce((classes, selector) => {
@@ -29,37 +76,12 @@ export const CodeLine = ({ children, stylesheet }: CodeLineProps) => {
     return <span>{children.value}</span>;
   }
 
-  const { properties } = children;
-
-  const startingClassName =
-    properties.className && properties.className.includes('token')
-      ? ['token']
-      : [];
-
-  const className =
-    properties.className &&
-    startingClassName.concat(
-      properties.className.filter(
-        (cname) => !allStylesheetSelectors.includes(cname)
-      )
-    );
-
-  const props = {
-    ...properties,
-    className: className.join(' ') || undefined,
-    style: createStyleObject({
-      classNames: properties.className,
-      stylesheet,
-    }),
-  };
-
   return (
-    <Box as={children.tagName || 'span'} {...props}>
-      {children.children.map((child, index) => (
-        <CodeLine stylesheet={stylesheet} key={`code-line-${index.toString()}`}>
-          {child}
-        </CodeLine>
-      ))}
-    </Box>
+    <CodeLineContent
+      stylesheet={stylesheet}
+      allStylesheetSelectors={allStylesheetSelectors}
+    >
+      {children}
+    </CodeLineContent>
   );
-};
+}
