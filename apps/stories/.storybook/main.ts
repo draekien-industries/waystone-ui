@@ -38,6 +38,10 @@ const config: StorybookConfig = {
             find: '@waystone/*',
             replacement: resolve(__dirname, '../../../packages/waystone-*'),
           },
+          {
+            find: '@waystone/anchor',
+            replacement: resolve(__dirname, '../../../packages/anchor'),
+          },
         ],
       },
       optimizeDeps: {

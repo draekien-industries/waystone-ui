@@ -89,15 +89,27 @@ importers:
       '@theme-ui/css':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4)
+      '@waystone/anchor':
+        specifier: workspace:*
+        version: link:../../packages/anchor
+      '@waystone/button':
+        specifier: workspace:*
+        version: link:../../packages/button
       '@waystone/components':
         specifier: workspace:*
         version: link:../../packages/waystone-components
       '@waystone/core':
         specifier: workspace:*
         version: link:../../packages/waystone-core
+      '@waystone/icon':
+        specifier: workspace:*
+        version: link:../../packages/icon
       '@waystone/theme':
         specifier: workspace:*
-        version: link:../../packages/waystone-theme
+        version: link:../../packages/theme
+      '@waystone/theme-provider':
+        specifier: workspace:*
+        version: link:../../packages/theme-provider
       '@waystone/utils':
         specifier: workspace:*
         version: link:../../packages/waystone-utils
@@ -184,6 +196,81 @@ importers:
         specifier: ^5.0.12
         version: 5.0.12(@types/node@20.11.17)
 
+  packages/anchor:
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.4.2
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
+      '@testing-library/react':
+        specifier: ^14.2.2
+        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+      '@waystone/core':
+        specifier: workspace:*
+        version: link:../waystone-core
+      '@waystone/icon':
+        specifier: workspace:*
+        version: link:../icon
+      '@waystone/testing-library':
+        specifier: workspace:*
+        version: link:../waystone-testing-library
+      '@waystone/tsconfig':
+        specifier: workspace:*
+        version: link:../waystone-tsconfig
+      '@waystone/utils':
+        specifier: workspace:*
+        version: link:../waystone-utils
+      eslint-config-waystone:
+        specifier: workspace:*
+        version: link:../eslint-config-waystone
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../eslint-plugin-waystone
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      theme-ui:
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
+
+  packages/button:
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.4.2
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
+      '@testing-library/react':
+        specifier: ^14.2.2
+        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+      '@theme-ui/color':
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)
+      '@waystone/core':
+        specifier: workspace:*
+        version: link:../waystone-core
+      '@waystone/icon':
+        specifier: workspace:*
+        version: link:../icon
+      '@waystone/testing-library':
+        specifier: workspace:*
+        version: link:../waystone-testing-library
+      '@waystone/tsconfig':
+        specifier: workspace:*
+        version: link:../waystone-tsconfig
+      '@waystone/utils':
+        specifier: workspace:*
+        version: link:../waystone-utils
+      eslint-config-waystone:
+        specifier: workspace:*
+        version: link:../eslint-config-waystone
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../eslint-plugin-waystone
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      theme-ui:
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
+
   packages/eslint-config-waystone:
     dependencies:
       '@typescript-eslint/eslint-plugin':
@@ -256,6 +343,157 @@ importers:
       eslint-plugin-n:
         specifier: ^16.6.2
         version: 16.6.2(eslint@8.57.0)
+
+  packages/icon:
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.4.2
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
+      '@testing-library/react':
+        specifier: ^14.2.2
+        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+      '@waystone/core':
+        specifier: workspace:*
+        version: link:../waystone-core
+      '@waystone/testing-library':
+        specifier: workspace:*
+        version: link:../waystone-testing-library
+      '@waystone/tsconfig':
+        specifier: workspace:*
+        version: link:../waystone-tsconfig
+      '@waystone/utils':
+        specifier: workspace:*
+        version: link:../waystone-utils
+      eslint-config-waystone:
+        specifier: workspace:*
+        version: link:../eslint-config-waystone
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../eslint-plugin-waystone
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      theme-ui:
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
+
+  packages/template:
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.4.2
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
+      '@testing-library/react':
+        specifier: ^14.2.2
+        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+      '@waystone/testing-library':
+        specifier: workspace:*
+        version: link:../waystone-testing-library
+      '@waystone/tsconfig':
+        specifier: workspace:*
+        version: link:../waystone-tsconfig
+      eslint-config-waystone:
+        specifier: workspace:*
+        version: link:../eslint-config-waystone
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../eslint-plugin-waystone
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      theme-ui:
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
+
+  packages/theme:
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.4.2
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
+      '@testing-library/react':
+        specifier: ^14.2.2
+        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+      '@theme-ui/color':
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)
+      '@waystone/color':
+        specifier: workspace:^
+        version: link:../waystone-color
+      '@waystone/tsconfig':
+        specifier: workspace:*
+        version: link:../waystone-tsconfig
+      eslint-config-waystone:
+        specifier: workspace:*
+        version: link:../eslint-config-waystone
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../eslint-plugin-waystone
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      theme-ui:
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
+
+  packages/theme-provider:
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.4.2
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
+      '@testing-library/react':
+        specifier: ^14.2.2
+        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+      '@waystone/theme':
+        specifier: workspace:*
+        version: link:../theme
+      '@waystone/tsconfig':
+        specifier: workspace:*
+        version: link:../waystone-tsconfig
+      '@waystone/types':
+        specifier: workspace:*
+        version: link:../types
+      eslint-config-waystone:
+        specifier: workspace:*
+        version: link:../eslint-config-waystone
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../eslint-plugin-waystone
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      theme-ui:
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
+
+  packages/types:
+    dependencies:
+      csstype:
+        specifier: ^3.1.2
+        version: 3.1.3
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.4.2
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
+      '@testing-library/react':
+        specifier: ^14.2.2
+        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+      '@waystone/theme':
+        specifier: workspace:*
+        version: link:../theme
+      '@waystone/tsconfig':
+        specifier: workspace:*
+        version: link:../waystone-tsconfig
+      eslint-config-waystone:
+        specifier: workspace:*
+        version: link:../eslint-config-waystone
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../eslint-plugin-waystone
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      theme-ui:
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
 
   packages/waystone-cli:
     dependencies:
@@ -392,6 +630,9 @@ importers:
       '@waystone/tsconfig':
         specifier: workspace:*
         version: link:../waystone-tsconfig
+      csstype:
+        specifier: ^3.1.2
+        version: 3.1.3
       eslint-config-waystone:
         specifier: workspace:*
         version: link:../eslint-config-waystone
@@ -489,9 +730,9 @@ importers:
       '@theme-ui/css':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4)
-      '@waystone/theme':
+      '@waystone/theme-provider':
         specifier: workspace:*
-        version: link:../waystone-theme
+        version: link:../theme-provider
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@20.11.17)
@@ -588,7 +829,7 @@ importers:
         version: link:../waystone-syntax-highlighter
       '@waystone/theme':
         specifier: workspace:^
-        version: link:../waystone-theme
+        version: link:../theme
       '@waystone/utils':
         specifier: workspace:^
         version: link:../waystone-utils
@@ -608,6 +849,12 @@ importers:
       '@testing-library/user-event':
         specifier: ^14.5.2
         version: 14.5.2(@testing-library/dom@9.3.4)
+      '@waystone/anchor':
+        specifier: workspace:^
+        version: link:../anchor
+      '@waystone/icon':
+        specifier: workspace:^
+        version: link:../icon
       '@waystone/tsconfig':
         specifier: workspace:*
         version: link:../waystone-tsconfig
@@ -667,8 +914,8 @@ packages:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
     engines: {node: '>=6.0.0'}
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.22
+      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/trace-mapping': 0.3.25
 
   /@ampproject/remapping@2.3.0:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -746,8 +993,8 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/types': 7.24.0
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.22
+      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/trace-mapping': 0.3.25
       jsesc: 2.5.2
 
   /@babel/generator@7.24.1:
@@ -1975,7 +2222,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
-    dev: false
 
   /@babel/runtime@7.24.1:
     resolution: {integrity: sha512-+BIznRzyqBf+2wCTxcKE3wDjfGeCoVE61KSHGpkzqrLi8qxqFwBeUFyId2cxkTmm55fzDGnm0+yCxaxygrLUnQ==}
@@ -2330,7 +2576,6 @@ packages:
       find-root: 1.1.0
       source-map: 0.5.7
       stylis: 4.2.0
-    dev: false
 
   /@emotion/cache@11.11.0:
     resolution: {integrity: sha512-P34z9ssTCBi3e9EI1ZsWpNHcfY1r09ZO0rZbRO2ob3ZQMnFI35jB536qoXbkdesr5EUhYi22anuEJuyxifaqAQ==}
@@ -2340,29 +2585,23 @@ packages:
       '@emotion/utils': 1.2.1
       '@emotion/weak-memoize': 0.3.1
       stylis: 4.2.0
-    dev: false
 
   /@emotion/hash@0.9.1:
     resolution: {integrity: sha512-gJB6HLm5rYwSLI6PQa+X1t5CFGrv1J1TWG+sOyMCeKz2ojaj6Fnl/rZEspogG+cvqbt4AE/2eIyD2QfLKTBNlQ==}
-    dev: false
 
   /@emotion/is-prop-valid@0.8.8:
     resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
     dependencies:
       '@emotion/memoize': 0.7.4
-    dev: false
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
-    dev: false
 
   /@emotion/memoize@0.7.5:
     resolution: {integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==}
-    dev: false
 
   /@emotion/memoize@0.8.1:
     resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
-    dev: false
 
   /@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0):
     resolution: {integrity: sha512-t8AjMlF0gHpvvxk5mAtCqR4vmxiGHCeJBaQO6gncUSdklELOgtwjerNY2yuJNfwnc6vi16U/+uMF+afIawJ9iw==}
@@ -2383,7 +2622,6 @@ packages:
       '@types/react': 18.2.70
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
-    dev: false
 
   /@emotion/serialize@1.1.3:
     resolution: {integrity: sha512-iD4D6QVZFDhcbH0RAG1uVu1CwVLMWUkCvAqqlewO/rxf8+87yIBAlt4+AxMiiKPLs5hFc0owNk/sLLAOROw3cA==}
@@ -2393,15 +2631,12 @@ packages:
       '@emotion/unitless': 0.8.1
       '@emotion/utils': 1.2.1
       csstype: 3.1.3
-    dev: false
 
   /@emotion/sheet@1.2.2:
     resolution: {integrity: sha512-0QBtGvaqtWi+nx6doRwDdBIzhNdZrXUppvTM4dtZZWEGTXL/XE/yJxLMGlDT1Gt+UHH5IX1n+jkXyytE/av7OA==}
-    dev: false
 
   /@emotion/unitless@0.8.1:
     resolution: {integrity: sha512-KOEGMu6dmJZtpadb476IsZBclKvILjopjUii3V+7MnXIQCYh8W3NgNcgwo21n9LXZX6EDIKvqfjYxXebDwxKmQ==}
-    dev: false
 
   /@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@18.2.0):
     resolution: {integrity: sha512-jT/qyKZ9rzLErtrjGgdkMBn2OP8wl0G3sQlBb3YPryvKHsjvINUhVaPFfP+fpBcOkmrVOVEEHQFJ7nbj2TH2gw==}
@@ -2412,11 +2647,9 @@ packages:
 
   /@emotion/utils@1.2.1:
     resolution: {integrity: sha512-Y2tGf3I+XVnajdItskUCn6LX+VUDmP6lTL4fcqsXAv43dnlbZiuW4MWQW38rW/BVWSE7Q/7+XQocmpnRYILUmg==}
-    dev: false
 
   /@emotion/weak-memoize@0.3.1:
     resolution: {integrity: sha512-EsBwpc7hBUJWAsNPBmJy4hxWx12v6bshQsldrVmjxJoc3isbxhOrF2IcCpaXxfvq03NwkI7sbsOLXbYuqF/8Ww==}
-    dev: false
 
   /@esbuild/aix-ppc64@0.19.12:
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
@@ -3049,7 +3282,7 @@ packages:
       '@jest/test-result': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      '@jridgewell/trace-mapping': 0.3.22
+      '@jridgewell/trace-mapping': 0.3.25
       '@types/node': 20.11.17
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
@@ -3088,7 +3321,7 @@ packages:
     resolution: {integrity: sha512-MHjT95QuipcPrpLM+8JMSzFx6eHp5Bm+4XeFDJlwsvVBjmKNiIAvasGK2fxz2WbGRlnvqehFbh07MMa7n3YJnw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.22
+      '@jridgewell/trace-mapping': 0.3.25
       callsites: 3.1.0
       graceful-fs: 4.2.11
 
@@ -3171,14 +3404,6 @@ packages:
       vite: 5.0.12(@types/node@20.11.17)
     dev: true
 
-  /@jridgewell/gen-mapping@0.3.3:
-    resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
-    engines: {node: '>=6.0.0'}
-    dependencies:
-      '@jridgewell/set-array': 1.1.2
-      '@jridgewell/sourcemap-codec': 1.4.15
-      '@jridgewell/trace-mapping': 0.3.22
-
   /@jridgewell/gen-mapping@0.3.5:
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
     engines: {node: '>=6.0.0'}
@@ -3186,32 +3411,20 @@ packages:
       '@jridgewell/set-array': 1.2.1
       '@jridgewell/sourcemap-codec': 1.4.15
       '@jridgewell/trace-mapping': 0.3.25
-    dev: true
-
-  /@jridgewell/resolve-uri@3.1.1:
-    resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
-    engines: {node: '>=6.0.0'}
-    requiresBuild: true
 
   /@jridgewell/resolve-uri@3.1.2:
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
-    engines: {node: '>=6.0.0'}
-    dev: true
-
-  /@jridgewell/set-array@1.1.2:
-    resolution: {integrity: sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==}
     engines: {node: '>=6.0.0'}
 
   /@jridgewell/set-array@1.2.1:
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
-    dev: true
 
   /@jridgewell/source-map@0.3.5:
     resolution: {integrity: sha512-UTYAUj/wviwdsMfzoSJspJxbkH5o1snzwX0//0ENX1u/55kkZZkcTZP6u9bwKGkv+dkk9at4m1Cpt0uY80kcpQ==}
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.22
+      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
   /@jridgewell/sourcemap-codec@1.4.15:
@@ -3220,7 +3433,7 @@ packages:
   /@jridgewell/trace-mapping@0.3.22:
     resolution: {integrity: sha512-Wf963MzWtA2sjrNt+g18IAln9lKnlRp+K2eH4jjIoF1wYeq3aMREpG09xhlhdzS0EjwU7qmUJYangWa+151vZw==}
     dependencies:
-      '@jridgewell/resolve-uri': 3.1.1
+      '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
   /@jridgewell/trace-mapping@0.3.25:
@@ -3228,7 +3441,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
-    dev: true
 
   /@juggle/resize-observer@3.4.0:
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
@@ -4867,59 +5079,49 @@ packages:
     resolution: {integrity: sha512-jtwH2C/U6ssuGSvwTN3ri/IyjdHb8W9X/g8Y0JLcrH02G+BW3OS8kZdHphF1/YyRklnrKrBT2ngwGUK6aqqV3A==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/border@5.1.5:
     resolution: {integrity: sha512-JvddhNrnhGigtzWRCVuAHepniyVi6hBlimxWDVAdcTuk7aRn9BYJUwfHslURtwYFsF5FoEs8Zmr1oZq2M1AP0A==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/color@5.1.2:
     resolution: {integrity: sha512-1kCkeKDZkt4GYkuFNKc7vJQMcOmTl3bJY3YBUs7fCNM6mMYJeT1pViQ2LwBSBJytj3AB0o4IdLBoepgSgGl5MA==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/core@5.1.2:
     resolution: {integrity: sha512-XclBDdNIy7OPOsN4HBsawG2eiWfCcuFt6gxKn1x4QfMIgeO6TOlA2pZZ5GWZtIhCUqEPTgIBta6JXsGyCkLBYw==}
     dependencies:
       object-assign: 4.1.1
-    dev: false
 
   /@styled-system/css@5.1.5:
     resolution: {integrity: sha512-XkORZdS5kypzcBotAMPBoeckDs9aSZVkvrAlq5K3xP8IMAUek+x2O4NtwoSgkYkWWzVBu6DGdFZLR790QWGG+A==}
-    dev: false
 
   /@styled-system/flexbox@5.1.2:
     resolution: {integrity: sha512-6hHV52+eUk654Y1J2v77B8iLeBNtc+SA3R4necsu2VVinSD7+XY5PCCEzBFaWs42dtOEDIa2lMrgL0YBC01mDQ==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/grid@5.1.2:
     resolution: {integrity: sha512-K3YiV1KyHHzgdNuNlaw8oW2ktMuGga99o1e/NAfTEi5Zsa7JXxzwEnVSDSBdJC+z6R8WYTCYRQC6bkVFcvdTeg==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/layout@5.1.2:
     resolution: {integrity: sha512-wUhkMBqSeacPFhoE9S6UF3fsMEKFv91gF4AdDWp0Aym1yeMPpqz9l9qS/6vjSsDPF7zOb5cOKC3tcKKOMuDCPw==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/position@5.1.2:
     resolution: {integrity: sha512-60IZfMXEOOZe3l1mCu6sj/2NAyUmES2kR9Kzp7s2D3P4qKsZWxD1Se1+wJvevb+1TP+ZMkGPEYYXRyU8M1aF5A==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/shadow@5.1.2:
     resolution: {integrity: sha512-wqniqYb7XuZM7K7C0d1Euxc4eGtqEe/lvM0WjuAFsQVImiq6KGT7s7is+0bNI8O4Dwg27jyu4Lfqo/oIQXNzAg==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/should-forward-prop@5.1.5:
     resolution: {integrity: sha512-+rPRomgCGYnUIaFabDoOgpSDc4UUJ1KsmlnzcEp0tu5lFrBQKgZclSo18Z1URhaZm7a6agGtS5Xif7tuC2s52Q==}
@@ -4927,26 +5129,22 @@ packages:
       '@emotion/is-prop-valid': 0.8.8
       '@emotion/memoize': 0.7.5
       styled-system: 5.1.5
-    dev: false
 
   /@styled-system/space@5.1.2:
     resolution: {integrity: sha512-+zzYpR8uvfhcAbaPXhH8QgDAV//flxqxSjHiS9cDFQQUSznXMQmxJegbhcdEF7/eNnJgHeIXv1jmny78kipgBA==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/typography@5.1.2:
     resolution: {integrity: sha512-BxbVUnN8N7hJ4aaPOd7wEsudeT7CxarR+2hns8XCX1zp0DFfbWw4xYa/olA0oQaqx7F1hzDg+eRaGzAJbF+jOg==}
     dependencies:
       '@styled-system/core': 5.1.2
-    dev: false
 
   /@styled-system/variant@5.1.5:
     resolution: {integrity: sha512-Yn8hXAFoWIro8+Q5J8YJd/mP85Teiut3fsGVR9CAxwgNfIAiqlYxsk5iHU7VHJks/0KjL4ATSjmbtCDC/4l1qw==}
     dependencies:
       '@styled-system/core': 5.1.2
       '@styled-system/css': 5.1.5
-    dev: false
 
   /@tanstack/react-table@8.9.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-yHs2m6lk5J5RNcu2dNtsDGux66wNXZjEgzxos6MRCX8gL+nqxeW3ZglqP6eANN0bGElPnjvqiUHGQvdACOr3Cw==}
@@ -5072,7 +5270,6 @@ packages:
       '@theme-ui/css': 0.16.2(@emotion/react@11.11.4)
       deepmerge: 4.3.1
       react: 18.2.0
-    dev: false
 
   /@theme-ui/color@0.16.2(@emotion/react@11.11.4):
     resolution: {integrity: sha512-rG2GfxGmBMSYzErROjNjtFGBg1wU5mrg1w4+EwbuapTGV5ztnoihcFQlJjK0o2VybpI/4YM27r3G9eaYt0yJJg==}
@@ -5081,7 +5278,6 @@ packages:
       polished: 4.2.2
     transitivePeerDependencies:
       - '@emotion/react'
-    dev: false
 
   /@theme-ui/components@0.16.2(@emotion/react@11.11.4)(@theme-ui/theme-provider@0.16.2)(react@18.2.0):
     resolution: {integrity: sha512-d9HDxLTZzVHSiNNQUJrs4k0FU9kTFZhM3KjR+lVuztoWSGhkZEjf1KrWK8OWWXPH2LxEC5okcvggx177tnfejg==}
@@ -5099,7 +5295,6 @@ packages:
       '@theme-ui/theme-provider': 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
       '@types/styled-system': 5.1.16
       react: 18.2.0
-    dev: false
 
   /@theme-ui/core@0.16.2(@emotion/react@11.11.4)(react@18.2.0):
     resolution: {integrity: sha512-bBd/ltbwO9vIUjF1jtlOX6XN0IIOdf1vzBp2JCKsSOqdfn84m+XL8OogIe/zOhQ+aM94Nrq4+32tFJc8sFav4Q==}
@@ -5111,7 +5306,6 @@ packages:
       '@theme-ui/css': 0.16.2(@emotion/react@11.11.4)
       deepmerge: 4.3.1
       react: 18.2.0
-    dev: false
 
   /@theme-ui/css@0.16.2(@emotion/react@11.11.4):
     resolution: {integrity: sha512-fNe+FhwKC5+7jQfxCRnm3oqYNhMFuiWiLA9OoLBEkt3b4egot29UK1+fqemwiNVjl206e2fPT5Z7uXRdb6LC2A==}
@@ -5120,7 +5314,6 @@ packages:
     dependencies:
       '@emotion/react': 11.11.4(@types/react@18.2.70)(react@18.2.0)
       csstype: 3.1.3
-    dev: false
 
   /@theme-ui/global@0.16.2(@emotion/react@11.11.4)(react@18.2.0):
     resolution: {integrity: sha512-Y2CtNblERWJDxZpckR1TA0+UTH762VA82v/xTMMbufcEmJjzPasEOSZxJYH3qUOuCaJpbX5eFT49MEAujvLCzg==}
@@ -5132,7 +5325,6 @@ packages:
       '@theme-ui/core': 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
       '@theme-ui/css': 0.16.2(@emotion/react@11.11.4)
       react: 18.2.0
-    dev: false
 
   /@theme-ui/theme-provider@0.16.2(@emotion/react@11.11.4)(react@18.2.0):
     resolution: {integrity: sha512-LRnVevODcGqO0JyLJ3wht+PV3ZoZcJ7XXLJAJWDoGeII4vZcPQKwVy4Lpz/juHsZppQxKcB3U+sQDGBnP25irQ==}
@@ -5145,7 +5337,6 @@ packages:
       '@theme-ui/core': 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
       '@theme-ui/css': 0.16.2(@emotion/react@11.11.4)
       react: 18.2.0
-    dev: false
 
   /@tootallnate/once@2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -5421,7 +5612,6 @@ packages:
 
   /@types/parse-json@4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
-    dev: false
 
   /@types/pretty-hrtime@1.0.1:
     resolution: {integrity: sha512-VjID5MJb1eGKthz2qUerWT8+R4b9N+CHvGCzg9fn4kWZgaF9AhdYikQio3R7wV8YY1NsQKPaCwKz1Yff+aHNUQ==}
@@ -5482,7 +5672,6 @@ packages:
     resolution: {integrity: sha512-+dyGs2n2o6QStsexh87NeaRmXYnKOnEe7iOEkcYOwKwI5a1gFL0+Mt/hZKi+4KD1qDMkLkGb0lpDrffb/vSkDQ==}
     dependencies:
       csstype: 3.1.3
-    dev: false
 
   /@types/testing-library__jest-dom@5.14.9:
     resolution: {integrity: sha512-FSYhIjFlfOpGSRyVoMBMuS3ws5ehFQODymf3vlI7U1K8c7PHwWwFY7VREfmsuzHSOnoKs/9/Y983ayOs7eRzqw==}
@@ -6387,7 +6576,6 @@ packages:
       '@babel/runtime': 7.24.1
       cosmiconfig: 7.1.0
       resolve: 1.22.8
-    dev: false
 
   /babel-plugin-polyfill-corejs2@0.4.8(@babel/core@7.23.9):
     resolution: {integrity: sha512-OtIuQfafSzpo/LhnJaykc0R/MMnuLSSVjVYy9mHArIZ9qTCSZ6TpWCuEKZYVoN//t8HqBNScHrOtCrIK5IaGLg==}
@@ -7071,7 +7259,6 @@ packages:
 
   /convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
-    dev: false
 
   /convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -7120,7 +7307,6 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
-    dev: false
 
   /cosmiconfig@8.3.6(typescript@5.4.3):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
@@ -9347,7 +9533,6 @@ packages:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
     dependencies:
       react-is: 16.13.1
-    dev: false
 
   /homedir-polyfill@1.0.3:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
@@ -12816,7 +13001,6 @@ packages:
   /source-map@0.5.7:
     resolution: {integrity: sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==}
     engines: {node: '>=0.10.0'}
-    dev: false
 
   /source-map@0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
@@ -13125,18 +13309,16 @@ packages:
       '@styled-system/typography': 5.1.2
       '@styled-system/variant': 5.1.5
       object-assign: 4.1.1
-    dev: false
 
   /stylis@4.2.0:
     resolution: {integrity: sha512-Orov6g6BB1sDfYgzWfTHDOxamtX1bE/zo104Dh9e6fqJ3PooipYyfJ0pUmrZO2wAvO8YbEyeFrkV91XTsGMSrw==}
-    dev: false
 
   /sucrase@3.35.0:
     resolution: {integrity: sha512-8EbVDiu9iN/nESwxeSxDKe0dunta1GOlHufmSSXxMD2z2/tMZpDMpvXQGsc+ajGo8y2uYUmixaSRUc/QPoQ0GA==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.3
+      '@jridgewell/gen-mapping': 0.3.5
       commander: 4.1.1
       glob: 10.3.10
       lines-and-columns: 1.2.4
@@ -13260,7 +13442,7 @@ packages:
       uglify-js:
         optional: true
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.22
+      '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
@@ -13304,7 +13486,6 @@ packages:
       '@theme-ui/global': 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
       '@theme-ui/theme-provider': 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
       react: 18.2.0
-    dev: false
 
   /thenify-all@1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
@@ -13981,7 +14162,7 @@ packages:
     resolution: {integrity: sha512-/EH/sDgxU2eGxajKdwLCDmQ4FWq+kpi3uCmBGpw1xJtnAxEjlD8j8PEiGWpCIMIs3ciNAgH0d3TTJiUkYzyZjA==}
     engines: {node: '>=10.12.0'}
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.22
+      '@jridgewell/trace-mapping': 0.3.25
       '@types/istanbul-lib-coverage': 2.0.6
       convert-source-map: 2.0.0
 
@@ -14352,7 +14533,6 @@ packages:
   /yaml@1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
-    dev: false
 
   /yaml@2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}

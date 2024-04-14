@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Anchor.Absolute /> should match snapshot 1`] = `
+<div>
+  <a
+    class="css-fcm1mr-AbsoluteAnchorWithRef"
+    href="https://example.com"
+  >
+    link
+  </a>
+</div>
+`;
+
+exports[`<Anchor.Absolute /> should render with no decoration 1`] = `
+<div>
+  <a
+    class="css-18kxuu6-AbsoluteAnchorWithRef"
+    href="https://example.com"
+  >
+    link
+  </a>
+</div>
+`;

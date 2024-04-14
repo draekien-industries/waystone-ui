@@ -3,3 +3,6 @@ export * from '@waystone/theme';
 export * from '@waystone/utils';
 export * from '@waystone/core';
 export * from '@waystone/syntax-highlighter';
+
+// components
+export * from '@waystone/anchor'

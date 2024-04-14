@@ -1,27 +1,28 @@
-import type { Meta } from '@storybook/react';
-import type { ButtonProps } from '@waystone/components/src';
-import { Button } from '@waystone/components/src';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from '@waystone/button';
 
-export default {
+const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
-} as Meta<typeof Button>;
-
-export const Primary = {
-  args: {
-    children: 'Button',
-  } as ButtonProps,
 };
 
-export const WithIcon = {
+export default meta;
+
+export const Primary: StoryObj<typeof meta> = {
+  args: {
+    children: 'Button',
+  },
+};
+
+export const WithIcon: StoryObj<typeof meta> = {
   args: {
     children: 'Button',
     icon: { variant: 'filled', name: 'check' },
-  } as ButtonProps,
+  },
 };
 
-export const IconOnly = {
+export const IconOnly: StoryObj<typeof meta> = {
   args: {
     icon: { variant: 'filled', name: 'check' },
-  } as ButtonProps,
+  },
 };

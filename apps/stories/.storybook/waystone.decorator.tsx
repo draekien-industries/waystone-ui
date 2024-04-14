@@ -1,4 +1,4 @@
-import { Waystone } from '@waystone/theme/src';
+import { Waystone, useFonts } from '@waystone/theme-provider';
 import { useEffect } from 'react';
 import { useDarkMode } from 'storybook-dark-mode';
 import { useColorMode } from 'theme-ui';
@@ -14,9 +14,15 @@ const ThemeChanger = () => {
   return <></>;
 };
 
-export const waystoneDecorator = (storyFn: any) => (
-  <Waystone>
-    <ThemeChanger />
-    <div style={{ maxWidth: 1280 }}>{storyFn()}</div>
-  </Waystone>
-);
+export const WaystoneDecorator = (Story: any) => {
+  useFonts();
+
+  return (
+    <Waystone>
+      <ThemeChanger />
+      <div style={{ maxWidth: 1280 }}>
+        <Story />
+      </div>
+    </Waystone>
+  );
+};

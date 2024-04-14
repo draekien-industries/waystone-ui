@@ -2,7 +2,7 @@
 
 import type { RenderOptions, RenderResult } from '@testing-library/react';
 import { render } from '@testing-library/react';
-import { Waystone } from '@waystone/theme';
+import { Waystone } from '@waystone/theme-provider';
 import type { PropsWithChildren } from 'react';
 import type React from 'react';
 import { useEffect } from 'react';
@@ -29,4 +29,6 @@ const themedRender: (
   render(ui, { wrapper: options?.wrapper || TestProvider, ...options });
 
 export * from '@testing-library/react';
+export * from '@testing-library/user-event';
+
 export { DarkModeWrapper, themedRender as render };

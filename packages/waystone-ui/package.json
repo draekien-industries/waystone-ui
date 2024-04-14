@@ -35,6 +35,8 @@
     "@testing-library/react": "^14.2.2",
     "@testing-library/user-event": "^14.5.2",
     "@waystone/tsconfig": "workspace:*",
+    "@waystone/anchor": "workspace:^",
+    "@waystone/icon": "workspace:^",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "tsup": "^8.0.2"

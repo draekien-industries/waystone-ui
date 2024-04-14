@@ -1,4 +1,4 @@
-import { waystoneDecorator } from './waystone.decorator';
+import { WaystoneDecorator } from './waystone.decorator';
 import { create } from '@storybook/theming';
 import { WaystoneBaseTheme } from '@waystone/core';
 import { getThemeColors } from './preview.fx';
@@ -39,4 +39,4 @@ export const parameters = {
   },
 };
 
-export const decorators = [waystoneDecorator];
+export const decorators = [WaystoneDecorator];
