@@ -38,7 +38,7 @@
     "serve": "^13.0.4",
     "storybook": "^7.6.15",
     "storybook-dark-mode": "^3.0.3",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.5",
     "vite": "^5.0.13"
   },
   "license": "MIT",
