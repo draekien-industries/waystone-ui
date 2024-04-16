@@ -70,3 +70,7 @@ export type LoadingAttributes = {
 export type ActiveAttributes = {
   active?: boolean;
 };
+
+export type SizeAttributes<T extends ThemeSize = ThemeSize> = {
+  size?: T;
+};

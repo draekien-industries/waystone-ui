@@ -9,16 +9,16 @@ export const STARTING_COLORS = {
 
 export const colors = {
   ...STARTING_COLORS,
-  text: '#1A1A1A',
-  background: '#F4F9FA',
-  muted: '#B8B8B8',
-  ghost: '#EBEBEB',
+  text: b['b-950'],
+  background: p['p-50'],
+  muted: b['b-300'],
+  ghost: b['b-100'],
   modes: {
     dark: {
-      text: '#C6DFE7',
-      background: '#1A1A1A',
-      muted: '#5E5E5E',
-      ghost: '#404040',
+      text: p['p-200'],
+      background: b['b-950'],
+      muted: b['b-600'],
+      ghost: b['b-800'],
     },
   },
   ...p,

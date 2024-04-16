@@ -1,6 +1,6 @@
 import { WaystoneDecorator } from './waystone.decorator';
 import { create } from '@storybook/theming';
-import { WaystoneBaseTheme } from '@waystone/core';
+import { waystoneTheme } from '@waystone/theme';
 import { getThemeColors } from './preview.fx';
 import { DocsContainer } from './DocsContainer';
 
@@ -25,7 +25,7 @@ export const parameters = {
       date: /Date$/,
     },
     presetColors: getThemeColors().map((colorName) => ({
-      color: WaystoneBaseTheme.colors[colorName],
+      color: waystoneTheme.colors[colorName],
       title: colorName,
     })),
   },

@@ -1,4 +1,4 @@
-import type { ColorAttributes, VariantAttributes } from '@waystone/core';
+import type { ColorAttributes, VariantAttributes } from '@waystone/types';
 import type { ComponentPropsWithoutRef } from 'react';
 
 export type IconSize = 'extra-small' | 'small' | 'medium' | 'large';

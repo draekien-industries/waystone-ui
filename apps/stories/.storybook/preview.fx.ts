@@ -1,11 +1,11 @@
-import { WaystoneBaseTheme } from '@waystone/core';
+import { waystoneTheme } from '@waystone/theme';
 
 export const getThemeColors = () =>
-  Object.keys(WaystoneBaseTheme.colors!).filter((c) => c !== 'modes');
+  Object.keys(waystoneTheme.colors!).filter((c) => c !== 'modes');
 
 export const getThemeColorsSummary = () => getThemeColors().join(',');
 
-export const getThemeTextVariants = () => Object.keys(WaystoneBaseTheme.text!);
+export const getThemeTextVariants = () => Object.keys(waystoneTheme.text!);
 
 export const getThemeTextVariantsSummary = () =>
   getThemeTextVariants().join('|');

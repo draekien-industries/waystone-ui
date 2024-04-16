@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react';
 import { Text } from '@waystone/components/src';
 import type { TextVariant } from '@waystone/core/src';
-import { WaystoneBaseTheme } from '@waystone/core/src';
+import { waystoneTheme } from '@waystone/theme';
 import type { FC } from 'react';
 import type { ThemeUIStyleObject } from 'theme-ui';
 
@@ -22,8 +22,7 @@ export const Typography: FC = () => (
           display: 'flex',
           flexFlow: 'row wrap',
           gap: '2rem',
-        }}
-      >
+        }}>
         <Text variant="title" inline>
           Barlow
         </Text>
@@ -46,10 +45,9 @@ export const Typography: FC = () => (
           flexFlow: 'row wrap',
           gap: '2rem',
           alignItems: 'baseline',
-        }}
-      >
+        }}>
         {Object.keys(
-          WaystoneBaseTheme.text || ({} as Record<string, ThemeUIStyleObject>)
+          waystoneTheme.text || ({} as Record<string, ThemeUIStyleObject>)
         )
           .filter((x) => x !== 'default')
           .map((key) => (
@@ -62,7 +60,9 @@ export const Typography: FC = () => (
   </article>
 );
 
-export default {
+const meta: Meta<typeof Typography> = {
   title: 'Design System/Typography',
   component: Typography,
-} as Meta;
+};
+
+export default meta;

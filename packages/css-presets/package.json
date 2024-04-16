@@ -1,5 +1,5 @@
 {
-  "name": "@waystone/icon",
+  "name": "@waystone/css-presets",
   "version": "0.0.0",
   "main": "./src/index.ts",
   "module": "./src/index.ts",
@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
   },
-  "description": "The HTML Icon component for @waystone/ui",
+  "description": "CSS presets for @waystone/ui",
   "author": "draekien-industries",
   "sideEffects": false,
   "license": "MIT",
@@ -22,11 +22,11 @@
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
   "devDependencies": {
+    "@theme-ui/color": "^0.16.2",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
-    "@waystone/types": "workspace:^",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "react": "^18.2.0",
