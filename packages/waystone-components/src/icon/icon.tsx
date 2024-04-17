@@ -34,15 +34,14 @@ export const Icon = ({
   className,
   name,
   variant = 'filled',
-  size = 'md',
+  size = 'medium',
   color = 'inherit',
   ...rest
 }: IconProps) => (
   <i
     sx={iconCss({ size, color })}
     className={getIconClassName(variant, className)}
-    {...rest}
-  >
+    {...rest}>
     {name}
   </i>
 );

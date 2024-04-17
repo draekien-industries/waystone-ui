@@ -29,18 +29,16 @@ export const SyntaxHighlighter = ({
     <pre
       sx={{
         ...style.hljs,
-        paddingX: 'md',
+        paddingX: 'medium',
         fontFamily: 'inherit',
         fontWeight: 'inherit',
         lineHeight: 'inherit',
         paddingTop: '2rem',
         paddingBottom: '2.25rem',
-      }}
-    >
+      }}>
       <code
         className={language ? `language-${language}` : undefined}
-        sx={{ whiteSpace: wrapLines ? 'pre-wrap' : 'pre' }}
-      >
+        sx={{ whiteSpace: wrapLines ? 'pre-wrap' : 'pre' }}>
         {codeTree.map((node, index) => (
           <CodeLine stylesheet={style} key={`code-segment-${index.toString()}`}>
             {node}

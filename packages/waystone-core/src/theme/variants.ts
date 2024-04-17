@@ -19,7 +19,7 @@ export const variants = {
       fontWeight: 'bold',
       lineHeight: 'heading',
       fontFamily: 'heading',
-      marginY: 'md',
+      marginY: 'medium',
     },
     title: {
       fontSize: 'title',

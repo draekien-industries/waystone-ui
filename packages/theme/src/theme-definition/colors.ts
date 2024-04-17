@@ -10,6 +10,7 @@ export const STARTING_COLORS = {
 export const colors = {
   ...STARTING_COLORS,
   text: b['b-950'],
+  'text-disabled': b['b-400'],
   background: p['p-50'],
   muted: b['b-300'],
   ghost: b['b-100'],

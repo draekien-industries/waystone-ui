@@ -28,7 +28,7 @@ export type CardProps = {
 export const Card = ({
   image,
   children,
-  boxShadow = 'md',
+  boxShadow = 'medium',
   ...rest
 }: CardProps) => {
   const hasImage = !!image;
@@ -40,7 +40,7 @@ export const Card = ({
       sx={{
         ...rest,
         backgroundColor: 'card',
-        borderRadius: 'md',
+        borderRadius: 'medium',
         boxShadow,
         overflowY: 'auto',
       }}>
@@ -52,7 +52,7 @@ export const Card = ({
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            height: image.height ?? 'md',
+            height: image.height ?? 'medium',
             maxHeight: image.maxHeight,
             minHeight: image.minHeight,
             width: 'full',

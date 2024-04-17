@@ -95,10 +95,11 @@ const renderButton = (
         [cssSelectors.disabled]: {
           ...disabledCss,
           backgroundColor: isLink ? undefined : 'muted',
+          cursor: 'not-allowed',
         },
       }}
       {...rest}
-      disabled={disabled}>
+      disabled={disabled || loading}>
       {loading ? (
         <Box>Loading...</Box>
       ) : (

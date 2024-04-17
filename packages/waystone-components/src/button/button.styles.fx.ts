@@ -140,7 +140,7 @@ export const getBoxShadow = ({
 
   return {
     normalBoxShadow: addDarkModeSuffix('small', darkMode),
-    hoverBoxShadow: addDarkModeSuffix('md', darkMode),
+    hoverBoxShadow: addDarkModeSuffix('medium', darkMode),
     activeBoxShadow: addDarkModeSuffix('small', darkMode),
   };
 };
@@ -182,7 +182,7 @@ export const getPadding = ({
     }
     default:
       return {
-        paddingX: 'md',
+        paddingX: 'medium',
         paddingY: 'small',
       };
   }

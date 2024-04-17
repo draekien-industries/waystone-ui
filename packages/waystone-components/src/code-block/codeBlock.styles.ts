@@ -4,8 +4,8 @@ import type { ThemeUIStyleObject } from 'theme-ui';
 export const codeBlockContainerCss: ThemeUIStyleObject = {
   backgroundColor: 'b-600',
   mb: 'large',
-  mx: 'md',
-  borderRadius: 'md',
+  mx: 'medium',
+  borderRadius: 'medium',
   variant: 'text.monospace',
   display: 'block',
   position: 'relative',

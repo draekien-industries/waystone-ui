@@ -4,7 +4,7 @@ import { argTypes, getThemeSizes } from '../../.storybook/preview.fx';
 
 const options: CardImageCss = {
   src: '/example-image.png',
-  height: 'md',
+  height: 'medium',
   backgroundColor: 'secondary',
 };
 
@@ -40,7 +40,7 @@ export const Default: StoryObj<typeof meta> = {};
 export const WithCardPadding: StoryObj<typeof meta> = {
   args: {
     image: options,
-    padding: 'md',
+    padding: 'medium',
   },
 };
 
@@ -57,8 +57,8 @@ export const WithPaddedContent: StoryObj<typeof meta> = {
 
 export const WithDimensions: StoryObj<typeof meta> = {
   args: {
-    maxWidth: 'md',
-    maxHeight: 'md',
+    maxWidth: 'medium',
+    maxHeight: 'medium',
   },
 };
 

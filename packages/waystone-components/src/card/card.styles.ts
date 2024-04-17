@@ -23,12 +23,12 @@ export const cardContainerCss = ({
   darkMode,
   ...rest
 }: CardContainerCssProps): ThemeUIStyleObject => ({
-  borderRadius: 'md',
+  borderRadius: 'medium',
   width: fullWidth ? '100%' : width || 'auto',
   minWidth: !fullWidth && minWidth,
   maxWidth: !fullWidth && maxWidth,
   backgroundColor: darkMode ? 'b-600' : 'b-50',
-  boxShadow: !noShadow && 'md',
+  boxShadow: !noShadow && 'medium',
   overflowY: 'auto',
   ...rest,
 });
@@ -60,7 +60,7 @@ export const coverImageCss = ({
   size = 'cover',
   repeat = 'no-repeat',
   position = 'center',
-  height = 'md',
+  height = 'medium',
   fallbackColor = 'secondary',
 }: CoverImageCssOptions): ThemeUIStyleObject => ({
   backgroundImage: `url(${url})`,
@@ -73,5 +73,5 @@ export const coverImageCss = ({
 });
 
 export const cardContentCss = (noPadding?: boolean): ThemeUIStyleObject => ({
-  padding: noPadding ? 0 : 'md',
+  padding: noPadding ? 0 : 'medium',
 });

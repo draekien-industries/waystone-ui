@@ -12,7 +12,7 @@ export type SpinnerProps = {
 
 /** A terminal style loading spinner */
 export const Spinner = ({
-  size = 'md',
+  size = 'medium',
   color = 'accent',
   fullWidth = false,
   overlay = false,

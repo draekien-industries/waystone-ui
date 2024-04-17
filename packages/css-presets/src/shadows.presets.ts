@@ -9,11 +9,11 @@ const base: ThemeUIStyleObject = {
 } as const;
 
 const focused: ThemeUIStyleObject = {
-  boxShadow: 'md',
+  boxShadow: 'medium',
 } as const;
 
 const active: ThemeUIStyleObject = {
-  boxShadow: 'md',
+  boxShadow: 'medium',
 } as const;
 
 export const boxShadowCss = {

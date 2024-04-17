@@ -23,7 +23,7 @@ export const TablePagination = <TData extends TableRowData<TData>>(
   } = props;
 
   return (
-    <Flex sx={{ marginY: 'md', gap: 'small', justifyContent: 'center' }}>
+    <Flex sx={{ marginY: 'medium', gap: 'small', justifyContent: 'center' }}>
       <Button
         onClick={() => setPageIndex(0)}
         disabled={!getCanPreviousPage()}

@@ -1,7 +1,7 @@
 import type { ThemeUIStyleObject } from 'theme-ui';
 
 export const disabledCss: ThemeUIStyleObject = {
-  color: 'b-400',
+  color: 'text-disabled',
   cursor: 'not-allowed',
 } as const;
 

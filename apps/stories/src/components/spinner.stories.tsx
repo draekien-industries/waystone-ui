@@ -5,7 +5,7 @@ export default {
   title: 'Components/Spinner',
   component: Spinner,
   args: {
-    size: 'md',
+    size: 'medium',
     color: 'accent',
     fullWidth: false,
   },

@@ -22,7 +22,7 @@ const getSpinnerSize = (size: Size) => {
   switch (size) {
     case 'small':
       return '1.3125rem';
-    case 'md':
+    case 'medium':
       return '1.5em';
     case 'large':
       return '2em';
@@ -40,7 +40,7 @@ export const spinnerCss = ({
     color: color as ThemeUICSSObject['color'],
     display: fullWidth ? 'flex' : 'inline-flex',
     width: fullWidth ? '100%' : 'auto',
-    height: getSpinnerSize(size || 'md'),
+    height: getSpinnerSize(size || 'medium'),
     alignItems: 'center',
     justifyContent: 'center',
     aspectRatio: '1',
@@ -48,7 +48,7 @@ export const spinnerCss = ({
       animation: `${changeContent} 600ms linear infinite`,
       display: 'block',
       content: '"⠋"',
-      fontSize: getSpinnerSize(size || 'md'),
+      fontSize: getSpinnerSize(size || 'medium'),
     },
   };
 

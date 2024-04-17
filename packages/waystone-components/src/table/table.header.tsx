@@ -25,7 +25,7 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
                 width: header.getSize(),
                 color: 'b-900',
                 paddingY: 'small',
-                paddingX: 'md',
+                paddingX: 'medium',
                 textAlign: 'left',
                 fontWeight: 'semibold',
               }}>

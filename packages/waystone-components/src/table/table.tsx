@@ -24,7 +24,7 @@ const tableCss: ThemeUIStyleObject = {
   borderCollapse: 'collapse',
   minWidth: '400px',
   width: '100%',
-  boxShadow: 'md',
+  boxShadow: 'medium',
 };
 
 export const Table = <TData extends TableRowData<TData>, TValue = unknown>({

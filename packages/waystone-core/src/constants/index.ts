@@ -1,7 +1,7 @@
 /** A common set of sizes. */
 export const Size = {
   small: 'small',
-  medium: 'md',
+  medium: 'medium',
   large: 'large',
 } as const;
 
