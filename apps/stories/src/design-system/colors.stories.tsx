@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from '@storybook/react';
-import { Text } from '@waystone/components/src';
+import { Text } from '@waystone/text';
 import { waystoneTheme } from '@waystone/theme';
 import type { FC, PropsWithChildren } from 'react';
 import type { ColorMode, ColorModesScale } from 'theme-ui';

@@ -12,6 +12,33 @@ const meta: Meta<typeof Text> = {
       'Non dolorum facilis similique commodi, officiis error quis molestiae in repellat, ' +
       'minus delectus nesciunt, voluptas quos autem? Nostrum quidem mollitia nemo quas!',
   },
+  argTypes: {
+    as: {
+      description:
+        'Instructs the component to render as a specific HTML element',
+      type: {
+        name: 'enum',
+        value: [
+          'span',
+          'div',
+          'summary',
+          'detail',
+          'p',
+          'h1',
+          'h2',
+          'h3',
+          'h5',
+          'small',
+          'label',
+        ],
+      },
+      table: {
+        type: {
+          summary: 'ElementType',
+        },
+      },
+    },
+  },
 };
 
 export default meta;
