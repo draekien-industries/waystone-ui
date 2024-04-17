@@ -1,10 +1,7 @@
-import type { Meta, StoryFn } from '@storybook/react';
-import type { TextProps } from '@waystone/components/src';
-import { Text } from '@waystone/components/src';
-import { TextVariant } from '@waystone/core/src';
-import * as React from 'react';
+import type { Meta, StoryFn, StoryObj } from '@storybook/react';
+import { Text, textVariants } from '@waystone/text';
 
-export default {
+const meta: Meta<typeof Text> = {
   title: 'Components/Text',
   component: Text,
   args: {
@@ -15,7 +12,9 @@ export default {
       'Non dolorum facilis similique commodi, officiis error quis molestiae in repellat, ' +
       'minus delectus nesciunt, voluptas quos autem? Nostrum quidem mollitia nemo quas!',
   },
-} as Meta<typeof Text>;
+};
+
+export default meta;
 
 export const Default = {};
 
@@ -25,16 +24,16 @@ const VariantTemplate: StoryFn<typeof Text> = (args) => {
 
   return (
     <div>
-      {Object.keys(TextVariant).map((textVariant) => (
-        <Text key={textVariant} variant={textVariant as TextVariant} {...rest}>
-          {variant}
+      {textVariants.map((v) => (
+        <Text key={v} variant={v} {...rest}>
+          {v}
         </Text>
       ))}
     </div>
   );
 };
 
-export const WithVariant = {
+export const WithVariant: StoryObj<typeof meta> = {
   render: VariantTemplate,
 
   parameters: {
@@ -47,7 +46,7 @@ export const WithVariant = {
   },
 };
 
-export const WithColor = {
+export const WithColor: StoryObj<typeof meta> = {
   parameters: {
     docs: {
       description: {
@@ -61,7 +60,7 @@ export const WithColor = {
 
   args: {
     color: 's-400',
-  } as TextProps,
+  },
 };
 
 const InlineTemplate: StoryFn<typeof Text> = (args) => {
@@ -76,7 +75,7 @@ const InlineTemplate: StoryFn<typeof Text> = (args) => {
   );
 };
 
-export const WithInline = {
+export const WithInline: StoryObj<typeof meta> = {
   render: InlineTemplate,
 
   parameters: {
@@ -92,5 +91,20 @@ export const WithInline = {
   args: {
     inline: true,
     children: 'Lorem ipsum.',
-  } as TextProps,
+  },
+};
+
+export const AsParagraph: StoryObj<typeof meta> = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Use the `as` prop to render the text as different HTML elements such as `p`, `h1`, etc.',
+      },
+    },
+  },
+
+  args: {
+    as: 'p',
+  },
 };

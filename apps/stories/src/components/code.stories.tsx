@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Code } from '@waystone/code';
-import { Text } from '@waystone/components';
+import { Text } from '@waystone/text';
 
 const meta: Meta<typeof Code> = {
   title: 'Components/Code',

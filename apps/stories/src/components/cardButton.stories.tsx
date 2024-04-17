@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { CardButton } from '@waystone/card-button';
-import { Text } from '@waystone/components/src';
+import { Text } from '@waystone/text';
 
 const meta: Meta<typeof CardButton> = {
   title: 'Components/CardButton',

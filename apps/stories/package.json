@@ -16,6 +16,7 @@
     "@waystone/code-block": "workspace:*",
     "@waystone/icon": "workspace:*",
     "@waystone/core": "workspace:*",
+    "@waystone/text": "workspace:*",
     "@waystone/theme": "workspace:*",
     "@waystone/theme-provider": "workspace:*",
     "@waystone/utils": "workspace:*",

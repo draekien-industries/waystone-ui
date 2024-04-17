@@ -2,7 +2,7 @@
 
 import type { Meta, StoryObj } from '@storybook/react';
 import { ButtonGroup } from '@waystone/button-group';
-import { Text } from '@waystone/components';
+import { Text } from '@waystone/text';
 import * as React from 'react';
 import { buttonSizes } from '@waystone/button';
 import { createEnumArgType } from '../../.storybook/preview.fx';

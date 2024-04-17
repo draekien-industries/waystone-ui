@@ -119,6 +119,9 @@ importers:
       '@waystone/icon':
         specifier: workspace:*
         version: link:../../packages/icon
+      '@waystone/text':
+        specifier: workspace:*
+        version: link:../../packages/text
       '@waystone/theme':
         specifier: workspace:*
         version: link:../../packages/theme
@@ -602,6 +605,39 @@ importers:
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../waystone-testing-library
+      '@waystone/tsconfig':
+        specifier: workspace:*
+        version: link:../waystone-tsconfig
+      '@waystone/types':
+        specifier: workspace:*
+        version: link:../types
+      eslint-config-waystone:
+        specifier: workspace:*
+        version: link:../eslint-config-waystone
+      eslint-plugin-waystone:
+        specifier: workspace:*
+        version: link:../eslint-plugin-waystone
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      theme-ui:
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4)(react@18.2.0)
+
+  packages/text:
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: ^6.4.2
+        version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
+      '@testing-library/react':
+        specifier: ^14.2.2
+        version: 14.2.2(react-dom@18.2.0)(react@18.2.0)
+      '@waystone/testing-library':
+        specifier: workspace:*
+        version: link:../waystone-testing-library
+      '@waystone/theme':
+        specifier: workspace:*
+        version: link:../theme
       '@waystone/tsconfig':
         specifier: workspace:*
         version: link:../waystone-tsconfig

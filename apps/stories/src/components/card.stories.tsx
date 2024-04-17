@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Card, type CardImageCss } from '@waystone/card';
-import { argTypes, getThemeSizes } from '../../.storybook/preview.fx';
+import { argTypes } from '../../.storybook/preview.fx';
 
 const options: CardImageCss = {
   src: '/example-image.png',
