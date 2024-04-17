@@ -5,7 +5,7 @@ const none: ThemeUIStyleObject = {
 } as const;
 
 const base: ThemeUIStyleObject = {
-  boxShadow: 'sm',
+  boxShadow: 'small',
 } as const;
 
 const focused: ThemeUIStyleObject = {

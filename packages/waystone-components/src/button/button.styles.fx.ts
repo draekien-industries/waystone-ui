@@ -139,9 +139,9 @@ export const getBoxShadow = ({
   }
 
   return {
-    normalBoxShadow: addDarkModeSuffix('sm', darkMode),
+    normalBoxShadow: addDarkModeSuffix('small', darkMode),
     hoverBoxShadow: addDarkModeSuffix('md', darkMode),
-    activeBoxShadow: addDarkModeSuffix('sm', darkMode),
+    activeBoxShadow: addDarkModeSuffix('small', darkMode),
   };
 };
 
@@ -168,22 +168,22 @@ export const getPadding = ({
   if (variant === 'link') return { paddingX: 0, paddingY: 0 };
 
   switch (size) {
-    case 'sm': {
+    case 'small': {
       return {
-        paddingX: 'sm',
-        paddingY: 'xs',
+        paddingX: 'small',
+        paddingY: 'extra-small',
       };
     }
-    case 'lg': {
+    case 'large': {
       return {
-        paddingX: 'xl',
-        paddingY: 'sm',
+        paddingX: 'extra-large',
+        paddingY: 'small',
       };
     }
     default:
       return {
         paddingX: 'md',
-        paddingY: 'sm',
+        paddingY: 'small',
       };
   }
 };

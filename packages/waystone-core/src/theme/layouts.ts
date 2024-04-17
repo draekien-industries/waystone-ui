@@ -1,17 +1,17 @@
 export const layouts = {
   radii: {
-    sm: '0.25rem',
-    md: '0.5rem',
-    lg: '0.75rem',
-    xl: '1rem',
+    small: '0.25rem',
+    medium: '0.5rem',
+    large: '0.75rem',
+    'extra-large': '1rem',
     max: 999,
   },
   space: {
-    xs: '0.25rem',
-    sm: '0.5rem',
-    md: '1rem',
-    lg: '1.5rem',
-    xl: '2rem',
+    'extra-small': '0.25rem',
+    small: '0.5rem',
+    medium: '1rem',
+    large: '1.5rem',
+    'extra-large': '2rem',
   },
   zIndices: {
     lowest: 0,

@@ -9,19 +9,14 @@ import type {
   VariantAttributes,
 } from '@waystone/types';
 import type { ComponentPropsWithoutRef } from 'react';
+import type { buttonSizes, buttonVariants } from './button.constants';
 
-export type ButtonSize = 'sm' | 'md' | 'lg';
+export type ButtonSize = (typeof buttonSizes)[number];
 
-export type ButtonVariant =
-  | 'primary'
-  | 'secondary'
-  | 'highlight'
-  | 'accent'
-  | 'link'
-  | 'ghost'
-  | 'destructive';
+export type ButtonVariant = (typeof buttonVariants)[number];
 
 export type ButtonProps = {
+  /** The icon to render inside the button */
   icon?: { name: string } & Pick<IconProps, 'variant' | 'color' | 'size'>;
 } & ComponentPropsWithoutRef<'button'> &
   LoadingAttributes &

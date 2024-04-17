@@ -22,6 +22,6 @@ export const Default = {};
 
 export const WithConstraints = {
   args: {
-    width: 'xl',
+    width: 'extra-large',
   } as CardButtonProps,
 };

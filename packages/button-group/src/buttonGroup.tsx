@@ -47,7 +47,7 @@ export const ButtonGroup = <TIdentifier extends string = string>({
   buttons = [],
   selected,
   onChange,
-  size = 'sm',
+  size = 'small',
 }: ButtonGroupProps<TIdentifier>) => {
   if (!buttons.length) return null;
 
@@ -60,9 +60,9 @@ export const ButtonGroup = <TIdentifier extends string = string>({
   return (
     <Flex
       sx={{
-        gap: 'sm',
-        padding: 'xs',
-        borderRadius: 'sm',
+        gap: 'small',
+        padding: 'extra-small',
+        borderRadius: 'small',
         backgroundColor: 'ghost',
         width: 'fit-content',
       }}>

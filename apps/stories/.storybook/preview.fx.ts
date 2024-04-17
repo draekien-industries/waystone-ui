@@ -18,7 +18,7 @@ export const getThemeSizes = () => Object.keys(waystoneTheme.sizes);
 export const getThemeShadows = () => Object.keys(waystoneTheme.shadows);
 
 export type CreateEnumArgTypeOptions = {
-  options: Array<string | number>;
+  options: Readonly<Array<string | number>>;
   category?: string;
   summary: string;
   fuzzyTypes?: ['string', 'number'] | 'string' | 'number';
@@ -34,7 +34,7 @@ export const createEnumArgType = ({
   ({
     type: {
       name: 'enum',
-      value: options,
+      value: [...options],
     },
     control: 'select',
     table: {

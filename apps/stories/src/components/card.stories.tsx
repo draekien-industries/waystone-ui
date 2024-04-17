@@ -65,14 +65,14 @@ export const WithDimensions: StoryObj<typeof meta> = {
 export const WithImageCss: StoryObj<typeof meta> = {
   args: {
     image: options,
-    maxWidth: 'xl',
+    maxWidth: 'extra-large',
   },
 };
 
 export const WithImageComponent: StoryObj<typeof meta> = {
   args: {
     image: <img width="100%" src="/example-image.png" alt="" />,
-    maxWidth: 'xl',
+    maxWidth: 'extra-large',
   },
 };
 

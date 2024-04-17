@@ -14,8 +14,7 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
         position: 'sticky',
         top: 0,
         zIndex: 1,
-      }}
-    >
+      }}>
       {getHeaderGroups().map((headerGroup) => (
         <tr key={headerGroup.id}>
           {headerGroup.headers.map((header) => (
@@ -25,12 +24,11 @@ export const TableHeader = <TData,>({ getHeaderGroups }: Table<TData>) => {
               sx={{
                 width: header.getSize(),
                 color: 'b-900',
-                paddingY: 'sm',
+                paddingY: 'small',
                 paddingX: 'md',
                 textAlign: 'left',
                 fontWeight: 'semibold',
-              }}
-            >
+              }}>
               {!header.isPlaceholder &&
                 flexRender(header.column.columnDef.header, header.getContext())}
             </th>

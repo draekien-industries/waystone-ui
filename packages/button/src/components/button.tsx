@@ -21,9 +21,9 @@ import {
 } from './button.styles';
 
 const paddingY: Record<ButtonSize, string> = {
-  sm: '0.25rem',
-  md: '0.5rem',
-  lg: '0.75rem',
+  small: '0.25rem',
+  medium: '0.5rem',
+  large: '0.75rem',
 };
 
 const renderButton = (
@@ -31,7 +31,7 @@ const renderButton = (
     children,
     icon,
     loading,
-    size = 'sm',
+    size = 'small',
     variant = 'primary',
     color,
     fullWidth,
@@ -70,7 +70,7 @@ const renderButton = (
         alignItems: 'center',
         justifyContent: 'center',
         color: color || getColor(variant),
-        gap: 'sm',
+        gap: 'small',
         paddingX: isLink ? 0 : size,
         paddingY: isLink ? 0 : paddingY[size],
         width: fullWidth ? '100%' : undefined,

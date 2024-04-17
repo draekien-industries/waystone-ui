@@ -20,11 +20,11 @@ const changeContent = keyframes`
 
 const getSpinnerSize = (size: Size) => {
   switch (size) {
-    case 'sm':
+    case 'small':
       return '1.3125rem';
     case 'md':
       return '1.5em';
-    case 'lg':
+    case 'large':
       return '2em';
     default:
       return '1.5em';

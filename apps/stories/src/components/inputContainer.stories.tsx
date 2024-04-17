@@ -33,6 +33,6 @@ export const WithWidthConstraint = {
     label: 'Example input',
     children: <input id="example-input" />,
     helpText: 'Some very helpful text explaining what the input is for',
-    width: 'xl',
+    width: 'extra-large',
   } as InputContainerProps,
 };

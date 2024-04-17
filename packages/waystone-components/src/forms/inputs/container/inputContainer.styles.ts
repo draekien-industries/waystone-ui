@@ -16,10 +16,10 @@ export const inputContainerCss = ({
 export const labelContainerCss: ThemeUIStyleObject = {
   justifyContent: 'space-between',
   alignItems: 'baseline',
-  marginBottom: 'xs',
+  marginBottom: 'extra-small',
 };
 
 export const labelCss: ThemeUIStyleObject = {
   alignItems: 'center',
-  gap: 'xs',
+  gap: 'extra-small',
 };

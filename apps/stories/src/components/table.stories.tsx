@@ -150,7 +150,7 @@ export const SubRowComponent = {
           <Text inline>
             <Label>Visits:</Label> {row.original.visits}
           </Text>
-          <Flex sx={{ gap: 'sm', alignItems: 'center' }}>
+          <Flex sx={{ gap: 'small', alignItems: 'center' }}>
             <Label htmlFor={`progress-${row.id}`}>Progress:</Label>{' '}
             <progress
               id={`progress-${row.id}`}
@@ -180,7 +180,7 @@ export const ConditionalSubRowComponent = {
             <Text inline>
               <Label>Visits:</Label> {row.original.visits}
             </Text>
-            <Flex sx={{ gap: 'sm', alignItems: 'center' }}>
+            <Flex sx={{ gap: 'small', alignItems: 'center' }}>
               <Label htmlFor={`progress-${row.id}`}>Progress:</Label>{' '}
               <progress
                 id={`progress-${row.id}`}

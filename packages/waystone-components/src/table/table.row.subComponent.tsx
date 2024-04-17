@@ -23,7 +23,7 @@ const TableRowSubComponentContent = ({
 
   return (
     <tr>
-      <td sx={{ padding: 'xs' }} colSpan={colSpan}>
+      <td sx={{ padding: 'extra-small' }} colSpan={colSpan}>
         {children}
       </td>
     </tr>

@@ -1,20 +1,20 @@
 /** A common set of sizes. */
 export const Size = {
-  sm: 'sm',
-  md: 'md',
-  lg: 'lg',
+  small: 'small',
+  medium: 'md',
+  large: 'large',
 } as const;
 
 export type Size = keyof typeof Size;
 
-/** A superset of sizes that contains 'xs' and 'xl'. */
+/** A superset of sizes that contains 'extra-small' and 'extra-large'. */
 export const SizeExtended = {
-  xs: 'xs',
+  'extra-small': 'extra-small',
   ...Size,
-  xl: 'xl',
+  'extra-large': 'extra-large',
 } as const;
 
-/** A superset of sizes that contains 'xs' and 'xl'. */
+/** A superset of sizes that contains 'extra-small' and 'extra-large'. */
 export type SizeExtended = keyof typeof SizeExtended;
 
 /** The horizontal alignment of content. */

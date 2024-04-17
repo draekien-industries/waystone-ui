@@ -10,7 +10,7 @@ export type TableCellProps<TData, TValue> = {
 
 const getTableCellStyles = (size: number) => ({
   width: size,
-  paddingY: 'sm',
+  paddingY: 'small',
   paddingX: 'md',
 });
 

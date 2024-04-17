@@ -119,6 +119,6 @@ export const buttonAddonCss = ({
   variant,
   size,
 }: ButtonAddonCssParams): ThemeUIStyleObject => ({
-  marginRight: hasChildren && 'sm',
+  marginRight: hasChildren && 'small',
   marginY: getPadding({ variant, size }),
 });

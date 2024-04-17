@@ -5,14 +5,14 @@ export const variants = {
       fontWeight: 'regular',
       lineHeight: 'body',
       fontFamily: 'body',
-      marginY: 'sm',
+      marginY: 'small',
     },
     hero: {
       fontSize: 'hero',
       fontWeight: 'bold',
       lineHeight: 'heading',
       fontFamily: 'heading',
-      marginY: 'lg',
+      marginY: 'large',
     },
     heading: {
       fontSize: 'heading',
@@ -26,14 +26,14 @@ export const variants = {
       fontWeight: 'bold',
       lineHeight: 'heading',
       fontFamily: 'heading',
-      marginY: 'sm',
+      marginY: 'small',
     },
     subtitle: {
       fontSize: 'subtitle',
       fontWeight: 'semibold',
       lineHeight: 'heading',
       fontFamily: 'body',
-      marginY: 'sm',
+      marginY: 'small',
     },
     eyebrow: {
       fontSize: 'body',
@@ -48,7 +48,7 @@ export const variants = {
       fontWeight: 'regular',
       lineHeight: 'body',
       fontFamily: 'body',
-      marginY: 'sm',
+      marginY: 'small',
     },
     caption: {
       fontSize: 'caption',

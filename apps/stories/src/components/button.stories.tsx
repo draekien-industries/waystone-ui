@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '@waystone/button';
+import { Button, buttonSizes, buttonVariants } from '@waystone/button';
 import { argTypes, createEnumArgType } from '../../.storybook/preview.fx';
 
 const meta: Meta<typeof Button> = {
@@ -8,19 +8,11 @@ const meta: Meta<typeof Button> = {
   argTypes: {
     color: argTypes.color,
     size: createEnumArgType({
-      options: ['sm', 'md', 'lg'],
+      options: buttonSizes,
       summary: 'size',
     }),
     variant: createEnumArgType({
-      options: [
-        'primary',
-        'secondary',
-        'accent',
-        'highlight',
-        'link',
-        'ghost',
-        'destructive',
-      ],
+      options: buttonVariants,
       summary: 'variant',
     }),
   },

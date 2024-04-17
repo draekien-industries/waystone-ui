@@ -7,9 +7,9 @@ import type { Size, TextVariant } from '@waystone/core';
  */
 export const getTextVariant = (size?: Size): TextVariant => {
   switch (size) {
-    case 'sm':
+    case 'small':
       return 'caption';
-    case 'lg':
+    case 'large':
       return 'eyebrow';
     default:
       return 'body';

@@ -52,7 +52,7 @@ export const Button = ({
   maxWidth,
   fullWidth,
   variant = 'primary',
-  size = 'sm',
+  size = 'small',
   hideContentWhileLoading = false,
   loading = false,
   disabled = false,
@@ -91,7 +91,7 @@ export const Button = ({
     return buttonAddonCss(buttonAddonCssParams);
   }, [variant, size, shouldRenderChildren]);
 
-  const spinnerSize: Size = size === 'sm' ? 'sm' : 'md';
+  const spinnerSize: Size = size === 'small' ? 'small' : 'md';
 
   return (
     <ThemeUiButton sx={buttonSx} disabled={shouldBeDisabled} {...rest}>
