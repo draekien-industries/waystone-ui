@@ -1,9 +1,9 @@
 import type {
   BackgroundColorAttributes,
   BoxShadowAttributes,
-  DimensionsAttributes,
   HeightAttributes,
   PaddingAttributes,
+  WidthAttributes,
 } from '@waystone/types';
 import type { ComponentProps, ReactElement, ReactNode } from 'react';
 import { Box } from 'theme-ui';
@@ -21,7 +21,7 @@ export type CardProps = {
    * Alternatively, provide an `img` component to render.
    */
   image?: CardImageCss | ReactElement<ComponentProps<'img'>>;
-} & DimensionsAttributes &
+} & WidthAttributes &
   PaddingAttributes &
   BoxShadowAttributes;
 
@@ -42,7 +42,7 @@ export const Card = ({
         backgroundColor: 'card',
         borderRadius: 'medium',
         boxShadow,
-        overflowY: 'auto',
+        overflow: 'clip',
       }}>
       {isImageCss && (
         <Box

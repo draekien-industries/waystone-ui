@@ -12,6 +12,8 @@
     "@waystone/button-group": "workspace:*",
     "@waystone/card": "workspace:*",
     "@waystone/card-button": "workspace:*",
+    "@waystone/code": "workspace:*",
+    "@waystone/code-block": "workspace:*",
     "@waystone/icon": "workspace:*",
     "@waystone/core": "workspace:*",
     "@waystone/theme": "workspace:*",

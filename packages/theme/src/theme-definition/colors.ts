@@ -16,6 +16,7 @@ export const colors = {
   ghost: b['b-100'],
   active: 'white',
   card: 'white',
+  code: b['b-700'],
   modes: {
     dark: {
       text: p['p-200'],
@@ -24,6 +25,7 @@ export const colors = {
       ghost: b['b-800'],
       active: b['b-600'],
       card: b['b-800'],
+      code: STARTING_COLORS.highlight,
     },
   },
   ...p,

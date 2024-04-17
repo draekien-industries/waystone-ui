@@ -1,21 +1,36 @@
-import type { Meta } from '@storybook/react';
-import { Code, Text } from '@waystone/components/src';
-import * as React from 'react';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Code } from '@waystone/code';
+import { Text } from '@waystone/components';
 
-export default {
+const meta: Meta<typeof Code> = {
   title: 'Components/Code',
   component: Code,
-} as Meta<typeof Code>;
+};
 
-export const Default = {
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
   args: {
     children: 'code',
   },
 };
 
-export const WithExample = () => (
-  <Text>
-    This is an example of the <Code>Code</Code> component being used inside a{' '}
-    <Code>Text</Code> component.
-  </Text>
-);
+export const WithOtherText: StoryObj<typeof meta> = {
+  ...Default,
+  render: (args) => (
+    <Text>
+      This is an example of the Code component being used inside a{' '}
+      <Code {...args} /> component.
+    </Text>
+  ),
+};
+
+export const WithScaling: StoryObj<typeof meta> = {
+  ...Default,
+  render: (args) => (
+    <Text variant="subtitle">
+      You can scale a <Code {...args} /> by setting the font size on the parent
+      container.
+    </Text>
+  ),
+};

@@ -1,24 +1,39 @@
-import type { Meta } from '@storybook/react';
-import { CodeBlock } from '@waystone/components/src';
+import type { Meta, StoryObj } from '@storybook/react';
+import { CodeBlock } from '@waystone/code-block';
 
-export default {
+const meta: Meta<typeof CodeBlock> = {
   title: 'Components/CodeBlock',
   component: CodeBlock,
-} as Meta<typeof CodeBlock>;
+};
 
-export const Default = {
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
   args: {
-    children: `console.log('Hello World!')`,
+    code: `console.log('Hello World!')`,
     styleName: 'tomorrowNightBlue',
   },
 };
 
-export const WithCaption = {
+export const WithFooter: StoryObj<typeof meta> = {
   args: {
     language: 'typescript',
-    children: `// my insightful comment
-  const foo: string = 'bar';
-  console.log(foo);`,
-    caption: 'foo definitely is bar',
+    code: `// my insightful comment
+const foo: string = 'bar';
+console.log(foo);`,
+    footer: 'foo definitely is bar',
+  },
+};
+
+export const WithFooterComponent: StoryObj<typeof meta> = {
+  args: {
+    ...WithFooter.args,
+    styleName: 'tomorrowNightBlue',
+    footer: (
+      <small style={{ color: 'white' }}>
+        any footer component can be added in case you need to apply custom
+        styles
+      </small>
+    ),
   },
 };
