@@ -13,12 +13,16 @@ export const colors = {
   background: p['p-50'],
   muted: b['b-300'],
   ghost: b['b-100'],
+  active: 'white',
+  card: 'white',
   modes: {
     dark: {
       text: p['p-200'],
       background: b['b-950'],
       muted: b['b-600'],
       ghost: b['b-800'],
+      active: b['b-600'],
+      card: b['b-800'],
     },
   },
   ...p,

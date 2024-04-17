@@ -13,7 +13,7 @@ const focused: ThemeUIStyleObject = {
 } as const;
 
 const active: ThemeUIStyleObject = {
-  boxShadow: 'sm',
+  boxShadow: 'md',
 } as const;
 
 export const boxShadowCss = {

@@ -1,21 +1,14 @@
 'use client';
 
 import type { Meta, StoryObj } from '@storybook/react';
-import {
-  ButtonGroup,
-  ButtonGroupProps,
-} from '@waystone/components/src/button-group';
-import { Button } from '@waystone/components/src/button';
+import { ButtonGroup } from '@waystone/button-group';
 import { Text } from '@waystone/components';
 import * as React from 'react';
 
-const meta = {
+const meta: Meta<typeof ButtonGroup> = {
   title: 'Components/ButtonGroup',
   component: ButtonGroup,
-  subcomponents: {
-    Button,
-  },
-} satisfies Meta<typeof ButtonGroup>;
+};
 
 export default meta;
 
@@ -48,8 +41,8 @@ export const WithOnChangeCallback = () => {
           { id: 'buttonOne', children: 'One' },
           { id: 'buttonTwo', children: 'Two' },
         ]}
-        activeButton={active}
-        onChange={(e) => setActive(e.clicked)}
+        selected={active}
+        onChange={(selected) => setActive(selected)}
       />
     </>
   );

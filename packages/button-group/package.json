@@ -1,5 +1,5 @@
 {
-  "name": "@waystone/template",
+  "name": "@waystone/button-group",
   "version": "0.0.0",
   "main": "./src/index.ts",
   "module": "./src/index.ts",
@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
   },
+  "description": "The package template for @waystone/ui",
   "author": "draekien-industries",
   "sideEffects": false,
   "license": "MIT",
@@ -25,10 +26,10 @@
     "@testing-library/react": "^14.2.2",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
-    "@waystone/types": "workspace:*",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "react": "^18.2.0",
-    "theme-ui": "^0.16.2"
+    "theme-ui": "^0.16.2",
+    "@waystone/button": "workspace:*"
   }
 }

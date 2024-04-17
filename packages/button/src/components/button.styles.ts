@@ -24,7 +24,7 @@ export const getHoverBackgroundColor: ButtonVariantCssFn = (
 ) => {
   switch (variant) {
     case 'ghost':
-      return alpha('ghost', 0.5);
+      return alpha('active', 0.8);
     case 'link':
       return 'transparent';
     case 'destructive':
@@ -39,7 +39,7 @@ export const getActiveBackgroundColor: ButtonVariantCssFn = (
 ) => {
   switch (variant) {
     case 'ghost':
-      return alpha('ghost', 0.4);
+      return 'active';
     case 'link':
       return 'transparent';
     case 'destructive':

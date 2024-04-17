@@ -9,6 +9,8 @@
     "@waystone/components": "workspace:*",
     "@waystone/anchor": "workspace:*",
     "@waystone/button": "workspace:*",
+    "@waystone/button-group": "workspace:*",
+    "@waystone/card": "workspace:*",
     "@waystone/icon": "workspace:*",
     "@waystone/core": "workspace:*",
     "@waystone/theme": "workspace:*",
@@ -42,7 +44,6 @@
     "serve": "^13.0.4",
     "storybook": "^7.6.15",
     "storybook-dark-mode": "^3.0.3",
-    "typescript": "^5.3.3",
     "vite": "^5.0.12"
   },
   "license": "MIT",

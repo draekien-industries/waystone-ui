@@ -9,3 +9,5 @@ export const getThemeTextVariants = () => Object.keys(waystoneTheme.text!);
 
 export const getThemeTextVariantsSummary = () =>
   getThemeTextVariants().join('|');
+
+export const getThemeSpaces = () => Object.keys(waystoneTheme.space);

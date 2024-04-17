@@ -1,56 +1,75 @@
-import type { Meta } from '@storybook/react';
-import { Card } from '@waystone/components/src';
-import type { CoverImageCssOptions } from '@waystone/components/src/card/card.styles';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Card, type CardImageCss } from '@waystone/card';
+import { getThemeSpaces } from '../../.storybook/preview.fx';
 
-const options: CoverImageCssOptions = {
-  url: '/example-image.png',
-  size: 'cover',
-  position: 'center',
-  repeat: 'no-repeat',
+const options: CardImageCss = {
+  src: '/example-image.png',
   height: 'md',
-  fallbackColor: 'secondary',
+  backgroundColor: 'secondary',
 };
 
-const coverImageDetail = `
-height: 'The height of the image.',
-url: 'The static URL of the image. This value will be used in the 'background-image' CSS property.',
-size: 'The size of the image. Corresponds to the 'background-size' CSS property.',
-position: 'The position of the image. Corresponds to the 'background-position' CSS property.',
-repeat: 'Should the image be repeated. Corresponds to the 'background-repeat' CSS property.',
-fallbackColor: 'The color to use if the image fails to load. Corresponds to the 'background-color' CSS property.'
-`;
-
-export default {
+const meta: Meta<typeof Card> = {
   title: 'Components/Card',
   component: Card,
   args: {
     children:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum dolor nemo atque reiciendis recusandae nam, voluptate earum? Sint, quae omnis! Enim labore harum reiciendis hic id. Eaque, dolores impedit?',
-    fullWidth: false,
   },
   argTypes: {
-    coverImage: {
-      table: {
-        type: {
-          detail: coverImageDetail,
-        },
-      },
+    width: {
+      type: 'string',
+      description: '',
+      option: getThemeSpaces(),
+      control: { type: 'text' },
     },
   },
-} as Meta<typeof Card>;
+};
 
-export const Default = {};
+export default meta;
 
-export const WithConstraints = {
+export const Default: StoryObj<typeof meta> = {};
+
+export const WithCardPadding: StoryObj<typeof meta> = {
+  args: {
+    image: options,
+    padding: 'md',
+  },
+};
+
+export const WithPaddedContent: StoryObj<typeof meta> = {
+  args: {
+    children: (
+      <>
+        <div>My container has no padding</div>
+        <div style={{ padding: '1rem' }}>My container has 1rem of padding</div>
+      </>
+    ),
+  },
+};
+
+export const WithDimensions: StoryObj<typeof meta> = {
   args: {
     maxWidth: 'md',
     maxHeight: 'md',
   },
 };
 
-export const WithCoverImage = {
+export const WithImageCss: StoryObj<typeof meta> = {
   args: {
-    coverImage: options,
+    image: options,
     maxWidth: 'xl',
+  },
+};
+
+export const WithImageComponent: StoryObj<typeof meta> = {
+  args: {
+    image: <img width="100%" src="/example-image.png" alt="" />,
+    maxWidth: 'xl',
+  },
+};
+
+export const WithNoBoxShadow: StoryObj<typeof meta> = {
+  args: {
+    boxShadow: 'none',
   },
 };
