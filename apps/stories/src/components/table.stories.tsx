@@ -1,7 +1,8 @@
 import { faker } from '@faker-js/faker';
 import type { Meta } from '@storybook/react';
 import type { ColumnDef } from '@tanstack/react-table';
-import { Card, Label, Text } from '@waystone/components';
+import { Label, Text } from '@waystone/components';
+import { Card } from '@waystone/card';
 import { Table } from '@waystone/components/src/table/table';
 import { Flex } from 'theme-ui';
 

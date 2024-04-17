@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Card, type CardImageCss } from '@waystone/card';
-import { getThemeSpaces } from '../../.storybook/preview.fx';
+import { argTypes, getThemeSizes } from '../../.storybook/preview.fx';
 
 const options: CardImageCss = {
   src: '/example-image.png',
@@ -16,12 +16,20 @@ const meta: Meta<typeof Card> = {
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum dolor nemo atque reiciendis recusandae nam, voluptate earum? Sint, quae omnis! Enim labore harum reiciendis hic id. Eaque, dolores impedit?',
   },
   argTypes: {
-    width: {
-      type: 'string',
-      description: '',
-      option: getThemeSpaces(),
-      control: { type: 'text' },
-    },
+    width: argTypes.size,
+    minWidth: argTypes.size,
+    maxWidth: argTypes.size,
+    height: argTypes.size,
+    minHeight: argTypes.size,
+    maxHeight: argTypes.size,
+    padding: argTypes.space,
+    paddingX: argTypes.space,
+    paddingY: argTypes.space,
+    paddingTop: argTypes.space,
+    paddingBottom: argTypes.space,
+    paddingRight: argTypes.space,
+    paddingLeft: argTypes.space,
+    boxShadow: argTypes.shadow,
   },
 };
 

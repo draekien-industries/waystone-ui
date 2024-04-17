@@ -22,7 +22,7 @@ export type ButtonGroupItem<TIdentifier extends string = string> = {
 } & ButtonGroupItemProps;
 
 export type ButtonGroupProps<TIdentifier extends string = string> = {
-  /** The button that is currently selected */
+  /** The ID of the button that is currently selected */
   selected?: TIdentifier;
   /**
    * The collection of buttons to render inside the group.

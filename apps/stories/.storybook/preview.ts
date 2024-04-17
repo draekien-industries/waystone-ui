@@ -36,6 +36,7 @@ export const parameters = {
   },
   docs: {
     container: DocsContainer,
+    forceExtractedArgTypes: true,
   },
 };
 

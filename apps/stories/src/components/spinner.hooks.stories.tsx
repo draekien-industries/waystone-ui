@@ -1,7 +1,8 @@
 'use client';
 
 import type { Meta } from '@storybook/react';
-import { Button, useSpinner } from '@waystone/components/src';
+import { useSpinner } from '@waystone/components/src';
+import { Button } from '@waystone/button';
 import { UseSpinnerDemo } from '@waystone/components/src/spinner/spinner.internal';
 import * as React from 'react';
 

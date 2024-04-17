@@ -4,10 +4,20 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ButtonGroup } from '@waystone/button-group';
 import { Text } from '@waystone/components';
 import * as React from 'react';
+import { createEnumArgType } from '../../.storybook/preview.fx';
 
 const meta: Meta<typeof ButtonGroup> = {
   title: 'Components/ButtonGroup',
   component: ButtonGroup,
+  argTypes: {
+    size: createEnumArgType({
+      options: ['sm', 'md', 'lg'],
+      summary: 'size',
+    }),
+    selected: {
+      type: 'string',
+    },
+  },
 };
 
 export default meta;

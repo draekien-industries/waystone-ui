@@ -1,5 +1,4 @@
 import type { IconProps } from '@waystone/icon';
-import type { ThemeSize } from '@waystone/theme';
 import type {
   LoadingAttributes,
   DisabledAttributes,
@@ -11,7 +10,7 @@ import type {
 } from '@waystone/types';
 import type { ComponentPropsWithoutRef } from 'react';
 
-export type ButtonSize = Extract<ThemeSize, 'sm' | 'md' | 'lg'>;
+export type ButtonSize = 'sm' | 'md' | 'lg';
 
 export type ButtonVariant =
   | 'primary'
