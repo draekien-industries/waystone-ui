@@ -1,4 +1,4 @@
-# `@waystone/`
+# `@waystone/overlay`
 
 ## Installation
 
@@ -12,4 +12,4 @@ Run the relevant script for your package manager
 
 ## Usage
 
-TODO: complete this section
+TODO: Complete this section
