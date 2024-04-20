@@ -14,6 +14,7 @@
     "@waystone/card-button": "workspace:*",
     "@waystone/code": "workspace:*",
     "@waystone/code-block": "workspace:*",
+    "@waystone/form-fields": "workspace:*",
     "@waystone/icon": "workspace:*",
     "@waystone/core": "workspace:*",
     "@waystone/overlay": "workspace:*",

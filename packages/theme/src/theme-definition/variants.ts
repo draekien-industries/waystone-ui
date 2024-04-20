@@ -43,6 +43,13 @@ export const variants = {
       textTransform: 'uppercase',
       letterSpacing: 'uppercase',
     },
+    label: {
+      fontSize: 'body',
+      fontWeight: 'medium',
+      lineHeight: 'body',
+      fontFamily: 'body',
+      marginY: 0,
+    },
     body: {
       fontSize: 'body',
       fontWeight: 'regular',

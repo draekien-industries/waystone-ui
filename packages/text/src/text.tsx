@@ -9,6 +9,7 @@ export const textVariants = [
   'title',
   'subtitle',
   'eyebrow',
+  'label',
   'body',
   'caption',
   'small',
@@ -27,6 +28,7 @@ export const Text = <TAs extends ElementType>({
   inline,
   variant,
   color,
+  sx,
   ...rest
 }: TextProps<TAs>) => (
   <ThemeUIText
@@ -35,8 +37,10 @@ export const Text = <TAs extends ElementType>({
       variant: `text.${variant}`,
       color: color || 'inherit',
       margin: inline ? 0 : undefined,
+      ...sx,
     }}
-    {...rest}>
+    {...rest}
+  >
     {children}
   </ThemeUIText>
 );

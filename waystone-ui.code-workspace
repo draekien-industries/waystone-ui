@@ -1,0 +1,44 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": ".",
+    },
+    {
+      "name": "apps/stories",
+      "path": "apps/stories",
+    },
+    {
+      "name": "packages/anchor",
+      "path": "packages/anchor",
+    },
+    {
+      "name": "packages/button",
+      "path": "packages/button",
+    },
+    {
+      "name": "packages/button-group",
+      "path": "packages/button-group",
+    },
+    {
+      "name": "packages/card",
+      "path": "packages/card",
+    },
+    {
+      "name": "packages/card-button",
+      "path": "packages/card-button",
+    },
+    {
+      "name": "packages/code",
+      "path": "packages/code",
+    },
+    {
+      "name": "packages/code-block",
+      "path": "packages/code-block",
+    },
+    {
+      "name": "packages/css-presets",
+      "path": "packages/css-presets",
+    },
+  ],
+}
