@@ -53,12 +53,13 @@ export const Icon = ({
   return (
     <i
       className={iconClassName}
+      {...rest}
       sx={{
         verticalAlign: 'middle',
         color,
         fontSize,
       }}
-      {...rest}>
+    >
       {children}
     </i>
   );

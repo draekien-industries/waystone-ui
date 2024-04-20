@@ -90,7 +90,7 @@ export const CheckboxContent = (
         sx={{
           cursor: rest.disabled ? 'not-allowed' : 'pointer',
           width: '1.5rem',
-          color: 'info-400',
+          color: displayChecked ? 'info-400' : 'transparent',
           padding: 0,
           aspectRatio: 1,
           position: 'relative',
@@ -116,7 +116,9 @@ export const CheckboxContent = (
         onClick={() => inputRef.current?.click()}
         {...rest}
       >
-        {displayChecked ? <Icon size="medium">check</Icon> : ''}
+        <Icon size="medium" aria-hidden>
+          check
+        </Icon>
       </button>
       <input
         id={id}
