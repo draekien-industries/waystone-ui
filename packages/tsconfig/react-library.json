@@ -12,6 +12,7 @@
     "module": "ES6",
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "moduleResolution": "Bundler",
     "target": "ES6",
     "types": ["jest", "@testing-library/react", "node"]
   },

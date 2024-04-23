@@ -4,7 +4,7 @@
   "extends": "./base.json",
   "compilerOptions": {
     "lib": ["es2020"],
-    "module": "ESNext",
+    "module": "Node16",
     "target": "ESNext",
     "strict": true,
     "esModuleInterop": true,

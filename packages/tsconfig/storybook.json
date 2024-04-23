@@ -10,6 +10,7 @@
     "target": "ES6",
     "jsx": "react-jsx",
     "jsxImportSource": "theme-ui",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
