@@ -24,11 +24,11 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
-    "@waystone/core": "workspace:*",
-    "@waystone/utils": "workspace:*",
+    "@waystone/css-presets": "workspace:*",
     "@waystone/icon": "workspace:*",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
+    "@waystone/types": "workspace:*",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "react": "^18.2.0",

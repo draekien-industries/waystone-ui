@@ -12,4 +12,8 @@ export type ExtractLiteralsForAutocomplete<
 /** Converts a type into an union of its own type and an array of its type */
 export type OneOrMore<T> = T | Array<T>;
 
-export type Invalid<T> = Error & { __errorMessage: T };
+/**
+ * Assigns the properties of B into A, overriding any existing
+ * property with the same key
+ */
+export type Assign<A, B> = B & Omit<A, keyof B>;

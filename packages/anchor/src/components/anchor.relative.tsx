@@ -1,5 +1,5 @@
 import { forwardRef, type ForwardedRef } from 'react';
-import type { Assign } from '@waystone/utils';
+import type { Assign } from '@waystone/types';
 import type { AnchorProps } from './anchor.types';
 import { undecoratedAnchorCss, anchorCss } from './anchor.styles';
 
@@ -18,7 +18,8 @@ const RelativeAnchorWithRef = (
     ref={ref}
     href={href}
     sx={nodecoration ? undecoratedAnchorCss : anchorCss}
-    {...rest}>
+    {...rest}
+  >
     {children}
   </a>
 );

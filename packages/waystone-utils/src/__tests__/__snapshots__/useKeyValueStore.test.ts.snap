@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`useKeyValueStore hook throws an error when trying to access a key that does not exist 1`] = `"The key 2 does not exist in the store. Current keys are: [0,1]"`;

@@ -5,7 +5,7 @@ import {
   type HTMLAttributeAnchorTarget,
 } from 'react';
 import { Icon } from '@waystone/icon';
-import type { Assign } from '@waystone/utils';
+import type { Assign } from '@waystone/types';
 import type { AnchorProps } from './anchor.types';
 import { anchorCss, undecoratedAnchorCss } from './anchor.styles';
 
@@ -26,7 +26,8 @@ const AbsoluteAnchorWithRef = (
     ref={ref}
     href={href}
     sx={nodecoration ? undecoratedAnchorCss : anchorCss}
-    {...rest}>
+    {...rest}
+  >
     <Icon sx={{ pr: 'extra-small' }}>open_in_new</Icon>
     {children}
   </a>
