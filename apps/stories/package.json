@@ -4,6 +4,8 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@tanstack/react-table": "^8.9.1",
+    "@hookform/devtools": "^4.3.1",
+    "react-hook-form": "^7.51.3",
     "@theme-ui/color": "^0.16.2",
     "@theme-ui/css": "^0.16.2",
     "@waystone/components": "workspace:*",

@@ -10,7 +10,12 @@ export type InputCallbackAttributes = Pick<
   'onChange' | 'onBlur' | 'onFocus' | 'onClick'
 >;
 
-export type ButtonCallbackAttributes = Pick<
-  ComponentPropsWithoutRef<'button'>,
-  'onChange' | 'onBlur' | 'onFocus' | 'onClick'
->;
+export type SharedInputAttributes = {
+  id: string;
+  name?: string;
+  value?: string;
+  defaultValue?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  required?: boolean;
+};

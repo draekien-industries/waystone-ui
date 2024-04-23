@@ -15,29 +15,33 @@ import type { DisabledAttributes, FullWidthAttributes } from '@waystone/types';
 import { Icon } from '@waystone/icon';
 import { cssSelectors, outlineCss } from '@waystone/css-presets';
 import { Label } from '../label';
-import type { InputAriaAttributes, InputCallbackAttributes } from '../types';
+import type {
+  InputAriaAttributes,
+  InputCallbackAttributes,
+  SharedInputAttributes,
+} from '../types';
 
 export type CheckboxProps = {
-  id: string;
   label?: string;
   checked?: boolean;
   defaultChecked?: boolean;
-  required?: boolean;
-  readOnly?: boolean;
 } & InputAriaAttributes &
-  DisabledAttributes &
   InputCallbackAttributes &
-  FullWidthAttributes;
+  FullWidthAttributes &
+  SharedInputAttributes;
 
 export const CheckboxContent = (
   {
     id,
     label,
+    name,
     checked,
     defaultChecked,
     required,
     readOnly,
     fullWidth,
+    value,
+    defaultValue,
     onClick,
     onChange,
     onBlur,
@@ -49,9 +53,7 @@ export const CheckboxContent = (
   const inputRef = useRef<ComponentRef<'input'>>(null);
   const buttonRef = useRef<ComponentRef<'button'>>(null);
 
-  const [displayChecked, setDisplayChecked] = useState<boolean>(
-    defaultChecked ?? false
-  );
+  const [displayChecked, setDisplayChecked] = useState(defaultChecked);
 
   useEffect(() => {
     if (checked === undefined) return;
@@ -84,12 +86,11 @@ export const CheckboxContent = (
         gap: 'small',
         alignItems: 'center',
         justifyContent: 'flex-start',
-      }}
-    >
+      }}>
       <button
         sx={{
           cursor: rest.disabled ? 'not-allowed' : 'pointer',
-          width: '1.5rem',
+          width: '1.25rem',
           color: displayChecked ? 'info-400' : 'transparent',
           padding: 0,
           aspectRatio: 1,
@@ -97,7 +98,9 @@ export const CheckboxContent = (
           border: '2px solid',
           borderColor: displayChecked ? 'info-400' : 'muted',
           borderRadius: 'small',
-          backgroundColor: displayChecked ? alpha('info-200', 0.3) : 'ghost',
+          backgroundColor: displayChecked
+            ? alpha('info-200', 0.3)
+            : alpha('ghost', 0.5),
           ...outlineCss.base,
           [cssSelectors.focusVisible]: {
             ...outlineCss.focused,
@@ -114,9 +117,8 @@ export const CheckboxContent = (
         role="checkbox"
         aria-checked={displayChecked}
         onClick={() => inputRef.current?.click()}
-        {...rest}
-      >
-        <Icon size="medium" aria-hidden>
+        {...rest}>
+        <Icon size="small" aria-hidden>
           check
         </Icon>
       </button>
@@ -130,21 +132,23 @@ export const CheckboxContent = (
           setDisplayChecked(!displayChecked);
         }}
         {...{
-          onFocus,
-          onBlur,
-          onChange,
+          name,
           checked,
           defaultChecked,
           required,
           readOnly,
+          value,
+          defaultValue,
+          onFocus,
+          onBlur,
+          onChange,
         }}
       />
       {label && (
         <Label
           sx={{ cursor: rest.disabled ? 'not-allowed' : 'pointer' }}
-          htmlFor={id}
-        >
-          label
+          htmlFor={id}>
+          {label}
         </Label>
       )}
     </Flex>
