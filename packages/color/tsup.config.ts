@@ -5,7 +5,6 @@ export default defineConfig((options) => ({
   sourcemap: true,
   dts: true,
   format: ['cjs', 'esm'],
-  external: ['react', 'react-dom', '@emotion/react'],
   clean: true,
   ...options,
 }));

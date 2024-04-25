@@ -23,7 +23,7 @@ module.exports = {
     '^.+\\.m?[tj]sx?$': [
       'ts-jest',
       {
-        isolatedModules: true,
+        // isolatedModules: true,
       },
     ],
   },

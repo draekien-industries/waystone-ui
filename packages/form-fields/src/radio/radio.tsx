@@ -63,24 +63,27 @@ const RadioGroupWithRef = (
   }));
 
   return (
-    <Flex ref={containerRef} onFocus={onFocus} onBlur={onBlur}>
+    <Flex
+      ref={containerRef}
+      sx={{
+        display: fullWidth ? 'flex' : 'inline-flex',
+        flexFlow: layout === 'column' ? 'column' : 'row wrap',
+        gap: 'small',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+      }}
+      onFocus={onFocus}
+      onBlur={onBlur}
+    >
       {options.map(({ id, label, value }) => (
-        <Flex
-          key={id}
-          sx={{
-            display: fullWidth ? 'flex' : 'inline-flex',
-            flexFlow: layout === 'column' ? 'column' : 'row wrap',
-            gap: 'small',
-            alignItems: 'center',
-            justifyContent: 'flex-start',
-          }}>
+        <Flex key={id} sx={{ gap: 'small' }}>
           <button
             sx={{
               cursor: rest.disabled ? 'not-allowed' : 'pointer',
               width: '1.25rem',
+              height: '1.25rem',
               color: displaySelected === value ? 'info-400' : 'transparent',
               padding: '3px',
-              aspectRatio: 1,
               position: 'relative',
               border: '2px solid',
               borderColor: displaySelected === value ? 'info-400' : 'muted',
@@ -106,7 +109,8 @@ const RadioGroupWithRef = (
             onClick={() => {
               inputRef.current!.value = value;
             }}
-            {...rest}>
+            {...rest}
+          >
             <div
               sx={{
                 width: '10px',
@@ -120,7 +124,8 @@ const RadioGroupWithRef = (
           {label && (
             <Label
               sx={{ cursor: rest.disabled ? 'not-allowed' : 'pointer' }}
-              htmlFor={id}>
+              htmlFor={id}
+            >
               {label}
             </Label>
           )}
@@ -128,7 +133,7 @@ const RadioGroupWithRef = (
       ))}
       <input
         type="hidden"
-        ref={inputRef}
+        ref={ref}
         name={name}
         onChange={(e) => {
           setDisplaySelected(e.currentTarget.value);
