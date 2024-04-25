@@ -9,7 +9,11 @@ import { useForm, type FieldValues, type SubmitHandler } from 'react-hook-form';
 const meta: Meta<typeof FormField.Radio> = {
   title: 'Components/FormFields/Radio',
   component: FormField.Radio,
-  args: { id: 'one', label: 'Option 1', value: '1' },
+  args: {
+    id: 'one',
+    label: 'Option 1',
+    value: '1',
+  },
 };
 
 export default meta;

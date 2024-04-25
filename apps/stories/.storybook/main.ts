@@ -10,13 +10,13 @@ const config: StorybookConfig = {
     getAbsolutePath('@storybook/addon-interactions'),
     getAbsolutePath('@storybook/addon-a11y'),
     getAbsolutePath('storybook-dark-mode'),
+    '@chromatic-com/storybook',
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
   core: {
-    builder: '@storybook/builder-vite',
     disableTelemetry: true,
   },
   typescript: {
@@ -36,11 +36,7 @@ const config: StorybookConfig = {
         alias: [
           {
             find: '@waystone/*',
-            replacement: resolve(__dirname, '../../../packages/waystone-*'),
-          },
-          {
-            find: '@waystone/anchor',
-            replacement: resolve(__dirname, '../../../packages/anchor'),
+            replacement: resolve(__dirname, '../../../packages/*'),
           },
         ],
       },

@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/react';
 import { Text } from '@waystone/text';
-import { waystoneTheme } from '@waystone/theme';
+import { waystoneTheme, type ThemeColor } from '@waystone/theme';
 import type { FC, PropsWithChildren } from 'react';
 import type { ColorMode, ColorModesScale } from 'theme-ui';
 
@@ -17,7 +17,8 @@ const Color: FC<PropsWithChildren<{ color: string }>> = ({
       borderRadius: '0.5rem',
       boxShadow:
         '0 0 0.25em 0 rgba(4, 40, 52, 0.1), 0 0.5em 1em -0.5em rgba(4, 40, 52, 0.25)',
-    }}>
+    }}
+  >
     <div
       style={{
         position: 'absolute',
@@ -29,7 +30,8 @@ const Color: FC<PropsWithChildren<{ color: string }>> = ({
         color: '#212121',
         backgroundColor: 'white',
         fontFamily: '"Barlow", sans-serif',
-      }}>
+      }}
+    >
       <Text>
         {children} - {color.toUpperCase()}
       </Text>
@@ -58,12 +60,13 @@ export const Colors: StoryFn = () => {
           width: '100%',
           gap: '2rem',
           marginBottom: '2rem',
-        }}>
+        }}
+      >
         {Object.keys(colors).map((key) => {
           if (key === 'modes') return null;
 
           return (
-            <Color key={key} color={colors[key] as string}>
+            <Color key={key} color={colors[key as ThemeColor] as string}>
               {key}
             </Color>
           );
@@ -79,9 +82,13 @@ export const Colors: StoryFn = () => {
           width: '100%',
           gap: '2rem',
           marginBottom: '2rem',
-        }}>
+        }}
+      >
         {Object.keys(darkMode).map((key) => (
-          <Color key={key} color={darkMode[key] as string}>
+          <Color
+            key={key}
+            color={darkMode[key as keyof typeof darkMode] as string}
+          >
             {key}
           </Color>
         ))}

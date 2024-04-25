@@ -1,5 +1,6 @@
 import { WaystoneDecorator } from './waystone.decorator';
 import { create } from '@storybook/theming';
+import type { Preview } from '@storybook/react';
 import { waystoneTheme } from '@waystone/theme';
 import { getThemeColors } from './preview.fx';
 import { DocsContainer } from './DocsContainer';
@@ -16,7 +17,7 @@ const waystoneLightTheme = create({
   brandImage: './assets/waystone-logo-dark.svg',
 });
 
-export const parameters = {
+export const parameters: Preview['parameters'] = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     expanded: true,
@@ -40,4 +41,4 @@ export const parameters = {
   },
 };
 
-export const decorators = [WaystoneDecorator];
+export const decorators: Preview['decorators'] = [WaystoneDecorator];
