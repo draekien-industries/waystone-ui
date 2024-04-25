@@ -14,6 +14,7 @@ import { Flex } from 'theme-ui';
 import { alpha } from '@theme-ui/color';
 import { cssSelectors, outlineCss } from '@waystone/css-presets';
 import type {
+  CallbackAttributes,
   InputAriaAttributes,
   InputCallbackAttributes,
   SharedInputAttributes,
@@ -38,110 +39,38 @@ export type RadioGroupProps = {
   Omit<InputCallbackAttributes, 'onClick'> &
   InputAriaAttributes;
 
-const RadioGroupWithRef = (
-  {
-    options,
-    name,
-    fullWidth,
-    layout = 'column',
-    onChange,
-    onBlur,
-    onFocus,
-    ...rest
-  }: RadioGroupProps,
+const RadioWithRef = (
+  { id, label, ...rest }: RadioProps,
   ref: ForwardedRef<HTMLInputElement>
-) => {
-  const containerRef = useRef<HTMLElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const [displaySelected, setDisplaySelected] = useState<string | null>(null);
-
-  useImperativeHandle(ref, () => ({
-    ...inputRef.current!,
-    focus() {
-      containerRef.current?.focus();
-    },
-  }));
-
-  return (
-    <Flex
-      ref={containerRef}
+) => (
+  <Flex sx={{ gap: 'small' }}>
+    <input
+      ref={ref}
       sx={{
-        display: fullWidth ? 'flex' : 'inline-flex',
-        flexFlow: layout === 'column' ? 'column' : 'row wrap',
-        gap: 'small',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
+        height: '1.25rem',
+        width: '1.25rem',
+        cursor: 'pointer',
+        [cssSelectors.disabled]: {
+          cursor: 'not-allowed',
+        },
       }}
-      onFocus={onFocus}
-      onBlur={onBlur}
-    >
-      {options.map(({ id, label, value }) => (
-        <Flex key={id} sx={{ gap: 'small' }}>
-          <button
-            sx={{
-              cursor: rest.disabled ? 'not-allowed' : 'pointer',
-              width: '1.25rem',
-              height: '1.25rem',
-              color: displaySelected === value ? 'info-400' : 'transparent',
-              padding: '3px',
-              position: 'relative',
-              border: '2px solid',
-              borderColor: displaySelected === value ? 'info-400' : 'muted',
-              borderRadius: 'max',
-              backgroundColor:
-                displaySelected === value
-                  ? alpha('info-200', 0.3)
-                  : alpha('ghost', 0.5),
-              ...outlineCss.base,
-              [cssSelectors.focusVisible]: {
-                ...outlineCss.focused,
-              },
-              [cssSelectors.hover]: {
-                borderColor: displaySelected ? 'info-500' : 'b-400',
-              },
-              [cssSelectors.disabled]: {
-                borderColor: 'ghost',
-              },
-            }}
-            type="button"
-            role="radio"
-            aria-checked={displaySelected === value}
-            onClick={() => {
-              inputRef.current!.value = value;
-            }}
-            {...rest}
-          >
-            <div
-              sx={{
-                width: '10px',
-                aspectRatio: 1,
-                borderRadius: 'max',
-                backgroundColor:
-                  displaySelected === value ? 'info-400' : 'transparent',
-              }}
-            />
-          </button>
-          {label && (
-            <Label
-              sx={{ cursor: rest.disabled ? 'not-allowed' : 'pointer' }}
-              htmlFor={id}
-            >
-              {label}
-            </Label>
-          )}
-        </Flex>
-      ))}
-      <input
-        type="hidden"
-        ref={ref}
-        name={name}
-        onChange={(e) => {
-          setDisplaySelected(e.currentTarget.value);
-          if (onChange) onChange(e);
+      type="radio"
+      {...rest}
+    />
+    {label && (
+      <Label
+        sx={{
+          cursor: 'pointer',
+          [cssSelectors.disabled]: {
+            cursor: 'not-allowed',
+          },
         }}
-      />
-    </Flex>
-  );
-};
+        htmlFor={id}
+      >
+        {label}
+      </Label>
+    )}
+  </Flex>
+);
 
-export const RadioGroup = forwardRef(RadioGroupWithRef);
+export const Radio = forwardRef(RadioWithRef);

@@ -6,15 +6,10 @@ import { Button } from '@waystone/button';
 import { FormField } from '@waystone/form-fields';
 import { useForm, type FieldValues, type SubmitHandler } from 'react-hook-form';
 
-const meta: Meta<typeof FormField.RadioGroup> = {
-  title: 'Components/FormFields/RadioGroup',
-  component: FormField.RadioGroup,
-  args: {
-    options: [
-      { id: 'one', label: 'Option 1', value: '1' },
-      { id: 'one', label: 'Option 1', value: '2' },
-    ],
-  },
+const meta: Meta<typeof FormField.Radio> = {
+  title: 'Components/FormFields/Radio',
+  component: FormField.Radio,
+  args: { id: 'one', label: 'Option 1', value: '1' },
 };
 
 export default meta;
@@ -31,15 +26,17 @@ const WithHookForm = ({
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <FormField.RadioGroup
-          id="radio-group-fields"
-          {...register('radio-group')}
-          options={[
-            { id: 'one', label: 'Option 1', value: '1' },
-            { id: 'one', label: 'Option 1', value: '2' },
-          ]}
-        />
-        <Button type="button">submit</Button>
+        {[
+          { id: 'one', label: 'Option 1', value: '1' },
+          { id: 'two', label: 'Option 2', value: '2' },
+        ].map((option) => (
+          <FormField.Radio
+            key={option.id}
+            {...option}
+            {...register('radio-group')}
+          />
+        ))}
+        <Button type="submit">submit</Button>
       </form>
       <DevTool control={control} />
     </>

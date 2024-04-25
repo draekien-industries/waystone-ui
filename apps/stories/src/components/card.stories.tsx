@@ -55,7 +55,6 @@ export const WithPaddedContent: StoryObj<typeof meta> = {
 export const WithDimensions: StoryObj<typeof meta> = {
   args: {
     maxWidth: 'medium',
-    maxHeight: 'medium',
   },
 };
 
