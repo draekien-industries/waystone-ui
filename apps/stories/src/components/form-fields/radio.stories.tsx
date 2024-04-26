@@ -5,6 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from '@waystone/button';
 import { FormField } from '@waystone/form-fields';
 import { useForm, type FieldValues, type SubmitHandler } from 'react-hook-form';
+import { action } from '@storybook/addon-actions';
 
 const meta: Meta<typeof FormField.Radio> = {
   title: 'Components/FormFields/Radio',
@@ -48,5 +49,5 @@ const WithHookForm = ({
 };
 
 export const HookForm: StoryObj<typeof meta> = {
-  render: () => <WithHookForm onSubmit={(data) => console.table(data)} />,
+  render: () => <WithHookForm onSubmit={action('submit')} />,
 };
