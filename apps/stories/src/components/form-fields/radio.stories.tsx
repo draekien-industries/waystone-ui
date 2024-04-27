@@ -3,14 +3,14 @@
 import { DevTool } from '@hookform/devtools';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from '@waystone/button';
-import { FormField } from '@waystone/form-fields';
+import { Radio } from '@waystone/form-fields';
 import { useForm, type FieldValues, type SubmitHandler } from 'react-hook-form';
 import { action } from '@storybook/addon-actions';
 import { fn } from '@storybook/test';
 
-const meta: Meta<typeof FormField.Radio> = {
+const meta: Meta<typeof Radio> = {
   title: 'Components/FormFields/Radio',
-  component: FormField.Radio,
+  component: Radio,
   args: {
     id: 'one',
     label: 'Option 1',
@@ -30,9 +30,7 @@ export const Controlled: StoryObj<typeof meta> = {
   args: {
     checked: false,
   },
-  render: (args) => (
-    <FormField.Radio {...args} checked={args.checked ?? false} />
-  ),
+  render: (args) => <Radio {...args} checked={args.checked ?? false} />,
 };
 
 const WithHookForm = ({
@@ -49,11 +47,7 @@ const WithHookForm = ({
           { id: 'one', label: 'Option 1', value: '1' },
           { id: 'two', label: 'Option 2', value: '2' },
         ].map((option) => (
-          <FormField.Radio
-            key={option.id}
-            {...option}
-            {...register('radio-group')}
-          />
+          <Radio key={option.id} {...option} {...register('radio-group')} />
         ))}
         <Button type="submit">submit</Button>
       </form>

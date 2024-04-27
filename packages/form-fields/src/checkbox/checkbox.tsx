@@ -31,128 +31,54 @@ export type CheckboxProps = {
   SharedInputAttributes;
 
 export const CheckboxContent = (
-  {
-    id,
-    label,
-    name,
-    checked,
-    defaultChecked,
-    required,
-    readOnly,
-    fullWidth,
-    value,
-    defaultValue,
-    onClick,
-    onChange,
-    onBlur,
-    onFocus,
-    ...rest
-  }: CheckboxProps,
+  { id, label, fullWidth, ...rest }: CheckboxProps,
   ref: ForwardedRef<HTMLInputElement>
-) => {
-  const inputRef = useRef<ComponentRef<'input'>>(null);
-  const buttonRef = useRef<ComponentRef<'button'>>(null);
-
-  const [displayChecked, setDisplayChecked] = useState(defaultChecked);
-
-  useEffect(() => {
-    if (checked === undefined) return;
-
-    setDisplayChecked(checked);
-  }, [checked]);
-
-  useImperativeHandle<Partial<HTMLInputElement>, Partial<HTMLInputElement>>(
-    ref,
-    () => ({
-      ...inputRef.current,
-      focus(options) {
-        buttonRef.current?.focus(options);
+) => (
+  <Flex
+    sx={{
+      display: fullWidth ? 'flex' : 'inline-flex',
+      flexWrap: 'nowrap',
+      gap: 'small',
+      alignItems: 'center',
+      justifyContent: 'flex-start',
+      transition: 'outline 200ms',
+      borderRadius: 'small',
+      ...outlineCss.base,
+      ':has(:focus-visible)': {
+        ...outlineCss.focused,
       },
-      blur() {
-        buttonRef.current?.blur();
-      },
-      click() {
-        buttonRef.current?.click();
-      },
-    }),
-    []
-  );
-
-  return (
-    <Flex
+    }}
+  >
+    <input
+      id={id}
+      ref={ref}
       sx={{
-        display: fullWidth ? 'flex' : 'inline-flex',
-        flexWrap: 'nowrap',
-        gap: 'small',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-      }}>
-      <button
+        height: '1.25rem',
+        width: '1.25rem',
+        cursor: 'pointer',
+        margin: 0,
+        outline: 'none',
+        [cssSelectors.disabled]: {
+          cursor: 'not-allowed',
+        },
+      }}
+      type="checkbox"
+      {...rest}
+    />
+    {label && (
+      <Label
         sx={{
-          cursor: rest.disabled ? 'not-allowed' : 'pointer',
-          width: '1.25rem',
-          color: displayChecked ? 'info-400' : 'transparent',
-          padding: 0,
-          aspectRatio: 1,
-          position: 'relative',
-          border: '2px solid',
-          borderColor: displayChecked ? 'info-400' : 'muted',
-          borderRadius: 'small',
-          backgroundColor: displayChecked
-            ? alpha('info-200', 0.3)
-            : alpha('ghost', 0.5),
-          ...outlineCss.base,
-          [cssSelectors.focusVisible]: {
-            ...outlineCss.focused,
-          },
-          [cssSelectors.hover]: {
-            borderColor: displayChecked ? 'info-500' : 'b-400',
-          },
+          cursor: 'pointer',
           [cssSelectors.disabled]: {
-            borderColor: 'ghost',
+            cursor: 'not-allowed',
           },
         }}
-        ref={buttonRef}
-        type="button"
-        role="checkbox"
-        aria-checked={displayChecked}
-        onClick={() => inputRef.current?.click()}
-        {...rest}>
-        <Icon size="small" aria-hidden>
-          check
-        </Icon>
-      </button>
-      <input
-        id={id}
-        ref={inputRef}
-        type="checkbox"
-        hidden
-        onClick={(e) => {
-          if (onClick) onClick(e);
-          setDisplayChecked(!displayChecked);
-        }}
-        {...{
-          name,
-          checked,
-          defaultChecked,
-          required,
-          readOnly,
-          value,
-          defaultValue,
-          onFocus,
-          onBlur,
-          onChange,
-        }}
-      />
-      {label && (
-        <Label
-          sx={{ cursor: rest.disabled ? 'not-allowed' : 'pointer' }}
-          htmlFor={id}>
-          {label}
-        </Label>
-      )}
-    </Flex>
-  );
-};
+        htmlFor={id}
+      >
+        {label}
+      </Label>
+    )}
+  </Flex>
+);
 
 export const Checkbox = forwardRef(CheckboxContent);

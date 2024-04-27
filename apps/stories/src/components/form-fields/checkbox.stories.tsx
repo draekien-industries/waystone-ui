@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { FormField } from '@waystone/form-fields';
+import { Checkbox } from '@waystone/form-fields';
 
-const meta: Meta<typeof FormField.Checkbox> = {
+const meta: Meta<typeof Checkbox> = {
   title: 'Components/FormFields/Checkbox',
-  component: FormField.Checkbox,
+  component: Checkbox,
   args: {
     id: 'checkbox-example',
     label: 'I am a checkbox',

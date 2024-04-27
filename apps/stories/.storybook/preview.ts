@@ -18,7 +18,6 @@ const waystoneLightTheme = create({
 });
 
 export const parameters: Preview['parameters'] = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     expanded: true,
     matchers: {

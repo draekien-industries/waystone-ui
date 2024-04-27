@@ -2,12 +2,12 @@
 
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import { FormField, type InputProps } from '@waystone/form-fields';
+import { Input, type InputProps } from '@waystone/form-fields';
 import { useState } from 'react';
 
-const meta: Meta<typeof FormField.Input> = {
+const meta: Meta<typeof Input> = {
   title: 'Components/FormFields/Input',
-  component: FormField.Input,
+  component: Input,
   args: {
     id: 'input-story',
     onChange: fn(),
@@ -22,7 +22,7 @@ const ControlledInput = ({ onChange, value, ...rest }: InputProps) => {
   const [state, setState] = useState(value ?? '');
 
   return (
-    <FormField.Input
+    <Input
       {...rest}
       value={state}
       onChange={(e) => {
