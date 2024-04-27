@@ -5,7 +5,6 @@ import { action } from '@storybook/addon-actions';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from '@waystone/button';
 import { FormField } from '@waystone/form-fields';
-import { Text } from '@waystone/text';
 import { useForm } from 'react-hook-form';
 
 const meta: Meta<typeof FormField> = {
