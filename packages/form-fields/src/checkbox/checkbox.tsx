@@ -1,18 +1,8 @@
 'use client';
 
-import {
-  type ComponentRef,
-  forwardRef,
-  useImperativeHandle,
-  useRef,
-  type ForwardedRef,
-  useState,
-  useEffect,
-} from 'react';
+import { forwardRef, type ForwardedRef } from 'react';
 import { Flex } from 'theme-ui';
-import { alpha } from '@theme-ui/color';
-import type { DisabledAttributes, FullWidthAttributes } from '@waystone/types';
-import { Icon } from '@waystone/icon';
+import type { FullWidthAttributes } from '@waystone/types';
 import { cssSelectors, outlineCss } from '@waystone/css-presets';
 import { Label } from '../label';
 import type {
