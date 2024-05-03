@@ -19,6 +19,7 @@
     "@waystone/icon": "workspace:*",
     "@waystone/overlay": "workspace:*",
     "@waystone/text": "workspace:*",
+    "@waystone/table": "workspace:*",
     "@waystone/theme": "workspace:*",
     "@waystone/theme-provider": "workspace:*",
     "react": "^18.2.0",

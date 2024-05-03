@@ -125,6 +125,9 @@ importers:
       '@waystone/overlay':
         specifier: workspace:*
         version: link:../../packages/overlay
+      '@waystone/table':
+        specifier: workspace:*
+        version: link:../../packages/table
       '@waystone/text':
         specifier: workspace:*
         version: link:../../packages/text
@@ -781,6 +784,13 @@ importers:
         version: 8.0.2(postcss@8.4.33)(typescript@5.4.5)
 
   packages/table:
+    dependencies:
+      '@tanstack/react-table':
+        specifier: ^8.9.1
+        version: 8.9.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@tanstack/react-virtual':
+        specifier: ^3.4.0
+        version: 3.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
@@ -788,9 +798,18 @@ importers:
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@theme-ui/color':
+        specifier: ^0.16.2
+        version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
+      '@waystone/button':
+        specifier: workspace:*
+        version: link:../button
       '@waystone/css-presets':
         specifier: workspace:*
         version: link:../css-presets
+      '@waystone/form-fields':
+        specifier: workspace:*
+        version: link:../form-fields
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../testing-library
@@ -2612,9 +2631,18 @@ packages:
       react: '>=16'
       react-dom: '>=16'
 
+  '@tanstack/react-virtual@3.4.0':
+    resolution: {integrity: sha512-GZN4xn/Tg5w7gvYeVcMVCeL4pEyUhvg+Cp6KX2Z01C4FRNxIWMgIQ9ibgMarNQfo+gt0PVLcEER4A9sNv/jlow==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+
   '@tanstack/table-core@8.9.1':
     resolution: {integrity: sha512-2+R83n8vMZND0q3W1lSiF7co9nFbeWbjAErFf27xwbeA9E0wtUu5ZDfgj+TZ6JzdAEQAgfxkk/QNFAKiS8E4MA==}
     engines: {node: '>=12'}
+
+  '@tanstack/virtual-core@3.4.0':
+    resolution: {integrity: sha512-75jXqXxqq5M5Veb9KP1STi8kA5u408uOOAefk2ftHDGCpUk3RP6zX++QqfbmHJTBiU72NQ+ghgCZVts/Wocz8Q==}
 
   '@testing-library/dom@9.3.4':
     resolution: {integrity: sha512-FlS4ZWlp97iiNWig0Muq8p+3rVDjRiYE+YKGbAqXOu9nwJFFOdL00kFpz42M+4huzYi86vAK1sOOfyOG45muIQ==}
@@ -9877,7 +9905,15 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
+  '@tanstack/react-virtual@3.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@tanstack/virtual-core': 3.4.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
   '@tanstack/table-core@8.9.1': {}
+
+  '@tanstack/virtual-core@3.4.0': {}
 
   '@testing-library/dom@9.3.4':
     dependencies:
