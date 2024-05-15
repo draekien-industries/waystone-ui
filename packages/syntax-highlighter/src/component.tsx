@@ -1,9 +1,7 @@
-'use client';
-
 import { CodeLine } from './components';
-import { useCodeTree } from './hooks';
 import type { StyleName, SupportedLanguage } from './lib';
 import { styles } from './lib';
+import { createCodeTree, flattenCodeTree } from './utils';
 
 export type SyntaxHighlighterProps = {
   language?: SupportedLanguage;
@@ -19,11 +17,8 @@ export const SyntaxHighlighter = ({
   styleName = 'defaultStyle',
 }: SyntaxHighlighterProps) => {
   const style = styles[styleName];
-
-  const codeTree = useCodeTree({
-    code: children,
-    language,
-  });
+  const { children: tree } = createCodeTree({ code: children, language });
+  const codeTree = flattenCodeTree({ tree });
 
   return (
     <pre
