@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSS Selector presets cssSelectors should match snapshot 1`] = `
+{
+  "active": ":enabled:active",
+  "disabled": ":disabled",
+  "focusVisible": ":enabled:not(active):focus-visible",
+  "hover": ":enabled:hover",
+}
+`;

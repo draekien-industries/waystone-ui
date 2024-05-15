@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box Shadow preset should match snapshot 1`] = `
+{
+  "active": {
+    "boxShadow": "medium",
+  },
+  "base": {
+    "boxShadow": "small",
+  },
+  "focused": {
+    "boxShadow": "medium",
+  },
+  "none": {
+    "boxShadow": "none",
+  },
+}
+`;
