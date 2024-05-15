@@ -40,5 +40,8 @@
   },
   "dependencies": {
     "zod": "^3.22.4"
+  },
+  "peerDependencies": {
+    "zod": ">=3"
   }
 }
