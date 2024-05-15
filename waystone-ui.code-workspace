@@ -53,6 +53,9 @@
       "path": "packages/overlay",
     },
     {
+      "path": "packages/spinner",
+    },
+    {
       "path": "packages/syntax-highlighter",
     },
     {
