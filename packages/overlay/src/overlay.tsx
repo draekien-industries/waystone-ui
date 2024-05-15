@@ -34,7 +34,8 @@ export const FullScreenOverlay = ({
       zIndex: 'highest',
       backgroundColor: alpha(backgroundColor, backgroundOpacity),
       backdropFilter: `blur(${blur}px)`,
-    }}>
+    }}
+  >
     <Box sx={{ opacity: 1, position: 'relative' }}>{children}</Box>
   </Box>
 );
@@ -46,14 +47,17 @@ export const AbsoluteOverlay = ({
   backgroundColor = 'ghost',
 }: PropsWithChildren<OverlayProps>) => (
   <Box
+    key={backgroundColor}
     sx={{
       position: 'absolute',
       inset: 0,
       zIndex: 'highest',
       backgroundColor: alpha(backgroundColor, backgroundOpacity),
       backdropFilter: `blur(${blur}px)`,
-    }}>
-    <Box sx={{ opacity: 1, position: 'relative' }}>{children}</Box>
+      borderRadius: 'inherit',
+    }}
+  >
+    {children}
   </Box>
 );
 export const Overlay = {

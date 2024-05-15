@@ -4,11 +4,12 @@ import { forwardRef, type ForwardedRef, type ReactNode } from 'react';
 import type {
   DimensionsAttributes,
   DisabledAttributes,
-  FullWidthAttributes,
   LoadingAttributes,
 } from '@waystone/types';
+import { Spinner } from '@waystone/spinner';
+import { Overlay } from '@waystone/overlay';
 import { cssSelectors, outlineCss } from '@waystone/css-presets';
-import type { ThemeUIStyleObject } from 'theme-ui';
+import { Flex, type ThemeUIStyleObject } from 'theme-ui';
 
 export type CardButtonProps = {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -22,6 +23,7 @@ const renderCardButton = (
   ref?: ForwardedRef<HTMLButtonElement>
 ) => {
   const styles: ThemeUIStyleObject = {
+    position: 'relative',
     padding: 'medium',
     border: 'none',
     borderRadius: 'medium',
@@ -60,8 +62,21 @@ const renderCardButton = (
       sx={styles}
       onClick={onClick}
       type="button"
-      disabled={disabled || loading}>
-      {loading && <div>Loading...</div>}
+      disabled={disabled || loading}
+    >
+      {loading && (
+        <Overlay.Absolute>
+          <Flex
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100%',
+            }}
+          >
+            <Spinner />
+          </Flex>
+        </Overlay.Absolute>
+      )}
       {children}
     </button>
   );
