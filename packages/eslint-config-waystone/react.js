@@ -111,6 +111,7 @@ module.exports = {
           'ignorePackages',
           { ts: 'never', tsx: 'never', js: 'never', jsx: 'never' },
         ],
+        'waystone/enforce-use-client': 'off',
       },
     },
   ],

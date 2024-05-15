@@ -1,3 +1,4 @@
+import type { TestIdAttributes } from '@waystone/types';
 import type React from 'react';
 import type { AriaAttributes, ComponentPropsWithoutRef } from 'react';
 
@@ -24,4 +25,4 @@ export type SharedInputAttributes = {
   disabled?: boolean;
   readOnly?: boolean;
   required?: boolean;
-};
+} & TestIdAttributes;
