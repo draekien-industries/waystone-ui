@@ -42,7 +42,6 @@
     "@waystone/form-fields": "workspace:^",
     "@waystone/icon": "workspace:^",
     "@waystone/overlay": "workspace:^",
-    "@waystone/syntax-highlighter": "workspace:^",
     "@waystone/table": "workspace:^",
     "@waystone/text": "workspace:^",
     "@waystone/theme": "workspace:^",

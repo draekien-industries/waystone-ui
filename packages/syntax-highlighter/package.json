@@ -1,19 +1,9 @@
 {
   "name": "@waystone/syntax-highlighter",
   "version": "12.1.0",
-  "exports": {
-    ".": {
-      "import": {
-        "default": "./dist/index.mjs",
-        "types": "./dist/index.d.mts"
-      },
-      "require": {
-        "default": "./dist/index.js",
-        "types": "./dist/index.d.ts"
-      }
-    },
-    "./package.json": "./package.json"
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
