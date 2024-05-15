@@ -20,5 +20,6 @@ export * from '@waystone/code-block';
 export * from '@waystone/form-fields';
 export * from '@waystone/icon';
 export * from '@waystone/overlay';
+export * from '@waystone/spinner';
 export * from '@waystone/table';
 export * from '@waystone/text';

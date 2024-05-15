@@ -221,7 +221,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -257,7 +257,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -299,7 +299,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -329,7 +329,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -359,7 +359,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -408,7 +408,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -442,7 +442,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -506,7 +506,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -560,7 +560,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jest:
         specifier: ^27.9.0
-        version: 27.9.0(@typescript-eslint/eslint-plugin@7.3.1(@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))(typescript@5.4.5)
+        version: 27.9.0(@typescript-eslint/eslint-plugin@7.3.1(@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.57.0)
@@ -609,7 +609,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -654,7 +654,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -684,7 +684,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -723,7 +723,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -775,7 +775,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -827,7 +827,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -869,7 +869,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -945,7 +945,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -978,7 +978,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1008,7 +1008,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1044,7 +1044,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1093,7 +1093,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1133,6 +1133,9 @@ importers:
       '@waystone/overlay':
         specifier: workspace:^
         version: link:../overlay
+      '@waystone/spinner':
+        specifier: workspace:^
+        version: link:../spinner
       '@waystone/table':
         specifier: workspace:^
         version: link:../table
@@ -12086,13 +12089,13 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@7.3.1(@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))(typescript@5.4.5):
+  eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@7.3.1(@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))(typescript@5.4.5):
     dependencies:
       '@typescript-eslint/utils': 5.62.0(eslint@8.57.0)(typescript@5.4.5)
       eslint: 8.57.0
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 7.3.1(@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
-      jest: 29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0)
+      jest: 29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
