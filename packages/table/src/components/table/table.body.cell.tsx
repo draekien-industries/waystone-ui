@@ -1,6 +1,6 @@
 import { type Cell, flexRender } from '@tanstack/react-table';
 
-export const TableCell = <D, V>({ id, column, getContext }: Cell<D, V>) => {
+export const TableBodyCell = <D, V>({ id, column, getContext }: Cell<D, V>) => {
   const { columnDef, getSize } = column;
 
   return (

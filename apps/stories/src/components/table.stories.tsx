@@ -1,11 +1,10 @@
 'use client';
 
 import {
-  CheckboxCell,
-  CheckboxHeader,
-  TableHeader,
-  TableRow,
-  WaystoneTable,
+  TableBody,
+  TableContainer,
+  TableHead,
+  createInteractiveColumn,
   getCoreRowModel,
   getExpandedRowModel,
   getPaginationRowModel,
@@ -62,11 +61,7 @@ function makeData(...lens: number[]) {
 }
 
 const columns: ColumnDef<Person>[] = [
-  {
-    id: 'selector',
-    header: CheckboxHeader,
-    cell: CheckboxCell,
-  },
+  createInteractiveColumn<Person>(),
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -93,12 +88,12 @@ const columns: ColumnDef<Person>[] = [
   },
 ];
 
-const data = makeData(100, 5, 3);
+const data = makeData(20, 5, 3);
 
 const ExampleTable = () => {
   const [expanded, setExpanded] = useState<ExpandedState>({});
 
-  const table = useReactTable({
+  const { getHeaderGroups, getRowModel } = useReactTable({
     data,
     columns,
     state: {
@@ -107,35 +102,66 @@ const ExampleTable = () => {
     onExpandedChange: setExpanded,
     getSubRows: (row) => row.subRows,
     getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
     getExpandedRowModel: getExpandedRowModel(),
     debugTable: true,
   });
 
   return (
-    <WaystoneTable>
-      <thead>
-        {table.getHeaderGroups().map((group) => (
-          <tr key={group.id}>
-            {group.headers.map((header) => (
-              <TableHeader key={header.id} {...header} />
-            ))}
-          </tr>
+    <TableContainer>
+      <TableHead>
+        {getHeaderGroups().map((group) => (
+          <TableHead.Row key={group.id} {...group} />
         ))}
-      </thead>
-      <tbody>
-        {table.getRowModel().rows.map((row) => (
-          <TableRow key={row.id} {...row} />
+      </TableHead>
+      <TableBody>
+        {getRowModel().rows.map((row) => (
+          <TableBody.Row key={row.id} {...row} />
         ))}
-      </tbody>
-    </WaystoneTable>
+      </TableBody>
+    </TableContainer>
   );
 };
 
-const meta: Meta<typeof WaystoneTable> = {
+const meta: Meta<typeof TableContainer> = {
   title: 'Components/WaystoneTable',
-  component: WaystoneTable,
+  component: TableContainer,
   render: ExampleTable,
+  parameters: {
+    docs: {
+      source: {
+        language: 'tsx',
+        code: `const [expanded, setExpanded] = useState<ExpandedState>({});
+
+const { getHeaderGroups, getRowModel } = useReactTable({
+  data,
+  columns,
+  state: {
+    expanded,
+  },
+  onExpandedChange: setExpanded,
+  getSubRows: (row) => row.subRows,
+  getCoreRowModel: getCoreRowModel(),
+  getExpandedRowModel: getExpandedRowModel(),
+  debugTable: true,
+});
+
+return (
+  <TableContainer>
+    <TableHead>
+      {getHeaderGroups().map((group) => (
+        <TableHead.Row key={group.id} {...group} />
+      ))}
+    </TableHead>
+    <TableBody>
+      {getRowModel().rows.map((row) => (
+        <TableBody.Row key={row.id} {...row} />
+      ))}
+    </TableBody>
+  </TableContainer>
+);`,
+      },
+    },
+  },
 };
 
 export default meta;
