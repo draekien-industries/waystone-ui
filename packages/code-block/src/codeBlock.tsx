@@ -8,6 +8,7 @@ import {
 import { Icon } from '@waystone/icon';
 import { Card } from '@waystone/card';
 import { cssSelectors, outlineCss } from '@waystone/css-presets';
+import type { TestIdAttributes } from '@waystone/types';
 import { useState, type ReactNode } from 'react';
 import { Box, type ThemeUIStyleObject } from 'theme-ui';
 import { alpha } from '@theme-ui/color';
@@ -18,7 +19,7 @@ export type CodeBlockProps = {
   wrapLines?: boolean;
   language?: SupportedLanguage;
   styleName?: StyleName;
-};
+} & TestIdAttributes;
 
 const baseDecoratorCss: ThemeUIStyleObject = {
   variant: 'text.small',
@@ -36,7 +37,12 @@ const baseDecoratorCss: ThemeUIStyleObject = {
   borderBottomRightRadius: 'small',
 };
 
-export const CodeBlock = ({ code, footer, ...rest }: CodeBlockProps) => {
+export const CodeBlock = ({
+  code,
+  footer,
+  'data-testid': testId,
+  ...rest
+}: CodeBlockProps) => {
   const [iconName, setIconName] = useState('content_copy');
 
   const handleCopy = () => {
@@ -49,12 +55,13 @@ export const CodeBlock = ({ code, footer, ...rest }: CodeBlockProps) => {
   };
 
   return (
-    <Card>
+    <Card data-testid={testId}>
       <Box
         sx={{
           variant: 'text.monospace',
           position: 'relative',
-        }}>
+        }}
+      >
         {rest.language && (
           <Box
             sx={{
@@ -62,7 +69,8 @@ export const CodeBlock = ({ code, footer, ...rest }: CodeBlockProps) => {
               left: '1.5rem',
               pointerEvents: 'none',
               ...baseDecoratorCss,
-            }}>
+            }}
+          >
             {rest.language}
           </Box>
         )}
@@ -92,7 +100,8 @@ export const CodeBlock = ({ code, footer, ...rest }: CodeBlockProps) => {
           type="button"
           onClick={handleCopy}
           onBlur={handleBlur}
-          aria-label="copy content">
+          aria-label="copy content"
+        >
           <Icon>{iconName}</Icon>
         </button>
         <SyntaxHighlighter {...rest}>{code}</SyntaxHighlighter>
@@ -106,7 +115,8 @@ export const CodeBlock = ({ code, footer, ...rest }: CodeBlockProps) => {
               left: 0,
               right: 0,
               backgroundColor: alpha('muted', 0.5),
-            }}>
+            }}
+          >
             {footer}
           </Box>
         )}

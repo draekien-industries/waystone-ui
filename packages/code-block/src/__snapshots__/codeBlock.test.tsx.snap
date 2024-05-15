@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CodeBlock /> should match snapshot 1`] = `
+<div>
+  <div
+    class="css-oo4x6t-Card"
+  >
+    <div
+      class="css-ed4rkq-CodeBlock"
+    >
+      <div
+        class="css-l1fdo0-CodeBlock"
+      >
+        javascript
+      </div>
+      <button
+        aria-label="copy content"
+        class="css-11hvwq6-CodeBlock"
+        type="button"
+      >
+        <i
+          class="material-icons-outlined css-1ye7pjf-Icon"
+        >
+          content_copy
+        </i>
+      </button>
+      <pre
+        class="css-73wurh-SyntaxHighlighter"
+      >
+        <code
+          class="language-javascript css-dytyo9-SyntaxHighlighter"
+        >
+          <span
+            class="hljs-variable language_ css-g89m8z-Box"
+            style="color: rgb(171, 86, 86);"
+          >
+            <span>
+              console
+            </span>
+          </span>
+          <span
+            class="css-g89m8z-Box"
+          >
+            <span>
+              .
+            </span>
+          </span>
+          <span
+            class="hljs-title function_ css-g89m8z-Box"
+            style="color: rgb(136, 0, 0); font-weight: 700;"
+          >
+            <span>
+              log
+            </span>
+          </span>
+          <span
+            class="css-g89m8z-Box"
+          >
+            <span>
+              (
+            </span>
+          </span>
+          <span
+            class="hljs-string css-g89m8z-Box"
+            style="color: rgb(136, 0, 0);"
+          >
+            <span>
+              'Hello World'
+            </span>
+          </span>
+          <span
+            class="css-g89m8z-Box"
+          >
+            <span>
+              );
+            </span>
+          </span>
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<CodeBlock /> should render a footer 1`] = `
+<div>
+  <div
+    class="css-oo4x6t-Card"
+  >
+    <div
+      class="css-ed4rkq-CodeBlock"
+    >
+      <button
+        aria-label="copy content"
+        class="css-11hvwq6-CodeBlock"
+        type="button"
+      >
+        <i
+          class="material-icons-outlined css-1ye7pjf-Icon"
+        >
+          content_copy
+        </i>
+      </button>
+      <pre
+        class="css-73wurh-SyntaxHighlighter"
+      >
+        <code
+          class="css-dytyo9-SyntaxHighlighter"
+        >
+          <span
+            class="hljs-built_in css-g89m8z-Box"
+            style="color: rgb(57, 115, 0);"
+          >
+            <span>
+              test
+            </span>
+          </span>
+        </code>
+      </pre>
+      <div
+        class="css-klajn0-CodeBlock"
+      >
+        example footer
+      </div>
+    </div>
+  </div>
+</div>
+`;
