@@ -1,6 +1,6 @@
 import type { Theme } from 'theme-ui';
 import { alpha } from '@theme-ui/color';
-import type { ButtonVariant } from './button.types';
+import type { ButtonSize, ButtonVariant } from './button.types';
 
 export type ButtonVariantCssFn = (
   variant?: ButtonVariant
@@ -71,3 +71,9 @@ export const getInteractiveColor: ButtonVariantCssFn = (
       return getColor(variant);
   }
 };
+
+export const paddingY = {
+  small: '0.25rem',
+  medium: '0.5rem',
+  large: '0.75rem',
+} as const satisfies Record<ButtonSize, string>;

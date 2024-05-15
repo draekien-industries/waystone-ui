@@ -18,13 +18,8 @@ import {
   getColor,
   getHoverBackgroundColor,
   getInteractiveColor,
+  paddingY,
 } from './button.styles';
-
-const paddingY: Record<ButtonSize, string> = {
-  small: '0.25rem',
-  medium: '0.5rem',
-  large: '0.75rem',
-};
 
 const renderButton = (
   {
@@ -99,9 +94,10 @@ const renderButton = (
         },
       }}
       {...rest}
-      disabled={disabled || loading}>
+      disabled={disabled || loading}
+    >
       {loading ? (
-        <Box>Loading...</Box>
+        <Box>Loading...</Box> // TODO: loading state
       ) : (
         <>
           {icon && <Icon {...icon}>{icon.name}</Icon>}

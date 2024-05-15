@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Styles for variant accent getActiveBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant accent getBackgroundColor result matches snapshot 1`] = `"a-400"`;
+
+exports[`Button Styles for variant accent getColor result matches snapshot 1`] = `"b-900"`;
+
+exports[`Button Styles for variant accent getHoverBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant accent getInteractiveColor result matches snapshot 1`] = `"b-900"`;
+
+exports[`Button Styles for variant destructive getActiveBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant destructive getBackgroundColor result matches snapshot 1`] = `"error-400"`;
+
+exports[`Button Styles for variant destructive getColor result matches snapshot 1`] = `"text"`;
+
+exports[`Button Styles for variant destructive getHoverBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant destructive getInteractiveColor result matches snapshot 1`] = `"text"`;
+
+exports[`Button Styles for variant ghost getActiveBackgroundColor result matches snapshot 1`] = `"active"`;
+
+exports[`Button Styles for variant ghost getBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant ghost getColor result matches snapshot 1`] = `"text"`;
+
+exports[`Button Styles for variant ghost getHoverBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant ghost getInteractiveColor result matches snapshot 1`] = `"text"`;
+
+exports[`Button Styles for variant highlight getActiveBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant highlight getBackgroundColor result matches snapshot 1`] = `"h-400"`;
+
+exports[`Button Styles for variant highlight getColor result matches snapshot 1`] = `"b-900"`;
+
+exports[`Button Styles for variant highlight getHoverBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant highlight getInteractiveColor result matches snapshot 1`] = `"b-900"`;
+
+exports[`Button Styles for variant link getActiveBackgroundColor result matches snapshot 1`] = `"transparent"`;
+
+exports[`Button Styles for variant link getBackgroundColor result matches snapshot 1`] = `"transparent"`;
+
+exports[`Button Styles for variant link getColor result matches snapshot 1`] = `"text"`;
+
+exports[`Button Styles for variant link getHoverBackgroundColor result matches snapshot 1`] = `"transparent"`;
+
+exports[`Button Styles for variant link getInteractiveColor result matches snapshot 1`] = `"h-500"`;
+
+exports[`Button Styles for variant primary getActiveBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant primary getBackgroundColor result matches snapshot 1`] = `"p-400"`;
+
+exports[`Button Styles for variant primary getColor result matches snapshot 1`] = `"b-900"`;
+
+exports[`Button Styles for variant primary getHoverBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant primary getInteractiveColor result matches snapshot 1`] = `"b-900"`;
+
+exports[`Button Styles for variant secondary getActiveBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant secondary getBackgroundColor result matches snapshot 1`] = `"s-400"`;
+
+exports[`Button Styles for variant secondary getColor result matches snapshot 1`] = `"b-900"`;
+
+exports[`Button Styles for variant secondary getHoverBackgroundColor result matches snapshot 1`] = `[Function]`;
+
+exports[`Button Styles for variant secondary getInteractiveColor result matches snapshot 1`] = `"b-900"`;
+
+exports[`Button Styles paddingY should match snapshot 1`] = `
+{
+  "large": "0.75rem",
+  "medium": "0.5rem",
+  "small": "0.25rem",
+}
+`;
