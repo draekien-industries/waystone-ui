@@ -6,7 +6,7 @@ on:
     branches: 
       - main
     paths:
-      - 'packages/waystone-*/**'
+      - 'packages/**'
       - '**/package.json'
       - '.github/workflows/coverage.yml'
       - '!**/*.md'
@@ -14,7 +14,7 @@ on:
     branches:
       - main
     paths:
-      - 'packages/waystone-*/**'
+      - 'packages/**'
       - '**/package.json'
       - '.github/workflows/coverage.yml'
       - '!**/*.md'
