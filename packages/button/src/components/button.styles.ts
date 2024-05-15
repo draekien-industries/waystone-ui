@@ -6,6 +6,19 @@ export type ButtonVariantCssFn = (
   variant?: ButtonVariant
 ) => string | ((t: Theme) => string);
 
+export const getSpinnerColor: ButtonVariantCssFn = (variant = 'primary') => {
+  switch (variant) {
+    case 'ghost':
+      return 'b-400';
+    case 'link':
+      return 'h-400';
+    case 'destructive':
+      return 'error-400';
+    default:
+      return `${variant[0]}-400`;
+  }
+};
+
 export const getBackgroundColor: ButtonVariantCssFn = (variant = 'primary') => {
   switch (variant) {
     case 'ghost':
@@ -75,5 +88,5 @@ export const getInteractiveColor: ButtonVariantCssFn = (
 export const paddingY = {
   small: '0.25rem',
   medium: '0.5rem',
-  large: '0.75rem',
+  large: '0.5rem',
 } as const satisfies Record<ButtonSize, string>;

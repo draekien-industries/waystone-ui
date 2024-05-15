@@ -27,6 +27,7 @@
     "@theme-ui/color": "^0.16.2",
     "@waystone/css-presets": "workspace:^",
     "@waystone/icon": "workspace:^",
+    "@waystone/spinner": "workspace:^",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
     "@waystone/theme": "workspace:^",

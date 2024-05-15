@@ -72,7 +72,7 @@ exports[`Button Styles for variant secondary getInteractiveColor result matches 
 
 exports[`Button Styles paddingY should match snapshot 1`] = `
 {
-  "large": "0.75rem",
+  "large": "0.5rem",
   "medium": "0.5rem",
   "small": "0.25rem",
 }

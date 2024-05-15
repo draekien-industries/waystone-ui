@@ -10,6 +10,7 @@ import {
   disabledCss,
   cssSelectors,
 } from '@waystone/css-presets';
+import { Spinner } from '@waystone/spinner';
 import { forwardRef, type ForwardedRef } from 'react';
 import type { ButtonProps, ButtonSize } from './button.types';
 import {
@@ -18,6 +19,7 @@ import {
   getColor,
   getHoverBackgroundColor,
   getInteractiveColor,
+  getSpinnerColor,
   paddingY,
 } from './button.styles';
 
@@ -96,11 +98,16 @@ const renderButton = (
       {...rest}
       disabled={disabled || loading}
     >
-      {loading ? (
-        <Box>Loading...</Box> // TODO: loading state
+      {loading && !icon ? (
+        <Spinner color={getSpinnerColor(variant)} />
       ) : (
         <>
-          {icon && <Icon {...icon}>{icon.name}</Icon>}
+          {icon &&
+            (loading ? (
+              <Spinner color={getSpinnerColor(variant)} size="small" />
+            ) : (
+              <Icon {...icon}>{icon.name}</Icon>
+            ))}
           {children}
         </>
       )}

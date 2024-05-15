@@ -8,13 +8,13 @@ import { DocsContainer } from './DocsContainer';
 const waystoneDarkTheme = create({
   base: 'dark',
   brandTitle: 'Waystone',
-  brandImage: './assets/waystone-logo.svg',
+  brandImage: '/waystone-logo.svg',
 });
 
 const waystoneLightTheme = create({
   base: 'light',
   brandTitle: 'Waystone',
-  brandImage: './assets/waystone-logo-dark.svg',
+  brandImage: '/waystone-logo-dark.svg',
 });
 
 export const parameters: Preview['parameters'] = {

@@ -37,4 +37,19 @@ describe('<Button />', () => {
 
     expect(icon).toBeInTheDocument();
   });
+
+  it('renders a spinner when loading', () => {
+    const { container } = render(<Button loading />);
+
+    const button = screen.getByRole('button');
+
+    expect(button).toBeInTheDocument();
+
+    // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
+    const spinner = container.querySelector(
+      'div[aria-description="Loading..."]'
+    );
+
+    expect(spinner).toBeInTheDocument();
+  });
 });
