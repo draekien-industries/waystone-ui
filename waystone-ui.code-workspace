@@ -5,40 +5,82 @@
       "path": ".",
     },
     {
-      "name": "apps/stories",
       "path": "apps/stories",
     },
     {
-      "name": "packages/anchor",
       "path": "packages/anchor",
     },
     {
-      "name": "packages/button",
       "path": "packages/button",
     },
     {
-      "name": "packages/button-group",
       "path": "packages/button-group",
     },
     {
-      "name": "packages/card",
       "path": "packages/card",
     },
     {
-      "name": "packages/card-button",
       "path": "packages/card-button",
     },
     {
-      "name": "packages/code",
+      "path": "packages/cli",
+    },
+    {
       "path": "packages/code",
     },
     {
-      "name": "packages/code-block",
       "path": "packages/code-block",
     },
     {
-      "name": "packages/css-presets",
+      "path": "packages/color",
+    },
+    {
       "path": "packages/css-presets",
+    },
+    {
+      "path": "packages/eslint-config-waystone",
+    },
+    {
+      "path": "packages/eslint-plugin-waystone",
+    },
+    {
+      "path": "packages/form-fields",
+    },
+    {
+      "path": "packages/icon",
+    },
+    {
+      "path": "packages/overlay",
+    },
+    {
+      "path": "packages/syntax-highlighter",
+    },
+    {
+      "path": "packages/table",
+    },
+    {
+      "path": "packages/template",
+    },
+    {
+      "path": "packages/testing-library",
+    },
+    {
+      "path": "packages/text",
+    },
+    {
+      "path": "packages/theme",
+    },
+    {
+      "path": "packages/theme-provider",
+    },
+    {
+      "path": "packages/tsconfig",
+    },
+    {
+      "path": "packages/types",
+    },
+    {
+      "path": "packages/ui",
     },
   ],
 }
