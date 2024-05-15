@@ -132,3 +132,7 @@ export type SizeAttributes<T extends ThemeSize = ThemeSize> = {
   /** Instructs the component to render at a specific size */
   size?: T;
 };
+
+export type TestIdAttributes = {
+  'data-testid'?: string;
+};

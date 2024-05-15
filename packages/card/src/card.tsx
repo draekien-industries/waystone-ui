@@ -3,6 +3,7 @@ import type {
   BoxShadowAttributes,
   HeightAttributes,
   PaddingAttributes,
+  TestIdAttributes,
   WidthAttributes,
 } from '@waystone/types';
 import type { ComponentProps, ReactElement, ReactNode } from 'react';
@@ -12,6 +13,16 @@ export type CardImageCss = {
   src?: string;
 } & HeightAttributes &
   BackgroundColorAttributes;
+
+const isCardImageCss = (
+  image: CardImageCss | ReactElement<ComponentProps<'img'>>
+): image is CardImageCss => {
+  if ('props' in image) return false;
+  if ('type' in image) return false;
+  if ('key' in image) return false;
+
+  return true;
+};
 
 export type CardProps = {
   /** The components to render inside the card */
@@ -23,17 +34,19 @@ export type CardProps = {
   image?: CardImageCss | ReactElement<ComponentProps<'img'>>;
 } & WidthAttributes &
   PaddingAttributes &
-  BoxShadowAttributes;
+  BoxShadowAttributes &
+  TestIdAttributes;
 
 export const Card = ({
   image,
   children,
   boxShadow = 'medium',
+  'data-testid': testId,
   ...rest
 }: CardProps) => {
   const hasImage = !!image;
-  const isImageCss = hasImage && 'backgroundColor' in image;
-  const isImageComponent = hasImage && 'props' in image;
+  const isImageCss = hasImage && isCardImageCss(image);
+  const isImageComponent = hasImage && !isImageCss;
 
   return (
     <Box
@@ -43,9 +56,11 @@ export const Card = ({
         borderRadius: 'medium',
         boxShadow,
         overflow: 'clip',
-      }}>
+      }}
+      data-testid={testId}
+    >
       {isImageCss && (
-        <Box
+        <div
           sx={{
             backgroundImage: `url(${image.src})`,
             backgroundColor: image.backgroundColor,
