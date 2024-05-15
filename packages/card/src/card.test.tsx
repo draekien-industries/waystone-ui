@@ -3,19 +3,21 @@ import { Card } from './card';
 
 describe('<Card />', () => {
   it('renders a blank card', () => {
-    render(<Card data-testid="test-card" />);
+    const { container } = render(<Card data-testid="test-card" />);
 
     const card = screen.getByTestId('test-card');
 
     expect(card).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 
   it('renders children', () => {
-    render(<Card>lorem ipsum</Card>);
+    const { container } = render(<Card>lorem ipsum</Card>);
 
     const card = screen.getByText('lorem ipsum');
 
     expect(card).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 
   it('renders a background image', () => {
@@ -27,10 +29,11 @@ describe('<Card />', () => {
     );
 
     expect(backgroundImage).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 
   it('renders an image component', () => {
-    render(
+    const { container } = render(
       <Card
         image={
           <img src="/testimage.jpg" alt="test" data-testid="image-component" />
@@ -41,5 +44,6 @@ describe('<Card />', () => {
     const image = screen.getByTestId('image-component');
 
     expect(image).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 });

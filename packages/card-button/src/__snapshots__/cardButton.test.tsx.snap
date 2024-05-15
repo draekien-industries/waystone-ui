@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardButton /> renders a spinner when loading 1`] = `
+<div>
+  <button
+    class="css-109oxqq"
+    disabled=""
+    type="button"
+  >
+    <div
+      class="css-7jeshx-AbsoluteOverlay"
+    >
+      <div
+        class="css-m65fxy-Flex"
+      >
+        <div
+          aria-description="Loading..."
+          class="css-wojfym-Spinner"
+        />
+      </div>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`<CardButton /> renders children 1`] = `
+<div>
+  <button
+    class="css-109oxqq"
+    type="button"
+  >
+    Card Content
+  </button>
+</div>
+`;
+
+exports[`<CardButton /> renders without children 1`] = `
+<div>
+  <button
+    class="css-109oxqq"
+    type="button"
+  />
+</div>
+`;

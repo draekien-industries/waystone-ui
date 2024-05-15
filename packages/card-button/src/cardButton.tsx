@@ -5,6 +5,7 @@ import type {
   DimensionsAttributes,
   DisabledAttributes,
   LoadingAttributes,
+  TestIdAttributes,
 } from '@waystone/types';
 import { Spinner } from '@waystone/spinner';
 import { Overlay } from '@waystone/overlay';
@@ -16,10 +17,18 @@ export type CardButtonProps = {
   children?: ReactNode;
 } & LoadingAttributes &
   DisabledAttributes &
-  DimensionsAttributes;
+  DimensionsAttributes &
+  TestIdAttributes;
 
 const renderCardButton = (
-  { children, onClick, loading, disabled, ...rest }: CardButtonProps,
+  {
+    children,
+    onClick,
+    loading,
+    disabled,
+    'data-testid': testId,
+    ...rest
+  }: CardButtonProps,
   ref?: ForwardedRef<HTMLButtonElement>
 ) => {
   const styles: ThemeUIStyleObject = {
@@ -63,6 +72,7 @@ const renderCardButton = (
       onClick={onClick}
       type="button"
       disabled={disabled || loading}
+      data-testid={testId}
     >
       {loading && (
         <Overlay.Absolute>
