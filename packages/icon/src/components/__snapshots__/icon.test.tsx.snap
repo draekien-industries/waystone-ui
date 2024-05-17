@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> component should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-outlined css-1ye7pjf-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component size extra-small should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-outlined css-4jdh4r-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component size large should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-outlined css-pj8p8w-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component size medium should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-outlined css-1h9809z-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component size small should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-outlined css-1ye7pjf-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component variant filled should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons css-1ye7pjf-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component variant outlined should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-outlined css-1ye7pjf-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component variant round should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-round css-1ye7pjf-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component variant sharp should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-sharp css-1ye7pjf-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> component variant two-tone should match snapshot 1`] = `
+<div>
+  <i
+    class="material-icons-two-tone css-1ye7pjf-Icon"
+  >
+    accessibility
+  </i>
+</div>
+`;
+
+exports[`<Icon /> css should match snapshot 1`] = `
+{
+  "color": undefined,
+  "fontSize": undefined,
+  "verticalAlign": "middle",
+}
+`;
