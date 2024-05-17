@@ -13,7 +13,7 @@ export type InputProps = {
   FullWidthAttributes &
   WidthAttributes;
 
-const renderInput = (
+const InputWithRef = (
   { fullWidth, width, minWidth, maxWidth, ...rest }: InputProps,
   ref: ForwardedRef<HTMLInputElement>
 ) => (
@@ -24,4 +24,4 @@ const renderInput = (
   />
 );
 
-export const Input = forwardRef(renderInput);
+export const Input = forwardRef(InputWithRef);

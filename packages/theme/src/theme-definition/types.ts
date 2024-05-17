@@ -1,10 +1,10 @@
-import type { colors } from './colors';
+import type { themeColors } from './colors';
 import type { layouts } from './layouts';
 import type { styles } from './styles';
 import type { typography } from './typography';
 import type { variants } from './variants';
 
-export type ThemeColor = Exclude<keyof typeof colors, 'modes'>;
+export type ThemeColor = keyof typeof themeColors;
 
 export type ThemeSpacing = keyof typeof layouts.space;
 

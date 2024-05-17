@@ -218,7 +218,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/css-presets':
         specifier: workspace:*
         version: link:../css-presets
@@ -251,7 +251,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@theme-ui/color':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
@@ -293,7 +293,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/button':
         specifier: workspace:*
         version: link:../button
@@ -320,7 +320,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../testing-library
@@ -347,7 +347,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/card':
         specifier: workspace:*
         version: link:../card
@@ -399,7 +399,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../testing-library
@@ -430,7 +430,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@theme-ui/color':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
@@ -491,7 +491,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@theme-ui/color':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
@@ -542,7 +542,7 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jest:
         specifier: ^27.9.0
-        version: 27.9.0(@typescript-eslint/eslint-plugin@7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))(typescript@5.4.5)
+        version: 27.9.0(@typescript-eslint/eslint-plugin@7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))(typescript@5.4.5)
       eslint-plugin-jsx-a11y:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.57.0)
@@ -591,7 +591,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@theme-ui/color':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
@@ -633,7 +633,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../testing-library
@@ -660,7 +660,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@theme-ui/color':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
@@ -699,7 +699,7 @@ importers:
         version: 11.11.4(@types/react@18.2.70)(react@18.2.0)
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/css-presets':
         specifier: workspace:*
         version: link:../css-presets
@@ -748,10 +748,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
-      '@testing-library/user-event':
-        specifier: ^14.5.2
-        version: 14.5.2(@testing-library/dom@9.3.4)
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@types/hast':
         specifier: ^3.0.0
         version: 3.0.0
@@ -797,7 +794,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@theme-ui/color':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
@@ -836,7 +833,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../testing-library
@@ -909,7 +906,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../testing-library
@@ -939,7 +936,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@theme-ui/color':
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
@@ -966,7 +963,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@testing-library/react':
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1002,7 +999,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/theme':
         specifier: workspace:*
         version: link:../theme
@@ -1025,7 +1022,7 @@ importers:
   packages/ui:
     dependencies:
       '@emotion/react':
-        specifier: '>=11.1.1'
+        specifier: '>=11'
         version: 11.11.4(@types/react@18.2.70)(react@18.2.0)
       '@theme-ui/color':
         specifier: '>=0.16.0'
@@ -1048,10 +1045,7 @@ importers:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
-        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))
-      '@testing-library/user-event':
-        specifier: ^14.5.2
-        version: 14.5.2(@testing-library/dom@9.3.4)
+        version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/anchor':
         specifier: workspace:^
         version: link:../anchor
@@ -12040,13 +12034,13 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0))(typescript@5.4.5):
+  eslint-plugin-jest@27.9.0(@typescript-eslint/eslint-plugin@7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))(typescript@5.4.5):
     dependencies:
       '@typescript-eslint/utils': 5.62.0(eslint@8.57.0)(typescript@5.4.5)
       eslint: 8.57.0
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 7.9.0(@typescript-eslint/parser@7.9.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
-      jest: 29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0)
+      jest: 29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0)
     transitivePeerDependencies:
       - supports-color
       - typescript

@@ -28,7 +28,6 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/user-event": "^14.5.2",
     "@waystone/tsconfig": "workspace:*",
     "@waystone/anchor": "workspace:^",
     "@waystone/button": "workspace:^",
@@ -52,7 +51,7 @@
     "tsup": "^8.0.2"
   },
   "peerDependencies": {
-    "@emotion/react": ">=11.1.1",
+    "@emotion/react": ">=11",
     "@theme-ui/color": ">=0.16.0",
     "@theme-ui/css": ">=0.16.0",
     "react": ">=18",

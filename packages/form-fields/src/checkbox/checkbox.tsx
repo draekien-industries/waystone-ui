@@ -27,7 +27,7 @@ export type CheckboxProps = {
   FullWidthAttributes &
   SharedInputAttributes;
 
-export const CheckboxContent = (
+const CheckboxWithRef = (
   { id, label, fullWidth, indeterminate, ...rest }: CheckboxProps,
   ref: ForwardedRef<HTMLInputElement>
 ) => {
@@ -90,4 +90,4 @@ export const CheckboxContent = (
   );
 };
 
-export const Checkbox = forwardRef(CheckboxContent);
+export const Checkbox = forwardRef(CheckboxWithRef);
