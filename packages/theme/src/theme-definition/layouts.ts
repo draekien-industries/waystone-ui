@@ -29,5 +29,3 @@ export const layouts = {
     toast: 60,
   },
 } as const;
-
-export default layouts;

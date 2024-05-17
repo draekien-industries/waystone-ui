@@ -77,5 +77,3 @@ export const variants = {
     },
   },
 } as const;
-
-export default variants;

@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorScales a-* should match snapshot 1`] = `
+{
+  "a-100": "#dbf5ff",
+  "a-200": "#ade8ff",
+  "a-300": "#7ad9ff",
+  "a-400": "#33c5ff",
+  "a-50": "#ebf9ff",
+  "a-500": "#00a8eb",
+  "a-600": "#009ad6",
+  "a-700": "#0087bd",
+  "a-800": "#00719e",
+  "a-900": "#005070",
+  "a-950": "#003347",
+}
+`;
+
+exports[`ColorScales b-* should match snapshot 1`] = `
+{
+  "b-100": "#ebebeb",
+  "b-200": "#d4d4d4",
+  "b-300": "#b8b8b8",
+  "b-400": "#969696",
+  "b-50": "#f5f5f5",
+  "b-500": "#666666",
+  "b-600": "#5e5e5e",
+  "b-700": "#4f4f4f",
+  "b-800": "#404040",
+  "b-900": "#303030",
+  "b-950": "#1a1a1a",
+}
+`;
+
+exports[`ColorScales error-* should match snapshot 1`] = `
+{
+  "error-100": "#ffe5ea",
+  "error-200": "#ffc7d0",
+  "error-300": "#ffa3b3",
+  "error-400": "#ff6b84",
+  "error-50": "#fff5f7",
+  "error-500": "#e00025",
+  "error-600": "#cc0022",
+  "error-700": "#b8001f",
+  "error-800": "#8f0018",
+  "error-900": "#660011",
+  "error-950": "#57000e",
+}
+`;
+
+exports[`ColorScales h-* should match snapshot 1`] = `
+{
+  "h-100": "#fdede3",
+  "h-200": "#fad7c2",
+  "h-300": "#f7bc97",
+  "h-400": "#f39d68",
+  "h-50": "#fef6f1",
+  "h-500": "#ed6f21",
+  "h-600": "#de6012",
+  "h-700": "#c15410",
+  "h-800": "#a0460d",
+  "h-900": "#76330a",
+  "h-950": "#502307",
+}
+`;
+
+exports[`ColorScales info-* should match snapshot 1`] = `
+{
+  "info-100": "#d3effd",
+  "info-200": "#9ddcfb",
+  "info-300": "#53c1f8",
+  "info-400": "#099de7",
+  "info-50": "#ebf8fe",
+  "info-500": "#066798",
+  "info-600": "#055d89",
+  "info-700": "#055076",
+  "info-800": "#044362",
+  "info-900": "#022b40",
+  "info-950": "#021b27",
+}
+`;
+
+exports[`ColorScales p-* should match snapshot 1`] = `
+{
+  "p-100": "#e2eff3",
+  "p-200": "#c6dfe7",
+  "p-300": "#a5ccd9",
+  "p-400": "#7ab4c7",
+  "p-50": "#f4f9fa",
+  "p-500": "#4893ac",
+  "p-600": "#42879e",
+  "p-700": "#3b788c",
+  "p-800": "#2f5f6f",
+  "p-900": "#21444f",
+  "p-950": "#1a343d",
+}
+`;
+
+exports[`ColorScales s-* should match snapshot 1`] = `
+{
+  "s-100": "#f4eef6",
+  "s-200": "#e8daec",
+  "s-300": "#dbc5e2",
+  "s-400": "#cdaed6",
+  "s-50": "#f9f5fa",
+  "s-500": "#ba8fc7",
+  "s-600": "#af7ebe",
+  "s-700": "#a26ab4",
+  "s-800": "#8d509f",
+  "s-900": "#663a73",
+  "s-950": "#42264b",
+}
+`;
+
+exports[`ColorScales success-* should match snapshot 1`] = `
+{
+  "success-100": "#d8f3e1",
+  "success-200": "#a9e5bd",
+  "success-300": "#6ed390",
+  "success-400": "#38b863",
+  "success-50": "#ebf9f0",
+  "success-500": "#2b8d4b",
+  "success-600": "#267d43",
+  "success-700": "#216d3b",
+  "success-800": "#1b5a30",
+  "success-900": "#144224",
+  "success-950": "#0d2b17",
+}
+`;
+
+exports[`ColorScales warning-* should match snapshot 1`] = `
+{
+  "warning-100": "#fce8e3",
+  "warning-200": "#fad1c7",
+  "warning-300": "#f6af9d",
+  "warning-400": "#f18569",
+  "warning-50": "#fef4f1",
+  "warning-500": "#ea441a",
+  "warning-600": "#d23913",
+  "warning-700": "#bb3311",
+  "warning-800": "#9f2b0e",
+  "warning-900": "#6c1d0a",
+  "warning-950": "#4b1407",
+}
+`;

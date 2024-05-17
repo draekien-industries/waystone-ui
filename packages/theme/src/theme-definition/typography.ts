@@ -29,5 +29,3 @@ export const typography = {
     uppercase: '0.1em',
   },
 } as const;
-
-export default typography;

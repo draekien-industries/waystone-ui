@@ -18,5 +18,3 @@ export const styles = {
     full: '100%',
   },
 } as const;
-
-export default styles;
