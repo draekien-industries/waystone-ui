@@ -14,7 +14,7 @@
     "skipLibCheck": true,
     "moduleResolution": "Bundler",
     "target": "ES6",
-    "types": ["jest", "@testing-library/react", "node"]
+    "types": ["jest", "node"]
   },
   "display": "React Library",
   "extends": "./base.json"

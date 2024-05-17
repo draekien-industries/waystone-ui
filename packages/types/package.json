@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.2",
     "@waystone/theme": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
     "eslint-config-waystone": "workspace:*",
