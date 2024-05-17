@@ -4,19 +4,14 @@ import { Input } from '../input';
 import { Radio } from '../radio';
 import { Label } from '../label';
 import { Checkbox } from '../checkbox';
+import { formFieldCss } from './formField.styles';
 
 export type FormFieldProps = {
   children: ReactNode;
 };
 
 export const FormField = ({ children }: FormFieldProps) => (
-  <Flex
-    sx={{
-      flexFlow: 'column',
-    }}
-  >
-    {children}
-  </Flex>
+  <Flex sx={formFieldCss}>{children}</Flex>
 );
 
 FormField.Input = Input;

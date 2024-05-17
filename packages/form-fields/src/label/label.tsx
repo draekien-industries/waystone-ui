@@ -1,8 +1,13 @@
-import type { ComponentPropsWithoutRef, PropsWithChildren } from 'react';
+import type {
+  ComponentPropsWithoutRef,
+  PropsWithChildren,
+  ReactNode,
+} from 'react';
 import { Text } from '@waystone/text';
 
 export type LabelProps = {
   htmlFor: string;
+  children: ReactNode;
 } & ComponentPropsWithoutRef<'label'>;
 
 export const Label = ({ htmlFor, ...rest }: LabelProps) => (

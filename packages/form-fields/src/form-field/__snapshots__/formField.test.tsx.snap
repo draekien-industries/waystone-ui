@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormField /> component should render children 1`] = `
+<div>
+  <div
+    class="css-n0hlb5-FormField"
+  >
+    child
+  </div>
+</div>
+`;
+
+exports[`<FormField /> css should match snapshot 1`] = `
+{
+  "flexFlow": "column",
+}
+`;

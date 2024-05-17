@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> component should match snapshot 1`] = `
+<div>
+  <input
+    class="css-o76nxf"
+    id="test-input"
+  />
+</div>
+`;
+
+exports[`<Input /> css should match snapshot 1`] = `
+{
+  ":enabled:active": {
+    "outlineColor": [Function],
+  },
+  ":enabled:not(active):focus-visible": {
+    "outlineColor": [Function],
+  },
+  "backgroundColor": [Function],
+  "border": "1px solid",
+  "borderColor": "b-400",
+  "borderRadius": "small",
+  "color": "text",
+  "maxWidth": undefined,
+  "minWidth": undefined,
+  "outlineColor": [Function],
+  "outlineOffset": 2,
+  "outlineStyle": "solid",
+  "outlineWidth": 4,
+  "padding": "extra-small",
+  "variant": "text.body",
+  "width": undefined,
+}
+`;
