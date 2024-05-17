@@ -122,9 +122,8 @@ const ExampleTable = () => {
   );
 };
 
-const meta: Meta<typeof TableContainer> = {
-  title: 'Components/WaystoneTable',
-  component: TableContainer,
+const meta: Meta = {
+  title: 'Components/Table',
   render: ExampleTable,
   parameters: {
     docs: {
