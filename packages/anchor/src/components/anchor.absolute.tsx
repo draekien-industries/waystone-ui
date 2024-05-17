@@ -25,10 +25,10 @@ const AbsoluteAnchorWithRef = (
   <a
     ref={ref}
     href={href}
-    sx={nodecoration ? undecoratedAnchorCss : anchorCss}
     {...rest}
+    sx={nodecoration ? undecoratedAnchorCss : anchorCss}
   >
-    <Icon sx={{ pr: 'extra-small' }}>open_in_new</Icon>
+    <Icon sx={{ pr: 'extra-small', pb: 'extra-small' }}>open_in_new</Icon>
     {children}
   </a>
 );

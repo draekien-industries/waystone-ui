@@ -3,7 +3,7 @@
 exports[`<Anchor.Relative /> should match snapshot 1`] = `
 <div>
   <a
-    class="css-1j8pji-RelativeAnchorWithRef"
+    class="css-vf9v2x-RelativeAnchorWithRef"
     href="/bob"
   >
     link

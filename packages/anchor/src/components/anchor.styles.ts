@@ -12,13 +12,14 @@ export const anchorCss: ThemeUICSSObject = {
   fontWeight: 'inherit',
   fontSize: 'inherit',
   cursor: 'pointer',
+  backgroundColor: 'transparent',
   ...outlineCss.base,
-  [cssSelectors.hover]: {
+  ':hover': {
     backgroundColor: 'ghost',
     borderTopLeftRadius: 'small',
     borderTopRightRadius: 'small',
   },
-  [cssSelectors.focusVisible]: {
+  ':focus-visible': {
     backgroundColor: 'ghost',
     borderTopLeftRadius: 'small',
     borderTopRightRadius: 'small',
