@@ -15,7 +15,7 @@ exports[`<CardButton /> renders a spinner when loading 1`] = `
       >
         <div
           aria-description="Loading..."
-          class="css-wojfym-Spinner"
+          class="css-c1ojwv-Spinner"
         />
       </div>
     </div>

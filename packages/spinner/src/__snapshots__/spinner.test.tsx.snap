@@ -35,15 +35,6 @@ exports[`<Spinner /> css borderCss should match snapshot 1`] = `
 }
 `;
 
-exports[`<Spinner /> css path should match snapshot 1`] = `
-{
-  "anim": 1,
-  "name": "animation-18cc70e",
-  "styles": "@keyframes animation-18cc70e{0%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0% );}12.5%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0% );}25%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100% );}50%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}62.5%{clip-path:polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}75%{clip-path:polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100% );}100%{clip-path:polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100% );}}",
-  "toString": [Function],
-}
-`;
-
 exports[`<Spinner /> css pathKeyframes should match snapshot 1`] = `
 {
   "anim": 1,
