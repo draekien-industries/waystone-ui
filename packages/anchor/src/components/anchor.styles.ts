@@ -1,7 +1,7 @@
 import { outlineCss, cssSelectors } from '@waystone/css-presets';
-import type { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUICSSObject } from 'theme-ui';
 
-export const anchorCss: ThemeUIStyleObject = {
+export const anchorCss: ThemeUICSSObject = {
   paddingX: 'extra-small',
   textDecoration: 'none',
   borderBottom: '1px solid',
@@ -26,7 +26,7 @@ export const anchorCss: ThemeUIStyleObject = {
   },
 } as const;
 
-export const undecoratedAnchorCss: ThemeUIStyleObject = {
+export const undecoratedAnchorCss: ThemeUICSSObject = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',

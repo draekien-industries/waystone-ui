@@ -10,7 +10,7 @@ import type {
 import { Spinner } from '@waystone/spinner';
 import { Overlay } from '@waystone/overlay';
 import { cssSelectors, outlineCss } from '@waystone/css-presets';
-import { Flex, type ThemeUIStyleObject } from 'theme-ui';
+import { Flex, type ThemeUICSSObject } from 'theme-ui';
 
 export type CardButtonProps = {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -31,7 +31,7 @@ const renderCardButton = (
   }: CardButtonProps,
   ref?: ForwardedRef<HTMLButtonElement>
 ) => {
-  const styles: ThemeUIStyleObject = {
+  const styles: ThemeUICSSObject = {
     position: 'relative',
     padding: 'medium',
     border: 'none',

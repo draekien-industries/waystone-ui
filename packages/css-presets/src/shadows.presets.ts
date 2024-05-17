@@ -1,18 +1,18 @@
-import type { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUICSSObject } from 'theme-ui';
 
-const none: ThemeUIStyleObject = {
+const none: ThemeUICSSObject = {
   boxShadow: 'none',
 } as const;
 
-const base: ThemeUIStyleObject = {
+const base: ThemeUICSSObject = {
   boxShadow: 'small',
 } as const;
 
-const focused: ThemeUIStyleObject = {
+const focused: ThemeUICSSObject = {
   boxShadow: 'medium',
 } as const;
 
-const active: ThemeUIStyleObject = {
+const active: ThemeUICSSObject = {
   boxShadow: 'medium',
 } as const;
 

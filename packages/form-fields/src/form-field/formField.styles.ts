@@ -1,5 +1,5 @@
-import type { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUICSSObject } from 'theme-ui';
 
 export const formFieldCss = {
   flexFlow: 'column',
-} as const satisfies ThemeUIStyleObject;
+} as const satisfies ThemeUICSSObject;

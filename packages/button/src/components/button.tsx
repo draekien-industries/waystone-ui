@@ -1,9 +1,5 @@
 import { Icon } from '@waystone/icon';
-import {
-  Box,
-  Button as ThemeUIButton,
-  type ThemeUIStyleObject,
-} from 'theme-ui';
+import { Box, Button as ThemeUIButton, type ThemeUICSSObject } from 'theme-ui';
 import {
   outlineCss,
   boxShadowCss,
@@ -42,18 +38,18 @@ const renderButton = (
 
   const interactiveColor = getInteractiveColor(variant);
 
-  const hoverCss: ThemeUIStyleObject = {
+  const hoverCss: ThemeUICSSObject = {
     color: interactiveColor,
     boxShadow: boxShadowCss.focused,
     backgroundColor: getHoverBackgroundColor(variant),
   };
 
-  const focusCss: ThemeUIStyleObject = {
+  const focusCss: ThemeUICSSObject = {
     ...hoverCss,
     boxShadow: boxShadowCss.active,
   };
 
-  const activeCss: ThemeUIStyleObject = {
+  const activeCss: ThemeUICSSObject = {
     ...focusCss,
     backgroundColor: getActiveBackgroundColor(variant),
   };

@@ -1,11 +1,11 @@
-import type { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUICSSObject } from 'theme-ui';
 
-export const disabledCss: ThemeUIStyleObject = {
+export const disabledCss: ThemeUICSSObject = {
   color: 'text-disabled',
   cursor: 'not-allowed',
 } as const;
 
-export const disabledWithBackgroundCss: ThemeUIStyleObject = {
+export const disabledWithBackgroundCss: ThemeUICSSObject = {
   ...disabledCss,
   backgroundColor: 'muted',
 } as const;

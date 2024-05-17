@@ -1,4 +1,4 @@
-import type { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUICSSObject } from 'theme-ui';
 
 export const codeCss = {
   variant: 'text.mono',
@@ -9,4 +9,4 @@ export const codeCss = {
   paddingX: 'extra-small',
   paddingY: 2,
   color: 'code',
-} as const satisfies ThemeUIStyleObject;
+} as const satisfies ThemeUICSSObject;

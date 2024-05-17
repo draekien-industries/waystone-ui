@@ -10,7 +10,7 @@ import { Card } from '@waystone/card';
 import { cssSelectors, outlineCss } from '@waystone/css-presets';
 import type { TestIdAttributes } from '@waystone/types';
 import { useState, type ReactNode } from 'react';
-import { Box, type ThemeUIStyleObject } from 'theme-ui';
+import { Box, type ThemeUICSSObject } from 'theme-ui';
 import { alpha } from '@theme-ui/color';
 
 export type CodeBlockProps = {
@@ -21,7 +21,7 @@ export type CodeBlockProps = {
   styleName?: StyleName;
 } & TestIdAttributes;
 
-const baseDecoratorCss: ThemeUIStyleObject = {
+const baseDecoratorCss: ThemeUICSSObject = {
   variant: 'text.small',
   letterSpacing: 1.25,
   fontWeight: 'medium',

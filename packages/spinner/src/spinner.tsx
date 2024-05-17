@@ -1,4 +1,4 @@
-import type { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUICSSObject } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import type { ColorAttributes, SizeAttributes } from '@waystone/types';
 
@@ -67,7 +67,7 @@ const getSpinnerCss = ({
     border: border[size],
     borderColor: color,
     animation: `${path} 0.8s infinite linear alternate, ${transform} 1.6s infinite linear`,
-  }) as const satisfies ThemeUIStyleObject;
+  }) as const satisfies ThemeUICSSObject;
 
 export const Spinner = (props: SpinnerProps) => (
   <div sx={getSpinnerCss(props)} aria-description="Loading..." />

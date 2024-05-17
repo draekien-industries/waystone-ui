@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from 'react';
-import type { ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUICSSObject } from 'theme-ui';
 import { TableHeadRow } from './table.head.row';
 import { TableHeadCell } from './table.head.cell';
 
@@ -8,7 +8,7 @@ const style = {
   position: 'sticky',
   top: 0,
   zIndex: 1,
-} as const satisfies ThemeUIStyleObject;
+} as const satisfies ThemeUICSSObject;
 
 export const TableHead = ({ children }: PropsWithChildren) => (
   <thead sx={style}>{children}</thead>

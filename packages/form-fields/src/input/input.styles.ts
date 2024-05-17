@@ -1,7 +1,7 @@
 import { alpha } from '@theme-ui/color';
 import { outlineCss, cssSelectors } from '@waystone/css-presets';
 import type { FullWidthAttributes, WidthAttributes } from '@waystone/types';
-import type { ThemeUICSSObject, ThemeUIStyleObject } from 'theme-ui';
+import type { ThemeUICSSObject } from 'theme-ui';
 
 export type InputCssOptions = WidthAttributes & FullWidthAttributes;
 
