@@ -1,5 +1,8 @@
 'use client';
 
+import { faker } from '@faker-js/faker';
+import type { Meta, StoryObj } from '@storybook/react';
+import type { ColumnDef, ExpandedState } from '@waystone/table';
 import {
   TableBody,
   TableContainer,
@@ -7,12 +10,8 @@ import {
   createInteractiveColumn,
   getCoreRowModel,
   getExpandedRowModel,
-  getPaginationRowModel,
   useReactTable,
 } from '@waystone/table';
-import type { ExpandedState, ColumnDef } from '@waystone/table';
-import { faker } from '@faker-js/faker';
-import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
 type Person = {

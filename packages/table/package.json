@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
+    "@faker-js/faker": "^8.0.2",
     "@theme-ui/color": "^0.16.2",
     "@waystone/css-presets": "workspace:*",
     "@waystone/testing-library": "workspace:*",

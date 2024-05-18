@@ -1,1 +1,1 @@
-export * from './row.interactions';
+export * from './interactive-column';
