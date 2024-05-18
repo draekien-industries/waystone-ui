@@ -9,82 +9,82 @@ export const gradientLight = {
   },
   'hljs': {
     'backgroundColor': '#f9ccff',
-    'backgroundImage': 'linear-gradient(295deg,#f9ccff 0,#e6bbf9 11%,#9ec6f9 32%,#55e6ee 60%,#91f5d1 74%,#f9ffbf 98%)',
+    'backgroundImage': 'linear-gradient(295deg, #f9ccff 0%, #e6bbf9 11%, #9ec6f9 32%, #55e6ee 60%, #91f5d1 74%, #f9ffbf 98%)',
     'color': '#250482'
   },
   'hljs-subtr': {
-    'color': '#01958b'
-  },
-  'hljs-comment': {
-    'color': '#cb7200'
+    'color': '#01958B'
   },
   'hljs-doctag': {
-    'color': '#cb7200'
+    'color': '#CB7200'
   },
   'hljs-meta': {
-    'color': '#cb7200'
+    'color': '#CB7200'
+  },
+  'hljs-comment': {
+    'color': '#CB7200'
   },
   'hljs-quote': {
-    'color': '#cb7200',
+    'color': '#CB7200',
     'fontStyle': 'italic'
   },
-  'hljs-attr': {
-    'color': '#07bd5f'
-  },
-  'hljs-regexp': {
-    'color': '#07bd5f'
+  'hljs-selector-tag': {
+    'color': '#07BD5F',
+    'fontWeight': 'bold'
   },
   'hljs-selector-id': {
-    'color': '#07bd5f',
-    'fontWeight': '700'
-  },
-  'hljs-selector-tag': {
-    'color': '#07bd5f',
-    'fontWeight': '700'
-  },
-  'hljs-tag': {
-    'color': '#07bd5f'
+    'color': '#07BD5F',
+    'fontWeight': 'bold'
   },
   'hljs-template-tag': {
-    'color': '#07bd5f',
-    'fontWeight': '700'
+    'color': '#07BD5F',
+    'fontWeight': 'bold'
   },
-  'hljs-bullet': {
-    'color': '#43449f'
+  'hljs-regexp': {
+    'color': '#07BD5F'
+  },
+  'hljs-attr': {
+    'color': '#07BD5F'
+  },
+  'hljs-tag': {
+    'color': '#07BD5F'
   },
   'hljs-params': {
-    'color': '#43449f',
-    'fontWeight': '700'
+    'color': '#43449F',
+    'fontWeight': 'bold'
   },
   'hljs-selector-class': {
-    'color': '#43449f',
-    'fontWeight': '700'
+    'color': '#43449F',
+    'fontWeight': 'bold'
+  },
+  'hljs-bullet': {
+    'color': '#43449F'
   },
   'hljs-keyword': {
-    'color': '#7d2801',
-    'fontWeight': '700'
-  },
-  'hljs-meta .hljs-keyword': {
-    'color': '#7d2801'
+    'color': '#7D2801',
+    'fontWeight': 'bold'
   },
   'hljs-section': {
-    'color': '#7d2801',
-    'fontWeight': '700'
+    'color': '#7D2801',
+    'fontWeight': 'bold'
+  },
+  'hljs-meta .hljs-keyword': {
+    'color': '#7D2801'
   },
   'hljs-symbol': {
-    'color': '#7d2801'
+    'color': '#7D2801'
   },
   'hljs-type': {
-    'color': '#7d2801'
+    'color': '#7D2801'
   },
   'hljs-addition': {
     'color': '#296562'
   },
-  'hljs-link': {
-    'color': '#7f0096'
-  },
   'hljs-number': {
-    'color': '#7f0096'
+    'color': '#7F0096'
+  },
+  'hljs-link': {
+    'color': '#7F0096'
   },
   'hljs-string': {
     'color': '#2681ab'
@@ -92,22 +92,16 @@ export const gradientLight = {
   'hljs-attribute': {
     'color': '#296562'
   },
-  'hljs-template-variable': {
-    'color': '#025c8f'
-  },
   'hljs-variable': {
-    'color': '#025c8f'
+    'color': '#025C8F'
+  },
+  'hljs-template-variable': {
+    'color': '#025C8F'
   },
   'hljs-built_in': {
     'color': '#529117'
   },
-  'hljs-class': {
-    'color': '#529117'
-  },
   'hljs-formula': {
-    'color': '#529117'
-  },
-  'hljs-function': {
     'color': '#529117'
   },
   'hljs-name': {
@@ -116,19 +110,25 @@ export const gradientLight = {
   'hljs-title': {
     'color': '#529117'
   },
-  'hljs-deletion': {
-    'color': '#ad13ff'
+  'hljs-class': {
+    'color': '#529117'
   },
-  'hljs-literal': {
-    'color': '#ad13ff'
+  'hljs-function': {
+    'color': '#529117'
   },
   'hljs-selector-pseudo': {
-    'color': '#ad13ff'
+    'color': '#AD13FF'
+  },
+  'hljs-deletion': {
+    'color': '#AD13FF'
+  },
+  'hljs-literal': {
+    'color': '#AD13FF'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

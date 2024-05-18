@@ -17,29 +17,32 @@ export const lioshi = {
   'hljs-quote': {
     'color': '#b3c7d8'
   },
-  'hljs-deletion': {
-    'color': '#c66'
-  },
-  'hljs-name': {
-    'color': '#c66'
-  },
-  'hljs-regexp': {
-    'color': '#c66'
-  },
-  'hljs-selector-class': {
-    'color': '#c66'
-  },
-  'hljs-selector-id': {
-    'color': '#c66'
-  },
-  'hljs-tag': {
-    'color': '#c66'
+  'hljs-variable': {
+    'color': '#cc6666'
   },
   'hljs-template-variable': {
-    'color': '#c66'
+    'color': '#cc6666'
   },
-  'hljs-variable': {
-    'color': '#c66'
+  'hljs-tag': {
+    'color': '#cc6666'
+  },
+  'hljs-name': {
+    'color': '#cc6666'
+  },
+  'hljs-selector-id': {
+    'color': '#cc6666'
+  },
+  'hljs-selector-class': {
+    'color': '#cc6666'
+  },
+  'hljs-regexp': {
+    'color': '#cc6666'
+  },
+  'hljs-deletion': {
+    'color': '#cc6666'
+  },
+  'hljs-number': {
+    'color': '#de935f'
   },
   'hljs-built_in': {
     'color': '#de935f'
@@ -47,19 +50,16 @@ export const lioshi = {
   'hljs-literal': {
     'color': '#de935f'
   },
-  'hljs-number': {
-    'color': '#de935f'
-  },
-  'hljs-subst .hljs-link': {
-    'color': '#de935f'
-  },
   'hljs-type': {
+    'color': '#de935f'
+  },
+  'hljs-subst\n.hljs-link': {
     'color': '#de935f'
   },
   'hljs-attribute': {
     'color': '#f0c674'
   },
-  'hljs-addition': {
+  'hljs-string': {
     'color': '#b5bd68'
   },
   'hljs-bullet': {
@@ -68,28 +68,28 @@ export const lioshi = {
   'hljs-params': {
     'color': '#b5bd68'
   },
-  'hljs-string': {
+  'hljs-addition': {
     'color': '#b5bd68'
   },
-  'hljs-class': {
-    'color': '#be94bb'
-  },
-  'hljs-function': {
+  'hljs-selector-tag': {
     'color': '#be94bb'
   },
   'hljs-keyword': {
     'color': '#be94bb'
   },
-  'hljs-selector-tag': {
+  'hljs-function': {
     'color': '#be94bb'
+  },
+  'hljs-class': {
+    'color': '#be94bb'
+  },
+  'hljs-title': {
+    'color': '#81a2be'
   },
   'hljs-meta': {
     'color': '#81a2be'
   },
   'hljs-section': {
-    'color': '#81a2be'
-  },
-  'hljs-title': {
     'color': '#81a2be'
   },
   'hljs-symbol': {
@@ -99,6 +99,6 @@ export const lioshi = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

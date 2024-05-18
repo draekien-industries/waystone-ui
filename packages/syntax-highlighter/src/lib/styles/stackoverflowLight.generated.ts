@@ -17,22 +17,22 @@ export const stackoverflowLight = {
   'hljs-comment': {
     'color': '#656e77'
   },
-  'hljs-attr': {
-    'color': '#015692'
-  },
-  'hljs-doctag': {
-    'color': '#015692'
-  },
   'hljs-keyword': {
+    'color': '#015692'
+  },
+  'hljs-selector-tag': {
     'color': '#015692'
   },
   'hljs-meta .hljs-keyword': {
     'color': '#015692'
   },
+  'hljs-doctag': {
+    'color': '#015692'
+  },
   'hljs-section': {
     'color': '#015692'
   },
-  'hljs-selector-tag': {
+  'hljs-attr': {
     'color': '#015692'
   },
   'hljs-attribute': {
@@ -41,43 +41,43 @@ export const stackoverflowLight = {
   'hljs-name': {
     'color': '#b75501'
   },
-  'hljs-number': {
+  'hljs-type': {
     'color': '#b75501'
   },
-  'hljs-quote': {
+  'hljs-number': {
     'color': '#b75501'
   },
   'hljs-selector-id': {
     'color': '#b75501'
   },
-  'hljs-template-tag': {
+  'hljs-quote': {
     'color': '#b75501'
   },
-  'hljs-type': {
+  'hljs-template-tag': {
     'color': '#b75501'
   },
   'hljs-selector-class': {
     'color': '#015692'
   },
-  'hljs-link': {
+  'hljs-string': {
     'color': '#54790d'
   },
   'hljs-regexp': {
     'color': '#54790d'
   },
-  'hljs-selector-attr': {
-    'color': '#54790d'
-  },
-  'hljs-string': {
-    'color': '#54790d'
-  },
   'hljs-symbol': {
+    'color': '#54790d'
+  },
+  'hljs-variable': {
     'color': '#54790d'
   },
   'hljs-template-variable': {
     'color': '#54790d'
   },
-  'hljs-variable': {
+  'hljs-link': {
+    'color': '#54790d'
+  },
+  'hljs-selector-attr': {
     'color': '#54790d'
   },
   'hljs-meta': {
@@ -89,10 +89,10 @@ export const stackoverflowLight = {
   'hljs-built_in': {
     'color': '#b75501'
   },
-  'hljs-literal': {
+  'hljs-title': {
     'color': '#b75501'
   },
-  'hljs-title': {
+  'hljs-literal': {
     'color': '#b75501'
   },
   'hljs-bullet': {
@@ -114,6 +114,12 @@ export const stackoverflowLight = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
-  }
+    'fontWeight': 'bold'
+  },
+  'hljs-formula': {},
+  'hljs-operator': {},
+  'hljs-params': {},
+  'hljs-property': {},
+  'hljs-punctuation': {},
+  'hljs-tag': {}
 }

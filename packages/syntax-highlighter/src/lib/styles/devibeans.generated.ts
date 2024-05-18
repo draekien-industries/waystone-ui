@@ -8,7 +8,7 @@ export const devibeans = {
     'padding': '3px 5px'
   },
   'hljs': {
-    'background': '#000',
+    'background': '#000000',
     'color': '#a39e9b'
   },
   'hljs-attr': {
@@ -18,13 +18,13 @@ export const devibeans = {
     'color': '#8787d7'
   },
   'hljs-comment': {
-    'color': '#396'
+    'color': '#339966'
   },
   'hljs-doctag': {
-    'color': '#396'
+    'color': '#339966'
   },
   'hljs-quote': {
-    'color': '#396'
+    'color': '#339966'
   },
   'hljs-params': {
     'color': '#a39e9b'
@@ -32,16 +32,16 @@ export const devibeans = {
   'hljs-regexp': {
     'color': '#d700ff'
   },
-  'hljs-literal': {
-    'color': '#ef5350'
-  },
-  'hljs-number': {
+  'hljs-tag': {
     'color': '#ef5350'
   },
   'hljs-selector-id': {
     'color': '#ef5350'
   },
-  'hljs-tag': {
+  'hljs-number': {
+    'color': '#ef5350'
+  },
+  'hljs-literal': {
     'color': '#ef5350'
   },
   'hljs-meta': {
@@ -50,43 +50,48 @@ export const devibeans = {
   'hljs-meta .hljs-keyword': {
     'color': '#0087ff'
   },
+  'hljs-operator': {},
+  'hljs-punctuation': {},
+  'hljs-selector-class': {
+    'color': '#64b5f6'
+  },
   'hljs-code': {
     'color': '#64b5f6'
   },
   'hljs-formula': {
     'color': '#64b5f6'
   },
-  'hljs-keyword': {
-    'color': '#64b5f6'
-  },
-  'hljs-link': {
-    'color': '#64b5f6'
-  },
-  'hljs-selector-attr': {
-    'color': '#64b5f6'
-  },
-  'hljs-selector-class': {
-    'color': '#64b5f6'
-  },
-  'hljs-selector-pseudo': {
+  'hljs-variable': {
     'color': '#64b5f6'
   },
   'hljs-template-variable': {
     'color': '#64b5f6'
   },
-  'hljs-variable': {
+  'hljs-selector-attr': {
+    'color': '#64b5f6'
+  },
+  'hljs-selector-pseudo': {
+    'color': '#64b5f6'
+  },
+  'hljs-link': {
+    'color': '#64b5f6'
+  },
+  'hljs-keyword': {
     'color': '#64b5f6'
   },
   'hljs-built_in': {
     'color': '#ff8700'
   },
-  'hljs-deletion': {
-    'color': '#ff8700'
-  },
   'hljs-title': {
     'color': '#ff8700'
   },
-  'hljs-attribute': {
+  'hljs-deletion': {
+    'color': '#ff8700'
+  },
+  'hljs-type': {
+    'color': '#ffd75f'
+  },
+  'hljs-section': {
     'color': '#ffd75f'
   },
   'hljs-function': {
@@ -98,17 +103,8 @@ export const devibeans = {
   'hljs-property': {
     'color': '#ffd75f'
   },
-  'hljs-section': {
+  'hljs-attribute': {
     'color': '#ffd75f'
-  },
-  'hljs-type': {
-    'color': '#ffd75f'
-  },
-  'hljs-addition': {
-    'color': '#558b2f'
-  },
-  'hljs-bullet': {
-    'color': '#558b2f'
   },
   'hljs-meta .hljs-string': {
     'color': '#558b2f'
@@ -122,13 +118,19 @@ export const devibeans = {
   'hljs-symbol': {
     'color': '#558b2f'
   },
+  'hljs-bullet': {
+    'color': '#558b2f'
+  },
+  'hljs-addition': {
+    'color': '#558b2f'
+  },
   'hljs-selector-tag': {
-    'color': '#96f'
+    'color': '#9966ff'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

@@ -21,80 +21,80 @@ export const grayscale = {
   },
   'hljs-keyword': {
     'color': '#333',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-selector-tag': {
     'color': '#333',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-subst': {
     'color': '#333',
-    'fontWeight': '400'
-  },
-  'hljs-literal': {
-    'color': '#777'
+    'fontWeight': 'normal'
   },
   'hljs-number': {
     'color': '#777'
   },
-  'hljs-doctag': {
-    'color': '#333',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2O8e/fufwYGBgZBQUEQxcCIIfDu3Tuwivfv30NUoAsAALHpFMMLqZlPAAAAAElFTkSuQmCC)'
-  },
-  'hljs-formula': {
-    'color': '#333',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2O8e/fufwYGBgZBQUEQxcCIIfDu3Tuwivfv30NUoAsAALHpFMMLqZlPAAAAAElFTkSuQmCC)'
+  'hljs-literal': {
+    'color': '#777'
   },
   'hljs-string': {
     'color': '#333',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2O8e/fufwYGBgZBQUEQxcCIIfDu3Tuwivfv30NUoAsAALHpFMMLqZlPAAAAAElFTkSuQmCC)'
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2O8e/fufwYGBgZBQUEQxcCIIfDu3Tuwivfv30NUoAsAALHpFMMLqZlPAAAAAElFTkSuQmCC) repeat'
   },
-  'hljs-section': {
-    'color': '#000',
-    'fontWeight': '700'
+  'hljs-doctag': {
+    'color': '#333',
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2O8e/fufwYGBgZBQUEQxcCIIfDu3Tuwivfv30NUoAsAALHpFMMLqZlPAAAAAElFTkSuQmCC) repeat'
   },
-  'hljs-selector-id': {
-    'color': '#000',
-    'fontWeight': '700'
+  'hljs-formula': {
+    'color': '#333',
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2O8e/fufwYGBgZBQUEQxcCIIfDu3Tuwivfv30NUoAsAALHpFMMLqZlPAAAAAElFTkSuQmCC) repeat'
   },
   'hljs-title': {
     'color': '#000',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
-  'hljs-class .hljs-title': {
-    'color': '#333',
-    'fontWeight': '700'
+  'hljs-section': {
+    'color': '#000',
+    'fontWeight': 'bold'
   },
-  'hljs-name': {
-    'color': '#333',
-    'fontWeight': '700'
+  'hljs-selector-id': {
+    'color': '#000',
+    'fontWeight': 'bold'
   },
   'hljs-title.class_': {
     'color': '#333',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
+  },
+  'hljs-class .hljs-title': {
+    'color': '#333',
+    'fontWeight': 'bold'
   },
   'hljs-type': {
     'color': '#333',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
+  },
+  'hljs-name': {
+    'color': '#333',
+    'fontWeight': 'bold'
   },
   'hljs-tag': {
     'color': '#333'
   },
   'hljs-regexp': {
     'color': '#333',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAN37979r6yszIgujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQDexSef15DBCwAAAABJRU5ErkJggg==)'
-  },
-  'hljs-bullet': {
-    'color': '#000',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAO7d+/+z4gsBhJwdXVlhAvCBECKwIIwAbhKZBUwBQA6hBpm5efZsgAAAABJRU5ErkJggg==)'
-  },
-  'hljs-link': {
-    'color': '#000',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAO7d+/+z4gsBhJwdXVlhAvCBECKwIIwAbhKZBUwBQA6hBpm5efZsgAAAABJRU5ErkJggg==)'
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAN37979r6yszIgujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQDexSef15DBCwAAAABJRU5ErkJggg==) repeat'
   },
   'hljs-symbol': {
     'color': '#000',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAO7d+/+z4gsBhJwdXVlhAvCBECKwIIwAbhKZBUwBQA6hBpm5efZsgAAAABJRU5ErkJggg==)'
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAO7d+/+z4gsBhJwdXVlhAvCBECKwIIwAbhKZBUwBQA6hBpm5efZsgAAAABJRU5ErkJggg==) repeat'
+  },
+  'hljs-bullet': {
+    'color': '#000',
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAO7d+/+z4gsBhJwdXVlhAvCBECKwIIwAbhKZBUwBQA6hBpm5efZsgAAAABJRU5ErkJggg==) repeat'
+  },
+  'hljs-link': {
+    'color': '#000',
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAO7d+/+z4gsBhJwdXVlhAvCBECKwIIwAbhKZBUwBQA6hBpm5efZsgAAAABJRU5ErkJggg==) repeat'
   },
   'hljs-built_in': {
     'color': '#000',
@@ -102,20 +102,20 @@ export const grayscale = {
   },
   'hljs-meta': {
     'color': '#999',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-deletion': {
     'color': '#fff',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAYAAABS3WWCAAAAE0lEQVQIW2MMDQ39zzhz5kwIAQAyxweWgUHd1AAAAABJRU5ErkJggg==)'
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAYAAABS3WWCAAAAE0lEQVQIW2MMDQ39zzhz5kwIAQAyxweWgUHd1AAAAABJRU5ErkJggg==) repeat'
   },
   'hljs-addition': {
     'color': '#000',
-    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALUlEQVQYV2N89+7dfwYk8P79ewZBQUFkIQZGOiu6e/cuiptQHAPl0NtNxAQBAM97Oejj3Dg7AAAAAElFTkSuQmCC)'
+    'background': 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALUlEQVQYV2N89+7dfwYk8P79ewZBQUFkIQZGOiu6e/cuiptQHAPl0NtNxAQBAM97Oejj3Dg7AAAAAElFTkSuQmCC) repeat'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

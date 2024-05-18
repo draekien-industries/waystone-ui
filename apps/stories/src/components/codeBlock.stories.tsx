@@ -1,9 +1,24 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { CodeBlock } from '@waystone/code-block';
+import {
+  CodeBlock,
+  SUPPORTED_LANGUAGES,
+  SYNTAX_HIGHLIGHT_STYLES,
+} from '@waystone/code-block';
+import { createEnumArgType } from '../../.storybook/preview.fx';
 
 const meta: Meta<typeof CodeBlock> = {
   title: 'Components/CodeBlock',
   component: CodeBlock,
+  argTypes: {
+    styleName: createEnumArgType({
+      options: SYNTAX_HIGHLIGHT_STYLES,
+      summary: 'StyleName',
+    }),
+    language: createEnumArgType({
+      options: SUPPORTED_LANGUAGES,
+      summary: 'SupportedLanguage',
+    }),
+  },
 };
 
 export default meta;

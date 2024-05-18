@@ -12,44 +12,56 @@ export const dark = {
     'background': '#303030'
   },
   'hljs-keyword': {
-    'color': '#fff',
-    'fontWeight': '700'
-  },
-  'hljs-link': {
-    'color': '#fff'
-  },
-  'hljs-literal': {
-    'color': '#fff',
-    'fontWeight': '700'
-  },
-  'hljs-section': {
-    'color': '#fff',
-    'fontWeight': '700'
+    'color': 'white',
+    'fontWeight': 'bold'
   },
   'hljs-selector-tag': {
-    'color': '#fff',
-    'fontWeight': '700'
+    'color': 'white',
+    'fontWeight': 'bold'
   },
-  'hljs-addition': {
+  'hljs-literal': {
+    'color': 'white',
+    'fontWeight': 'bold'
+  },
+  'hljs-section': {
+    'color': 'white',
+    'fontWeight': 'bold'
+  },
+  'hljs-link': {
+    'color': 'white'
+  },
+  'hljs-subst': {},
+  'hljs-string': {
     'color': '#d88'
+  },
+  'hljs-title': {
+    'color': '#d88',
+    'fontWeight': 'bold'
+  },
+  'hljs-name': {
+    'color': '#d88',
+    'fontWeight': 'bold'
+  },
+  'hljs-type': {
+    'color': '#d88',
+    'fontWeight': 'bold'
   },
   'hljs-attribute': {
     'color': '#d88'
   },
-  'hljs-built_in': {
+  'hljs-symbol': {
     'color': '#d88'
   },
   'hljs-bullet': {
     'color': '#d88'
   },
-  'hljs-name': {
-    'color': '#d88',
-    'fontWeight': '700'
-  },
-  'hljs-string': {
+  'hljs-built_in': {
     'color': '#d88'
   },
-  'hljs-symbol': {
+  'hljs-addition': {
+    'color': '#d88'
+  },
+  'hljs-variable': {
     'color': '#d88'
   },
   'hljs-template-tag': {
@@ -58,18 +70,10 @@ export const dark = {
   'hljs-template-variable': {
     'color': '#d88'
   },
-  'hljs-title': {
-    'color': '#d88',
-    'fontWeight': '700'
-  },
-  'hljs-type': {
-    'color': '#d88',
-    'fontWeight': '700'
-  },
-  'hljs-variable': {
-    'color': '#d88'
-  },
   'hljs-comment': {
+    'color': '#979797'
+  },
+  'hljs-quote': {
     'color': '#979797'
   },
   'hljs-deletion': {
@@ -78,14 +82,11 @@ export const dark = {
   'hljs-meta': {
     'color': '#979797'
   },
-  'hljs-quote': {
-    'color': '#979797'
-  },
   'hljs-doctag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'

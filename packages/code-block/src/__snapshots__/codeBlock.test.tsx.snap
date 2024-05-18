@@ -25,7 +25,7 @@ exports[`<CodeBlock /> should match snapshot 1`] = `
         </i>
       </button>
       <pre
-        class="css-73wurh-SyntaxHighlighter"
+        class="css-1qg9ou7-SyntaxHighlighter"
       >
         <code
           class="language-javascript css-dytyo9-SyntaxHighlighter"
@@ -47,7 +47,7 @@ exports[`<CodeBlock /> should match snapshot 1`] = `
           </span>
           <span
             class="hljs-title function_ css-g89m8z-Box"
-            style="color: rgb(136, 0, 0); font-weight: 700;"
+            style="color: rgb(136, 0, 0); font-weight: bold;"
           >
             <span>
               log
@@ -102,7 +102,7 @@ exports[`<CodeBlock /> should render a footer 1`] = `
         </i>
       </button>
       <pre
-        class="css-73wurh-SyntaxHighlighter"
+        class="css-1qg9ou7-SyntaxHighlighter"
       >
         <code
           class="css-dytyo9-SyntaxHighlighter"

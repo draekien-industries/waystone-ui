@@ -9,10 +9,10 @@ export const xcode = {
   },
   'hljs': {
     'background': '#fff',
-    'color': '#000'
+    'color': 'black'
   },
   'xml .hljs-meta': {
-    'color': 'silver'
+    'color': '#c0c0c0'
   },
   'hljs-comment': {
     'color': '#007400'
@@ -20,10 +20,16 @@ export const xcode = {
   'hljs-quote': {
     'color': '#007400'
   },
+  'hljs-tag': {
+    'color': '#aa0d91'
+  },
   'hljs-attribute': {
     'color': '#aa0d91'
   },
   'hljs-keyword': {
+    'color': '#aa0d91'
+  },
+  'hljs-selector-tag': {
     'color': '#aa0d91'
   },
   'hljs-literal': {
@@ -32,32 +38,32 @@ export const xcode = {
   'hljs-name': {
     'color': '#aa0d91'
   },
-  'hljs-selector-tag': {
-    'color': '#aa0d91'
-  },
-  'hljs-tag': {
-    'color': '#aa0d91'
+  'hljs-variable': {
+    'color': '#3F6E74'
   },
   'hljs-template-variable': {
-    'color': '#3f6e74'
-  },
-  'hljs-variable': {
-    'color': '#3f6e74'
+    'color': '#3F6E74'
   },
   'hljs-code': {
-    'color': '#c41a16'
-  },
-  'hljs-meta .hljs-string': {
     'color': '#c41a16'
   },
   'hljs-string': {
     'color': '#c41a16'
   },
-  'hljs-link': {
-    'color': '#0e0eff'
+  'hljs-meta .hljs-string': {
+    'color': '#c41a16'
   },
   'hljs-regexp': {
-    'color': '#0e0eff'
+    'color': '#0E0EFF'
+  },
+  'hljs-link': {
+    'color': '#0E0EFF'
+  },
+  'hljs-title': {
+    'color': '#1c00cf'
+  },
+  'hljs-symbol': {
+    'color': '#1c00cf'
   },
   'hljs-bullet': {
     'color': '#1c00cf'
@@ -65,35 +71,29 @@ export const xcode = {
   'hljs-number': {
     'color': '#1c00cf'
   },
-  'hljs-symbol': {
-    'color': '#1c00cf'
-  },
-  'hljs-title': {
-    'color': '#1c00cf'
+  'hljs-section': {
+    'color': '#643820'
   },
   'hljs-meta': {
     'color': '#643820'
   },
-  'hljs-section': {
-    'color': '#643820'
-  },
-  'hljs-built_in': {
+  'hljs-title.class_': {
     'color': '#5c2699'
   },
   'hljs-class .hljs-title': {
     'color': '#5c2699'
   },
-  'hljs-params': {
-    'color': '#5c2699'
-  },
-  'hljs-title.class_': {
-    'color': '#5c2699'
-  },
   'hljs-type': {
     'color': '#5c2699'
   },
+  'hljs-built_in': {
+    'color': '#5c2699'
+  },
+  'hljs-params': {
+    'color': '#5c2699'
+  },
   'hljs-attr': {
-    'color': '#836c28'
+    'color': '#836C28'
   },
   'hljs-subst': {
     'color': '#000'
@@ -108,17 +108,17 @@ export const xcode = {
   'hljs-deletion': {
     'backgroundColor': '#ffc8bd'
   },
-  'hljs-selector-class': {
-    'color': '#9b703f'
-  },
   'hljs-selector-id': {
     'color': '#9b703f'
   },
+  'hljs-selector-class': {
+    'color': '#9b703f'
+  },
   'hljs-doctag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'

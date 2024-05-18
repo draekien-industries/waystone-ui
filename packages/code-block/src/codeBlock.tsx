@@ -1,17 +1,17 @@
 'use client';
 
-import {
-  type SupportedLanguage,
-  type StyleName,
-  SyntaxHighlighter,
-} from '@waystone/syntax-highlighter';
-import { Icon } from '@waystone/icon';
+import { alpha } from '@theme-ui/color';
 import { Card } from '@waystone/card';
 import { cssSelectors, outlineCss } from '@waystone/css-presets';
+import { Icon } from '@waystone/icon';
+import {
+  SyntaxHighlighter,
+  type SyntaxHighlightStyle as StyleName,
+  type SupportedLanguage,
+} from '@waystone/syntax-highlighter';
 import type { TestIdAttributes } from '@waystone/types';
 import { useState, type ReactNode } from 'react';
 import { Box, type ThemeUICSSObject } from 'theme-ui';
-import { alpha } from '@theme-ui/color';
 
 export type CodeBlockProps = {
   code: string;

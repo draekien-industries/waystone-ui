@@ -1,4 +1,4 @@
-import type { StyleSheet } from '../lib';
+import type { SyntaxHighlightStyleSheet as StyleSheet } from '../lib';
 import { getClassNameCombinations } from './getClassNameCombinations';
 
 export type CreateStyleObjectOptions = {

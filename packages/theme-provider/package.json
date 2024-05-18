@@ -22,14 +22,14 @@
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.2",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "@waystone/theme": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
+    "@waystone/types": "workspace:*",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
-    "react": "^18.2.0",
-    "theme-ui": "^0.16.2",
-    "@waystone/theme": "workspace:*",
-    "@waystone/types": "workspace:*"
+    "react": "^18.3.1",
+    "theme-ui": "^0.16.2"
   }
 }

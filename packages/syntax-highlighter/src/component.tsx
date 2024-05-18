@@ -1,6 +1,9 @@
 import { CodeLine } from './components';
-import type { StyleName, SupportedLanguage } from './lib';
-import { styles } from './lib';
+import type {
+  SyntaxHighlightStyle as StyleName,
+  SupportedLanguage,
+} from './lib';
+import { SYNTAX_HIGHLIGHT_STYLESHEETS } from './lib';
 import { createCodeTree, flattenCodeTree } from './utils';
 
 export type SyntaxHighlighterProps = {
@@ -16,7 +19,7 @@ export const SyntaxHighlighter = ({
   language,
   styleName = 'defaultStyle',
 }: SyntaxHighlighterProps) => {
-  const style = styles[styleName];
+  const style = SYNTAX_HIGHLIGHT_STYLESHEETS[styleName];
   const { children: tree } = createCodeTree({ code: children, language });
   const codeTree = flattenCodeTree({ tree });
 

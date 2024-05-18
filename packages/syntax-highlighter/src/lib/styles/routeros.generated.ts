@@ -9,102 +9,102 @@ export const routeros = {
   },
   'hljs': {
     'color': '#444',
-    'background': '#f0f0f0'
+    'background': '#F0F0F0'
   },
   'hljs-subst': {
     'color': '#444'
   },
   'hljs-comment': {
-    'color': '#888'
-  },
-  'hljs-doctag': {
-    'fontWeight': '700'
+    'color': '#888888'
   },
   'hljs-keyword': {
-    'fontWeight': '700'
-  },
-  'hljs-meta .hljs-keyword': {
-    'fontWeight': '700'
-  },
-  'hljs-name': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-selector-tag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
+  },
+  'hljs-meta .hljs-keyword': {
+    'fontWeight': 'bold'
+  },
+  'hljs-doctag': {
+    'fontWeight': 'bold'
+  },
+  'hljs-name': {
+    'fontWeight': 'bold'
   },
   'hljs-attribute': {
-    'color': '#0e9a00'
+    'color': '#0E9A00'
   },
   'hljs-function': {
-    'color': '#99069a'
-  },
-  'hljs-deletion': {
-    'color': '#800'
-  },
-  'hljs-number': {
-    'color': '#800'
-  },
-  'hljs-quote': {
-    'color': '#800'
-  },
-  'hljs-selector-class': {
-    'color': '#800'
-  },
-  'hljs-selector-id': {
-    'color': '#800'
-  },
-  'hljs-string': {
-    'color': '#800'
-  },
-  'hljs-template-tag': {
-    'color': '#800'
+    'color': '#99069A'
   },
   'hljs-type': {
-    'color': '#800'
+    'color': '#880000'
   },
-  'hljs-section': {
-    'color': '#800',
-    'fontWeight': '700'
+  'hljs-string': {
+    'color': '#880000'
+  },
+  'hljs-number': {
+    'color': '#880000'
+  },
+  'hljs-selector-id': {
+    'color': '#880000'
+  },
+  'hljs-selector-class': {
+    'color': '#880000'
+  },
+  'hljs-quote': {
+    'color': '#880000'
+  },
+  'hljs-template-tag': {
+    'color': '#880000'
+  },
+  'hljs-deletion': {
+    'color': '#880000'
   },
   'hljs-title': {
-    'color': '#800',
-    'fontWeight': '700'
+    'color': '#880000',
+    'fontWeight': 'bold'
   },
-  'hljs-link': {
-    'color': '#bc6060'
+  'hljs-section': {
+    'color': '#880000',
+    'fontWeight': 'bold'
   },
   'hljs-regexp': {
-    'color': '#bc6060'
-  },
-  'hljs-selector-attr': {
-    'color': '#bc6060'
-  },
-  'hljs-selector-pseudo': {
-    'color': '#bc6060'
+    'color': '#BC6060'
   },
   'hljs-symbol': {
-    'color': '#bc6060'
-  },
-  'hljs-template-variable': {
-    'color': '#bc6060'
+    'color': '#BC6060'
   },
   'hljs-variable': {
-    'color': '#bc6060'
+    'color': '#BC6060'
+  },
+  'hljs-template-variable': {
+    'color': '#BC6060'
+  },
+  'hljs-link': {
+    'color': '#BC6060'
+  },
+  'hljs-selector-attr': {
+    'color': '#BC6060'
+  },
+  'hljs-selector-pseudo': {
+    'color': '#BC6060'
   },
   'hljs-literal': {
-    'color': '#78a960'
-  },
-  'hljs-addition': {
-    'color': '#0c9a9a'
+    'color': '#78A960'
   },
   'hljs-built_in': {
-    'color': '#0c9a9a'
+    'color': '#0C9A9A'
   },
   'hljs-bullet': {
-    'color': '#0c9a9a'
+    'color': '#0C9A9A'
   },
   'hljs-code': {
-    'color': '#0c9a9a'
+    'color': '#0C9A9A'
+  },
+  'hljs-addition': {
+    'color': '#0C9A9A'
   },
   'hljs-meta': {
     'color': '#1f7199'
@@ -116,6 +116,6 @@ export const routeros = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

@@ -8,117 +8,117 @@ export const qtcreatorLight = {
     'padding': '3px 5px'
   },
   'hljs': {
-    'color': '#000',
-    'background': '#fff'
-  },
-  'hljs-emphasis': {
-    'color': '#000',
-    'fontStyle': 'italic'
+    'color': '#000000',
+    'background': '#ffffff'
   },
   'hljs-strong': {
-    'color': '#000'
+    'color': '#000000'
+  },
+  'hljs-emphasis': {
+    'color': '#000000',
+    'fontStyle': 'italic'
   },
   'hljs-bullet': {
-    'color': 'navy'
-  },
-  'hljs-literal': {
-    'color': 'navy'
-  },
-  'hljs-number': {
-    'color': 'navy'
+    'color': '#000080'
   },
   'hljs-quote': {
-    'color': 'navy'
+    'color': '#000080'
+  },
+  'hljs-number': {
+    'color': '#000080'
   },
   'hljs-regexp': {
-    'color': 'navy'
+    'color': '#000080'
   },
-  'hljs-code .hljs-selector-class': {
-    'color': 'purple'
+  'hljs-literal': {
+    'color': '#000080'
+  },
+  'hljs-code\n.hljs-selector-class': {
+    'color': '#800080'
   },
   'hljs-stronge': {
     'fontStyle': 'italic'
   },
   'hljs-type': {
     'fontStyle': 'italic',
-    'color': 'green'
-  },
-  'hljs-function': {
-    'color': 'olive'
+    'color': '#008000'
   },
   'hljs-keyword': {
-    'color': 'olive'
-  },
-  'hljs-name': {
-    'color': 'olive'
-  },
-  'hljs-section': {
-    'color': 'olive'
+    'color': '#808000'
   },
   'hljs-selector-tag': {
-    'color': 'olive'
+    'color': '#808000'
+  },
+  'hljs-function': {
+    'color': '#808000'
+  },
+  'hljs-section': {
+    'color': '#808000'
   },
   'hljs-symbol': {
-    'color': 'olive'
+    'color': '#808000'
+  },
+  'hljs-name': {
+    'color': '#808000'
   },
   'hljs-subst': {
-    'color': '#000'
+    'color': '#000000'
   },
   'hljs-tag': {
-    'color': '#000'
+    'color': '#000000'
   },
   'hljs-title': {
-    'color': '#000'
+    'color': '#000000'
   },
   'hljs-attribute': {
-    'color': 'maroon'
-  },
-  'hljs-class .hljs-title': {
-    'color': '#0055af'
-  },
-  'hljs-params': {
-    'color': '#0055af'
-  },
-  'hljs-title.class_': {
-    'color': '#0055af'
+    'color': '#800000'
   },
   'hljs-variable': {
-    'color': '#0055af'
+    'color': '#0055AF'
   },
-  'hljs-addition': {
-    'color': 'green'
+  'hljs-params': {
+    'color': '#0055AF'
   },
-  'hljs-built_in': {
-    'color': 'green'
+  'hljs-title.class_': {
+    'color': '#0055AF'
   },
-  'hljs-comment': {
-    'color': 'green'
-  },
-  'hljs-deletion': {
-    'color': 'green'
-  },
-  'hljs-link': {
-    'color': 'green'
-  },
-  'hljs-meta': {
-    'color': 'green'
-  },
-  'hljs-selector-attr': {
-    'color': 'green'
-  },
-  'hljs-selector-id': {
-    'color': 'green'
-  },
-  'hljs-selector-pseudo': {
-    'color': 'green'
+  'hljs-class .hljs-title': {
+    'color': '#0055AF'
   },
   'hljs-string': {
-    'color': 'green'
+    'color': '#008000'
+  },
+  'hljs-selector-id': {
+    'color': '#008000'
+  },
+  'hljs-selector-attr': {
+    'color': '#008000'
+  },
+  'hljs-selector-pseudo': {
+    'color': '#008000'
+  },
+  'hljs-built_in': {
+    'color': '#008000'
   },
   'hljs-template-tag': {
-    'color': 'green'
+    'color': '#008000'
   },
   'hljs-template-variable': {
-    'color': 'green'
+    'color': '#008000'
+  },
+  'hljs-addition': {
+    'color': '#008000'
+  },
+  'hljs-link': {
+    'color': '#008000'
+  },
+  'hljs-comment': {
+    'color': '#008000'
+  },
+  'hljs-meta': {
+    'color': '#008000'
+  },
+  'hljs-deletion': {
+    'color': '#008000'
   }
 }

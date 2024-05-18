@@ -11,34 +11,34 @@ export const monoBlue = {
     'background': '#eaeef3',
     'color': '#00193a'
   },
-  'hljs-doctag': {
-    'fontWeight': '700'
-  },
   'hljs-keyword': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
-  'hljs-name': {
-    'fontWeight': '700',
+  'hljs-selector-tag': {
+    'fontWeight': 'bold'
+  },
+  'hljs-title': {
+    'fontWeight': 'bold',
     'color': '#0048ab'
   },
   'hljs-section': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
     'color': '#0048ab'
   },
-  'hljs-selector-tag': {
-    'fontWeight': '700'
+  'hljs-doctag': {
+    'fontWeight': 'bold'
+  },
+  'hljs-name': {
+    'fontWeight': 'bold',
+    'color': '#0048ab'
   },
   'hljs-strong': {
-    'fontWeight': '700'
-  },
-  'hljs-title': {
-    'fontWeight': '700',
-    'color': '#0048ab'
+    'fontWeight': 'bold'
   },
   'hljs-comment': {
     'color': '#738191'
   },
-  'hljs-addition': {
+  'hljs-string': {
     'color': '#0048ab'
   },
   'hljs-built_in': {
@@ -47,40 +47,25 @@ export const monoBlue = {
   'hljs-literal': {
     'color': '#0048ab'
   },
-  'hljs-quote': {
+  'hljs-type': {
     'color': '#0048ab'
   },
-  'hljs-selector-class': {
-    'color': '#0048ab'
-  },
-  'hljs-selector-id': {
-    'color': '#0048ab'
-  },
-  'hljs-string': {
+  'hljs-addition': {
     'color': '#0048ab'
   },
   'hljs-tag': {
     'color': '#0048ab'
   },
-  'hljs-type': {
+  'hljs-quote': {
     'color': '#0048ab'
   },
-  'hljs-attribute': {
-    'color': '#4c81c9'
+  'hljs-selector-id': {
+    'color': '#0048ab'
   },
-  'hljs-bullet': {
-    'color': '#4c81c9'
-  },
-  'hljs-deletion': {
-    'color': '#4c81c9'
-  },
-  'hljs-link': {
-    'color': '#4c81c9'
+  'hljs-selector-class': {
+    'color': '#0048ab'
   },
   'hljs-meta': {
-    'color': '#4c81c9'
-  },
-  'hljs-regexp': {
     'color': '#4c81c9'
   },
   'hljs-subst': {
@@ -89,10 +74,25 @@ export const monoBlue = {
   'hljs-symbol': {
     'color': '#4c81c9'
   },
-  'hljs-template-variable': {
+  'hljs-regexp': {
+    'color': '#4c81c9'
+  },
+  'hljs-attribute': {
+    'color': '#4c81c9'
+  },
+  'hljs-deletion': {
     'color': '#4c81c9'
   },
   'hljs-variable': {
+    'color': '#4c81c9'
+  },
+  'hljs-template-variable': {
+    'color': '#4c81c9'
+  },
+  'hljs-link': {
+    'color': '#4c81c9'
+  },
+  'hljs-bullet': {
     'color': '#4c81c9'
   },
   'hljs-emphasis': {

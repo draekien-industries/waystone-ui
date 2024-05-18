@@ -9,7 +9,7 @@ export const pojoaque = {
   },
   'hljs': {
     'color': '#dccf8f',
-    'background': 'url(./pojoaque.jpg) left top #181914'
+    'background': 'url(./pojoaque.jpg) repeat scroll left top #181914'
   },
   'hljs-comment': {
     'color': '#586e75',
@@ -19,29 +19,35 @@ export const pojoaque = {
     'color': '#586e75',
     'fontStyle': 'italic'
   },
-  'hljs-addition': {
-    'color': '#b64926'
-  },
   'hljs-keyword': {
-    'color': '#b64926'
-  },
-  'hljs-literal': {
     'color': '#b64926'
   },
   'hljs-selector-tag': {
     'color': '#b64926'
   },
-  'hljs-doctag': {
-    'color': '#468966'
+  'hljs-literal': {
+    'color': '#b64926'
+  },
+  'hljs-addition': {
+    'color': '#b64926'
   },
   'hljs-number': {
+    'color': '#468966'
+  },
+  'hljs-string': {
+    'color': '#468966'
+  },
+  'hljs-doctag': {
     'color': '#468966'
   },
   'hljs-regexp': {
     'color': '#468966'
   },
-  'hljs-string': {
-    'color': '#468966'
+  'hljs-title': {
+    'color': '#ffb03b'
+  },
+  'hljs-section': {
+    'color': '#ffb03b'
   },
   'hljs-built_in': {
     'color': '#ffb03b'
@@ -49,16 +55,7 @@ export const pojoaque = {
   'hljs-name': {
     'color': '#ffb03b'
   },
-  'hljs-section': {
-    'color': '#ffb03b'
-  },
-  'hljs-title': {
-    'color': '#ffb03b'
-  },
-  'hljs-class .hljs-title': {
-    'color': '#b58900'
-  },
-  'hljs-tag': {
+  'hljs-variable': {
     'color': '#b58900'
   },
   'hljs-template-variable': {
@@ -67,14 +64,20 @@ export const pojoaque = {
   'hljs-title.class_': {
     'color': '#b58900'
   },
+  'hljs-class .hljs-title': {
+    'color': '#b58900'
+  },
   'hljs-type': {
     'color': '#b58900'
   },
-  'hljs-variable': {
+  'hljs-tag': {
     'color': '#b58900'
   },
   'hljs-attribute': {
     'color': '#b89859'
+  },
+  'hljs-symbol': {
+    'color': '#cb4b16'
   },
   'hljs-bullet': {
     'color': '#cb4b16'
@@ -82,22 +85,19 @@ export const pojoaque = {
   'hljs-link': {
     'color': '#cb4b16'
   },
-  'hljs-meta': {
-    'color': '#cb4b16'
-  },
   'hljs-subst': {
     'color': '#cb4b16'
   },
-  'hljs-symbol': {
+  'hljs-meta': {
     'color': '#cb4b16'
   },
   'hljs-deletion': {
     'color': '#dc322f'
   },
-  'hljs-selector-class': {
+  'hljs-selector-id': {
     'color': '#d3a60c'
   },
-  'hljs-selector-id': {
+  'hljs-selector-class': {
     'color': '#d3a60c'
   },
   'hljs-formula': {
@@ -107,6 +107,6 @@ export const pojoaque = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

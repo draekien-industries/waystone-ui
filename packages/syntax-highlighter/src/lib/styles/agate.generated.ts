@@ -12,16 +12,16 @@ export const agate = {
     'color': '#fff'
   },
   'hljs-doctag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-meta-keyword': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-name': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-code': {
     'fontStyle': 'italic',
@@ -108,10 +108,10 @@ export const agate = {
   'hljs-link': {
     'color': '#c6b4f0'
   },
-  'hljs-regexp': {
+  'hljs-selector-pseudo': {
     'color': '#c6b4f0'
   },
-  'hljs-selector-pseudo': {
+  'hljs-regexp': {
     'color': '#c6b4f0'
   },
   'hljs-meta': {
@@ -125,6 +125,10 @@ export const agate = {
     'background': '#a2fca2',
     'color': '#333'
   },
+  'hljs-operator': {},
+  'hljs-params': {},
+  'hljs-property': {},
+  'hljs-punctuation': {},
   'hljs-subst': {
     'color': '#fff'
   },

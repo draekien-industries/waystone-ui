@@ -17,70 +17,70 @@ export const paraisoDark = {
   'hljs-quote': {
     'color': '#8d8687'
   },
+  'hljs-variable': {
+    'color': '#ef6155'
+  },
+  'hljs-template-variable': {
+    'color': '#ef6155'
+  },
+  'hljs-tag': {
+    'color': '#ef6155'
+  },
+  'hljs-name': {
+    'color': '#ef6155'
+  },
+  'hljs-selector-id': {
+    'color': '#ef6155'
+  },
+  'hljs-selector-class': {
+    'color': '#ef6155'
+  },
+  'hljs-regexp': {
+    'color': '#ef6155'
+  },
   'hljs-link': {
     'color': '#ef6155'
   },
   'hljs-meta': {
     'color': '#ef6155'
   },
-  'hljs-name': {
-    'color': '#ef6155'
-  },
-  'hljs-regexp': {
-    'color': '#ef6155'
-  },
-  'hljs-selector-class': {
-    'color': '#ef6155'
-  },
-  'hljs-selector-id': {
-    'color': '#ef6155'
-  },
-  'hljs-tag': {
-    'color': '#ef6155'
-  },
-  'hljs-template-variable': {
-    'color': '#ef6155'
-  },
-  'hljs-variable': {
-    'color': '#ef6155'
-  },
-  'hljs-built_in': {
+  'hljs-number': {
     'color': '#f99b15'
   },
-  'hljs-deletion': {
+  'hljs-built_in': {
     'color': '#f99b15'
   },
   'hljs-literal': {
     'color': '#f99b15'
   },
-  'hljs-number': {
+  'hljs-type': {
     'color': '#f99b15'
   },
   'hljs-params': {
     'color': '#f99b15'
   },
-  'hljs-type': {
+  'hljs-deletion': {
     'color': '#f99b15'
   },
-  'hljs-attribute': {
+  'hljs-title': {
     'color': '#fec418'
   },
   'hljs-section': {
     'color': '#fec418'
   },
-  'hljs-title': {
+  'hljs-attribute': {
     'color': '#fec418'
-  },
-  'hljs-addition': {
-    'color': '#48b685'
-  },
-  'hljs-bullet': {
-    'color': '#48b685'
   },
   'hljs-string': {
     'color': '#48b685'
   },
   'hljs-symbol': {
+    'color': '#48b685'
+  },
+  'hljs-bullet': {
+    'color': '#48b685'
+  },
+  'hljs-addition': {
     'color': '#48b685'
   },
   'hljs-keyword': {
@@ -93,6 +93,6 @@ export const paraisoDark = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

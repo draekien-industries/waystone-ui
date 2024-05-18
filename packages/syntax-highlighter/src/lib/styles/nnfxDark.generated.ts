@@ -12,12 +12,12 @@ export const nnfxDark = {
     'color': '#fff'
   },
   'language-xml .hljs-meta': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
     'fontStyle': 'italic',
     'color': '#69f'
   },
   'language-xml .hljs-meta-string': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
     'fontStyle': 'italic',
     'color': '#69f'
   },
@@ -29,28 +29,25 @@ export const nnfxDark = {
     'fontStyle': 'italic',
     'color': '#9c6'
   },
-  'hljs-built_in': {
-    'color': '#a7a'
+  'hljs-name': {
+    'color': '#a7a',
+    'fontWeight': 'bold'
   },
   'hljs-keyword': {
     'color': '#a7a'
   },
-  'hljs-name': {
-    'color': '#a7a',
-    'fontWeight': '700'
+  'hljs-built_in': {
+    'color': '#a7a'
   },
   'hljs-attr': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
     'color': '#fff'
   },
   'hljs-string': {
-    'fontWeight': '400',
+    'fontWeight': 'normal',
     'color': '#bce'
   },
   'hljs-code': {
-    'color': '#bce'
-  },
-  'hljs-link': {
     'color': '#bce'
   },
   'hljs-meta .hljs-string': {
@@ -62,32 +59,38 @@ export const nnfxDark = {
   'hljs-regexp': {
     'color': '#bce'
   },
-  'hljs-bullet': {
+  'hljs-link': {
+    'color': '#bce'
+  },
+  'hljs-title': {
     'color': '#d40'
   },
   'hljs-symbol': {
     'color': '#d40'
   },
-  'hljs-template-variable': {
-    'color': '#d40'
-  },
-  'hljs-title': {
+  'hljs-bullet': {
     'color': '#d40'
   },
   'hljs-variable': {
     'color': '#d40'
   },
-  'hljs-class .hljs-title': {
-    'fontWeight': '700',
-    'color': '#96c'
+  'hljs-template-variable': {
+    'color': '#d40'
   },
   'hljs-title.class_': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
+    'color': '#96c'
+  },
+  'hljs-class .hljs-title': {
+    'fontWeight': 'bold',
     'color': '#96c'
   },
   'hljs-type': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
     'color': '#96c'
+  },
+  'hljs-title.function_': {
+    'color': '#fff'
   },
   'hljs-function .hljs-title': {
     'color': '#fff'
@@ -96,9 +99,6 @@ export const nnfxDark = {
     'color': '#fff'
   },
   'hljs-tag': {
-    'color': '#fff'
-  },
-  'hljs-title.function_': {
     'color': '#fff'
   },
   'hljs-formula': {
@@ -115,31 +115,31 @@ export const nnfxDark = {
     'color': '#69f'
   },
   'hljs-section': {
-    'fontWeight': '700',
-    'color': '#69f'
-  },
-  'hljs-selector-class': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
     'color': '#69f'
   },
   'hljs-selector-id': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
+    'color': '#69f'
+  },
+  'hljs-selector-class': {
+    'fontWeight': 'bold',
     'color': '#69f'
   },
   'hljs-selector-pseudo': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
     'color': '#69f',
     'fontStyle': 'italic'
   },
   'hljs-selector-tag': {
-    'fontWeight': '700',
+    'fontWeight': 'bold',
     'color': '#69f'
   },
   'hljs-doctag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'

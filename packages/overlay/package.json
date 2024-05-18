@@ -21,16 +21,16 @@
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
     "@theme-ui/color": "^0.16.2",
-    "@testing-library/jest-dom": "^6.4.2",
+    "@waystone/css-presets": "workspace:*",
     "@waystone/testing-library": "workspace:*",
-    "@waystone/tsconfig": "workspace:*",
     "@waystone/theme": "workspace:*",
+    "@waystone/tsconfig": "workspace:*",
     "@waystone/types": "workspace:*",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
-    "react": "^18.2.0",
-    "theme-ui": "^0.16.2",
-    "@waystone/css-presets": "workspace:*"
+    "react": "^18.3.1",
+    "theme-ui": "^0.16.2"
   }
 }

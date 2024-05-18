@@ -8,95 +8,95 @@ export const vs2015 = {
     'padding': '3px 5px'
   },
   'hljs': {
-    'background': '#1e1e1e',
-    'color': '#dcdcdc'
+    'background': '#1E1E1E',
+    'color': '#DCDCDC'
   },
   'hljs-keyword': {
-    'color': '#569cd6'
+    'color': '#569CD6'
   },
   'hljs-literal': {
-    'color': '#569cd6'
-  },
-  'hljs-name': {
-    'color': '#569cd6'
+    'color': '#569CD6'
   },
   'hljs-symbol': {
-    'color': '#569cd6'
+    'color': '#569CD6'
+  },
+  'hljs-name': {
+    'color': '#569CD6'
   },
   'hljs-link': {
-    'color': '#569cd6',
+    'color': '#569CD6',
     'textDecoration': 'underline'
   },
   'hljs-built_in': {
-    'color': '#4ec9b0'
+    'color': '#4EC9B0'
   },
   'hljs-type': {
-    'color': '#4ec9b0'
-  },
-  'hljs-class': {
-    'color': '#b8d7a3'
+    'color': '#4EC9B0'
   },
   'hljs-number': {
-    'color': '#b8d7a3'
+    'color': '#B8D7A3'
   },
-  'hljs-meta .hljs-string': {
-    'color': '#d69d85'
+  'hljs-class': {
+    'color': '#B8D7A3'
   },
   'hljs-string': {
-    'color': '#d69d85'
+    'color': '#D69D85'
+  },
+  'hljs-meta .hljs-string': {
+    'color': '#D69D85'
   },
   'hljs-regexp': {
-    'color': '#9a5334'
+    'color': '#9A5334'
   },
   'hljs-template-tag': {
-    'color': '#9a5334'
-  },
-  'hljs-formula': {
-    'color': '#dcdcdc'
-  },
-  'hljs-function': {
-    'color': '#dcdcdc'
-  },
-  'hljs-params': {
-    'color': '#dcdcdc'
+    'color': '#9A5334'
   },
   'hljs-subst': {
-    'color': '#dcdcdc'
+    'color': '#DCDCDC'
+  },
+  'hljs-function': {
+    'color': '#DCDCDC'
   },
   'hljs-title': {
-    'color': '#dcdcdc'
+    'color': '#DCDCDC'
+  },
+  'hljs-params': {
+    'color': '#DCDCDC'
+  },
+  'hljs-formula': {
+    'color': '#DCDCDC'
   },
   'hljs-comment': {
-    'color': '#57a64a',
+    'color': '#57A64A',
     'fontStyle': 'italic'
   },
   'hljs-quote': {
-    'color': '#57a64a',
+    'color': '#57A64A',
     'fontStyle': 'italic'
   },
   'hljs-doctag': {
-    'color': '#608b4e'
+    'color': '#608B4E'
   },
   'hljs-meta': {
-    'color': '#9b9b9b'
+    'color': '#9B9B9B'
   },
   'hljs-meta .hljs-keyword': {
-    'color': '#9b9b9b'
+    'color': '#9B9B9B'
   },
   'hljs-tag': {
-    'color': '#9b9b9b'
-  },
-  'hljs-template-variable': {
-    'color': '#bd63c5'
+    'color': '#9B9B9B'
   },
   'hljs-variable': {
-    'color': '#bd63c5'
+    'color': '#BD63C5'
+  },
+  'hljs-template-variable': {
+    'color': '#BD63C5'
   },
   'hljs-attr': {
-    'color': '#9cdcfe'
+    'color': '#9CDCFE'
   },
   'hljs-attribute': {
-    'color': '#9cdcfe'
+    'color': '#9CDCFE'
   },
   'hljs-section': {
     'color': 'gold'
@@ -105,25 +105,25 @@ export const vs2015 = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-bullet': {
-    'color': '#d7ba7d'
-  },
-  'hljs-selector-attr': {
-    'color': '#d7ba7d'
-  },
-  'hljs-selector-class': {
-    'color': '#d7ba7d'
-  },
-  'hljs-selector-id': {
-    'color': '#d7ba7d'
-  },
-  'hljs-selector-pseudo': {
-    'color': '#d7ba7d'
+    'color': '#D7BA7D'
   },
   'hljs-selector-tag': {
-    'color': '#d7ba7d'
+    'color': '#D7BA7D'
+  },
+  'hljs-selector-id': {
+    'color': '#D7BA7D'
+  },
+  'hljs-selector-class': {
+    'color': '#D7BA7D'
+  },
+  'hljs-selector-attr': {
+    'color': '#D7BA7D'
+  },
+  'hljs-selector-pseudo': {
+    'color': '#D7BA7D'
   },
   'hljs-addition': {
     'backgroundColor': '#144212',

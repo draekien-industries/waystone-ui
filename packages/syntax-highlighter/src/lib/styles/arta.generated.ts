@@ -16,85 +16,85 @@ export const arta = {
   },
   'hljs-section': {
     'color': '#fff',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-comment': {
-    'color': '#444'
-  },
-  'hljs-meta': {
     'color': '#444'
   },
   'hljs-quote': {
     'color': '#444'
   },
-  'hljs-bullet': {
-    'color': '#fc3'
-  },
-  'hljs-regexp': {
-    'color': '#fc3'
+  'hljs-meta': {
+    'color': '#444'
   },
   'hljs-string': {
-    'color': '#fc3'
+    'color': '#ffcc33'
   },
   'hljs-symbol': {
-    'color': '#fc3'
+    'color': '#ffcc33'
   },
-  'hljs-addition': {
-    'color': '#0c6'
+  'hljs-bullet': {
+    'color': '#ffcc33'
+  },
+  'hljs-regexp': {
+    'color': '#ffcc33'
   },
   'hljs-number': {
-    'color': '#0c6'
+    'color': '#00cc66'
   },
-  'hljs-attribute': {
-    'color': '#32aaee'
+  'hljs-addition': {
+    'color': '#00cc66'
   },
   'hljs-built_in': {
-    'color': '#32aaee'
-  },
-  'hljs-link': {
     'color': '#32aaee'
   },
   'hljs-literal': {
     'color': '#32aaee'
   },
-  'hljs-template-variable': {
-    'color': '#32aaee'
-  },
   'hljs-type': {
     'color': '#32aaee'
   },
+  'hljs-template-variable': {
+    'color': '#32aaee'
+  },
+  'hljs-attribute': {
+    'color': '#32aaee'
+  },
+  'hljs-link': {
+    'color': '#32aaee'
+  },
   'hljs-keyword': {
-    'color': '#64a'
-  },
-  'hljs-name': {
-    'color': '#64a'
-  },
-  'hljs-selector-class': {
-    'color': '#64a'
-  },
-  'hljs-selector-id': {
-    'color': '#64a'
+    'color': '#6644aa'
   },
   'hljs-selector-tag': {
-    'color': '#64a'
+    'color': '#6644aa'
   },
-  'hljs-deletion': {
-    'color': '#b16'
+  'hljs-name': {
+    'color': '#6644aa'
   },
-  'hljs-template-tag': {
-    'color': '#b16'
+  'hljs-selector-id': {
+    'color': '#6644aa'
+  },
+  'hljs-selector-class': {
+    'color': '#6644aa'
   },
   'hljs-title': {
-    'color': '#b16'
+    'color': '#bb1166'
   },
   'hljs-variable': {
-    'color': '#b16'
+    'color': '#bb1166'
+  },
+  'hljs-deletion': {
+    'color': '#bb1166'
+  },
+  'hljs-template-tag': {
+    'color': '#bb1166'
   },
   'hljs-doctag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'

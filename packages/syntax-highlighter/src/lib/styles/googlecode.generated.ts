@@ -8,8 +8,8 @@ export const googlecode = {
     'padding': '3px 5px'
   },
   'hljs': {
-    'background': '#fff',
-    'color': '#000'
+    'background': 'white',
+    'color': 'black'
   },
   'hljs-comment': {
     'color': '#800'
@@ -20,25 +20,25 @@ export const googlecode = {
   'hljs-keyword': {
     'color': '#008'
   },
-  'hljs-name': {
+  'hljs-selector-tag': {
     'color': '#008'
   },
   'hljs-section': {
     'color': '#008'
   },
-  'hljs-selector-tag': {
-    'color': '#008'
-  },
   'hljs-title': {
     'color': '#606'
   },
-  'hljs-template-variable': {
-    'color': '#660'
+  'hljs-name': {
+    'color': '#008'
   },
   'hljs-variable': {
     'color': '#660'
   },
-  'hljs-regexp': {
+  'hljs-template-variable': {
+    'color': '#660'
+  },
+  'hljs-string': {
     'color': '#080'
   },
   'hljs-selector-attr': {
@@ -47,16 +47,16 @@ export const googlecode = {
   'hljs-selector-pseudo': {
     'color': '#080'
   },
-  'hljs-string': {
+  'hljs-regexp': {
     'color': '#080'
   },
-  'hljs-bullet': {
-    'color': '#066'
-  },
-  'hljs-link': {
-    'color': '#066'
-  },
   'hljs-literal': {
+    'color': '#066'
+  },
+  'hljs-symbol': {
+    'color': '#066'
+  },
+  'hljs-bullet': {
     'color': '#066'
   },
   'hljs-meta': {
@@ -65,8 +65,15 @@ export const googlecode = {
   'hljs-number': {
     'color': '#066'
   },
-  'hljs-symbol': {
+  'hljs-link': {
     'color': '#066'
+  },
+  'hljs-doctag': {
+    'color': '#606',
+    'fontWeight': 'bold'
+  },
+  'hljs-type': {
+    'color': '#606'
   },
   'hljs-attr': {
     'color': '#606'
@@ -74,14 +81,7 @@ export const googlecode = {
   'hljs-built_in': {
     'color': '#606'
   },
-  'hljs-doctag': {
-    'color': '#606',
-    'fontWeight': '700'
-  },
   'hljs-params': {
-    'color': '#606'
-  },
-  'hljs-type': {
     'color': '#606'
   },
   'hljs-attribute': {
@@ -94,11 +94,11 @@ export const googlecode = {
     'backgroundColor': '#eee',
     'fontStyle': 'italic'
   },
-  'hljs-selector-class': {
-    'color': '#9b703f'
-  },
   'hljs-selector-id': {
-    'color': '#9b703f'
+    'color': '#9B703F'
+  },
+  'hljs-selector-class': {
+    'color': '#9B703F'
   },
   'hljs-addition': {
     'backgroundColor': '#baeeba'
@@ -107,7 +107,7 @@ export const googlecode = {
     'backgroundColor': '#ffc8bd'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'

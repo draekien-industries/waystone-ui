@@ -26,7 +26,7 @@ export const nightOwl = {
     'color': '#ff5874'
   },
   'hljs-number': {
-    'color': '#f78c6c'
+    'color': '#F78C6C'
   },
   'hljs-regexp': {
     'color': '#5ca7e4'
@@ -44,10 +44,10 @@ export const nightOwl = {
     'color': '#ffcb8b'
   },
   'hljs-function': {
-    'color': '#82aaff'
+    'color': '#82AAFF'
   },
   'hljs-title': {
-    'color': '#dcdcaa',
+    'color': '#DCDCAA',
     'fontStyle': 'italic'
   },
   'hljs-params': {
@@ -72,13 +72,13 @@ export const nightOwl = {
   'hljs-section': {
     'color': '#82b1ff'
   },
-  'hljs-attr': {
+  'hljs-tag': {
     'color': '#7fdbca'
   },
   'hljs-name': {
     'color': '#7fdbca'
   },
-  'hljs-tag': {
+  'hljs-attr': {
     'color': '#7fdbca'
   },
   'hljs-attribute': {
@@ -91,7 +91,7 @@ export const nightOwl = {
     'color': '#d9f5dd'
   },
   'hljs-code': {
-    'color': '#80cbc4'
+    'color': '#80CBC4'
   },
   'hljs-emphasis': {
     'color': '#c792ea',
@@ -99,7 +99,7 @@ export const nightOwl = {
   },
   'hljs-strong': {
     'color': '#addb67',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-formula': {
     'color': '#c792ea'
@@ -140,7 +140,7 @@ export const nightOwl = {
     'fontStyle': 'italic'
   },
   'hljs-deletion': {
-    'color': '#ef535090',
+    'color': '#EF535090',
     'fontStyle': 'italic'
   }
 }

@@ -11,22 +11,22 @@ export const hybrid = {
     'background': '#1d1f21',
     'color': '#c5c8c6'
   },
-  'hljs span::selection': {
-    'background': '#373b41'
-  },
   'hljs::selection': {
     'background': '#373b41'
   },
-  'hljs span::-moz-selection': {
+  'hljs span::selection': {
     'background': '#373b41'
   },
   'hljs::-moz-selection': {
     'background': '#373b41'
   },
-  'hljs-name': {
-    'color': '#f0c674'
+  'hljs span::-moz-selection': {
+    'background': '#373b41'
   },
   'hljs-title': {
+    'color': '#f0c674'
+  },
+  'hljs-name': {
     'color': '#f0c674'
   },
   'hljs-comment': {
@@ -38,25 +38,28 @@ export const hybrid = {
   'hljs-meta .hljs-keyword': {
     'color': '#707880'
   },
-  'hljs-deletion': {
-    'color': '#c66'
-  },
-  'hljs-link': {
-    'color': '#c66'
-  },
-  'hljs-literal': {
-    'color': '#c66'
-  },
   'hljs-number': {
-    'color': '#c66'
+    'color': '#cc6666'
   },
   'hljs-symbol': {
-    'color': '#c66'
+    'color': '#cc6666'
   },
-  'hljs-addition': {
+  'hljs-literal': {
+    'color': '#cc6666'
+  },
+  'hljs-deletion': {
+    'color': '#cc6666'
+  },
+  'hljs-link': {
+    'color': '#cc6666'
+  },
+  'hljs-string': {
     'color': '#b5bd68'
   },
   'hljs-doctag': {
+    'color': '#b5bd68'
+  },
+  'hljs-addition': {
     'color': '#b5bd68'
   },
   'hljs-regexp': {
@@ -68,9 +71,6 @@ export const hybrid = {
   'hljs-selector-pseudo': {
     'color': '#b5bd68'
   },
-  'hljs-string': {
-    'color': '#b5bd68'
-  },
   'hljs-attribute': {
     'color': '#b294bb'
   },
@@ -80,13 +80,13 @@ export const hybrid = {
   'hljs-selector-id': {
     'color': '#b294bb'
   },
-  'hljs-bullet': {
-    'color': '#81a2be'
-  },
   'hljs-keyword': {
     'color': '#81a2be'
   },
   'hljs-selector-tag': {
+    'color': '#81a2be'
+  },
+  'hljs-bullet': {
     'color': '#81a2be'
   },
   'hljs-tag': {
@@ -95,14 +95,17 @@ export const hybrid = {
   'hljs-subst': {
     'color': '#8abeb7'
   },
+  'hljs-variable': {
+    'color': '#8abeb7'
+  },
   'hljs-template-tag': {
     'color': '#8abeb7'
   },
   'hljs-template-variable': {
     'color': '#8abeb7'
   },
-  'hljs-variable': {
-    'color': '#8abeb7'
+  'hljs-type': {
+    'color': '#de935f'
   },
   'hljs-built_in': {
     'color': '#de935f'
@@ -116,13 +119,10 @@ export const hybrid = {
   'hljs-selector-class': {
     'color': '#de935f'
   },
-  'hljs-type': {
-    'color': '#de935f'
-  },
   'hljs-emphasis': {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

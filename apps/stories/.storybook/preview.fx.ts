@@ -40,10 +40,17 @@ export const createEnumArgType = ({
     table: {
       type: {
         summary,
-        detail: [
-          ...options.map((x) => `"${x}"`),
-          ...(Array.isArray(fuzzyTypes) ? fuzzyTypes : [fuzzyTypes]),
-        ].join(' | '),
+        detail:
+          options.length > 4
+            ? '| ' +
+              [
+                ...options.map((x) => `"${x}"`),
+                ...(Array.isArray(fuzzyTypes) ? fuzzyTypes : [fuzzyTypes]),
+              ].join('\n| ')
+            : [
+                ...options.map((x) => `"${x}"`),
+                ...(Array.isArray(fuzzyTypes) ? fuzzyTypes : [fuzzyTypes]),
+              ].join(' | '),
       },
     },
   }) as const satisfies InputType;

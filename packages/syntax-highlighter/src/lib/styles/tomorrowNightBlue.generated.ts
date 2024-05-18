@@ -13,59 +13,53 @@ export const tomorrowNightBlue = {
   'hljs-quote': {
     'color': '#7285b7'
   },
-  'hljs-deletion': {
-    'color': '#ff9da4'
-  },
-  'hljs-name': {
-    'color': '#ff9da4'
-  },
-  'hljs-regexp': {
-    'color': '#ff9da4'
-  },
-  'hljs-selector-class': {
-    'color': '#ff9da4'
-  },
-  'hljs-selector-id': {
-    'color': '#ff9da4'
-  },
-  'hljs-tag': {
+  'hljs-variable': {
     'color': '#ff9da4'
   },
   'hljs-template-variable': {
     'color': '#ff9da4'
   },
-  'hljs-variable': {
+  'hljs-tag': {
     'color': '#ff9da4'
   },
-  'hljs-built_in': {
+  'hljs-name': {
+    'color': '#ff9da4'
+  },
+  'hljs-selector-id': {
+    'color': '#ff9da4'
+  },
+  'hljs-selector-class': {
+    'color': '#ff9da4'
+  },
+  'hljs-regexp': {
+    'color': '#ff9da4'
+  },
+  'hljs-deletion': {
+    'color': '#ff9da4'
+  },
+  'hljs-number': {
     'color': '#ffc58f'
   },
-  'hljs-link': {
+  'hljs-built_in': {
     'color': '#ffc58f'
   },
   'hljs-literal': {
     'color': '#ffc58f'
   },
-  'hljs-meta': {
-    'color': '#ffc58f'
-  },
-  'hljs-number': {
+  'hljs-type': {
     'color': '#ffc58f'
   },
   'hljs-params': {
     'color': '#ffc58f'
   },
-  'hljs-type': {
+  'hljs-meta': {
+    'color': '#ffc58f'
+  },
+  'hljs-link': {
     'color': '#ffc58f'
   },
   'hljs-attribute': {
     'color': '#ffeead'
-  },
-  'hljs-addition': {
-    'color': '#d1f1a9'
-  },
-  'hljs-bullet': {
-    'color': '#d1f1a9'
   },
   'hljs-string': {
     'color': '#d1f1a9'
@@ -73,10 +67,16 @@ export const tomorrowNightBlue = {
   'hljs-symbol': {
     'color': '#d1f1a9'
   },
-  'hljs-section': {
-    'color': '#bbdaff'
+  'hljs-bullet': {
+    'color': '#d1f1a9'
+  },
+  'hljs-addition': {
+    'color': '#d1f1a9'
   },
   'hljs-title': {
+    'color': '#bbdaff'
+  },
+  'hljs-section': {
     'color': '#bbdaff'
   },
   'hljs-keyword': {
@@ -87,12 +87,12 @@ export const tomorrowNightBlue = {
   },
   'hljs': {
     'background': '#002451',
-    'color': '#fff'
+    'color': 'white'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

@@ -26,8 +26,7 @@
     "@waystone/syntax-highlighter": "workspace:*"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.4.2",
-    "@waystone/tsconfig": "workspace:*",
+    "@testing-library/jest-dom": "^6.4.5",
     "@waystone/anchor": "workspace:*",
     "@waystone/button": "workspace:*",
     "@waystone/button-group": "workspace:*",
@@ -44,6 +43,7 @@
     "@waystone/text": "workspace:*",
     "@waystone/theme": "workspace:*",
     "@waystone/theme-provider": "workspace:*",
+    "@waystone/tsconfig": "workspace:*",
     "@waystone/types": "workspace:*",
     "@waystone/utils": "workspace:*",
     "eslint-config-waystone": "workspace:*",

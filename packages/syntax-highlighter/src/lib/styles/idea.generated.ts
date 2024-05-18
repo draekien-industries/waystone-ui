@@ -12,78 +12,83 @@ export const idea = {
     'background': '#fff'
   },
   'hljs-subst': {
-    'fontWeight': '400',
+    'fontWeight': 'normal',
     'color': '#000'
   },
   'hljs-title': {
-    'fontWeight': '400',
+    'fontWeight': 'normal',
     'color': '#000'
   },
   'hljs-comment': {
-    'color': 'grey',
+    'color': '#808080',
     'fontStyle': 'italic'
   },
   'hljs-quote': {
-    'color': 'grey',
+    'color': '#808080',
     'fontStyle': 'italic'
   },
   'hljs-meta': {
-    'color': 'olive'
+    'color': '#808000'
   },
   'hljs-tag': {
     'background': '#efefef'
   },
-  'hljs-keyword': {
-    'fontWeight': '700',
-    'color': 'navy'
-  },
-  'hljs-literal': {
-    'fontWeight': '700',
-    'color': 'navy'
+  'hljs-section': {
+    'fontWeight': 'bold',
+    'color': '#000080'
   },
   'hljs-name': {
-    'fontWeight': '700',
-    'color': 'navy'
+    'fontWeight': 'bold',
+    'color': '#000080'
   },
-  'hljs-section': {
-    'fontWeight': '700',
-    'color': 'navy'
+  'hljs-literal': {
+    'fontWeight': 'bold',
+    'color': '#000080'
   },
-  'hljs-selector-class': {
-    'fontWeight': '700',
-    'color': 'navy'
-  },
-  'hljs-selector-id': {
-    'fontWeight': '700',
-    'color': 'navy'
+  'hljs-keyword': {
+    'fontWeight': 'bold',
+    'color': '#000080'
   },
   'hljs-selector-tag': {
-    'fontWeight': '700',
-    'color': 'navy'
+    'fontWeight': 'bold',
+    'color': '#000080'
   },
   'hljs-type': {
-    'fontWeight': '700',
-    'color': 'navy'
+    'fontWeight': 'bold',
+    'color': '#000080'
+  },
+  'hljs-selector-id': {
+    'fontWeight': 'bold',
+    'color': '#000080'
+  },
+  'hljs-selector-class': {
+    'fontWeight': 'bold',
+    'color': '#000080'
   },
   'hljs-attribute': {
-    'fontWeight': '700',
-    'color': '#00f'
-  },
-  'hljs-link': {
-    'fontWeight': '400',
-    'color': '#00f'
+    'fontWeight': 'bold',
+    'color': '#0000ff'
   },
   'hljs-number': {
-    'fontWeight': '400',
-    'color': '#00f'
+    'fontWeight': 'normal',
+    'color': '#0000ff'
   },
   'hljs-regexp': {
-    'fontWeight': '400',
-    'color': '#00f'
+    'fontWeight': 'normal',
+    'color': '#0000ff'
+  },
+  'hljs-link': {
+    'fontWeight': 'normal',
+    'color': '#0000ff'
   },
   'hljs-string': {
-    'color': 'green',
-    'fontWeight': '700'
+    'color': '#008000',
+    'fontWeight': 'bold'
+  },
+  'hljs-symbol': {
+    'color': '#000',
+    'background': '#d0eded',
+    'fontStyle': 'italic'
   },
   'hljs-bullet': {
     'color': '#000',
@@ -95,18 +100,13 @@ export const idea = {
     'background': '#d0eded',
     'fontStyle': 'italic'
   },
-  'hljs-symbol': {
-    'color': '#000',
-    'background': '#d0eded',
-    'fontStyle': 'italic'
-  },
   'hljs-doctag': {
     'textDecoration': 'underline'
   },
-  'hljs-template-variable': {
+  'hljs-variable': {
     'color': '#660e7a'
   },
-  'hljs-variable': {
+  'hljs-template-variable': {
     'color': '#660e7a'
   },
   'hljs-addition': {
@@ -119,6 +119,6 @@ export const idea = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

@@ -7,76 +7,76 @@ export const tokyoNightDark = {
   'ode.hljs': {
     'padding': '3px 5px'
   },
-  'hljs-comment': {
-    'color': '#565f89'
-  },
   'hljs-meta': {
     'color': '#565f89'
   },
-  'hljs-deletion': {
+  'hljs-comment': {
+    'color': '#565f89'
+  },
+  'hljs-tag': {
     'color': '#f7768e'
   },
   'hljs-doctag': {
     'color': '#f7768e'
   },
-  'hljs-regexp': {
-    'color': '#f7768e'
-  },
-  'hljs-selector-attr': {
+  'hljs-selector-id': {
     'color': '#f7768e'
   },
   'hljs-selector-class': {
     'color': '#f7768e'
   },
-  'hljs-selector-id': {
-    'color': '#f7768e'
-  },
-  'hljs-selector-pseudo': {
-    'color': '#f7768e'
-  },
-  'hljs-tag': {
+  'hljs-regexp': {
     'color': '#f7768e'
   },
   'hljs-template-tag': {
     'color': '#f7768e'
   },
+  'hljs-selector-pseudo': {
+    'color': '#f7768e'
+  },
+  'hljs-selector-attr': {
+    'color': '#f7768e'
+  },
   'hljs-variable.language_': {
     'color': '#f7768e'
   },
-  'hljs-link': {
-    'color': '#ff9e64'
+  'hljs-deletion': {
+    'color': '#f7768e'
   },
-  'hljs-literal': {
-    'color': '#ff9e64'
-  },
-  'hljs-number': {
-    'color': '#ff9e64'
-  },
-  'hljs-params': {
+  'hljs-variable': {
     'color': '#ff9e64'
   },
   'hljs-template-variable': {
     'color': '#ff9e64'
   },
+  'hljs-number': {
+    'color': '#ff9e64'
+  },
+  'hljs-literal': {
+    'color': '#ff9e64'
+  },
   'hljs-type': {
     'color': '#ff9e64'
   },
-  'hljs-variable': {
+  'hljs-params': {
     'color': '#ff9e64'
   },
-  'hljs-attribute': {
-    'color': '#e0af68'
+  'hljs-link': {
+    'color': '#ff9e64'
   },
   'hljs-built_in': {
     'color': '#e0af68'
   },
+  'hljs-attribute': {
+    'color': '#e0af68'
+  },
+  'hljs-selector-tag': {
+    'color': '#73daca'
+  },
   'hljs-keyword': {
     'color': '#bb9af7'
   },
-  'hljs-property': {
-    'color': '#7dcfff'
-  },
-  'hljs-subst': {
+  'hljs-title.function_': {
     'color': '#7dcfff'
   },
   'hljs-title': {
@@ -88,17 +88,11 @@ export const tokyoNightDark = {
   'hljs-title.class_.inherited__': {
     'color': '#7dcfff'
   },
-  'hljs-title.function_': {
+  'hljs-subst': {
     'color': '#7dcfff'
   },
-  'hljs-selector-tag': {
-    'color': '#73daca'
-  },
-  'hljs-addition': {
-    'color': '#9ece6a'
-  },
-  'hljs-bullet': {
-    'color': '#9ece6a'
+  'hljs-property': {
+    'color': '#7dcfff'
   },
   'hljs-quote': {
     'color': '#9ece6a'
@@ -107,6 +101,12 @@ export const tokyoNightDark = {
     'color': '#9ece6a'
   },
   'hljs-symbol': {
+    'color': '#9ece6a'
+  },
+  'hljs-bullet': {
+    'color': '#9ece6a'
+  },
+  'hljs-addition': {
     'color': '#9ece6a'
   },
   'hljs-code': {
@@ -118,16 +118,16 @@ export const tokyoNightDark = {
   'hljs-section': {
     'color': '#7aa2f7'
   },
-  'hljs-attr': {
+  'hljs-name': {
+    'color': '#bb9af7'
+  },
+  'hljs-operator': {
     'color': '#bb9af7'
   },
   'hljs-char.escape_': {
     'color': '#bb9af7'
   },
-  'hljs-name': {
-    'color': '#bb9af7'
-  },
-  'hljs-operator': {
+  'hljs-attr': {
     'color': '#bb9af7'
   },
   'hljs-punctuation': {
@@ -141,6 +141,6 @@ export const tokyoNightDark = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

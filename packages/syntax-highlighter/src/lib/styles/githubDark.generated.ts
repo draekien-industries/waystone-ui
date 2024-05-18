@@ -62,6 +62,9 @@ export const githubDark = {
   'hljs-operator': {
     'color': '#79c0ff'
   },
+  'hljs-variable': {
+    'color': '#79c0ff'
+  },
   'hljs-selector-attr': {
     'color': '#79c0ff'
   },
@@ -71,16 +74,13 @@ export const githubDark = {
   'hljs-selector-id': {
     'color': '#79c0ff'
   },
-  'hljs-variable': {
-    'color': '#79c0ff'
-  },
-  'hljs-meta .hljs-string': {
-    'color': '#a5d6ff'
-  },
   'hljs-regexp': {
     'color': '#a5d6ff'
   },
   'hljs-string': {
+    'color': '#a5d6ff'
+  },
+  'hljs-meta .hljs-string': {
     'color': '#a5d6ff'
   },
   'hljs-built_in': {
@@ -89,10 +89,10 @@ export const githubDark = {
   'hljs-symbol': {
     'color': '#ffa657'
   },
-  'hljs-code': {
+  'hljs-comment': {
     'color': '#8b949e'
   },
-  'hljs-comment': {
+  'hljs-code': {
     'color': '#8b949e'
   },
   'hljs-formula': {
@@ -104,10 +104,10 @@ export const githubDark = {
   'hljs-quote': {
     'color': '#7ee787'
   },
-  'hljs-selector-pseudo': {
+  'hljs-selector-tag': {
     'color': '#7ee787'
   },
-  'hljs-selector-tag': {
+  'hljs-selector-pseudo': {
     'color': '#7ee787'
   },
   'hljs-subst': {
@@ -115,7 +115,7 @@ export const githubDark = {
   },
   'hljs-section': {
     'color': '#1f6feb',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-bullet': {
     'color': '#f2cc60'
@@ -126,7 +126,7 @@ export const githubDark = {
   },
   'hljs-strong': {
     'color': '#c9d1d9',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-addition': {
     'color': '#aff5b4',
@@ -135,5 +135,11 @@ export const githubDark = {
   'hljs-deletion': {
     'color': '#ffdcd7',
     'backgroundColor': '#67060c'
-  }
+  },
+  'hljs-char.escape_': {},
+  'hljs-link': {},
+  'hljs-params': {},
+  'hljs-property': {},
+  'hljs-punctuation': {},
+  'hljs-tag': {}
 }

@@ -4,7 +4,11 @@
 
 import { useMemo } from 'react';
 import { Box } from 'theme-ui';
-import type { Node, Span, StyleSheet } from '../../lib';
+import type {
+  Node,
+  Span,
+  SyntaxHighlightStyleSheet as StyleSheet,
+} from '../../lib';
 import { createStyleObject } from '../../utils';
 
 export type CodeLineProps = {

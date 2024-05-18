@@ -12,21 +12,39 @@ export const schoolBook = {
     'background': '#f6f5b2'
   },
   'hljs-keyword': {
-    'color': '#059',
-    'fontWeight': '700'
-  },
-  'hljs-literal': {
-    'color': '#059',
-    'fontWeight': '700'
+    'color': '#005599',
+    'fontWeight': 'bold'
   },
   'hljs-selector-tag': {
-    'color': '#059',
-    'fontWeight': '700'
+    'color': '#005599',
+    'fontWeight': 'bold'
+  },
+  'hljs-literal': {
+    'color': '#005599',
+    'fontWeight': 'bold'
   },
   'hljs-subst': {
     'color': '#3e5915'
   },
-  'hljs-addition': {
+  'hljs-string': {
+    'color': '#2c009f'
+  },
+  'hljs-title': {
+    'color': '#2c009f',
+    'fontWeight': 'bold'
+  },
+  'hljs-section': {
+    'color': '#2c009f',
+    'fontWeight': 'bold'
+  },
+  'hljs-type': {
+    'color': '#2c009f',
+    'fontWeight': 'bold'
+  },
+  'hljs-symbol': {
+    'color': '#2c009f'
+  },
+  'hljs-bullet': {
     'color': '#2c009f'
   },
   'hljs-attribute': {
@@ -35,20 +53,10 @@ export const schoolBook = {
   'hljs-built_in': {
     'color': '#2c009f'
   },
-  'hljs-bullet': {
+  'hljs-addition': {
     'color': '#2c009f'
   },
-  'hljs-link': {
-    'color': '#2c009f'
-  },
-  'hljs-section': {
-    'color': '#2c009f',
-    'fontWeight': '700'
-  },
-  'hljs-string': {
-    'color': '#2c009f'
-  },
-  'hljs-symbol': {
+  'hljs-variable': {
     'color': '#2c009f'
   },
   'hljs-template-tag': {
@@ -57,18 +65,13 @@ export const schoolBook = {
   'hljs-template-variable': {
     'color': '#2c009f'
   },
-  'hljs-title': {
-    'color': '#2c009f',
-    'fontWeight': '700'
-  },
-  'hljs-type': {
-    'color': '#2c009f',
-    'fontWeight': '700'
-  },
-  'hljs-variable': {
+  'hljs-link': {
     'color': '#2c009f'
   },
   'hljs-comment': {
+    'color': '#e60415'
+  },
+  'hljs-quote': {
     'color': '#e60415'
   },
   'hljs-deletion': {
@@ -77,20 +80,17 @@ export const schoolBook = {
   'hljs-meta': {
     'color': '#e60415'
   },
-  'hljs-quote': {
-    'color': '#e60415'
-  },
   'hljs-doctag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-name': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-selector-id': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'

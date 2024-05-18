@@ -8,89 +8,89 @@ export const arduinoLight = {
     'padding': '3px 5px'
   },
   'hljs': {
-    'background': '#fff',
+    'background': 'white',
     'color': '#434f54'
   },
   'hljs-subst': {
     'color': '#434f54'
   },
-  'hljs-attribute': {
-    'color': '#00979d'
-  },
-  'hljs-doctag': {
-    'color': '#00979d'
-  },
   'hljs-keyword': {
-    'color': '#00979d'
+    'color': '#00979D'
   },
-  'hljs-name': {
-    'color': '#00979d'
+  'hljs-attribute': {
+    'color': '#00979D'
   },
   'hljs-selector-tag': {
-    'color': '#00979d'
+    'color': '#00979D'
   },
-  'hljs-addition': {
-    'color': '#d35400'
+  'hljs-doctag': {
+    'color': '#00979D'
+  },
+  'hljs-name': {
+    'color': '#00979D'
   },
   'hljs-built_in': {
-    'color': '#d35400'
-  },
-  'hljs-bullet': {
-    'color': '#d35400'
-  },
-  'hljs-code': {
-    'color': '#d35400'
+    'color': '#D35400'
   },
   'hljs-literal': {
-    'color': '#d35400'
+    'color': '#D35400'
   },
-  'hljs-link': {
-    'color': '#00979d'
+  'hljs-bullet': {
+    'color': '#D35400'
+  },
+  'hljs-code': {
+    'color': '#D35400'
+  },
+  'hljs-addition': {
+    'color': '#D35400'
   },
   'hljs-regexp': {
-    'color': '#00979d'
-  },
-  'hljs-selector-attr': {
-    'color': '#00979d'
-  },
-  'hljs-selector-pseudo': {
-    'color': '#00979d'
+    'color': '#00979D'
   },
   'hljs-symbol': {
-    'color': '#00979d'
-  },
-  'hljs-template-variable': {
-    'color': '#00979d'
+    'color': '#00979D'
   },
   'hljs-variable': {
-    'color': '#00979d'
+    'color': '#00979D'
   },
-  'hljs-deletion': {
-    'color': '#005c5f'
+  'hljs-template-variable': {
+    'color': '#00979D'
   },
-  'hljs-quote': {
-    'color': '#005c5f'
+  'hljs-link': {
+    'color': '#00979D'
   },
-  'hljs-selector-class': {
-    'color': '#005c5f'
+  'hljs-selector-attr': {
+    'color': '#00979D'
   },
-  'hljs-selector-id': {
-    'color': '#005c5f'
-  },
-  'hljs-string': {
-    'color': '#005c5f'
-  },
-  'hljs-template-tag': {
-    'color': '#005c5f'
+  'hljs-selector-pseudo': {
+    'color': '#00979D'
   },
   'hljs-type': {
-    'color': '#005c5f'
+    'color': '#005C5F'
+  },
+  'hljs-string': {
+    'color': '#005C5F'
+  },
+  'hljs-selector-id': {
+    'color': '#005C5F'
+  },
+  'hljs-selector-class': {
+    'color': '#005C5F'
+  },
+  'hljs-quote': {
+    'color': '#005C5F'
+  },
+  'hljs-template-tag': {
+    'color': '#005C5F'
+  },
+  'hljs-deletion': {
+    'color': '#005C5F'
   },
   'hljs-comment': {
     'color': 'rgba(149,165,166,.8)'
   },
   'hljs-meta .hljs-keyword': {
-    'color': '#728e00'
+    'color': '#728E00'
   },
   'hljs-meta': {
     'color': '#434f54'
@@ -99,20 +99,20 @@ export const arduinoLight = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-function': {
-    'color': '#728e00'
-  },
-  'hljs-section': {
-    'color': '#800',
-    'fontWeight': '700'
+    'color': '#728E00'
   },
   'hljs-title': {
-    'color': '#800',
-    'fontWeight': '700'
+    'color': '#880000',
+    'fontWeight': 'bold'
+  },
+  'hljs-section': {
+    'color': '#880000',
+    'fontWeight': 'bold'
   },
   'hljs-number': {
-    'color': '#8a7b52'
+    'color': '#8A7B52'
   }
 }

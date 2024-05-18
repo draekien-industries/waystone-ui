@@ -9,7 +9,7 @@ export const github = {
   },
   'hljs': {
     'color': '#24292e',
-    'background': '#fff'
+    'background': '#ffffff'
   },
   'hljs-doctag': {
     'color': '#d73a49'
@@ -62,6 +62,9 @@ export const github = {
   'hljs-operator': {
     'color': '#005cc5'
   },
+  'hljs-variable': {
+    'color': '#005cc5'
+  },
   'hljs-selector-attr': {
     'color': '#005cc5'
   },
@@ -71,16 +74,13 @@ export const github = {
   'hljs-selector-id': {
     'color': '#005cc5'
   },
-  'hljs-variable': {
-    'color': '#005cc5'
-  },
-  'hljs-meta .hljs-string': {
-    'color': '#032f62'
-  },
   'hljs-regexp': {
     'color': '#032f62'
   },
   'hljs-string': {
+    'color': '#032f62'
+  },
+  'hljs-meta .hljs-string': {
     'color': '#032f62'
   },
   'hljs-built_in': {
@@ -89,10 +89,10 @@ export const github = {
   'hljs-symbol': {
     'color': '#e36209'
   },
-  'hljs-code': {
+  'hljs-comment': {
     'color': '#6a737d'
   },
-  'hljs-comment': {
+  'hljs-code': {
     'color': '#6a737d'
   },
   'hljs-formula': {
@@ -104,10 +104,10 @@ export const github = {
   'hljs-quote': {
     'color': '#22863a'
   },
-  'hljs-selector-pseudo': {
+  'hljs-selector-tag': {
     'color': '#22863a'
   },
-  'hljs-selector-tag': {
+  'hljs-selector-pseudo': {
     'color': '#22863a'
   },
   'hljs-subst': {
@@ -115,7 +115,7 @@ export const github = {
   },
   'hljs-section': {
     'color': '#005cc5',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-bullet': {
     'color': '#735c0f'
@@ -126,7 +126,7 @@ export const github = {
   },
   'hljs-strong': {
     'color': '#24292e',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-addition': {
     'color': '#22863a',
@@ -135,5 +135,11 @@ export const github = {
   'hljs-deletion': {
     'color': '#b31d28',
     'backgroundColor': '#ffeef0'
-  }
+  },
+  'hljs-char.escape_': {},
+  'hljs-link': {},
+  'hljs-params': {},
+  'hljs-property': {},
+  'hljs-punctuation': {},
+  'hljs-tag': {}
 }

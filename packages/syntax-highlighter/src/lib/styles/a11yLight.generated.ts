@@ -17,70 +17,70 @@ export const a11yLight = {
   'hljs-quote': {
     'color': '#696969'
   },
-  'hljs-deletion': {
-    'color': '#d91e18'
-  },
-  'hljs-name': {
-    'color': '#d91e18'
-  },
-  'hljs-regexp': {
-    'color': '#d91e18'
-  },
-  'hljs-selector-class': {
-    'color': '#d91e18'
-  },
-  'hljs-selector-id': {
-    'color': '#d91e18'
-  },
-  'hljs-tag': {
+  'hljs-variable': {
     'color': '#d91e18'
   },
   'hljs-template-variable': {
     'color': '#d91e18'
   },
-  'hljs-variable': {
+  'hljs-tag': {
     'color': '#d91e18'
   },
-  'hljs-attribute': {
+  'hljs-name': {
+    'color': '#d91e18'
+  },
+  'hljs-selector-id': {
+    'color': '#d91e18'
+  },
+  'hljs-selector-class': {
+    'color': '#d91e18'
+  },
+  'hljs-regexp': {
+    'color': '#d91e18'
+  },
+  'hljs-deletion': {
+    'color': '#d91e18'
+  },
+  'hljs-number': {
     'color': '#aa5d00'
   },
   'hljs-built_in': {
     'color': '#aa5d00'
   },
-  'hljs-link': {
-    'color': '#aa5d00'
-  },
   'hljs-literal': {
-    'color': '#aa5d00'
-  },
-  'hljs-meta': {
-    'color': '#aa5d00'
-  },
-  'hljs-number': {
-    'color': '#aa5d00'
-  },
-  'hljs-params': {
     'color': '#aa5d00'
   },
   'hljs-type': {
     'color': '#aa5d00'
   },
-  'hljs-addition': {
-    'color': 'green'
+  'hljs-params': {
+    'color': '#aa5d00'
   },
-  'hljs-bullet': {
-    'color': 'green'
+  'hljs-meta': {
+    'color': '#aa5d00'
+  },
+  'hljs-link': {
+    'color': '#aa5d00'
+  },
+  'hljs-attribute': {
+    'color': '#aa5d00'
   },
   'hljs-string': {
-    'color': 'green'
+    'color': '#008000'
   },
   'hljs-symbol': {
-    'color': 'green'
+    'color': '#008000'
   },
-  'hljs-section': {
-    'color': '#007faa'
+  'hljs-bullet': {
+    'color': '#008000'
+  },
+  'hljs-addition': {
+    'color': '#008000'
   },
   'hljs-title': {
+    'color': '#007faa'
+  },
+  'hljs-section': {
     'color': '#007faa'
   },
   'hljs-keyword': {
@@ -93,6 +93,6 @@ export const a11yLight = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

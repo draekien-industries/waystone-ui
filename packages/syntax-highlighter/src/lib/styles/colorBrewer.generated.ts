@@ -11,13 +11,11 @@ export const colorBrewer = {
     'color': '#000',
     'background': '#fff'
   },
-  'hljs-addition': {
+  'hljs-subst': {},
+  'hljs-string': {
     'color': '#756bb1'
   },
   'hljs-meta': {
-    'color': '#756bb1'
-  },
-  'hljs-string': {
     'color': '#756bb1'
   },
   'hljs-symbol': {
@@ -29,25 +27,28 @@ export const colorBrewer = {
   'hljs-template-variable': {
     'color': '#756bb1'
   },
+  'hljs-addition': {
+    'color': '#756bb1'
+  },
   'hljs-comment': {
     'color': '#636363'
   },
   'hljs-quote': {
     'color': '#636363'
   },
-  'hljs-bullet': {
+  'hljs-number': {
     'color': '#31a354'
   },
-  'hljs-link': {
+  'hljs-regexp': {
     'color': '#31a354'
   },
   'hljs-literal': {
     'color': '#31a354'
   },
-  'hljs-number': {
+  'hljs-bullet': {
     'color': '#31a354'
   },
-  'hljs-regexp': {
+  'hljs-link': {
     'color': '#31a354'
   },
   'hljs-deletion': {
@@ -56,40 +57,40 @@ export const colorBrewer = {
   'hljs-variable': {
     'color': '#88f'
   },
+  'hljs-keyword': {
+    'color': '#3182bd'
+  },
+  'hljs-selector-tag': {
+    'color': '#3182bd'
+  },
+  'hljs-title': {
+    'color': '#3182bd'
+  },
+  'hljs-section': {
+    'color': '#3182bd'
+  },
   'hljs-built_in': {
     'color': '#3182bd'
   },
   'hljs-doctag': {
     'color': '#3182bd'
   },
-  'hljs-keyword': {
-    'color': '#3182bd'
-  },
-  'hljs-name': {
-    'color': '#3182bd'
-  },
-  'hljs-section': {
-    'color': '#3182bd'
-  },
-  'hljs-selector-class': {
-    'color': '#3182bd'
-  },
-  'hljs-selector-id': {
-    'color': '#3182bd'
-  },
-  'hljs-selector-tag': {
-    'color': '#3182bd'
-  },
-  'hljs-strong': {
+  'hljs-type': {
     'color': '#3182bd'
   },
   'hljs-tag': {
     'color': '#3182bd'
   },
-  'hljs-title': {
+  'hljs-name': {
     'color': '#3182bd'
   },
-  'hljs-type': {
+  'hljs-selector-id': {
+    'color': '#3182bd'
+  },
+  'hljs-selector-class': {
+    'color': '#3182bd'
+  },
+  'hljs-strong': {
     'color': '#3182bd'
   },
   'hljs-emphasis': {

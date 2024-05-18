@@ -22,22 +22,22 @@ export const atomOneLight = {
   'hljs-doctag': {
     'color': '#a626a4'
   },
-  'hljs-formula': {
-    'color': '#a626a4'
-  },
   'hljs-keyword': {
     'color': '#a626a4'
   },
-  'hljs-deletion': {
+  'hljs-formula': {
+    'color': '#a626a4'
+  },
+  'hljs-section': {
     'color': '#e45649'
   },
   'hljs-name': {
     'color': '#e45649'
   },
-  'hljs-section': {
+  'hljs-selector-tag': {
     'color': '#e45649'
   },
-  'hljs-selector-tag': {
+  'hljs-deletion': {
     'color': '#e45649'
   },
   'hljs-subst': {
@@ -45,6 +45,12 @@ export const atomOneLight = {
   },
   'hljs-literal': {
     'color': '#0184bb'
+  },
+  'hljs-string': {
+    'color': '#50a14f'
+  },
+  'hljs-regexp': {
+    'color': '#50a14f'
   },
   'hljs-addition': {
     'color': '#50a14f'
@@ -55,25 +61,10 @@ export const atomOneLight = {
   'hljs-meta .hljs-string': {
     'color': '#50a14f'
   },
-  'hljs-regexp': {
-    'color': '#50a14f'
-  },
-  'hljs-string': {
-    'color': '#50a14f'
-  },
   'hljs-attr': {
     'color': '#986801'
   },
-  'hljs-number': {
-    'color': '#986801'
-  },
-  'hljs-selector-attr': {
-    'color': '#986801'
-  },
-  'hljs-selector-class': {
-    'color': '#986801'
-  },
-  'hljs-selector-pseudo': {
+  'hljs-variable': {
     'color': '#986801'
   },
   'hljs-template-variable': {
@@ -82,8 +73,20 @@ export const atomOneLight = {
   'hljs-type': {
     'color': '#986801'
   },
-  'hljs-variable': {
+  'hljs-selector-class': {
     'color': '#986801'
+  },
+  'hljs-selector-attr': {
+    'color': '#986801'
+  },
+  'hljs-selector-pseudo': {
+    'color': '#986801'
+  },
+  'hljs-number': {
+    'color': '#986801'
+  },
+  'hljs-symbol': {
+    'color': '#4078f2'
   },
   'hljs-bullet': {
     'color': '#4078f2'
@@ -98,25 +101,22 @@ export const atomOneLight = {
   'hljs-selector-id': {
     'color': '#4078f2'
   },
-  'hljs-symbol': {
-    'color': '#4078f2'
-  },
   'hljs-title': {
     'color': '#4078f2'
   },
   'hljs-built_in': {
     'color': '#c18401'
   },
-  'hljs-class .hljs-title': {
+  'hljs-title.class_': {
     'color': '#c18401'
   },
-  'hljs-title.class_': {
+  'hljs-class .hljs-title': {
     'color': '#c18401'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

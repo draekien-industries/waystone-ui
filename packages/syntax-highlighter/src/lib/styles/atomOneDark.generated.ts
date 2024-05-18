@@ -22,22 +22,22 @@ export const atomOneDark = {
   'hljs-doctag': {
     'color': '#c678dd'
   },
-  'hljs-formula': {
-    'color': '#c678dd'
-  },
   'hljs-keyword': {
     'color': '#c678dd'
   },
-  'hljs-deletion': {
+  'hljs-formula': {
+    'color': '#c678dd'
+  },
+  'hljs-section': {
     'color': '#e06c75'
   },
   'hljs-name': {
     'color': '#e06c75'
   },
-  'hljs-section': {
+  'hljs-selector-tag': {
     'color': '#e06c75'
   },
-  'hljs-selector-tag': {
+  'hljs-deletion': {
     'color': '#e06c75'
   },
   'hljs-subst': {
@@ -45,6 +45,12 @@ export const atomOneDark = {
   },
   'hljs-literal': {
     'color': '#56b6c2'
+  },
+  'hljs-string': {
+    'color': '#98c379'
+  },
+  'hljs-regexp': {
+    'color': '#98c379'
   },
   'hljs-addition': {
     'color': '#98c379'
@@ -55,25 +61,10 @@ export const atomOneDark = {
   'hljs-meta .hljs-string': {
     'color': '#98c379'
   },
-  'hljs-regexp': {
-    'color': '#98c379'
-  },
-  'hljs-string': {
-    'color': '#98c379'
-  },
   'hljs-attr': {
     'color': '#d19a66'
   },
-  'hljs-number': {
-    'color': '#d19a66'
-  },
-  'hljs-selector-attr': {
-    'color': '#d19a66'
-  },
-  'hljs-selector-class': {
-    'color': '#d19a66'
-  },
-  'hljs-selector-pseudo': {
+  'hljs-variable': {
     'color': '#d19a66'
   },
   'hljs-template-variable': {
@@ -82,8 +73,20 @@ export const atomOneDark = {
   'hljs-type': {
     'color': '#d19a66'
   },
-  'hljs-variable': {
+  'hljs-selector-class': {
     'color': '#d19a66'
+  },
+  'hljs-selector-attr': {
+    'color': '#d19a66'
+  },
+  'hljs-selector-pseudo': {
+    'color': '#d19a66'
+  },
+  'hljs-number': {
+    'color': '#d19a66'
+  },
+  'hljs-symbol': {
+    'color': '#61aeee'
   },
   'hljs-bullet': {
     'color': '#61aeee'
@@ -98,25 +101,22 @@ export const atomOneDark = {
   'hljs-selector-id': {
     'color': '#61aeee'
   },
-  'hljs-symbol': {
-    'color': '#61aeee'
-  },
   'hljs-title': {
     'color': '#61aeee'
   },
   'hljs-built_in': {
     'color': '#e6c07b'
   },
-  'hljs-class .hljs-title': {
+  'hljs-title.class_': {
     'color': '#e6c07b'
   },
-  'hljs-title.class_': {
+  'hljs-class .hljs-title': {
     'color': '#e6c07b'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

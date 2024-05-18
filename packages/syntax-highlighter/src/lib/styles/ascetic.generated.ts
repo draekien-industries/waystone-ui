@@ -8,8 +8,27 @@ export const ascetic = {
     'padding': '3px 5px'
   },
   'hljs': {
-    'background': '#fff',
-    'color': '#000'
+    'background': 'white',
+    'color': 'black'
+  },
+  'hljs-string': {
+    'color': '#888'
+  },
+  'hljs-variable': {
+    'color': '#888'
+  },
+  'hljs-template-variable': {
+    'color': '#888'
+  },
+  'hljs-symbol': {
+    'color': '#888'
+  },
+  'hljs-bullet': {
+    'color': '#888'
+  },
+  'hljs-section': {
+    'color': '#888',
+    'fontWeight': 'bold'
   },
   'hljs-addition': {
     'color': '#888'
@@ -17,54 +36,35 @@ export const ascetic = {
   'hljs-attribute': {
     'color': '#888'
   },
-  'hljs-bullet': {
-    'color': '#888'
-  },
   'hljs-link': {
-    'color': '#888'
-  },
-  'hljs-section': {
-    'color': '#888',
-    'fontWeight': '700'
-  },
-  'hljs-string': {
-    'color': '#888'
-  },
-  'hljs-symbol': {
-    'color': '#888'
-  },
-  'hljs-template-variable': {
-    'color': '#888'
-  },
-  'hljs-variable': {
     'color': '#888'
   },
   'hljs-comment': {
     'color': '#ccc'
   },
-  'hljs-deletion': {
+  'hljs-quote': {
     'color': '#ccc'
   },
   'hljs-meta': {
     'color': '#ccc'
   },
-  'hljs-quote': {
+  'hljs-deletion': {
     'color': '#ccc'
   },
   'hljs-keyword': {
-    'fontWeight': '700'
-  },
-  'hljs-name': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-selector-tag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
-  'hljs-strong': {
-    'fontWeight': '700'
+  'hljs-name': {
+    'fontWeight': 'bold'
   },
   'hljs-type': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
+  },
+  'hljs-strong': {
+    'fontWeight': 'bold'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'

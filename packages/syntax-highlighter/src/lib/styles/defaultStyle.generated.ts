@@ -8,103 +8,105 @@ export const defaultStyle = {
     'padding': '3px 5px'
   },
   'hljs': {
-    'background': '#f3f3f3',
+    'background': '#F3F3F3',
     'color': '#444'
   },
+  'hljs-subst': {},
+  'hljs-formula': {},
+  'hljs-attr': {},
+  'hljs-property': {},
+  'hljs-params': {},
   'hljs-comment': {
     'color': '#697070'
-  },
-  'hljs-punctuation': {
-    'color': '#444a'
   },
   'hljs-tag': {
     'color': '#444a'
   },
-  'hljs-tag .hljs-attr': {
-    'color': '#444'
+  'hljs-punctuation': {
+    'color': '#444a'
   },
   'hljs-tag .hljs-name': {
     'color': '#444'
   },
-  'hljs-attribute': {
-    'fontWeight': '700'
-  },
-  'hljs-doctag': {
-    'fontWeight': '700'
+  'hljs-tag .hljs-attr': {
+    'color': '#444'
   },
   'hljs-keyword': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
-  'hljs-meta .hljs-keyword': {
-    'fontWeight': '700'
-  },
-  'hljs-name': {
-    'fontWeight': '700'
+  'hljs-attribute': {
+    'fontWeight': 'bold'
   },
   'hljs-selector-tag': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
-  'hljs-deletion': {
-    'color': '#800'
+  'hljs-meta .hljs-keyword': {
+    'fontWeight': 'bold'
   },
-  'hljs-number': {
-    'color': '#800'
+  'hljs-doctag': {
+    'fontWeight': 'bold'
   },
-  'hljs-quote': {
-    'color': '#800'
-  },
-  'hljs-selector-class': {
-    'color': '#800'
-  },
-  'hljs-selector-id': {
-    'color': '#800'
-  },
-  'hljs-string': {
-    'color': '#800'
-  },
-  'hljs-template-tag': {
-    'color': '#800'
+  'hljs-name': {
+    'fontWeight': 'bold'
   },
   'hljs-type': {
-    'color': '#800'
+    'color': '#880000'
   },
-  'hljs-section': {
-    'color': '#800',
-    'fontWeight': '700'
+  'hljs-string': {
+    'color': '#880000'
+  },
+  'hljs-number': {
+    'color': '#880000'
+  },
+  'hljs-selector-id': {
+    'color': '#880000'
+  },
+  'hljs-selector-class': {
+    'color': '#880000'
+  },
+  'hljs-quote': {
+    'color': '#880000'
+  },
+  'hljs-template-tag': {
+    'color': '#880000'
+  },
+  'hljs-deletion': {
+    'color': '#880000'
   },
   'hljs-title': {
-    'color': '#800',
-    'fontWeight': '700'
+    'color': '#880000',
+    'fontWeight': 'bold'
   },
-  'hljs-link': {
-    'color': '#ab5656'
-  },
-  'hljs-operator': {
-    'color': '#ab5656'
+  'hljs-section': {
+    'color': '#880000',
+    'fontWeight': 'bold'
   },
   'hljs-regexp': {
-    'color': '#ab5656'
-  },
-  'hljs-selector-attr': {
-    'color': '#ab5656'
-  },
-  'hljs-selector-pseudo': {
     'color': '#ab5656'
   },
   'hljs-symbol': {
     'color': '#ab5656'
   },
+  'hljs-variable': {
+    'color': '#ab5656'
+  },
   'hljs-template-variable': {
     'color': '#ab5656'
   },
-  'hljs-variable': {
+  'hljs-link': {
+    'color': '#ab5656'
+  },
+  'hljs-selector-attr': {
+    'color': '#ab5656'
+  },
+  'hljs-operator': {
+    'color': '#ab5656'
+  },
+  'hljs-selector-pseudo': {
     'color': '#ab5656'
   },
   'hljs-literal': {
     'color': '#695'
-  },
-  'hljs-addition': {
-    'color': '#397300'
   },
   'hljs-built_in': {
     'color': '#397300'
@@ -113,6 +115,9 @@ export const defaultStyle = {
     'color': '#397300'
   },
   'hljs-code': {
+    'color': '#397300'
+  },
+  'hljs-addition': {
     'color': '#397300'
   },
   'hljs-meta': {
@@ -125,6 +130,6 @@ export const defaultStyle = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

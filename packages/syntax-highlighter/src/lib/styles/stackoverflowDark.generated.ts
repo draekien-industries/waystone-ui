@@ -8,31 +8,31 @@ export const stackoverflowDark = {
     'padding': '3px 5px'
   },
   'hljs': {
-    'color': '#fff',
+    'color': '#ffffff',
     'background': '#1c1b1b'
   },
   'hljs-subst': {
-    'color': '#fff'
+    'color': '#ffffff'
   },
   'hljs-comment': {
-    'color': '#999'
-  },
-  'hljs-attr': {
-    'color': '#88aece'
-  },
-  'hljs-doctag': {
-    'color': '#88aece'
+    'color': '#999999'
   },
   'hljs-keyword': {
+    'color': '#88aece'
+  },
+  'hljs-selector-tag': {
     'color': '#88aece'
   },
   'hljs-meta .hljs-keyword': {
     'color': '#88aece'
   },
+  'hljs-doctag': {
+    'color': '#88aece'
+  },
   'hljs-section': {
     'color': '#88aece'
   },
-  'hljs-selector-tag': {
+  'hljs-attr': {
     'color': '#88aece'
   },
   'hljs-attribute': {
@@ -41,43 +41,43 @@ export const stackoverflowDark = {
   'hljs-name': {
     'color': '#f08d49'
   },
-  'hljs-number': {
+  'hljs-type': {
     'color': '#f08d49'
   },
-  'hljs-quote': {
+  'hljs-number': {
     'color': '#f08d49'
   },
   'hljs-selector-id': {
     'color': '#f08d49'
   },
-  'hljs-template-tag': {
+  'hljs-quote': {
     'color': '#f08d49'
   },
-  'hljs-type': {
+  'hljs-template-tag': {
     'color': '#f08d49'
   },
   'hljs-selector-class': {
     'color': '#88aece'
   },
-  'hljs-link': {
+  'hljs-string': {
     'color': '#b5bd68'
   },
   'hljs-regexp': {
     'color': '#b5bd68'
   },
-  'hljs-selector-attr': {
-    'color': '#b5bd68'
-  },
-  'hljs-string': {
-    'color': '#b5bd68'
-  },
   'hljs-symbol': {
+    'color': '#b5bd68'
+  },
+  'hljs-variable': {
     'color': '#b5bd68'
   },
   'hljs-template-variable': {
     'color': '#b5bd68'
   },
-  'hljs-variable': {
+  'hljs-link': {
+    'color': '#b5bd68'
+  },
+  'hljs-selector-attr': {
     'color': '#b5bd68'
   },
   'hljs-meta': {
@@ -89,17 +89,17 @@ export const stackoverflowDark = {
   'hljs-built_in': {
     'color': '#f08d49'
   },
-  'hljs-literal': {
-    'color': '#f08d49'
-  },
   'hljs-title': {
     'color': '#f08d49'
   },
+  'hljs-literal': {
+    'color': '#f08d49'
+  },
   'hljs-bullet': {
-    'color': '#ccc'
+    'color': '#cccccc'
   },
   'hljs-code': {
-    'color': '#ccc'
+    'color': '#cccccc'
   },
   'hljs-meta .hljs-string': {
     'color': '#b5bd68'
@@ -114,6 +114,12 @@ export const stackoverflowDark = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
-  }
+    'fontWeight': 'bold'
+  },
+  'hljs-formula': {},
+  'hljs-operator': {},
+  'hljs-params': {},
+  'hljs-property': {},
+  'hljs-punctuation': {},
+  'hljs-tag': {}
 }

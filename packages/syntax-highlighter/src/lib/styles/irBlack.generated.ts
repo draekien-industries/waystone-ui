@@ -14,16 +14,13 @@ export const irBlack = {
   'hljs-comment': {
     'color': '#7c7c7c'
   },
-  'hljs-meta': {
-    'color': '#7c7c7c'
-  },
   'hljs-quote': {
     'color': '#7c7c7c'
   },
-  'hljs-keyword': {
-    'color': '#96cbfe'
+  'hljs-meta': {
+    'color': '#7c7c7c'
   },
-  'hljs-name': {
+  'hljs-keyword': {
     'color': '#96cbfe'
   },
   'hljs-selector-tag': {
@@ -32,13 +29,16 @@ export const irBlack = {
   'hljs-tag': {
     'color': '#96cbfe'
   },
+  'hljs-name': {
+    'color': '#96cbfe'
+  },
   'hljs-attribute': {
     'color': '#ffffb6'
   },
   'hljs-selector-id': {
     'color': '#ffffb6'
   },
-  'hljs-addition': {
+  'hljs-string': {
     'color': '#a8ff60'
   },
   'hljs-selector-attr': {
@@ -47,55 +47,55 @@ export const irBlack = {
   'hljs-selector-pseudo': {
     'color': '#a8ff60'
   },
-  'hljs-string': {
+  'hljs-addition': {
     'color': '#a8ff60'
   },
   'hljs-subst': {
     'color': '#daefa3'
   },
-  'hljs-link': {
-    'color': '#e9c062'
-  },
   'hljs-regexp': {
     'color': '#e9c062'
   },
-  'hljs-doctag': {
+  'hljs-link': {
+    'color': '#e9c062'
+  },
+  'hljs-title': {
     'color': '#ffffb6'
   },
   'hljs-section': {
     'color': '#ffffb6'
   },
-  'hljs-title': {
-    'color': '#ffffb6'
-  },
   'hljs-type': {
     'color': '#ffffb6'
   },
-  'hljs-bullet': {
-    'color': '#c6c5fe'
-  },
-  'hljs-literal': {
-    'color': '#c6c5fe'
+  'hljs-doctag': {
+    'color': '#ffffb6'
   },
   'hljs-symbol': {
     'color': '#c6c5fe'
   },
-  'hljs-template-variable': {
+  'hljs-bullet': {
     'color': '#c6c5fe'
   },
   'hljs-variable': {
     'color': '#c6c5fe'
   },
-  'hljs-deletion': {
-    'color': '#ff73fd'
+  'hljs-template-variable': {
+    'color': '#c6c5fe'
+  },
+  'hljs-literal': {
+    'color': '#c6c5fe'
   },
   'hljs-number': {
+    'color': '#ff73fd'
+  },
+  'hljs-deletion': {
     'color': '#ff73fd'
   },
   'hljs-emphasis': {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

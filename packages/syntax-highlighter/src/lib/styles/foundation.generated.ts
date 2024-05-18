@@ -9,36 +9,36 @@ export const foundation = {
   },
   'hljs': {
     'background': '#eee',
-    'color': '#000'
+    'color': 'black'
   },
-  'hljs-addition': {
-    'color': '#070'
-  },
-  'hljs-attribute': {
+  'hljs-link': {
     'color': '#070'
   },
   'hljs-emphasis': {
     'color': '#070',
     'fontStyle': 'italic'
   },
-  'hljs-link': {
+  'hljs-attribute': {
     'color': '#070'
   },
-  'hljs-deletion': {
-    'color': '#d14'
+  'hljs-addition': {
+    'color': '#070'
+  },
+  'hljs-strong': {
+    'color': '#d14',
+    'fontWeight': 'bold'
   },
   'hljs-string': {
     'color': '#d14'
   },
-  'hljs-strong': {
-    'color': '#d14',
-    'fontWeight': '700'
+  'hljs-deletion': {
+    'color': '#d14'
   },
-  'hljs-comment': {
+  'hljs-quote': {
     'color': '#998',
     'fontStyle': 'italic'
   },
-  'hljs-quote': {
+  'hljs-comment': {
     'color': '#998',
     'fontStyle': 'italic'
   },
@@ -57,28 +57,28 @@ export const foundation = {
   'hljs-type': {
     'color': '#458'
   },
-  'hljs-template-variable': {
-    'color': '#369'
-  },
   'hljs-variable': {
-    'color': '#369'
+    'color': '#336699'
+  },
+  'hljs-template-variable': {
+    'color': '#336699'
   },
   'hljs-bullet': {
-    'color': '#970'
+    'color': '#997700'
   },
   'hljs-meta': {
-    'color': '#34b'
+    'color': '#3344bb'
   },
   'hljs-code': {
     'color': '#099'
   },
-  'hljs-keyword': {
+  'hljs-number': {
     'color': '#099'
   },
   'hljs-literal': {
     'color': '#099'
   },
-  'hljs-number': {
+  'hljs-keyword': {
     'color': '#099'
   },
   'hljs-selector-tag': {
@@ -86,21 +86,21 @@ export const foundation = {
   },
   'hljs-regexp': {
     'backgroundColor': '#fff0ff',
-    'color': '#808'
+    'color': '#880088'
   },
   'hljs-symbol': {
     'color': '#990073'
   },
-  'hljs-name': {
-    'color': '#070'
+  'hljs-tag': {
+    'color': '#007700'
   },
-  'hljs-selector-class': {
-    'color': '#070'
+  'hljs-name': {
+    'color': '#007700'
   },
   'hljs-selector-id': {
-    'color': '#070'
+    'color': '#007700'
   },
-  'hljs-tag': {
-    'color': '#070'
+  'hljs-selector-class': {
+    'color': '#007700'
   }
 }

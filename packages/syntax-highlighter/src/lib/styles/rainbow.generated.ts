@@ -19,20 +19,20 @@ export const rainbow = {
     'color': '#969896',
     'fontStyle': 'italic'
   },
-  'hljs-addition': {
-    'color': '#c9c'
-  },
   'hljs-keyword': {
-    'color': '#c9c'
-  },
-  'hljs-literal': {
-    'color': '#c9c'
+    'color': '#cc99cc'
   },
   'hljs-selector-tag': {
-    'color': '#c9c'
+    'color': '#cc99cc'
+  },
+  'hljs-literal': {
+    'color': '#cc99cc'
   },
   'hljs-type': {
-    'color': '#c9c'
+    'color': '#cc99cc'
+  },
+  'hljs-addition': {
+    'color': '#cc99cc'
   },
   'hljs-number': {
     'color': '#f99157'
@@ -43,60 +43,60 @@ export const rainbow = {
   'hljs-selector-pseudo': {
     'color': '#f99157'
   },
+  'hljs-string': {
+    'color': '#8abeb7'
+  },
   'hljs-doctag': {
     'color': '#8abeb7'
   },
   'hljs-regexp': {
     'color': '#8abeb7'
   },
-  'hljs-string': {
-    'color': '#8abeb7'
-  },
-  'hljs-built_in': {
+  'hljs-title': {
     'color': '#b5bd68'
   },
   'hljs-name': {
     'color': '#b5bd68',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-section': {
     'color': '#b5bd68',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
-  'hljs-title': {
+  'hljs-built_in': {
     'color': '#b5bd68'
   },
-  'hljs-class .hljs-title': {
-    'color': '#fc6'
-  },
-  'hljs-selector-id': {
-    'color': '#fc6'
+  'hljs-variable': {
+    'color': '#ffcc66'
   },
   'hljs-template-variable': {
-    'color': '#fc6'
+    'color': '#ffcc66'
+  },
+  'hljs-selector-id': {
+    'color': '#ffcc66'
   },
   'hljs-title.class_': {
-    'color': '#fc6'
+    'color': '#ffcc66'
   },
-  'hljs-variable': {
-    'color': '#fc6'
+  'hljs-class .hljs-title': {
+    'color': '#ffcc66'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
+  },
+  'hljs-symbol': {
+    'color': '#f99157'
   },
   'hljs-bullet': {
-    'color': '#f99157'
-  },
-  'hljs-link': {
-    'color': '#f99157'
-  },
-  'hljs-meta': {
     'color': '#f99157'
   },
   'hljs-subst': {
     'color': '#f99157'
   },
-  'hljs-symbol': {
+  'hljs-meta': {
+    'color': '#f99157'
+  },
+  'hljs-link': {
     'color': '#f99157'
   },
   'hljs-deletion': {

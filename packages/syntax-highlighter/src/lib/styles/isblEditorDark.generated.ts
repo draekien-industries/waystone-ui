@@ -18,58 +18,67 @@ export const isblEditorDark = {
     'color': '#b5b5b5',
     'fontStyle': 'italic'
   },
-  'hljs-attribute': {
-    'color': '#f0f0f0',
-    'fontWeight': '700'
-  },
-  'hljs-doctag': {
-    'color': '#f0f0f0',
-    'fontWeight': '700'
-  },
   'hljs-keyword': {
     'color': '#f0f0f0',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
-  'hljs-meta .hljs-keyword': {
+  'hljs-attribute': {
     'color': '#f0f0f0',
-    'fontWeight': '700'
-  },
-  'hljs-name': {
-    'color': '#f0f0f0',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-selector-tag': {
     'color': '#f0f0f0',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
+  },
+  'hljs-meta .hljs-keyword': {
+    'color': '#f0f0f0',
+    'fontWeight': 'bold'
+  },
+  'hljs-doctag': {
+    'color': '#f0f0f0',
+    'fontWeight': 'bold'
+  },
+  'hljs-name': {
+    'color': '#f0f0f0',
+    'fontWeight': 'bold'
   },
   'hljs-string': {
     'color': '#97bf0d'
   },
-  'hljs-deletion': {
+  'hljs-type': {
     'color': '#f0f0f0'
   },
   'hljs-number': {
     'color': '#f0f0f0'
   },
-  'hljs-quote': {
+  'hljs-selector-id': {
     'color': '#f0f0f0'
   },
   'hljs-selector-class': {
     'color': '#f0f0f0'
   },
-  'hljs-selector-id': {
+  'hljs-quote': {
     'color': '#f0f0f0'
   },
   'hljs-template-tag': {
     'color': '#f0f0f0'
   },
-  'hljs-type': {
+  'hljs-deletion': {
     'color': '#f0f0f0'
   },
-  'hljs-link': {
+  'hljs-regexp': {
     'color': '#e2c696'
   },
-  'hljs-regexp': {
+  'hljs-symbol': {
+    'color': '#e2c696'
+  },
+  'hljs-variable': {
+    'color': '#e2c696'
+  },
+  'hljs-template-variable': {
+    'color': '#e2c696'
+  },
+  'hljs-link': {
     'color': '#e2c696'
   },
   'hljs-selector-attr': {
@@ -78,25 +87,13 @@ export const isblEditorDark = {
   'hljs-selector-pseudo': {
     'color': '#e2c696'
   },
-  'hljs-symbol': {
-    'color': '#e2c696'
-  },
-  'hljs-template-variable': {
-    'color': '#e2c696'
-  },
-  'hljs-variable': {
-    'color': '#e2c696'
-  },
   'hljs-built_in': {
     'color': '#97bf0d',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-literal': {
     'color': '#97bf0d',
-    'fontWeight': '700'
-  },
-  'hljs-addition': {
-    'color': '#397300'
+    'fontWeight': 'bold'
   },
   'hljs-bullet': {
     'color': '#397300'
@@ -104,19 +101,22 @@ export const isblEditorDark = {
   'hljs-code': {
     'color': '#397300'
   },
+  'hljs-addition': {
+    'color': '#397300'
+  },
   'hljs-class': {
     'color': '#ce9d4d',
-    'fontWeight': '700'
-  },
-  'hljs-section': {
-    'color': '#df471e'
+    'fontWeight': 'bold'
   },
   'hljs-title': {
     'color': '#df471e'
   },
+  'hljs-section': {
+    'color': '#df471e'
+  },
   'hljs-title>.hljs-built_in': {
     'color': '#81bce9',
-    'fontWeight': '400'
+    'fontWeight': 'normal'
   },
   'hljs-meta': {
     'color': '#1f7199'
@@ -128,6 +128,6 @@ export const isblEditorDark = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

@@ -34,13 +34,13 @@ export const sunburst = {
   'hljs-subst': {
     'color': '#daefa3'
   },
-  'hljs-link': {
-    'color': '#e9c062'
-  },
   'hljs-regexp': {
     'color': '#e9c062'
   },
-  'hljs-name': {
+  'hljs-link': {
+    'color': '#e9c062'
+  },
+  'hljs-title': {
     'color': '#89bdff'
   },
   'hljs-section': {
@@ -49,8 +49,11 @@ export const sunburst = {
   'hljs-tag': {
     'color': '#89bdff'
   },
-  'hljs-title': {
+  'hljs-name': {
     'color': '#89bdff'
+  },
+  'hljs-title.class_': {
+    'textDecoration': 'underline'
   },
   'hljs-class .hljs-title': {
     'textDecoration': 'underline'
@@ -58,8 +61,8 @@ export const sunburst = {
   'hljs-doctag': {
     'textDecoration': 'underline'
   },
-  'hljs-title.class_': {
-    'textDecoration': 'underline'
+  'hljs-symbol': {
+    'color': '#3387cc'
   },
   'hljs-bullet': {
     'color': '#3387cc'
@@ -67,16 +70,13 @@ export const sunburst = {
   'hljs-number': {
     'color': '#3387cc'
   },
-  'hljs-symbol': {
-    'color': '#3387cc'
-  },
   'hljs-params': {
     'color': '#3e87e3'
   },
-  'hljs-template-variable': {
+  'hljs-variable': {
     'color': '#3e87e3'
   },
-  'hljs-variable': {
+  'hljs-template-variable': {
     'color': '#3e87e3'
   },
   'hljs-attribute': {
@@ -108,6 +108,6 @@ export const sunburst = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   }
 }

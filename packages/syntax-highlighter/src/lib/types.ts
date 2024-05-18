@@ -1,9 +1,4 @@
 import type { Span, Text } from './lowlight';
-import type * as styles from './styles';
-
-export type StyleName = keyof typeof styles;
-
-export type StyleSheet = (typeof styles)[keyof typeof styles];
 
 /** The children returned by the {@linkcode lowlight.highlight} function */
 export type Tree = Array<Span | Text>;

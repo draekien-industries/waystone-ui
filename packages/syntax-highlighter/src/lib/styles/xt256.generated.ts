@@ -18,7 +18,7 @@ export const xt256 = {
     'fontStyle': 'italic'
   },
   'hljs-strong': {
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-type': {
     'color': '#eaeaea'
@@ -27,74 +27,74 @@ export const xt256 = {
     'color': '#da0000'
   },
   'hljs-literal': {
-    'color': 'red',
-    'fontWeight': 'bolder'
-  },
-  'hljs-name': {
-    'color': 'red',
+    'color': '#ff0000',
     'fontWeight': 'bolder'
   },
   'hljs-number': {
-    'color': 'red',
+    'color': '#ff0000',
+    'fontWeight': 'bolder'
+  },
+  'hljs-name': {
+    'color': '#ff0000',
     'fontWeight': 'bolder'
   },
   'hljs-comment': {
     'color': '#969896'
   },
-  'hljs-quote': {
-    'color': '#0ff'
-  },
   'hljs-selector-id': {
-    'color': '#0ff'
+    'color': '#00ffff'
+  },
+  'hljs-quote': {
+    'color': '#00ffff'
   },
   'hljs-template-variable': {
-    'color': '#0ff',
-    'fontWeight': '700'
-  },
-  'hljs-title': {
-    'color': '#0ff',
-    'fontWeight': '700'
+    'color': '#00ffff',
+    'fontWeight': 'bold'
   },
   'hljs-variable': {
-    'color': '#0ff',
-    'fontWeight': '700'
+    'color': '#00ffff',
+    'fontWeight': 'bold'
   },
-  'hljs-keyword': {
-    'color': '#fff000'
+  'hljs-title': {
+    'color': '#00ffff',
+    'fontWeight': 'bold'
   },
   'hljs-selector-class': {
+    'color': '#fff000'
+  },
+  'hljs-keyword': {
     'color': '#fff000'
   },
   'hljs-symbol': {
     'color': '#fff000'
   },
-  'hljs-bullet': {
-    'color': '#0f0'
-  },
   'hljs-string': {
-    'color': '#0f0'
+    'color': '#00ff00'
   },
-  'hljs-section': {
-    'color': '#000fff'
+  'hljs-bullet': {
+    'color': '#00ff00'
   },
   'hljs-tag': {
     'color': '#000fff'
   },
+  'hljs-section': {
+    'color': '#000fff'
+  },
   'hljs-selector-tag': {
     'color': '#000fff',
-    'fontWeight': '700'
+    'fontWeight': 'bold'
   },
   'hljs-attribute': {
-    'color': '#f0f'
+    'color': '#ff00ff'
   },
   'hljs-built_in': {
-    'color': '#f0f'
-  },
-  'hljs-link': {
-    'color': '#f0f'
+    'color': '#ff00ff'
   },
   'hljs-regexp': {
-    'color': '#f0f'
+    'color': '#ff00ff'
+  },
+  'hljs-link': {
+    'color': '#ff00ff'
   },
   'hljs-meta': {
     'color': '#fff',
