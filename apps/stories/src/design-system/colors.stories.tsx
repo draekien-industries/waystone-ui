@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/react';
-import { Text } from '@waystone/components/src';
-import { WaystoneBaseTheme } from '@waystone/core/src';
+import { Text } from '@waystone/text';
+import { waystoneTheme, type ThemeColor } from '@waystone/theme';
 import type { FC, PropsWithChildren } from 'react';
 import type { ColorMode, ColorModesScale } from 'theme-ui';
 
@@ -40,8 +40,8 @@ const Color: FC<PropsWithChildren<{ color: string }>> = ({
 );
 
 export const Colors: StoryFn = () => {
-  const colors = WaystoneBaseTheme.colors
-    ? { ...WaystoneBaseTheme.colors }
+  const colors = waystoneTheme.colors
+    ? { ...waystoneTheme.colors }
     : ({} as ColorModesScale);
   const darkMode = colors.modes ? colors.modes.dark : ({} as ColorMode);
 
@@ -66,7 +66,7 @@ export const Colors: StoryFn = () => {
           if (key === 'modes') return null;
 
           return (
-            <Color key={key} color={colors[key] as string}>
+            <Color key={key} color={colors[key as ThemeColor] as string}>
               {key}
             </Color>
           );
@@ -85,7 +85,10 @@ export const Colors: StoryFn = () => {
         }}
       >
         {Object.keys(darkMode).map((key) => (
-          <Color key={key} color={darkMode[key] as string}>
+          <Color
+            key={key}
+            color={darkMode[key as keyof typeof darkMode] as string}
+          >
             {key}
           </Color>
         ))}
@@ -94,7 +97,9 @@ export const Colors: StoryFn = () => {
   );
 };
 
-export default {
+const meta: Meta<typeof Colors> = {
   title: 'Design System/Colors',
   component: Colors,
-} as Meta;
+};
+
+export default meta;

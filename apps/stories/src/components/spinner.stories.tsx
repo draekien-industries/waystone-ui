@@ -1,14 +1,20 @@
-import type { Meta } from '@storybook/react';
-import { Spinner } from '@waystone/components/src';
+import { Spinner } from '@waystone/spinner';
+import type { Meta, StoryObj } from '@storybook/react';
+import { argTypes, createEnumArgType } from '../../.storybook/preview.fx';
 
-export default {
+const meta: Meta<typeof Spinner> = {
   title: 'Components/Spinner',
   component: Spinner,
-  args: {
-    size: 'md',
-    color: 'accent',
-    fullWidth: false,
+  argTypes: {
+    size: createEnumArgType({
+      options: ['small', 'medium', 'large'],
+      summary: 'size',
+      fuzzyTypes: 'string',
+    }),
+    color: argTypes.color,
   },
-} as Meta<typeof Spinner>;
+};
 
-export const Default = {};
+export default meta;
+
+export const Example: StoryObj<typeof meta> = {};

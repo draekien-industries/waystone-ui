@@ -2,7 +2,7 @@
   "private": true,
   "name": "waystone",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.6.10",
+  "packageManager": "pnpm@9.0.5+sha256.61bd66913b52012107ec25a6ee4d6a161021ab99e04f6acee3aa50d0e34b4af9",
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -17,21 +17,19 @@
     "test:update": "turbo run test:update",
     "test:watch": "turbo run test:watch",
     "test:release": "turbo run test:release",
-    "clean": "turbo run clean && rm -rf node_modules",
+    "gen:workspace": "turbo gen workspace --copy @waystone/template",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "is-ci || husky install",
     "version": "turbo run build lint:release test:release && changeset version",
     "release": "turbo run build lint:release test:release && changeset version && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.2",
-    "@testing-library/user-event": "^14.5.2",
+    "@changesets/cli": "^2.27.2",
+    "@testing-library/jest-dom": "^6.4.5",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.11.17",
-    "@types/react": "^18.2.70",
-    "@types/react-dom": "^18.2.22",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-waystone": "workspace:*",
@@ -43,9 +41,8 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "ts-jest": "^29.1.2",
-    "turbo": "^1.12.3",
-    "typescript": "^5.3.3",
-    "webpack": "^5.90.1"
+    "turbo": "^1.13.3",
+    "typescript": "^5.4.5"
   },
   "config": {
     "commitizen": {

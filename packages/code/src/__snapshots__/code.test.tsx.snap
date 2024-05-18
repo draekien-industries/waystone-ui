@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Code /> should match snapshot 1`] = `
+<div>
+  <code
+    class="css-4parp7-Code"
+  >
+    console.log('Hello World')
+  </code>
+</div>
+`;
+
+exports[`codeCss should match snapshot 1`] = `
+{
+  "backgroundColor": "ghost",
+  "borderRadius": "small",
+  "color": "code",
+  "fontSize": "1em",
+  "fontWeight": "medium",
+  "paddingX": "extra-small",
+  "paddingY": 2,
+  "variant": "text.mono",
+}
+`;

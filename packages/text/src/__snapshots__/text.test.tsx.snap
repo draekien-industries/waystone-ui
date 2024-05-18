@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> variant body should match snapshot 1`] = `
+<div>
+  <span
+    class="css-1k3tifs-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant caption should match snapshot 1`] = `
+<div>
+  <span
+    class="css-1u0r8zu-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant eyebrow should match snapshot 1`] = `
+<div>
+  <span
+    class="css-13k5pct-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant heading should match snapshot 1`] = `
+<div>
+  <span
+    class="css-epqv3n-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant hero should match snapshot 1`] = `
+<div>
+  <span
+    class="css-1mcj2lz-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant label should match snapshot 1`] = `
+<div>
+  <span
+    class="css-ejy0wb-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant monospace should match snapshot 1`] = `
+<div>
+  <span
+    class="css-1s1v8lo-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant small should match snapshot 1`] = `
+<div>
+  <span
+    class="css-4bk1g8-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant subtitle should match snapshot 1`] = `
+<div>
+  <span
+    class="css-5rq687-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;
+
+exports[`<Text /> variant title should match snapshot 1`] = `
+<div>
+  <span
+    class="css-1bsil5k-Text"
+  >
+    Lorem Ipsum
+  </span>
+</div>
+`;

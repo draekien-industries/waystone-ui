@@ -1,19 +1,15 @@
-import type { Meta } from '@storybook/react';
-import type { IconProps } from '@waystone/components/src';
-import { Icon } from '@waystone/components/src';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Icon } from '@waystone/icon';
 
-export default {
+const meta: Meta<typeof Icon> = {
   title: 'Components/Icon',
   component: Icon,
-  args: {
-    variant: 'filled',
-    size: 'md',
-    color: 'inherit',
-  },
-} as Meta<typeof Icon>;
+};
 
-export const Default = {
+export default meta;
+
+export const Default: StoryObj<typeof meta> = {
   args: {
-    name: 'accessibility',
-  } as IconProps,
+    children: 'accessibility',
+  },
 };

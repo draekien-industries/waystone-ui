@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layouts should match snapshot 1`] = `
+{
+  "radii": {
+    "extra-large": "1rem",
+    "large": "0.75rem",
+    "max": 999,
+    "medium": "0.5rem",
+    "small": "0.25rem",
+  },
+  "space": {
+    "extra-large": "2rem",
+    "extra-small": "0.25rem",
+    "large": "1.5rem",
+    "medium": "1rem",
+    "small": "0.5rem",
+  },
+  "zIndices": {
+    "drawer": 40,
+    "dropdown": 30,
+    "high": 40,
+    "higher": 50,
+    "highest": 60,
+    "low": 20,
+    "lower": 10,
+    "lowest": 0,
+    "middle": 30,
+    "modal": 50,
+    "navbar": 20,
+    "pagination": 1,
+    "toast": 60,
+  },
+}
+`;

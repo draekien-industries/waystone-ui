@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Outline presets outlineCss should match snapshot 1`] = `
+{
+  "active": {
+    "outlineColor": [Function],
+  },
+  "base": {
+    "outlineColor": [Function],
+    "outlineOffset": 2,
+    "outlineStyle": "solid",
+    "outlineWidth": 4,
+  },
+  "focused": {
+    "outlineColor": [Function],
+  },
+}
+`;

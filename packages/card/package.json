@@ -1,0 +1,33 @@
+{
+  "name": "@waystone/card",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "author": "draekien-industries",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
+    "test": "jest --coverage --passWithNoTests",
+    "test:release": "jest --coverage --passWithNoTests",
+    "test:update": "jest --coverage --passWithNoTests -u",
+    "test:watch": "jest --coverage --passWithNoTests --watch -u"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@waystone/testing-library": "workspace:*",
+    "@waystone/tsconfig": "workspace:*",
+    "@waystone/types": "workspace:*",
+    "eslint-config-waystone": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
+    "react": "^18.3.1",
+    "theme-ui": "^0.16.2"
+  }
+}

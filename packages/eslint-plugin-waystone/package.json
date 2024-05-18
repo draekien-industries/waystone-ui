@@ -26,13 +26,13 @@
   },
   "dependencies": {
     "eslint-plugin-react": "^7.34.1",
-    "globals": "^13.24.0"
+    "globals": "^15.2.0"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-doc-generator": "^1.7.0",
-    "eslint-plugin-eslint-plugin": "^5.5.0",
+    "eslint-doc-generator": "^1.7.1",
+    "eslint-plugin-eslint-plugin": "^5.5.1",
     "eslint-plugin-n": "^16.6.2"
   },
   "peerDependencies": {

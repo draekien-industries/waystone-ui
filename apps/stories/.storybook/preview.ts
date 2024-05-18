@@ -1,31 +1,31 @@
-import { waystoneDecorator } from './waystone.decorator';
+import { WaystoneDecorator } from './waystone.decorator';
 import { create } from '@storybook/theming';
-import { WaystoneBaseTheme } from '@waystone/core';
+import type { Preview } from '@storybook/react';
+import { waystoneTheme } from '@waystone/theme';
 import { getThemeColors } from './preview.fx';
 import { DocsContainer } from './DocsContainer';
 
 const waystoneDarkTheme = create({
   base: 'dark',
   brandTitle: 'Waystone',
-  brandImage: './assets/waystone-logo.svg',
+  brandImage: '/waystone-logo.svg',
 });
 
 const waystoneLightTheme = create({
   base: 'light',
   brandTitle: 'Waystone',
-  brandImage: './assets/waystone-logo-dark.svg',
+  brandImage: '/waystone-logo-dark.svg',
 });
 
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
+export const parameters: Preview['parameters'] = {
   controls: {
     expanded: true,
     matchers: {
-      color: /(background|color)$/i,
+      color: /(background|color|backgroundColor)$/i,
       date: /Date$/,
     },
     presetColors: getThemeColors().map((colorName) => ({
-      color: WaystoneBaseTheme.colors[colorName],
+      color: waystoneTheme.colors[colorName],
       title: colorName,
     })),
   },
@@ -36,7 +36,8 @@ export const parameters = {
   },
   docs: {
     container: DocsContainer,
+    forceExtractedArgTypes: true,
   },
 };
 
-export const decorators = [waystoneDecorator];
+export const decorators: Preview['decorators'] = [WaystoneDecorator];

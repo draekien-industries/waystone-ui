@@ -1,0 +1,42 @@
+{
+  "name": "@waystone/testing-library",
+  "version": "9.2.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "description": "The react component library used by draekien-industries",
+  "author": "draekien-industries",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "src/**"
+  ],
+  "scripts": {
+    "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/"
+  },
+  "devDependencies": {
+    "@waystone/tsconfig": "workspace:*",
+    "eslint-config-waystone": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "@testing-library/user-event": "^14.5.2",
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
+    "@waystone/theme-provider": "workspace:*",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "theme-ui": "^0.16.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

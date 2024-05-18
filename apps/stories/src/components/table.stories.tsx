@@ -1,13 +1,20 @@
+'use client';
+
 import { faker } from '@faker-js/faker';
-import type { Meta } from '@storybook/react';
-import type { ColumnDef } from '@tanstack/react-table';
-import { Card, Label, Text } from '@waystone/components';
-import { Table } from '@waystone/components/src/table/table';
-import { Flex } from 'theme-ui';
+import type { Meta, StoryObj } from '@storybook/react';
+import type { ColumnDef, ExpandedState } from '@waystone/table';
+import {
+  TableBody,
+  TableContainer,
+  TableHead,
+  createInteractiveColumn,
+  getCoreRowModel,
+  getExpandedRowModel,
+  useReactTable,
+} from '@waystone/table';
+import { useState } from 'react';
 
-faker.seed(24601);
-
-export type Person = {
+type Person = {
   firstName: string;
   lastName: string;
   age: number;
@@ -35,12 +42,12 @@ const newPerson = (): Person => ({
     'relationship',
     'complicated',
     'single',
-  ])[0],
+  ])[0]!,
 });
 
 function makeData(...lens: number[]) {
   const makeDataLevel = (depth = 0): Person[] => {
-    const len = lens[depth];
+    const len = lens[depth]!;
     return range(len).map(
       (): Person => ({
         ...newPerson(),
@@ -53,153 +60,108 @@ function makeData(...lens: number[]) {
 }
 
 const columns: ColumnDef<Person>[] = [
+  createInteractiveColumn<Person>(),
   {
-    id: 'surname',
-    header: 'Surname',
-    accessorKey: 'lastName',
-  },
-  {
-    header: 'Given name(s)',
     accessorKey: 'firstName',
+    header: 'First Name',
   },
   {
-    header: 'Status',
+    accessorKey: 'lastName',
+    header: 'Last Name',
+  },
+  {
+    accessorKey: 'age',
+    header: 'Age',
+  },
+  {
+    accessorKey: 'visits',
+    header: 'Visits',
+  },
+  {
     accessorKey: 'status',
+    header: 'Status',
+  },
+  {
+    accessorKey: 'progress',
+    header: 'Progress',
   },
 ];
 
-const meta = {
+const data = makeData(20, 5, 3);
+
+const ExampleTable = () => {
+  const [expanded, setExpanded] = useState<ExpandedState>({});
+
+  const { getHeaderGroups, getRowModel } = useReactTable({
+    data,
+    columns,
+    state: {
+      expanded,
+    },
+    onExpandedChange: setExpanded,
+    getSubRows: (row) => row.subRows,
+    getCoreRowModel: getCoreRowModel(),
+    getExpandedRowModel: getExpandedRowModel(),
+    debugTable: true,
+  });
+
+  return (
+    <TableContainer>
+      <TableHead>
+        {getHeaderGroups().map((group) => (
+          <TableHead.Row key={group.id} {...group} />
+        ))}
+      </TableHead>
+      <TableBody>
+        {getRowModel().rows.map((row) => (
+          <TableBody.Row key={row.id} {...row} />
+        ))}
+      </TableBody>
+    </TableContainer>
+  );
+};
+
+const meta: Meta = {
   title: 'Components/Table',
-  component: Table,
-  args: {
-    data: makeData(100),
-    columns,
-  },
-} satisfies Meta<typeof Table<Person>>;
+  render: ExampleTable,
+  parameters: {
+    docs: {
+      source: {
+        language: 'tsx',
+        code: `const [expanded, setExpanded] = useState<ExpandedState>({});
 
-export const Basic = {
-  args: {
-    data: makeData(100),
-    columns,
+const { getHeaderGroups, getRowModel } = useReactTable({
+  data,
+  columns,
+  state: {
+    expanded,
   },
-};
+  onExpandedChange: setExpanded,
+  getSubRows: (row) => row.subRows,
+  getCoreRowModel: getCoreRowModel(),
+  getExpandedRowModel: getExpandedRowModel(),
+  debugTable: true,
+});
 
-export const SingleSelect = {
-  args: {
-    data: makeData(100),
-    columns,
-    enableRowSelection: true,
-    singleSelect: true,
+return (
+  <TableContainer>
+    <TableHead>
+      {getHeaderGroups().map((group) => (
+        <TableHead.Row key={group.id} {...group} />
+      ))}
+    </TableHead>
+    <TableBody>
+      {getRowModel().rows.map((row) => (
+        <TableBody.Row key={row.id} {...row} />
+      ))}
+    </TableBody>
+  </TableContainer>
+);`,
+      },
+    },
   },
-};
-
-export const CustomSelectLogic = {
-  args: {
-    data: makeData(100),
-    columns,
-    enableRowSelection: (row) => row.getValue('surname').startsWith('D'),
-  },
-};
-
-export const MultiSelect = {
-  args: {
-    data: makeData(100),
-    columns,
-    enableRowSelection: true,
-  },
-};
-
-export const Paginated = {
-  args: {
-    data: makeData(1000),
-    columns,
-    pageSize: 50,
-  },
-};
-
-export const ManualExpand = {
-  args: {
-    data: makeData(50, 5, 3),
-    columns,
-    enableExpanding: true,
-  },
-};
-
-export const ExpandOnSelect = {
-  args: {
-    data: makeData(50, 5, 3),
-    columns,
-    enableExpanding: true,
-    enableRowSelection: true,
-    expandOnSelect: true,
-  },
-};
-
-export const SubRowComponent = {
-  args: {
-    data: makeData(20),
-    columns,
-    enableExpanding: true,
-    renderSubComponent: ({ row }) => (
-      <Card noShadow>
-        <Flex sx={{ justifyContent: 'space-around' }}>
-          <Text inline>
-            <Label>Age:</Label> {row.original.age}
-          </Text>
-          <Text inline>
-            <Label>Visits:</Label> {row.original.visits}
-          </Text>
-          <Flex sx={{ gap: 'sm', alignItems: 'center' }}>
-            <Label htmlFor={`progress-${row.id}`}>Progress:</Label>{' '}
-            <progress
-              id={`progress-${row.id}`}
-              max="100"
-              value={row.original.progress}
-            />
-            <Text inline>{row.original.progress}</Text>
-          </Flex>
-        </Flex>
-      </Card>
-    ),
-  },
-};
-
-export const ConditionalSubRowComponent = {
-  args: {
-    data: makeData(20),
-    columns,
-    enableExpanding: true,
-    renderSubComponent: ({ row }) =>
-      [1, 2, 3].includes(parseInt(row.id, 10)) && (
-        <Card noShadow>
-          <Flex sx={{ justifyContent: 'space-around' }}>
-            <Text inline>
-              <Label>Age:</Label> {row.original.age}
-            </Text>
-            <Text inline>
-              <Label>Visits:</Label> {row.original.visits}
-            </Text>
-            <Flex sx={{ gap: 'sm', alignItems: 'center' }}>
-              <Label htmlFor={`progress-${row.id}`}>Progress:</Label>{' '}
-              <progress
-                id={`progress-${row.id}`}
-                max="100"
-                value={row.original.progress}
-              />
-              <Text inline>{row.original.progress}</Text>
-            </Flex>
-          </Flex>
-        </Card>
-      ),
-  },
-};
-
-export const Virtualized = {
-  args: {
-    data: makeData(100),
-    columns,
-  },
-  render: (args) => <Table.Virtualized {...args} height="500px" />,
 };
 
 export default meta;
+
+export const Basic: StoryObj<typeof meta> = {};

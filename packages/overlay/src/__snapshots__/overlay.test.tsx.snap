@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Overlay.Absolute /> component should match snapshot 1`] = `
+<div>
+  <div
+    style="position: relative;"
+  >
+    <div
+      class="css-7jeshx-AbsoluteOverlay"
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Overlay.Absolute /> css should match snapshot 1`] = `
+{
+  "backdropFilter": "blur(10px)",
+  "backgroundColor": [Function],
+  "borderRadius": "inherit",
+  "inset": 0,
+  "position": "absolute",
+  "zIndex": "highest",
+}
+`;
+
+exports[`<Overlay.Absolute /> css should use provided options 1`] = `
+{
+  "backdropFilter": "blur(0.1px)",
+  "backgroundColor": [Function],
+  "borderRadius": "inherit",
+  "inset": 0,
+  "position": "absolute",
+  "zIndex": "highest",
+}
+`;
+
+exports[`<Overlay.FullScreen /> component should match snapshot 1`] = `
+<div>
+  <div
+    class="css-16wn25v-FullScreenOverlay"
+  >
+    <div
+      class="css-1abarhv-FullScreenOverlay"
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Overlay.FullScreen /> css should match snapshot 1`] = `
+{
+  "backdropFilter": "blur(10px)",
+  "backgroundColor": [Function],
+  "inset": 0,
+  "position": "fixed",
+  "zIndex": "highest",
+}
+`;
+
+exports[`<Overlay.FullScreen /> css should use provided options 1`] = `
+{
+  "backdropFilter": "blur(0.1px)",
+  "backgroundColor": [Function],
+  "inset": 0,
+  "position": "fixed",
+  "zIndex": "highest",
+}
+`;

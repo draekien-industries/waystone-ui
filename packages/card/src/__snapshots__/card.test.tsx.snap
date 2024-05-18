@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> renders a background image 1`] = `
+<div>
+  <div
+    class="css-oo4x6t-Card"
+  >
+    <div
+      aria-description="A decorative background image"
+      aria-hidden="true"
+      class="css-fgpxxm-Card"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Card /> renders a blank card 1`] = `
+<div>
+  <div
+    class="css-oo4x6t-Card"
+    data-testid="test-card"
+  />
+</div>
+`;
+
+exports[`<Card /> renders an image component 1`] = `
+<div>
+  <div
+    class="css-oo4x6t-Card"
+  >
+    <img
+      alt="test"
+      data-testid="image-component"
+      src="/testimage.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Card /> renders children 1`] = `
+<div>
+  <div
+    class="css-oo4x6t-Card"
+  >
+    lorem ipsum
+  </div>
+</div>
+`;

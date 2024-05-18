@@ -1,11 +1,7 @@
-import type { Meta } from '@storybook/react';
-import { Text } from '@waystone/components/src';
-import type { TextVariant } from '@waystone/core/src';
-import { WaystoneBaseTheme } from '@waystone/core/src';
-import type { FC } from 'react';
-import type { ThemeUIStyleObject } from 'theme-ui';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Text, textVariants } from '@waystone/text';
 
-export const Typography: FC = () => (
+const TypographyDisplay = () => (
   <article>
     <Text as="h1" variant="hero">
       Typography
@@ -22,8 +18,7 @@ export const Typography: FC = () => (
           display: 'flex',
           flexFlow: 'row wrap',
           gap: '2rem',
-        }}
-      >
+        }}>
         <Text variant="title" inline>
           Barlow
         </Text>
@@ -46,23 +41,27 @@ export const Typography: FC = () => (
           flexFlow: 'row wrap',
           gap: '2rem',
           alignItems: 'baseline',
-        }}
-      >
-        {Object.keys(
-          WaystoneBaseTheme.text || ({} as Record<string, ThemeUIStyleObject>)
-        )
-          .filter((x) => x !== 'default')
-          .map((key) => (
-            <Text key={key} variant={key as TextVariant}>
-              {key}
-            </Text>
-          ))}
+        }}>
+        {textVariants.map((key) => (
+          <Text key={key} variant={key}>
+            {key}
+          </Text>
+        ))}
       </div>
     </div>
   </article>
 );
 
-export default {
+const meta: Meta<typeof TypographyDisplay> = {
   title: 'Design System/Typography',
-  component: Typography,
-} as Meta;
+  component: TypographyDisplay,
+  parameters: {
+    controls: {
+      disable: true,
+    },
+  },
+};
+
+export default meta;
+
+export const Typography: StoryObj<typeof meta> = {};

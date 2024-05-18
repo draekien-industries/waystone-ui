@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createInteractiveColumn should match snapshot 1`] = `
+{
+  "cell": [Function],
+  "header": [Function],
+  "id": "table-interactions",
+}
+`;
+
+exports[`createInteractiveColumn should use column overrides 1`] = `
+{
+  "cell": [Function],
+  "enableGrouping": true,
+  "header": [Function],
+  "id": "custom-id",
+}
+`;

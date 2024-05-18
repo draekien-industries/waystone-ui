@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Anchor.Relative /> should match snapshot 1`] = `
+<div>
+  <a
+    class="css-vf9v2x-RelativeAnchorWithRef"
+    href="/bob"
+  >
+    link
+  </a>
+</div>
+`;
+
+exports[`<Anchor.Relative /> should render with no decoration 1`] = `
+<div>
+  <a
+    class="css-q0d0jd-RelativeAnchorWithRef"
+    href="#"
+  >
+    link
+  </a>
+</div>
+`;

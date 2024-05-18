@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> component size large should match snapshot 1`] = `
+<div>
+  <div
+    aria-description="Loading..."
+    class="css-w8xjas-Spinner"
+  />
+</div>
+`;
+
+exports[`<Spinner /> component size medium should match snapshot 1`] = `
+<div>
+  <div
+    aria-description="Loading..."
+    class="css-c1ojwv-Spinner"
+  />
+</div>
+`;
+
+exports[`<Spinner /> component size small should match snapshot 1`] = `
+<div>
+  <div
+    aria-description="Loading..."
+    class="css-22drur-Spinner"
+  />
+</div>
+`;
+
+exports[`<Spinner /> css borderCss should match snapshot 1`] = `
+{
+  "large": "0.5rem solid",
+  "medium": "0.25rem solid",
+  "small": "0.25rem solid",
+}
+`;
+
+exports[`<Spinner /> css pathKeyframes should match snapshot 1`] = `
+{
+  "anim": 1,
+  "name": "animation-18cc70e",
+  "styles": "@keyframes animation-18cc70e{0%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0% );}12.5%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0% );}25%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100% );}50%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}62.5%{clip-path:polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}75%{clip-path:polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100% );}100%{clip-path:polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100% );}}",
+  "toString": [Function],
+}
+`;
+
+exports[`<Spinner /> css size large should match snapshot 1`] = `
+{
+  "animation": "_EMO_animation-18cc70e_@keyframes animation-18cc70e{0%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0% );}12.5%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0% );}25%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100% );}50%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}62.5%{clip-path:polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}75%{clip-path:polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100% );}100%{clip-path:polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100% );}}_EMO_ 0.8s infinite linear alternate, _EMO_animation-y2w2h2_@keyframes animation-y2w2h2{0%{transform:scaleY(1) rotate(0deg);}49.99%{transform:scaleY(1) rotate(135deg);}50%{transform:scaleY(-1) rotate(0deg);}100%{transform:scaleY(-1) rotate(-135deg);}}_EMO_ 1.6s infinite linear",
+  "aspectRatio": 1,
+  "border": "0.5rem solid",
+  "borderColor": "highlight",
+  "borderRadius": "50%",
+  "width": "3rem",
+}
+`;
+
+exports[`<Spinner /> css size medium should match snapshot 1`] = `
+{
+  "animation": "_EMO_animation-18cc70e_@keyframes animation-18cc70e{0%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0% );}12.5%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0% );}25%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100% );}50%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}62.5%{clip-path:polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}75%{clip-path:polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100% );}100%{clip-path:polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100% );}}_EMO_ 0.8s infinite linear alternate, _EMO_animation-y2w2h2_@keyframes animation-y2w2h2{0%{transform:scaleY(1) rotate(0deg);}49.99%{transform:scaleY(1) rotate(135deg);}50%{transform:scaleY(-1) rotate(0deg);}100%{transform:scaleY(-1) rotate(-135deg);}}_EMO_ 1.6s infinite linear",
+  "aspectRatio": 1,
+  "border": "0.25rem solid",
+  "borderColor": "highlight",
+  "borderRadius": "50%",
+  "width": "1.5rem",
+}
+`;
+
+exports[`<Spinner /> css size small should match snapshot 1`] = `
+{
+  "animation": "_EMO_animation-18cc70e_@keyframes animation-18cc70e{0%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0% );}12.5%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0% );}25%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100% );}50%{clip-path:polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}62.5%{clip-path:polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% );}75%{clip-path:polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100% );}100%{clip-path:polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100% );}}_EMO_ 0.8s infinite linear alternate, _EMO_animation-y2w2h2_@keyframes animation-y2w2h2{0%{transform:scaleY(1) rotate(0deg);}49.99%{transform:scaleY(1) rotate(135deg);}50%{transform:scaleY(-1) rotate(0deg);}100%{transform:scaleY(-1) rotate(-135deg);}}_EMO_ 1.6s infinite linear",
+  "aspectRatio": 1,
+  "border": "0.25rem solid",
+  "borderColor": "highlight",
+  "borderRadius": "50%",
+  "width": "1rem",
+}
+`;
+
+exports[`<Spinner /> css transformKeyframes should match snapshot 1`] = `
+{
+  "anim": 1,
+  "name": "animation-y2w2h2",
+  "styles": "@keyframes animation-y2w2h2{0%{transform:scaleY(1) rotate(0deg);}49.99%{transform:scaleY(1) rotate(135deg);}50%{transform:scaleY(-1) rotate(0deg);}100%{transform:scaleY(-1) rotate(-135deg);}}",
+  "toString": [Function],
+}
+`;
+
+exports[`<Spinner /> css widthCss should match snapshot 1`] = `
+{
+  "large": "3rem",
+  "medium": "1.5rem",
+  "small": "1rem",
+}
+`;

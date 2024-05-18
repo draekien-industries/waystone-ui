@@ -5,11 +5,11 @@
 [![Publish Codecov](https://github.com/draekien-industries/waystone-ui/actions/workflows/coverage.yml/badge.svg)](https://github.com/draekien-industries/waystone-ui/actions/workflows/coverage.yml)
 [![codecov](https://codecov.io/gh/draekien-industries/waystone-ui/branch/main/graph/badge.svg?token=FOEQJUVOY0)](https://codecov.io/gh/draekien-industries/waystone-ui)
 
-Waystone-UI is the design system of Draekien-Industries.
+Waystone-UI is the design system of Draekien-Industries built on top of [Theme UI](https://theme-ui.com/).
 
 ## What's inside?
 
-This Turborepo includes the following packages and apps:
+This Turborepo includes the following public packages and apps:
 
 ### Apps and Packages
 
@@ -19,16 +19,11 @@ This Turborepo includes the following packages and apps:
 
 | Name                           | Type | Description                                                          |
 | :----------------------------- | :--- | -------------------------------------------------------------------- |
-| `@waystone/ui`                 | 📦   | An all-in-one package for easier installation                        |
-| `@waystone/core`               | 📦   | Core settings and options for the design system                      |
-| `@waystone/theme`              | 📦   | The theme provider for the design system                             |
-| `@waystone/components`         | 📦   | Components built with the waystone theme                             |
-| `@waystone/utils`              | 📦   | Utils used throughout the design system                              |
+| `@waystone/ui`                 | 📦   | The entrypoint of the UI library                                     |
 | `@waystone/syntax-highlighter` | 📦   | Minimal port of react-syntax-highlighter for react 18 and typescript |
 | `@waystone/color`              | 📦   | Tailwind style color stops generator logic                           |
 | `@waystone/cli`                | 🔧   | CLI tool for code-gen                                                |
 | `@waystone/stories`            | 💻   | Storybook of all the available components                            |
-| `@waystone/tsconfig`           | 📦   | typescript configs for the design system                             |
 | `eslint-config-waystone`       | 📦   | Shared configs used in the project                                   |
 | `eslint-plugin-waystone`       | 📦   | Shared plugins used in the project                                   |
 
@@ -42,11 +37,11 @@ Click the badge below to view the components in storybook.
 
 Run the relevant script for your package manager
 
-| Package manager | Script                                                 |
-| --------------- | ------------------------------------------------------ |
-| npm             | `npm i @waystone/ui@latest @emotion/react theme-ui`    |
-| yarn            | `yarn add @waystone/ui@latest @emotion/react theme-ui` |
-| pnpm            | `pnpm i @waystone/ui@latest @emotion/react theme-ui`   |
+| Package manager | Script                                                         |
+| --------------- | -------------------------------------------------------------- |
+| npm             | `npm i @waystone/ui@latest @emotion/react@11 theme-ui@0.6`     |
+| yarn            | `yarn add @waystone/ui@latest @emotion/react@11 theme-ui@0.16` |
+| pnpm            | `pnpm i @waystone/ui@latest @emotion/react@11 theme-ui@0.16`   |
 
 ## Contributing
 

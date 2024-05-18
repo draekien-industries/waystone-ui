@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`variants should match snapshot 1`] = `
+{
+  "text": {
+    "body": {
+      "fontFamily": "body",
+      "fontSize": "body",
+      "fontWeight": "regular",
+      "lineHeight": "body",
+      "marginY": "small",
+    },
+    "caption": {
+      "fontFamily": "body",
+      "fontSize": "caption",
+      "fontWeight": "regular",
+      "lineHeight": "body",
+    },
+    "default": {
+      "fontFamily": "body",
+      "fontSize": "body",
+      "fontWeight": "regular",
+      "lineHeight": "body",
+      "marginY": "small",
+    },
+    "eyebrow": {
+      "fontFamily": "body",
+      "fontSize": "body",
+      "fontWeight": "medium",
+      "letterSpacing": "uppercase",
+      "lineHeight": "body",
+      "textTransform": "uppercase",
+    },
+    "heading": {
+      "fontFamily": "heading",
+      "fontSize": "heading",
+      "fontWeight": "bold",
+      "lineHeight": "heading",
+      "marginY": "medium",
+    },
+    "hero": {
+      "fontFamily": "heading",
+      "fontSize": "hero",
+      "fontWeight": "bold",
+      "lineHeight": "heading",
+      "marginY": "large",
+    },
+    "label": {
+      "fontFamily": "body",
+      "fontSize": "body",
+      "fontWeight": "medium",
+      "lineHeight": "body",
+      "marginY": 0,
+    },
+    "monospace": {
+      "fontFamily": "monospace",
+      "fontSize": "body",
+      "fontWeight": "regular",
+      "lineHeight": "body",
+    },
+    "small": {
+      "fontFamily": "body",
+      "fontSize": "small",
+      "fontWeight": "regular",
+      "lineHeight": "body",
+    },
+    "subtitle": {
+      "fontFamily": "body",
+      "fontSize": "subtitle",
+      "fontWeight": "semibold",
+      "lineHeight": "heading",
+      "marginY": "small",
+    },
+    "title": {
+      "fontFamily": "heading",
+      "fontSize": "title",
+      "fontWeight": "bold",
+      "lineHeight": "heading",
+      "marginY": "small",
+    },
+  },
+}
+`;

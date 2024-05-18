@@ -1,0 +1,64 @@
+{
+  "name": "@waystone/syntax-highlighter",
+  "version": "12.1.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "description": "A minimal implementation of react-syntax-highlighter",
+  "author": "draekien-industries",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
+    "test": "jest --coverage --passWithNoTests",
+    "test:release": "jest --coverage --passWithNoTests",
+    "test:update": "jest --coverage --passWithNoTests -u",
+    "test:watch": "jest --coverage --passWithNoTests --watch -u",
+    "generate:languages": "node ./scripts/build-languages-highlightjs.js",
+    "generate:styles": "node ./scripts/build-styles-highlightjs.js",
+    "generate:lowlight": "node ./scripts/build-lowlight.js",
+    "prepare": "pnpm generate:styles && pnpm generate:languages"
+  },
+  "dependencies": {
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
+    "highlight.js": "^11.9.0",
+    "theme-ui": "^0.16.2",
+    "to-camel-case": "^1.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@types/hast": "^3.0.4",
+    "@waystone/testing-library": "workspace:*",
+    "@waystone/tsconfig": "workspace:*",
+    "css": "^3.0.0",
+    "csstype": "^3.1.3",
+    "eslint-config-waystone": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
+    "identity-obj-proxy": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.0.2"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11.1.1",
+    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/css": "^0.16.2",
+    "highlight.js": "^11.8.0",
+    "react": ">=18",
+    "theme-ui": "^0.16.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

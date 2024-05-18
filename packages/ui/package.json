@@ -1,0 +1,63 @@
+{
+  "name": "@waystone/ui",
+  "version": "11.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "description": "The react component library used by draekien-industries",
+  "author": "draekien-industries",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/"
+  },
+  "dependencies": {
+    "@waystone/color": "workspace:*",
+    "@waystone/syntax-highlighter": "workspace:*"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@waystone/anchor": "workspace:*",
+    "@waystone/button": "workspace:*",
+    "@waystone/button-group": "workspace:*",
+    "@waystone/card": "workspace:*",
+    "@waystone/card-button": "workspace:*",
+    "@waystone/code": "workspace:*",
+    "@waystone/code-block": "workspace:*",
+    "@waystone/css-presets": "workspace:*",
+    "@waystone/form-fields": "workspace:*",
+    "@waystone/icon": "workspace:*",
+    "@waystone/overlay": "workspace:*",
+    "@waystone/spinner": "workspace:*",
+    "@waystone/table": "workspace:*",
+    "@waystone/text": "workspace:*",
+    "@waystone/theme": "workspace:*",
+    "@waystone/theme-provider": "workspace:*",
+    "@waystone/tsconfig": "workspace:*",
+    "@waystone/types": "workspace:*",
+    "@waystone/utils": "workspace:*",
+    "eslint-config-waystone": "workspace:*",
+    "eslint-plugin-waystone": "workspace:*",
+    "tsup": "^8.0.2"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11",
+    "@theme-ui/color": ">=0.16.0",
+    "@theme-ui/css": ">=0.16.0",
+    "react": ">=18",
+    "theme-ui": ">=0.16.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`typography should match snapshot 1`] = `
+{
+  "fontSizes": {
+    "body": "1rem",
+    "caption": "0.875rem",
+    "heading": "1.75rem",
+    "hero": "2.5rem",
+    "small": "0.75rem",
+    "subtitle": "1.25rem",
+    "title": "1.5rem",
+  },
+  "fontWeights": {
+    "bold": 700,
+    "medium": 500,
+    "regular": 400,
+    "semibold": 600,
+    "thin": 300,
+  },
+  "fonts": {
+    "body": ""Barlow", sans-serif",
+    "heading": ""Barlow", sans-serif",
+    "monospace": ""Fira Code", monospace",
+  },
+  "letterSpacings": {
+    "body": "normal",
+    "uppercase": "0.1em",
+  },
+  "lineHeights": {
+    "body": 1.5,
+    "heading": 1.125,
+  },
+}
+`;

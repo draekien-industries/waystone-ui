@@ -1,27 +1,82 @@
-import type { Meta } from '@storybook/react';
-import type { ButtonProps } from '@waystone/components/src';
-import { Button } from '@waystone/components/src';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Button, buttonSizes, buttonVariants } from '@waystone/button';
+import { argTypes, createEnumArgType } from '../../.storybook/preview.fx';
 
-export default {
+const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
-} as Meta<typeof Button>;
-
-export const Primary = {
-  args: {
-    children: 'Button',
-  } as ButtonProps,
+  argTypes: {
+    color: argTypes.color,
+    size: createEnumArgType({
+      options: buttonSizes,
+      summary: 'size',
+    }),
+    variant: createEnumArgType({
+      options: buttonVariants,
+      summary: 'variant',
+    }),
+  },
 };
 
-export const WithIcon = {
+export default meta;
+
+export const Primary: StoryObj<typeof meta> = {
+  args: {
+    children: 'Button',
+  },
+};
+
+export const Secondary: StoryObj<typeof meta> = {
+  args: {
+    children: 'Button',
+    variant: 'secondary',
+  },
+};
+
+export const Highlight: StoryObj<typeof meta> = {
+  args: {
+    children: 'Button',
+    variant: 'highlight',
+  },
+};
+
+export const Accent: StoryObj<typeof meta> = {
+  args: {
+    children: 'Button',
+    variant: 'accent',
+  },
+};
+
+export const Ghost: StoryObj<typeof meta> = {
+  args: {
+    children: 'Button',
+    variant: 'ghost',
+  },
+};
+
+export const Link: StoryObj<typeof meta> = {
+  args: {
+    children: 'Button',
+    variant: 'link',
+  },
+};
+
+export const Destructive: StoryObj<typeof meta> = {
+  args: {
+    children: 'Button',
+    variant: 'destructive',
+  },
+};
+
+export const WithIcon: StoryObj<typeof meta> = {
   args: {
     children: 'Button',
     icon: { variant: 'filled', name: 'check' },
-  } as ButtonProps,
+  },
 };
 
-export const IconOnly = {
+export const IconOnly: StoryObj<typeof meta> = {
   args: {
     icon: { variant: 'filled', name: 'check' },
-  } as ButtonProps,
+  },
 };

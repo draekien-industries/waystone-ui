@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should render a checkbox with a label 1`] = `
+<div>
+  <div
+    class="css-17w1b6b-CheckboxWithRef"
+  >
+    <input
+      class="css-1pckfla-CheckboxWithRef"
+      data-testid="test-checkbox"
+      id="test"
+      type="checkbox"
+    />
+    <label
+      class="css-vb17rl-CheckboxWithRef"
+      for="test"
+    >
+      I am a checkbox
+    </label>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> should render a checkbox with no label 1`] = `
+<div>
+  <div
+    class="css-17w1b6b-CheckboxWithRef"
+  >
+    <input
+      class="css-1pckfla-CheckboxWithRef"
+      data-testid="test-checkbox"
+      id="test"
+      type="checkbox"
+    />
+  </div>
+</div>
+`;
