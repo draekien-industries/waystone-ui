@@ -1,6 +1,6 @@
 {
   "name": "@waystone/syntax-highlighter",
-  "version": "12.1.0",
+  "version": "13.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "module": "./dist/index.mjs",
