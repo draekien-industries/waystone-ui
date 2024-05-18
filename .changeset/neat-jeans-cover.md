@@ -25,6 +25,7 @@
 '@waystone/stories': major
 '@waystone/cli': major
 '@waystone/ui': major
+'@waystone/utils': major
 ---
 
 Major refactor of package structure and component implementation
