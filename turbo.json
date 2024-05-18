@@ -32,7 +32,6 @@
     "dev": {
       "cache": false,
       "persistent": true,
-      "dependsOn": ["^dev"],
       "outputs": ["dist/**", "build/**"]
     },
     "storybook:upgrade": {
