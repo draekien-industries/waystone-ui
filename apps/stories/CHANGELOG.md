@@ -1,5 +1,48 @@
 # @waystone/stories
 
+## 10.0.0
+
+### Major Changes
+
+- bd9dbe7: Major refactor of package structure and component implementation
+
+  ## Migration steps
+
+  Uninstall the old version of `@waystone/*`, then run one of the below scripts depending on the package manager you use:
+
+  | Package manager | Script                                                         |
+  | --------------- | -------------------------------------------------------------- |
+  | npm             | `npm i @waystone/ui@latest @emotion/react@11 theme-ui@0.6`     |
+  | yarn            | `yarn add @waystone/ui@latest @emotion/react@11 theme-ui@0.16` |
+  | pnpm            | `pnpm i @waystone/ui@latest @emotion/react@11 theme-ui@0.16`   |
+
+  Replace imports with an import of `@waystone/ui`
+
+  ```diff
+  - import { Waystone } from '@waystone/theme';
+  - import { Card, Text, Button } from '@waystone/components';
+  + import { Waystone, Card, Text, Button } from '@waystone/ui';
+  ```
+
+### Patch Changes
+
+- Updated dependencies [bd9dbe7]
+  - @waystone/theme-provider@1.0.0
+  - @waystone/button-group@1.0.0
+  - @waystone/card-button@1.0.0
+  - @waystone/form-fields@1.0.0
+  - @waystone/code-block@1.0.0
+  - @waystone/overlay@1.0.0
+  - @waystone/spinner@1.0.0
+  - @waystone/anchor@1.0.0
+  - @waystone/button@1.0.0
+  - @waystone/table@1.0.0
+  - @waystone/theme@1.0.0
+  - @waystone/card@1.0.0
+  - @waystone/code@1.0.0
+  - @waystone/icon@1.0.0
+  - @waystone/text@1.0.0
+
 ## 9.5.0
 
 ### Minor Changes
