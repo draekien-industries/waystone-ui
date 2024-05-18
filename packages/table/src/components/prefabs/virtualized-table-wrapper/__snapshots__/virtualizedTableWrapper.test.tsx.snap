@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VirtualizedTableWrapper /> accepts height 1`] = `
+<div>
+  <div
+    class="css-1m78d26-VirtualizedTableWrapperWithRef"
+  >
+    test
+  </div>
+</div>
+`;
+
+exports[`<VirtualizedTableWrapper /> accepts ref 1`] = `
+<div>
+  <div
+    class="css-1t6pf6e-VirtualizedTableWrapperWithRef"
+  >
+    test
+  </div>
+</div>
+`;
+
+exports[`<VirtualizedTableWrapper /> accepts width 1`] = `
+<div>
+  <div
+    class="css-150mw8p-VirtualizedTableWrapperWithRef"
+  >
+    test
+  </div>
+</div>
+`;
+
+exports[`<VirtualizedTableWrapper /> requires ref 1`] = `
+<div>
+  <div
+    class="css-1t6pf6e-VirtualizedTableWrapperWithRef"
+  >
+    test
+  </div>
+</div>
+`;

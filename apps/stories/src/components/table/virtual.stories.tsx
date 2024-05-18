@@ -5,6 +5,7 @@ import {
   TableBody,
   TableContainer,
   TableHead,
+  VirtualizedTableWrapper,
   getCoreRowModel,
   getMeasureElement,
   getSortedRowModel,
@@ -38,14 +39,7 @@ const VirtualTable = () => {
   });
 
   return (
-    <div
-      ref={tableContainerRef}
-      style={{
-        overflow: 'auto',
-        position: 'relative',
-        height: 800,
-      }}
-    >
+    <VirtualizedTableWrapper ref={tableContainerRef}>
       <TableContainer.Virtualized>
         <TableHead.Virtualized>
           {table.getHeaderGroups().map((headerGroup) => (
@@ -67,7 +61,7 @@ const VirtualTable = () => {
           })}
         </TableBody.Virtualized>
       </TableContainer.Virtualized>
-    </div>
+    </VirtualizedTableWrapper>
   );
 };
 
@@ -98,13 +92,7 @@ const rowVirtualizer = useVirtualizer({
 });
 
 return (
-  <div
-    ref={tableContainerRef}
-    style={{
-      overflow: 'auto',
-      position: 'relative',
-      height: 800,
-    }}>
+  <VirtualizedTableWrapper ref={tableContainerRef}>
     <TableContainer.Virtualized>
       <TableHead.Virtualized>
         {table.getHeaderGroups().map((headerGroup) => (
@@ -126,7 +114,7 @@ return (
         })}
       </TableBody.Virtualized>
     </TableContainer.Virtualized>
-  </div>
+  </VirtualizedTableWrapper>
 );`,
       },
     },
