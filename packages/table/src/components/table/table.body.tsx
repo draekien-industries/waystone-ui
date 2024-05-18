@@ -27,7 +27,13 @@ const VirtualizedTableBody = ({
   children,
   getTotalSize,
 }: VirtualizedTableBodyProps) => (
-  <tbody sx={{ display: 'grid', position: 'relative', height: getTotalSize() }}>
+  <tbody
+    sx={{
+      display: 'grid',
+      position: 'relative',
+      height: getTotalSize(),
+    }}
+  >
     {children}
   </tbody>
 );
