@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from 'react';
 import type { ThemeUICSSObject } from 'theme-ui';
-import { TableHeadRow } from './table.head.row';
 import { TableHeadCell } from './table.head.cell';
+import { TableHeadRow } from './table.head.row';
 
 const style = {
   backgroundColor: 'p-400',
@@ -13,6 +13,22 @@ const style = {
 export const TableHead = ({ children }: PropsWithChildren) => (
   <thead sx={style}>{children}</thead>
 );
+
+const VirtualizedTableHead = ({ children }: PropsWithChildren) => (
+  <thead
+    sx={{
+      backgroundColor: 'p-400',
+      display: 'grid',
+      position: 'sticky',
+      top: 0,
+      zIndex: 1,
+    }}
+  >
+    {children}
+  </thead>
+);
+
+TableHead.Virtualized = VirtualizedTableHead;
 
 TableHead.Row = TableHeadRow;
 TableHead.Cell = TableHeadCell;

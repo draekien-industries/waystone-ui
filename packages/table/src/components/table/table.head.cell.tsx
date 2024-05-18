@@ -31,3 +31,33 @@ export const TableHeadCell = <D, V>({
     )}
   </th>
 );
+
+const VirtualizedTableHeadCell = <D, V>({
+  id,
+  isPlaceholder,
+  column,
+  children,
+  getContext,
+  getSize,
+}: PropsWithChildren<HeaderProps<D, V>>) => (
+  <th
+    id={id}
+    sx={{
+      display: 'flex',
+      width: getSize(),
+      paddingY: 'small',
+      paddingX: 'medium',
+      textAlign: 'left',
+      fontWeight: 'semibold',
+    }}
+  >
+    {!isPlaceholder && (
+      <Box>
+        {flexRender(column.columnDef.header, getContext())}
+        {children}
+      </Box>
+    )}
+  </th>
+);
+
+TableHeadCell.Virtualized = VirtualizedTableHeadCell;
