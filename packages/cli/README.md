@@ -2,6 +2,10 @@
 
 A cli tool for the @waystone/\* design system
 
+## Installation
+
+`npm i -g @waystone/cli`
+
 ## Commands
 
 ### Color

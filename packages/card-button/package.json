@@ -29,8 +29,8 @@
     "eslint-plugin-waystone": "workspace:*",
     "react": "^18.2.0",
     "theme-ui": "^0.16.2",
-    "@waystone/overlay": "workspace:^",
-    "@waystone/spinner": "workspace:^",
+    "@waystone/overlay": "workspace:*",
+    "@waystone/spinner": "workspace:*",
     "@waystone/card": "workspace:*",
     "@waystone/css-presets": "workspace:*"
   }

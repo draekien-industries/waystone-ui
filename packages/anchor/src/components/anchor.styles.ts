@@ -1,4 +1,4 @@
-import { outlineCss, cssSelectors } from '@waystone/css-presets';
+import { outlineCss } from '@waystone/css-presets';
 import type { ThemeUICSSObject } from 'theme-ui';
 
 export const anchorCss: ThemeUICSSObject = {

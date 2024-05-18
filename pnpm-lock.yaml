@@ -256,25 +256,25 @@ importers:
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
       '@waystone/css-presets':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../css-presets
       '@waystone/icon':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../icon
       '@waystone/spinner':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../spinner
       '@waystone/testing-library':
         specifier: workspace:*
         version: link:../testing-library
       '@waystone/theme':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../theme
       '@waystone/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@waystone/types':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../types
       eslint-config-waystone:
         specifier: workspace:*
@@ -355,10 +355,10 @@ importers:
         specifier: workspace:*
         version: link:../css-presets
       '@waystone/overlay':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../overlay
       '@waystone/spinner':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../spinner
       '@waystone/testing-library':
         specifier: workspace:*
@@ -385,7 +385,7 @@ importers:
   packages/cli:
     dependencies:
       '@waystone/color':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../color
       plop:
         specifier: ^4.0.1
@@ -425,7 +425,7 @@ importers:
   packages/code-block:
     dependencies:
       '@waystone/syntax-highlighter':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../syntax-highlighter
     devDependencies:
       '@testing-library/jest-dom':
@@ -641,7 +641,7 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@waystone/types':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../types
       eslint-config-waystone:
         specifier: workspace:*
@@ -941,7 +941,7 @@ importers:
         specifier: ^0.16.2
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
       '@waystone/color':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../color
       '@waystone/tsconfig':
         specifier: workspace:*
@@ -1031,10 +1031,10 @@ importers:
         specifier: '>=0.16.0'
         version: 0.16.2(@emotion/react@11.11.4(@types/react@18.2.70)(react@18.2.0))
       '@waystone/color':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../color
       '@waystone/syntax-highlighter':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../syntax-highlighter
       react:
         specifier: '>=18'
@@ -1047,58 +1047,58 @@ importers:
         specifier: ^6.4.2
         version: 6.4.2(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@20.11.24)(babel-plugin-macros@3.1.0))
       '@waystone/anchor':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../anchor
       '@waystone/button':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../button
       '@waystone/button-group':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../button-group
       '@waystone/card':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../card
       '@waystone/card-button':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../card-button
       '@waystone/code':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../code
       '@waystone/code-block':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../code-block
       '@waystone/css-presets':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../css-presets
       '@waystone/form-fields':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../form-fields
       '@waystone/icon':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../icon
       '@waystone/overlay':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../overlay
       '@waystone/spinner':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../spinner
       '@waystone/table':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../table
       '@waystone/text':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../text
       '@waystone/theme':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../theme
       '@waystone/theme-provider':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../theme-provider
       '@waystone/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@waystone/types':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../types
       eslint-config-waystone:
         specifier: workspace:*
