@@ -78,3 +78,5 @@ export const columns: ColumnDef<Person>[] = [
 ];
 
 export const data = makeData(20, 5, 3);
+
+export const virtualizableData = makeData(10_000, 5, 3);
