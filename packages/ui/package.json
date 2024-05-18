@@ -19,8 +19,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
-    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf storybook-static && rm -rf coverage"
+    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/"
   },
   "dependencies": {
     "@waystone/color": "workspace:*",
@@ -46,6 +45,7 @@
     "@waystone/theme": "workspace:*",
     "@waystone/theme-provider": "workspace:*",
     "@waystone/types": "workspace:*",
+    "@waystone/utils": "workspace:*",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "tsup": "^8.0.2"

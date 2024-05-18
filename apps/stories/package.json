@@ -61,7 +61,6 @@
   },
   "scripts": {
     "build": "storybook build --docs",
-    "clean": "rm -rf node_modules && rm -rf storybook-static",
     "dev": "storybook dev -p 6006",
     "preview": "serve storybook-static",
     "lint": "eslint ./src/** --fix"

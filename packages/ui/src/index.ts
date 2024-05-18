@@ -9,6 +9,9 @@ export * from '@waystone/css-presets';
 // types
 export * from '@waystone/types';
 
+// utils
+export * from '@waystone/utils';
+
 // components
 export * from '@waystone/anchor';
 export * from '@waystone/button';

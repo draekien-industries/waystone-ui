@@ -18,7 +18,6 @@
     "test:watch": "turbo run test:watch",
     "test:release": "turbo run test:release",
     "gen:workspace": "turbo gen workspace --copy @waystone/template",
-    "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "is-ci || husky install",
     "version": "turbo run build lint:release test:release && changeset version",

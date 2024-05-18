@@ -16,8 +16,7 @@
   ],
   "scripts": {
     "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
-    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/"
   },
   "devDependencies": {
     "@waystone/tsconfig": "workspace:*",

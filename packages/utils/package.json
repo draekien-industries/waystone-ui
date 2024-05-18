@@ -1,18 +1,23 @@
 {
-  "name": "@waystone/template",
-  "version": "0.0.0",
-  "main": "./src/index.ts",
-  "module": "./src/index.ts",
-  "types": "./src/index.ts",
-  "private": true,
+  "name": "@waystone/utils",
+  "version": "11.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/draekien-industries/waystone-ui"
   },
+  "description": "A set of useful utilities that can be installed standalone from waystone-ui",
   "author": "draekien-industries",
   "sideEffects": false,
   "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
     "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
     "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
     "test": "jest --coverage --passWithNoTests",
@@ -25,10 +30,11 @@
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
     "@waystone/types": "workspace:*",
-    "@waystone/utils": "workspace:*",
+    "@waystone/css-presets": "workspace:*",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "react": "^18.2.0",
-    "theme-ui": "^0.16.2"
+    "theme-ui": "^0.16.2",
+    "tsup": "^8.0.2"
   }
 }
