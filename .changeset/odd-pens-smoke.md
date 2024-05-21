@@ -1,5 +1,5 @@
 ---
-'@waystone/table': minor,
+'@waystone/table': minor
 '@waystone/ui': minor
 ---
 
