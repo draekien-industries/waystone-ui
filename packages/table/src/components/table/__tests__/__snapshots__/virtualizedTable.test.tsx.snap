@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Table /> <TableBodyCell.Virtualized /> should match snapshot 1`] = `
+<div>
+  <td
+    class="css-3pla2f-VirtualizedTableBodyCell"
+    id="1"
+  />
+</div>
+`;
+
+exports[`<Table /> <TableBodyRow.Virtualized /> should match snapshot 1`] = `
+<div>
+  <tr
+    class="css-1xj7jxq-VirtualizedTableBodyRow"
+    id="1"
+  />
+</div>
+`;
+
 exports[`<Table /> should match snapshot 1`] = `
 <div>
   <div

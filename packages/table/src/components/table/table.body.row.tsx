@@ -31,7 +31,7 @@ export const TableBodyRow = <D,>({
 export type VirtualizedTableBodyRowProps<D> = {
   start: number;
   measureElement: (node: Element | null) => void;
-} & Row<D>;
+} & Pick<Row<D>, 'getCanSelect' | 'getVisibleCells' | 'id'>;
 
 const VirtualizedTableBodyRow = <D,>({
   id,

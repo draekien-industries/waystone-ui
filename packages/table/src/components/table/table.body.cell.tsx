@@ -21,7 +21,7 @@ const VirtualizedTableBodyCell = <D, V>({
   id,
   column,
   getContext,
-}: Cell<D, V>) => {
+}: Pick<Cell<D, V>, 'id' | 'column' | 'getContext'>) => {
   const { columnDef, getSize } = column;
 
   return (
