@@ -1,91 +1,17 @@
 'use client';
 
-import { faker } from '@faker-js/faker';
 import type { Meta, StoryObj } from '@storybook/react';
-import type { ColumnDef, ExpandedState } from '@waystone/table';
+import type { ExpandedState } from '@waystone/table';
 import {
   TableBody,
   TableContainer,
   TableHead,
-  createInteractiveColumn,
   getCoreRowModel,
   getExpandedRowModel,
   useReactTable,
 } from '@waystone/table';
 import { useState } from 'react';
-
-type Person = {
-  firstName: string;
-  lastName: string;
-  age: number;
-  visits: number;
-  progress: number;
-  status: 'relationship' | 'complicated' | 'single';
-  subRows?: Person[];
-};
-
-const range = (len: number) => {
-  const arr: number[] = [];
-  for (let i = 0; i < len; i++) {
-    arr.push(i);
-  }
-  return arr;
-};
-
-const newPerson = (): Person => ({
-  firstName: faker.person.firstName(),
-  lastName: faker.person.lastName(),
-  age: faker.number.int(40),
-  visits: faker.number.int(1000),
-  progress: faker.number.int(100),
-  status: faker.helpers.shuffle<Person['status']>([
-    'relationship',
-    'complicated',
-    'single',
-  ])[0]!,
-});
-
-function makeData(...lens: number[]) {
-  const makeDataLevel = (depth = 0): Person[] => {
-    const len = lens[depth]!;
-    return range(len).map(
-      (): Person => ({
-        ...newPerson(),
-        subRows: lens[depth + 1] ? makeDataLevel(depth + 1) : undefined,
-      })
-    );
-  };
-
-  return makeDataLevel();
-}
-
-const columns: ColumnDef<Person>[] = [
-  createInteractiveColumn<Person>(),
-  {
-    accessorKey: 'firstName',
-    header: 'First Name',
-  },
-  {
-    accessorKey: 'lastName',
-    header: 'Last Name',
-  },
-  {
-    accessorKey: 'age',
-    header: 'Age',
-  },
-  {
-    accessorKey: 'visits',
-    header: 'Visits',
-  },
-  {
-    accessorKey: 'status',
-    header: 'Status',
-  },
-  {
-    accessorKey: 'progress',
-    header: 'Progress',
-  },
-];
+import { columns, makeData } from './utils';
 
 const data = makeData(20, 5, 3);
 
@@ -122,7 +48,6 @@ const ExampleTable = () => {
 };
 
 const meta: Meta = {
-  title: 'Components/Table',
   render: ExampleTable,
   parameters: {
     docs: {

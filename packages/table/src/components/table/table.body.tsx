@@ -1,7 +1,7 @@
 import { alpha } from '@theme-ui/color';
-import type { PropsWithChildren } from 'react';
-import { TableBodyRow } from './table.body.row';
+import type { PropsWithChildren, ReactNode } from 'react';
 import { TableBodyCell } from './table.body.cell';
+import { TableBodyRow } from './table.body.row';
 
 export const TableBody = ({ children }: PropsWithChildren) => (
   <tbody
@@ -17,3 +17,25 @@ export const TableBody = ({ children }: PropsWithChildren) => (
 
 TableBody.Row = TableBodyRow;
 TableBody.Cell = TableBodyCell;
+
+export type VirtualizedTableBodyProps = {
+  children: ReactNode;
+  getTotalSize: () => number;
+};
+
+const VirtualizedTableBody = ({
+  children,
+  getTotalSize,
+}: VirtualizedTableBodyProps) => (
+  <tbody
+    sx={{
+      display: 'grid',
+      position: 'relative',
+      height: getTotalSize(),
+    }}
+  >
+    {children}
+  </tbody>
+);
+
+TableBody.Virtualized = VirtualizedTableBody;

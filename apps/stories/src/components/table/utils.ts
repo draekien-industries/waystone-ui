@@ -1,8 +1,9 @@
 import { faker } from '@faker-js/faker';
-import type { ColumnDef } from '@tanstack/react-table';
-import { createInteractiveColumn } from '../components/prefabs';
+import { createInteractiveColumn, type ColumnDef } from '@waystone/table';
 
-type Person = {
+faker.seed(5533201);
+
+export type Person = {
   firstName: string;
   lastName: string;
   age: number;
@@ -20,8 +21,6 @@ const range = (len: number) => {
   return arr;
 };
 
-faker.seed(459201);
-
 const newPerson = (): Person => ({
   firstName: faker.person.firstName(),
   lastName: faker.person.lastName(),
@@ -35,7 +34,7 @@ const newPerson = (): Person => ({
   ])[0]!,
 });
 
-function makeData(...lens: number[]) {
+export function makeData(...lens: number[]) {
   const makeDataLevel = (depth = 0): Person[] => {
     const len = lens[depth]!;
     return range(len).map(
@@ -76,7 +75,3 @@ export const columns: ColumnDef<Person>[] = [
     header: 'Progress',
   },
 ];
-
-export const data = makeData(20, 5, 3);
-
-export const virtualizableData = makeData(10_000, 5, 3);
