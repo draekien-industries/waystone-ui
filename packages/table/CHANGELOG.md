@@ -1,5 +1,11 @@
 # @waystone/table
 
+## 1.1.0
+
+### Minor Changes
+
+- cae3dce: Adds support for virtualized table rows
+
 ## 1.0.0
 
 ### Major Changes

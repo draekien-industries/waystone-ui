@@ -1,5 +1,11 @@
 # @waystone/ui
 
+## 12.1.0
+
+### Minor Changes
+
+- cae3dce: Adds support for virtualized table rows
+
 ## 12.0.0
 
 ### Major Changes

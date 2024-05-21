@@ -1,5 +1,12 @@
 # @waystone/stories
 
+## 10.0.1
+
+### Patch Changes
+
+- Updated dependencies [cae3dce]
+  - @waystone/table@1.1.0
+
 ## 10.0.0
 
 ### Major Changes
