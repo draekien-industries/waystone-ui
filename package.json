@@ -24,7 +24,7 @@
     "release": "turbo run build lint:release test:release && changeset version && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.2",
+    "@changesets/cli": "^2.27.5",
     "@testing-library/jest-dom": "^6.4.5",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.12",
