@@ -39,7 +39,7 @@ Run the relevant script for your package manager
 
 | Package manager | Script                                                         |
 | --------------- | -------------------------------------------------------------- |
-| npm             | `npm i @waystone/ui@latest @emotion/react@11 theme-ui@0.6`     |
+| npm             | `npm i @waystone/ui@latest @emotion/react@11 theme-ui@0.16`     |
 | yarn            | `yarn add @waystone/ui@latest @emotion/react@11 theme-ui@0.16` |
 | pnpm            | `pnpm i @waystone/ui@latest @emotion/react@11 theme-ui@0.16`   |
 
