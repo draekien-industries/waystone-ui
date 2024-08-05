@@ -24,7 +24,7 @@
     "@waystone/syntax-highlighter": "workspace:*"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/jest-dom": "^6.4.8",
     "@theme-ui/color": "^0.16.2",
     "@waystone/card": "workspace:*",
     "@waystone/css-presets": "workspace:*",
