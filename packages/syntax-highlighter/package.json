@@ -37,7 +37,7 @@
     "to-camel-case": "^1.0.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/jest-dom": "^6.5.0",
     "@types/hast": "^3.0.4",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
