@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.5.0",
-    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/color": "^0.17.0",
     "@waystone/color": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
     "eslint-config-waystone": "workspace:*",
