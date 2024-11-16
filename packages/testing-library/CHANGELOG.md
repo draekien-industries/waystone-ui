@@ -1,5 +1,13 @@
 # @waystone/testing-library
 
+## 10.0.2
+
+### Patch Changes
+
+- f8574a9: chore: update deps
+- Updated dependencies [f8574a9]
+  - @waystone/theme-provider@1.0.1
+
 ## 10.0.1
 
 ### Patch Changes

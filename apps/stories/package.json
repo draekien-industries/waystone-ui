@@ -64,5 +64,5 @@
     "lint": "eslint ./src/** --fix"
   },
   "sideEffects": false,
-  "version": "10.0.2"
+  "version": "10.0.3"
 }

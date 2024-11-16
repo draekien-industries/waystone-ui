@@ -1,5 +1,13 @@
 # @waystone/code-block
 
+## 1.0.2
+
+### Patch Changes
+
+- f8574a9: chore: update deps
+- Updated dependencies [f8574a9]
+  - @waystone/syntax-highlighter@13.0.2
+
 ## 1.0.1
 
 ### Patch Changes

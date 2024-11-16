@@ -1,5 +1,11 @@
 # @waystone/table
 
+## 1.1.2
+
+### Patch Changes
+
+- f8574a9: chore: update deps
+
 ## 1.1.1
 
 ### Patch Changes
