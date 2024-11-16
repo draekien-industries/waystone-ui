@@ -2,15 +2,15 @@
 
 A cli tool for the @waystone/\* design system
 
-## Installation
+## Usage
 
-`npm i -g @waystone/cli`
+Run the command below and then follow the prompts.
 
-## Commands
+```bash
+npx @waystone/cli
+```
 
-### Color
+Currently supports:
 
-Usage: `waystone color`
-
-Generates a typescript file containing a color scale based on the name and
-midpoint provided.
+- generating a color scale
+- generating a react component skeleton
