@@ -1,5 +1,13 @@
 # @waystone/code-block
 
+## 1.0.1
+
+### Patch Changes
+
+- a7a67a8: chore: upgrade dependencies and prettify types
+- Updated dependencies [a7a67a8]
+  - @waystone/syntax-highlighter@13.0.1
+
 ## 1.0.0
 
 ### Major Changes

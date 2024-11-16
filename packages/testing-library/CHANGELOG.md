@@ -1,5 +1,12 @@
 # @waystone/testing-library
 
+## 10.0.1
+
+### Patch Changes
+
+- a7a67a8: chore: upgrade dependencies and prettify types
+  - @waystone/theme-provider@1.0.0
+
 ## 10.0.0
 
 ### Major Changes
