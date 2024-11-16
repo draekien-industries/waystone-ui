@@ -6,7 +6,7 @@ exports[`<Overlay.Absolute /> component should match snapshot 1`] = `
     style="position: relative;"
   >
     <div
-      class="css-7jeshx-AbsoluteOverlay"
+      class="css-1w86j5d"
     >
       Content
     </div>
@@ -39,10 +39,10 @@ exports[`<Overlay.Absolute /> css should use provided options 1`] = `
 exports[`<Overlay.FullScreen /> component should match snapshot 1`] = `
 <div>
   <div
-    class="css-16wn25v-FullScreenOverlay"
+    class="css-fzzfv7"
   >
     <div
-      class="css-1abarhv-FullScreenOverlay"
+      class="css-1gorkk4"
     >
       Content
     </div>

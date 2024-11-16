@@ -8,14 +8,14 @@ exports[`<CardButton /> renders a spinner when loading 1`] = `
     type="button"
   >
     <div
-      class="css-7jeshx-AbsoluteOverlay"
+      class="css-1w86j5d"
     >
       <div
-        class="css-m65fxy-Flex"
+        class="css-9uio79"
       >
         <div
           aria-description="Loading..."
-          class="css-c1ojwv-Spinner"
+          class="css-1ho80mb"
         />
       </div>
     </div>

@@ -3,7 +3,7 @@
 exports[`<Label /> should match snapshot 1`] = `
 <div>
   <label
-    class="css-ejy0wb-Text"
+    class="css-4i50vq"
     for="test-input"
   >
     Test Label

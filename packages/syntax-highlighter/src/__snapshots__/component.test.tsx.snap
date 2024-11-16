@@ -3,13 +3,13 @@
 exports[`Components: SyntaxHighlighter should match snapshot 1`] = `
 <div>
   <pre
-    class="css-1qg9ou7-SyntaxHighlighter"
+    class="css-lrw80b"
   >
     <code
-      class="language-javascript css-dytyo9-SyntaxHighlighter"
+      class="language-javascript css-38t3yv"
     >
       <span
-        class="hljs-variable language_ css-g89m8z-Box"
+        class="hljs-variable language_ css-1yz7e9k"
         style="color: rgb(171, 86, 86);"
       >
         <span>
@@ -17,14 +17,14 @@ exports[`Components: SyntaxHighlighter should match snapshot 1`] = `
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           .
         </span>
       </span>
       <span
-        class="hljs-title function_ css-g89m8z-Box"
+        class="hljs-title function_ css-1yz7e9k"
         style="color: rgb(136, 0, 0); font-weight: bold;"
       >
         <span>
@@ -32,14 +32,14 @@ exports[`Components: SyntaxHighlighter should match snapshot 1`] = `
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           (
         </span>
       </span>
       <span
-        class="hljs-string css-g89m8z-Box"
+        class="hljs-string css-1yz7e9k"
         style="color: rgb(136, 0, 0);"
       >
         <span>
@@ -47,7 +47,7 @@ exports[`Components: SyntaxHighlighter should match snapshot 1`] = `
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           )
@@ -61,13 +61,13 @@ exports[`Components: SyntaxHighlighter should match snapshot 1`] = `
 exports[`Components: SyntaxHighlighter should match snapshot when styleName is not defaultStyle 1`] = `
 <div>
   <pre
-    class="css-1blygkj-SyntaxHighlighter"
+    class="css-qy0ydq"
   >
     <code
-      class="language-javascript css-dytyo9-SyntaxHighlighter"
+      class="language-javascript css-38t3yv"
     >
       <span
-        class="hljs-variable language_ css-g89m8z-Box"
+        class="hljs-variable language_ css-1yz7e9k"
         style="color: rgb(255, 160, 122);"
       >
         <span>
@@ -75,14 +75,14 @@ exports[`Components: SyntaxHighlighter should match snapshot when styleName is n
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           .
         </span>
       </span>
       <span
-        class="hljs-title function_ css-g89m8z-Box"
+        class="hljs-title function_ css-1yz7e9k"
         style="color: rgb(0, 224, 224);"
       >
         <span>
@@ -90,14 +90,14 @@ exports[`Components: SyntaxHighlighter should match snapshot when styleName is n
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           (
         </span>
       </span>
       <span
-        class="hljs-string css-g89m8z-Box"
+        class="hljs-string css-1yz7e9k"
         style="color: rgb(171, 227, 56);"
       >
         <span>
@@ -105,7 +105,7 @@ exports[`Components: SyntaxHighlighter should match snapshot when styleName is n
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           )
@@ -119,13 +119,13 @@ exports[`Components: SyntaxHighlighter should match snapshot when styleName is n
 exports[`Components: SyntaxHighlighter should match snapshot when wrapLines is true 1`] = `
 <div>
   <pre
-    class="css-1qg9ou7-SyntaxHighlighter"
+    class="css-lrw80b"
   >
     <code
-      class="language-javascript css-1fq9u91-SyntaxHighlighter"
+      class="language-javascript css-1f4c3m9"
     >
       <span
-        class="hljs-variable language_ css-g89m8z-Box"
+        class="hljs-variable language_ css-1yz7e9k"
         style="color: rgb(171, 86, 86);"
       >
         <span>
@@ -133,14 +133,14 @@ exports[`Components: SyntaxHighlighter should match snapshot when wrapLines is t
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           .
         </span>
       </span>
       <span
-        class="hljs-title function_ css-g89m8z-Box"
+        class="hljs-title function_ css-1yz7e9k"
         style="color: rgb(136, 0, 0); font-weight: bold;"
       >
         <span>
@@ -148,14 +148,14 @@ exports[`Components: SyntaxHighlighter should match snapshot when wrapLines is t
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           (
         </span>
       </span>
       <span
-        class="hljs-string css-g89m8z-Box"
+        class="hljs-string css-1yz7e9k"
         style="color: rgb(136, 0, 0);"
       >
         <span>
@@ -163,7 +163,7 @@ exports[`Components: SyntaxHighlighter should match snapshot when wrapLines is t
         </span>
       </span>
       <span
-        class="css-g89m8z-Box"
+        class="css-1yz7e9k"
       >
         <span>
           )

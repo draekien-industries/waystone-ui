@@ -3,7 +3,7 @@
 exports[`<Icon /> component should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-outlined css-1ye7pjf-Icon"
+    class="material-icons-outlined css-165xn9n"
   >
     accessibility
   </i>
@@ -13,7 +13,7 @@ exports[`<Icon /> component should match snapshot 1`] = `
 exports[`<Icon /> component size extra-small should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-outlined css-4jdh4r-Icon"
+    class="material-icons-outlined css-1kxdxms"
   >
     accessibility
   </i>
@@ -23,7 +23,7 @@ exports[`<Icon /> component size extra-small should match snapshot 1`] = `
 exports[`<Icon /> component size large should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-outlined css-pj8p8w-Icon"
+    class="material-icons-outlined css-1j0at84"
   >
     accessibility
   </i>
@@ -33,7 +33,7 @@ exports[`<Icon /> component size large should match snapshot 1`] = `
 exports[`<Icon /> component size medium should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-outlined css-1h9809z-Icon"
+    class="material-icons-outlined css-rpa2m7"
   >
     accessibility
   </i>
@@ -43,7 +43,7 @@ exports[`<Icon /> component size medium should match snapshot 1`] = `
 exports[`<Icon /> component size small should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-outlined css-1ye7pjf-Icon"
+    class="material-icons-outlined css-165xn9n"
   >
     accessibility
   </i>
@@ -53,7 +53,7 @@ exports[`<Icon /> component size small should match snapshot 1`] = `
 exports[`<Icon /> component variant filled should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons css-1ye7pjf-Icon"
+    class="material-icons css-165xn9n"
   >
     accessibility
   </i>
@@ -63,7 +63,7 @@ exports[`<Icon /> component variant filled should match snapshot 1`] = `
 exports[`<Icon /> component variant outlined should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-outlined css-1ye7pjf-Icon"
+    class="material-icons-outlined css-165xn9n"
   >
     accessibility
   </i>
@@ -73,7 +73,7 @@ exports[`<Icon /> component variant outlined should match snapshot 1`] = `
 exports[`<Icon /> component variant round should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-round css-1ye7pjf-Icon"
+    class="material-icons-round css-165xn9n"
   >
     accessibility
   </i>
@@ -83,7 +83,7 @@ exports[`<Icon /> component variant round should match snapshot 1`] = `
 exports[`<Icon /> component variant sharp should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-sharp css-1ye7pjf-Icon"
+    class="material-icons-sharp css-165xn9n"
   >
     accessibility
   </i>
@@ -93,7 +93,7 @@ exports[`<Icon /> component variant sharp should match snapshot 1`] = `
 exports[`<Icon /> component variant two-tone should match snapshot 1`] = `
 <div>
   <i
-    class="material-icons-two-tone css-1ye7pjf-Icon"
+    class="material-icons-two-tone css-165xn9n"
   >
     accessibility
   </i>

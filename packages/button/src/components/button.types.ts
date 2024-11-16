@@ -1,11 +1,12 @@
 import type { IconProps } from '@waystone/icon';
 import type {
-  LoadingAttributes,
-  DisabledAttributes,
   ActiveAttributes,
-  FullWidthAttributes,
-  SizeAttributes,
   ColorAttributes,
+  DisabledAttributes,
+  FullWidthAttributes,
+  LoadingAttributes,
+  Prettify,
+  SizeAttributes,
   VariantAttributes,
 } from '@waystone/types';
 import type { ComponentPropsWithoutRef } from 'react';
@@ -15,14 +16,21 @@ export type ButtonSize = (typeof buttonSizes)[number];
 
 export type ButtonVariant = (typeof buttonVariants)[number];
 
-export type ButtonProps = {
+type ButtonIconProps = Prettify<
+  { name: string } & Pick<IconProps, 'variant' | 'color' | 'size'>
+>;
+
+type BaseButtonProps = ComponentPropsWithoutRef<'button'>;
+
+type WaystoneButtonProps = {
   /** The icon to render inside the button */
-  icon?: { name: string } & Pick<IconProps, 'variant' | 'color' | 'size'>;
-} & ComponentPropsWithoutRef<'button'> &
-  LoadingAttributes &
+  icon?: ButtonIconProps;
+} & LoadingAttributes &
   DisabledAttributes &
   ActiveAttributes &
   FullWidthAttributes &
   SizeAttributes<ButtonSize> &
   ColorAttributes &
   VariantAttributes<ButtonVariant>;
+
+export type ButtonProps = Prettify<WaystoneButtonProps> & BaseButtonProps;

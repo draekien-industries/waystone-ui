@@ -3,35 +3,35 @@
 exports[`<CodeBlock /> should match snapshot 1`] = `
 <div>
   <div
-    class="css-oo4x6t-Card"
+    class="css-1aeqb5q"
   >
     <div
-      class="css-ed4rkq-CodeBlock"
+      class="css-1nkroav"
     >
       <div
-        class="css-l1fdo0-CodeBlock"
+        class="css-17sgjnn"
       >
         javascript
       </div>
       <button
         aria-label="copy content"
-        class="css-11hvwq6-CodeBlock"
+        class="css-1qcwrfm"
         type="button"
       >
         <i
-          class="material-icons-outlined css-1ye7pjf-Icon"
+          class="material-icons-outlined css-165xn9n"
         >
           content_copy
         </i>
       </button>
       <pre
-        class="css-1qg9ou7-SyntaxHighlighter"
+        class="css-lrw80b"
       >
         <code
-          class="language-javascript css-dytyo9-SyntaxHighlighter"
+          class="language-javascript css-38t3yv"
         >
           <span
-            class="hljs-variable language_ css-g89m8z-Box"
+            class="hljs-variable language_ css-1yz7e9k"
             style="color: rgb(171, 86, 86);"
           >
             <span>
@@ -39,14 +39,14 @@ exports[`<CodeBlock /> should match snapshot 1`] = `
             </span>
           </span>
           <span
-            class="css-g89m8z-Box"
+            class="css-1yz7e9k"
           >
             <span>
               .
             </span>
           </span>
           <span
-            class="hljs-title function_ css-g89m8z-Box"
+            class="hljs-title function_ css-1yz7e9k"
             style="color: rgb(136, 0, 0); font-weight: bold;"
           >
             <span>
@@ -54,14 +54,14 @@ exports[`<CodeBlock /> should match snapshot 1`] = `
             </span>
           </span>
           <span
-            class="css-g89m8z-Box"
+            class="css-1yz7e9k"
           >
             <span>
               (
             </span>
           </span>
           <span
-            class="hljs-string css-g89m8z-Box"
+            class="hljs-string css-1yz7e9k"
             style="color: rgb(136, 0, 0);"
           >
             <span>
@@ -69,7 +69,7 @@ exports[`<CodeBlock /> should match snapshot 1`] = `
             </span>
           </span>
           <span
-            class="css-g89m8z-Box"
+            class="css-1yz7e9k"
           >
             <span>
               );
@@ -85,30 +85,30 @@ exports[`<CodeBlock /> should match snapshot 1`] = `
 exports[`<CodeBlock /> should render a footer 1`] = `
 <div>
   <div
-    class="css-oo4x6t-Card"
+    class="css-1aeqb5q"
   >
     <div
-      class="css-ed4rkq-CodeBlock"
+      class="css-1nkroav"
     >
       <button
         aria-label="copy content"
-        class="css-11hvwq6-CodeBlock"
+        class="css-1qcwrfm"
         type="button"
       >
         <i
-          class="material-icons-outlined css-1ye7pjf-Icon"
+          class="material-icons-outlined css-165xn9n"
         >
           content_copy
         </i>
       </button>
       <pre
-        class="css-1qg9ou7-SyntaxHighlighter"
+        class="css-lrw80b"
       >
         <code
-          class="css-dytyo9-SyntaxHighlighter"
+          class="css-38t3yv"
         >
           <span
-            class="hljs-built_in css-g89m8z-Box"
+            class="hljs-built_in css-1yz7e9k"
             style="color: rgb(57, 115, 0);"
           >
             <span>
@@ -118,7 +118,7 @@ exports[`<CodeBlock /> should render a footer 1`] = `
         </code>
       </pre>
       <div
-        class="css-klajn0-CodeBlock"
+        class="css-brqcfw"
       >
         example footer
       </div>

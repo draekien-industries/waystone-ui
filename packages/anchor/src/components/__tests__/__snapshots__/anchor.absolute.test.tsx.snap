@@ -3,13 +3,13 @@
 exports[`<Anchor.Absolute /> should match snapshot 1`] = `
 <div>
   <a
-    class="css-16jg6an-AbsoluteAnchorWithRef"
+    class="css-ho3rmb"
     href="https://example.com"
     referrerpolicy="no-referrer"
     target=""
   >
     <i
-      class="material-icons-outlined css-12z3vz7-AbsoluteAnchorWithRef"
+      class="material-icons-outlined css-oaddiw"
     >
       open_in_new
     </i>
@@ -21,13 +21,13 @@ exports[`<Anchor.Absolute /> should match snapshot 1`] = `
 exports[`<Anchor.Absolute /> should render with no decoration 1`] = `
 <div>
   <a
-    class="css-18kxuu6-AbsoluteAnchorWithRef"
+    class="css-1hqxz2g"
     href="https://example.com"
     referrerpolicy="no-referrer"
     target=""
   >
     <i
-      class="material-icons-outlined css-12z3vz7-AbsoluteAnchorWithRef"
+      class="material-icons-outlined css-oaddiw"
     >
       open_in_new
     </i>

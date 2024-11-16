@@ -3,7 +3,7 @@
 exports[`<Code /> should match snapshot 1`] = `
 <div>
   <code
-    class="css-4parp7-Code"
+    class="css-h1jkmd"
   >
     console.log('Hello World')
   </code>
