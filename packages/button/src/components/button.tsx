@@ -1,14 +1,17 @@
-import { Icon } from '@waystone/icon';
-import { Box, Button as ThemeUIButton, type ThemeUICSSObject } from 'theme-ui';
 import {
-  outlineCss,
   boxShadowCss,
-  disabledCss,
   cssSelectors,
+  disabledCss,
+  outlineCss,
 } from '@waystone/css-presets';
+import { Icon } from '@waystone/icon';
 import { Spinner } from '@waystone/spinner';
-import { forwardRef, type ForwardedRef } from 'react';
-import type { ButtonProps, ButtonSize } from './button.types';
+import {
+  forwardRef,
+  type ForwardRefExoticComponent,
+  type ForwardedRef,
+} from 'react';
+import { Button as ThemeUIButton, type ThemeUICSSObject } from 'theme-ui';
 import {
   getActiveBackgroundColor,
   getBackgroundColor,
@@ -18,6 +21,7 @@ import {
   getSpinnerColor,
   paddingY,
 } from './button.styles';
+import type { ButtonProps } from './button.types';
 
 const renderButton = (
   {
@@ -111,4 +115,5 @@ const renderButton = (
   );
 };
 
-export const Button = forwardRef(renderButton);
+export const Button: ForwardRefExoticComponent<ButtonProps> =
+  forwardRef(renderButton);

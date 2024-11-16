@@ -1,14 +1,14 @@
-import type { StylePropertyValue } from 'theme-ui';
-import type { Property } from 'csstype';
 import type {
   ThemeColor,
   ThemeShadow,
   ThemeSize,
   ThemeSpacing,
 } from '@waystone/theme';
+import type { Property } from 'csstype';
+import type { StylePropertyValue } from 'theme-ui';
 import type {
-  Literal,
   ExtractLiteralsForAutocomplete,
+  Literal,
   OneOrMore,
 } from './utils';
 

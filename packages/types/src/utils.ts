@@ -1,3 +1,4 @@
+// eslint-disable-file no-empty-object-type
 import type { StylePropertyValue } from 'theme-ui';
 
 /** Literal types */
@@ -17,3 +18,7 @@ export type OneOrMore<T> = T | Array<T>;
  * property with the same key
  */
 export type Assign<A, B> = B & Omit<A, keyof B>;
+
+export type Prettify<T> = {
+  [K in keyof T]: T[K];
+} & {};
