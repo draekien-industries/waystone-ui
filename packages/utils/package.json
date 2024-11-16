@@ -34,7 +34,7 @@
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "react": "^18.3.1",
-    "theme-ui": "^0.16.2",
+    "theme-ui": "^0.17.1",
     "tsup": "^8.0.2"
   }
 }
