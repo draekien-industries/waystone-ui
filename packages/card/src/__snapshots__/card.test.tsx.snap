@@ -3,12 +3,12 @@
 exports[`<Card /> renders a background image 1`] = `
 <div>
   <div
-    class="css-oo4x6t-Card"
+    class="css-1aeqb5q"
   >
     <div
       aria-description="A decorative background image"
       aria-hidden="true"
-      class="css-fgpxxm-Card"
+      class="css-hfn5ud"
     />
   </div>
 </div>
@@ -17,7 +17,7 @@ exports[`<Card /> renders a background image 1`] = `
 exports[`<Card /> renders a blank card 1`] = `
 <div>
   <div
-    class="css-oo4x6t-Card"
+    class="css-1aeqb5q"
     data-testid="test-card"
   />
 </div>
@@ -26,7 +26,7 @@ exports[`<Card /> renders a blank card 1`] = `
 exports[`<Card /> renders an image component 1`] = `
 <div>
   <div
-    class="css-oo4x6t-Card"
+    class="css-1aeqb5q"
   >
     <img
       alt="test"
@@ -40,7 +40,7 @@ exports[`<Card /> renders an image component 1`] = `
 exports[`<Card /> renders children 1`] = `
 <div>
   <div
-    class="css-oo4x6t-Card"
+    class="css-1aeqb5q"
   >
     lorem ipsum
   </div>

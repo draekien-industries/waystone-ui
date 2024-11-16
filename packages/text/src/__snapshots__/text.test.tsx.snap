@@ -3,7 +3,7 @@
 exports[`<Text /> variant body should match snapshot 1`] = `
 <div>
   <span
-    class="css-1k3tifs-Text"
+    class="css-y58272"
   >
     Lorem Ipsum
   </span>
@@ -13,7 +13,7 @@ exports[`<Text /> variant body should match snapshot 1`] = `
 exports[`<Text /> variant caption should match snapshot 1`] = `
 <div>
   <span
-    class="css-1u0r8zu-Text"
+    class="css-im2vug"
   >
     Lorem Ipsum
   </span>
@@ -23,7 +23,7 @@ exports[`<Text /> variant caption should match snapshot 1`] = `
 exports[`<Text /> variant eyebrow should match snapshot 1`] = `
 <div>
   <span
-    class="css-13k5pct-Text"
+    class="css-lb3pc8"
   >
     Lorem Ipsum
   </span>
@@ -33,7 +33,7 @@ exports[`<Text /> variant eyebrow should match snapshot 1`] = `
 exports[`<Text /> variant heading should match snapshot 1`] = `
 <div>
   <span
-    class="css-epqv3n-Text"
+    class="css-wlpqg1"
   >
     Lorem Ipsum
   </span>
@@ -43,7 +43,7 @@ exports[`<Text /> variant heading should match snapshot 1`] = `
 exports[`<Text /> variant hero should match snapshot 1`] = `
 <div>
   <span
-    class="css-1mcj2lz-Text"
+    class="css-1rt8qjt"
   >
     Lorem Ipsum
   </span>
@@ -53,7 +53,7 @@ exports[`<Text /> variant hero should match snapshot 1`] = `
 exports[`<Text /> variant label should match snapshot 1`] = `
 <div>
   <span
-    class="css-ejy0wb-Text"
+    class="css-4i50vq"
   >
     Lorem Ipsum
   </span>
@@ -63,7 +63,7 @@ exports[`<Text /> variant label should match snapshot 1`] = `
 exports[`<Text /> variant monospace should match snapshot 1`] = `
 <div>
   <span
-    class="css-1s1v8lo-Text"
+    class="css-1x2zn30"
   >
     Lorem Ipsum
   </span>
@@ -73,7 +73,7 @@ exports[`<Text /> variant monospace should match snapshot 1`] = `
 exports[`<Text /> variant small should match snapshot 1`] = `
 <div>
   <span
-    class="css-4bk1g8-Text"
+    class="css-1xewts9"
   >
     Lorem Ipsum
   </span>
@@ -83,7 +83,7 @@ exports[`<Text /> variant small should match snapshot 1`] = `
 exports[`<Text /> variant subtitle should match snapshot 1`] = `
 <div>
   <span
-    class="css-5rq687-Text"
+    class="css-1hyxv5m"
   >
     Lorem Ipsum
   </span>
@@ -93,7 +93,7 @@ exports[`<Text /> variant subtitle should match snapshot 1`] = `
 exports[`<Text /> variant title should match snapshot 1`] = `
 <div>
   <span
-    class="css-1bsil5k-Text"
+    class="css-124izrn"
   >
     Lorem Ipsum
   </span>

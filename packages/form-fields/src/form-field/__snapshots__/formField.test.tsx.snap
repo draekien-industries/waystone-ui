@@ -3,7 +3,7 @@
 exports[`<FormField /> component should render children 1`] = `
 <div>
   <div
-    class="css-n0hlb5-FormField"
+    class="css-13g0w5n"
   >
     child
   </div>

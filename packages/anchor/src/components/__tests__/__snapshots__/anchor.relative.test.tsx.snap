@@ -3,7 +3,7 @@
 exports[`<Anchor.Relative /> should match snapshot 1`] = `
 <div>
   <a
-    class="css-vf9v2x-RelativeAnchorWithRef"
+    class="css-ho3rmb"
     href="/bob"
   >
     link
@@ -14,7 +14,7 @@ exports[`<Anchor.Relative /> should match snapshot 1`] = `
 exports[`<Anchor.Relative /> should render with no decoration 1`] = `
 <div>
   <a
-    class="css-q0d0jd-RelativeAnchorWithRef"
+    class="css-1hqxz2g"
     href="#"
   >
     link

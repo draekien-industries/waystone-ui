@@ -3,7 +3,7 @@
 exports[`<VirtualizedTableWrapper /> accepts height 1`] = `
 <div>
   <div
-    class="css-1m78d26-VirtualizedTableWrapperWithRef"
+    class="css-1pgk7dz"
   >
     test
   </div>
@@ -13,7 +13,7 @@ exports[`<VirtualizedTableWrapper /> accepts height 1`] = `
 exports[`<VirtualizedTableWrapper /> accepts ref 1`] = `
 <div>
   <div
-    class="css-1t6pf6e-VirtualizedTableWrapperWithRef"
+    class="css-eagjw6"
   >
     test
   </div>
@@ -23,7 +23,7 @@ exports[`<VirtualizedTableWrapper /> accepts ref 1`] = `
 exports[`<VirtualizedTableWrapper /> accepts width 1`] = `
 <div>
   <div
-    class="css-150mw8p-VirtualizedTableWrapperWithRef"
+    class="css-wmn3kp"
   >
     test
   </div>
@@ -33,7 +33,7 @@ exports[`<VirtualizedTableWrapper /> accepts width 1`] = `
 exports[`<VirtualizedTableWrapper /> requires ref 1`] = `
 <div>
   <div
-    class="css-1t6pf6e-VirtualizedTableWrapperWithRef"
+    class="css-eagjw6"
   >
     test
   </div>

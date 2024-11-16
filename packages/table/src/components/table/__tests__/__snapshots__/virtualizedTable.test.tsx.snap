@@ -3,7 +3,7 @@
 exports[`<Table /> <TableBodyCell.Virtualized /> should match snapshot 1`] = `
 <div>
   <td
-    class="css-3pla2f-VirtualizedTableBodyCell"
+    class="css-10r0z04"
     id="1"
   />
 </div>
@@ -12,7 +12,7 @@ exports[`<Table /> <TableBodyCell.Virtualized /> should match snapshot 1`] = `
 exports[`<Table /> <TableBodyRow.Virtualized /> should match snapshot 1`] = `
 <div>
   <tr
-    class="css-1xj7jxq-VirtualizedTableBodyRow"
+    class="css-1da2dbn"
     id="1"
   />
 </div>
@@ -24,30 +24,30 @@ exports[`<Table /> should match snapshot 1`] = `
     style="overflow: auto; position: relative; height: 800px;"
   >
     <table
-      class="css-ots347-VirtualizedTableContainer"
+      class="css-11xsab5"
     >
       <thead
-        class="css-k8zgs7-VirtualizedTableHead"
+        class="css-xyd1f1"
       >
         <tr
-          class="css-td0vjp-VirtualizedTableHeadRow"
+          class="css-15830to"
           id="0"
         >
           <th
-            class="css-1ffs8qw-VirtualizedTableHeadCell"
+            class="css-tlfye8"
             id="table-interactions"
           >
             <div
-              class="css-g89m8z-Box"
+              class="css-1yz7e9k"
             >
               <div
-                class="css-v65un1-InteractiveColumnHeader"
+                class="css-100ak8h"
               >
                 <div
-                  class="css-17w1b6b-CheckboxWithRef"
+                  class="css-s22gko"
                 >
                   <input
-                    class="css-1pckfla-CheckboxWithRef"
+                    class="css-kzrhrz"
                     id="select-all-checkbox"
                     type="checkbox"
                   />
@@ -56,61 +56,61 @@ exports[`<Table /> should match snapshot 1`] = `
             </div>
           </th>
           <th
-            class="css-1ffs8qw-VirtualizedTableHeadCell"
+            class="css-tlfye8"
             id="firstName"
           >
             <div
-              class="css-g89m8z-Box"
+              class="css-1yz7e9k"
             >
               First Name
             </div>
           </th>
           <th
-            class="css-1ffs8qw-VirtualizedTableHeadCell"
+            class="css-tlfye8"
             id="lastName"
           >
             <div
-              class="css-g89m8z-Box"
+              class="css-1yz7e9k"
             >
               Last Name
             </div>
           </th>
           <th
-            class="css-1ffs8qw-VirtualizedTableHeadCell"
+            class="css-tlfye8"
             id="age"
           >
             <div
-              class="css-g89m8z-Box"
+              class="css-1yz7e9k"
             >
               Age
             </div>
           </th>
           <th
-            class="css-1ffs8qw-VirtualizedTableHeadCell"
+            class="css-tlfye8"
             id="visits"
           >
             <div
-              class="css-g89m8z-Box"
+              class="css-1yz7e9k"
             >
               Visits
             </div>
           </th>
           <th
-            class="css-1ffs8qw-VirtualizedTableHeadCell"
+            class="css-tlfye8"
             id="status"
           >
             <div
-              class="css-g89m8z-Box"
+              class="css-1yz7e9k"
             >
               Status
             </div>
           </th>
           <th
-            class="css-1ffs8qw-VirtualizedTableHeadCell"
+            class="css-tlfye8"
             id="progress"
           >
             <div
-              class="css-g89m8z-Box"
+              class="css-1yz7e9k"
             >
               Progress
             </div>
@@ -118,7 +118,7 @@ exports[`<Table /> should match snapshot 1`] = `
         </tr>
       </thead>
       <tbody
-        class="css-1t8nn7p-VirtualizedTableBody"
+        class="css-icyf4f"
       />
     </table>
   </div>

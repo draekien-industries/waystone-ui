@@ -3,14 +3,14 @@
 exports[`<Radio /> component should match snapshot 1`] = `
 <div>
   <div
-    class="css-1ixhmf7-RadioWithRef"
+    class="css-100ak8h"
   >
     <input
-      class="css-3y5fmw-RadioWithRef"
+      class="css-17bcjra"
       type="radio"
     />
     <label
-      class="css-m2ymrm-RadioWithRef"
+      class="css-15xkxno"
       for="test-radio"
     >
       Option 1

@@ -3,16 +3,16 @@
 exports[`<Checkbox /> should render a checkbox with a label 1`] = `
 <div>
   <div
-    class="css-17w1b6b-CheckboxWithRef"
+    class="css-s22gko"
   >
     <input
-      class="css-1pckfla-CheckboxWithRef"
+      class="css-kzrhrz"
       data-testid="test-checkbox"
       id="test"
       type="checkbox"
     />
     <label
-      class="css-vb17rl-CheckboxWithRef"
+      class="css-15xkxno"
       for="test"
     >
       I am a checkbox
@@ -24,10 +24,10 @@ exports[`<Checkbox /> should render a checkbox with a label 1`] = `
 exports[`<Checkbox /> should render a checkbox with no label 1`] = `
 <div>
   <div
-    class="css-17w1b6b-CheckboxWithRef"
+    class="css-s22gko"
   >
     <input
-      class="css-1pckfla-CheckboxWithRef"
+      class="css-kzrhrz"
       data-testid="test-checkbox"
       id="test"
       type="checkbox"

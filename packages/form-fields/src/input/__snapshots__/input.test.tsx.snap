@@ -3,7 +3,7 @@
 exports[`<Input /> component should match snapshot 1`] = `
 <div>
   <input
-    class="css-1g6xmhl-InputWithRef"
+    class="css-o76nxf"
     id="test-input"
   />
 </div>

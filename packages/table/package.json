@@ -23,7 +23,7 @@
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "@testing-library/jest-dom": "^6.5.0",
-    "@theme-ui/color": "^0.16.2",
+    "@theme-ui/color": "^0.17.1",
     "@waystone/button": "workspace:*",
     "@waystone/css-presets": "workspace:*",
     "@waystone/form-fields": "workspace:*",

@@ -4,7 +4,7 @@ exports[`<Spinner /> component size large should match snapshot 1`] = `
 <div>
   <div
     aria-description="Loading..."
-    class="css-w8xjas-Spinner"
+    class="css-h03isl"
   />
 </div>
 `;
@@ -13,7 +13,7 @@ exports[`<Spinner /> component size medium should match snapshot 1`] = `
 <div>
   <div
     aria-description="Loading..."
-    class="css-c1ojwv-Spinner"
+    class="css-1ho80mb"
   />
 </div>
 `;
@@ -22,7 +22,7 @@ exports[`<Spinner /> component size small should match snapshot 1`] = `
 <div>
   <div
     aria-description="Loading..."
-    class="css-22drur-Spinner"
+    class="css-zofoki"
   />
 </div>
 `;

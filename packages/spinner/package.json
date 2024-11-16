@@ -21,7 +21,7 @@
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
   "devDependencies": {
-    "@emotion/react": "^11.11.4",
+    "@emotion/react": "^11.13.3",
     "@testing-library/jest-dom": "^6.5.0",
     "@waystone/css-presets": "workspace:*",
     "@waystone/testing-library": "workspace:*",
