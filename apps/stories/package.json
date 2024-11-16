@@ -25,7 +25,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.51.4",
-    "theme-ui": "^0.16.2"
+    "theme-ui": "^0.17.1"
   },
   "description": "The storybook for waystone-ui",
   "devDependencies": {

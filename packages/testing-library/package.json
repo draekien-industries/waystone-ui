@@ -34,7 +34,7 @@
     "@waystone/theme-provider": "workspace:*",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "theme-ui": "^0.16.2"
+    "theme-ui": "^0.17.1"
   },
   "publishConfig": {
     "access": "public"
