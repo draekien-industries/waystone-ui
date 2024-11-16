@@ -1,5 +1,12 @@
 # @waystone/ui
 
+## 12.1.1
+
+### Patch Changes
+
+- Updated dependencies [a7a67a8]
+  - @waystone/syntax-highlighter@13.0.1
+
 ## 12.1.0
 
 ### Minor Changes

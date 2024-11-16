@@ -1,5 +1,27 @@
 # @waystone/stories
 
+## 10.0.2
+
+### Patch Changes
+
+- a7a67a8: chore: upgrade dependencies and prettify types
+- Updated dependencies [a7a67a8]
+  - @waystone/card-button@1.0.1
+  - @waystone/form-fields@1.0.1
+  - @waystone/code-block@1.0.1
+  - @waystone/overlay@1.0.1
+  - @waystone/spinner@1.0.1
+  - @waystone/anchor@1.0.1
+  - @waystone/button@1.0.1
+  - @waystone/table@1.1.1
+  - @waystone/theme@1.0.1
+  - @waystone/card@1.0.1
+  - @waystone/code@1.0.1
+  - @waystone/icon@1.0.1
+  - @waystone/text@1.0.1
+  - @waystone/button-group@1.0.0
+  - @waystone/theme-provider@1.0.0
+
 ## 10.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @waystone/anchor
 
+## 1.0.1
+
+### Patch Changes
+
+- a7a67a8: chore: upgrade dependencies and prettify types
+
 ## 1.0.0
 
 ### Major Changes
