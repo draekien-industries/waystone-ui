@@ -1,5 +1,27 @@
 # @waystone/stories
 
+## 10.0.3
+
+### Patch Changes
+
+- f8574a9: chore: update deps
+- Updated dependencies [f8574a9]
+  - @waystone/theme-provider@1.0.1
+  - @waystone/button-group@1.0.1
+  - @waystone/card-button@1.0.2
+  - @waystone/form-fields@1.0.2
+  - @waystone/code-block@1.0.2
+  - @waystone/overlay@1.0.2
+  - @waystone/spinner@1.0.2
+  - @waystone/anchor@1.0.2
+  - @waystone/button@1.0.2
+  - @waystone/table@1.1.2
+  - @waystone/theme@1.0.2
+  - @waystone/card@1.0.2
+  - @waystone/code@1.0.2
+  - @waystone/icon@1.0.2
+  - @waystone/text@1.0.2
+
 ## 10.0.2
 
 ### Patch Changes

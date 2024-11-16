@@ -1,5 +1,11 @@
 # @waystone/card-button
 
+## 1.0.2
+
+### Patch Changes
+
+- f8574a9: chore: update deps
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @waystone/utils
 
+## 12.0.1
+
+### Patch Changes
+
+- f8574a9: chore: update deps
+
 ## 12.0.0
 
 ### Major Changes
