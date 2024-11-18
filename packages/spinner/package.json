@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@emotion/react": "^11.13.3",
-    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/jest-dom": "^6.6.3",
     "@waystone/css-presets": "workspace:*",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",

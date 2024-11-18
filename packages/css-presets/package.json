@@ -22,7 +22,7 @@
     "test:watch": "jest --coverage --passWithNoTests --watch -u"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/jest-dom": "^6.6.3",
     "@theme-ui/color": "^0.17.1",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
