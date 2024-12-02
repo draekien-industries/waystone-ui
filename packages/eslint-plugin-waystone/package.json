@@ -25,15 +25,15 @@
     "build": "eslint-doc-generator && prettier --write ."
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react": "^7.37.2",
     "globals": "^15.9.0"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-doc-generator": "^1.7.1",
-    "eslint-plugin-eslint-plugin": "^5.5.1",
-    "eslint-plugin-n": "^16.6.2"
+    "eslint-plugin-eslint-plugin": "^6.3.2",
+    "eslint-plugin-n": "^17.14.0"
   },
   "peerDependencies": {
     "eslint": ">=0.8.0"
