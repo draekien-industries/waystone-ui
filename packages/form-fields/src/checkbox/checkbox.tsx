@@ -1,5 +1,7 @@
 'use client';
 
+import { cssSelectors, outlineCss } from '@waystone/css-presets';
+import type { FullWidthAttributes } from '@waystone/types';
 import {
   forwardRef,
   useEffect,
@@ -8,8 +10,6 @@ import {
   type ForwardedRef,
 } from 'react';
 import { Flex } from 'theme-ui';
-import type { FullWidthAttributes } from '@waystone/types';
-import { cssSelectors, outlineCss } from '@waystone/css-presets';
 import { Label } from '../label';
 import type {
   InputAriaAttributes,
@@ -52,7 +52,7 @@ const CheckboxWithRef = (
         transition: 'outline 200ms',
         borderRadius: 'small',
         ...outlineCss.base,
-        ':has(:focus-visible)': {
+        [cssSelectors.focusVisible]: {
           ...outlineCss.focused,
         },
       }}
