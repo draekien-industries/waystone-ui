@@ -1,28 +1,12 @@
 {
-  "name": "eslint-config-waystone",
-  "version": "2.0.0",
   "author": "draekien-industries",
-  "description": "The eslint config used by draekien-industries",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/draekien-industries/waystone-ui"
-  },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "waystone"
-  ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-config-turbo": "^1.13.3",
+    "eslint-config-turbo": "^2.3.3",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jest": "^27.9.0",
@@ -33,7 +17,23 @@
     "eslint-plugin-testing-library": "^6.2.2",
     "eslint-plugin-waystone": "workspace:*"
   },
+  "description": "The eslint config used by draekien-industries",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "waystone"
+  ],
+  "license": "MIT",
+  "name": "eslint-config-waystone",
   "peerDependencies": {
     "eslint": ">=3"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "version": "2.0.0"
 }
