@@ -1,5 +1,11 @@
 # @waystone/table
 
+## 1.1.3
+
+### Patch Changes
+
+- 202df02: fix: invalid css selector for checkbox
+
 ## 1.1.2
 
 ### Patch Changes

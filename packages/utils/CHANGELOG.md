@@ -1,5 +1,11 @@
 # @waystone/utils
 
+## 12.0.2
+
+### Patch Changes
+
+- 202df02: fix: invalid css selector for checkbox
+
 ## 12.0.1
 
 ### Patch Changes

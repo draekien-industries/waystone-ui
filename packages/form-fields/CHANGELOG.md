@@ -1,5 +1,11 @@
 # @waystone/form-fields
 
+## 1.0.3
+
+### Patch Changes
+
+- 202df02: fix: invalid css selector for checkbox
+
 ## 1.0.2
 
 ### Patch Changes
