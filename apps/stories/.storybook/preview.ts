@@ -41,3 +41,4 @@ export const parameters: Preview['parameters'] = {
 };
 
 export const decorators: Preview['decorators'] = [WaystoneDecorator];
+export const tags = ['autodocs'];

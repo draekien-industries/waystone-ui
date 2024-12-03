@@ -10,7 +10,7 @@ const config: StorybookConfig = {
     getAbsolutePath('@storybook/addon-interactions'),
     getAbsolutePath('@storybook/addon-a11y'),
     getAbsolutePath('storybook-dark-mode'),
-    '@chromatic-com/storybook',
+    getAbsolutePath('@chromatic-com/storybook'),
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),
@@ -24,9 +24,7 @@ const config: StorybookConfig = {
     reactDocgen: 'react-docgen',
   },
   staticDirs: ['../public'],
-  docs: {
-    autodocs: true,
-  },
+  docs: {},
   viteFinal: async (config, { configType }) => {
     return mergeConfig(config, {
       define: {
