@@ -24,7 +24,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   coverage:
     name: Upload coverage to Codecov
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2204
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
@@ -40,7 +40,7 @@ jobs:
 
       - name: Setup Node.js
         id: setup
-        uses: actions/setup-node@v4
+        uses: useblacksmith/setup-node@v5
         with:
           cache: 'pnpm'
       
