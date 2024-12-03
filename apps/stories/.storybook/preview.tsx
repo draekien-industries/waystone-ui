@@ -1,9 +1,13 @@
-import { WaystoneDecorator } from './waystone.decorator';
-import { create } from '@storybook/theming';
 import type { Preview } from '@storybook/react';
+import { create } from '@storybook/theming';
 import { waystoneTheme } from '@waystone/theme';
-import { getThemeColors } from './preview.fx';
 import { DocsContainer } from './DocsContainer';
+import { getThemeColors } from './preview.fx';
+import {
+  FontLoader,
+  ThemeChanger,
+  WaystoneDecorator,
+} from './waystone.decorator';
 
 const waystoneDarkTheme = create({
   base: 'dark',
@@ -30,7 +34,7 @@ export const parameters: Preview['parameters'] = {
     })),
   },
   darkMode: {
-    current: 'dark',
+    current: 'light',
     dark: waystoneDarkTheme,
     light: waystoneLightTheme,
   },
@@ -40,5 +44,15 @@ export const parameters: Preview['parameters'] = {
   },
 };
 
-export const decorators: Preview['decorators'] = [WaystoneDecorator];
+export const decorators: Preview['decorators'] = [
+  (Story) => (
+    <WaystoneDecorator>
+      <ThemeChanger>
+        <FontLoader>
+          <Story />
+        </FontLoader>
+      </ThemeChanger>
+    </WaystoneDecorator>
+  ),
+];
 export const tags = ['autodocs'];
