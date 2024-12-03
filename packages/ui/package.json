@@ -48,7 +48,7 @@
     "@waystone/utils": "workspace:*",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
-    "tsup": "^8.0.2"
+    "tsup": "^8.3.5"
   },
   "peerDependencies": {
     "@emotion/react": ">=11",
