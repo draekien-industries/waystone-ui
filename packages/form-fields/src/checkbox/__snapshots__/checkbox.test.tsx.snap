@@ -3,7 +3,7 @@
 exports[`<Checkbox /> should render a checkbox with a label 1`] = `
 <div>
   <div
-    class="css-s22gko"
+    class="css-15cclx7"
   >
     <input
       class="css-kzrhrz"
@@ -24,7 +24,7 @@ exports[`<Checkbox /> should render a checkbox with a label 1`] = `
 exports[`<Checkbox /> should render a checkbox with no label 1`] = `
 <div>
   <div
-    class="css-s22gko"
+    class="css-15cclx7"
   >
     <input
       class="css-kzrhrz"

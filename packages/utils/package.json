@@ -1,30 +1,6 @@
 {
-  "name": "@waystone/utils",
-  "version": "12.0.1",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/draekien-industries/waystone-ui"
-  },
-  "description": "A set of useful utilities that can be installed standalone from waystone-ui",
   "author": "draekien-industries",
-  "sideEffects": false,
-  "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
-  "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
-    "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
-    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
-    "test": "jest --coverage --passWithNoTests",
-    "test:release": "jest --coverage --passWithNoTests",
-    "test:update": "jest --coverage --passWithNoTests -u",
-    "test:watch": "jest --coverage --passWithNoTests --watch -u"
-  },
+  "description": "A set of useful utilities that can be installed standalone from waystone-ui",
   "devDependencies": {
     "@testing-library/jest-dom": "^6.5.0",
     "@waystone/css-presets": "workspace:*",
@@ -35,6 +11,30 @@
     "eslint-plugin-waystone": "workspace:*",
     "react": "^18.3.1",
     "theme-ui": "^0.17.1",
-    "tsup": "^8.0.2"
-  }
+    "tsup": "^8.3.5"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "name": "@waystone/utils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draekien-industries/waystone-ui"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint --ext .tsx,.ts,.jsx,.js ./src/ --fix",
+    "lint:release": "eslint --ext .tsx,.ts,.jsx,.js ./src/",
+    "test": "jest --coverage --passWithNoTests",
+    "test:release": "jest --coverage --passWithNoTests",
+    "test:update": "jest --coverage --passWithNoTests -u",
+    "test:watch": "jest --coverage --passWithNoTests --watch -u"
+  },
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "version": "12.0.1"
 }
