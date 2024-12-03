@@ -1,5 +1,14 @@
 # @waystone/ui
 
+## 12.1.3
+
+### Patch Changes
+
+- 202df02: fix: invalid css selector for checkbox
+- Updated dependencies [202df02]
+  - @waystone/syntax-highlighter@13.0.3
+  - @waystone/color@9.0.1
+
 ## 12.1.2
 
 ### Patch Changes

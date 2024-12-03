@@ -1,5 +1,16 @@
 # @waystone/stories
 
+## 10.0.4
+
+### Patch Changes
+
+- 202df02: fix: invalid css selector for checkbox
+- Updated dependencies [202df02]
+  - @waystone/form-fields@1.0.3
+  - @waystone/table@1.1.3
+  - @waystone/code-block@1.0.3
+  - @waystone/theme@1.0.2
+
 ## 10.0.3
 
 ### Patch Changes

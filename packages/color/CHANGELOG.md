@@ -1,5 +1,11 @@
 # @waystone/color
 
+## 9.0.1
+
+### Patch Changes
+
+- 202df02: fix: invalid css selector for checkbox
+
 ## 9.0.0
 
 ### Major Changes

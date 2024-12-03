@@ -1,5 +1,12 @@
 # @waystone/code-block
 
+## 1.0.3
+
+### Patch Changes
+
+- Updated dependencies [202df02]
+  - @waystone/syntax-highlighter@13.0.3
+
 ## 1.0.2
 
 ### Patch Changes

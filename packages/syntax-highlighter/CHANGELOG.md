@@ -1,5 +1,11 @@
 # @waystone/syntax-highlighter
 
+## 13.0.3
+
+### Patch Changes
+
+- 202df02: fix: invalid css selector for checkbox
+
 ## 13.0.2
 
 ### Patch Changes
