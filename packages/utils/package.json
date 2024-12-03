@@ -2,7 +2,7 @@
   "author": "draekien-industries",
   "description": "A set of useful utilities that can be installed standalone from waystone-ui",
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/jest-dom": "^6.6.3",
     "@waystone/css-presets": "workspace:*",
     "@waystone/testing-library": "workspace:*",
     "@waystone/tsconfig": "workspace:*",
