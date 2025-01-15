@@ -36,7 +36,7 @@
     "theme-ui": "^0.17.1"
   },
   "dependencies": {
-    "@tanstack/react-table": "^8.17.3",
+    "@tanstack/react-table": "^8.20.6",
     "@tanstack/react-virtual": "^3.5.0"
   },
   "peerDependencies": {
