@@ -23,7 +23,7 @@
     "@waystone/theme-provider": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hook-form": "^7.51.4",
+    "react-hook-form": "^7.54.2",
     "theme-ui": "^0.17.1"
   },
   "description": "The storybook for waystone-ui",
