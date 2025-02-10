@@ -1,7 +1,7 @@
 {
   "author": "draekien-industries",
   "dependencies": {
-    "@emotion/react": "^11.13.3",
+    "@emotion/react": "^11.14.0",
     "@hookform/devtools": "^4.3.1",
     "@storybook/test": "^8.4.6",
     "@theme-ui/color": "^0.17.1",
