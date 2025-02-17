@@ -23,7 +23,7 @@
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "@testing-library/jest-dom": "^6.6.3",
-    "@theme-ui/color": "^0.17.1",
+    "@theme-ui/color": "^0.17.2",
     "@waystone/button": "workspace:*",
     "@waystone/css-presets": "workspace:*",
     "@waystone/form-fields": "workspace:*",
@@ -33,7 +33,7 @@
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
     "react": "^18.3.1",
-    "theme-ui": "^0.17.1"
+    "theme-ui": "^0.17.2"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.20.6",
