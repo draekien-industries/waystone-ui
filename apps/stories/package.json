@@ -45,7 +45,7 @@
     "chromatic": "^11.3.5",
     "eslint-config-waystone": "workspace:*",
     "eslint-plugin-waystone": "workspace:*",
-    "serve": "^14.2.3",
+    "serve": "^14.2.4",
     "storybook": "^8.4.6",
     "storybook-dark-mode": "^4.0.2",
     "vite": "^6.0.2"
